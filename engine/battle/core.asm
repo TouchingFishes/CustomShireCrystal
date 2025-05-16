@@ -142,6 +142,12 @@ WildFled_EnemyFled_LinkBattleCanceled:
 
 BattleTurn:
 .loop
+	ld hl, wTotalBattleTurns
+	inc [hl]
+	jr nz, .done_turn_increment
+	dec [hl]
+
+.done_turn_increment
 	call CheckContestBattleOver
 	ret c
 
@@ -200,12 +206,6 @@ BattleTurn:
 	jr .loop
 
 HandleBetweenTurnEffects:
-	ld hl, wTotalBattleTurns
-	inc [hl]
-	jr nz, .done_turn_increment
-	dec [hl]
-
-.done_turn_increment
 	ldh a, [hSerialConnectionStatus]
 	cp USING_EXTERNAL_CLOCK
 	jr z, .CheckEnemyFirst
@@ -3534,7 +3534,8 @@ ShowSetEnemyMonAndSendOutAnimation:
 	ld a, OTPARTYMON
 	ld [wMonType], a
 	predef CopyMonToTempMon
-	call GetEnemyMonFrontpic
+	ld hl, BattleAnimCmd_DropSub
+	call GetEnemyMonFrontpic_DoAnim
 
 	xor a
 	ld [wNumHits], a
@@ -3574,7 +3575,22 @@ ShowSetEnemyMonAndSendOutAnimation:
 	call UpdateEnemyHUD
 	ld a, $1
 	ldh [hBGMapMode], a
-	ret
+
+	ld a, [wEnemySubStatus4]
+	bit SUBSTATUS_SUBSTITUTE, a
+	ret z
+
+	farcall CheckBattleScene
+	jr nc, AnimateSubOnEntry
+
+	ld hl, BattleAnimCmd_RaiseSub
+	jp GetEnemyMonFrontpic_DoAnim
+
+AnimateSubOnEntry:
+	ld a, 2 
+	ld [wBattleAnimParam], a
+	ld de, SUBSTITUTE
+	jp Call_PlayBattleAnim
 
 NewEnemyMonStatus:
 	xor a
@@ -4004,7 +4020,8 @@ SendOutPlayerMon:
 	call WaitBGMap
 	xor a
 	ldh [hBGMapMode], a
-	call GetBattleMonBackpic
+	ld hl, BattleAnimCmd_DropSub
+	call GetBattleMonBackpic_DoAnim
 	xor a
 	ldh [hGraphicStartTile], a
 	ld [wBattleMenuCursorPosition], a
@@ -4047,7 +4064,16 @@ SendOutPlayerMon:
 	call UpdatePlayerHUD
 	ld a, $1
 	ldh [hBGMapMode], a
-	ret
+
+	ld a, [wPlayerSubStatus4]
+	bit SUBSTATUS_SUBSTITUTE, a
+	ret z
+
+	farcall CheckBattleScene
+	jp nc, AnimateSubOnEntry
+
+	ld hl, BattleAnimCmd_RaiseSub
+	jp GetBattleMonBackpic_DoAnim
 
 NewBattleMonStatus:
 	xor a
@@ -7064,15 +7090,15 @@ GiveExperiencePoints:
 	jmp z, .next_mon
 
 ; Give EVs
-; e = 0 for no Pokérus, 1 for Pokérus
-	ld e, 0
 	ld hl, MON_POKERUS
 	add hl, bc
 	ld a, [hl]
 	and a
-	jr z, .no_pokerus
-	inc e
-.no_pokerus
+	; if z, then a == 0 already
+	jr z, .got_pokerus
+	ld a, 1
+.got_pokerus
+	ld [wPokerusBuffer], a
 	ld hl, MON_EVS
 	add hl, bc
 	push bc
@@ -7086,6 +7112,8 @@ GiveExperiencePoints:
 	ld b, a
 	ld c, NUM_STATS ; six EVs
 .ev_loop
+	ld a, [wPokerusBuffer]
+	ld e, a
 	rlc b
 	rlc b
 	ld a, b

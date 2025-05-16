@@ -87,18 +87,14 @@ DoMove:
 	cp endturn_command
 	ret nc
 
-; The rest of the commands (01-af) are read from BattleCommandPointers.
+; The rest of the commands (00-ae) are read from BattleCommandPointers.
 	push bc
-	dec a
 	ld c, a
 	ld b, 0
 	ld hl, BattleCommandPointers
-	add hl, bc
-	add hl, bc
-	pop bc
-
 	ld a, BANK(BattleCommandPointers)
-	call GetFarWord
+	call LoadDoubleIndirectPointer
+	pop bc
 
 	call .DoMoveEffectCommand
 
@@ -2097,6 +2093,11 @@ BattleCommand_SwitchTurn:
 	ret
 
 BattleCommand_RaiseSub:
+	ld a, BATTLE_VARS_MOVE_EFFECT
+	call GetBattleVarAddr
+	cp EFFECT_BATON_PASS
+	ret z
+
 	ld a, BATTLE_VARS_SUBSTATUS4
 	call GetBattleVar
 	bit SUBSTATUS_SUBSTITUTE, a

@@ -104,7 +104,7 @@ EvosAttacksPointers2::
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 16, BAYLEEF
+	evolve EVOLVE_LEVEL, 16, BAYLEEF
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -119,7 +119,7 @@ ChikoritaEvosAttacks:
 	db 0 ; no more level-up moves
 
 BayleefEvosAttacks:
-	dbbw EVOLVE_LEVEL, 32, MEGANIUM
+	evolve EVOLVE_LEVEL, 32, MEGANIUM
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, SAFEGUARD
@@ -153,7 +153,7 @@ MeganiumEvosAttacks:
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
-	dbbw EVOLVE_LEVEL, 14, QUILAVA
+	evolve EVOLVE_LEVEL, 14, QUILAVA
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, LEER
@@ -166,7 +166,7 @@ CyndaquilEvosAttacks:
 	db 0 ; no more level-up moves
 
 QuilavaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 36, TYPHLOSION
+	evolve EVOLVE_LEVEL, 36, TYPHLOSION
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, LEER
@@ -195,7 +195,7 @@ TyphlosionEvosAttacks:
 	db 0 ; no more level-up moves
 
 TotodileEvosAttacks:
-	dbbw EVOLVE_LEVEL, 18, CROCONAW
+	evolve EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
@@ -209,7 +209,7 @@ TotodileEvosAttacks:
 	db 0 ; no more level-up moves
 
 CroconawEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, FERALIGATR
+	evolve EVOLVE_LEVEL, 30, FERALIGATR
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
@@ -240,7 +240,7 @@ FeraligatrEvosAttacks:
 	db 0 ; no more level-up moves
 
 SentretEvosAttacks:
-	dbbw EVOLVE_LEVEL, 15, FURRET
+	evolve EVOLVE_LEVEL, 15, FURRET
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 4, DEFENSE_CURL
@@ -269,7 +269,7 @@ FurretEvosAttacks:
 	db 0 ; no more level-up moves
 
 HoothootEvosAttacks:
-	dbbw EVOLVE_LEVEL, 20, NOCTOWL
+	evolve EVOLVE_LEVEL, 20, NOCTOWL
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -299,7 +299,7 @@ NoctowlEvosAttacks:
 	db 0 ; no more level-up moves
 
 LedybaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 18, LEDIAN
+	evolve EVOLVE_LEVEL, 18, LEDIAN
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 8, SUPERSONIC
@@ -329,7 +329,7 @@ LedianEvosAttacks:
 	db 0 ; no more level-up moves
 
 SpinarakEvosAttacks:
-	dbbw EVOLVE_LEVEL, 22, ARIADOS
+	evolve EVOLVE_LEVEL, 22, ARIADOS
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
 	dbw 1, STRING_SHOT
@@ -377,7 +377,7 @@ CrobatEvosAttacks:
 	db 0 ; no more level-up moves
 
 ChinchouEvosAttacks:
-	dbbw EVOLVE_LEVEL, 27, LANTURN
+	evolve EVOLVE_LEVEL, 27, LANTURN
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, THUNDER_WAVE
@@ -407,7 +407,7 @@ LanturnEvosAttacks:
 	db 0 ; no more level-up moves
 
 PichuEvosAttacks:
-	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, PIKACHU
+	evolve EVOLVE_HAPPINESS, PIKACHU
 	db 0 ; no more evolutions
 	dbw 1, CHARM
 	dbw 1, THUNDERSHOCK
@@ -417,7 +417,7 @@ PichuEvosAttacks:
 	db 0 ; no more level-up moves
 
 CleffaEvosAttacks:
-	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, CLEFAIRY
+	evolve EVOLVE_HAPPINESS, CLEFAIRY
 	db 0 ; no more evolutions
 	dbw 1, CHARM
 	dbw 1, POUND
@@ -427,7 +427,7 @@ CleffaEvosAttacks:
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:
-	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, JIGGLYPUFF
+	evolve EVOLVE_HAPPINESS, JIGGLYPUFF
 	db 0 ; no more evolutions
 	dbw 1, CHARM
 	dbw 1, SING
@@ -437,7 +437,7 @@ IgglybuffEvosAttacks:
 	db 0 ; no more level-up moves
 
 TogepiEvosAttacks:
-	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, TOGETIC
+	evolve EVOLVE_HAPPINESS, TOGETIC
 	db 0 ; no more evolutions
 	dbw 1, CHARM
 	dbw 1, GROWL
@@ -466,7 +466,7 @@ TogeticEvosAttacks:
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:
-	dbbw EVOLVE_LEVEL, 25, XATU
+	evolve EVOLVE_LEVEL, 25, XATU
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, TELEPORT
@@ -492,7 +492,7 @@ XatuEvosAttacks:
 	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
-	dbbw EVOLVE_LEVEL, 15, FLAAFFY
+	evolve EVOLVE_LEVEL, 15, FLAAFFY
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -504,7 +504,7 @@ MareepEvosAttacks:
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, AMPHAROS
+	evolve EVOLVE_LEVEL, 30, AMPHAROS
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -541,7 +541,7 @@ BellossomEvosAttacks:
 	db 0 ; no more level-up moves
 
 MarillEvosAttacks:
-	dbbw EVOLVE_LEVEL, 18, AZUMARILL
+	evolve EVOLVE_LEVEL, 18, AZUMARILL
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 3, DEFENSE_CURL
@@ -594,7 +594,7 @@ PolitoedEvosAttacks:
 	db 0 ; no more level-up moves
 
 HoppipEvosAttacks:
-	dbbw EVOLVE_LEVEL, 18, SKIPLOOM
+	evolve EVOLVE_LEVEL, 18, SKIPLOOM
 	db 0 ; no more evolutions
 	dbw 1, SPLASH
 	dbw 5, SYNTHESIS
@@ -609,7 +609,7 @@ HoppipEvosAttacks:
 	db 0 ; no more level-up moves
 
 SkiploomEvosAttacks:
-	dbbw EVOLVE_LEVEL, 27, JUMPLUFF
+	evolve EVOLVE_LEVEL, 27, JUMPLUFF
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, SPLASH
@@ -658,7 +658,7 @@ AipomEvosAttacks:
 	db 0 ; no more level-up moves
 
 SunkernEvosAttacks:
-	dbww EVOLVE_ITEM, SUN_STONE, SUNFLORA
+	evolve EVOLVE_ITEM, SUN_STONE, SUNFLORA
 	db 0 ; no more evolutions
 	dbw 1, ABSORB
 	dbw 6, GROWTH
@@ -698,7 +698,7 @@ YanmaEvosAttacks:
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
-	dbbw EVOLVE_LEVEL, 20, QUAGSIRE
+	evolve EVOLVE_LEVEL, 20, QUAGSIRE
 	db 0 ; no more evolutions
 	dbw 1, WATER_GUN
 	dbw 1, TAIL_WHIP
@@ -828,7 +828,7 @@ GirafarigEvosAttacks:
 	db 0 ; no more level-up moves
 
 PinecoEvosAttacks:
-	dbbw EVOLVE_LEVEL, 31, FORRETRESS
+	evolve EVOLVE_LEVEL, 31, FORRETRESS
 	db 0 ; no more evolutions
 	dbw 1, BIDE
 	dbw 1, PROTECT
@@ -902,7 +902,7 @@ SteelixEvosAttacks:
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:
-	dbbw EVOLVE_LEVEL, 23, GRANBULL
+	evolve EVOLVE_LEVEL, 23, GRANBULL
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP
@@ -1002,7 +1002,7 @@ SneaselEvosAttacks:
 	db 0 ; no more level-up moves
 
 TeddiursaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, URSARING
+	evolve EVOLVE_LEVEL, 30, URSARING
 	db 0 ; no more evolutions
 	dbw 1, LEER
 	dbw 1, SCRATCH
@@ -1033,7 +1033,7 @@ UrsaringEvosAttacks:
 	db 0 ; no more level-up moves
 
 SlugmaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 38, MAGCARGO
+	evolve EVOLVE_LEVEL, 38, MAGCARGO
 	db 0 ; no more evolutions
 	dbw 1, SMOG
 	dbw 1, YAWN
@@ -1062,7 +1062,7 @@ MagcargoEvosAttacks:
 	db 0 ; no more level-up moves
 
 SwinubEvosAttacks:
-	dbbw EVOLVE_LEVEL, 33, PILOSWINE
+	evolve EVOLVE_LEVEL, 33, PILOSWINE
 	db 0 ; no more evolutions
 	dbw 1, ODOR_SLEUTH
 	dbw 1, TACKLE
@@ -1105,7 +1105,7 @@ CorsolaEvosAttacks:
 	db 0 ; no more level-up moves
 
 RemoraidEvosAttacks:
-	dbbw EVOLVE_LEVEL, 25, OCTILLERY
+	evolve EVOLVE_LEVEL, 25, OCTILLERY
 	db 0 ; no more evolutions
 	dbw 1, WATER_GUN
 	dbw 11, LOCK_ON
@@ -1164,7 +1164,7 @@ SkarmoryEvosAttacks:
 	db 0 ; no more level-up moves
 
 HoundourEvosAttacks:
-	dbbw EVOLVE_LEVEL, 24, HOUNDOOM
+	evolve EVOLVE_LEVEL, 24, HOUNDOOM
 	db 0 ; no more evolutions
 	dbw 1, EMBER
 	dbw 1, LEER
@@ -1210,7 +1210,7 @@ KingdraEvosAttacks:
 	db 0 ; no more level-up moves
 
 PhanpyEvosAttacks:
-	dbbw EVOLVE_LEVEL, 25, DONPHAN
+	evolve EVOLVE_LEVEL, 25, DONPHAN
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, ODOR_SLEUTH
@@ -1280,9 +1280,9 @@ SmeargleEvosAttacks:
 	db 0 ; no more level-up moves
 
 TyrogueEvosAttacks:
-	dbbbw EVOLVE_STAT, 20, ATK_LT_DEF, HITMONCHAN
-	dbbbw EVOLVE_STAT, 20, ATK_GT_DEF, HITMONLEE
-	dbbbw EVOLVE_STAT, 20, ATK_EQ_DEF, HITMONTOP
+	evolve EVOLVE_STAT, ATK_LT_DEF, 20, HITMONCHAN
+	evolve EVOLVE_STAT, ATK_GT_DEF, 20, HITMONLEE
+	evolve EVOLVE_STAT, ATK_EQ_DEF, 20, HITMONTOP
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, BULK_UP
@@ -1304,7 +1304,7 @@ HitmontopEvosAttacks:
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, JYNX
+	evolve EVOLVE_LEVEL, 30, JYNX
 	db 0 ; no more evolutions
 	dbw 1, LICK
 	dbw 1, POUND
@@ -1320,7 +1320,7 @@ SmoochumEvosAttacks:
 	db 0 ; no more level-up moves
 
 ElekidEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, ELECTABUZZ
+	evolve EVOLVE_LEVEL, 30, ELECTABUZZ
 	db 0 ; no more evolutions
 	dbw 1, LEER
 	dbw 1, QUICK_ATTACK
@@ -1333,7 +1333,7 @@ ElekidEvosAttacks:
 	db 0 ; no more level-up moves
 
 MagbyEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, MAGMAR
+	evolve EVOLVE_LEVEL, 30, MAGMAR
 	db 0 ; no more evolutions
 	dbw 1, EMBER
 	dbw 7, LEER
@@ -1418,7 +1418,7 @@ SuicuneEvosAttacks:
 	db 0 ; no more level-up moves
 
 LarvitarEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, PUPITAR
+	evolve EVOLVE_LEVEL, 30, PUPITAR
 	db 0 ; no more evolutions
 	dbw 1, BITE
 	dbw 1, SCARY_FACE
@@ -1433,7 +1433,7 @@ LarvitarEvosAttacks:
 	db 0 ; no more level-up moves
 
 PupitarEvosAttacks:
-	dbbw EVOLVE_LEVEL, 55, TYRANITAR
+	evolve EVOLVE_LEVEL, 55, TYRANITAR
 	db 0 ; no more evolutions
 	dbw 1, BITE
 	dbw 1, SCARY_FACE
