@@ -1589,7 +1589,7 @@ ClaydolEvosAttacks:
 	db 0 ; no more level-up moves
 
 MunchlaxEvosAttacks:
-	evolve EVOLVE_HAPPINESS, TR_ANYTIME, SNORLAX
+	evolve EVOLVE_HAPPINESS, SNORLAX
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 6, AMNESIA

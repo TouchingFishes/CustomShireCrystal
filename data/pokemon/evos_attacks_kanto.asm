@@ -1318,7 +1318,7 @@ MagnemiteEvosAttacks:
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
-	dbww EVOLVE_ITEM, THUNDERSTONE, MAGNEZONE
+	evolve EVOLVE_ITEM, THUNDERSTONE, MAGNEZONE
 	db 0 ; no more evolutions
 	dbw 1, METAL_SOUND
 	dbw 1, SUPERSONIC
@@ -1508,7 +1508,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	dbww EVOLVE_ITEM, METAL_COAT, STEELIX
+	evolve EVOLVE_ITEM, METAL_COAT, STEELIX
 	db 0 ; no more evolutions
 	dbw 1, BIND
 	dbw 1, SCREECH
@@ -1852,7 +1852,7 @@ HorseaEvosAttacks:
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
-	dbww EVOLVE_ITEM, DRAGON_SCALE, KINGDRA
+	evolve EVOLVE_ITEM, DRAGON_SCALE, KINGDRA
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, LEER
@@ -1943,7 +1943,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
-	dbww EVOLVE_ITEM, METAL_COAT, SCIZOR
+	evolve EVOLVE_ITEM, METAL_COAT, SCIZOR
 	db 0 ; no more evolutions
 	dbw 1, LEER
 	dbw 1, QUICK_ATTACK
@@ -2076,14 +2076,14 @@ DittoEvosAttacks:
 	db 0 ; no more level-up moves
 
 EeveeEvosAttacks:
-	dbww EVOLVE_ITEM, THUNDERSTONE, JOLTEON
-	dbww EVOLVE_ITEM, WATER_STONE, VAPOREON
-	dbww EVOLVE_ITEM, FIRE_STONE, FLAREON
-	dbww EVOLVE_ITEM, SUN_STONE, ESPEON
-	dbww EVOLVE_ITEM, MOON_STONE, UMBREON
-	dbww EVOLVE_ITEM, LEAF_STONE, LEAFEON
-	evolve EVOLVE_HAPPINESS, TR_ANYTIME, GLACEON
-	dbww EVOLVE_ITEM, DRAGON_SCALE, DRACONEON
+	evolve EVOLVE_ITEM, THUNDERSTONE, JOLTEON
+	evolve EVOLVE_ITEM, WATER_STONE, VAPOREON
+	evolve EVOLVE_ITEM, FIRE_STONE, FLAREON
+	evolve EVOLVE_ITEM, SUN_STONE, ESPEON
+	evolve EVOLVE_ITEM, MOON_STONE, UMBREON
+	evolve EVOLVE_ITEM, LEAF_STONE, LEAFEON
+	evolve EVOLVE_HAPPINESS, GLACEON
+	evolve EVOLVE_ITEM, DRAGON_SCALE, DRACONEON
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWTH
@@ -2142,7 +2142,7 @@ FlareonEvosAttacks:
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
-	dbww EVOLVE_ITEM, UP_GRADE, PORYGON2
+	evolve EVOLVE_ITEM, UP_GRADE, PORYGON2
 	db 0 ; no more evolutions
 	dbw 1, CONVERSION
 	dbw 1, CONVERSION2
