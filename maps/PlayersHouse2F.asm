@@ -165,7 +165,7 @@ if DEF(_DEBUG)
 	givepokemove DRAGON_PULSE,  wPartyMon3, 3
 	; misc pokemon for testing
 	givepoke EEVEE, PLAIN_FORM, 75
-	;givepokemove QUICK_ATTACK,  wPartyMon1, 0
+	givepokemove OUTRAGE,  wPartyMon1, 0
 	;givepokemove SNATCH,  wPartyMon1, 1
 	;givepokemove WHIRLWIND,  wPartyMon1, 2
 	;givepokemove VITAL_THROW,  wPartyMon1, 3
