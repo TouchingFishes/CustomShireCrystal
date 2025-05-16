@@ -144,7 +144,7 @@ MovesGen1:
 	move EFFECT_METRONOME,           0, NORMAL,        100, 10,   0      ;METRONOME
 	move EFFECT_MIRROR_MOVE,         0, FLYING,        100, 20,   0      ;MIRROR_MOVE
 	move EFFECT_SELFDESTRUCT,      200, NORMAL,        100,  5,   0      ;SELFDESTRUCT
-	move EFFECT_NORMAL_HIT,        100, NORMAL,         75, 10,   0      ;EGG_BOMB
+	move EFFECT_NORMAL_HIT,        120, NORMAL,         75, 10,   0      ;EGG_BOMB
 	move EFFECT_PARALYZE_HIT,       30, GHOST,         100, 30,  30      ;LICK
 	move EFFECT_POISON_HIT,         50, POISON,         70, 20,  40      ;SMOG
 	move EFFECT_POISON_HIT,         65, POISON,        100, 20,  30      ;SLUDGE
@@ -163,7 +163,7 @@ MovesGen1:
 	move EFFECT_PARALYZE,            0, NORMAL,         75, 30,   0      ;GLARE
 	move EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE,  100, 15,   0      ;DREAM_EATER
 	move EFFECT_POISON,              0, POISON,         55, 40,   0      ;POISON_GAS
-	move EFFECT_MULTI_HIT,          20, NORMAL,         85, 20,   0      ;BARRAGE
+	move EFFECT_MULTI_HIT,          25, NORMAL,         85, 20,   0      ;BARRAGE
 	move EFFECT_LEECH_HIT,          30, BUG,           100, 15,   0      ;LEECH_LIFE
 	move EFFECT_SLEEP,               0, NORMAL,         75, 10,   0      ;LOVELY_KISS
 	move EFFECT_SKY_ATTACK,        140, FLYING,         90,  5,   0      ;SKY_ATTACK
@@ -388,6 +388,7 @@ MovesGen3:
 	move EFFECT_CONFUSE_HIT,        60, WATER,         100, 20,  20      ;WATER_PULSE
 	move EFFECT_NORMAL_HIT,        120, STEEL,          85,  5,   0      ;DOOM_DESIRE
 	move EFFECT_NORMAL_HIT,        140, PSYCHIC_TYPE,   90,  5,   0      ;PSYCHO_BOOST EFFECT_SELF_SPATK_DN_2_HIT
+	move EFFECT_CONFUSE_HIT,        75, BUG,           100, 15,  20      ;SIGNAL_BEAM
 .IndirectEnd::
 
 POPS

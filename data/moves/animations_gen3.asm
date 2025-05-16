@@ -100,6 +100,7 @@ BattleAnimationsGen3::
 	dw BattleAnim_WaterPulse
 	dw BattleAnim_DoomDesire
 	dw BattleAnim_PsychoBoost
+	dw BattleAnim_SignalBeam
 .IndirectEnd::
 
 BattleAnim_FakeOut:
@@ -2254,23 +2255,6 @@ BattleAnim_XScissor:
 	anim_wait 32
 	anim_ret
 
-;BattleAnim_SignalBeam:
-;	anim_1gfx BATTLE_ANIM_GFX_GLOW
-;	anim_setobjpal PAL_BATTLE_OB_GRAY, PAL_BTLCUSTOM_SIGNAL_BEAM_RED
-;	anim_setobjpal PAL_BATTLE_OB_YELLOW, PAL_BTLCUSTOM_SIGNAL_BEAM_BLUE
-;	anim_bgeffect BATTLE_BG_EFFECT_ALTERNATE_HUES, $0, $2, $0
-;	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-;.loop
-;	anim_sound 0, 0, SFX_SPITE
-;	anim_obj BATTLE_ANIM_OBJ_SIGNAL_BEAM_RED, 64, 92, $0
-;	anim_wait 4
-;	anim_sound 0, 0, SFX_SPITE
-;	anim_obj BATTLE_ANIM_OBJ_SIGNAL_BEAM_BLUE, 64, 92, $0
-;	anim_wait 4
-;	anim_loop 8, .loop
-;	anim_wait 64
-;	anim_ret
-
 BattleAnim_ShadowPunch:
 	anim_1gfx BATTLE_ANIM_GFX_HIT
 	anim_battlergfx_2row
@@ -3115,4 +3099,21 @@ BattleAnim_PsychoBoost:
 	anim_wait 4
 	anim_loop 2, .loop4
 	anim_wait 32
+	anim_ret
+
+BattleAnim_SignalBeam:
+	anim_1gfx BATTLE_ANIM_GFX_GLOW
+	anim_setobjpal PAL_BATTLE_OB_GRAY, PAL_BTLCUSTOM_SIGNAL_BEAM_RED
+	anim_setobjpal PAL_BATTLE_OB_YELLOW, PAL_BTLCUSTOM_SIGNAL_BEAM_BLUE
+	anim_bgeffect BATTLE_BG_EFFECT_ALTERNATE_HUES, $0, $2, $0
+	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+.loop
+	anim_sound 0, 0, SFX_SPITE
+	anim_obj BATTLE_ANIM_OBJ_SIGNAL_BEAM_RED, 64, 92, $0
+	anim_wait 4
+	anim_sound 0, 0, SFX_SPITE
+	anim_obj BATTLE_ANIM_OBJ_SIGNAL_BEAM_BLUE, 64, 92, $0
+	anim_wait 4
+	anim_loop 8, .loop
+	anim_wait 64
 	anim_ret

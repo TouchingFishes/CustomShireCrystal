@@ -520,7 +520,7 @@ AmpharosEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
-	dbw 1, THUNDERSHOCK
+	dbw 1, SIGNAL_BEAM
 	dbw 1, THUNDER_WAVE
 	dbw 9, THUNDERSHOCK
 	dbw 18, THUNDER_WAVE
@@ -687,6 +687,7 @@ YanmaEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, FORESIGHT
+	dbw 1, SCREECH
 	dbw 7, QUICK_ATTACK
 	dbw 13, DOUBLE_TEAM
 	dbw 19, SONICBOOM
@@ -694,7 +695,7 @@ YanmaEvosAttacks:
 	dbw 31, SUPERSONIC
 	dbw 37, UPROAR
 	dbw 43, WING_ATTACK
-	dbw 49, SCREECH
+	dbw 49, SIGNAL_BEAM
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
@@ -1241,6 +1242,7 @@ Porygon2EvosAttacks:
 	dbw 1, CONVERSION
 	dbw 1, CONVERSION2
 	dbw 1, TACKLE
+	dbw 1, SIGNAL_BEAM
 	dbw 9, AGILITY
 	dbw 12, PSYBEAM
 	dbw 20, RECOVER

@@ -397,8 +397,8 @@ DraconeonEvosAttacks:
 	dbw 8, SAND_ATTACK
 	dbw 16, DRAGON_RAGE
 	dbw 23, QUICK_ATTACK
-	dbw 30, SLAM
-	dbw 36, DRAGONBREATH
+	dbw 30, MAGICAL_LEAF
+	dbw 36, SLAM
 	dbw 42, SAFEGUARD
 	dbw 47, DRAGON_PULSE
 	dbw 52, RECOVER 
@@ -634,6 +634,7 @@ MasquerainEvosAttacks:
 	dbw 40, STUN_SPORE
 	dbw 47, SILVER_WIND
 	dbw 53, WHIRLWIND
+	dbw 60, SIGNAL_BEAM
 	db 0 ; no more level-up moves
 
 ShroomishEvosAttacks:
@@ -1614,7 +1615,7 @@ PurgislugEvosAttacks:
 	dbw 15, CONFUSION
 	dbw 22, SLUDGE
 	dbw 29, CONFUSE_RAY
-	dbw 36, AMNESIA ;MYSTIC_FLAME
+	dbw 36, MAGIC_COAT
 	dbw 48, ANCIENTPOWER
 	dbw 60, SPIT_UP
 	dbw 60, STOCKPILE

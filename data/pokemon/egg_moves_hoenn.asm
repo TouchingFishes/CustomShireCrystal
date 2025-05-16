@@ -376,6 +376,8 @@ TrapinchEggMoves:
 	dw FOCUS_ENERGY
 	dw GUST
 	dw QUICK_ATTACK
+	dw OUTRAGE
+	dw SIGNAL_BEAM
 	dw -1 ; end
 
 NohfaceEggMoves:
@@ -389,6 +391,7 @@ KrolucadaEggMoves:
 	dw HAZE
 	dw PURSUIT
 	dw RAGE
+	dw SIGNAL_BEAM
 	dw -1 ; end
 
 StunkyEggMoves:
@@ -424,9 +427,11 @@ MunchlaxEggMoves:
 PurgislugEggMoves:
 	dw BARRIER
 	dw MIRROR_COAT
+	dw SIGNAL_BEAM
 	dw RECOVER
 	dw GUNK_SHOT
 	dw ROCK_SLIDE
+	dw MYSTICALFIRE
 	dw -1 ; end
 
 AnorithEggMoves:

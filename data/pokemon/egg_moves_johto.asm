@@ -168,12 +168,14 @@ SpinarakEggMoves:
 	dw DISABLE
 	dw PSYBEAM
 	dw PURSUIT
+	dw SIGNAL_BEAM
 	dw SONICBOOM
 	dw -1 ; end
 
 ChinchouEggMoves:
 	dw AMNESIA
 	dw FLAIL
+	dw SIGNAL_BEAM
 	dw SCREECH
 	dw -1 ; end
 
@@ -325,6 +327,8 @@ MisdreavusEggMoves:
 	dw IMPRISON
 	dw PSYCH_UP
 	dw SCREECH
+	dw MAGICAL_LEAF
+	dw MAGIC_COAT
 	dw -1 ; end
 
 GirafarigEggMoves:
@@ -380,6 +384,7 @@ SnubbullEggMoves:
 QwilfishEggMoves:
 	dw ASTONISH
 	dw BUBBLEBEAM
+	dw SIGNAL_BEAM
 	dw FLAIL
 	dw HAZE
 	dw SUPERSONIC
@@ -454,6 +459,7 @@ RemoraidEggMoves:
 	dw SCREECH
 	dw SUPERSONIC
 	dw THUNDER_WAVE
+	dw SIGNAL_BEAM
 	dw -1 ; end
 
 DelibirdEggMoves:
@@ -473,6 +479,7 @@ MantineEggMoves:
 	dw ROCK_SLIDE
 	dw SLAM
 	dw TWISTER
+	dw SIGNAL_BEAM
 	dw -1 ; end
 
 SkarmoryEggMoves:

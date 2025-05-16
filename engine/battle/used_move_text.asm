@@ -352,7 +352,8 @@ MoveTable:
 	dw WATER_PULSE  ; 15e
 	dw DOOM_DESIRE  ; 15f
 	dw PSYCHO_BOOST ; 160
-	dw NO_MOVE      ; 161
+	dw SIGNAL_BEAM  ; 161
+	dw NO_MOVE      ; 162
 ENDC
 
 DisplayUsedMoveText:

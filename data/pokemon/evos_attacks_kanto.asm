@@ -807,11 +807,11 @@ VenonatEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, DISABLE
 	dbw 1, FORESIGHT
-	dbw 1, TACKLE
+	dbw 1, LEECH_LIFE
 	dbw 9, SUPERSONIC
 	dbw 17, CONFUSION
 	dbw 20, POISONPOWDER
-	dbw 25, LEECH_LIFE
+	dbw 25, SIGNAL_BEAM
 	dbw 28, STUN_SPORE
 	dbw 33, PSYBEAM
 	dbw 36, SLEEP_POWDER
@@ -824,11 +824,11 @@ VenomothEvosAttacks:
 	dbw 1, FORESIGHT
 	dbw 1, SILVER_WIND
 	dbw 1, SUPERSONIC
-	dbw 1, TACKLE
+	dbw 1, LEECH_LIFE
 	dbw 9, SUPERSONIC
 	dbw 17, CONFUSION
 	dbw 20, POISONPOWDER
-	dbw 25, LEECH_LIFE
+	dbw 25, SIGNAL_BEAM
 	dbw 28, STUN_SPORE
 	dbw 31, GUST
 	dbw 36, PSYBEAM
@@ -1397,7 +1397,7 @@ DewgongEvosAttacks:
 	dbw 1, AURORA_BEAM
 	dbw 1, SAFEGUARD
 	dbw 1, HEADBUTT
-	dbw 1, ICY_WIND
+	dbw 1, SIGNAL_BEAM
 	dbw 9, SAFEGUARD
 	dbw 17, ICY_WIND
 	dbw 21, AURORA_BEAM

@@ -355,4 +355,5 @@ MoveNames::
 	li "WATER PULSE"
 	li "DOOM DESIRE"
 	li "PSYCHO BOOST"
+	li "SIGNAL BEAM"
 	assert_list_length NUM_ATTACKS

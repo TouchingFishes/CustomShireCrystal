@@ -365,6 +365,7 @@ MoveDescriptionsGen3:
 	dw WaterPulseDescription
 	dw DoomDesireDescription
 	dw PsychoBoostDescription
+	dw SignalBeamDescription
 .IndirectEnd::
 
 ; Gen 1
@@ -1783,3 +1784,7 @@ DoomDesireDescription:
 PsychoBoostDescription:
 	db   "Full-power. Lowers"
 	next "SPCL.ATK sharply.@"
+
+SignalBeamDescription:
+	db   "An attack that may"
+	next "cause confusion.@"

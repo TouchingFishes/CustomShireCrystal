@@ -360,6 +360,7 @@ DEF GEN2_MOVES EQU const_value - 1
 	const WATER_PULSE  ; 15e
 	const DOOM_DESIRE  ; 15f
 	const PSYCHO_BOOST ; 160
+	const SIGNAL_BEAM  ; 161
 DEF GEN3_MOVES EQU const_value - 1
 
 DEF NUM_ATTACKS EQU const_value - 1

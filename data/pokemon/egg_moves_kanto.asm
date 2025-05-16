@@ -597,6 +597,7 @@ KangaskhanEggMoves:
 HorseaEggMoves:
 	dw AURORA_BEAM
 	dw DISABLE
+	dw SIGNAL_BEAM
 	dw DRAGONBREATH
 	dw DRAGON_RAGE
 	dw FLAIL
