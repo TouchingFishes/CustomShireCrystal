@@ -1521,9 +1521,9 @@ OnixEvosAttacks:
 	dbw 25, RAGE
 	dbw 33, SANDSTORM
 	dbw 37, SLAM
-	dbw 45, IRON_TAIL
-	dbw 49, STONE_EDGE
-	dbw 57, DOUBLE_EDGE
+	dbw 45, STONE_EDGE
+	dbw 49, IRON_TAIL
+	dbw 57, HEAD_SMASH
 	db 0 ; no more level-up moves
 
 DrowzeeEvosAttacks:
@@ -1638,10 +1638,11 @@ ExeggcuteEvosAttacks:
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BARRAGE
-	dbw 1, CONFUSION
+	dbw 1, PSYBEAM
 	dbw 1, HYPNOSIS
-	dbw 19, STOMP
-	dbw 31, EGG_BOMB
+	dbw 1, STOMP
+	dbw 29, EGG_BOMB
+	dbw 41, WOOD_HAMMER
 	db 0 ; no more level-up moves
 
 CuboneEvosAttacks:
@@ -1779,7 +1780,7 @@ RhydonEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ROCK_THROW
 	dbw 1, HORN_ATTACK
-	dbw 1, STOMP
+	dbw 1, TAKE_DOWN
 	dbw 1, SCARY_FACE
 	dbw 10, STOMP
 	dbw 15, ROCK_THROW
@@ -1787,7 +1788,7 @@ RhydonEvosAttacks:
 	dbw 29, HORN_DRILL
 	dbw 38, STONE_EDGE
 	dbw 42, ROCK_WRECKER
-	dbw 46, TAKE_DOWN
+	dbw 46, CRUSH_CLAW
 	dbw 58, EARTHQUAKE
 	dbw 66, MEGAHORN
 	db 0 ; no more level-up moves
@@ -1833,7 +1834,7 @@ KangaskhanEvosAttacks:
 	dbw 7, BITE
 	dbw 13, TAIL_WHIP
 	dbw 19, FAKE_OUT
-	dbw 25, MEGA_PUNCH
+	dbw 25, CRUSH_CLAW
 	dbw 31, RAGE
 	dbw 37, ENDURE
 	dbw 43, DIZZY_PUNCH

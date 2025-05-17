@@ -156,6 +156,7 @@ TorchicEggMoves:
 	dw ROCK_SLIDE
 	dw SMELLINGSALT
 	dw SWAGGER
+	dw CRUSH_CLAW
 	dw -1 ; end
 
 MudkipEggMoves:
@@ -191,6 +192,7 @@ SeedotEggMoves:
 	dw QUICK_ATTACK
 	dw RAZOR_WIND
 	dw TAKE_DOWN
+	dw WOOD_HAMMER
 	dw -1 ; end
 
 VoltrelEggMoves:
@@ -252,6 +254,7 @@ TinkatinkEggMoves:
 	dw SNORE
 	dw SWAGGER
 	dw TAKE_DOWN
+	dw WOOD_HAMMER
 	dw -1 ; end
 
 MakuhitaEggMoves:
@@ -297,6 +300,7 @@ AronEggMoves:
 	dw MIRROR_SHOT
 	dw SMELLINGSALT
 	dw STOMP
+	dw HEAD_SMASH
 	dw -1 ; end
 
 MedititeEggMoves:

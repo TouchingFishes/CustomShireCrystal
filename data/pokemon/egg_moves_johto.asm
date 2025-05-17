@@ -578,6 +578,7 @@ LarvitarEggMoves:
 	dw OUTRAGE
 	dw PURSUIT
 	dw STOMP
+	dw HEAD_SMASH
 NoEggMoves2:
 	dw -1 ; end
 

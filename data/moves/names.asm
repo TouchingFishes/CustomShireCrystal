@@ -359,4 +359,7 @@ MoveNames::
 	li "WODD HAMMER"
 	li "FIERY DANCE"
 	li "HAMMER SMASH"
+	li "HEAD SMASH"
+	li "TWIN BEAM"
+	li "DRAIN LIFE"
 	assert_list_length NUM_ATTACKS

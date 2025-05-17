@@ -356,6 +356,9 @@ MoveTable:
 	dw WOOD_HAMMER  ; 162
 	dw FIERY_DANCE  ; 163
 	dw HAMMER_SMASH ; 164
+	dw HEAD_SMASH   ; 165
+	dw TWIN_BEAM    ; 166
+	dw DRAIN_LIFE   ; 167
 	dw NO_MOVE      ; 165
 ENDC
 

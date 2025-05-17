@@ -67,14 +67,14 @@ if DEF(_DEBUG)
 	;giveitem POKE_BALL, 1
 	;giveitem BLU_APRICORN, 2
 	;giveitem ICE_BERRY
-	;giveitem BICYCLE
+	giveitem DRAGON_SCALE
 	;giveitem GOOD_ROD
 	;giveitem THUNDERSTONE, 10
 	;giveitem FIRE_STONE, 10
 	;giveitem WATER_STONE, 10
 	;giveitem LEAF_STONE, 10
 	;giveitem MOON_STONE, 10
-	;giveitem SUN_STONE, 10
+	giveitem SUN_STONE
 	;giveitem BERRY, 10
 	;giveitem GOLD_BERRY, 10
 	;giveitem MINT_BERRY, 10
@@ -156,16 +156,16 @@ if DEF(_DEBUG)
 	givepoke TYNAMO, PLAIN_FORM, 5;, LEFTOVERS
 	givepoke EEVEE, PLAIN_FORM, 99, LEAF_STONE
 	givepokemove BURNING_SAND,        wPartyMon2, 0
-	givepokemove MIRROR_SHOT,       wPartyMon2, 1
-	givepokemove GUNK_SHOT,   wPartyMon2, 2
+	givepokemove MYSTICALFIRE,       wPartyMon2, 1
+	givepokemove X_SCISSOR,   wPartyMon2, 2
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3
 	givepokemove NIGHT_SLASH,      wPartyMon3, 0
-	givepokemove STONE_EDGE, wPartyMon3, 1
+	givepokemove ROCK_WRECKER, wPartyMon3, 1
 	givepokemove CHARGE_BEAM,   wPartyMon3, 2
 	givepokemove DRAGON_PULSE,  wPartyMon3, 3
 	; misc pokemon for testing
 	givepoke EEVEE, PLAIN_FORM, 75
-	givepokemove SIGNAL_BEAM,  wPartyMon1, 0
+	givepokemove DRAIN_LIFE,  wPartyMon1, 0
 	;givepokemove SNATCH,  wPartyMon1, 1
 	;givepokemove WHIRLWIND,  wPartyMon1, 2
 	;givepokemove VITAL_THROW,  wPartyMon1, 3
@@ -213,7 +213,7 @@ endc
 
 PlayersHouseBookshelfScript:
 	if DEF(_DEBUG)
-	loadwildmon NINJASK, 100
+	loadwildmon EUXINOS, 100
 	startbattle
 	reloadmapafterbattle
 	end

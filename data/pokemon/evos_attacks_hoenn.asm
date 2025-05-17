@@ -314,7 +314,8 @@ EuxinosEvosAttacks:
 	dbw 29, ANCIENTPOWER
 	dbw 36, SCARY_FACE
 	dbw 43, SLASH
-	dbw 50, HYPER_BEAM
+	dbw 50, HEAD_SMASH
+	dwb 57, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 WeavileEvosAttacks:
@@ -815,7 +816,7 @@ TinkatonEvosAttacks:
 	dbw 23, KNOCK_OFF
 	dbw 29, METAL_CLAW
 	dbw 37, SWEET_KISS
-	dbw 40, HYPER_BEAM
+	dbw 38, HAMMER_SMASH
 	dbw 45, SLAM
 	dbw 55, DOUBLE_EDGE
 	dbw 63, SUPERPOWER
@@ -1148,7 +1149,7 @@ CorsoreefEvosAttacks:
 	dbw 18, REFRESH
 	dbw 24, BUBBLEBEAM
 	dbw 29, INGRAIN
-	dbw 35, STONE_EDGE
+	dbw 35, ROCK_BLAST
 	dbw 40, MIRROR_COAT
 	dbw 46, ANCIENTPOWER
 	dbw 54, WATER_SPOUT
@@ -1417,8 +1418,8 @@ KrolucadaEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, STRING_SHOT
 	dbw 10, LEECH_LIFE
-	dbw 20, NIGHT_SLASH
-	dbw 30, MEGA_DRAIN
+	dbw 20, BITE
+	dbw 30, HAZE
 	dbw 40, DEFENSE_CURL
 	dbw 50, PSYBEAM
 	dbw 60, SILVER_WIND
@@ -1429,9 +1430,9 @@ KrolucardEvosAttacks:
 	dbw 1, STRING_SHOT
 	dbw 1, SCRATCH
 	dbw 12, LEECH_LIFE
-	dbw 22, NIGHT_SLASH
-	dbw 32, MEGA_DRAIN
-	dbw 42, GIGA_DRAIN ;DRAIN_LIFE
+	dbw 22, BITE
+	dbw 32, HAZE
+	dbw 42, DRAIN_LIFE
 	dbw 52, EXTRASENSORY
 	dbw 62, SILVER_WIND
 	dbw 67, OMINOUS_WIND
@@ -1490,8 +1491,8 @@ VolcaronaEvosAttacks:
 	dbw 40, PSYBEAM
 	dbw 50, PURSUIT
 	dbw 60, SILVER_WIND
-	dbw 70, FLAMETHROWER
-	dbw 80, TWISTER
+	dbw 70, FIERY_DANCE
+	dbw 80, AIR_CUTTER
 	;dbw 90, FIERY_DANCE
 	db 0 ; no more level-up moves
 
@@ -1627,32 +1628,32 @@ AnorithEvosAttacks:
 	evolve EVOLVE_LEVEL, 40, ARMALDO
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
-	dbw 7, HARDEN
-	dbw 13, MUD_SLAP
-	dbw 19, WATER_GUN
-	dbw 25, METAL_CLAW
+	dbw 7, IRON_DEFENSE
+	dbw 13, ACID
+	dbw 19, METAL_CLAW
+	dbw 25, SLASH
 	dbw 31, PROTECT
-	dbw 37, ANCIENTPOWER
-	dbw 43, FURY_CUTTER
-	dbw 49, SLASH
-	dbw 55, ROCK_BLAST
+	dbw 37, SPIKE_CANNON
+	dbw 43, POISON_FANG
+	dbw 49, CRUSH_CLAW
+	dbw 55, IRON_TAIL
 	db 0 ; no more level-up moves
 
 ArmaldoEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, HARDEN
-	dbw 1, MUD_SLAP
 	dbw 1, SCRATCH
-	dbw 1, WATER_GUN
-	dbw 7, HARDEN
-	dbw 13, MUD_SLAP
-	dbw 19, WATER_GUN
-	dbw 25, METAL_CLAW
+	dbw 1, IRON_DEFENSE
+	dbw 1, ACID
+	dbw 1, METAL_CLAW
+	dbw 7, IRON_DEFENSE
+	dbw 13, ACID
+	dbw 19, METAL_CLAW
+	dbw 25, SLASH
 	dbw 31, PROTECT
-	dbw 37, ANCIENTPOWER
-	dbw 46, FURY_CUTTER
-	dbw 55, SLASH
-	dbw 64, ROCK_BLAST
+	dbw 37, SPIKE_CANNON
+	dbw 46, POISON_TAIL
+	dbw 55, CRUSH_CLAW
+	dbw 64, IRON_TAIL
 	db 0 ; no more level-up moves
 
 FeebasEvosAttacks:
@@ -1851,6 +1852,7 @@ AbomasnowEvosAttacks:
 	dbw 25, INGRAIN
 	dbw 28, TAKE_DOWN
 	dbw 34, HAIL
+	dbw 40, WOOD_HAMMER
 	dbw 42, SWAGGER
 	dbw 53, BLIZZARD
 	dbw 61, SHEER_COLD
@@ -1886,7 +1888,7 @@ GrotleEvosAttacks:
 	dbw 29, MEGA_DRAIN
 	dbw 35, SYNTHESIS
 	dbw 41, CRUNCH
-	dbw 47, GIGA_DRAIN
+	dbw 47, WOOD_HAMMER
 	dbw 53, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
@@ -1904,7 +1906,7 @@ TorterraEvosAttacks:
 	dbw 32, EARTHQUAKE
 	dbw 35, SYNTHESIS
 	dbw 43, CRUNCH
-	dbw 51, GIGA_DRAIN
+	dbw 51, WOOD_HAMMER
 	dbw 59, STONE_EDGE
 	db 0 ; no more level-up moves
 
@@ -2025,7 +2027,7 @@ RelicanthEvosAttacks:
 	dbw 36, DOUBLE_EDGE 
 	dbw 43, ANCIENTPOWER
 	dbw 50, REST
-	dbw 57, STONE_EDGE
+	dbw 57, HEAD_SMASH
 	dbw 64, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2053,7 +2055,7 @@ RaelicEvosAttacks:
 	dbw 25, MAGICAL_LEAF
 	dbw 33, DRAGONBREATH
 	dbw 37, MAGIC_COAT
-	dbw 41, DOUBLE_EDGE
+	dbw 41, WOOD_HAMMER
 	dbw 49, DRAGON_PULSE
 	db 0 ; no more level-up moves
 
@@ -2071,13 +2073,13 @@ RomushuEvosAttacks:
 	dbw 30, STUN_SPORE
 	dbw 38, DRAGONBREATH
 	dbw 47, MAGIC_COAT
-	dbw 56, DOUBLE_EDGE
+	dbw 56, WOOD_HAMMER
 	dbw 63, DRAGON_PULSE
 	db 0 ; no more level-up moves
 
 FusangEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, CONFUSION
+	dbw 1, WOOD_HAMMER
 	dbw 1, HEADBUTT
 	dbw 1, DEFENSE_CURL
 	dbw 1, DRAGONBREATH

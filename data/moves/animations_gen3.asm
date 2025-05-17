@@ -104,6 +104,9 @@ BattleAnimationsGen3::
 	dw BattleAnim_WoodHammer
 	dw BattleAnim_FieryDance
 	dw BattleAnim_HammerSmash
+	dw BattleAnim_HeadSmash
+	dw BattleAnim_TwinBeam
+	dw BattleAnim_DrainLife
 .IndirectEnd::
 
 BattleAnim_FakeOut:
@@ -3173,7 +3176,7 @@ BattleAnim_FieryDance:
 	anim_call BattleAnim_ShowMon_1
 	anim_ret
 
-;just revenge	
+;just revenge for now	
 BattleAnim_HammerSmash:
 	anim_1gfx BATTLE_ANIM_GFX_HIT
 	anim_call BattleAnim_TargetObj_2Row
@@ -3206,4 +3209,70 @@ BattleAnim_HammerSmash:
 	anim_obj BATTLE_ANIM_OBJ_HIT_BIG_YFIX, 136, 32, $0
 	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $14, $2, $0
 	anim_wait 32
+	anim_ret
+
+BattleAnim_HeadSmash:
+	anim_setobjpal PAL_BATTLE_OB_GRAY, PAL_BTLCUSTOM_WATER
+	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $4, $0
+	anim_2gfx BATTLE_ANIM_GFX_BUBBLE, BATTLE_ANIM_GFX_PSYCHIC
+	anim_battlergfx_2row
+	anim_bgeffect BATTLE_BG_EFFECT_WHIRLPOOL, $0, $0, $0
+	anim_sound 6, 2, SFX_BUBBLEBEAM
+	anim_wait 64
+.loop
+	anim_sound 0, 1, SFX_TOXIC
+	anim_obj BATTLE_ANIM_OBJ_WAVE, 64, 88, $2
+	anim_wait 6
+	anim_loop 3, .loop
+	anim_wait 6
+	anim_incbgeffect BATTLE_BG_EFFECT_WHIRLPOOL
+	anim_bgeffect BATTLE_BG_EFFECT_BATTLEROBJ_1ROW, $0, $1, $0
+	anim_wait 6
+	anim_bgeffect BATTLE_BG_EFFECT_VIBRATE_MON, $0, $0, $0
+.loop2
+	anim_sound 0, 1, SFX_LICK
+	anim_wait 3
+	anim_loop 3, .loop2
+	anim_wait 32
+	anim_call BattleAnim_ShowMon_1
+	anim_ret
+
+BattleAnim_TwinBeam:
+	anim_setobjpal PAL_BATTLE_OB_GRAY, PAL_BTLCUSTOM_WATER
+	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $4, $0
+	anim_2gfx BATTLE_ANIM_GFX_BUBBLE, BATTLE_ANIM_GFX_PSYCHIC
+	anim_battlergfx_2row
+	anim_bgeffect BATTLE_BG_EFFECT_WHIRLPOOL, $0, $0, $0
+	anim_sound 6, 2, SFX_BUBBLEBEAM
+	anim_wait 64
+.loop
+	anim_sound 0, 1, SFX_TOXIC
+	anim_obj BATTLE_ANIM_OBJ_WAVE, 64, 88, $2
+	anim_wait 6
+	anim_loop 3, .loop
+	anim_wait 6
+	anim_incbgeffect BATTLE_BG_EFFECT_WHIRLPOOL
+	anim_bgeffect BATTLE_BG_EFFECT_BATTLEROBJ_1ROW, $0, $1, $0
+	anim_wait 6
+	anim_bgeffect BATTLE_BG_EFFECT_VIBRATE_MON, $0, $0, $0
+.loop2
+	anim_sound 0, 1, SFX_LICK
+	anim_wait 3
+	anim_loop 3, .loop2
+	anim_wait 32
+	anim_call BattleAnim_ShowMon_1
+	anim_ret
+
+BattleAnim_DrainLife:
+	anim_2gfx BATTLE_ANIM_GFX_CUT, BATTLE_ANIM_GFX_HIT
+	anim_call BattleAnimSub_Teeth
+.attack
+	anim_sound 0, 1, SFX_BITE
+	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 144, 48, $18
+	anim_wait 12
+	anim_1gfx BATTLE_ANIM_GFX_CHARGE
+.loop
+	anim_call BattleAnimSub_AbsorbParticles
+	anim_loop 4, .loop
+	anim_wait 28
 	anim_ret

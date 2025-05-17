@@ -203,7 +203,7 @@ TotodileEvosAttacks:
 	dbw 13, WATER_GUN
 	dbw 20, BITE
 	dbw 27, SCARY_FACE
-	dbw 35, SLASH
+	dbw 35, CRUSH_CLAW
 	dbw 43, CRUNCH
 	dbw 52, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -218,14 +218,14 @@ CroconawEvosAttacks:
 	dbw 13, WATER_GUN
 	dbw 21, BITE
 	dbw 28, SCARY_FACE
-	dbw 37, SLASH
+	dbw 37, CRUSH_CLAW
 	dbw 45, CRUNCH
 	dbw 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 FeraligatrEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, SCRATCH
+	dbw 1, SLASH
 	dbw 1, LEER
 	dbw 1, RAGE
 	dbw 1, WATER_GUN
@@ -233,7 +233,7 @@ FeraligatrEvosAttacks:
 	dbw 13, WATER_GUN
 	dbw 21, BITE
 	dbw 28, SCARY_FACE
-	dbw 38, SLASH
+	dbw 38, CRUSH_CLAW
 	dbw 47, CRUNCH
 	dbw 58, HYDRO_PUMP
 	dbw 68, SUPERPOWER
@@ -581,7 +581,7 @@ SudowoodoEvosAttacks:
 	dbw 25, ROCK_SLIDE
 	dbw 33, BLOCK
 	dbw 41, FAINT_ATTACK
-	dbw 49, SLAM
+	dbw 49, WOOD_HAMMER
 	dbw 57, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -821,12 +821,12 @@ GirafarigEvosAttacks:
 	dbw 1, TACKLE
 	dbw 1, GROWL
 	dbw 7, ASTONISH
-	dbw 13, CONFUSION
-	dbw 19, STOMP
-	dbw 25, ODOR_SLEUTH
+	dbw 13, STOMP
+	dbw 19, ODOR_SLEUTH
+	dbw 25, PSYBEAM
 	dbw 31, AGILITY
 	dbw 37, BATON_PASS
-	dbw 43, PSYBEAM
+	dbw 43, TWIN_BEAM
 	dbw 49, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -901,9 +901,9 @@ SteelixEvosAttacks:
 	dbw 25, RAGE
 	dbw 33, SANDSTORM
 	dbw 37, CRUNCH
-	dbw 45, IRON_TAIL
-	dbw 49, STONE_EDGE
-	dbw 57, DOUBLE_EDGE
+	dbw 45, STONE_EDGE
+	dbw 49, IRON_TAIL
+	dbw 57, HEAD_SMASH
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:
@@ -1239,6 +1239,7 @@ DonphanEvosAttacks:
 	dbw 33, ROLLOUT
 	dbw 41, RAPID_SPIN
 	dbw 49, EARTHQUAKE
+	dbw 56, HEAD_SMASH
 	db 0 ; no more level-up moves
 
 Porygon2EvosAttacks:
@@ -1402,7 +1403,7 @@ EnteiEvosAttacks:
 	dbw 11, EMBER
 	dbw 21, BURNING_SAND
 	dbw 31, FIRE_SPIN
-	dbw 41, STOMP
+	dbw 41, CRUSH_CLAW
 	dbw 51, FLAMETHROWER
 	dbw 61, SWAGGER
 	dbw 71, FIRE_BLAST

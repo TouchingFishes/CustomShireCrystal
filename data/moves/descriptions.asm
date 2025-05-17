@@ -369,6 +369,9 @@ MoveDescriptionsGen3:
 	dw WoodHammerDescription
 	dw FieryDanceDescription
 	dw HammerSmashDescription
+	dw HeadSmashDescription
+	dw TwinBeamDescription
+	dw DrainLifeDescription
 .IndirectEnd::
 
 ; Gen 1
@@ -1803,3 +1806,15 @@ FieryDanceDescription:
 HammerSmashDescription:
 	db   "1st turn: Attack"
 	next "2nd turn: Rest@"
+
+HeadSmashDescription:
+	db   "A tackle that also"
+	next "hurts the user.@"
+
+TwinBeamDescription:
+	db   "An attack using"
+	next "two psychic beams.@"
+
+DrainLifeDescription:
+	db   "Steals 1/2 of the"
+	next "damage inflicted.@"

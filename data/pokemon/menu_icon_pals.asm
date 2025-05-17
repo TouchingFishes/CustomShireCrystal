@@ -279,7 +279,7 @@ MonMenuIconPals:
 	icon_pals PURPLE, GRAY   ; GLISCOR
 	icon_pals GREEN,  RED    ; LEAFEON
 	icon_pals TEAL,   RED    ; GLACEON
-	icon_pals GRAY,   RED    ; DRACONEON
+	icon_pals GREEN,  RED    ; DRACONEON
 	icon_pals RED,    RED    ; KUJINOUGHT
 	icon_pals BROWN,  RED    ; MLLOY
 	icon_pals GREEN,  RED    ; LOTAD
@@ -357,8 +357,8 @@ MonMenuIconPals:
 	icon_pals GRAY,   RED    ; WYRDEER
 	icon_pals RED,    RED    ; BALTOY
 	icon_pals RED,    RED    ; CLAYDOL
-	icon_pals RED,    RED    ; MUNCHLAX
-	icon_pals RED,    RED    ; PURGISLUG
+	icon_pals BROWN,  BLUE   ; MUNCHLAX
+	icon_pals GREE,   GRAY   ; PURGISLUG
 	icon_pals RED,    RED    ; ANORITH
 	icon_pals RED,    RED    ; ARMALDO
 	icon_pals BLUE,   RED    ; FEEBAS

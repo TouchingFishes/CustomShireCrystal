@@ -244,6 +244,7 @@ NidoranFEggMoves:
 	dw FOCUS_ENERGY
 	dw SUPERSONIC
 	dw TAKE_DOWN
+	dw HEAD_SMASH
 	dw -1 ; end
 
 NidoranMEggMoves:
@@ -407,6 +408,7 @@ GeodudeEggMoves:
 	dw DOUBLE_EDGE
 	dw MEGA_PUNCH
 	dw ROCK_SLIDE
+	dw HEAD_SMASH
 	dw -1 ; end
 
 PonytaEggMoves:

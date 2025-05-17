@@ -392,6 +392,9 @@ MovesGen3:
 	move EFFECT_RECOIL_HIT,        120, GRASS,         100, 15,   0      ;WOOD_HAMMER
 	move EFFECT_BURN_HIT,           80, FIRE,          100, 10,  30      ;FIERY_DANCE EFFECT_SP_ATK_UP_HIT
 	move EFFECT_HYPER_BEAM,        160, STEEL,         100,  5,   0      ;HAMMER_SMASH
+	move EFFECT_RECOIL_HIT,        150, ROCK,           80,  5,   0      ;HEAD_SMASH
+	move EFFECT_DOUBLE_HIT,         40, PSYCHIC_TYPE,  100, 10,   0      ;TWIN_BEAM
+	move EFFECT_LEECH_HIT,          60, DARK,          100, 10,   0      ;DRAIN_LIFE
 .IndirectEnd::
 
 POPS

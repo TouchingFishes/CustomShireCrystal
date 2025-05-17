@@ -364,6 +364,9 @@ DEF GEN2_MOVES EQU const_value - 1
 	const WOOD_HAMMER  ; 162
 	const FIERY_DANCE  ; 163
 	const HAMMER_SMASH ; 164
+	const HEAD_SMASH   ; 165
+	const TWIN_BEAM    ; 166
+	const DRAIN_LIFE   ; 167
 DEF GEN3_MOVES EQU const_value - 1
 
 DEF NUM_ATTACKS EQU const_value - 1
