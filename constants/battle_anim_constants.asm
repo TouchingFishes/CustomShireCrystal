@@ -353,7 +353,10 @@ DEF BATTLEANIM_BASE_TILE EQU 7 * 7  ; Maximum size of a pokemon picture
 	const BATTLE_ANIM_OBJ_GUNK_SHOT_BUBBLES       ; 13e
 	const BATTLE_ANIM_OBJ_BIG_WHIP                ; 13f
 	const BATTLE_ANIM_OBJ_MYSTICAL_FIRE           ; 140
-	const BATTLE_ANIM_OBJ_DRAGON_PULSE        	  ; 141
+	const BATTLE_ANIM_OBJ_DRAGON_PULSE            ; 141
+	const BATTLE_ANIM_OBJ_WOOD_HAMMER             ; 142
+	const BATTLE_ANIM_OBJ_TINY_RISING_ORB         ; 143
+	const BATTLE_ANIM_OBJ_FIERY_DANCE_FLAME       ; 144
 
 DEF NUM_BATTLE_ANIM_OBJS EQU const_value
 
@@ -721,7 +724,9 @@ DEF NUM_BATTLE_ANIM_FUNCS EQU const_value
 	const BATTLE_ANIM_FRAMESET_ROCK_WRECKER_GROW       ; 105
 	const BATTLE_ANIM_FRAMESET_GUNK_SHOT               ; 106
 	const BATTLE_ANIM_FRAMESET_BIG_WHIP                ; 107
-	const BATTLE_ANIM_FRAMESET_DRAGON_PULSE 		   ; 108
+	const BATTLE_ANIM_FRAMESET_DRAGON_PULSE            ; 108
+	const BATTLE_ANIM_FRAMESET_WOOD_HAMMER             ; 109
+	const BATTLE_ANIM_FRAMESET_ENERGY_ORB_TINY_LONG    ; 10a
 DEF NUM_BATTLE_ANIM_FRAMESETS EQU const_value
 
 ; BattleAnimOAMData indexes (see data/battle_anims/oam.asm)
@@ -995,6 +1000,7 @@ DEF NUM_BATTLE_ANIM_FRAMESETS EQU const_value
 	const BATTLE_ANIM_OAMSET_109
 	const BATTLE_ANIM_OAMSET_10A
 	const BATTLE_ANIM_OAMSET_10B
+	const BATTLE_ANIM_OAMSET_10C
 	
 DEF NUM_BATTLE_ANIM_OAMSETS EQU const_value
 
@@ -1132,6 +1138,7 @@ DEF NUM_BATTLE_BG_EFFECTS EQU const_value - 1
 	const BATTLE_ANIM_GFX_TRIANGLE         ; 43
 	const BATTLE_ANIM_GFX_HUGE_ROCK        ; 44
 	const BATTLE_ANIM_GFX_BIG_WHIP         ; 45
+	const BATTLE_ANIM_GFX_WOOD_HAMMER      ; 46
 DEF NUM_BATTLE_ANIM_GFX EQU const_value - 1
 
 ; battle_bg_effect struct members (see macros/ram.asm)
@@ -1218,6 +1225,7 @@ DEF NUM_BG_EFFECTS EQU 5 ; see wActiveBGEffects
 	const PAL_BTLCUSTOM_REFLECT            ; 25
 	const PAL_BTLCUSTOM_MYSTICAL           ; 26
 	const PAL_BTLCUSTOM_DRAGON_PULSE       ; 27
+	const PAL_BTLCUSTOM_HEAT_BG            ; 28
 DEF NUM_CUSTOM_BATTLE_PALETTES EQU const_value
 
 DEF PAL_BTLCUSTOM_DEFAULT EQU -1
