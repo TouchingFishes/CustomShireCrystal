@@ -159,7 +159,7 @@ if DEF(_DEBUG)
 	givepokemove MYSTICALFIRE,       wPartyMon2, 1
 	givepokemove X_SCISSOR,   wPartyMon2, 2
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3
-	givepokemove NIGHT_SLASH,      wPartyMon3, 0
+	givepokemove HAMMER_SMASH,      wPartyMon3, 0
 	givepokemove ROCK_WRECKER, wPartyMon3, 1
 	givepokemove CHARGE_BEAM,   wPartyMon3, 2
 	givepokemove DRAGON_PULSE,  wPartyMon3, 3

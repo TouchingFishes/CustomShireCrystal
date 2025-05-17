@@ -401,14 +401,14 @@ DEF HOENN_POKEMON EQU const_value
 	const BELDUM     ; 179
 	const METANG     ; 17a
 	const METAGROSS  ; 17b
-	const REGIROCK   ; 17c darkrai
+	const REGIROCK   ; 17c darkrai 
 	const REGICE     ; 17d meloetta
 	const REGISTEEL  ; 17e marshadow?
 	const LATIAS     ; 17f
 	const LATIOS     ; 180
-	const KYOGRE     ; 181
-	const GROUDON    ; 182
-	const RAYQUAZA   ; 183
+	const KYOGRE     ; 181 out?
+	const GROUDON    ; 182 out?
+	const RAYQUAZA   ; 183 out?
 	const JIRACHI    ; 184
 	const DEOXYS     ; 185 hoopa?
 DEF NUM_POKEMON EQU const_value - 1

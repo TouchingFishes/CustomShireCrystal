@@ -358,7 +358,7 @@ MonMenuIconPals:
 	icon_pals RED,    RED    ; BALTOY
 	icon_pals RED,    RED    ; CLAYDOL
 	icon_pals BROWN,  BLUE   ; MUNCHLAX
-	icon_pals GREE,   GRAY   ; PURGISLUG
+	icon_pals GREEN,  GRAY   ; PURGISLUG
 	icon_pals RED,    RED    ; ANORITH
 	icon_pals RED,    RED    ; ARMALDO
 	icon_pals BLUE,   RED    ; FEEBAS
