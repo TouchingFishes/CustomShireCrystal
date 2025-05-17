@@ -366,6 +366,9 @@ MoveDescriptionsGen3:
 	dw DoomDesireDescription
 	dw PsychoBoostDescription
 	dw SignalBeamDescription
+	dw WoodHammerDescription
+	dw FieryDanceDescription
+	dw HammerSmashDescription
 .IndirectEnd::
 
 ; Gen 1
@@ -1788,3 +1791,15 @@ PsychoBoostDescription:
 SignalBeamDescription:
 	db   "An attack that may"
 	next "cause confusion.@"
+
+WoodHammerDescription:
+	db   "A bash that also"
+	next "hurts the user.@"
+
+FieryDanceDescription:
+	db   "An attack that may"
+	next "raise SPCL.ATK.@"
+
+HammerSmashDescription:
+	db   "1st turn: Attack"
+	next "2nd turn: Rest@"

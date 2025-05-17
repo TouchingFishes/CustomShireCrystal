@@ -356,4 +356,7 @@ MoveNames::
 	li "DOOM DESIRE"
 	li "PSYCHO BOOST"
 	li "SIGNAL BEAM"
+	li "WODD HAMMER"
+	li "FIERY DANCE"
+	li "HAMMER SMASH"
 	assert_list_length NUM_ATTACKS

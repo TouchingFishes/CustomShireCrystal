@@ -329,7 +329,7 @@ MovesGen3:
 	move EFFECT_NORMAL_HIT,          0, NORMAL,        100, 20,   0      ;CAMOUFLAGE
 	move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;MIRROR_SHOT
 	move EFFECT_SP_DEF_DOWN_HIT,    70, PSYCHIC_TYPE,  100,  5,  50      ;LUSTER_PURGE
-	move EFFECT_SP_DEF_DOWN_HIT,    70, PSYCHIC_TYPE,  100,  5,  50      ;MIST_BALL EFFECT_SP_ATK_DOWN_HIT
+	move EFFECT_SP_ATK_DOWN_HIT,    70, PSYCHIC_TYPE,  100,  5,  50      ;MIST_BALL
 	move EFFECT_NORMAL_HIT,          0, FLYING,        100, 15,   0      ;FEATHERDANCE
 	move EFFECT_ALL_UP_HIT,         60, GHOST,         100,  5,  10      ;OMINOUS_WIND
 	move EFFECT_BURN_HIT,           85, FIRE,           90, 10,  10      ;BLAZE_KICK
@@ -340,8 +340,8 @@ MovesGen3:
 	move EFFECT_NORMAL_HIT,        100, NORMAL,        100, 10,   0      ;HYPER_VOICE
 	move EFFECT_NORMAL_HIT,         60, POISON,        100, 15,  50      ;POISON_FANG EFFECT_TOXIC_HIT
 	move EFFECT_DEFENSE_DOWN_HIT,   75, NORMAL,         95, 10,  50      ;CRUSH_CLAW
-	move EFFECT_HYPER_BEAM,        150, FIRE,           90,  5,   0      ;BLAST_BURN
-	move EFFECT_HYPER_BEAM,        150, WATER,          90,  5,   0      ;HYDRO_CANNON
+	move EFFECT_HYPER_BEAM,        200, FIRE,           90,  5,   0      ;BLAST_BURN
+	move EFFECT_HYPER_BEAM,        200, WATER,          90,  5,   0      ;HYDRO_CANNON
 	move EFFECT_ATTACK_UP_HIT,     100, STEEL,          85, 10,  20      ;METEOR_MASH
 	move EFFECT_FLINCH_HIT,         30, GHOST,         100, 15,  30      ;ASTONISH
 	move EFFECT_NORMAL_HIT,         50, NORMAL,        100, 10,   0      ;WEATHER_BALL
@@ -371,7 +371,7 @@ MovesGen3:
 	move EFFECT_MEAN_LOOK,           0, NORMAL,        100,  5,   0      ;BLOCK
 	move EFFECT_ATTACK_UP,           0, NORMAL,        100, 40,   0      ;HOWL
 	move EFFECT_DEFENSE_DOWN_HIT,   80, DRAGON,        100, 15,  30      ;DRAGON_CLAW
-	move EFFECT_HYPER_BEAM,        150, GRASS,          90,  5,   0      ;FRENZY_PLANT
+	move EFFECT_HYPER_BEAM,        200, GRASS,          90,  5,   0      ;FRENZY_PLANT
 	move EFFECT_NORMAL_HIT,          0, FIGHTING,      100, 20,   0      ;BULK_UP
 	move EFFECT_FLY,                90, FLYING,         85,  5,   0      ;BOUNCE
 	move EFFECT_SPEED_DOWN_HIT,     55, GROUND,         95, 15, 100      ;MUD_SHOT
@@ -389,6 +389,9 @@ MovesGen3:
 	move EFFECT_NORMAL_HIT,        120, STEEL,          85,  5,   0      ;DOOM_DESIRE
 	move EFFECT_NORMAL_HIT,        140, PSYCHIC_TYPE,   90,  5,   0      ;PSYCHO_BOOST EFFECT_SELF_SPATK_DN_2_HIT
 	move EFFECT_CONFUSE_HIT,        75, BUG,           100, 15,  20      ;SIGNAL_BEAM
+	move EFFECT_RECOIL_HIT,        120, GRASS,         100, 15,   0      ;WOOD_HAMMER
+	move EFFECT_BURN_HIT,           80, FIRE,          100, 10,  30      ;FIERY_DANCE EFFECT_SP_ATK_UP_HIT
+	move EFFECT_HYPER_BEAM,        160, STEEL,         100,  5,   0      ;HAMMER_SMASH
 .IndirectEnd::
 
 POPS
