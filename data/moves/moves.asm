@@ -64,7 +64,7 @@ MovesGen1:
 	move EFFECT_RECOIL_HIT,        120, NORMAL,        100, 15,   0      ;DOUBLE_EDGE
 	move EFFECT_DEFENSE_DOWN,        0, NORMAL,        100, 30,   0      ;TAIL_WHIP
 	move EFFECT_POISON_HIT,         30, POISON,        100, 35,  30      ;POISON_STING
-	move EFFECT_POISON_MULTI_HIT,   25, BUG,           100, 20,  20      ;TWINEEDLE
+	move EFFECT_POISON_MULTI_HIT,   35, BUG,           100, 20,  20      ;TWINEEDLE
 	move EFFECT_MULTI_HIT,          15, BUG,            85, 20,   0      ;PIN_MISSILE
 	move EFFECT_DEFENSE_DOWN,        0, NORMAL,        100, 30,   0      ;LEER
 	move EFFECT_FLINCH_HIT,         60, DARK,          100, 25,  30      ;BITE
@@ -154,7 +154,7 @@ MovesGen1:
 	move EFFECT_TRAP_TARGET,        50, WATER,          75, 10,   0      ;CLAMP
 	move EFFECT_ALWAYS_HIT,         60, NORMAL,        100, 20,   0      ;SWIFT
 	move EFFECT_SKULL_BASH,        100, NORMAL,        100, 15,   0      ;SKULL_BASH
-	move EFFECT_MULTI_HIT,          20, NORMAL,        100, 15,   0      ;SPIKE_CANNON what do i do with you
+	move EFFECT_MULTI_HIT,          25, BUG,            80, 15,   0      ;SPIKE_CANNON
 	move EFFECT_SPEED_DOWN_HIT,     10, NORMAL,        100, 35,  10      ;CONSTRICT
 	move EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE,  100, 20,   0      ;AMNESIA
 	move EFFECT_ACCURACY_DOWN,       0, PSYCHIC_TYPE,   80, 15,   0      ;KINESIS

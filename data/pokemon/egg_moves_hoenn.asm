@@ -62,7 +62,7 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw GekoponEggMoves
-	dw TynamoEggMoves
+	dw NoEggMoves3
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw NoEggMoves3
@@ -199,7 +199,6 @@ VoltrelEggMoves:
 	dw THUNDER
 	dw MIRROR_MOVE
 	dw PURSUIT
-	dw DIVE
 	dw RAGE
 	dw SKY_ATTACK
 	dw SUPERSONIC
@@ -210,7 +209,7 @@ SolosisEggMoves:
 	dw DISABLE
 	dw MEAN_LOOK
 	dw MEMENTO
-	dw WILL_O_WISP
+	dw MAGIC_COAT
 	dw -1 ; end
 
 SurskitEggMoves:
@@ -259,7 +258,6 @@ MakuhitaEggMoves:
 	dw COUNTER
 	dw CROSS_CHOP
 	dw DETECT
-	dw DYNAMICPUNCH
 	dw FAINT_ATTACK
 	dw FORESIGHT
 	dw REVENGE
@@ -284,8 +282,12 @@ SkittyEggMoves:
 	dw -1 ; end
 
 SpiritombEggMoves:
-	dw MOONLIGHT
 	dw PSYCH_UP
+	dw PAIN_SPLIT
+	dw SMOKESCREEN
+	dw DESTINY_BOND
+	dw IMPRISON
+	dw GRUDGE
 	dw RECOVER
 	dw -1 ; end
 
@@ -309,21 +311,14 @@ MedititeEggMoves:
 
 ShinxEggMoves:
 	dw CRUNCH
-	dw CURSE
 	dw HEADBUTT
 	dw SWIFT
 	dw UPROAR
+	dw NIGHT_SLASH
 	dw -1 ; end
 
 GekoponEggMoves:
-	dw SUBSTITUTE
-	dw WISH
-	dw -1 ; end
-
-TynamoEggMoves:
-	dw BATON_PASS
-	dw SILVER_WIND
-	;dw TRICK
+	dw MUDDY_WATER
 	dw -1 ; end
 
 CarvanhaEggMoves:
@@ -344,7 +339,6 @@ SmoguanaEggMoves:
 	dw HOWL
 	dw ROLLOUT
 	dw SCARY_FACE
-	dw STOMP
 	dw -1 ; end
 
 TorkoalEggMoves:
@@ -381,33 +375,38 @@ TrapinchEggMoves:
 	dw -1 ; end
 
 NohfaceEggMoves:
-	dw ACID
-	dw COUNTER
-	dw DYNAMICPUNCH
+	dw ASTONISH
+	dw DESTINY_BOND
+	dw DISABLE
+	dw FORESIGHT
+	dw IMPRISON
 	dw -1 ; end
 
 KrolucadaEggMoves:
 	dw AGILITY
 	dw HAZE
 	dw PURSUIT
-	dw RAGE
+	dw GUST
 	dw SIGNAL_BEAM
 	dw -1 ; end
 
 StunkyEggMoves:
 	dw COUNTER
-	dw CURSE
+	dw HAZE
 	dw BODY_SLAM
+	dw SMOG
+	dw PURSUIT
 	dw SPIT_UP
 	dw STOCKPILE
 	dw SWALLOW
 	dw -1 ; end
 
 LarvestaEggMoves:
-	dw BODY_SLAM
-	dw SPIT_UP
-	dw STOCKPILE
-	dw SWALLOW
+	dw ENDURE
+	dw HARDEN
+	dw MORNING_SUN
+	dw SIGNAL_BEAM
+	dw FUTURE_SIGHT
 	dw -1 ; end
 
 ImpidimpEggMoves:
@@ -429,7 +428,6 @@ PurgislugEggMoves:
 	dw MIRROR_COAT
 	dw SIGNAL_BEAM
 	dw RECOVER
-	dw GUNK_SHOT
 	dw ROCK_SLIDE
 	dw MYSTICALFIRE
 	dw -1 ; end
@@ -455,12 +453,12 @@ CastformEggMoves:
 	dw -1 ; end
 
 LitwickEggMoves:
-	dw DISABLE
+	dw ENDURE
 	dw MAGIC_COAT
-	dw ASTONISH
+	dw HAZE
 	dw DESTINY_BOND
 	dw DISABLE
-	dw FORESIGHT
+	dw ACID
 	dw IMPRISON
 	dw -1 ; end
 
@@ -491,31 +489,46 @@ AbsolEggMoves:
 	dw -1 ; end
 
 SnoverEggMoves:
-	dw BLOCK
-	dw SPIKES
+	dw LEECH_SEED
+	dw SKULL_BASH
+	dw STOMP
+	dw GROWTH
+	dw MIST
+	dw MAGICAL_LEAF
 	dw -1 ; end
 
 TurtwigEggMoves:
-	dw CURSE
-	dw FISSURE
+	dw AMNESIA
+	dw BODY_SLAM
 	dw ROCK_SLIDE
 	dw STONE_EDGE
-	dw YAWN
+	dw THRASH
+	dw SUPERPOWER
+	dw SAND_TOMB
+	dw TICKLE
+	dw GROWTH
+	dw SPIT_UP
+	dw STOCKPILE
+	dw SWALLOW
 	dw -1 ; end
 
 ChimcharEggMoves:
 	dw YAWN
-	dw BODY_SLAM
-	dw CONFUSE_RAY
-	dw REFRESH
-	dw SUPERSONIC
+	dw DOUBLE_KICK
+	dw FOCUS_ENERGY
+	dw BLAZE_KICK
+	dw COUNTER
+	dw FAKE_OUT
+	dw ENCORE
 	dw -1 ; end
 
 PiplupEggMoves:
-	dw BARRIER
-	dw BODY_SLAM
-	dw CONFUSE_RAY
-	dw REFRESH
+	dw AGILITY
+	dw FEATHERDANCE
+	dw FLAIL
+	dw YAWN
+	dw HYDRO_PUMP
+	dw SNORE
 	dw SUPERSONIC
 	dw -1 ; end
 
@@ -537,9 +550,7 @@ LuvdiscEggMoves:
 	dw -1 ; end
 
 RaelicEggMoves:
-	dw DRAGON_DANCE
 	dw DRAGON_RAGE
-	dw HYDRO_PUMP
 	dw THRASH
 	dw TWISTER
 NoEggMoves3:

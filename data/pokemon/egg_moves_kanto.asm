@@ -476,6 +476,7 @@ ShellderEggMoves:
 	dw RAPID_SPIN
 	dw SCREECH
 	dw TAKE_DOWN
+	dw SPIKE_CANNON
 	dw -1 ; end
 
 GastlyEggMoves:
@@ -611,6 +612,7 @@ GoldeenEggMoves:
 	dw MIRROR_SHOT
 	dw PSYBEAM
 	dw SLEEP_TALK
+	dw SPIKE_CANNON
 	dw -1 ; end
 
 MrMimeEggMoves:

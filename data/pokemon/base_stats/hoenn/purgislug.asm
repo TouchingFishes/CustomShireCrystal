@@ -1,6 +1,6 @@
 	db 0 ; species ID placeholder
 
-	db  86,  81,  97,  43,  81, 107
+	db  85,  88,  97,  30,  88, 107
 	evs  0,   0,   0,   0,   0,   2
 	;   hp  atk  def  spd  sat  sdf
 
@@ -11,7 +11,7 @@
 	db GENDER_F75 ; gender ratio
 	db 30 ; step cycles to hatch
 	INCBIN "gfx/pokemon/hoenn/purgislug/front.dimensions"
-	db SUCTION_CUPS, SUCTION_CUPS ; wBaseAbility1, wBaseAbility2
+	db STENCH, STENCH ; wBaseAbility1, wBaseAbility2
 	dw NULL ; Padding left-over from the unused back pic
 	db GROWTH_ERRATIC ; growth rate
 	dn EGG_WATER_3, EGG_WATER_3 ; egg groups

@@ -332,6 +332,7 @@ ButterfreeEvosAttacks:
 	dbw 23, WHIRLWIND
 	dbw 28, GUST
 	dbw 34, PSYBEAM
+	dbw 34, SIGNAL_BEAM
 	dbw 40, SAFEGUARD
 	dbw 47, SILVER_WIND
 	db 0 ; no more level-up moves
@@ -525,10 +526,10 @@ SandshrewEvosAttacks:
 	dbw 6, DEFENSE_CURL
 	dbw 11, MUD_SLAP
 	dbw 17, POISON_STING
-	dbw 23, SLASH
-	dbw 30, SWIFT
+	dbw 23, SPIKE_CANNON
+	dbw 30, SLASH
 	dbw 37, ROCK_TOMB
-	dbw 45, SAND_TOMB
+	dbw 45, DIG
 	dbw 53, SANDSTORM
 	db 0 ; no more level-up moves
 
@@ -540,10 +541,11 @@ SandslashEvosAttacks:
 	dbw 6, FURY_SWIPES
 	dbw 11, MUD_SLAP
 	dbw 17, POISON_STING
-	dbw 24, SLASH
+	dbw 22, SLASH
+	dbw 28, SPIKE_CANNON
 	dbw 33, SWIFT
 	dbw 42, ROCK_TOMB
-	dbw 52, SAND_TOMB
+	dbw 52, DIG
 	dbw 62, SANDSTORM
 	db 0 ; no more level-up moves
 
@@ -2010,9 +2012,9 @@ PinsirEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, FOCUS_ENERGY
 	dbw 1, VICEGRIP
-	dbw 7, BIND
+	dbw 7, HARDEN
 	dbw 13, SEISMIC_TOSS
-	dbw 19, HARDEN
+	dbw 19, SPIKE_CANNON
 	dbw 25, REVENGE
 	dbw 31, X_SCISSOR
 	dbw 37, GUILLOTINE

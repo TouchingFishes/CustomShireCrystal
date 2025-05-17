@@ -308,6 +308,7 @@ LedybaEvosAttacks:
 	dbw 22, REFLECT
 	dbw 22, SAFEGUARD
 	dbw 29, BATON_PASS
+	dbw 33, SIGNAL_BEAM
 	dbw 36, SWIFT
 	dbw 43, AGILITY
 	dbw 50, DOUBLE_EDGE
@@ -323,6 +324,7 @@ LedianEvosAttacks:
 	dbw 24, REFLECT
 	dbw 24, SAFEGUARD
 	dbw 33, BATON_PASS
+	dbw 38, SIGNAL_BEAM
 	dbw 42, SWIFT
 	dbw 51, AGILITY
 	dbw 60, DOUBLE_EDGE
@@ -334,9 +336,9 @@ SpinarakEvosAttacks:
 	dbw 1, POISON_STING
 	dbw 1, STRING_SHOT
 	dbw 6, SCARY_FACE
-	dbw 11, CONSTRICT
+	dbw 11, LEECH_LIFE
 	dbw 17, NIGHT_SHADE
-	dbw 23, LEECH_LIFE
+	dbw 23, SPIKE_CANNON
 	dbw 30, FURY_SWIPES
 	dbw 37, SPIDER_WEB
 	dbw 45, AGILITY
@@ -350,9 +352,9 @@ AriadosEvosAttacks:
 	dbw 1, SCARY_FACE
 	dbw 1, STRING_SHOT
 	dbw 6, SCARY_FACE
-	dbw 11, CONSTRICT
+	dbw 11, LEECH_LIFE
 	dbw 17, NIGHT_SHADE
-	dbw 25, LEECH_LIFE
+	dbw 25, SPIKE_CANNON
 	dbw 34, FURY_SWIPES
 	dbw 43, SPIDER_WEB
 	dbw 53, AGILITY
@@ -837,6 +839,7 @@ PinecoEvosAttacks:
 	dbw 15, TAKE_DOWN
 	dbw 22, RAPID_SPIN
 	dbw 29, SPIKES
+	dbw 33, SPIKE_CANNON
 	dbw 36, EXPLOSION
 	dbw 43, DOUBLE_EDGE
 	dbw 50, ZAP_CANNON
@@ -852,6 +855,7 @@ ForretressEvosAttacks:
 	dbw 22, RAPID_SPIN
 	dbw 29, SPIKES
 	dbw 31, MIRROR_SHOT
+	dbw 35, SPIKE_CANNON
 	dbw 39, EXPLOSION
 	dbw 49, DOUBLE_EDGE
 	dbw 59, ZAP_CANNON

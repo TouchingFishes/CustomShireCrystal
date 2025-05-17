@@ -161,6 +161,7 @@ LedybaEggMoves:
 	dw BIDE
 	dw PSYBEAM
 	dw SILVER_WIND
+	dw CHARGE_BEAM
 	dw -1 ; end
 
 SpinarakEggMoves:
@@ -170,6 +171,7 @@ SpinarakEggMoves:
 	dw PURSUIT
 	dw SIGNAL_BEAM
 	dw SONICBOOM
+	dw TWINEEDLE
 	dw -1 ; end
 
 ChinchouEggMoves:
@@ -297,6 +299,7 @@ YanmaEggMoves:
 	dw SILVER_WIND
 	dw WHIRLWIND
 	dw DRAGON_PULSE
+	dw SPIKE_CANNON
 	dw -1 ; end
 
 WooperEggMoves:
@@ -388,6 +391,7 @@ QwilfishEggMoves:
 	dw FLAIL
 	dw HAZE
 	dw SUPERSONIC
+	dw SPIKE_CANNON
 	dw -1 ; end
 
 ShuckleEggMoves:
@@ -489,6 +493,7 @@ SkarmoryEggMoves:
 	dw MIRROR_SHOT
 	dw SKY_ATTACK
 	dw WHIRLWIND
+	dw SPIKE_CANNON
 	dw -1 ; end
 
 HoundourEggMoves:
