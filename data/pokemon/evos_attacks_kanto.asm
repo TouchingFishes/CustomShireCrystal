@@ -2025,15 +2025,15 @@ PinsirEvosAttacks:
 
 TaurosEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, TACKLE
+	dbw 1, RAGE
 	dbw 4, TAIL_WHIP
-	dbw 8, RAGE
+	dbw 8, PURSUIT
 	dbw 13, HORN_ATTACK
 	dbw 19, SCARY_FACE
-	dbw 26, PURSUIT
+	dbw 26, TAKE_DOWN
 	dbw 34, REST
 	dbw 43, THRASH
-	dbw 53, TAKE_DOWN
+	dbw 53, HEAD_SMASH
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:

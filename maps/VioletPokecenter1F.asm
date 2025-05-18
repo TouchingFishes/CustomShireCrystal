@@ -33,6 +33,7 @@ VioletPokecenter1F_ElmsAideScript:
 	setmapscene ROUTE_32, SCENE_ROUTE32_OFFER_SLOWPOKETAIL
 	writetext VioletPokecenterElmsAideGiveEggText
 	waitbutton
+	verbosegiveitem EXP_SHARE
 	closetext
 	readvar VAR_FACING
 	ifequal UP, .AideWalksAroundPlayer
@@ -131,6 +132,10 @@ VioletPokecenterElmsAideGiveEggText:
 	para "<PLAY_G>, you're"
 	line "the only person"
 	cont "we can rely on."
+
+	para "PROF. ELM also"
+	line "asked me to give"
+	cont "you this item."
 
 	para "Please call PROF."
 	line "ELM when that EGG"

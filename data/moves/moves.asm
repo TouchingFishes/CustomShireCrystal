@@ -148,7 +148,7 @@ MovesGen1:
 	move EFFECT_PARALYZE_HIT,       30, GHOST,         100, 30,  30      ;LICK
 	move EFFECT_POISON_HIT,         50, POISON,         70, 20,  40      ;SMOG
 	move EFFECT_POISON_HIT,         65, POISON,        100, 20,  30      ;SLUDGE
-	move EFFECT_FLINCH_HIT,         65, GROUND,         85, 20,  10      ;BONE_CLUB
+	move EFFECT_FLINCH_HIT,         75, GROUND,         85, 20,  25      ;BONE_CLUB
 	move EFFECT_BURN_HIT,          120, FIRE,           85,  5,  10      ;FIRE_BLAST
 	move EFFECT_NORMAL_HIT,         80, WATER,         100, 15,   0      ;WATERFALL
 	move EFFECT_TRAP_TARGET,        50, WATER,          75, 10,   0      ;CLAMP
