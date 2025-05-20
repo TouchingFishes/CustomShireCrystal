@@ -235,7 +235,7 @@ ENDM
 	map_const ROUTE_32,                                    10, 45 ;  1
 	map_const ROUTE_35,                                    10, 18 ;  2
 	map_const ROUTE_36,                                    30,  9 ;  3
-	map_const ROUTE_37,                                    10,  9 ;  4
+	map_const ROUTE_37,                                    10, 18 ;  4
 	map_const VIOLET_CITY,                                 20, 18 ;  5
 	map_const VIOLET_MART,                                  6,  4 ;  6
 	map_const VIOLET_GYM,                                   5,  8 ;  7
@@ -417,7 +417,7 @@ ENDM
 	endgroup
 
 	newgroup CIANWOOD                                             ; 22
-	map_const ROUTE_40,                                    10, 18 ;  1
+	map_const ROUTE_40,                                    20, 20 ;  1
 	map_const ROUTE_41,                                    25, 27 ;  2
 	map_const CIANWOOD_CITY,                               15, 27 ;  3
 	map_const MANIAS_HOUSE,                                 4,  4 ;  4

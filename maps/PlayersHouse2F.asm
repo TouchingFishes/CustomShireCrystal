@@ -161,8 +161,8 @@ if DEF(_DEBUG)
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3
 	givepokemove HAMMER_SMASH,      wPartyMon3, 0
 	givepokemove ROCK_WRECKER, wPartyMon3, 1
-	givepokemove CHARGE_BEAM,   wPartyMon3, 2
-	givepokemove DRAGON_PULSE,  wPartyMon3, 3
+	givepokemove SURF,   wPartyMon3, 2
+	givepokemove FLY,  wPartyMon3, 3
 	; misc pokemon for testing
 	givepoke EEVEE, PLAIN_FORM, 75
 	givepokemove DRAIN_LIFE,  wPartyMon1, 0

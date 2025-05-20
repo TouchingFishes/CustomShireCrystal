@@ -104,6 +104,18 @@
 	const SPRITE_ENTEI ; 64
 	const SPRITE_RAIKOU ; 65
 	const SPRITE_STANDING_YOUNGSTER ; 66
+	const SPRITE_BATO ;67
+	const SPRITE_EUSINE ;68
+	const SPRITE_STEVEN ;69
+	const SPRITE_AGATHA ;70
+	const SPRITE_LORELEI ;71
+	const SPRITE_HEX_MANIAC ;72
+	const SPRITE_VETERAN_F ;73
+	const SPRITE_VETERAN_M ;74
+	const SPRITE_BUG_MANIAC ;75
+	;const SPRITE_DRAGON_TAMER ;76
+	;const SPRITE_ENGINEER ;77
+	;const SPRITE_ROUGHNECK ;78
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

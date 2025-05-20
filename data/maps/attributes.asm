@@ -123,7 +123,7 @@ ENDM
 
 	map_attributes OlivineCity, OLIVINE_CITY, $35, NORTH | WEST
 	connection north, Route39, ROUTE_39, 5
-	connection west, Route40, ROUTE_40, 9
+	connection west, Route40, ROUTE_40, 7
 
 	map_attributes EcruteakCity, ECRUTEAK_CITY, $05, SOUTH | WEST | EAST
 	connection south, Route37, ROUTE_37, 5
@@ -202,11 +202,11 @@ ENDM
 	connection east, Route38, ROUTE_38, 0
 
 	map_attributes Route40, ROUTE_40, $35, SOUTH | EAST
-	connection south, Route41, ROUTE_41, -15
+	connection south, Route41, ROUTE_41, -5
 	connection east, OlivineCity, OLIVINE_CITY, -9
 
 	map_attributes Route41, ROUTE_41, $35, NORTH | WEST
-	connection north, Route40, ROUTE_40, 15
+	connection north, Route40, ROUTE_40, 5
 	connection west, CianwoodCity, CIANWOOD_CITY, 0
 
 	map_attributes Route42, ROUTE_42, $05, WEST | EAST

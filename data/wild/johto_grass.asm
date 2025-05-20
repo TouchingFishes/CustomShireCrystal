@@ -1542,6 +1542,34 @@ JohtoGrassWildMons:
 	dbw 17, IMPIDIMP   ;MEOWTH
 	end_grass_wildmons
 
+	def_grass_wildmons ROUTE_40
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 19, RATTATA
+	dbw 20, RATICATE
+	dbw 20, PIDGEOTTO
+	dbw 19, JIGGLYPUFF  
+	dbw 21, TINKATINK
+	dbw 22, MR__MIME
+	dbw 22, MR__MIME
+	; day
+	dbw 19, RATTATA
+	dbw 20, RATICATE
+	dbw 20, PIDGEOTTO
+	dbw 19, JIGGLYPUFF 
+	dbw 21, TINKATINK
+	dbw 22, MR__MIME
+	dbw 22, MR__MIME
+	; nite
+	dbw 19, RATTATA   
+	dbw 20, NOCTOWL
+	dbw 20, RATICATE   
+	dbw 19, JIGGLYPUFF
+	dbw 21, TINKATINK
+	dbw 22, MR__MIME
+	dbw 22, MR__MIME
+	end_grass_wildmons
+
 	def_grass_wildmons ROUTE_42
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
