@@ -68,14 +68,17 @@ BattleCommand_Curse:
 
 	set SUBSTATUS_CURSE, [hl]
 	call AnimateCurrentMove
-	farcall GetHalfMaxHP
-	farcall SubtractHPFromUser
+	ld hl, GetHalfMaxHP
+	call CallBattleCore
+	ld hl, SubtractHPFromUser
+	call CallBattleCore
 	call UpdateUserInParty
 	ld hl, PutACurseText
 	jmp StdBattleTextbox
 
 .failed
-	jmp BattleEffect_ButItFailed
+	call AnimateFailedMove
+	jmp PrintButItFailed
 
 .cantraise
 
@@ -83,5 +86,6 @@ BattleCommand_Curse:
 
 	ld b, ABILITY + 1
 	call GetStatName
+	call AnimateFailedMove
 	ld hl, WontRiseAnymoreText
-	jmp AnimateFailedMoveText
+	jmp StdBattleTextbox

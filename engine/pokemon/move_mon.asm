@@ -868,7 +868,9 @@ GiveEgg::
 	and a
 	jr nz, .skip_caught_flag
 	ld a, [wCurPartySpecies]
-	call GetPokemonFlagIndex
+	call GetPokemonIndexFromID
+	ld d, h
+	ld e, l
 	dec de
 	push de
 	ld hl, wPokedexCaught

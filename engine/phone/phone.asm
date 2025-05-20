@@ -517,7 +517,8 @@ Phone_StartRinging:
 HangUp_Wait20Frames:
 ; fallthrough
 Phone_Wait20Frames:
-	call Wait20Frames
+	ld c, 20
+	call DelayFrames
 	farjp PhoneRing_CopyTilemapAtOnce
 
 Phone_TextboxWithName:

@@ -21,7 +21,8 @@ BattleCommand_PsychUp:
 	dec b
 	jr nz, .loop
 	pop hl
-	jmp BattleEffect_ButItFailed
+	call AnimateFailedMove
+	jmp PrintButItFailed
 
 .break
 	pop hl
@@ -41,5 +42,6 @@ BattleCommand_PsychUp:
 .calc_enemy_stats
 	call CalcEnemyStats
 .merge
+	call AnimateCurrentMove
 	ld hl, CopiedStatsText
-	jmp AnimateCurrentMoveText
+	jmp StdBattleTextbox

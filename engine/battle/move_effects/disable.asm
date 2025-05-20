@@ -23,7 +23,7 @@ BattleCommand_Disable:
 	ld b, a
 	push bc
 	ld bc, STRUGGLE
-	farcall CompareMove
+	call CompareMove
 	pop bc
 	jr z, .failed
 
@@ -54,7 +54,7 @@ BattleCommand_Disable:
 	swap c
 	add c
 	ld [de], a
-	farcall AnimateCurrentMove
+	call AnimateCurrentMove
 	ld hl, wDisabledMove
 	ldh a, [hBattleTurn]
 	and a
@@ -70,4 +70,4 @@ BattleCommand_Disable:
 	jmp StdBattleTextbox
 
 .failed
-	farjp FailMove
+	jmp FailMove

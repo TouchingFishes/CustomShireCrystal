@@ -96,9 +96,9 @@ EvolveAfterBattle_MasterLoop:
 	jmp c, .skip_evolution_species ; MORN_F or DAY_F < NITE_F
 
 .happiness
-	ld a, [wTempMonHappiness]
-	cp HAPPINESS_TO_EVOLVE
-	jmp c, .skip_evolution_species
+	; ld a, [wTempMonHappiness]
+	; cp HAPPINESS_TO_EVOLVE
+	; jmp c, .skip_evolution_species
 
 	call IsMonHoldingEverstone
 	jmp nc, .skip_evolution_species ; NITE_F or EVE_F >= NITE_F
@@ -165,7 +165,9 @@ EvolveAfterBattle_MasterLoop:
 
 	cp 4
 
-	call nc, GetNextEvoAttackWord ; high_pv
+	jr c, .proceed ; low_pv
+
+	call GetNextEvoAttackWord
 	jr .proceed
 
 .stat
@@ -203,7 +205,9 @@ EvolveAfterBattle_MasterLoop:
 	call GetFarWord
 	call GetPokemonIDFromIndex
 	ld [wEvolutionNewSpecies], a
-	call GetCurNickname
+	ld a, [wCurPartyMon]
+	ld hl, wPartyMonNicknames
+	call GetNickname
 	call CopyName1
 	ld hl, EvolvingText
 	call PrintText
@@ -707,7 +711,8 @@ DetermineEvolutionItemResults::
 	ld a, [wCurItem]
 	cp b
 	jr nz, .skip_species
-	jr GetNextEvoAttackWord
+	call GetNextEvoAttackWord
+	ret
 
 .skip_two_species_parameter_byte
 	inc hl
@@ -809,11 +814,10 @@ GetEvoTime:
 	ld b, a
 	ld a, [wTimeOfDay]
 	cp NITE_F
-
-	; a = carry ? TR_MORNDAY : TR_EVENITE
-	assert TR_MORNDAY + 1 == TR_EVENITE
-	sbc a
-	add TR_EVENITE
-
+	ld a, TR_MORNDAY
+	jr c, .compare
+	ld a, TR_EVENITE
+	
+.compare
 	cp b
 	ret

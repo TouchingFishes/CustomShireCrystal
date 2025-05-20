@@ -9,8 +9,11 @@ BattleCommand_LockOn:
 	ld a, BATTLE_VARS_SUBSTATUS5_OPP
 	call GetBattleVarAddr
 	set SUBSTATUS_LOCK_ON, [hl]
+	call AnimateCurrentMove
+
 	ld hl, TookAimText
-	jmp AnimateCurrentMoveText
+	jmp StdBattleTextbox
 
 .fail
-	jmp BattleEffect_DidntAffect
+	call AnimateFailedMove
+	jmp PrintDidntAffect

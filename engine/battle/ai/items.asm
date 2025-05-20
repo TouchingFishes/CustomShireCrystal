@@ -653,7 +653,8 @@ AI_Switch:
 	ld [wEnemyGoesFirst], a
 	ld hl, wEnemySubStatus4
 	res SUBSTATUS_RAGE, [hl]
-	call SetPlayerTurn
+	xor a
+	ldh [hBattleTurn], a
 	farcall PursuitSwitch
 
 	push af

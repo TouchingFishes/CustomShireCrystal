@@ -88,4 +88,4 @@ BattleCommand_PainSplit:
 	ret
 
 .ButItFailed:
-	jmp BattleEffect_DidntAffect
+	jmp PrintDidntAffect2

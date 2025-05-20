@@ -296,7 +296,8 @@ PokeBallEffect:
 	ld [wEnemyMonSpecies], a
 	ld [wWildMon], a
 
-	call Wait20Frames
+	ld c, 20
+	call DelayFrames
 
 	ld a, [wCurItem]
 	ld [wBattleAnimParam], a
@@ -313,7 +314,8 @@ PokeBallEffect:
 	ld [wFXAnimID], a
 	ld a, d
 	ld [wFXAnimID + 1], a
-	call SetPlayerTurn
+	xor a
+	ldh [hBattleTurn], a
 	ld [wThrownBallWobbleCount], a
 	ld [wNumHits], a
 	predef PlayBattleAnim
@@ -920,7 +922,9 @@ RareCandy_StatBooster_GetParameters:
 	ld a, [hl]
 	ld [wCurPartyLevel], a
 	call GetBaseData
-	jmp GetCurNickname
+	ld a, [wCurPartyMon]
+	ld hl, wPartyMonNicknames
+	jmp GetNickname
 
 RareCandyEffect:
 	ld b, PARTYMENUACTION_HEALING_ITEM
@@ -1262,7 +1266,8 @@ BitterBerryEffect:
 	jr z, .done
 
 	res SUBSTATUS_CONFUSED, [hl]
-	call SetPlayerTurn
+	xor a
+	ldh [hBattleTurn], a
 	call UseItemText
 
 	ld hl, ConfusedNoMoreText
@@ -1777,7 +1782,8 @@ XItemEffect:
 	inc hl
 	inc hl
 	ld b, [hl]
-	call SetPlayerTurn
+	xor a
+	ldh [hBattleTurn], a
 	ld [wAttackMissed], a
 	ld [wEffectFailed], a
 	farcall RaiseStat

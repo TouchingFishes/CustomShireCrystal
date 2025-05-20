@@ -864,7 +864,8 @@ PokegearPhone_MakePhoneCall:
 	ld a, [wPokegearPhoneSelectedPerson]
 	ld b, a
 	call MakePhoneCallFromPokegear
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 	ld hl, wOptions
 	set NO_TEXT_SCROLL, [hl]
 	ld a, $1
@@ -2463,7 +2464,10 @@ Pokedex_GetArea:
 	ret
 
 .clear
-	call ClearSprites
+	ld hl, wShadowOAM
+	ld bc, wShadowOAMEnd - wShadowOAM
+	xor a
+	rst ByteFill
 	scf
 	ret
 

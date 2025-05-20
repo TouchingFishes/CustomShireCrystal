@@ -12,8 +12,9 @@ BattleCommand_Foresight:
 	jr nz, .failed
 
 	set SUBSTATUS_IDENTIFIED, [hl]
+	call AnimateCurrentMove
 	ld hl, IdentifiedText
-	jmp AnimateCurrentMoveText
+	jmp StdBattleTextbox
 
 .failed
 	jmp FailMove

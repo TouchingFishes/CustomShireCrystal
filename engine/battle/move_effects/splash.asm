@@ -1,4 +1,4 @@
 BattleCommand_Splash:
+	call AnimateCurrentMove
 	farcall StubbedTrainerRankings_Splash
-	ld hl, NothingHappenedText
-	jmp AnimateCurrentMoveText
+	jmp PrintNothingHappened

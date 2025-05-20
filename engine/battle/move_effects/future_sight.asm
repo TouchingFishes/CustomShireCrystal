@@ -71,5 +71,6 @@ BattleCommand_FutureSight:
 .failed
 	pop bc
 	call ResetDamage
-	call BattleEffect_ButItFailed
+	call AnimateFailedMove
+	call PrintButItFailed
 	jmp EndMoveEffect

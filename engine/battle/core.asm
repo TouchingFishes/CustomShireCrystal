@@ -136,7 +136,9 @@ WildFled_EnemyFled_LinkBattleCanceled:
 	ld de, SFX_RUN
 	call WaitPlaySFX
 	call SetPlayerTurn
-	jmp EndBattle
+	ld a, 1
+	ld [wBattleEnded], a
+	ret
 
 BattleTurn:
 .loop
@@ -868,6 +870,7 @@ Battle_EnemyFirst:
 	call TryEnemyFlee
 	jmp c, WildFled_EnemyFled_LinkBattleCanceled
 	call SetEnemyTurn
+	ld a, $1
 	ld [wEnemyGoesFirst], a
 	farcall AI_SwitchOrTryItem
 	jr c, .switch_item
@@ -1120,7 +1123,8 @@ ResidualDamage:
 
 .fainted
 	call RefreshBattleHuds
-	call Wait20Frames
+	ld c, 20
+	call DelayFrames
 	xor a
 	ret
 
@@ -1514,7 +1518,9 @@ HandleFutureSight:
 	ld a, EFFECTIVE
 	ld [wTypeModifier], a
 	farcall DoMove
-	call ResetDamage
+	xor a
+	ld [wCurDamage], a
+	ld [wCurDamage + 1], a
 
 	ld a, BATTLE_VARS_MOVE
 	call GetBattleVarAddr
@@ -1725,6 +1731,7 @@ HandleWeather:
 	call SetEnemyTurn
 	call .SandstormDamage
 	call SetPlayerTurn
+	jr .SandstormDamage
 
 .SandstormDamage:
 	ld a, BATTLE_VARS_SUBSTATUS3
@@ -2080,7 +2087,9 @@ HandleEnemyMonFaint:
 	dec a
 	jr nz, .trainer
 
-	jmp EndBattle
+	ld a, 1
+	ld [wBattleEnded], a
+	ret
 
 .trainer
 	call CheckEnemyTrainerDefeated
@@ -2094,7 +2103,9 @@ HandleEnemyMonFaint:
 	call AskUseNextPokemon
 	jr nc, .dont_flee
 
-	jmp EndBattle
+	ld a, 1
+	ld [wBattleEnded], a
+	ret
 
 .dont_flee
 	call ForcePlayerMonChoice
@@ -2897,13 +2908,9 @@ ForcePickSwitchMonInBattle:
 	xor a
 	ret
 
-EndBattle:
+LostBattle:
 	ld a, 1
 	ld [wBattleEnded], a
-	ret
-
-LostBattle:
-	call EndBattle
 
 	ld a, [wInBattleTowerBattle]
 	bit IN_BATTLE_TOWER_BATTLE_F, a
@@ -4029,6 +4036,7 @@ SendOutPlayerMon:
 	xor a
 	ld [wEnemyWrapCount], a
 	call SetPlayerTurn
+	xor a
 	ld [wNumHits], a
 	ld [wBattleAnimParam], a
 	ld de, ANIM_SEND_OUT_MON
@@ -4225,7 +4233,8 @@ PursuitSwitch:
 RecallPlayerMon:
 	ldh a, [hBattleTurn]
 	push af
-	call SetPlayerTurn
+	xor a
+	ldh [hBattleTurn], a
 	ld [wNumHits], a
 	ld de, ANIM_RETURN_MON
 	call Call_PlayBattleAnim
@@ -7219,7 +7228,9 @@ GiveExperiencePoints:
 	ld [wStringBuffer2 + 1], a
 	ldh a, [hQuotient + 2]
 	ld [wStringBuffer2], a
-	call GetCurNickname
+	ld a, [wCurPartyMon]
+	ld hl, wPartyMonNicknames
+	call GetNickname
 	ld hl, Text_MonGainedExpPoint
 	call BattleTextbox
 	ld a, [wStringBuffer2 + 1]
@@ -7675,7 +7686,8 @@ AnimateExpBar:
 	call WaitSFX
 	ld de, SFX_EXP_BAR
 	call PlaySFX
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 	pop bc
 	ret
 
@@ -8056,7 +8068,8 @@ DropPlayerSub:
 GetBattleMonBackpic_DoAnim:
 	ldh a, [hBattleTurn]
 	push af
-	call SetPlayerTurn
+	xor a
+	ldh [hBattleTurn], a
 	ld a, BANK(BattleAnimCommands)
 	call FarCall_hl
 	pop af
@@ -9049,7 +9062,8 @@ BattleStartMessage:
 	call PlaySFX
 	call WaitSFX
 
-	call Wait20Frames
+	ld c, 20
+	call DelayFrames
 
 	farcall Battle_GetTrainerName
 
@@ -9062,7 +9076,9 @@ BattleStartMessage:
 
 	xor a
 	ld [wNumHits], a
-	call SetEnemyTurn
+	ld a, 1
+	ldh [hBattleTurn], a
+	ld a, 1
 	ld [wBattleAnimParam], a
 	ld de, ANIM_SEND_OUT_MON
 	call Call_PlayBattleAnim

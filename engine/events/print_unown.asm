@@ -195,7 +195,8 @@ endc
 	ld b, a
 	call Get2bpp
 	call CloseSRAM
-	jmp Wait20Frames
+	ld c, 20
+	jmp DelayFrames
 
 AlphRuinsStampString:
 	db " ALPH RUINS STAMP@"

@@ -170,7 +170,8 @@ INCLUDE "gfx/overworld/heal_machine.pal"
 .palette_loop
 	push bc
 	call .FlashPalettes
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 	pop bc
 	dec c
 	jr nz, .palette_loop

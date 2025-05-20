@@ -51,9 +51,11 @@ BattleCommand_Present:
 	call FarCall_hl
 	jr c, .already_fully_healed
 
-	farcall GetQuarterMaxHP
+	ld hl, GetQuarterMaxHP
+	call CallBattleCore
 	call BattleCommand_SwitchTurn
-	farcall RestoreHP
+	ld hl, RestoreHP
+	call CallBattleCore
 	call BattleCommand_SwitchTurn
 	ld hl, RegainedHealthText
 	call StdBattleTextbox
@@ -65,8 +67,9 @@ BattleCommand_Present:
 	call BattleCommand_SwitchTurn
 	call _CheckBattleScene
 	jr nc, .do_animation
+	call AnimateFailedMove
 	ld hl, PresentFailedText
-	call AnimateFailedMoveText
+	call StdBattleTextbox
 .do_animation
 	jmp EndMoveEffect
 

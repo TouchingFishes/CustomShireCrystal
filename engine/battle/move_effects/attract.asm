@@ -12,10 +12,11 @@ BattleCommand_Attract:
 	jr nz, .failed
 
 	set SUBSTATUS_IN_LOVE, [hl]
+	call AnimateCurrentMove
 
 ; 'fell in love!'
 	ld hl, FellInLoveText
-	jmp AnimateCurrentMoveText
+	jmp StdBattleTextbox
 
 .failed
 	jmp FailMove

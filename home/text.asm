@@ -491,14 +491,11 @@ Paragraph::
 	lb bc, TEXTBOX_INNERH - 1, TEXTBOX_INNERW
 	call ClearBox
 	call UnloadBlinkingCursor
-	call Wait20Frames
+	ld c, 20
+	call DelayFrames
 	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY
 	pop de
 	jmp NextChar
-
-Wait20Frames::
-	ld c, 20
-	jmp DelayFrames
 
 _ContText::
 	ld a, [wLinkMode]
@@ -528,7 +525,11 @@ ContText::
 	ld de, .cont
 	ld b, h
 	ld c, l
-	jmp PlaceCommandCharacter
+	rst PlaceString
+	ld h, b
+	ld l, c
+	pop de
+	jmp NextChar
 
 .cont: db "<_CONT>@"
 
@@ -941,7 +942,8 @@ TextCommand_DOTS::
 	ldh a, [hJoyDown]
 	and A_BUTTON | B_BUTTON
 	jr nz, .next
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 .next
 	pop de
 	dec d
@@ -951,10 +953,6 @@ TextCommand_DOTS::
 	ld c, l
 	pop hl
 	ret
-
-Wait10Frames::
-	ld c, 10
-	jmp DelayFrames
 
 TextCommand_WAIT_BUTTON::
 ; wait for button press; don't show arrow

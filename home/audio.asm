@@ -9,12 +9,14 @@ InitSound::
 	ldh a, [hROMBank]
 	push af
 	ld a, BANK(_InitSound)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	call _InitSound
 
 	pop af
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	jmp PopAFBCDEHL
 
@@ -27,24 +29,28 @@ UpdateSound::
 	ldh a, [hROMBank]
 	push af
 	ld a, BANK(_UpdateSound)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	call _UpdateSound
 
 	pop af
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	jmp PopAFBCDEHL
 
 _LoadMusicByte::
 ; [wCurMusicByte] = [a:de]
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	ld a, [de]
 	ld [wCurMusicByte], a
 	ld a, BANK(LoadMusicByte)
 
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 	ret
 
 PlayMusic::
@@ -58,7 +64,8 @@ PlayMusic::
 	ldh a, [hROMBank]
 	push af
 	ld a, BANK(_PlayMusic) ; aka BANK(_InitSound)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	ld a, e
 	and a
@@ -72,7 +79,8 @@ PlayMusic::
 
 .end
 	pop af
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 	jmp PopAFBCDEHL
 
 PlayMusic2::
@@ -86,7 +94,8 @@ PlayMusic2::
 	ldh a, [hROMBank]
 	push af
 	ld a, BANK(_PlayMusic)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	push de
 	ld de, MUSIC_NONE
@@ -96,7 +105,8 @@ PlayMusic2::
 	call _PlayMusic
 
 	pop af
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	jmp PopAFBCDEHL
 
@@ -113,7 +123,8 @@ PlayCry::
 
 	; Cries are stuck in one bank.
 	ld a, BANK(PokemonCries)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	ld hl, PokemonCries
 rept MON_CRY_LENGTH
@@ -135,12 +146,14 @@ endr
 	ld [wCryLength + 1], a
 
 	ld a, BANK(_PlayCry)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	call _PlayCry
 
 	pop af
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	jmp PopAFBCDEHL
 
@@ -169,14 +182,16 @@ PlaySFX::
 	ldh a, [hROMBank]
 	push af
 	ld a, BANK(_PlaySFX)
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 	ld a, e
 	ld [wCurSFX], a
 	call _PlaySFX
 
 	pop af
-	rst Bankswitch
+	ldh [hROMBank], a
+	ld [MBC3RomBank], a
 
 .done
 	jmp PopAFBCDEHL

@@ -5,7 +5,7 @@ BattleCommand_BatonPass:
 
 ; Need something to switch to
 	call CheckAnyOtherAlivePartyMons
-	jmp z, BattleEffect_ButItFailed
+	jmp z, FailedBatonPass
 
 	call UpdateBattleMonInParty
 	call AnimateCurrentMove
@@ -32,18 +32,19 @@ BattleCommand_BatonPass:
 	call SetDefaultBGPAndOBP
 	call BatonPass_LinkPlayerSwitch
 
-	farcall PassedBattleMonEntrance
+	ld hl, PassedBattleMonEntrance
+	call CallBattleCore
 
-	jr ResetBatonPassStatus
+	jmp ResetBatonPassStatus
 
 .Enemy:
 ; Wildmons don't have anything to switch to
 	ld a, [wBattleMode]
 	dec a ; WILDMON
-	jmp z, BattleEffect_ButItFailed
+	jr z, FailedBatonPass
 
 	call CheckAnyOtherAliveEnemyMons
-	jmp z, BattleEffect_ButItFailed
+	jr z, FailedBatonPass
 
 	call UpdateEnemyMonInParty
 	call AnimateCurrentMove
@@ -52,13 +53,17 @@ BattleCommand_BatonPass:
 ; Passed enemy PartyMon entrance
 	xor a
 	ld [wEnemySwitchMonIndex], a
-	farcall EnemySwitch_SetMode
-	farcall ResetBattleParticipants
+	ld hl, EnemySwitch_SetMode
+	call CallBattleCore
+	ld hl, ResetBattleParticipants
+	call CallBattleCore
 	ld a, TRUE
 	ld [wApplyStatLevelMultipliersToEnemy], a
-	farcall ApplyStatLevelMultiplierOnAllStats
+	ld hl, ApplyStatLevelMultiplierOnAllStats
+	call CallBattleCore
 
-	farcall SpikesDamage
+	ld hl, SpikesDamage
+	call CallBattleCore
 
 	jr ResetBatonPassStatus
 
@@ -71,7 +76,8 @@ BatonPass_LinkPlayerSwitch:
 	ld [wBattlePlayerAction], a
 
 	call LoadStandardMenuHeader
-	farcall LinkBattleSendReceiveAction
+	ld hl, LinkBattleSendReceiveAction
+	call CallBattleCore
 	call CloseWindow
 
 	xor a ; BATTLEPLAYERACTION_USEMOVE
@@ -84,7 +90,8 @@ BatonPass_LinkEnemySwitch:
 	ret z
 
 	call LoadStandardMenuHeader
-	farcall LinkBattleSendReceiveAction
+	ld hl, LinkBattleSendReceiveAction
+	call CallBattleCore
 
 	ld a, [wOTPartyCount]
 	add BATTLEACTION_SWITCH1
@@ -101,6 +108,10 @@ BatonPass_LinkEnemySwitch:
 	ld [wBattleAction], a
 .switch
 	jmp CloseWindow
+
+FailedBatonPass:
+	call AnimateFailedMove
+	jmp PrintButItFailed
 
 ResetBatonPassStatus:
 ; Reset status changes that aren't passed by Baton Pass.

@@ -52,7 +52,9 @@ CheckCanLearnMoveTutorMove:
 	predef CanLearnTMHMMove
 
 	push bc
-	call GetCurNickname
+	ld a, [wCurPartyMon]
+	ld hl, wPartyMonNicknames
+	call GetNickname
 	pop bc
 
 	ld a, c

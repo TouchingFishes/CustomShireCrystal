@@ -8,5 +8,7 @@ BattleCommand_Endure:
 	call GetBattleVarAddr
 	set SUBSTATUS_ENDURE, [hl]
 
+	call AnimateCurrentMove
+
 	ld hl, BracedItselfText
-	farjp AnimateCurrentMoveText
+	jmp StdBattleTextbox

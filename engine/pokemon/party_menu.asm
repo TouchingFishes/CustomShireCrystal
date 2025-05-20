@@ -729,7 +729,9 @@ YouHaveNoPKMNString:
 	db "You have no <PK><MN>!@"
 
 PrintPartyMenuActionText:
-	call GetCurNickname
+	ld a, [wCurPartyMon]
+	ld hl, wPartyMonNicknames
+	call GetNickname
 	ld a, [wPartyMenuActionText]
 	and $f
 	ld hl, .MenuActionTexts

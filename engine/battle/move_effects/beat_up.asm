@@ -8,7 +8,8 @@ BattleCommand_BeatUp:
 	bit SUBSTATUS_IN_LOOP, a
 	jr nz, .next_mon
 
-	call Wait20Frames
+	ld c, 20
+	call DelayFrames
 	xor a
 	ld [wPlayerRolloutCount], a
 	ld [wCurBeatUpPartyMon], a
@@ -155,7 +156,7 @@ BattleCommand_BeatUp:
 	call GetPokemonName
 	ld hl, BeatUpAttackText
 	call StdBattleTextbox
-	farjp EnemyAttackDamage
+	jmp EnemyAttackDamage
 
 .finish_beatup
 	ld hl, BeatUpAttackText
@@ -190,7 +191,7 @@ BattleCommand_BeatUp:
 
 .beatup_fail
 	ld b, buildopponentrage_command
-	farjp SkipToBattleCommand
+	jmp SkipToBattleCommand
 
 BattleCommand_BeatUpFailText:
 	ld a, [wBeatUpHitAtLeastOnce]
@@ -200,7 +201,7 @@ BattleCommand_BeatUpFailText:
 	inc a
 	ld [wAttackMissed], a
 
-	farjp PrintButItFailed
+	jmp PrintButItFailed
 
 GetBeatupMonLocation:
 	push bc

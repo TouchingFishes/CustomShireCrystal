@@ -26,8 +26,10 @@ BattleCommand_Nightmare:
 ; Otherwise give the opponent a nightmare.
 
 	set SUBSTATUS_NIGHTMARE, [hl]
+	call AnimateCurrentMove
 	ld hl, StartedNightmareText
-	jmp AnimateCurrentMoveText
+	jmp StdBattleTextbox
 
 .failed
-	jmp BattleEffect_ButItFailed
+	call AnimateFailedMove
+	jmp PrintButItFailed

@@ -65,7 +65,8 @@ endc
 	ld [hl], $2
 	hlcoord 4, 9
 	call DisplayHourOClock
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 
 .SetHourLoop:
 	call JoyTextDelay
@@ -94,7 +95,8 @@ endc
 	ld [hl], $2
 	hlcoord 12, 9
 	call DisplayMinutesWithMinString
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 
 .SetMinutesLoop:
 	call JoyTextDelay
@@ -395,7 +397,8 @@ SetDayOfWeek:
 	hlcoord 10, 5
 	call .PlaceWeekdayString
 	call ApplyTilemap
-	call Wait10Frames
+	ld c, 10
+	call DelayFrames
 .loop2
 	call JoyTextDelay
 	call .GetJoypadAction

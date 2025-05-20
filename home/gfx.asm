@@ -115,10 +115,10 @@ LoadFontsExtra::
 	farjp LoadFrame
 
 DecompressRequest2bpp::
-	ldh a, [rSVBK]
+	ld a, [rSVBK]
 	push af
 	ld a, BANK(wDecompressScratch)
-	ldh [rSVBK], a
+	ld [rSVBK], a
 
 	push de
 	push bc
@@ -134,7 +134,7 @@ DecompressRequest2bpp::
 	call Request2bpp
 
 	pop af
-	ldh [rSVBK], a
+	ld [rSVBK], a
 	ret
 
 FarCopyBytes::

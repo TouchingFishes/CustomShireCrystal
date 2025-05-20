@@ -62,12 +62,12 @@ BattleCommand_StoreEnergy:
 	ld [hl], a
 
 	ld b, unleashenergy_command
-	farjp SkipToBattleCommand
+	jmp SkipToBattleCommand
 
 .still_storing
 	ld hl, StoringEnergyText
 	call StdBattleTextbox
-	farjp EndMoveEffect
+	jmp EndMoveEffect
 
 BattleCommand_UnleashEnergy:
 	ld de, wPlayerDamageTaken
@@ -94,5 +94,5 @@ BattleCommand_UnleashEnergy:
 	ld [bc], a
 	ld a, 1
 	ld [wBattleAnimParam], a
-	farcall AnimateCurrentMove
-	farjp EndMoveEffect
+	call AnimateCurrentMove
+	jmp EndMoveEffect
