@@ -14,7 +14,7 @@
 	db ROCK_HEAD, ROCK_HEAD ; wBaseAbility1, wBaseAbility2
 	dw NULL ; Padding left-over from the unused back pic
 	db GROWTH_SLOW ; growth rate
-	dn EGG_DRAGON, EGG_DRAGON ; egg groups
+	dn EGG_DRAGON, EGG_PLANT ; egg groups
 
 	; tm/hm learnset
 	tmhm 
