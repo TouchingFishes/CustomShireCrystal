@@ -10,11 +10,9 @@ AlphabeticalPokedexOrder:
 	dw AIPOM
 	dw ALAKAZAM
 	dw AMPHAROS
-	dw ANORITH
 	dw ARBOK
 	dw ARCANINE
 	dw ARIADOS
-	dw ARMALDO
 	dw ARON
 	dw ARTICUNO
 	dw AZUMARILL
@@ -167,6 +165,7 @@ AlphabeticalPokedexOrder:
 	dw LANTURN
 	dw LAPRAS
 	dw LARVESTA
+	dw LARVICID
 	dw LARVITAR
 	dw LATIAS
 	dw LATIOS
@@ -243,6 +242,7 @@ AlphabeticalPokedexOrder:
 	dw ONIX
 	dw PARAS
 	dw PARASECT
+	dw PENDRAGON
 	dw PERSIAN
 	dw PHANPY
 	dw PICHU

@@ -96,8 +96,8 @@ EvosAttacksPointers3::
 	dw ClaydolEvosAttacks
 	dw MunchlaxEvosAttacks
 	dw PurgislugEvosAttacks
-	dw AnorithEvosAttacks
-	dw ArmaldoEvosAttacks
+	dw LarvicidEvosAttacks
+	dw PendragonEvosAttacks
 	dw FeebasEvosAttacks
 	dw MiloticEvosAttacks
 	dw CastformEvosAttacks
@@ -1625,8 +1625,8 @@ PurgislugEvosAttacks:
 	dbw 67, EXTRASENSORY
 	db 0 ; no more level-up moves
 
-AnorithEvosAttacks:
-	evolve EVOLVE_LEVEL, 40, ARMALDO
+LarvicidEvosAttacks:
+	evolve EVOLVE_LEVEL, 40, PENDRAGON
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 7, IRON_DEFENSE
@@ -1640,7 +1640,7 @@ AnorithEvosAttacks:
 	dbw 55, IRON_TAIL
 	db 0 ; no more level-up moves
 
-ArmaldoEvosAttacks:
+PendragonEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, IRON_DEFENSE

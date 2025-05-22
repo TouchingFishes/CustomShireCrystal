@@ -291,6 +291,8 @@ NewPokedexOrder:
 	dw HOUNDOOM
 	dw SLUGMA
 	dw MAGCARGO
+	dw LARVICID
+	dw PENDRAGON
 	dw SNEASEL
 	dw WEAVILE
 	dw TRAPINCH
@@ -385,8 +387,6 @@ NewPokedexOrder:
 	dw SPOINK
 	dw GRUMPIG
 	dw SPINDA
-	dw ANORITH
-	dw ARMALDO
 	dw REGIROCK
 	dw REGICE
 	dw REGISTEEL

@@ -95,7 +95,7 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw MunchlaxEggMoves
 	dw PurgislugEggMoves
-	dw AnorithEggMoves
+	dw LarvicidEggMoves
 	dw NoEggMoves3
 	dw FeebasEggMoves
 	dw NoEggMoves3
@@ -436,7 +436,7 @@ PurgislugEggMoves:
 	dw MYSTICALFIRE
 	dw -1 ; end
 
-AnorithEggMoves:
+LarvicidEggMoves:
 	dw KNOCK_OFF
 	dw RAPID_SPIN
 	dw ROCK_SLIDE

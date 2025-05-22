@@ -728,10 +728,10 @@ INCBIN "gfx/pokemon/hoenn/munchlax/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/munchlax/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/purgislug/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/purgislug/shiny.pal"
-INCBIN "gfx/pokemon/hoenn/anorith/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoenn/anorith/shiny.pal"
-INCBIN "gfx/pokemon/hoenn/armaldo/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoenn/armaldo/shiny.pal"
+INCBIN "gfx/pokemon/hoenn/larvicid/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hoenn/larvicid/shiny.pal"
+INCBIN "gfx/pokemon/hoenn/pendragon/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hoenn/pendragon/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/feebas/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/feebas/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/milotic/normal.gbcpal", middle_colors

@@ -96,8 +96,8 @@ AnimationPointers3:
 	dw ClaydolAnimation
 	dw MunchlaxAnimation
 	dw PurgislugAnimation
-	dw AnorithAnimation
-	dw ArmaldoAnimation
+	dw LarvicidAnimation
+	dw PendragonAnimation
 	dw FeebasAnimation
 	dw MiloticAnimation
 	dw CastformAnimation
@@ -236,8 +236,8 @@ BaltoyAnimation:        INCLUDE "gfx/pokemon/hoenn/baltoy/anim.asm"
 ClaydolAnimation:       INCLUDE "gfx/pokemon/hoenn/claydol/anim.asm"
 MunchlaxAnimation:      INCLUDE "gfx/pokemon/hoenn/munchlax/anim.asm"
 PurgislugAnimation:     INCLUDE "gfx/pokemon/hoenn/purgislug/anim.asm"
-AnorithAnimation:       INCLUDE "gfx/pokemon/hoenn/anorith/anim.asm"
-ArmaldoAnimation:       INCLUDE "gfx/pokemon/hoenn/armaldo/anim.asm"
+LarvicidAnimation:      INCLUDE "gfx/pokemon/hoenn/larvicid/anim.asm"
+PendragonAnimation:     INCLUDE "gfx/pokemon/hoenn/pendragon/anim.asm"
 FeebasAnimation:        INCLUDE "gfx/pokemon/hoenn/feebas/anim.asm"
 MiloticAnimation:       INCLUDE "gfx/pokemon/hoenn/milotic/anim.asm"
 CastformAnimation:      INCLUDE "gfx/pokemon/hoenn/castform/anim.asm"

@@ -96,8 +96,8 @@ FramePointers3:
 	dw ClaydolFrames
 	dw MunchlaxFrames
 	dw PurgislugFrames
-	dw AnorithFrames
-	dw ArmaldoFrames
+	dw LarvicidFrames
+	dw PendragonFrames
 	dw FeebasFrames
 	dw MiloticFrames
 	dw CastformFrames
@@ -236,8 +236,8 @@ BaltoyFrames:        INCLUDE "gfx/pokemon/hoenn/baltoy/frames.asm"
 ClaydolFrames:       INCLUDE "gfx/pokemon/hoenn/claydol/frames.asm"
 MunchlaxFrames:      INCLUDE "gfx/pokemon/hoenn/munchlax/frames.asm"
 PurgislugFrames:     INCLUDE "gfx/pokemon/hoenn/purgislug/frames.asm"
-AnorithFrames:       INCLUDE "gfx/pokemon/hoenn/anorith/frames.asm"
-ArmaldoFrames:       INCLUDE "gfx/pokemon/hoenn/armaldo/frames.asm"
+LarvicidFrames:      INCLUDE "gfx/pokemon/hoenn/larvicid/frames.asm"
+PendragonFrames:     INCLUDE "gfx/pokemon/hoenn/pendragon/frames.asm"
 FeebasFrames:        INCLUDE "gfx/pokemon/hoenn/feebas/frames.asm"
 MiloticFrames:       INCLUDE "gfx/pokemon/hoenn/milotic/frames.asm"
 CastformFrames:      INCLUDE "gfx/pokemon/hoenn/castform/frames.asm"

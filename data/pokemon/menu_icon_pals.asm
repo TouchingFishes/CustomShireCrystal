@@ -276,7 +276,7 @@ MonMenuIconPals:
 	icon_pals BROWN,  RED    ; EUXINOS
 	icon_pals RED,    RED    ; WEAVILE
 	icon_pals BLUE,   RED    ; HONCHKROW
-	icon_pals PURPLE, GRAY   ; GLISCOR
+	icon_pals GRAY,   GRAY   ; GLISCOR
 	icon_pals GREEN,  RED    ; LEAFEON
 	icon_pals TEAL,   RED    ; GLACEON
 	icon_pals GREEN,  RED    ; DRACONEON
@@ -329,13 +329,13 @@ MonMenuIconPals:
 	icon_pals RED,    RED    ; EELEKTRIK
 	icon_pals RED,    RED    ; EELEKTROSS
 	icon_pals PINK,   RED    ; CORSOREEF
-	icon_pals BLUE,   PURPLE ; DUNDRAG
+	icon_pals PURPLE, BLUE   ; DUNDRAG
 	icon_pals RED,    RED    ; CARVANHA
 	icon_pals BLUE,   RED    ; SHARPEDO
 	icon_pals GRAY,   RED    ; BARBOACH
 	icon_pals BLUE,   RED    ; WHISCASH
-	icon_pals RED,    RED    ; SMOGUANA
-	icon_pals RED,    RED    ; SMOKOMODO
+	icon_pals BROWN,  RED    ; SMOGUANA
+	icon_pals BROWN,  RED    ; SMOKOMODO
 	icon_pals RED,    RED    ; TORKOAL
 	icon_pals RED,    RED    ; SPOINK
 	icon_pals RED,    RED    ; GRUMPIG
@@ -359,8 +359,8 @@ MonMenuIconPals:
 	icon_pals RED,    RED    ; CLAYDOL
 	icon_pals BROWN,  BLUE   ; MUNCHLAX
 	icon_pals GREEN,  GRAY   ; PURGISLUG
-	icon_pals RED,    RED    ; ANORITH
-	icon_pals RED,    RED    ; ARMALDO
+	icon_pals GRAY,   RED    ; LARVICID
+	icon_pals PURPLE, RED    ; PENDRAGON
 	icon_pals BLUE,   RED    ; FEEBAS
 	icon_pals PINK,   RED    ; MILOTIC
 	icon_pals GRAY,   RED    ; CASTFORM

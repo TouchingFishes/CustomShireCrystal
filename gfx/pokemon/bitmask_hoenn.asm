@@ -96,8 +96,8 @@ BitmaskPointers3:
 	dw ClaydolBitmasks
 	dw MunchlaxBitmasks
 	dw PurgislugBitmasks
-	dw AnorithBitmasks
-	dw ArmaldoBitmasks
+	dw LarvicidBitmasks
+	dw PendragonBitmasks
 	dw FeebasBitmasks
 	dw MiloticBitmasks
 	dw CastformBitmasks
@@ -236,8 +236,8 @@ BaltoyBitmasks:        INCLUDE "gfx/pokemon/hoenn/baltoy/bitmask.asm"
 ClaydolBitmasks:       INCLUDE "gfx/pokemon/hoenn/claydol/bitmask.asm"
 MunchlaxBitmasks:      INCLUDE "gfx/pokemon/hoenn/munchlax/bitmask.asm"
 PurgislugBitmasks:     INCLUDE "gfx/pokemon/hoenn/purgislug/bitmask.asm"
-AnorithBitmasks:       INCLUDE "gfx/pokemon/hoenn/anorith/bitmask.asm"
-ArmaldoBitmasks:       INCLUDE "gfx/pokemon/hoenn/armaldo/bitmask.asm"
+LarvicidBitmasks:      INCLUDE "gfx/pokemon/hoenn/larvicid/bitmask.asm"
+PendragonBitmasks:     INCLUDE "gfx/pokemon/hoenn/pendragon/bitmask.asm"
 FeebasBitmasks:        INCLUDE "gfx/pokemon/hoenn/feebas/bitmask.asm"
 MiloticBitmasks:       INCLUDE "gfx/pokemon/hoenn/milotic/bitmask.asm"
 CastformBitmasks:      INCLUDE "gfx/pokemon/hoenn/castform/bitmask.asm"

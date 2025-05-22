@@ -368,8 +368,8 @@ DEF HOENN_POKEMON EQU const_value
 	const CLAYDOL    ; 158
 	const MUNCHLAX   ; 159
 	const PURGISLUG  ; 15a
-	const ANORITH    ; 15b out
-	const ARMALDO    ; 15c out
+	const LARVICID   ; 15b 
+	const PENDRAGON  ; 15c 
 	const FEEBAS     ; 15d
 	const MILOTIC    ; 15e
 	const CASTFORM   ; 15f

@@ -96,8 +96,8 @@ AnimationIdlePointers3:
 	dw ClaydolAnimationIdle
 	dw MunchlaxAnimationIdle
 	dw PurgislugAnimationIdle
-	dw AnorithAnimationIdle
-	dw ArmaldoAnimationIdle
+	dw LarvicidAnimationIdle
+	dw PendragonAnimationIdle
 	dw FeebasAnimationIdle
 	dw MiloticAnimationIdle
 	dw CastformAnimationIdle
@@ -236,8 +236,8 @@ BaltoyAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/baltoy/anim_idle.asm"
 ClaydolAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/claydol/anim_idle.asm"
 MunchlaxAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/munchlax/anim_idle.asm"
 PurgislugAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/purgislug/anim_idle.asm"
-AnorithAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/anorith/anim_idle.asm"
-ArmaldoAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/armaldo/anim_idle.asm"
+LarvicidAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/larvicid/anim_idle.asm"
+PendragonAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/pendragon/anim_idle.asm"
 FeebasAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/feebas/anim_idle.asm"
 MiloticAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/milotic/anim_idle.asm"
 CastformAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/castform/anim_idle.asm"

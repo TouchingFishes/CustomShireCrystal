@@ -351,8 +351,8 @@ PokemonBodyData:
 	dw 411, 2381   ; CLAYDOL
 	dw 2315, 200   ; MUNCHLAX
 	dw 411, 1332   ; PURGISLUG
-	dw 204, 276    ; ANORITH
-	dw 411, 1504   ; ARMALDO
+	dw 204, 276    ; LARVICID
+	dw 411, 1504   ; PENDRAGON
 	dw 200, 163    ; FEEBAS
 	dw 2004, 3571  ; MILOTIC
 	dw 100, 18     ; CASTFORM

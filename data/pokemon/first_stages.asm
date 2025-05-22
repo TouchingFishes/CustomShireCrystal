@@ -347,8 +347,8 @@ FirstEvoStages::
 	dw BALTOY     ;158
 	dw MUNCHLAX
 	dw PURGISLUG
-	dw ANORITH
-	dw ANORITH
+	dw LARVICID
+	dw LARVICID
 	dw FEEBAS
 	dw FEEBAS
 	dw CASTFORM

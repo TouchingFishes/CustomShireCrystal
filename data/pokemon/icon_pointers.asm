@@ -354,8 +354,8 @@ IconPointers:
 	dw ClaydolIcon
 	dw MunchlaxIcon
 	dw PurgislugIcon
-	dw AnorithIcon
-	dw ArmaldoIcon
+	dw LarvicidIcon
+	dw PendragonIcon
 	dw FeebasIcon
 	dw MiloticIcon
 	dw CastformIcon

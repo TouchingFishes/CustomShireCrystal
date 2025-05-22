@@ -711,10 +711,10 @@ PokemonPicPointers::
 	dba MunchlaxBackpic
 	dba PurgislugFrontpic
 	dba PurgislugBackpic
-	dba AnorithFrontpic
-	dba AnorithBackpic
-	dba ArmaldoFrontpic
-	dba ArmaldoBackpic
+	dba LarvicidFrontpic
+	dba LarvicidBackpic
+	dba PendragonFrontpic
+	dba PendragonBackpic
 	dba FeebasFrontpic
 	dba FeebasBackpic
 	dba MiloticFrontpic

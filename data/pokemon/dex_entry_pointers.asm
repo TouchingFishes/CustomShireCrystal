@@ -350,8 +350,8 @@ PokedexDataPointerTable:
 	dba ClaydolPokedexEntry
 	dba MunchlaxPokedexEntry
 	dba PurgislugPokedexEntry
-	dba AnorithPokedexEntry
-	dba ArmaldoPokedexEntry
+	dba LarvicidPokedexEntry
+	dba PendragonPokedexEntry
 	dba FeebasPokedexEntry
 	dba MiloticPokedexEntry
 	dba CastformPokedexEntry
