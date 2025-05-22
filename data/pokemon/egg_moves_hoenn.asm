@@ -144,7 +144,7 @@ EggMovePointers3::
 TreeckoEggMoves:
 	dw CRUNCH
 	dw CRUSH_CLAW
-	dw DRAGONBREATH
+	dw RAZOR_WIND
 	dw ENDEAVOR
 	dw LEECH_SEED
 	dw -1 ; end

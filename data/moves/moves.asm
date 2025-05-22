@@ -36,7 +36,7 @@ MovesGen1:
 	move EFFECT_NORMAL_HIT,         40, NORMAL,        100, 35,   0      ;SCRATCH
 	move EFFECT_NORMAL_HIT,         55, NORMAL,        100, 30,   0      ;VICEGRIP
 	move EFFECT_OHKO,                0, NORMAL,         30,  5,   0      ;GUILLOTINE
-	move EFFECT_RAZOR_WIND,         80, NORMAL,        100, 10,   0      ;RAZOR_WIND
+	move EFFECT_FLINCH_HIT,         75, FLYING,         85, 20,  30      ;RAZOR_WIND EFFECT_RAZOR_WIND
 	move EFFECT_ATTACK_UP_2,         0, NORMAL,        100, 30,   0      ;SWORDS_DANCE
 	move EFFECT_NORMAL_HIT,         55, BUG,            95, 30,   0      ;CUT
 	move EFFECT_GUST,               40, FLYING,        100, 35,   0      ;GUST
@@ -166,7 +166,7 @@ MovesGen1:
 	move EFFECT_MULTI_HIT,          25, NORMAL,         85, 20,   0      ;BARRAGE
 	move EFFECT_LEECH_HIT,          30, BUG,           100, 15,   0      ;LEECH_LIFE
 	move EFFECT_SLEEP,               0, NORMAL,         75, 10,   0      ;LOVELY_KISS
-	move EFFECT_SKY_ATTACK,        140, FLYING,         90,  5,   0      ;SKY_ATTACK
+	move EFFECT_SKY_ATTACK,        180, FLYING,        100,  5,   0      ;SKY_ATTACK
 	move EFFECT_TRANSFORM,           0, NORMAL,        100, 10,   0      ;TRANSFORM
 	move EFFECT_SPEED_DOWN_HIT,     20, WATER,         100, 30,  10      ;BUBBLE
 	move EFFECT_CONFUSE_HIT,        70, NORMAL,        100, 10,  20      ;DIZZY_PUNCH

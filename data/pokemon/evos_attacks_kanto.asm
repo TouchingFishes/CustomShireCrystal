@@ -353,11 +353,11 @@ KakunaEvosAttacks:
 
 BeedrillEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, FURY_ATTACK
+	dbw 1, RAGE
 	dbw 10, FURY_ATTACK
 	dbw 15, FOCUS_ENERGY
 	dbw 20, TWINEEDLE
-	dbw 25, RAGE
+	dbw 25, RAZOR_WIND
 	dbw 30, PURSUIT
 	dbw 35, PIN_MISSILE
 	dbw 40, AGILITY
@@ -825,14 +825,13 @@ VenomothEvosAttacks:
 	dbw 1, DISABLE
 	dbw 1, FORESIGHT
 	dbw 1, SILVER_WIND
-	dbw 1, SUPERSONIC
 	dbw 1, LEECH_LIFE
 	dbw 9, SUPERSONIC
 	dbw 17, CONFUSION
 	dbw 20, POISONPOWDER
 	dbw 25, SIGNAL_BEAM
 	dbw 28, STUN_SPORE
-	dbw 31, GUST
+	dbw 31, RAZOR_WIND
 	dbw 36, PSYBEAM
 	dbw 42, SLEEP_POWDER
 	dbw 52, PSYCHIC_M
@@ -1341,6 +1340,7 @@ FarfetchDEvosAttacks:
 	evolve EVOLVE_HAPPINESS, TR_EVENITE, MLLOY
 	db 0 ; no more evolutions
 	dbw 1, PECK
+	dbw 1, FALSE_SWIPE
 	dbw 6, SAND_ATTACK
 	dbw 11, LEER
 	dbw 16, FURY_ATTACK
@@ -1349,7 +1349,7 @@ FarfetchDEvosAttacks:
 	dbw 31, SWORDS_DANCE
 	dbw 36, AGILITY
 	dbw 41, SLASH
-	dbw 46, FALSE_SWIPE
+	dbw 46, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
@@ -1396,8 +1396,6 @@ SeelEvosAttacks:
 
 DewgongEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, AURORA_BEAM
-	dbw 1, SAFEGUARD
 	dbw 1, HEADBUTT
 	dbw 1, SIGNAL_BEAM
 	dbw 9, SAFEGUARD
@@ -2259,6 +2257,7 @@ ArticunoEvosAttacks:
 	dbw 25, AGILITY
 	dbw 37, MIND_READER
 	dbw 49, ICE_BEAM
+	dbw 56, RAZOR_WIND
 	dbw 61, REFLECT
 	dbw 73, BLIZZARD
 	dbw 85, SHEER_COLD
@@ -2272,6 +2271,7 @@ ZapdosEvosAttacks:
 	dbw 25, AGILITY
 	dbw 37, DETECT
 	dbw 49, DRILL_PECK
+	dbw 56,	MIRROR_SHOT
 	dbw 61, CHARGE_BEAM
 	dbw 73, LIGHT_SCREEN
 	dbw 85, THUNDER
@@ -2285,6 +2285,7 @@ MoltresEvosAttacks:
 	dbw 25, AGILITY
 	dbw 37, ENDURE
 	dbw 49, FLAMETHROWER
+	dbw 56, AERIAL_ACE
 	dbw 61, SAFEGUARD
 	dbw 73, HEAT_WAVE
 	dbw 85, SKY_ATTACK

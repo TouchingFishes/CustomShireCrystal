@@ -641,6 +641,7 @@ JumpluffEvosAttacks:
 	dbw 15, STUN_SPORE
 	dbw 17, SLEEP_POWDER
 	dbw 22, LEECH_SEED
+	dbw 27, BOUNCE
 	dbw 33, COTTON_SPORE
 	dbw 44, MEGA_DRAIN
 	db 0 ; no more level-up moves
@@ -693,7 +694,8 @@ YanmaEvosAttacks:
 	dbw 7, QUICK_ATTACK
 	dbw 13, DOUBLE_TEAM
 	dbw 19, SONICBOOM
-	dbw 25, DETECT
+	dbw 23, DETECT
+	dbw 28, RAZOR_WIND
 	dbw 31, SUPERSONIC
 	dbw 37, UPROAR
 	dbw 43, WING_ATTACK
@@ -1416,7 +1418,7 @@ SuicuneEvosAttacks:
 	dbw 1, LEER
 	dbw 11, BUBBLEBEAM
 	dbw 21, RAIN_DANCE
-	dbw 31, GUST
+	dbw 31, RAZOR_WIND
 	dbw 41, AURORA_BEAM
 	dbw 51, MIST
 	dbw 61, MIRROR_COAT

@@ -149,6 +149,7 @@ SentretEggMoves:
 HoothootEggMoves:
 	dw FEATHERDANCE
 	dw FAINT_ATTACK
+	dw RAZOR_WIND
 	dw MIRROR_MOVE
 	dw SKY_ATTACK
 	dw SUPERSONIC
@@ -489,6 +490,7 @@ MantineEggMoves:
 SkarmoryEggMoves:
 	dw CURSE
 	dw DRILL_PECK
+	dw RAZOR_WIND
 	dw PURSUIT
 	dw MIRROR_SHOT
 	dw SKY_ATTACK

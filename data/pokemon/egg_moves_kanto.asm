@@ -191,6 +191,7 @@ SquirtleEggMoves:
 PidgeyEggMoves:
 	dw AIR_CUTTER
 	dw FAINT_ATTACK
+	dw RAZOR_WIND
 	dw FORESIGHT
 	dw PURSUIT
 	dw STEEL_WING
@@ -270,6 +271,7 @@ VulpixEggMoves:
 
 ZubatEggMoves:
 	dw CURSE
+	dw RAZOR_WIND
 	dw FAINT_ATTACK
 	dw GUST
 	dw PURSUIT

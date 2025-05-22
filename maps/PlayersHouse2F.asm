@@ -157,7 +157,7 @@ if DEF(_DEBUG)
 	givepoke EEVEE, PLAIN_FORM, 99, LEAF_STONE
 	givepokemove BURNING_SAND,        wPartyMon2, 0
 	givepokemove MYSTICALFIRE,       wPartyMon2, 1
-	givepokemove X_SCISSOR,   wPartyMon2, 2
+	givepokemove RAZOR_WIND,   wPartyMon2, 2
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3
 	givepokemove HAMMER_SMASH,      wPartyMon3, 0
 	givepokemove ROCK_WRECKER, wPartyMon3, 1

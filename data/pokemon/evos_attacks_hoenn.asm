@@ -418,6 +418,7 @@ MlloyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, LOW_KICK
+	dbw 1, FALSE_SWIPE
 	dbw 6, MUD_SLAP
 	dbw 11, SCREECH
 	dbw 16, KARATE_CHOP
@@ -426,7 +427,7 @@ MlloyEvosAttacks:
 	dbw 31, SWORDS_DANCE
 	dbw 36, AGILITY
 	dbw 41, SLASH
-	dbw 46, SUBMISSION
+	dbw 46, RAZOR_WIND
 	dbw 58, LEAF_BLADE
 	db 0 ; no more level-up moves
 
@@ -624,13 +625,13 @@ SurskitEvosAttacks:
 MasquerainEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
-	dbw 1, QUICK_ATTACK
+	dbw 1, GUST
 	dbw 1, SWEET_SCENT
 	dbw 1, DOUBLE_TEAM
 	dbw 7, QUICK_ATTACK
 	dbw 13, SWEET_SCENT
 	dbw 19, DOUBLE_TEAM
-	dbw 26, GUST
+	dbw 26, RAZOR_WIND
 	dbw 33, SCARY_FACE
 	dbw 40, STUN_SPORE
 	dbw 47, SILVER_WIND
