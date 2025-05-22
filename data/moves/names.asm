@@ -356,7 +356,7 @@ MoveNames::
 	li "DOOM DESIRE"
 	li "PSYCHO BOOST"
 	li "SIGNAL BEAM"
-	li "WODD HAMMER"
+	li "WOOD HAMMER"
 	li "FIERY DANCE"
 	li "HAMMER SMASH"
 	li "HEAD SMASH"
