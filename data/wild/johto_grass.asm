@@ -1546,28 +1546,28 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 19, RATTATA
-	dbw 20, RATICATE
+	dbw 20, KRABBY
 	dbw 20, PIDGEOTTO
 	dbw 19, JIGGLYPUFF  
 	dbw 21, TINKATINK
-	dbw 22, MR__MIME
-	dbw 22, MR__MIME
+	dbw 22, RATICATE
+	dbw 22, RATICATE
 	; day
 	dbw 19, RATTATA
-	dbw 20, RATICATE
+	dbw 20, KRABBY
 	dbw 20, PIDGEOTTO
 	dbw 19, JIGGLYPUFF 
 	dbw 21, TINKATINK
-	dbw 22, MR__MIME
-	dbw 22, MR__MIME
+	dbw 22, RATICATE
+	dbw 22, RATICATE
 	; nite
 	dbw 19, RATTATA   
 	dbw 20, NOCTOWL
-	dbw 20, RATICATE   
+	dbw 20, KRABBY   
 	dbw 19, JIGGLYPUFF
 	dbw 21, TINKATINK
-	dbw 22, MR__MIME
-	dbw 22, MR__MIME
+	dbw 22, RATICATE
+	dbw 22, RATICATE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_42
@@ -1576,7 +1576,7 @@ JohtoGrassWildMons:
 	dbw 18, EKANS
 	dbw 19, SPEAROW
 	dbw 20, RATTATA
-	dbw 21, RATICATE
+	dbw 21, LARVICID   ;RATICATE
 	dbw 20, STUNKY     ;ARBOK
 	dbw 21, FEAROW
 	dbw 21, FEAROW
@@ -1584,7 +1584,7 @@ JohtoGrassWildMons:
 	dbw 18, EKANS
 	dbw 19, SPEAROW
 	dbw 20, RATTATA
-	dbw 21, RATICATE
+	dbw 21, LARVICID   ;RATICATE
 	dbw 20, STUNKY     ;ARBOK
 	dbw 21, FEAROW
 	dbw 21, FEAROW
