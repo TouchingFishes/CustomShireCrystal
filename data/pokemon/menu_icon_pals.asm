@@ -324,7 +324,7 @@ MonMenuIconPals:
 	icon_pals RED,    RED    ; SHINX tbd
 	icon_pals RED,    RED    ; LUXIO tbd
 	icon_pals RED,    RED    ; LUXRAY tbd
-	icon_pals RED,    RED    ; GEKOPON tbd
+	icon_pals BROWN,  GREEN  ; GEKOPON tbd
 	icon_pals RED,    RED    ; TYNAMO tbd
 	icon_pals RED,    RED    ; EELEKTRIK
 	icon_pals RED,    RED    ; EELEKTROSS

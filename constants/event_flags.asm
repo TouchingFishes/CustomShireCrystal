@@ -1042,6 +1042,8 @@
 	const EVENT_BEAT_SAGE_GAKU
 	const EVENT_BEAT_SAGE_MASA
 	const EVENT_BEAT_SAGE_KOJI
+; Newly added trainers (116 unused events)
+	const EVENT_BEAT_GIDEON
 ; Unused: next 116 events
 
 	const_next 1600

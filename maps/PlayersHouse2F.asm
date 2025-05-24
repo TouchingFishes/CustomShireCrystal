@@ -160,7 +160,7 @@ if DEF(_DEBUG)
 	givepokemove RAZOR_WIND,   wPartyMon2, 2
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3
 	givepokemove HAMMER_SMASH,      wPartyMon3, 0
-	givepokemove ROCK_WRECKER, wPartyMon3, 1
+	givepokemove CUT, wPartyMon3, 1
 	givepokemove SURF,   wPartyMon3, 2
 	givepokemove FLY,  wPartyMon3, 3
 	; misc pokemon for testing

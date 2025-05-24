@@ -11,6 +11,7 @@
 	const LAKEOFRAGE_WESLEY
 	const LAKEOFRAGE_POKE_BALL1
 	const LAKEOFRAGE_POKE_BALL2
+	const LAKEOFRAGE_GEKOPON
 
 LakeOfRage_MapScripts:
 	def_scene_scripts
@@ -242,6 +243,29 @@ LakeOfRageLanceTeleportIntoSkyMovement:
 	teleport_from
 	step_end
 
+LakeOfRageGekoponCallback:
+	checkflag ENGINE_LAKE_OF_RAGE_GEKOPON
+	iftrue .NoAppear
+	readvar VAR_WEEKDAY
+	ifequal WEDNESDAY, .Appear
+.NoAppear:
+	disappear LAKEOFRAGE_GEKOPON
+	endcallback
+
+.Appear:
+	appear LAKEOFRAGE_GEKOPON
+	endcallback
+
+LakeOfRageGekopon:
+	faceplayer
+	cry GEKOPON
+	loadwildmon GEKOPON, 25
+	startbattle
+	disappear LAKEOFRAGE_GEKOPON
+	setflag ENGINE_LAKE_OF_RAGE_GEKOPON
+	reloadmapafterbattle
+	end
+
 LakeOfRageLanceForcedToEvolveText:
 	text "This lake is full"
 	line "of GYARADOS but"
@@ -410,11 +434,11 @@ CooltrainermAaronBeatenText:
 	done
 
 CooltrainermAaronAfterBattleText:
-	text "#MON and their"
-	line "trainer become"
+	text "A strange toad"
+	line "emerges from the"
 
-	para "powerful through"
-	line "constant battling."
+	para "woods every"
+	line "WEDNESDAY."
 	done
 
 CooltrainerfLoisSeenText:
@@ -519,4 +543,5 @@ LakeOfRage_MapEvents:
 	object_event 18, 22, SPRITE_GYARADOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RedGyarados, EVENT_LAKE_OF_RAGE_RED_GYARADOS
 	object_event  4,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WesleyScript, EVENT_LAKE_OF_RAGE_WESLEY_OF_WEDNESDAY
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
-	object_event 35,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
+	object_event 20,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
+	object_event 35,  2, SPRITE_GEKOPON, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LakeOfRageGekopon, LAKEOFRAGE_GEKOPON

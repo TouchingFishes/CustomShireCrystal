@@ -8,9 +8,10 @@
 	const ROUTE40_ROCK3
 	const ROUTE40_LASS1
 	const ROUTE40_MONICA
-	const ROUTE40_POKEFAN_M
+	const ROUTE40_LADY
 	const ROUTE40_LASS2
 	const ROUTE40_STANDING_YOUNGSTER
+	const ROUTE40_TASHA
 
 Route40_MapScripts:
 	def_scene_scripts
@@ -73,11 +74,22 @@ TrainerSwimmermRandall:
 	closetext
 	end
 
+TrainerHexManiacTasha:
+	trainer SWIMMERM, RANDALL, EVENT_BEAT_SWIMMERM_RANDALL, HexManiacTashaSeenText, HexManiacTashaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HexManiacTashaAfterBattleText
+	waitbutton
+	closetext
+	end
+
 Route40Lass1Script:
 	jumptextfaceplayer Route40Lass1Text
 
-Route40PokefanMScript:
-	jumptextfaceplayer Route40PokefanMText
+Route40LadyScript:
+	jumptextfaceplayer Route40LadyText
 
 Route40Lass2Script:
 	jumptextfaceplayer Route40Lass2Text
@@ -211,11 +223,11 @@ Route40Lass1Text:
 	line "the sea."
 	done
 
-Route40PokefanMText:
-	text "Hm! There's a big"
-	line "building up ahead!"
+Route40LadyText:
+	text "I swam all the way"
+	line "here. But my date"
 
-	para "What is it?"
+	para "isnt showing!"
 	done
 
 Route40Lass2Text:
@@ -296,6 +308,23 @@ Route40SignText:
 	line "OLIVINE CITY"
 	done
 
+HexManiacTashaSeenText:
+	text "Get ready for the"
+	line "witching hour!"
+	done
+
+HexManiacTashaBeatenText:
+	text "I'm bedazzled…"
+	done
+
+HexManiacTashaAfterBattleText:
+	text "You should try out"
+	line "doing a séance."
+	
+	para "It'd open your"
+	line "eyes."
+	done
+
 Route40_MapEvents:
 	db 0, 0 ; filler
 
@@ -306,18 +335,19 @@ Route40_MapEvents:
 
 	def_bg_events
 	bg_event 34, 14, BGEVENT_READ, Route40Sign
-	bg_event 27, 12, BGEVENT_ITEM, Route40HiddenHyperPotion
+	bg_event 26, 13, BGEVENT_ITEM, Route40HiddenHyperPotion
 
 	def_object_events
-	object_event 34, 19, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerSwimmermSimon, -1
+	object_event 34, 21, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerSwimmermSimon, -1
 	object_event 38, 34, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerSwimmermRandall, -1
-	object_event 23, 23, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerSwimmerfElaine, -1
-	object_event 30, 29, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfPaula, -1
+	object_event 16, 25, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerSwimmerfElaine, -1
+	object_event 27, 30, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfPaula, -1
 	object_event 27, 15, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
 	object_event 26, 13, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
-	object_event 27, 12, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
+	object_event  9, 15, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Rock, -1
 	object_event 31, 17, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40Lass1Script, -1
 	object_event 28, 14, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MonicaScript, EVENT_ROUTE_40_MONICA_OF_MONDAY
-	object_event 27, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40PokefanMScript, -1
+	object_event  6, 17, SPRITE_LADY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40LadyScript, -1
 	object_event 33,  8, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route40Lass2Script, -1
 	object_event 34, 12, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40StandingYoungsterScript, EVENT_BATTLE_TOWER_OPEN_CIVILIANS
+	object_event  9,  7, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 4, TrainerHexManiacTasha, -1

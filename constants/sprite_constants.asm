@@ -113,9 +113,12 @@
 	const SPRITE_VETERAN_F ;73
 	const SPRITE_VETERAN_M ;74
 	const SPRITE_BUG_MANIAC ;75
-	;const SPRITE_DRAGON_TAMER ;76
-	;const SPRITE_ENGINEER ;77
-	;const SPRITE_ROUGHNECK ;78
+	const SPRITE_GIDEON ;76
+	const SPRITE_DRAGON_TAMER ;76
+	const SPRITE_LADY ;77
+	const SPRITE_RICH_BOY ;78
+	;const SPRITE_ENGINEER ;79
+	;const SPRITE_ROUGHNECK ;80
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
@@ -156,6 +159,7 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_GYARADOS ; a0
 	const SPRITE_LUGIA ; a1
 	const SPRITE_HO_OH ; a2
+	const SPRITE_GEKOPON ;a3
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)

@@ -6,6 +6,7 @@
 	const POWERPLANT_GYM_GUIDE3
 	const POWERPLANT_MANAGER
 	const POWERPLANT_FOREST
+	const POWERPLANT_GIDEON
 
 PowerPlant_MapScripts:
 	def_scene_scripts
@@ -171,7 +172,7 @@ PowerPlantManager:
 	iftrue .GotZapCannon
 	writetext PowerPlantManagerTakeThisTMText
 	promptbutton
-	verbosegiveitem TM_HAIL ; TM_ZAP_CANNON
+	verbosegiveitem TM_ZAP_CANNON
 	iffalse .NoRoom
 	setevent EVENT_GOT_TM07_ZAP_CANNON
 	writetext PowerPlantManagerTM07IsZapCannonText
@@ -190,6 +191,35 @@ Forest:
 	faceplayer
 	opentext
 	trade NPC_TRADE_FOREST
+	waitbutton
+	closetext
+	end
+
+Gideon:
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_GIDEON
+	iftrue .FightDone
+	writetext GideonBeforeText
+	waitbutton
+	closetext
+	winlosstext GideonWinText, 0
+	loadtrainer BLUE, BLUE1 ;GIDEON, GIDEON1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_GIDEON
+	opentext
+	writetext Text_ReceivedBasaltFossil
+	playsound SFX_GET_BADGE
+	waitsfx
+	giveitem DRAGON_SCALE ;BASALT_FOSSIL
+	writetext GideonEpilogueText
+	waitbutton
+	closetext
+	end
+
+.FightDone:
+	writetext GideonEpilogueText
 	waitbutton
 	closetext
 	end
@@ -386,6 +416,58 @@ PowerPlantManagerMyBelovedGeneratorText:
 	line "electricity out!"
 	done
 
+GideonBeforeText:
+	text "GIDEON: …"
+
+	para "And who might you"
+	line "be?"
+
+	para "Ahh I see. I once"
+	line "battled someone."
+
+	para "…"
+
+	para "You remind me of"
+	line "him. He was an ex-"
+	cont "qusite challenge."
+
+	para "Would you care for"
+	line "a battle? You will"
+	cont "grovel before my"
+
+	para "scientific genius,"
+	line "JOHTO boy."
+	done
+
+GideonWinText:
+	text "GIDEON: You're a"
+	line "prodigy. Despite"
+
+	para "giving it my all"
+	line "I still lost."
+
+	para "…"
+
+	para "Hmmmmmm…"
+	line "Truly fascinating,"
+	cont "here take this."
+	done
+
+Text_ReceivedBasaltFossil:
+	text "<PLAYER> received"
+	line "BASALTFOSSIL."
+	done
+
+GideonEpilogueText:
+	text "GIDEON: Hmmmmm."
+
+	para "…"
+
+	para "Sorry, I have to"
+	line "work now. Maybe"
+	cont "next time?"
+	done
+
 PowerPlant_MapEvents:
 	db 0, 0 ; filler
 
@@ -408,3 +490,4 @@ PowerPlant_MapEvents:
 	object_event  7,  2, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PowerPlantGymGuide4Script, -1
 	object_event 14, 10, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PowerPlantManager, -1
 	object_event  5,  5, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Forest, -1
+	object_event 15,  4, SPRITE_GIDEON, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Gideon, -1

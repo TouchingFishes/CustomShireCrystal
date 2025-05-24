@@ -118,7 +118,10 @@ OverworldSprites:
 	overworld_sprite VeteranFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite VeteranMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite BugManiacSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	;overworld_sprite DragonTamerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite GideonSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite DragonTamerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite LadySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite RichBoySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	;overworld_sprite EngineerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	;overworld_sprite RouchneckSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	assert_table_length NUM_OVERWORLD_SPRITES

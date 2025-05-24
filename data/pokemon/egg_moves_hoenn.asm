@@ -207,10 +207,10 @@ VoltrelEggMoves:
 	dw -1 ; end
 
 SolosisEggMoves:
-	dw DESTINY_BOND
+	dw IMPRISON
+	dw CONFUSE_RAY
+	dw ACID_ARMOR
 	dw DISABLE
-	dw MEAN_LOOK
-	dw MEMENTO
 	dw MAGIC_COAT
 	dw -1 ; end
 
