@@ -139,11 +139,11 @@ KantoWaterWildMons:
 
 	def_water_wildmons ROUTE_27
 	db 6 percent ; encounter rate
-	dbw 30, TENTACOOL
-	dbw 25, TENTACOOL
-	dbw 35, TENTACOOL
-	dbw 35, TENTACRUEL
-	dbw 40, TENTACRUEL
+	dbw 20, TENTACOOL
+	dbw 15, TENTACOOL
+	dbw 20, TENTACRUEL
+	dbw 25, YANMA
+	dbw 30, YANMA
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_28

@@ -204,13 +204,12 @@ Gideon:
 	waitbutton
 	closetext
 	winlosstext GideonWinText, 0
-	loadtrainer BLUE, BLUE1 ;GIDEON, GIDEON1
+	loadtrainer GIDEON, GIDEON1
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_GIDEON
 	opentext
 	writetext Text_ReceivedBasaltFossil
-	playsound SFX_GET_BADGE
 	waitsfx
 	giveitem DRAGON_SCALE ;BASALT_FOSSIL
 	writetext GideonEpilogueText
@@ -414,6 +413,26 @@ PowerPlantManagerMyBelovedGeneratorText:
 
 	para "Keep pumping the"
 	line "electricity out!"
+
+	para "…"
+
+	para "Oh!?!"
+
+	para "So you're looking"
+	line "for a fossil ex-"
+	
+	para "pert. Well, well…"
+	line "our GIDEON is the"
+
+	para "very best. You"
+	line "should ask him. He"
+	
+	para "is always around,"
+	line "overseeing our ma-"
+	
+	para "chinery. You can't"
+	line "miss him and his"
+	cont "long mane."
 	done
 
 GideonBeforeText:
@@ -425,18 +444,26 @@ GideonBeforeText:
 	para "Ahh I see. I once"
 	line "battled someone."
 
-	para "…"
+	para "……"
 
 	para "You remind me of"
 	line "him. He was an ex-"
 	cont "qusite challenge."
 
-	para "Would you care for"
-	line "a battle? You will"
-	cont "grovel before my"
+	para "………"
 
-	para "scientific genius,"
-	line "JOHTO boy."
+	para "So you wanna see"
+	line "the new #MON"
+	cont "I discovered?"
+
+	para "Would you care for"
+	line "a battle then? You"
+	cont "will grovel before"
+
+	para "my superb genius,"
+	line "JOHTO boy! My new"
+	cont "fossil #MON"
+	cont "will destroy you!"
 	done
 
 GideonWinText:

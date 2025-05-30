@@ -69,4 +69,21 @@ TrainerClassNames::
 	li "ROCKET"
 	li "MYSTICALMAN"
 	li "<PKMN> TRAINER"
+	li "<PKMN> TRAINER" ;BATO
+	li "HOENN CHAMP" ;STEVEN
+	li "EX-ELITE"
+	li "EX-ELITE"
+	li "HEX MANIAC"
+	li "VETERAN"
+	li "VETERAN"
+	li "BUG MANIAC"
+	li "OVERSEER" ;GIDEON
+	li "DRAGON TAMER"
+	li "LADY"
+	li "RICH BOY"
+	li "ENGINEER"
+	li "MASTER"
+	li "UNOVA CHAMP"
+	li "ELDER"
+	li "<PKMN> TRAINER" ;BUCK
 	assert_list_length NUM_TRAINER_CLASSES

@@ -70,4 +70,21 @@ BTTrainerClassGenders:
 	db MALE   ; OFFICER
 	db FEMALE ; GRUNTF
 	db FEMALE ; KRIS
+	db MALE   ; BATO
+	db MALE   ; STEVEN
+	db FEMALE ; AGATHA
+	db FEMALE ; LORELEI
+	db FEMALE ; HEX_MANIAC
+	db FEMALE ; VETERAN_F
+	db MALE   ; VETERAN_M
+	db MALE   ; BUG_MANIAC
+	db MALE   ; GIDEON
+	db MALE   ; DRAGON_TAMER
+	db FEMALE ; LADY
+	db MALE   ; RICH_BOY
+	db MALE   ; ENGINEER
+	db MALE   ; MASTER
+	db MALE   ; ALDER
+	db MALE   ; ELDER
+	db MALE   ; BUCK
 	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN

@@ -77,5 +77,22 @@ INCBIN "gfx/trainers/officer.gbcpal", middle_colors
 INCBIN "gfx/trainers/grunt_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/mysticalman.gbcpal", middle_colors
 INCBIN "gfx/trainers/falkner.gbcpal", middle_colors
+INCBIN "gfx/trainers/bato.gbcpal", middle_colors
+INCBIN "gfx/trainers/steven.gbcpal", middle_colors
+INCBIN "gfx/trainers/agatha.gbcpal", middle_colors
+INCBIN "gfx/trainers/lorelei.gbcpal", middle_colors
+INCBIN "gfx/trainers/hex_maniac.gbcpal", middle_colors
+INCBIN "gfx/trainers/veteran_f.gbcpal", middle_colors
+INCBIN "gfx/trainers/veteran_m.gbcpal", middle_colors
+INCBIN "gfx/trainers/bug_maniac.gbcpal", middle_colors
+INCBIN "gfx/trainers/gideon.gbcpal", middle_colors
+INCBIN "gfx/trainers/dragon_tamer.gbcpal", middle_colors
+INCBIN "gfx/trainers/lady.gbcpal", middle_colors
+INCBIN "gfx/trainers/rich_boy.gbcpal", middle_colors
+INCBIN "gfx/trainers/engineer.gbcpal", middle_colors
+INCBIN "gfx/trainers/master.gbcpal", middle_colors
+INCBIN "gfx/trainers/alder.gbcpal", middle_colors
+INCBIN "gfx/trainers/elder.gbcpal", middle_colors
+INCBIN "gfx/trainers/buck.gbcpal", middle_colors
 
 	assert_table_length NUM_TRAINER_CLASSES + 1

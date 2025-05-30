@@ -24,7 +24,7 @@ VermilionGymSurgeScript:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_LTSURGE
 	setevent EVENT_BEAT_GENTLEMAN_GREGORY
-	setevent EVENT_BEAT_GUITARIST_VINCENT
+	setevent EVENT_BEAT_ENGINEER_VINCENT
 	setevent EVENT_BEAT_JUGGLER_HORTON
 	opentext
 	writetext ReceivedThunderBadgeText
@@ -53,13 +53,13 @@ TrainerGentlemanGregory:
 	closetext
 	end
 
-TrainerGuitaristVincent:
-	trainer GUITARIST, VINCENT, EVENT_BEAT_GUITARIST_VINCENT, GuitaristVincentSeenText, GuitaristVincentBeatenText, 0, .Script
+TrainerEngineerVincent:
+	trainer ENGINEER, VINCENT, EVENT_BEAT_ENGINEER_VINCENT, EngineerVincentSeenText, EngineerVincentBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GuitaristVincentAfterBattleText
+	writetext EngineerVincentAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -181,7 +181,7 @@ GentlemanGregoryAfterBattleText:
 	line "life."
 	done
 
-GuitaristVincentSeenText:
+EngineerVincentSeenText:
 	text "LT.SURGE recog-"
 	line "nized my potential"
 
@@ -192,11 +192,11 @@ GuitaristVincentSeenText:
 	line "me?"
 	done
 
-GuitaristVincentBeatenText:
+EngineerVincentBeatenText:
 	text "Ooh, how shocking!"
 	done
 
-GuitaristVincentAfterBattleText:
+EngineerVincentAfterBattleText:
 	text "If the GYM's traps"
 	line "were working, you"
 
@@ -289,6 +289,6 @@ VermilionGym_MapEvents:
 	def_object_events
 	object_event  5,  2, SPRITE_SURGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VermilionGymSurgeScript, -1
 	object_event  8,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerGentlemanGregory, -1
-	object_event  4,  7, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_DOWN, 3, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerGuitaristVincent, -1
+	object_event  4,  7, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_DOWN, 3, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_TRAINER, 3, TrainerEngineerVincent, -1
 	object_event  0, 10, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerJugglerHorton, -1
 	object_event  7, 15, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 1, VermilionGymGuideScript, -1

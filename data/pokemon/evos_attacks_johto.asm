@@ -941,11 +941,11 @@ QwilfishEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
 	dbw 1, SPIKES
-	dbw 1, TACKLE
+	dbw 1, PIN_MISSILE
 	dbw 10, HARDEN
 	dbw 10, MINIMIZE
 	dbw 19, WATER_GUN
-	dbw 28, PIN_MISSILE
+	dbw 28, SPIKE_CANNON
 	dbw 37, TAKE_DOWN
 	dbw 46, HYDRO_PUMP
 	dbw 54, GUNK_SHOT

@@ -2,7 +2,7 @@
 	const AZALEAGYM_BUGSY
 	const AZALEAGYM_BUG_CATCHER1
 	const AZALEAGYM_BUG_CATCHER2
-	const AZALEAGYM_BUG_CATCHER3
+	const AZALEAGYM_BUG_MANIAC
 	const AZALEAGYM_TWIN1
 	const AZALEAGYM_TWIN2
 	const AZALEAGYM_GYM_GUIDE
@@ -38,7 +38,7 @@ AzaleaGymBugsyScript:
 	setevent EVENT_BEAT_TWINS_AMY_AND_MAY
 	setevent EVENT_BEAT_BUG_CATCHER_BENNY
 	setevent EVENT_BEAT_BUG_CATCHER_AL
-	setevent EVENT_BEAT_BUG_CATCHER_JOSH
+	setevent EVENT_BEAT_BUG_MANIAC_FRED
 	writetext BugsyText_HiveBadgeSpeech
 	promptbutton
 	verbosegiveitem TM_FURY_CUTTER
@@ -111,13 +111,13 @@ TrainerBugCatcherAl:
 	closetext
 	end
 
-TrainerBugCatcherJosh:
-	trainer BUG_CATCHER, JOSH, EVENT_BEAT_BUG_CATCHER_JOSH, BugCatcherJoshSeenText, BugCatcherJoshBeatenText, 0, .AfterScript
+TrainerBugManiacFred:
+	trainer BUG_MANIAC, FRED, EVENT_BEAT_BUG_MANIAC_FRED, BugManiacFredSeenText, BugManiacFredBeatenText, 0, .AfterScript
 
 .AfterScript:
 	endifjustbattled
 	opentext
-	writetext BugCatcherJoshAfterBattleText
+	writetext BugManiacFredAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -272,7 +272,7 @@ BugCatcherAlAfterBattleText:
 	para "I don't know why…"
 	done
 
-BugCatcherJoshSeenText:
+BugManiacFredSeenText:
 	text "You saved all the"
 	line "SLOWPOKE? Whew,"
 	cont "you're mighty!"
@@ -282,11 +282,11 @@ BugCatcherJoshSeenText:
 	cont "tough too!"
 	done
 
-BugCatcherJoshBeatenText:
+BugManiacFredBeatenText:
 	text "Urrgggh!"
 	done
 
-BugCatcherJoshAfterBattleText:
+BugManiacFredAfterBattleText:
 	text "I guess I should"
 	line "teach them better"
 	cont "moves…"
@@ -376,7 +376,7 @@ AzaleaGym_MapEvents:
 	object_event  5,  7, SPRITE_BUGSY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, AzaleaGymBugsyScript, -1
 	object_event  5,  3, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherBenny, -1
 	object_event  8,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherAl, -1
-	object_event  0,  2, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherJosh, -1
+	object_event  0,  2, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBugManiacFred, -1
 	object_event  4, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsAmyandmay1, -1
 	object_event  5, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsAmyandmay2, -1
 	object_event  7, 13, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, AzaleaGymGuideScript, -1

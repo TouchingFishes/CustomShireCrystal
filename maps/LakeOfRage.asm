@@ -188,6 +188,17 @@ TrainerCooltrainerfLois:
 	closetext
 	end
 
+TrainerBugManiacLarson:
+	trainer BUG_MANIAC, LARSON, EVENT_BEAT_BUG_MANIAC_LARSON, BugManiacLarsonSeenText, BugManiacLarsonBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugManiacLarsonAfterBattleText
+	waitbutton
+	closetext
+	end
+
 WesleyScript:
 	faceplayer
 	opentext
@@ -515,6 +526,25 @@ FishingGurusHouseSignText:
 	line "HOUSE"
 	done
 
+BugManiacLarsonSeenText:
+	text "Don't bother me or"
+	line "my #MON will"
+	cont "attack!"
+	done
+
+BugManiacLarsonBeatenText:
+	text "MY POOR MOTHS!"
+	done
+
+BugManiacLarsonAfterBattleText:
+	text "A cool Monk from"
+	line "ECRUTEAK CITY gave"
+
+	para "me these cool moth"
+	line "#MON, he said"
+	cont "they're very rare."
+	done
+
 LakeOfRage_MapEvents:
 	db 0, 0 ; filler
 
@@ -545,3 +575,4 @@ LakeOfRage_MapEvents:
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
 	object_event 20,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
 	object_event 35,  2, SPRITE_GEKOPON, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LakeOfRageGekopon, LAKEOFRAGE_GEKOPON
+	object_event  4, 27, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBugManiacLarson, -1

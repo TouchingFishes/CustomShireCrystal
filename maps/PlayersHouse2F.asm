@@ -75,6 +75,7 @@ if DEF(_DEBUG)
 	;giveitem LEAF_STONE, 10
 	;giveitem MOON_STONE, 10
 	giveitem SUN_STONE
+	giveitem RAINBOW_WING
 	;giveitem BERRY, 10
 	;giveitem GOLD_BERRY, 10
 	;giveitem MINT_BERRY, 10
@@ -84,39 +85,42 @@ if DEF(_DEBUG)
 	;giveitem AMULET_COIN
 	;giveitem SCOPE_LENS
 	; all badges
-	setflag ENGINE_ZEPHYRBADGE
-	setflag ENGINE_HIVEBADGE
-	setflag ENGINE_PLAINBADGE
-	setflag ENGINE_FOGBADGE
-	setflag ENGINE_STORMBADGE
-	setflag ENGINE_MINERALBADGE
-	setflag ENGINE_GLACIERBADGE
-	setflag ENGINE_RISINGBADGE
-	setflag ENGINE_BOULDERBADGE
-	setflag ENGINE_CASCADEBADGE
-	setflag ENGINE_THUNDERBADGE
-	setflag ENGINE_RAINBOWBADGE
-	setflag ENGINE_MARSHBADGE
-	setflag ENGINE_SOULBADGE
-	setflag ENGINE_VOLCANOBADGE
-	setflag ENGINE_EARTHBADGE
-	setevent EVENT_BEAT_FALKNER
-	setevent EVENT_BEAT_BUGSY
-	setevent EVENT_BEAT_WHITNEY
-	setevent EVENT_BEAT_MORTY
-	setevent EVENT_BEAT_CHUCK
-	setevent EVENT_BEAT_JASMINE
-	setevent EVENT_BEAT_PRYCE
-	setevent EVENT_BEAT_CLAIR
-	setevent EVENT_BEAT_BROCK
-	setevent EVENT_BEAT_MISTY
-	setevent EVENT_BEAT_LTSURGE
-	setevent EVENT_BEAT_ERIKA
-	setevent EVENT_BEAT_JANINE
-	setevent EVENT_BEAT_SABRINA
-	setevent EVENT_BEAT_BLAINE
-	setevent EVENT_BEAT_BLUE
+	;setflag ENGINE_ZEPHYRBADGE
+	;setflag ENGINE_HIVEBADGE
+	;setflag ENGINE_PLAINBADGE
+	;setflag ENGINE_FOGBADGE
+	;setflag ENGINE_STORMBADGE
+	;setflag ENGINE_MINERALBADGE
+	;setflag ENGINE_GLACIERBADGE
+	;setflag ENGINE_RISINGBADGE
+	;setflag ENGINE_BOULDERBADGE
+	;setflag ENGINE_CASCADEBADGE
+	;setflag ENGINE_THUNDERBADGE
+	;setflag ENGINE_RAINBOWBADGE
+	;setflag ENGINE_MARSHBADGE
+	;setflag ENGINE_SOULBADGE
+	;setflag ENGINE_VOLCANOBADGE
+	;setflag ENGINE_EARTHBADGE
+	;setevent EVENT_BEAT_FALKNER
+	;setevent EVENT_BEAT_BUGSY
+;	setevent EVENT_BEAT_WHITNEY
+;	setevent EVENT_BEAT_MORTY
+;	setevent EVENT_BEAT_CHUCK
+;	setevent EVENT_BEAT_JASMINE
+;	setevent EVENT_BEAT_PRYCE
+;	setevent EVENT_BEAT_CLAIR
+;	setevent EVENT_BEAT_BROCK
+;	setevent EVENT_BEAT_MISTY
+;	setevent EVENT_BEAT_LTSURGE
+;	setevent EVENT_BEAT_ERIKA
+;	setevent EVENT_BEAT_JANINE
+;	setevent EVENT_BEAT_SABRINA
+;	setevent EVENT_BEAT_BLAINE
+;	setevent EVENT_BEAT_BLUE
 	setevent EVENT_BEAT_ELITE_FOUR
+	clearevent EVENT_VIRIDIAN_GYM_BLUE
+;	setevent EVENT_SET_WHEN_FOUGHT_HO_OH
+;	setevent EVENT_FOUGHT_HO_OH
 	; fly anywhere
 	setflag ENGINE_FLYPOINT_NEW_BARK
 	setflag ENGINE_FLYPOINT_CHERRYGROVE
@@ -153,24 +157,24 @@ if DEF(_DEBUG)
 	; ; good party
 	givepoke STANTLER, PLAIN_FORM, 99, KINGS_ROCK 
 	; ; hm slaves
-	givepoke LARVICID, PLAIN_FORM, 5;, LEFTOVERS
-	givepoke PENDRAGON, PLAIN_FORM, 99, LEAF_STONE
-	givepokemove BURNING_SAND,        wPartyMon2, 0
-	givepokemove MYSTICALFIRE,       wPartyMon2, 1
+	givepoke FUSANG, PLAIN_FORM, 99;, LEFTOVERS
+	givepoke PENDRAGON, PLAIN_FORM, 99;, LEAF_STONE
+	givepokemove MYSTICALFIRE,        wPartyMon2, 0
+	givepokemove CUT,       wPartyMon2, 1
 	givepokemove RAZOR_WIND,   wPartyMon2, 2
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3
-	givepokemove HAMMER_SMASH,      wPartyMon3, 0
-	givepokemove CUT, wPartyMon3, 1
+	givepokemove DRAGON_PULSE,      wPartyMon3, 0
+	givepokemove STRENGTH, wPartyMon3, 1
 	givepokemove SURF,   wPartyMon3, 2
 	givepokemove FLY,  wPartyMon3, 3
 	; misc pokemon for testing
-	givepoke EEVEE, PLAIN_FORM, 75
+	givepoke KROLUCARD, PLAIN_FORM, 99
 	givepokemove DRAIN_LIFE,  wPartyMon1, 0
 	;givepokemove SNATCH,  wPartyMon1, 1
 	;givepokemove WHIRLWIND,  wPartyMon1, 2
 	;givepokemove VITAL_THROW,  wPartyMon1, 3
-	givepoke EEVEE, PLAIN_FORM, 50
-	givepoke WHISCASH, PLAIN_FORM, 50
+	givepoke KITSUNOH, PLAIN_FORM, 99
+	givepoke WHISCASH, PLAIN_FORM, 99
 	; intro events
 	addcellnum PHONE_MOM
 	setmapscene PLAYERS_HOUSE_1F, $1

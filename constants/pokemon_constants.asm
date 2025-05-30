@@ -319,7 +319,7 @@ DEF HOENN_POKEMON EQU const_value
 	const TINKATON   ; 127
 	const MAKUHITA   ; 128
 	const HARIYAMA   ; 129
-	const AZURILL    ; 12a out
+	const AZURILL    ; 12a
 	const NOSEPASS   ; 12b out
 	const SKITTY     ; 12c out
 	const DELCATTY   ; 12d out
@@ -346,9 +346,9 @@ DEF HOENN_POKEMON EQU const_value
 	const SMOGUANA   ; 142
 	const SMOKOMODO  ; 143
 	const TORKOAL    ; 144
-	const SPOINK     ; 145 flittle
-	const GRUMPIG    ; 146 espathra
-	const SPINDA     ; 147 out
+	const SPOINK     ; 145 vanillish
+	const GRUMPIG    ; 146 vanillite
+	const SPINDA     ; 147 vanilluxe
 	const TRAPINCH   ; 148
 	const VIBRAVA    ; 149
 	const FLYGON     ; 14a

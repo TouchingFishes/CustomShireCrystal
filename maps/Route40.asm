@@ -75,7 +75,7 @@ TrainerSwimmermRandall:
 	end
 
 TrainerHexManiacTasha:
-	trainer SWIMMERM, RANDALL, EVENT_BEAT_SWIMMERM_RANDALL, HexManiacTashaSeenText, HexManiacTashaBeatenText, 0, .Script
+	trainer HEX_MANIAC, TASHA, EVENT_BEAT_HEX_MANIAC_TASHA, HexManiacTashaSeenText, HexManiacTashaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

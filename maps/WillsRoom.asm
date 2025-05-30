@@ -41,6 +41,8 @@ WillsRoomDoorLocksBehindYouScript:
 	end
 
 WillScript_Battle:
+    readvar VAR_BADGES
+	if_greater_than 15, .Rematch
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_ELITE_4_WILL
@@ -59,7 +61,32 @@ WillScript_Battle:
 	closetext
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 2, $16 ; open door
-	refreshmap
+	reloadmappart
+	closetext
+	setevent EVENT_WILLS_ROOM_EXIT_OPEN
+	waitsfx
+	end
+	
+.Rematch:
+    faceplayer
+	opentext
+	checkevent EVENT_BEAT_ELITE_4_WILL
+	iftrue WillRematchAfterText
+	writetext WillRematchBeforeText
+	waitbutton
+	closetext
+	winlosstext WillRematchDefeatedText, 0
+	loadtrainer WILL, WILL2
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_ELITE_4_WILL
+	opentext
+	writetext WillRematchDefeatText
+	waitbutton
+	closetext
+	playsound SFX_ENTER_DOOR
+	changeblock 4, 2, $16 ; open door
+	reloadmappart
 	closetext
 	setevent EVENT_WILLS_ROOM_EXIT_OPEN
 	waitsfx
@@ -70,6 +97,12 @@ WillScript_AfterBattle:
 	waitbutton
 	closetext
 	end
+
+WillRematchAfterText:
+    writetext WillRematchDefeatText
+	waitbutton
+	closetext
+	end 
 
 WillsRoom_EnterMovement:
 	step UP
@@ -125,6 +158,54 @@ WillScript_WillDefeatText:
 	para "the true ferocity"
 	line "of the ELITE FOUR."
 	done
+
+WillRematchBeforeText:
+    text "Welcome back to"
+	line "the #MON"
+	cont "LEAGUE, <PLAYER>."
+	
+	para "I have forseen"
+	line "your return and"
+	cont "prepared myself"
+	cont "accordingly."
+	
+	para "Our psychic"
+	line "powers have grown"
+	cont "to be stronger"
+	cont "than ever before."
+	
+	para "This time, losing"
+	line "is not an option!"
+	done
+	
+WillRematchDefeatedText:
+    text "I have expended"
+	line "all of my power."
+	
+	para "There is no shame"
+	line "in losing like"
+	cont "this."
+	done 
+	
+WillRematchDefeatText:
+    text "Congratulations,"
+	line "<PLAYER>."
+	
+	para "Out of all the"
+	line "opponents I've"
+	cont "faced you are"
+	cont "the best, without"
+	cont "a doubt."
+	
+	para "It's only fitting"
+	line "that a trainer"
+	cont "like you became"
+	cont "the CHAMPION."
+	
+	para "Now, move forward"
+	line "and face your"
+	cont "next challenge."
+	done 
 
 WillsRoom_MapEvents:
 	db 0, 0 ; filler

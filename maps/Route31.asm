@@ -6,6 +6,7 @@
 	const ROUTE31_FRUIT_TREE
 	const ROUTE31_POKE_BALL1
 	const ROUTE31_POKE_BALL2
+	const ROUTE31_LADY
 
 Route31_MapScripts:
 	def_scene_scripts
@@ -240,6 +241,17 @@ Route31MailRecipientScript:
 	closetext
 	end
 
+Route31LadyPriscillaScript:
+	trainer LADY, PRISCILLA, EVENT_BEAT_LADY_PRISCILLA, LadyPriscillaSeenText, LadyPriscillaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LadyPriscillaAfterBattleText
+	waitbutton
+	closetext
+	end
+
 ReceivedSpearowMailText:
 	db   "DARK CAVE leads"
 	next "to another road@"
@@ -415,6 +427,29 @@ DarkCaveSignText:
 	text "DARK CAVE"
 	done
 
+LadyPriscillaSeenText:
+	text "Hello my dear!"
+
+	para "Ooooh…"
+
+	para "So you just began"
+	line "embarking on your"
+
+	para "journey. Let me"
+	line "show you my gently"
+	cont "floating darlings."
+	done
+
+LadyPriscillaBeatenText:
+	text "MY POOR HOPPIP!"
+	done
+
+LadyPriscillaAfterBattleText:
+	text "Not bad, i wish"
+	line "you all the best"
+	cont "for your journey."
+	done
+
 Route31_MapEvents:
 	db 0, 0 ; filler
 
@@ -437,3 +472,4 @@ Route31_MapEvents:
 	object_event 16,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31FruitTree, -1
 	object_event 29,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31Potion, EVENT_ROUTE_31_POTION
 	object_event 19, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31PokeBall, EVENT_ROUTE_31_POKE_BALL
+	object_event 24,  8, SPRITE_LADY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, Route31LadyPriscillaScript, -1

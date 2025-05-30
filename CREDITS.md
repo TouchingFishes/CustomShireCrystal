@@ -6,7 +6,13 @@ SourApple for many Pokémon sprites, move animations, overworld weather sprites.
 
 Nuuk for the sprites of Snover, Abomasnow, Larvesta, Volcarona and Spiritomb
 
-Freeline for animations of Honchkrow and Munchlax
+Freeline for animations of Honchkrow and Munchlax.
+
+Bloodless for Buck and VeteranF sprite.
+
+Kuroko Aizawa for Engineer sprite.
+
+Danny-E for Lorelei's sprite.
 
 A certain someone who does not want to be named for several amazing sprites
 

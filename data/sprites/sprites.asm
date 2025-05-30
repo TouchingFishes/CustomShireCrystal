@@ -15,7 +15,7 @@ OverworldSprites:
 	overworld_sprite RedSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BillSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite ElderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite HermitSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite JanineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite KurtSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite MomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
@@ -122,6 +122,10 @@ OverworldSprites:
 	overworld_sprite DragonTamerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite LadySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite RichBoySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	;overworld_sprite EngineerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite EngineerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite MasterSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite AlderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite ElderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite BuckSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	;overworld_sprite RouchneckSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	assert_table_length NUM_OVERWORLD_SPRITES

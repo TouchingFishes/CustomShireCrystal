@@ -3,31 +3,31 @@ TrainerClassIVs:
 	table_width 4
 	;  atk,def,spd,spc
 	ivs 16, 18, 20, 14, 14, 14 ; FALKNER
-	ivs 16, 16, 16, 16, 16, 16 ; WHITNEY
+	ivs 20, 16, 16, 16, 16, 16 ; WHITNEY
 	ivs 16, 18, 16, 16, 16, 16 ; BUGSY
 	ivs 16, 18, 16, 16, 16, 16 ; MORTY
-	ivs 16, 18, 16, 16, 16, 16 ; PRYCE
-	ivs 16, 18, 16, 16, 16, 16 ; JASMINE
-	ivs 16, 18, 16, 16, 16, 16 ; CHUCK
-	ivs 23, 14, 24, 26, 26, 26 ; CLAIR
+	ivs 24, 24, 24, 24, 24, 24 ; PRYCE
+	ivs 24, 24, 24, 24, 24, 24 ; JASMINE
+	ivs 24, 24, 24, 24, 24, 24 ; CHUCK
+	ivs 31, 27, 27, 27, 27, 27 ; CLAIR
 	ivs 26, 26, 26, 26, 26, 26 ; RIVAL1
 	ivs 16, 18, 16, 16, 16, 16 ; POKEMON_PROF
-	ivs 25, 26, 24, 26, 26, 26 ; WILL
+	ivs 30, 30, 30, 30, 30, 30 ; WILL
 	ivs 25, 26, 24, 26, 26, 26 ; CAL
-	ivs 25, 26, 24, 26, 26, 26 ; BRUNO
-	ivs 26, 14, 31, 26, 31, 31 ; KAREN
-	ivs 25, 26, 24, 26, 26, 26 ; KOGA
-	ivs 25, 26, 24, 26, 26, 26 ; CHAMPION
-	ivs 16, 18, 16, 16, 16, 16 ; BROCK
-	ivs 15, 14, 16, 16, 16, 16 ; MISTY
-	ivs 16, 18, 16, 16, 16, 16 ; LT_SURGE
+	ivs 30, 30, 30, 30, 30, 30 ; BRUNO
+	ivs 30, 30, 31, 30, 31, 31 ; KAREN
+	ivs 30, 30, 30, 30, 30, 30 ; KOGA
+	ivs 31, 31, 31, 31, 31, 31 ; CHAMPION
+	ivs 24, 24, 24, 24, 24, 24 ; BROCK
+	ivs 24, 24, 24, 24, 24, 24 ; MISTY
+	ivs 24, 24, 24, 24, 24, 24 ; LT_SURGE
 	ivs 16, 18, 16, 16, 16, 16 ; SCIENTIST
-	ivs 15, 14, 16, 16, 16, 16 ; ERIKA
+	ivs 24, 24, 24, 24, 24, 24 ; ERIKA
 	ivs 16, 18, 16, 16, 16, 16 ; YOUNGSTER
 	ivs 16, 18, 16, 16, 16, 16 ; SCHOOLBOY
 	ivs 16, 18, 16, 16, 16, 16 ; BIRD_KEEPER
 	ivs 14, 10, 16, 16, 16, 16 ; LASS
-	ivs 16, 18, 16, 16, 16, 16 ; JANINE
+	ivs 24, 24, 24, 24, 24, 24 ; JANINE
 	ivs 19, 26, 16, 24, 16, 16 ; COOLTRAINERM
 	ivs 18, 14, 24, 24, 16, 16 ; COOLTRAINERF
 	ivs 17, 12, 18, 24, 16, 16 ; BEAUTY
@@ -36,18 +36,18 @@ TrainerClassIVs:
 	ivs 16, 18, 16, 16, 16, 16 ; GENTLEMAN
 	ivs 16, 18, 16, 16, 16, 16 ; SKIER
 	ivs 15, 12, 16, 16, 16, 16 ; TEACHER
-	ivs 16, 14, 26, 16, 14, 14 ; SABRINA
+	ivs 24, 24, 24, 24, 24, 24 ; SABRINA
 	ivs 16, 18, 16, 16, 16, 16 ; BUG_CATCHER
 	ivs 16, 18, 16, 16, 16, 16 ; FISHER
 	ivs 16, 18, 16, 16, 16, 16 ; SWIMMERM
 	ivs 15, 14, 16, 16, 16, 16 ; SWIMMERF
 	ivs 16, 18, 16, 16, 16, 16 ; SAILOR
 	ivs 16, 18, 16, 16, 16, 16 ; SUPER_NERD
-	ivs 26, 26, 26, 26, 26, 26 ; RIVAL2
+	ivs 31, 31, 31, 31, 31, 31 ; RIVAL2
 	ivs 16, 18, 16, 16, 16, 16 ; GUITARIST
 	ivs 16, 20, 16, 16, 16, 16 ; HIKER
 	ivs 16, 18, 16, 16, 16, 16 ; BIKER
-	ivs 16, 18, 16, 16, 16, 16 ; BLAINE
+	ivs 24, 24, 24, 24, 24, 24 ; BLAINE
 	ivs 16, 18, 16, 16, 16, 16 ; BURGLAR
 	ivs 16, 18, 16, 16, 16, 16 ; FIREBREATHER
 	ivs 16, 18, 16, 16, 16, 16 ; JUGGLER
@@ -64,10 +64,28 @@ TrainerClassIVs:
 	ivs 16, 12, 16, 16, 20, 20 ; KIMONO_GIRL
 	ivs 16, 12, 16, 20, 16, 16 ; TWINS
 	ivs 17, 12, 26, 16, 16, 16 ; POKEFANF
-	ivs 27, 31, 26, 26, 28, 28 ; RED
-	ivs 24, 18, 26, 26, 26, 26 ; BLUE
+	ivs 31, 31, 31, 31, 31, 31 ; RED
+	ivs 31, 31, 31, 31, 31, 31 ; BLUE
 	ivs 16, 18, 16, 16, 16, 16 ; OFFICER
 	ivs 18, 14, 28, 20, 16, 16 ; GRUNTF
-	ivs 16, 18, 16, 16, 16, 16 ; MYSTICALMAN
+	ivs 26, 26, 26, 26, 26, 26 ; MYSTICALMAN
 	ivs 25, 26, 24, 26, 26, 26 ; KRIS
+	ivs 27, 27, 27, 27, 27, 27 ; BATO
+	ivs 30, 30, 30, 30, 30, 30 ; STEVEN
+	ivs 26, 26, 26, 26, 26, 26 ; AGATHA
+	ivs 26, 26, 26, 26, 26, 26 ; LORELEI
+	ivs 16, 18, 16, 16, 16, 16 ; HEX_MANIAC
+	ivs 25, 25, 25, 25, 25, 25 ; VETERAN_F
+	ivs 25, 25, 25, 25, 25, 25 ; VETERAN_M
+	ivs 21, 23, 21, 21, 21, 21 ; BUG_MANIAC
+	ivs 27, 31, 26, 26, 28, 28 ; GIDEON
+	ivs 28, 28, 26, 26, 26, 26 ; DRAGON_TAMER
+	ivs 20, 20, 20, 20, 28, 28 ; LADY
+	ivs 20, 28, 28, 20, 20, 20 ; RICH_BOY
+	ivs 20, 18, 20, 16, 16, 20 ; ENGINEER
+	ivs 31, 31, 31, 31, 31, 31 ; MASTER
+	ivs 30, 30, 30, 30, 30, 30 ; ALDER
+	ivs 26, 28, 26, 26, 26, 26 ; SAGE
+	ivs 31, 25, 31, 25, 25, 31 ; BUCK
+	;   hp  atk def spd sat sdf
 	assert_table_length NUM_TRAINER_CLASSES

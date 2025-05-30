@@ -49,6 +49,8 @@ KarenScript_Battle:
 	waitbutton
 	closetext
 	winlosstext KarenScript_KarenBeatenText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .Rematch
 	loadtrainer KAREN, KAREN1
 	startbattle
 	reloadmapafterbattle
@@ -59,7 +61,24 @@ KarenScript_Battle:
 	closetext
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 2, $16 ; open door
-	refreshmap
+	reloadmappart
+	closetext
+	setevent EVENT_KARENS_ROOM_EXIT_OPEN
+	waitsfx
+	end
+	
+.Rematch:
+    loadtrainer KAREN, KAREN2
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_ELITE_4_KAREN
+	opentext
+	writetext KarenScript_KarenDefeatText
+	waitbutton
+	closetext
+	playsound SFX_ENTER_DOOR
+	changeblock 4, 2, $16 ; open door
+	reloadmappart
 	closetext
 	setevent EVENT_KARENS_ROOM_EXIT_OPEN
 	waitsfx

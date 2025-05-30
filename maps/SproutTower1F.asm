@@ -5,11 +5,13 @@
 	const SPROUTTOWER1F_TEACHER
 	const SPROUTTOWER1F_SAGE3
 	const SPROUTTOWER1F_POKE_BALL
+	const SPROUTTOWER1F_BATO
 
 SproutTower1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	;callback MAPCALLBACK_OBJECTS, SproutTower1FBatoCallback
 
 SproutTower1FSage1Script:
 	jumptextfaceplayer SproutTower1FSage1Text
@@ -34,11 +36,75 @@ TrainerSageChow:
 	closetext
 	end
 
+BatoScript_Battle:
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_BATO
+	iftrue BatoScript_AfterBattle
+	writetext BatoScript_BatoBeforeText
+	waitbutton
+	closetext
+	winlosstext BatoScript_BatoBeatenText, 0
+	loadtrainer BATO, BATO1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_BATO
+	opentext
+	writetext BatoScript_BatoDefeatText
+	waitbutton
+	closetext
+	end
+
+BatoScript_AfterBattle:
+	writetext BatoScript_BatoDefeatText
+	waitbutton
+	closetext
+	end
+
 SproutTower1FParlyzHeal:
 	itemball PARLYZ_HEAL
 
 SproutTower1FStatue:
 	jumptext SproutTower1FStatueText
+
+BatoScript_BatoBeforeText:
+	text "Hello there, my"
+	line "name is BATO and I"
+
+	para "have heard that"
+	line "the BELLSPROUT in"
+	cont "this tower, can"
+	cont "dance beautifully."
+
+	para "My aim is to be-"
+	line "come the best"
+	cont "at battling, while"
+	cont "also having fun."
+
+	para "This is why I came"
+	line "here all the way"
+	cont "from HOENN."
+
+	para "…………"
+
+	para "OH! So you're the"
+	line "CHAMP of this re-"
+	cont "gion?"
+	
+	para "Thats amazing. Let"
+	line "me see how well"
+	cont "you do in a proper"
+	cont "battle!"
+	done
+
+BatoScript_BatoBeatenText:
+	text "WOAH!"
+	done
+
+BatoScript_BatoDefeatText:
+	text "My SWAMPERT didn't"
+	line "stand a chance…"
+	done
 
 SageChowSeenText:
 	text "We stand guard in"
@@ -123,3 +189,4 @@ SproutTower1F_MapEvents:
 	object_event  9,  9, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SproutTower1FTeacherScript, -1
 	object_event  3,  5, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerSageChow, -1
 	object_event 16,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SproutTower1FParlyzHeal, EVENT_SPROUT_TOWER_1F_PARLYZ_HEAL
+	object_event 13,  4, SPRITE_BATO, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 1, BatoScript_Battle, EVENT_VIRIDIAN_GYM_BLUE

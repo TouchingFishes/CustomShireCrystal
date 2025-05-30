@@ -71,4 +71,21 @@ TrainerPicPointers::
 	dba GruntfPic
 	dba MysticalmanPic
 	dba KrisTrainerPic
+	dba BatoPic
+	dba StevenPic
+	dba AgathaPic
+	dba LoreleiPic
+	dba HexManiacPic
+	dba VeteranFPic
+	dba VeteranMPic
+	dba BugManiacPic
+	dba GideonPic
+	dba DragonTamerPic
+	dba LadyPic
+	dba RichBoyPic
+	dba EngineerPic
+	dba MasterPic
+	dba AlderPic
+	dba ElderPic
+	dba BuckPic
 	assert_table_length NUM_TRAINER_CLASSES

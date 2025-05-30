@@ -537,6 +537,7 @@ CuboneEggMoves:
 	dw SCREECH
 	dw SKULL_BASH
 	dw SWORDS_DANCE
+	dw HEAD_SMASH
 	dw -1 ; end
 
 LickitungEggMoves:

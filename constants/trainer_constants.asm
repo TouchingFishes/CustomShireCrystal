@@ -73,6 +73,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass WILL ; b
 	const WILL1
+	const WILL2
 
 	trainerclass CAL ; c
 	const CAL1 ; unused
@@ -81,15 +82,19 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BRUNO ; d
 	const BRUNO1
+	const BRUNO2
 
 	trainerclass KAREN ; e
 	const KAREN1
+	const KAREN2
 
 	trainerclass KOGA ; f
 	const KOGA1
+	const KOGA2
 
 	trainerclass CHAMPION ; 10
-	const LANCE
+	const LANCE1
+	const LANCE2
 
 	trainerclass BROCK ; 11
 	const BROCK1
@@ -461,7 +466,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass GUITARIST ; 2b
 	const CLYDE
-	const VINCENT
+	const MOA
 
 	trainerclass HIKER ; 2c
 	const ANTHONY1
@@ -620,7 +625,7 @@ DEF KRIS EQU __trainer_class__
 	const PING
 	const EDMOND
 	const NEAL
-	const LI
+	const HARUKI
 	const GAKU
 	const MASA
 	const KOJI
@@ -702,8 +707,77 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	const EUSINE2
+	const EUSINE3
 
 	trainerclass LINK_KRIS ; 44
 	const LINK_KRIS1
+
+	trainerclass BATO ; 45
+	const BATO1
+
+	trainerclass STEVEN ; 46
+	const STEVEN1
+	const STEVEN2
+
+	trainerclass AGATHA ; 47
+	const AGATHA1
+
+	trainerclass LORELEI ; 48
+	const LORELEI1
+
+	trainerclass HEX_MANIAC ; 49
+	const TASHA
+
+	trainerclass VETERAN_F ; 4a
+	const MONICA
+
+	trainerclass VETERAN_M ; 4b
+	const CONNOR
+	const YURI
+	const LEON
+
+	trainerclass BUG_MANIAC ; 4c
+	const FRED
+	const ARTHUR
+	const LARSON
+	const WEEVIL
+
+	trainerclass GIDEON ; 4d
+	const GIDEON1
+
+	trainerclass DRAGON_TAMER ; 4e
+	const KEEGAN
+	const KARL
+	const OZ
+
+	trainerclass LADY ; 4f
+	const SARAH
+	const ELENORE
+	const PRISCILLA
+
+	trainerclass RICH_BOY ; 50
+	const WINSTON
+	const DARREN
+	const MARCO
+	const DAMIAN
+
+	trainerclass ENGINEER ; 51
+	const VINCENT
+
+	trainerclass MASTER ; 52
+	const YAMA1
+
+	trainerclass ALDER ; 53
+	const ALDER1
+
+	trainerclass ELDER ; 54
+	const LI1
+	const LI2
+	const LI3
+
+	trainerclass BUCK ; 55
+	const BUCK1
+
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

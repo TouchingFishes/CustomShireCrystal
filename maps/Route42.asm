@@ -182,6 +182,17 @@ TrainerHikerBenjamin:
 	closetext
 	end
 
+TrainerBugManiacArthur:
+	trainer BUG_MANIAC, ARTHUR, EVENT_BEAT_BUG_MANIAC_ARTHUR, BugManiacArthurSeenText, BugManiacArthurBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugManiacArthurAfterBattleText
+	waitbutton
+	closetext
+	end
+
 Route42Sign1:
 	jumptext Route42Sign1Text
 
@@ -316,6 +327,31 @@ Route42Sign2Text:
 	line "MAHOGANY TOWN"
 	done
 
+BugManiacArthurSeenText:
+	text "WOAH! You scared"
+	line "me!"
+
+	para "Now I will make"
+	line "you face the fury"
+
+	para "of my armored"
+	line "beetles!"
+	done
+
+BugManiacArthurBeatenText:
+	text "Wow you pierced"
+	line "their armor…"
+	done
+
+BugManiacArthurAfterBattleText:
+	text "These cool metal"
+	line "bugs live in the"
+
+	para "tall grass in this"
+	line "route. They are"
+	cont "#cool MON!"
+	done
+
 Route42_MapEvents:
 	db 0, 0 ; filler
 
@@ -346,3 +382,4 @@ Route42_MapEvents:
 	object_event  6,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42UltraBall, EVENT_ROUTE_42_ULTRA_BALL
 	object_event 33,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route42SuperPotion, EVENT_ROUTE_42_SUPER_POTION
 	object_event 26, 16, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_ON_ROUTE_42
+	object_event 11,  9, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBugManiacArthur, -1

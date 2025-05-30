@@ -71,4 +71,21 @@ TrainerGroups:
 	dba GruntFGroup
 	dba MysticalmanGroup
 	dba KrisGroup
+	dba BatoGroup
+	dba StevenGroup
+	dba AgathaGroup
+	dba LoreleiGroup
+	dba HexManiacGroup
+	dba VeteranFGroup
+	dba VeteranMGroup
+	dba BugManiacGroup
+	dba GideonGroup
+	dba DragonTamerGroup
+	dba LadyGroup
+	dba RichBoyGroup
+	dba EngineerGroup
+	dba MasterGroup
+	dba AlderGroup
+	dba ElderGroup
+	dba BuckGroup
 	assert_table_length NUM_TRAINER_CLASSES

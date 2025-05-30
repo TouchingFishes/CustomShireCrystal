@@ -744,9 +744,6 @@ NinjaskEvosAttacks:
 	dbw 9, SAND_ATTACK
 	dbw 14, FURY_SWIPES
 	dbw 19, MIND_READER
-	dbw 20, DOUBLE_TEAM
-	dbw 20, FURY_CUTTER
-	dbw 20, SCREECH
 	dbw 25, SWORDS_DANCE
 	dbw 31, SLASH
 	dbw 38, AGILITY

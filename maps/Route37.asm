@@ -6,6 +6,7 @@
 	const ROUTE37_SUNNY
 	const ROUTE37_FRUIT_TREE2
 	const ROUTE37_FRUIT_TREE3
+	const ROUTE37_SAGE
 
 Route37_MapScripts:
 	def_scene_scripts
@@ -52,6 +53,28 @@ TrainerPsychicGreg:
 	endifjustbattled
 	opentext
 	writetext PsychicGregAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerSageHaruki:
+	trainer SAGE, HARUKI, EVENT_BEAT_SAGE_HARUKI, SageHarukiSeenText, SageHarukiBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SageHarukiAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBugCatcherJosh:
+	trainer BUG_CATCHER, JOSH, EVENT_BEAT_BUG_CATCHER_JOSH, BugCatcherJoshSeenText, BugCatcherJoshBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugCatcherJoshAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -235,6 +258,43 @@ Route37SignText:
 	text "ROUTE 37"
 	done
 
+SageHarukiSeenText:
+	text "The path to en-"
+	line "lightenment leads"
+	cont "many to ECRUTEAK"
+	cont "CITY."
+	done
+
+SageHarukiBeatenText:
+	text "How enriching…"
+	done
+
+SageHarukiAfterBattleText:
+	text "Going ahead will"
+	line "lead you straight"
+
+	para "to ECRUTEAK CITY"
+	line "it is the most"
+
+	para "sacred town in"
+	line "JOHTO."
+	done
+
+BugCatcherJoshSeenText:
+	text "I caught this bug"
+	line "#MON during the"
+	cont "last contest."
+	done
+
+BugCatcherJoshBeatenText:
+	text "Uff…"
+	done
+
+BugCatcherJoshAfterBattleText:
+	text "Wow, what a bat-"
+	line "tle."
+	done
+	
 Route37_MapEvents:
 	db 0, 0 ; filler
 
@@ -254,3 +314,5 @@ Route37_MapEvents:
 	object_event 16, 26, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SunnyScript, EVENT_ROUTE_37_SUNNY_OF_SUNDAY
 	object_event 16, 23, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route37FruitTree2, -1
 	object_event 15, 25, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route37FruitTree3, -1
+	object_event  6,  5, SPRITE_SAGE, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSageHaruki, -1
+	object_event 14, 16, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherJosh, -1

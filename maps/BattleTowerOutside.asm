@@ -3,6 +3,7 @@
 	const BATTLETOWEROUTSIDE_BEAUTY
 	const BATTLETOWEROUTSIDE_SAILOR
 	const BATTLETOWEROUTSIDE_LASS
+	const BATTLETOWEROUTSIDE_BUCK
 
 BattleTowerOutside_MapScripts:
 	def_scene_scripts
@@ -29,6 +30,31 @@ BattleTowerOutsideSailorScript:
 
 BattleTowerOutsideSign:
 	jumptext BattleTowerOutsideSignText
+
+BuckScript_Battle:
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_BUCK
+	iftrue BuckScript_AfterBattle
+	writetext BuckScript_BuckBeforeText
+	waitbutton
+	closetext
+	winlosstext BuckScript_BuckBeatenText, 0
+	loadtrainer BUCK, BUCK1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_BUCK
+	opentext
+	writetext BuckScript_BuckDefeatText
+	waitbutton
+	closetext
+	end
+
+BuckScript_AfterBattle:
+	writetext BuckScript_BuckDefeatText
+	waitbutton
+	closetext
+	end
 
 BattleTowerOutsideYoungsterText:
 	text "Wow, the BATTLE"
@@ -68,6 +94,40 @@ BattleTowerOutsideSignText:
 	line "Trainer Challenge!"
 	done
 
+BuckScript_BuckBeforeText:
+	text "Howdy! I'm BUCK."
+	line "And you're…"
+	cont "<PLAYER>?"
+
+	para "Don't tell me"
+	line "you're also going"
+	cont "to test your met-"
+
+	para "tle at the TRAINER"
+	line "TOWER?"
+
+	para "That's why I'm here."
+
+	para "So, <PLAYER>, what"
+	line "do you say we bat-"
+	cont "tle for it?"
+	done
+
+BuckScript_BuckBeatenText:
+	text "Heeheehee!"
+	line "So hot, you!"
+	done
+
+BuckScript_BuckDefeatText:
+	text "I guess I'll better"
+	line "my team at the"
+	cont "BATTLE TOWER."
+
+	para "Be seeing you,"
+	line "<PLAYER>!"
+	cont "Bye-bye!"
+	done
+
 BattleTowerOutside_MapEvents:
 	db 0, 0 ; filler
 
@@ -87,3 +147,4 @@ BattleTowerOutside_MapEvents:
 	object_event 13, 11, SPRITE_BEAUTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, BattleTowerOutsideBeautyScript, -1
 	object_event 12, 18, SPRITE_SAILOR, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BattleTowerOutsideSailorScript, EVENT_BATTLE_TOWER_OPEN_CIVILIANS
 	object_event 12, 24, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 10, 15, SPRITE_BUCK, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 1, BuckScript_Battle, EVENT_VIRIDIAN_GYM_BLUE

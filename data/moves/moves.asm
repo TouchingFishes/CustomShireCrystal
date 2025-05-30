@@ -103,7 +103,7 @@ MovesGen1:
 	move EFFECT_POISON,              0, POISON,         75, 35,   0      ;POISONPOWDER
 	move EFFECT_PARALYZE,            0, GRASS,          75, 30,   0      ;STUN_SPORE
 	move EFFECT_SLEEP,               0, GRASS,          75, 15,   0      ;SLEEP_POWDER
-	move EFFECT_RAMPAGE,            70, GRASS,         100, 20,   0      ;PETAL_DANCE
+	move EFFECT_RAMPAGE,           100, GRASS,         100, 20,   0      ;PETAL_DANCE
 	move EFFECT_SPEED_DOWN,          0, BUG,            95, 40,   0      ;STRING_SHOT
 	move EFFECT_STATIC_DAMAGE,      40, DRAGON,        100, 10,   0      ;DRAGON_RAGE
 	move EFFECT_TRAP_TARGET,        35, FIRE,           70, 15,   0      ;FIRE_SPIN
@@ -178,7 +178,7 @@ MovesGen1:
 	move EFFECT_NORMAL_HIT,        110, WATER,         100, 10,   0      ;CRABHAMMER
 	move EFFECT_SELFDESTRUCT,      250, NORMAL,        100,  5,   0      ;EXPLOSION
 	move EFFECT_MULTI_HIT,          20, NORMAL,         80, 15,   0      ;FURY_SWIPES
-	move EFFECT_DOUBLE_HIT,         50, GROUND,         90, 10,   0      ;BONEMERANG
+	move EFFECT_DOUBLE_HIT,         55, GROUND,         95, 10,   0      ;BONEMERANG
 	move EFFECT_HEAL,                0, PSYCHIC_TYPE,  100, 10,   0      ;REST
 	move EFFECT_FLINCH_HIT,         75, ROCK,           90, 10,  30      ;ROCK_SLIDE
 	move EFFECT_FLINCH_HIT,         80, NORMAL,         90, 15,  10      ;HYPER_FANG
@@ -395,6 +395,9 @@ MovesGen3:
 	move EFFECT_RECOIL_HIT,        150, ROCK,           80,  5,   0      ;HEAD_SMASH
 	move EFFECT_DOUBLE_HIT,         40, PSYCHIC_TYPE,  100, 10,   0      ;TWIN_BEAM
 	move EFFECT_LEECH_HIT,          60, DARK,          100, 10,   0      ;DRAIN_LIFE
+;	move EFFECT_LEECH_HIT,          80, GRASS,         100, 10,   0      ;HORN_LEECH
+;	move EFFECT_NORMAL_HIT,         80, PSYCHIC_TYPE,   90, 10,  30      ;ZEN_HEADBUTT EFFECT_DEF_UP_HIT
+;	move EFFECT_CONFUSE,             0, NORMAL,        100, 20,   0      ;TEETER_DANCE
 .IndirectEnd::
 
 POPS

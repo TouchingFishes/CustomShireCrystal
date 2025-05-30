@@ -1,6 +1,6 @@
 	object_const_def
 	const BLACKTHORNGYM1F_CLAIR
-	const BLACKTHORNGYM1F_COOLTRAINER_M1
+	const BLACKTHORNGYM1F_DRAGON_TAMER
 	const BLACKTHORNGYM1F_COOLTRAINER_M2
 	const BLACKTHORNGYM1F_COOLTRAINER_F
 	const BLACKTHORNGYM1F_GYM_GUIDE
@@ -47,7 +47,7 @@ BlackthornGymClairScript:
 	closetext
 	setevent EVENT_BEAT_COOLTRAINERM_PAUL
 	setevent EVENT_BEAT_COOLTRAINERM_CODY
-	setevent EVENT_BEAT_COOLTRAINERM_MIKE
+	setevent EVENT_BEAT_DRAGON_TAMER_KARL
 	setevent EVENT_BEAT_COOLTRAINERF_FRAN
 	setevent EVENT_BEAT_COOLTRAINERF_LOLA
 	clearevent EVENT_MAHOGANY_MART_OWNERS
@@ -101,13 +101,13 @@ TrainerCooltrainermPaul:
 	closetext
 	end
 
-TrainerCooltrainermMike:
-	trainer COOLTRAINERM, MIKE, EVENT_BEAT_COOLTRAINERM_MIKE, CooltrainermMikeSeenText, CooltrainermMikeBeatenText, 0, .Script
+TrainerDragonTamerKarl:
+	trainer DRAGON_TAMER, KARL, EVENT_BEAT_DRAGON_TAMER_KARL, DragonTamerKarlSeenText, DragonTamerKarlBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermMikeAfterBattleText
+	writetext DragonTamerKarlAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -304,17 +304,17 @@ CooltrainermPaulAfterBattleText:
 	line "Not a chance!"
 	done
 
-CooltrainermMikeSeenText:
+DragonTamerKarlSeenText:
 	text "My chance of"
 	line "losing? Not even"
 	cont "one percent!"
 	done
 
-CooltrainermMikeBeatenText:
+DragonTamerKarlBeatenText:
 	text "That's odd."
 	done
 
-CooltrainermMikeAfterBattleText:
+DragonTamerKarlAfterBattleText:
 	text "I know my short-"
 	line "comings now."
 
@@ -404,7 +404,7 @@ BlackthornGym1F_MapEvents:
 
 	def_object_events
 	object_event  5,  3, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BlackthornGymClairScript, -1
-	object_event  6,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainermMike, -1
+	object_event  6,  6, SPRITE_DRAGON_TAMER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerDragonTamerKarl, -1
 	object_event  1, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainermPaul, -1
 	object_event  9,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerfLola, -1
 	object_event  7, 15, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BlackthornGymGuideScript, -1
