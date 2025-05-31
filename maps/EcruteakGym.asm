@@ -62,11 +62,54 @@ EcruteakGymMortyScript:
 	end
 
 .GotShadowBall:
+    checkevent EVENT_BEAT_CHAMPION_LANCE
+    iftrue .OfferRematch
 	writetext MortyFightDoneText
 	waitbutton
 .NoRoomForShadowBall:
 	closetext
 	end
+	
+.OfferRematch:
+    writetext MortyRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext MortyRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext MortyRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext MortyRematchLossText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .DoRematch2
+    loadtrainer MORTY, MORTY2
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_MORTY
+    opentext
+    writetext MortyRematchAfterText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch2:
+	winlosstext MortyRematchLossText, 0
+	loadtrainer MORTY, MORTY3
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_MORTY
+    opentext
+    writetext MortyRematchAfterText
+    waitbutton
+    closetext
+    end
 
 EcruteakGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
@@ -272,6 +315,44 @@ MortyFightDoneText:
 
 	para "I envy you for"
 	line "that…"
+	done
+
+MortyRematchText:
+    text "<PLAY_G>, I can"
+	line "sense that you"
+	cont "have grown."
+    
+	para "I strive to become"
+	line "worthy of HO-OH."
+	
+	para "I think it would"
+	line "benefit us both if"
+	cont "we fought again."
+	done 
+	
+MortyRematchAcceptText:
+    text "You can bear"
+	line "witness to the"
+	cont "fruits of my"
+	cont "training!"
+	done 
+	
+MortyRematchRefuseText:
+    text "Oh… that's"
+	line "a shame."
+	done 
+	
+MortyRematchLossText:
+    text "How is this"
+	line "possible…"
+	done
+	
+MortyRematchAfterText:
+    text "Not good"
+	line "enough."
+	
+	para "I have to redo"
+	line "my training."
 	done
 
 SageJeffreySeenText:

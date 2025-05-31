@@ -1432,7 +1432,7 @@ KrolucardEvosAttacks:
 	dbw 32, HAZE
 	dbw 42, DRAIN_LIFE
 	dbw 52, EXTRASENSORY
-	dbw 62, SILVER_WIND
+	dbw 62, MEAN_LOOK
 	dbw 67, OMINOUS_WIND
 	db 0 ; no more level-up moves
 

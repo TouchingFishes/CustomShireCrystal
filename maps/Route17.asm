@@ -3,16 +3,32 @@
 	const ROUTE17_BIKER2
 	const ROUTE17_BIKER3
 	const ROUTE17_BIKER4
+	const ROUTE17_ZAPDOS
 
 Route17_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, Route17AlwaysOnBikeCallback
+	callback MAPCALLBACK_OBJECTS, Route17ZapdosCallback
 
 Route17AlwaysOnBikeCallback:
 	setflag ENGINE_ALWAYS_ON_BIKE
 	setflag ENGINE_DOWNHILL
+	endcallback
+
+Route17ZapdosCallback:
+	checkevent EVENT_FOUGHT_ZAPDOS
+	iftrue .NoAppear
+	checkevent EVENT_VIRIDIAN_GYM_BLUE
+	iftrue .NoAppear
+	readvar VAR_WEEKDAY
+	ifnotequal TUESDAY, .NoAppear
+	appear ROUTE17_ZAPDOS
+	endcallback
+
+.NoAppear:
+	disappear ROUTE17_ZAPDOS
 	endcallback
 
 TrainerBikerCharles:
@@ -64,6 +80,21 @@ Route17HiddenMaxEther:
 
 Route17HiddenMaxElixer:
 	hiddenitem MAX_ELIXIR, EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
+
+Route17Zapdos:
+	faceplayer
+	opentext
+	writetext ZapdosText
+	cry ZAPDOS
+	pause 15
+	closetext
+	setevent EVENT_FOUGHT_ZAPDOS
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadwildmon ZAPDOS, 60
+	startbattle
+	disappear ROUTE17_ZAPDOS
+	reloadmapafterbattle
+	end
 
 BikerRileySeenText:
 	text "Hey, you! You're"
@@ -130,6 +161,10 @@ BikerCharlesAfterBattleText:
 	cont "Take it easy!"
 	done
 
+ZapdosText:
+	text "Zzzaaaaaaa!"
+	done
+
 Route17_MapEvents:
 	db 0, 0 ; filler
 
@@ -148,3 +183,4 @@ Route17_MapEvents:
 	object_event  9, 68, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBikerJoel, -1
 	object_event  3, 53, SPRITE_BIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBikerGlenn, -1
 	object_event  6, 80, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerBikerCharles, -1
+	object_event  6, 84, SPRITE_ZAPDOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, Route17Zapdos, EVENT_BIRDS_VISIBLE

@@ -162,7 +162,9 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_GYARADOS ; a5
 	const SPRITE_LUGIA ; a6
 	const SPRITE_HO_OH ; a7
-	const SPRITE_GEKOPON ;a8
+	const SPRITE_GEKOPON ; a8
+	const SPRITE_ARTICUNO ; a9
+	const SPRITE_ZAPDOS ; aa
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)

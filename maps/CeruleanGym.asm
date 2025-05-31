@@ -78,10 +78,38 @@ CeruleanGymMistyScript:
 	waitsfx
 	setflag ENGINE_CASCADEBADGE
 .FightDone:
+    readvar VAR_BADGES
+	if_greater_than 15, .OfferRematch
 	writetext MistyFightDoneText
 	waitbutton
 	closetext
 	end
+	
+.OfferRematch:
+    writetext MistyRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext MistyRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext MistyRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext MistyRematchLossText, 0
+    loadtrainer MISTY, MISTY2
+    startbattle
+    reloadmapafterbattle
+    opentext
+    writetext MistyRematchAfterText
+    waitbutton
+    closetext
+    end
 
 TrainerSwimmerfDiana:
 	trainer SWIMMERF, DIANA, EVENT_BEAT_SWIMMERF_DIANA, SwimmerfDianaSeenText, SwimmerfDianaBeatenText, 0, .Script
@@ -282,6 +310,42 @@ MistyFightDoneText:
 	para "I can battle some"
 	line "skilled trainers."
 	done
+
+MistyRematchText:
+    text "MISTY: Hi!"
+	
+	para "I've heard a lot"
+	line "of good things"
+	cont "about you since"
+	cont "we last fought."
+	
+	para "Let me test how"
+	line "good you are!"
+	done 
+
+MistyRematchAcceptText:
+    text "My water-type"
+	line "#MON are ready"
+	cont "to take you on!"
+	done 
+	
+MistyRematchRefuseText:
+    text "That's a shame!"
+	done 
+	
+MistyRematchLossText:
+    text "Wow! You are"
+	line "getting stronger"
+	cont "by the battle!"
+	done 
+	
+MistyRematchAfterText:
+    text "You are really"
+	line "strong."
+	
+	para "But I'll beat"
+	line "you next time!"
+	done 
 
 SwimmerfDianaSeenText:
 	text "Sorry about being"

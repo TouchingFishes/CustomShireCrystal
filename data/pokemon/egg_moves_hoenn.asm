@@ -392,6 +392,7 @@ KrolucadaEggMoves:
 	dw PURSUIT
 	dw GUST
 	dw SIGNAL_BEAM
+	dw SILVER_WIND
 	dw -1 ; end
 
 StunkyEggMoves:

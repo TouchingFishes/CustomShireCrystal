@@ -31,6 +31,8 @@ SilphCoOfficerScript:
 StevenScript:
 	faceplayer
 	opentext
+	checkevent EVENT_BEAT_GIDEON
+	iffalse .NoFightYet
 	checkevent EVENT_BEAT_STEVEN_AGAIN
 	iftrue .FightDone
 	writetext StevenSeenText
@@ -43,6 +45,12 @@ StevenScript:
 	setevent EVENT_BEAT_STEVEN_AGAIN
 	opentext
 	writetext StevenAfterText
+	waitbutton
+	closetext
+	end
+
+.NoFightYet:
+	writetext StevenNotReadyText
 	waitbutton
 	closetext
 	end
@@ -79,6 +87,33 @@ SilphCoOfficerText_GotUpGrade:
 	line "anywhere yet."
 	done
 
+StevenNotReadyText:
+	text "Hi <PLAYER>!"
+
+	para "How has KANTO been"
+	line "to you?"
+
+	para "Have you had any"
+	line "luck in locating"
+	cont "the scientist, who"
+	
+	para "discovered the new"
+	line "fossil #MON?"
+
+	para "………"
+
+	para "Don't worry! I'm"
+	line "sure you will find"
+	cont "him."
+
+	para "Maybe he is work-"
+	line "ing at a place re-"
+	cont "lated to science?"
+
+	para "Good luck on your"
+	line "journey."
+	done
+
 StevenSeenText:
 	text "TBD"
 	done
@@ -105,4 +140,4 @@ SilphCo1F_MapEvents:
 	def_object_events
 	object_event  4,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SilphCoReceptionistScript, -1
 	object_event 13,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SilphCoOfficerScript, -1
-	object_event 11,  4, SPRITE_STEVEN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, StevenScript, -1
+	object_event 11,  4, SPRITE_STEVEN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_WHITE, OBJECTTYPE_SCRIPT, 0, StevenScript, -1

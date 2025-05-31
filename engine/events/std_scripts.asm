@@ -626,6 +626,8 @@ InitializeEventsScript:
 	setevent EVENT_INDIGO_PLATEAU_POKECENTER_RIVAL
 	setevent EVENT_INITIALIZED_EVENTS
 	setevent EVENT_YAMA_VISIBLE
+	setevent EVENT_BIRDS_VISIBLE
+	setevent EVENT_NEW_BARK_TOWN_STEVEN
 	endcallback
 
 AskNumber1MScript:

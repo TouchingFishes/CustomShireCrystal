@@ -8,6 +8,7 @@
 	const DANCETHEATER_RHYDON
 	const DANCETHEATER_COOLTRAINER_M
 	const DANCETHEATER_GRANNY
+	const DANCETHEATER_ALDER
 
 DanceTheater_MapScripts:
 	def_scene_scripts
@@ -134,6 +135,31 @@ DanceTheaterGrannyScript:
 
 DanceTheaterFancyPanel:
 	jumptext DanceTheaterFancyPanelText
+
+DanceTheaterAlderScript:
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_ALDER
+	iftrue DanceTheaterAlderAfterBattle
+	writetext DanceTheaterAlderSeenText
+	waitbutton
+	closetext
+	winlosstext DanceTheaterAlderBeatenText, 0
+	loadtrainer ALDER, ALDER1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_ALDER
+	opentext
+	writetext DanceTheaterAlderAfterText
+	waitbutton
+	closetext
+	end
+
+DanceTheaterAlderAfterBattle:
+	writetext DanceTheaterAlderAfterText
+	waitbutton
+	closetext
+	end
 
 KimonoGirlNaokoSeenText:
 	text "You have lovely"
@@ -335,6 +361,49 @@ DanceTheaterFancyPanelText:
 	cont "with flowers."
 	done
 
+DanceTheaterAlderSeenText:
+	text "Oh boy, isn't this"
+	line "the most enjoyable"
+	cont "locale in all of"
+	cont "JOHTO!"
+
+	para "You know ………"
+
+	para "Life should be en-"
+	line "joyed!"
+
+	para "While visiting the"
+	line "imposing TIN"
+	cont "TOWER, I met an"
+	
+	para "old SAGE, who may"
+	line "even beat you…"
+
+	para "I didn't stand a"
+	line "chance against"
+	cont "this mountain of a"
+	cont "man!"
+
+	para "Tell you what…"
+
+	para "Let's battle and"
+	line "see if my encoun-"
+	cont "ter with that man"
+	cont "made me stronger."
+	done
+
+DanceTheaterAlderBeatenText:
+	text "Oh boy, I lost"
+	line "again…"
+	done
+
+DanceTheaterAlderAfterText:
+	text "Well done! If you"
+	line "want to, you can"
+	cont "join me in enjoy-"
+	cont "ing NAOKO's smile."
+	done
+
 DanceTheater_MapEvents:
 	db 0, 0 ; filler
 
@@ -355,6 +424,7 @@ DanceTheater_MapEvents:
 	object_event  9,  1, SPRITE_KIMONO_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, TrainerKimonoGirlKuni, -1
 	object_event 11,  2, SPRITE_KIMONO_GIRL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerKimonoGirlMiki, -1
 	object_event  7, 10, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DanceTheaterSurfGuy, -1
-	object_event  6,  8, SPRITE_RHYDON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DanceTheaterRhydon, -1
+	object_event  6,  8, SPRITE_RHYDON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DanceTheaterRhydon, -1
 	object_event 10, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DanceTheaterCooltrainerMScript, -1
 	object_event  3,  6, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DanceTheaterGrannyScript, -1
+	object_event 10,  6, SPRITE_ALDER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DanceTheaterAlderScript, EVENT_VIRIDIAN_GYM_BLUE

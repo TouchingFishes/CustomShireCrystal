@@ -10,11 +10,27 @@
 	const ROUTE44_POKE_BALL1
 	const ROUTE44_POKE_BALL2
 	const ROUTE44_POKE_BALL3
+	const ROUTE44_ARTICUNO
 
 Route44_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, Route44ArticunoCallback
+
+Route44ArticunoCallback:
+	checkevent EVENT_FOUGHT_ARTICUNO
+	iftrue .NoAppear
+	checkevent EVENT_VIRIDIAN_GYM_BLUE
+	iftrue .NoAppear
+	readvar VAR_WEEKDAY
+	ifnotequal TUESDAY, .NoAppear
+	appear ROUTE44_ARTICUNO
+	endcallback
+
+.NoAppear:
+	disappear ROUTE44_ARTICUNO
+	endcallback
 
 TrainerBirdKeeperVance1:
 	trainer BIRD_KEEPER, VANCE1, EVENT_BEAT_BIRD_KEEPER_VANCE, BirdKeeperVance1SeenText, BirdKeeperVance1BeatenText, 0, .Script
@@ -318,6 +334,21 @@ Route44MaxRepel:
 Route44HiddenElixer:
 	hiddenitem ELIXIR, EVENT_ROUTE_44_HIDDEN_ELIXER
 
+Route44Articuno:
+	faceplayer
+	opentext
+	writetext ArticunoText
+	cry ARTICUNO
+	pause 15
+	closetext
+	setevent EVENT_FOUGHT_ARTICUNO
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadwildmon ARTICUNO, 60
+	startbattle
+	disappear ROUTE44_ARTICUNO
+	reloadmapafterbattle
+	end
+
 FisherWilton1SeenText:
 	text "Aack! You made me"
 	line "lose a POLIWAG!"
@@ -504,6 +535,10 @@ Route44Sign2Text:
 	line "BLACKTHORN CITY"
 	done
 
+ArticunoText:
+	text "Kyyaaaaaaah!"
+	done
+
 Route44_MapEvents:
 	db 0, 0 ; filler
 
@@ -529,3 +564,4 @@ Route44_MapEvents:
 	object_event 30,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44MaxRevive, EVENT_ROUTE_44_MAX_REVIVE
 	object_event 45,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44UltraBall, EVENT_ROUTE_44_ULTRA_BALL
 	object_event 14,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44MaxRepel, EVENT_ROUTE_44_MAX_REPEL
+	object_event 35,  8, SPRITE_ARTICUNO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route44Articuno, EVENT_BIRDS_VISIBLE

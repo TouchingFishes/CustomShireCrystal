@@ -210,7 +210,6 @@ Gideon:
 	setevent EVENT_BEAT_GIDEON
 	opentext
 	writetext Text_ReceivedBasaltFossil
-	waitsfx
 	giveitem DRAGON_SCALE ;BASALT_FOSSIL
 	writetext GideonEpilogueText
 	waitbutton

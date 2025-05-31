@@ -37,4 +37,6 @@ SpriteMons:
 	dw LUGIA
 	dw HO_OH
 	dw GEKOPON
+	dw ARTICUNO
+	dw ZAPDOS
 	assert_table_length NUM_POKEMON_SPRITES

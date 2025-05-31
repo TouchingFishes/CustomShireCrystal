@@ -73,11 +73,54 @@ GoldenrodGymWhitneyScript:
 	end
 
 .GotAttract:
+    checkevent EVENT_BEAT_CHAMPION_LANCE
+    iftrue .OfferRematch
 	writetext WhitneyGoodCryText
 	waitbutton
 .NoRoomForAttract:
 	closetext
 	end
+
+.OfferRematch:
+    writetext WhitneyRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext WhitneyRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext WhitneyRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext WhitneyRematchLossText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .DoRematch2
+    loadtrainer WHITNEY, WHITNEY2
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_WHITNEY
+    opentext
+    writetext WhitneyRematchAfterText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch2:
+	winlosstext WhitneyRematchLossText, 0
+	loadtrainer WHITNEY, WHITNEY3
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_WHITNEY
+    opentext
+    writetext WhitneyRematchAfterText
+    waitbutton
+    closetext
+    end
 
 GoldenrodGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
@@ -266,6 +309,44 @@ WhitneyGoodCryText:
 
 	para "Come for a visit"
 	line "again! Bye-bye!"
+	done
+
+WhitneyRematchText:
+    text "Howdy! It's been a"
+	line "while."
+	
+	para "My #MON are"
+	line "cute AND deadly."
+	
+	para "And in fact I" 
+	line "always wanted to"
+	cont "battle the"
+	cont "champion!"
+	
+	para "C'mon!"
+	done
+	
+WhitneyRematchAcceptText:
+    text "I'm ready whenever"
+	line "you are!"
+	done 
+
+WhitneyRematchRefuseText:
+    text "What's the matter?"
+	line "Afraid of little"
+	cont "ol' me? Teehee!"
+	done	
+		
+WhitneyRematchLossText:
+    text "Sob… You didn't"
+	line "have to play"
+	cont "so rough!"
+	done
+	
+WhitneyRematchAfterText:
+    text "You're good!"
+	line "But I won't lose"
+	cont "next time!"
 	done
 
 LassCarrieSeenText:

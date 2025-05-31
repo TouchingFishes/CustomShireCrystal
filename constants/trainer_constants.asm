@@ -30,27 +30,48 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 DEF KRIS EQU __trainer_class__
 	trainerclass FALKNER ; 1
 	const FALKNER1
+	const FALKNER2
+	const FALKNER3
 
 	trainerclass WHITNEY ; 2
 	const WHITNEY1
+	const WHITNEY2
+	const WHITNEY3
 
 	trainerclass BUGSY ; 3
 	const BUGSY1
+	const BUGSY2
+	const BUGSY3
 
 	trainerclass MORTY ; 4
 	const MORTY1
+	const MORTY2
+	const MORTY3
 
 	trainerclass PRYCE ; 5
 	const PRYCE1
+	const PRYCE2
+	const PRYCE3
+	const PRYCE4
+	const PRYCE5
 
 	trainerclass JASMINE ; 6
 	const JASMINE1
+	const JASMINE2
+	const JASMINE3
+	const JASMINE4
 
 	trainerclass CHUCK ; 7
 	const CHUCK1
+	const CHUCK2
+	const CHUCK3
+	const CHUCK4
+	const CHUCK5
 
 	trainerclass CLAIR ; 8
 	const CLAIR1
+	const CLAIR2
+	const CLAIR3
 
 	trainerclass RIVAL1 ; 9
 	const RIVAL1_1_CHIKORITA
@@ -98,12 +119,15 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BROCK ; 11
 	const BROCK1
+	const BROCK2
 
 	trainerclass MISTY ; 12
 	const MISTY1
+	const MISTY2
 
 	trainerclass LT_SURGE ; 13
 	const LT_SURGE1
+	const LT_SURGE2
 
 	trainerclass SCIENTIST ; 14
 	const ROSS
@@ -114,6 +138,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass ERIKA ; 15
 	const ERIKA1
+	const ERIKA2
 
 	trainerclass YOUNGSTER ; 16
 	const JOEY1
@@ -199,6 +224,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass JANINE ; 1a
 	const JANINE1
+	const JANINE2
 
 	trainerclass COOLTRAINERM ; 1b
 	const NICK
@@ -332,6 +358,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass SABRINA ; 23
 	const SABRINA1
+	const SABRINA2
 
 	trainerclass BUG_CATCHER ; 24
 	const DON
@@ -505,6 +532,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BLAINE ; 2e
 	const BLAINE1
+	const BLAINE2
 
 	trainerclass BURGLAR ; 2f
 	const DUNCAN
@@ -693,6 +721,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BLUE ; 40
 	const BLUE1
+	const BLUE2
 
 	trainerclass OFFICER ; 41
 	const KEITH
@@ -728,9 +757,11 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass HEX_MANIAC ; 49
 	const TASHA
+	const LILI
 
 	trainerclass VETERAN_F ; 4a
 	const MONICA
+	const LENORE
 
 	trainerclass VETERAN_M ; 4b
 	const CONNOR
@@ -764,6 +795,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass ENGINEER ; 51
 	const VINCENT
+	const BOBBY
 
 	trainerclass MASTER ; 52
 	const YAMA1

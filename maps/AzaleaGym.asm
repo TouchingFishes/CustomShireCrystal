@@ -50,11 +50,54 @@ AzaleaGymBugsyScript:
 	end
 
 .GotFuryCutter:
+    checkevent EVENT_BEAT_CHAMPION_LANCE
+    iftrue .OfferRematch
 	writetext BugsyText_BugMonsAreDeep
 	waitbutton
 .NoRoomForFuryCutter:
 	closetext
 	end
+	
+.OfferRematch:
+    writetext BugsyRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext BugsyRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext BugsyRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext BugsyRematchLossText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .DoRematch2
+    loadtrainer BUGSY, BUGSY2
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_BUGSY
+    opentext
+    writetext BugsyRematchAfterText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch2:
+	winlosstext BugsyRematchLossText, 0
+	loadtrainer BUGSY, BUGSY3
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_BUGSY
+    opentext
+    writetext BugsyRematchAfterText
+    waitbutton
+    closetext
+    end
 
 AzaleaGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
@@ -229,6 +272,42 @@ BugsyText_BugMonsAreDeep:
 	para "Study your favor-"
 	line "ites thoroughly."
 	done
+
+BugsyRematchText:
+    text "Long time no see"
+	line "<PLAY_G>!"
+	
+	para "I'm doing great!"
+	line "My research has" 
+	cont "taken me far."
+	
+	para "Allow me to show"
+	line "you the fruits of"
+	cont "my labor!"
+	done
+
+BugsyRematchAcceptText:
+    text "Let me demonstrate"
+	line "what I've learned"
+	cont "from my studies!"
+	done
+
+BugsyRematchRefuseText:
+    text "Oh… alright. Let"
+	line "me know when you"
+	cont "change your mind."
+	done
+	
+BugsyRematchLossText:
+    text "Aw, that's the"
+	line "end of it…"
+	done
+	
+BugsyRematchAfterText:
+    text "Amazing <PLAY_G>!"
+	line "You're truly an"
+	cont "expert on #MON!"
+	done	
 
 BugCatcherBennySeenText:
 	text "Bug #MON evolve"

@@ -42,10 +42,38 @@ CeladonGymErikaScript:
 	iffalse .GotGigaDrain
 	setevent EVENT_GOT_TM19_GIGA_DRAIN
 .GotGigaDrain:
+    readvar VAR_BADGES
+	if_greater_than 15, .OfferRematch
 	writetext ErikaAfterBattleText
 	waitbutton
 	closetext
 	end
+	
+.OfferRematch:
+    writetext ErikaRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext ErikaRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext ErikaRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext ErikaRematchLossText, 0
+    loadtrainer ERIKA, ERIKA2
+    startbattle
+    reloadmapafterbattle
+    opentext
+    writetext ErikaRematchAfterText
+    waitbutton
+    closetext
+    end
 
 TrainerLassMichelle:
 	trainer LASS, MICHELLE, EVENT_BEAT_LASS_MICHELLE, LassMichelleSeenText, LassMichelleBeatenText, 0, .Script
@@ -186,6 +214,45 @@ ErikaAfterBattleText:
 	para "trainers spurs me"
 	line "to do better…"
 	done
+
+ErikaRematchText:
+    text "ERIKA: Hello…"
+	line "I hear things"
+	cont "have been going"
+	cont "well for you."
+	
+	para "How about a"
+	line "rematch?"
+	
+	para "That's what"
+	line "you came for,"
+	cont "isn't it?"
+	done 
+	
+ErikaRematchAcceptText:
+    text "Please allow"
+	line "me to begin."
+	done 
+	
+ErikaRematchRefuseText:
+    text "I see…"
+	done 
+
+ErikaRematchLossText:
+    text "Your skills"
+	line "surpass mine."
+	
+	para "I concede"
+	line "defeat."
+	done 
+	
+ErikaRematchAfterText:
+    text "You are remarkably"
+	line "strong…"
+	
+	para "This is a match"
+	line "I won't forget."
+	done 
 
 LassMichelleSeenText:
 	text "Do you think a"

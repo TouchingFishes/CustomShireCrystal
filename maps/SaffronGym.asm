@@ -39,10 +39,38 @@ SaffronGymSabrinaScript:
 	end
 
 .FightDone:
+    readvar VAR_BADGES
+	if_greater_than 15, .OfferRematch
 	writetext SabrinaFightDoneText
 	waitbutton
 	closetext
 	end
+	
+.OfferRematch:
+    writetext SabrinaRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext SabrinaRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext SabrinaRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext SabrinaRematchLossText, 0
+    loadtrainer SABRINA, SABRINA2
+    startbattle
+    reloadmapafterbattle
+    opentext
+    writetext SabrinaRematchAfterText
+    waitbutton
+    closetext
+    end
 
 TrainerMediumRebecca:
 	trainer MEDIUM, REBECCA, EVENT_BEAT_MEDIUM_REBECCA, MediumRebeccaSeenText, MediumRebeccaBeatenText, 0, .Script
@@ -192,6 +220,41 @@ SabrinaFightDoneText:
 	para "kind of psychic"
 	line "power…"
 	done
+
+SabrinaRematchText:
+    text "SABRINA: I foresaw"
+	line "that you'd return."
+	
+	para "But I intention-"
+	line "-ally didn't look"
+	cont "who'd win"
+	cont "this time."
+	
+	para "How about we" 
+	line "find out?"
+	done 
+	
+SabrinaRematchAcceptText:
+    text "Since you wish it," 
+	line "I will show you"
+	cont "my psychic powers!"
+	done 
+	
+SabrinaRematchRefuseText:
+    text "That's a little"
+	line "dissapointing…"
+	done 
+	
+SabrinaRematchLossText:
+    text "Psychic power"
+	line "isn't infallible…"
+	done 
+	
+SabrinaRematchAfterText:
+    text "I know… you will"
+	line "challenge me again"
+	cont "sometime."
+	done 
 
 MediumRebeccaSeenText:
 	text "The power of all"

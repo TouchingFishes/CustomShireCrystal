@@ -38,6 +38,9 @@ CianwoodGymChuckScript:
 	waitbutton
 	closetext
 	winlosstext ChuckLossText, 0
+	readvar VAR_BADGES
+	ifequal 5, .SixthBadge
+	ifequal 6, .SeventhBadge
 	loadtrainer CHUCK, CHUCK1
 	startbattle
 	reloadmapafterbattle
@@ -49,6 +52,34 @@ CianwoodGymChuckScript:
 	setflag ENGINE_STORMBADGE
 	readvar VAR_BADGES
 	scall CianwoodGymActivateRockets
+	sjump .FightDone
+.SixthBadge:
+	loadtrainer CHUCK, CHUCK2
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_CHUCK
+	opentext
+	writetext GetStormBadgeText
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_STORMBADGE
+	readvar VAR_BADGES
+	scall CianwoodGymActivateRockets
+	sjump .FightDone
+.SeventhBadge:
+	loadtrainer CHUCK, CHUCK3
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_CHUCK
+	opentext
+	writetext GetStormBadgeText
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_STORMBADGE
+	readvar VAR_BADGES
+	scall CianwoodGymActivateRockets
+;	sjump .FightDone
+;   fall through
 .FightDone:
 	checkevent EVENT_GOT_TM01_DYNAMICPUNCH
 	iftrue .AlreadyGotTM
@@ -67,11 +98,54 @@ CianwoodGymChuckScript:
 	end
 
 .AlreadyGotTM:
+    checkevent EVENT_BEAT_CHAMPION_LANCE
+    iftrue .OfferRematch
 	writetext ChuckAfterText
 	waitbutton
 .BagFull:
 	closetext
 	end
+
+.OfferRematch:
+    writetext ChuckRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext ChuckRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext ChuckRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext ChuckRematchLossText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .DoRematch2
+    loadtrainer CHUCK, CHUCK4
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_CHUCK
+    opentext
+    writetext ChuckRematchAfterText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch2:
+    winlosstext ChuckRematchLossText, 0
+	loadtrainer CHUCK, CHUCK5
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_CHUCK
+    opentext
+    writetext ChuckRematchAfterText
+    waitbutton
+    closetext
+    end
 
 CianwoodGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
@@ -237,6 +311,41 @@ ChuckAfterText:
 	line "going to train 24"
 	cont "hours a day!"
 	done
+
+ChuckRematchText:
+    text "Hello?! Oh!"
+	line "Sorry for"
+	cont "shouting."
+	
+	para "I just finished"
+	line "training!"
+	
+	para "Say, do you"
+	line "want to"
+	cont "fight again?"
+	done
+	
+ChuckRematchAcceptText:
+    text "Come on. We"
+	line "shall do battle!"
+	done
+	
+ChuckRematchRefuseText:
+	text "Well then!"
+	line "I might as well"
+	cont "go take a nap."
+	done
+	
+ChuckRematchLossText:
+    text "Huh? I lost?"
+	line "Back to training"
+	cont "it is then!"
+	done 
+
+ChuckRematchAfterText:
+	text "You're something"
+	line "special, kid!"
+	done 
 
 BlackbeltYoshiSeenText:
 	text "My #MON and I"

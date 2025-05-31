@@ -21,6 +21,9 @@ MahoganyGymPryceScript:
 	waitbutton
 	closetext
 	winlosstext PryceText_Impressed, 0
+	readvar VAR_BADGES
+	ifequal 5, .SixthBadge
+	ifequal 6, .SeventhBadge
 	loadtrainer PRYCE, PRYCE1
 	startbattle
 	reloadmapafterbattle
@@ -32,9 +35,37 @@ MahoganyGymPryceScript:
 	setflag ENGINE_GLACIERBADGE
 	readvar VAR_BADGES
 	scall MahoganyGymActivateRockets
+	sjump .FightDone
+.SixthBadge:
+	loadtrainer PRYCE, PRYCE2
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_PRYCE
+	opentext
+	writetext Text_ReceivedGlacierBadge
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_GLACIERBADGE
+	readvar VAR_BADGES
+	scall MahoganyGymActivateRockets
+	sjump .FightDone
+.SeventhBadge:
+	loadtrainer PRYCE, PRYCE3
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_PRYCE
+	opentext
+	writetext Text_ReceivedGlacierBadge
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_GLACIERBADGE
+	readvar VAR_BADGES
+	scall MahoganyGymActivateRockets
+;	sjump .FightDone
+;   fall through
 .FightDone:
 	checkevent EVENT_GOT_TM16_ICY_WIND
-	iftrue PryceScript_Defeat
+	iftrue .PryceScript_Defeat
 	setevent EVENT_BEAT_SKIER_ROXANNE
 	setevent EVENT_BEAT_SKIER_CLARISSA
 	setevent EVENT_BEAT_BOARDER_RONALD
@@ -43,19 +74,62 @@ MahoganyGymPryceScript:
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
 	verbosegiveitem TM_ICY_WIND
-	iffalse MahoganyGym_NoRoomForIcyWind
+	iffalse .MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
 	waitbutton
 	closetext
 	end
 
-PryceScript_Defeat:
+.PryceScript_Defeat:
+    checkevent EVENT_BEAT_CHAMPION_LANCE
+    iftrue .OfferRematch
 	writetext PryceText_CherishYourPokemon
 	waitbutton
-MahoganyGym_NoRoomForIcyWind:
+.MahoganyGym_NoRoomForIcyWind:
 	closetext
 	end
+
+.OfferRematch:
+    writetext PryceRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext PryceRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext PryceRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext PryceRematchLossText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .DoRematch2
+    loadtrainer PRYCE, PRYCE4
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_PRYCE
+    opentext
+    writetext PryceRematchAfterText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch2:
+    winlosstext PryceRematchLossText, 0
+	loadtrainer PRYCE, PRYCE5
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_PRYCE
+    opentext
+    writetext PryceRematchAfterText
+    waitbutton
+    closetext
+    end
 
 MahoganyGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
@@ -237,6 +311,51 @@ PryceText_CherishYourPokemon:
 	para "Cherish your time"
 	line "together!"
 	done
+
+PryceRematchText:
+    text "Ah, it's good"
+	line "to see you again."
+	
+	para "I've heard of"
+	line "your victories."
+	
+	para "I knew you had"
+	line "potential, but"
+	cont "for someone this"
+	cont "young to"
+	cont "become champion!"
+	
+	para "But experience"
+	line "is what counts!"
+	
+	para "As your elder,"
+	line "allow me to"
+	cont "demonstrate!"
+	done
+	
+PryceRematchAcceptText:
+    text "I, PRYCE--the"
+	line "winter trainer--"
+
+	para "shall demonstrate"
+	line "my power!"
+	done
+	
+PryceRematchRefuseText:
+    text "Hm. Nevermind."
+	done 
+	
+PryceRematchLossText:
+    text "Outstanding!"
+	line "That was perfect." 
+	done
+	
+PryceRematchAfterText:
+    text "A splendid match."
+	line "You should be"
+	cont "able to overcome"
+	cont "anything."
+	done 
 
 BoarderRonaldSeenText:
 	text "I'll freeze your"

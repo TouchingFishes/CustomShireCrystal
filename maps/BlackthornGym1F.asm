@@ -85,10 +85,53 @@ BlackthornGymClairScript:
 	end
 
 .GotTM24:
+    checkevent EVENT_BEAT_CHAMPION_LANCE
+    iftrue .OfferRematch
 	writetext BlackthornGymClairText_League
 	waitbutton
 	closetext
 	end
+	
+.OfferRematch:
+    writetext ClairRematchText
+    yesorno
+    iftrue .DoRematch
+    ; fall through
+	
+.DontDoRematch:
+    writetext ClairRematchRefuseText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch:
+    writetext ClairRematchAcceptText
+    waitbutton
+    closetext
+    winlosstext ClairRematchLossText, 0
+	readvar VAR_BADGES
+	if_greater_than 15, .DoRematch2
+    loadtrainer CLAIR, CLAIR2
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_CLAIR
+    opentext
+    writetext ClairRematchAfterText
+    waitbutton
+    closetext
+    end
+	
+.DoRematch2:
+    winlosstext ClairRematchLossText, 0
+	loadtrainer CLAIR, CLAIR3
+    startbattle
+    reloadmapafterbattle
+    setevent EVENT_BEAT_CLAIR
+    opentext
+    writetext ClairRematchAfterText
+    waitbutton
+    closetext
+    end
 
 TrainerCooltrainermPaul:
 	trainer COOLTRAINERM, PAUL, EVENT_BEAT_COOLTRAINERM_PAUL, CooltrainermPaulSeenText, CooltrainermPaulBeatenText, 0, .Script
@@ -221,6 +264,53 @@ ClairText_TooMuchToExpect:
 	para "Is it too much to"
 	line "expect of you?"
 	done
+
+ClairRematchText:
+    text "So you've gone"
+	line "and beaten the"
+	cont "#MON LEAGUE."
+	
+	para "It looks like"
+	line "our first battle"
+	cont "was no fluke."
+	
+	para "But I haven't"
+	line "been slacking" 
+	cont "off either."
+	
+	para "I can hold my"
+	line "own even against"
+	cont "the CHAMPION now."
+	
+	para "Do you still wish"
+	line "to take me on?"
+	done 
+	
+ClairRematchAcceptText:
+    text "…Fine."
+	line "Let's do it!"
+
+	para "I will use my full"
+	line "power against any"
+	cont "opponent!"
+	done
+	
+ClairRematchRefuseText:
+    text "How disappointing."
+	done
+	
+ClairRematchLossText:
+    text "You're powerful."
+	line "This is"
+	cont "no mistake…"
+	done
+	
+ClairRematchAfterText:
+    text "I wonder just" 
+	line "how far you"
+	cont "can go with"
+	cont "your skill."
+	done 
 
 BlackthornGymClairText_YouKeptMeWaiting:
 	text "You've kept me"

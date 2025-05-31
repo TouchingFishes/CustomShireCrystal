@@ -71,7 +71,7 @@ HoOhText:
 
 YamaScript_YamaBeforeText:
 	text "Oh, so you're the"
-	line "one, who fought my"
+	line "one who fought my"
 	cont "old friend …"
 
 	para "…………"
@@ -81,8 +81,7 @@ YamaScript_YamaBeforeText:
 
 	para "battle. Maybe you"
 	line "will be a worthy"
-
-	para "challenger for me…"
+	cont "challenger for me…"
 
 	para "…………"
 

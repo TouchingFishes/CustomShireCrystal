@@ -1489,7 +1489,12 @@
 	const EVENT_DARK_CAVE_VIOLET_ENTRANCE_DIRE_HIT
 	const EVENT_BATTLE_TOWER_OPEN_CIVILIANS
 	const EVENT_YAMA_VISIBLE
-; Unused: next 47 events
+	const EVENT_FOUGHT_MOLTRES
+	const EVENT_FOUGHT_ARTICUNO
+	const EVENT_FOUGHT_ZAPDOS
+	const EVENT_BIRDS_VISIBLE ;Articuno, Zapdos, Moltres
+	const EVENT_NEW_BARK_TOWN_STEVEN
+; Unused: next 42 events
 
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800
