@@ -359,9 +359,10 @@ BeedrillEvosAttacks:
 	dbw 20, TWINEEDLE
 	dbw 25, RAZOR_WIND
 	dbw 30, PURSUIT
-	dbw 35, PIN_MISSILE
+	dbw 35, SPIKE_CANNON
 	dbw 40, AGILITY
 	dbw 45, ENDEAVOR
+	dbw 52, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 PidgeyEvosAttacks:
@@ -2024,6 +2025,7 @@ PinsirEvosAttacks:
 TaurosEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, RAGE
+	dbw 1, FOCUS_ENERGY
 	dbw 4, TAIL_WHIP
 	dbw 8, PURSUIT
 	dbw 13, HORN_ATTACK
@@ -2084,7 +2086,6 @@ EeveeEvosAttacks:
 	evolve EVOLVE_ITEM, MOON_STONE, UMBREON
 	evolve EVOLVE_ITEM, LEAF_STONE, LEAFEON
 	evolve EVOLVE_HAPPINESS, GLACEON
-	evolve EVOLVE_ITEM, DRAGON_SCALE, DRACONEON
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWTH

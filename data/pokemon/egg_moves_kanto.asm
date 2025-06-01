@@ -293,6 +293,7 @@ ParasEggMoves:
 	dw FALSE_SWIPE
 	dw FLAIL
 	dw LIGHT_SCREEN
+	dw LEAF_BLADE
 	dw PSYBEAM
 	dw PURSUIT
 	dw SCREECH
@@ -598,6 +599,7 @@ KangaskhanEggMoves:
 	dw SAFEGUARD
 	dw STOMP
 	dw SUBSTITUTE
+	dw OUTRAGE
 	dw -1 ; end
 
 HorseaEggMoves:

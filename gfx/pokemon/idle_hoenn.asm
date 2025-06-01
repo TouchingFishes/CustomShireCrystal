@@ -16,7 +16,7 @@ AnimationIdlePointers3:
 	dw GliscorAnimationIdle
 	dw LeafeonAnimationIdle
 	dw GlaceonAnimationIdle
-	dw DraconeonAnimationIdle
+	dw YanmegaAnimationIdle
 	dw KujinoughtAnimationIdle
 	dw MlloyAnimationIdle
 	dw LotadAnimationIdle
@@ -156,7 +156,7 @@ HonchkrowAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/honchkrow/anim_idle.asm"
 GliscorAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/gliscor/anim_idle.asm"
 LeafeonAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/leafeon/anim_idle.asm"
 GlaceonAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/glaceon/anim_idle.asm"
-DraconeonAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/draconeon/anim_idle.asm"
+YanmegaAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/yanmega/anim_idle.asm"
 KujinoughtAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/kujinought/anim_idle.asm"
 MlloyAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/mlloy/anim_idle.asm"
 LotadAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/lotad/anim_idle.asm"

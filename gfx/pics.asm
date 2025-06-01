@@ -647,8 +647,8 @@ SECTION "Pokemon Pics 23", ROMX
 
 GlaceonFrontpic:          INCBIN "gfx/pokemon/hoenn/glaceon/front.animated.2bpp.lz"
 GlaceonBackpic:           INCBIN "gfx/pokemon/hoenn/glaceon/back.2bpp.lz"
-DraconeonFrontpic:        INCBIN "gfx/pokemon/hoenn/draconeon/front.animated.2bpp.lz"
-DraconeonBackpic:         INCBIN "gfx/pokemon/hoenn/draconeon/back.2bpp.lz"
+YanmegaFrontpic:          INCBIN "gfx/pokemon/hoenn/yanmega/front.animated.2bpp.lz"
+YanmegaBackpic:           INCBIN "gfx/pokemon/hoenn/yanmega/back.2bpp.lz"
 KujinoughtFrontpic:       INCBIN "gfx/pokemon/hoenn/kujinought/front.animated.2bpp.lz"
 KujinoughtBackpic:        INCBIN "gfx/pokemon/hoenn/kujinought/back.2bpp.lz"
 MlloyFrontpic:            INCBIN "gfx/pokemon/hoenn/mlloy/front.animated.2bpp.lz"

@@ -45,7 +45,7 @@ BTTrainerClassGenders:
 	db MALE   ; SAILOR
 	db MALE   ; SUPER_NERD
 	db MALE   ; RIVAL2
-	db MALE   ; GUITARIST
+	db FEMALE ; GUITARIST
 	db MALE   ; HIKER
 	db MALE   ; BIKER
 	db MALE   ; BLAINE

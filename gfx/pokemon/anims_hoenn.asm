@@ -16,7 +16,7 @@ AnimationPointers3:
 	dw GliscorAnimation
 	dw LeafeonAnimation
 	dw GlaceonAnimation
-	dw DraconeonAnimation
+	dw YanmegaAnimation
 	dw KujinoughtAnimation
 	dw MlloyAnimation
 	dw LotadAnimation
@@ -156,7 +156,7 @@ HonchkrowAnimation:     INCLUDE "gfx/pokemon/hoenn/honchkrow/anim.asm"
 GliscorAnimation:       INCLUDE "gfx/pokemon/hoenn/gliscor/anim.asm"
 LeafeonAnimation:       INCLUDE "gfx/pokemon/hoenn/leafeon/anim.asm"
 GlaceonAnimation:       INCLUDE "gfx/pokemon/hoenn/glaceon/anim.asm"
-DraconeonAnimation:     INCLUDE "gfx/pokemon/hoenn/draconeon/anim.asm"
+YanmegaAnimation:       INCLUDE "gfx/pokemon/hoenn/yanmega/anim.asm"
 KujinoughtAnimation:    INCLUDE "gfx/pokemon/hoenn/kujinought/anim.asm"
 MlloyAnimation:         INCLUDE "gfx/pokemon/hoenn/mlloy/anim.asm"
 LotadAnimation:         INCLUDE "gfx/pokemon/hoenn/lotad/anim.asm"

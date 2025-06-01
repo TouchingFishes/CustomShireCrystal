@@ -133,6 +133,17 @@ TrainerHikerErik:
 	closetext
 	end
 
+TrainerVeteranRaynor:
+	trainer HIKER, ERIK, EVENT_BEAT_HIKER_ERIK, VeteranRaynorSeenText, VeteranRaynorBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext VeteranRaynorAfterBattleText
+	waitbutton
+	closetext
+	end
+
 TrainerHikerMichael:
 	trainer HIKER, MICHAEL, EVENT_BEAT_HIKER_MICHAEL, HikerMichaelSeenText, HikerMichaelBeatenText, 0, .Script
 
@@ -325,6 +336,45 @@ HikerErikAfterBattleText:
 
 	para "PATH and train"
 	line "some more."
+	done
+
+VeteranRaynorSeenText:
+	text "I'll head back to"
+	line "BLACKTHORN's ICE"
+
+	para "……………"
+
+	cont "The more I stare"
+	line "into it, the more"
+	cont "I feel that there"
+	cont "is a great trea-"
+
+	para "sure below its"
+	line "surface."
+
+	para "Oh. I was just"
+	line "talking to myself…"
+
+	para "You seem talented…"
+
+	para "Let's see, if my"
+	line "first impression"
+	cont "is correct."
+
+VeteranRaynorBeatenText:
+	text "I was… You are a"
+	line "prodigy."
+	done
+
+VeteranRaynorAfterBattleText:
+	text "I mean it."
+	
+	para "……………"
+
+	para "There is something"
+	line "special at the"
+	cont "bottom of this"
+	cont "pond."
 	done
 
 HikerMichaelSeenText:
@@ -540,3 +590,4 @@ Route45_MapEvents:
 	object_event  6, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45Elixer, EVENT_ROUTE_45_ELIXER
 	object_event  7, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45MaxPotion, EVENT_ROUTE_45_MAX_POTION
 	object_event  4, 70, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TrainerCamperQuentin, -1
+	object_event 11, 79, SPRITE_VETERAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TrainerCamperQuentin, -1

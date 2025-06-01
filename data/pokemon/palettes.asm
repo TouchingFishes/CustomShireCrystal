@@ -568,8 +568,8 @@ INCBIN "gfx/pokemon/hoenn/leafeon/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/leafeon/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/glaceon/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/glaceon/shiny.pal"
-INCBIN "gfx/pokemon/hoenn/draconeon/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoenn/draconeon/shiny.pal"
+INCBIN "gfx/pokemon/hoenn/yanmega/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hoenn/yanmega/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/kujinought/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/kujinought/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/mlloy/normal.gbcpal", middle_colors

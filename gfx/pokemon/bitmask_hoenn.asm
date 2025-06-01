@@ -16,7 +16,7 @@ BitmaskPointers3:
 	dw GliscorBitmasks
 	dw LeafeonBitmasks
 	dw GlaceonBitmasks
-	dw DraconeonBitmasks
+	dw YanmegaBitmasks
 	dw KujinoughtBitmasks
 	dw MlloyBitmasks
 	dw LotadBitmasks
@@ -156,7 +156,7 @@ HonchkrowBitmasks:     INCLUDE "gfx/pokemon/hoenn/honchkrow/bitmask.asm"
 GliscorBitmasks:       INCLUDE "gfx/pokemon/hoenn/gliscor/bitmask.asm"
 LeafeonBitmasks:       INCLUDE "gfx/pokemon/hoenn/leafeon/bitmask.asm"
 GlaceonBitmasks:       INCLUDE "gfx/pokemon/hoenn/glaceon/bitmask.asm"
-DraconeonBitmasks:     INCLUDE "gfx/pokemon/hoenn/draconeon/bitmask.asm"
+YanmegaBitmasks:       INCLUDE "gfx/pokemon/hoenn/yanmega/bitmask.asm"
 KujinoughtBitmasks:    INCLUDE "gfx/pokemon/hoenn/kujinought/bitmask.asm"
 MlloyBitmasks:         INCLUDE "gfx/pokemon/hoenn/mlloy/bitmask.asm"
 LotadBitmasks:         INCLUDE "gfx/pokemon/hoenn/lotad/bitmask.asm"

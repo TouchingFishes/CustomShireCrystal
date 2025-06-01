@@ -270,7 +270,7 @@ PokedexDataPointerTable:
 	dba GliscorPokedexEntry
 	dba LeafeonPokedexEntry
 	dba GlaceonPokedexEntry
-	dba DraconeonPokedexEntry
+	dba YanmegaPokedexEntry
 	dba KujinoughtPokedexEntry
 	dba MlloyPokedexEntry
 	dba LotadPokedexEntry

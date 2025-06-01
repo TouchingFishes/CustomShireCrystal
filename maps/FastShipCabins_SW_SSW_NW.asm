@@ -42,13 +42,13 @@ TrainerBeautyCassie:
 	closetext
 	end
 
-TrainerGuitaristClyde:
-	trainer GUITARIST, CLYDE, EVENT_BEAT_GUITARIST_CLYDE, GuitaristClydeSeenText, GuitaristClydeBeatenText, 0, .Script
+TrainerGuitaristLydia:
+	trainer GUITARIST, LYDIA, EVENT_BEAT_GUITARIST_LYDIA, GuitaristLydiaSeenText, GuitaristLydiaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GuitaristClydeAfterBattleText
+	writetext GuitaristLydiaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -158,7 +158,7 @@ BeautyCassieAfterBattleText:
 	cont "for grieving."
 	done
 
-GuitaristClydeSeenText:
+GuitaristLydiaSeenText:
 	text "I'm going to audi-"
 	line "tion my songs at"
 
@@ -166,12 +166,12 @@ GuitaristClydeSeenText:
 	line "STATION."
 	done
 
-GuitaristClydeBeatenText:
+GuitaristLydiaBeatenText:
 	text "Yowza!"
 	line "Total distortion!"
 	done
 
-GuitaristClydeAfterBattleText:
+GuitaristLydiaAfterBattleText:
 	text "Speaking of the"
 	line "RADIO STATION,"
 
@@ -222,4 +222,4 @@ FastShipCabins_SW_SSW_NW_MapEvents:
 	object_event  1, 15, SPRITE_FISHER, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherLyle, EVENT_FAST_SHIP_PASSENGERS_FIRST_TRIP
 	object_event  6, 15, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherKen, EVENT_FAST_SHIP_PASSENGERS_WESTBOUND
 	object_event  1, 26, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBeautyCassie, EVENT_FAST_SHIP_PASSENGERS_EASTBOUND
-	object_event  3, 28, SPRITE_ROCKER, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGuitaristClyde, EVENT_FAST_SHIP_PASSENGERS_WESTBOUND
+	object_event  3, 28, SPRITE_LASS, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 2, TrainerGuitaristLydia, EVENT_FAST_SHIP_PASSENGERS_WESTBOUND

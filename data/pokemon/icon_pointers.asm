@@ -274,7 +274,7 @@ IconPointers:
 	dw GliscorIcon
 	dw LeafeonIcon
 	dw GlaceonIcon
-	dw DraconeonIcon
+	dw YanmegaIcon
 	dw KujinoughtIcon
 	dw MlloyIcon
 	dw LotadIcon

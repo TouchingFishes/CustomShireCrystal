@@ -273,7 +273,7 @@ PokemonNames::
 	db "GLISCOR@@@"
 	db "LEAFEON@@@"
 	db "GLACEON@@@"
-	db "DRACONEON@"
+	db "YANMEGA@@@"
 	db "KUJINOUGHT"
 	db "M'LLOY@@@@"
 	db "LOTAD@@@@@"

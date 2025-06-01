@@ -492,7 +492,7 @@ DEF KRIS EQU __trainer_class__
 	const RIVAL2_2_TOTODILE
 
 	trainerclass GUITARIST ; 2b
-	const CLYDE
+	const LYDIA
 	const MOA
 
 	trainerclass HIKER ; 2c
@@ -762,11 +762,14 @@ DEF KRIS EQU __trainer_class__
 	trainerclass VETERAN_F ; 4a
 	const MONICA
 	const LENORE
+	const FILJA
 
 	trainerclass VETERAN_M ; 4b
 	const CONNOR
 	const YURI
 	const LEON
+	const RAYNOR
+	const MORIMOTO
 
 	trainerclass BUG_MANIAC ; 4c
 	const FRED

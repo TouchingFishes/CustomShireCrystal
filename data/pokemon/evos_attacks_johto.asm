@@ -687,6 +687,7 @@ SunfloraEvosAttacks:
 	db 0 ; no more level-up moves
 
 YanmaEvosAttacks:
+	evolve EVOLVE_LEVEL, 40, YANMEGA
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, FORESIGHT
@@ -1358,14 +1359,15 @@ MagbyEvosAttacks:
 MiltankEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
+	dbw 1, BIDE
 	dbw 4, GROWL
 	dbw 8, DEFENSE_CURL
 	dbw 13, STOMP
 	dbw 19, MILK_DRINK
-	dbw 26, BIDE
-	dbw 34, ROLLOUT
+	dbw 26, ROLLOUT
+	dbw 34, HEAL_BELL
 	dbw 43, BODY_SLAM
-	dbw 53, HEAL_BELL
+	dbw 53, SUPERPOWER
 	db 0 ; no more level-up moves
 
 BlisseyEvosAttacks:

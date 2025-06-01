@@ -279,7 +279,7 @@ MonMenuIconPals:
 	icon_pals GRAY,   GRAY   ; GLISCOR
 	icon_pals GREEN,  RED    ; LEAFEON
 	icon_pals TEAL,   RED    ; GLACEON
-	icon_pals GREEN,  RED    ; DRACONEON
+	icon_pals RED,    BLUE   ; YANMEGA
 	icon_pals RED,    RED    ; KUJINOUGHT
 	icon_pals BROWN,  RED    ; MLLOY
 	icon_pals GREEN,  RED    ; LOTAD

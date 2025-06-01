@@ -44,7 +44,7 @@ TrainerClassIVs:
 	ivs 16, 18, 16, 16, 16, 16 ; SAILOR
 	ivs 16, 18, 16, 16, 16, 16 ; SUPER_NERD
 	ivs 31, 31, 31, 31, 31, 31 ; RIVAL2
-	ivs 16, 18, 16, 16, 16, 16 ; GUITARIST
+	ivs 16, 26, 16, 31, 26, 16 ; GUITARIST
 	ivs 16, 20, 16, 16, 16, 16 ; HIKER
 	ivs 16, 18, 16, 16, 16, 16 ; BIKER
 	ivs 24, 24, 24, 24, 24, 24 ; BLAINE

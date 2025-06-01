@@ -16,7 +16,7 @@ FramePointers3:
 	dw GliscorFrames
 	dw LeafeonFrames
 	dw GlaceonFrames
-	dw DraconeonFrames
+	dw YanmegaFrames
 	dw KujinoughtFrames
 	dw MlloyFrames
 	dw LotadFrames
@@ -156,7 +156,7 @@ HonchkrowFrames:     INCLUDE "gfx/pokemon/hoenn/honchkrow/frames.asm"
 GliscorFrames:       INCLUDE "gfx/pokemon/hoenn/gliscor/frames.asm"
 LeafeonFrames:       INCLUDE "gfx/pokemon/hoenn/leafeon/frames.asm"
 GlaceonFrames:       INCLUDE "gfx/pokemon/hoenn/glaceon/frames.asm"
-DraconeonFrames:     INCLUDE "gfx/pokemon/hoenn/draconeon/frames.asm"
+YanmegaFrames:       INCLUDE "gfx/pokemon/hoenn/yanmega/frames.asm"
 KujinoughtFrames:    INCLUDE "gfx/pokemon/hoenn/kujinought/frames.asm"
 MlloyFrames:         INCLUDE "gfx/pokemon/hoenn/mlloy/frames.asm"
 LotadFrames:         INCLUDE "gfx/pokemon/hoenn/lotad/frames.asm"

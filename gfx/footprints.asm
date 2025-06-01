@@ -268,9 +268,9 @@ INCBIN "gfx/footprints/hoenn/euxinos.1bpp"
 INCBIN "gfx/footprints/hoenn/weavile.1bpp"
 INCBIN "gfx/footprints/hoenn/honchkrow.1bpp"
 INCBIN "gfx/footprints/hoenn/gliscor.1bpp"
-INCBIN "gfx/footprints/kanto/eevee.1bpp" 	  ;leafeon
-INCBIN "gfx/footprints/kanto/eevee.1bpp" 	  ;glaceon
-INCBIN "gfx/footprints/hoenn/draconeon.1bpp"
+INCBIN "gfx/footprints/johto/umbreon.1bpp" 	  ;leafeon
+INCBIN "gfx/footprints/johto/umbreon.1bpp" 	  ;glaceon
+INCBIN "gfx/footprints/hoenn/yanmega.1bpp"
 INCBIN "gfx/footprints/johto/misdreavus.1bpp" ;no footprint placeholder kujinought
 INCBIN "gfx/footprints/hoenn/mlloy.1bpp"
 INCBIN "gfx/footprints/hoenn/lotad.1bpp"

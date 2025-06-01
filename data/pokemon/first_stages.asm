@@ -267,7 +267,7 @@ FirstEvoStages::
 	dw GLIGAR     ;108
 	dw EEVEE
 	dw EEVEE
-	dw EEVEE
+	dw YANMA
 	dw REMORAID
 	dw FARFETCH_D
 	dw LOTAD

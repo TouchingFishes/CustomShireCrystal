@@ -551,8 +551,8 @@ PokemonPicPointers::
 	dba LeafeonBackpic
 	dba GlaceonFrontpic
 	dba GlaceonBackpic
-	dba DraconeonFrontpic
-	dba DraconeonBackpic
+	dba YanmegaFrontpic
+	dba YanmegaBackpic
 	dba KujinoughtFrontpic
 	dba KujinoughtBackpic
 	dba MlloyFrontpic

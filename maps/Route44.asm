@@ -11,6 +11,7 @@
 	const ROUTE44_POKE_BALL2
 	const ROUTE44_POKE_BALL3
 	const ROUTE44_ARTICUNO
+	const ROUTE44_RICH_BOY
 
 Route44_MapScripts:
 	def_scene_scripts
@@ -313,6 +314,17 @@ TrainerCooltrainermAllen:
 	closetext
 	end
 
+TrainerRichBoyDarren:
+	trainer RICH_BOY, DARREN, EVENT_BEAT_RICH_BOY_DARREN, RichBoyDarrenSeenText, RichBoyDarrenBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext RichBoyDarrenAfterBattleText
+	waitbutton
+	closetext
+	end
+
 Route44Sign1:
 	jumptext Route44Sign1Text
 
@@ -500,6 +512,29 @@ CooltrainermAllenAfterBattleText:
 	line "me."
 	done
 
+RichBoyDarrenSeenText:
+	text "I spent ages look-"
+	line "ing for my team."
+
+	para "Let's find out, if"
+	line "it was worth it."
+	done
+
+RichBoyDarrenBeatenText:
+	text "Seems like the"
+	line "time i spent was"
+	cont "not worth it."
+	done
+
+RichBoyDarrenAfterBattleText:
+	text "Someone told me"
+	line "that my #MON"
+
+	para "are on the cusp of"
+	line "realizing their"
+	cont "full potential."
+	done
+
 CooltrainerfCybilSeenText:
 	text "You look strong."
 
@@ -565,3 +600,4 @@ Route44_MapEvents:
 	object_event 45,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44UltraBall, EVENT_ROUTE_44_ULTRA_BALL
 	object_event 14,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44MaxRepel, EVENT_ROUTE_44_MAX_REPEL
 	object_event 35,  8, SPRITE_ARTICUNO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route44Articuno, EVENT_BIRDS_VISIBLE
+	object_event 23,  3, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerRichBoyDarren, -1

@@ -65,7 +65,6 @@ AlphabeticalPokedexOrder:
 	dw DODRIO
 	dw DODUO
 	dw DONPHAN
-	dw DRACONEON
 	dw DRAGONAIR
 	dw DRAGONITE
 	dw DRATINI
@@ -389,6 +388,7 @@ AlphabeticalPokedexOrder:
 	dw WYRDEER
 	dw XATU
 	dw YANMA
+	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT
 	assert_table_length NUM_POKEMON

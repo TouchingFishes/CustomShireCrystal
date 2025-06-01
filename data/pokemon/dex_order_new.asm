@@ -115,6 +115,7 @@ NewPokedexOrder:
 	dw NIDORINO
 	dw NIDOKING
 	dw YANMA
+	dw YANMEGA
 	dw SUNKERN
 	dw SUNFLORA
 	dw EXEGGCUTE
@@ -248,7 +249,6 @@ NewPokedexOrder:
 	dw UMBREON
 	dw LEAFEON
 	dw GLACEON
-	dw DRACONEON
 	dw HORSEA
 	dw SEADRA
 	dw KINGDRA

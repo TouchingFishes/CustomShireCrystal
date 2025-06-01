@@ -16,7 +16,7 @@ EvosAttacksPointers3::
 	dw GliscorEvosAttacks
 	dw LeafeonEvosAttacks
 	dw GlaceonEvosAttacks
-	dw DraconeonEvosAttacks
+	dw YanmegaEvosAttacks
 	dw KujinoughtEvosAttacks
 	dw MlloyEvosAttacks
 	dw LotadEvosAttacks
@@ -390,19 +390,21 @@ GlaceonEvosAttacks:
 	dbw 52, BLIZZARD
 	db 0 ; no more level-up moves
 
-DraconeonEvosAttacks:
+YanmegaEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, GROWTH
 	dbw 1, TACKLE
-	dbw 1, TAIL_WHIP
-	dbw 8, SAND_ATTACK
-	dbw 16, DRAGON_RAGE
-	dbw 23, QUICK_ATTACK
-	dbw 30, MAGICAL_LEAF
-	dbw 36, SLAM
-	dbw 42, SAFEGUARD
-	dbw 47, DRAGON_PULSE
-	dbw 52, RECOVER 
+	dbw 1, FORESIGHT
+	dbw 1, SCREECH
+	dbw 7, QUICK_ATTACK
+	dbw 13, DOUBLE_TEAM
+	dbw 19, SONICBOOM
+	dbw 23, DETECT
+	dbw 28, RAZOR_WIND
+	dbw 31, SUPERSONIC
+	dbw 37, UPROAR
+	dbw 40, OMINOUS_WIND
+	dbw 43, WING_ATTACK
+	dbw 49, SIGNAL_BEAM
 	db 0 ; no more level-up moves
 
 KujinoughtEvosAttacks:
@@ -1245,7 +1247,7 @@ SmoguanaEvosAttacks:
 	dbw 29, SLASH
 	dbw 31, SMOKESCREEN
 	dbw 35, BURNING_SAND
-	dbw 41, FLAMETHROWER
+	dbw 41, FLAME_WHEEL
 	dbw 49, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 

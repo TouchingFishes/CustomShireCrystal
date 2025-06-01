@@ -275,7 +275,7 @@ PokemonCries::
 	mon_cry CRY_GLIGAR,     -107,  320 ; GLISCOR
 	mon_cry CRY_BULBASAUR,   238,  129 ; LEAFEON
 	mon_cry CRY_BULBASAUR,   238,  129 ; GLACEON
-	mon_cry CRY_BULBASAUR,   238,  129 ; DRACONEON
+	mon_cry CRY_BULBASAUR,   238,  129 ; YANMEGA
 	mon_cry CRY_CATERPIE,   -183,  512 ; KUJINOUGHT
 	mon_cry CRY_BULBASAUR,   238,  129 ; MLLOY
 	mon_cry CRY_SLOWPOKE,      0,  256 ; LOTAD

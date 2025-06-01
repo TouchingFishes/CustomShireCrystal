@@ -271,7 +271,7 @@ PokemonBodyData:
 	dw 607, 937    ; GLISCOR
 	dw 303, 562    ; LEAFEON
 	dw 207, 571    ; GLACEON
-	dw 407, 759    ; DRACONEON
+	dw 603, 1135   ; YANMEGA
 	dw 4707, 8774  ; KUJINOUGHT
 	dw 207, 474    ; MLLOY
 	dw 108, 57     ; LOTAD

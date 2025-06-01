@@ -288,7 +288,7 @@ DEF HOENN_POKEMON EQU const_value
 	const GLISCOR    ; 108
 	const LEAFEON    ; 109
 	const GLACEON    ; 10a
-	const DRACONEON  ; 10b
+	const YANMEGA    ; 10b
 	const KUJINOUGHT ; 10c
 	const MLLOY      ; 10d
 	const LOTAD	     ; 10e
