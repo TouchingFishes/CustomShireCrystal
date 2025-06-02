@@ -148,8 +148,6 @@ BattleCommand_CheckTurn:
 	and SLP_MASK
 	jr z, .woke_up
 
-	xor a
-	ld [wNumHits], a
 	ld de, ANIM_SLP
 	call FarPlayBattleAnimation
 	jr .fast_asleep
@@ -254,8 +252,6 @@ BattleCommand_CheckTurn:
 .confused
 	ld hl, IsConfusedText
 	call StdBattleTextbox
-	xor a
-	ld [wNumHits], a
 	ld de, ANIM_CONFUSED
 	call FarPlayBattleAnimation
 
@@ -282,8 +278,6 @@ BattleCommand_CheckTurn:
 
 	ld hl, InLoveWithText
 	call StdBattleTextbox
-	xor a
-	ld [wNumHits], a
 	ld de, ANIM_IN_LOVE
 	call FarPlayBattleAnimation
 
@@ -389,8 +383,6 @@ CheckEnemyTurn:
 
 	ld hl, FastAsleepText
 	call StdBattleTextbox
-	xor a
-	ld [wNumHits], a
 	ld de, ANIM_SLP
 	call FarPlayBattleAnimation
 	jr .fast_asleep
@@ -494,8 +486,6 @@ CheckEnemyTurn:
 	ld hl, IsConfusedText
 	call StdBattleTextbox
 
-	xor a
-	ld [wNumHits], a
 	ld de, ANIM_CONFUSED
 	call FarPlayBattleAnimation
 
@@ -516,9 +506,6 @@ CheckEnemyTurn:
 	call HitSelfInConfusion
 	call ConfusionDamageCalc
 	call BattleCommand_LowerSub
-
-	xor a
-	ld [wNumHits], a
 
 	; Flicker the monster pic unless flying or underground.
 	ld de, ANIM_HIT_CONFUSION
@@ -541,8 +528,6 @@ CheckEnemyTurn:
 
 	ld hl, InLoveWithText
 	call StdBattleTextbox
-	xor a
-	ld [wNumHits], a
 	ld de, ANIM_IN_LOVE
 	call FarPlayBattleAnimation
 
@@ -619,9 +604,6 @@ HitConfusion:
 	call HitSelfInConfusion
 	call ConfusionDamageCalc
 	call BattleCommand_LowerSub
-
-	xor a
-	ld [wNumHits], a
 
 	; Flicker the monster pic unless flying or underground.
 	ld de, ANIM_HIT_CONFUSION
@@ -1585,7 +1567,7 @@ BattleCommand_CheckHit:
 	call .DreamEater
 	jr z, .Miss
 
-	call .Protect
+	call CheckProtectedOpponent
 	jr nz, .Miss
 
 	call .DrainSub
@@ -1668,25 +1650,6 @@ BattleCommand_CheckHit:
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVar
 	and SLP_MASK
-	ret
-
-.Protect:
-; Return nz if the opponent is protected.
-	ld a, BATTLE_VARS_SUBSTATUS1_OPP
-	call GetBattleVar
-	bit SUBSTATUS_PROTECT, a
-	ret z
-
-	call BattleCommand_MoveDelay
-
-; 'protecting itself!'
-	ld hl, ProtectingItselfText
-	call StdBattleTextbox
-
-	call BattleCommand_MoveDelay
-
-	ld a, 1
-	and a
 	ret
 
 .LockOn:
@@ -1944,8 +1907,6 @@ BattleCommand_LowerSub:
 	call _CheckBattleScene
 	jr c, .mimic_anims
 
-	xor a
-	ld [wNumHits], a
 	inc a
 	ld [wBattleAnimParam], a
 	ld hl, SUBSTITUTE
@@ -1976,6 +1937,10 @@ BattleCommand_LowerSub:
 	ret
 
 BattleCommand_MoveAnim:
+	ld a, [wAttackMissed]
+	and a
+	jmp nz, AnimateFailedMove
+
 	call BattleCommand_LowerSub
 	call BattleCommand_MoveAnimNoSub
 	jmp BattleCommand_RaiseSub
@@ -1983,7 +1948,7 @@ BattleCommand_MoveAnim:
 BattleCommand_MoveAnimNoSub:
 	ld a, [wAttackMissed]
 	and a
-	jmp nz, BattleCommand_MoveDelay
+	jmp nz, AnimateFailedMove
 
 	ldh a, [hBattleTurn]
 	and a
@@ -2041,15 +2006,13 @@ BattleCommand_MoveAnimNoSub:
 	call SetMoveAnimationID
 	pop af
 	jr z, .play_anim
-	xor a
-	ld [wNumHits], a
 .play_anim
 	jmp PlaySelectedFXAnim
 
 BattleCommand_StatUpAnim:
 	ld a, [wAttackMissed]
 	and a
-	jmp nz, BattleCommand_MoveDelay
+	jmp nz, AnimateFailedMove
 
 	xor a
 	jr BattleCommand_StatUpDownAnim
@@ -2057,7 +2020,7 @@ BattleCommand_StatUpAnim:
 BattleCommand_StatDownAnim:
 	ld a, [wAttackMissed]
 	and a
-	jmp nz, BattleCommand_MoveDelay
+	jmp nz, AnimateFailedMove
 
 	ldh a, [hBattleTurn]
 	and a
@@ -2096,8 +2059,6 @@ BattleCommand_RaiseSub:
 	call _CheckBattleScene
 	jmp c, BattleCommand_RaiseSubNoAnim
 
-	xor a
-	ld [wNumHits], a
 	ld a, $2
 	ld [wBattleAnimParam], a
 	ld hl, SUBSTITUTE
@@ -2243,8 +2204,9 @@ BattleCommand_ApplyDamage:
 	ret
 
 GetFailureResultText:
+	ld de, ProtectingItselfText
+
 	ld hl, DoesntAffectText
-	ld de, DoesntAffectText
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	jr z, .got_text
@@ -2252,10 +2214,8 @@ GetFailureResultText:
 	call GetBattleVar
 	cp EFFECT_FUTURE_SIGHT
 	ld hl, ButItFailedText
-	ld de, ItFailedText
 	jr z, .got_text
 	ld hl, AttackMissedText
-	ld de, AttackMissed2Text
 	ld a, [wCriticalHit]
 	cp -1
 	jr nz, .got_text
@@ -2301,9 +2261,7 @@ endr
 	jmp DoPlayerDamage
 
 FailText_CheckOpponentProtect:
-	ld a, BATTLE_VARS_SUBSTATUS1_OPP
-	call GetBattleVar
-	bit SUBSTATUS_PROTECT, a
+	call CheckProtectedOpponent
 	jr z, .not_protected
 	ld h, d
 	ld l, e
@@ -2435,8 +2393,6 @@ BattleCommand_CheckFaint:
 	call RefreshBattleHuds
 
 	call BattleCommand_SwitchTurn
-	xor a
-	ld [wNumHits], a
 	inc a
 	ld [wBattleAnimParam], a
 	ld hl, DESTINY_BOND
@@ -3609,7 +3565,7 @@ BattleCommand_SleepTarget:
 
 	ld a, [wAttackMissed]
 	and a
-	jmp nz, BattleEffect_DidntAffect
+	jmp nz, BattleEffect_DidntAffectProtect
 
 	ld hl, DidntAffectText
 	call .CheckAIRandomFail
@@ -3689,7 +3645,8 @@ BattleCommand_PoisonTarget:
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	ret z
-	call CheckIfTargetIsPoisonType
+	ld c, POISON
+	call CheckIfTargetMatchesType ; Don't freeze an Ice-type
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -3712,12 +3669,12 @@ BattleCommand_PoisonTarget:
 	farjp UseHeldStatusHealingItem
 
 BattleCommand_Poison:
-	ld hl, DoesntAffectText
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	jr z, .failed
 
-	call CheckIfTargetIsPoisonType
+	ld c, POISON
+	call CheckIfTargetMatchesType ; Don't freeze an Ice-type
 	jr z, .failed
 
 	ld a, BATTLE_VARS_STATUS_OPP
@@ -3791,7 +3748,7 @@ BattleCommand_Poison:
 	farjp UseHeldStatusHealingItem
 
 .failed
-	jmp AnimateFailedMoveText
+	jmp BattleEffect_DidntAffectProtect
 
 .apply_poison
 	call AnimateCurrentMove
@@ -3810,21 +3767,6 @@ BattleCommand_Poison:
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
 	cp EFFECT_TOXIC
-	ret
-
-CheckIfTargetIsPoisonType:
-	ld de, wEnemyMonType1
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .ok
-	ld de, wBattleMonType1
-.ok
-	ld a, [de]
-	inc de
-	cp POISON
-	ret z
-	ld a, [de]
-	cp POISON
 	ret
 
 PoisonOpponent:
@@ -3937,8 +3879,6 @@ SapHealth:
 	jmp UpdateBattleMonInParty
 
 BattleCommand_BurnTarget:
-	xor a
-	ld [wNumHits], a
 	call CheckSubstituteOpp
 	ret nz
 	ld a, BATTLE_VARS_STATUS_OPP
@@ -3948,7 +3888,8 @@ BattleCommand_BurnTarget:
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	ret z
-	call CheckMoveTypeMatchesTarget ; Don't burn a Fire-type
+	ld c, FIRE
+	call CheckIfTargetMatchesType ; Don't burn a Fire-type
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -3999,8 +3940,6 @@ Defrost:
 	jmp StdBattleTextbox
 
 BattleCommand_FreezeTarget:
-	xor a
-	ld [wNumHits], a
 	call CheckSubstituteOpp
 	ret nz
 	ld a, BATTLE_VARS_STATUS_OPP
@@ -4013,7 +3952,8 @@ BattleCommand_FreezeTarget:
 	ld a, [wBattleWeather]
 	cp WEATHER_SUN
 	ret z
-	call CheckMoveTypeMatchesTarget ; Don't freeze an Ice-type
+	ld c, ICE
+	call CheckIfTargetMatchesType ; Don't freeze an Ice-type
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -4050,8 +3990,6 @@ BattleCommand_FreezeTarget:
 	ret
 
 BattleCommand_ParalyzeTarget:
-	xor a
-	ld [wNumHits], a
 	call CheckSubstituteOpp
 	ret nz
 	ld a, BATTLE_VARS_STATUS_OPP
@@ -4980,8 +4918,6 @@ BattleCommand_ForceSwitch:
 
 .wild_force_flee
 	call UpdateBattleMonInParty
-	xor a
-	ld [wNumHits], a
 	inc a ; TRUE
 	ld [wForcedSwitch], a
 	call SetBattleDraw
@@ -5068,8 +5004,6 @@ BattleCommand_ForceSwitch:
 ; fallthrough
 .wild_succeed_playeristarget
 	call UpdateBattleMonInParty
-	xor a
-	ld [wNumHits], a
 	inc a ; TRUE
 	ld [wForcedSwitch], a
 	call SetBattleDraw
@@ -5126,9 +5060,7 @@ BattleCommand_ForceSwitch:
 	farjp SpikesDamage
 
 .fail
-	call BattleCommand_LowerSub
-	call BattleCommand_MoveDelay
-	call BattleCommand_RaiseSub
+	call AnimateFailedMove
 	jmp PrintButItFailed
 
 .succeed
@@ -5452,8 +5384,7 @@ BattleCommand_Charge:
 	and SLP_MASK
 	jr z, .awake
 
-	call BattleCommand_MoveDelay
-	call BattleCommand_RaiseSub
+	call AnimateFailedMove
 	call PrintButItFailed
 	jmp EndMoveEffect
 
@@ -5468,8 +5399,6 @@ BattleCommand_Charge:
 	call nz, StdBattleTextbox
 
 	call BattleCommand_LowerSub
-	xor a
-	ld [wNumHits], a
 	inc a
 	ld [wBattleAnimParam], a
 	call LoadMoveAnim
@@ -5679,7 +5608,7 @@ BattleCommand_Confuse_CheckSnore_Swagger_ConfuseHit:
 	ret z
 	cp EFFECT_SWAGGER
 	ret z
-	jmp BattleEffect_DidntAffect
+	jmp BattleEffect_DidntAffectProtect
 
 BattleCommand_Paralyze:
 	ld a, BATTLE_VARS_STATUS_OPP
@@ -5749,45 +5678,27 @@ BattleCommand_Paralyze:
 	jmp AnimateFailedMoveText
 
 .failed
-	jmp BattleEffect_DidntAffect
+	jmp BattleEffect_DidntAffectProtect
 
 .didnt_affect
 	ld hl, DoesntAffectText
 	jmp AnimateFailedMoveText
 
-CheckMoveTypeMatchesTarget:
-; Compare move type to opponent type.
-; Return z if matching the opponent type,
-; unless the move is Normal (Tri Attack).
-
-	push hl
-
-	ld hl, wEnemyMonType1
+CheckIfTargetMatchesType:
+; Compare type loaded in c to opponent type.
+; Return z if matching the opponent type.
+	ld de, wEnemyMonType1
 	ldh a, [hBattleTurn]
 	and a
 	jr z, .ok
-	ld hl, wBattleMonType1
+	ld de, wBattleMonType1
 .ok
-
-	ld a, BATTLE_VARS_MOVE_TYPE
-	call GetBattleVar
-	cp NORMAL
-	jr z, .normal
-
-	cp [hl]
-	jr z, .return
-
-	inc hl
-	cp [hl]
-
-.return
-	pop hl
-	ret
-
-.normal
-	ld a, 1
-	and a
-	pop hl
+	ld a, [de]
+	inc de
+	cp c ; currently loaded type
+	ret z
+	ld a, [de]
+	cp c ; currently loaded type
 	ret
 
 INCLUDE "engine/battle/move_effects/substitute.asm"
@@ -5970,13 +5881,19 @@ FailMove:
 	; fallthrough
 
 FailMimic:
-	ld hl, ButItFailedText ; 'but it failed!'
-	ld de, ItFailedText    ; 'it failed!'
+	ld hl, ButItFailedText
+	ld de, ProtectingItselfText
 	jmp FailText_CheckOpponentProtect
 
 BattleEffect_DidntAffect:
 	ld hl, DidntAffectText
 	jmp AnimateFailedMoveText
+
+BattleEffect_DidntAffectProtect:
+	call AnimateFailedMove
+	ld hl, DidntAffectText
+	ld de, ProtectingItselfText
+	jmp FailText_CheckOpponentProtect
 
 PrintParalyze:
 ; 'paralyzed! maybe it can't attack!'
@@ -6123,9 +6040,8 @@ BattleCommand_CheckSafeguard:
 	ret z
 	ld a, 1
 	ld [wAttackMissed], a
-	call BattleCommand_MoveDelay
 	ld hl, SafeguardProtectText
-	call StdBattleTextbox
+	call AnimateFailedMoveText
 	jmp EndMoveEffect
 
 INCLUDE "engine/battle/move_effects/baton_pass.asm"
@@ -6246,6 +6162,12 @@ CheckHiddenOpponent:
 	ld a, BATTLE_VARS_SUBSTATUS3_OPP
 	call GetBattleVar
 	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
+	ret
+
+CheckProtectedOpponent:
+	ld a, BATTLE_VARS_SUBSTATUS1_OPP
+	call GetBattleVar
+	bit SUBSTATUS_PROTECT, a
 	ret
 
 GetUserItem:
@@ -6385,8 +6307,6 @@ PlayOpponentBattleAnim:
 	ld [wFXAnimID], a
 	ld a, d
 	ld [wFXAnimID + 1], a
-	xor a
-	ld [wNumHits], a
 
 	push hl
 	push de
@@ -6399,20 +6319,15 @@ PlayOpponentBattleAnim:
 	jmp PopBCDEHL
 
 AnimateFailedMove:
-	call BattleCommand_LowerSub
-	call BattleCommand_MoveDelay
-	jmp BattleCommand_RaiseSub
-
-AnimateFailedMoveText:
-	push hl
-	call AnimateFailedMove
-	pop hl
-	jmp StdBattleTextbox
-
 BattleCommand_MoveDelay:
 ; Wait 40 frames.
 	ld c, 40
 	jmp DelayFrames
+
+AnimateFailedMoveText:
+DelayedMoveText:
+	call AnimateFailedMove
+	jmp StdBattleTextbox
 
 BattleCommand_ClearText:
 ; Used in multi-hit moves.

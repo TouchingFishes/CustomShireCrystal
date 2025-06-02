@@ -1754,8 +1754,6 @@ HandleWeather:
 	cp STEEL
 	ret z
 
-	call SwitchTurnCore
-	call SwitchTurnCore
 	call GetSixteenthMaxHP
 	call SubtractHPFromUser
 
@@ -1802,8 +1800,6 @@ HandleWeather:
 	cp ICE
 	ret z
 
-	call SwitchTurnCore
-	call SwitchTurnCore
 	call GetSixteenthMaxHP
 	call SubtractHPFromUser
 
@@ -1900,57 +1896,28 @@ SubtractHP:
 	ret
 
 GetSixteenthMaxHP:
-	call GetQuarterMaxHP
-; quarter result
-	srl c
-	srl c
-; at least 1
-	ld a, c
-	and a
-	ret nz
-	inc c
-	ret
+; output: bc
+	call GetEighthMaxHP
+	jr HalveBC
 
 GetEighthMaxHP:
 ; output: bc
 	call GetQuarterMaxHP
-; assumes nothing can have 1024 or more hp
-; halve result
-	srl c
-; at least 1
-	ld a, c
-	and a
-	ret nz
-	inc c
-	ret
+	jr HalveBC
 
 GetQuarterMaxHP:
 ; output: bc
-	call GetMaxHP
-
-; quarter result
-	srl b
-	rr c
-	srl b
-	rr c
-
-; assumes nothing can have 1024 or more hp
-; at least 1
-	ld a, c
-	and a
-	ret nz
-	inc c
-	ret
+	call GetHalfMaxHP
+	jr HalveBC
 
 GetHalfMaxHP:
 ; output: bc
 	call GetMaxHP
 
-; halve result
+HalveBC:
 	srl b
 	rr c
-
-; at least 1
+FloorBC:
 	ld a, c
 	or b
 	ret nz
@@ -1981,6 +1948,20 @@ CheckUserHasEnoughHP:
 	and a
 	jr z, .ok
 	ld hl, wEnemyMonHP + 1
+.ok
+	ld a, c
+	sub [hl]
+	dec hl
+	ld a, b
+	sbc [hl]
+	ret
+
+CheckOpponentHasEnoughHP:
+	ld hl, wEnemyMonHP + 1
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .ok
+	ld hl, wBattleMonHP + 1
 .ok
 	ld a, c
 	sub [hl]
@@ -4261,83 +4242,20 @@ HandleHPHealingItem:
 	ld a, b
 	cp HELD_BERRY
 	ret nz
-	ld de, wEnemyMonHP + 1
-	ld hl, wEnemyMonMaxHP
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .go
-	ld de, wBattleMonHP + 1
-	ld hl, wBattleMonMaxHP
 
-.go
-; If, and only if, Pokemon's HP is less than half max, use the item.
-; Store current HP in Buffer 3/4
 	push bc
-	ld a, [de]
-	ld [wHPBuffer2], a
-	add a
-	ld c, a
-	dec de
-	ld a, [de]
-	inc de
-	ld [wHPBuffer2 + 1], a
-	adc a
-	ld b, a
-	cp [hl]
-	ld a, c
+	call SwitchTurnCore
+	call GetHalfMaxHP
+	call SwitchTurnCore
+	call CheckOpponentHasEnoughHP
 	pop bc
-	jr z, .equal
-	jr c, .less
-	ret
-
-.equal
-	inc hl
-	cp [hl]
-	dec hl
-	ret nc
-
-.less
+	ret c
+	
 	call ItemRecoveryAnim
-	; store max HP in wHPBuffer1
-	ld a, [hli]
-	ld [wHPBuffer1 + 1], a
-	ld a, [hl]
-	ld [wHPBuffer1], a
-	ld a, [de]
-	add c
-	ld [wHPBuffer3], a
-	ld c, a
-	dec de
-	ld a, [de]
-	adc 0
-	ld [wHPBuffer3 + 1], a
-	ld b, a
-	ld a, [hld]
-	cp c
-	ld a, [hl]
-	sbc b
-	jr nc, .okay
-	ld a, [hli]
-	ld [wHPBuffer3 + 1], a
-	ld a, [hl]
-	ld [wHPBuffer3], a
 
-.okay
-	ld a, [wHPBuffer3 + 1]
-	ld [de], a
-	inc de
-	ld a, [wHPBuffer3]
-	ld [de], a
-	ldh a, [hBattleTurn]
-	ld [wWhichHPBar], a
-	and a
-	hlcoord 2, 2
-	jr z, .got_hp_bar_coords
-	hlcoord 10, 9
+	ld b, 0 ; item should restore HP equal to c
+	call RestoreHP
 
-.got_hp_bar_coords
-	ld [wWhichHPBar], a
-	predef AnimateHPBar
 UseOpponentItem:
 	call RefreshBattleHuds
 	farcall GetOpponentItem
