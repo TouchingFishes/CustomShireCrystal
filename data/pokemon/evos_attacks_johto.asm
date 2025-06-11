@@ -708,9 +708,9 @@ WooperEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, WATER_GUN
 	dbw 1, TAIL_WHIP
-	dbw 11, SLAM
+	dbw 11, AMNESIA
 	dbw 16, MUD_SHOT
-	dbw 21, AMNESIA
+	dbw 21, SLAM
 	dbw 31, YAWN
 	dbw 36, EARTHQUAKE
 	dbw 41, RAIN_DANCE
@@ -723,9 +723,9 @@ QuagsireEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, WATER_GUN
 	dbw 1, TAIL_WHIP
-	dbw 11, SLAM
+	dbw 11, AMNESIA
 	dbw 16, MUD_SHOT
-	dbw 23, AMNESIA
+	dbw 23, SLAM
 	dbw 35, YAWN
 	dbw 42, EARTHQUAKE
 	dbw 49, RAIN_DANCE

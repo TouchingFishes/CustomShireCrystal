@@ -1507,7 +1507,7 @@ ImpidimpEvosAttacks:
 	dbw 22, FAINT_ATTACK
 	dbw 29, SWAGGER
 	dbw 36, BEAT_UP
-	dbw 44, MACH_PUNCH
+	dbw 44, REVENGE
 	db 0 ; no more level-up moves
 
 MorgremEvosAttacks:
@@ -1522,7 +1522,7 @@ MorgremEvosAttacks:
 	dbw 30, SWAGGER
 	dwb 35, FAINT_ATTACK
 	dbw 40, BEAT_UP
-	dbw 44, MACH_PUNCH
+	dbw 44, REVENGE
 	dbw 49, TAUNT
 	db 0 ; no more level-up moves
 
@@ -1537,7 +1537,7 @@ GrimmsnarlEvosAttacks:
 	dbw 30, SWAGGER
 	dwb 33, FAINT_ATTACK
 	dbw 37, BEAT_UP
-	dbw 42, MACH_PUNCH
+	dbw 42, REVENGE
 	dbw 52, SUPERPOWER
 	;bw 56, NIGHT_SLASH
 	db 0 ; no more level-up moves
@@ -1935,7 +1935,7 @@ MonfernoEvosAttacks:
 	dbw 1, SCRATCH
 	dbw 7, TAUNT
 	dbw 13, EMBER
-	dbw 16, MACH_PUNCH
+	dbw 16, ARM_THRUST
 	dbw 17, FURY_SWIPES
 	dbw 21, FLAME_WHEEL
 	dbw 28, FACADE
@@ -1952,7 +1952,7 @@ InfernapeEvosAttacks:
 	dbw 1, SCRATCH
 	dbw 7, TAUNT
 	dbw 13, EMBER
-	dbw 16, MACH_PUNCH
+	dbw 16, ARM_THRUST
 	dbw 17, FURY_SWIPES
 	dbw 21, FLAME_WHEEL
 	dbw 28, FACADE

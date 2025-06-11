@@ -356,8 +356,8 @@ BugManiacFredSeenText:
 	line "SLOWPOKE? Whew,"
 	cont "you're mighty!"
 
-	para "But my grown-up"
-	line "#MON are pretty"
+	para "But my buzzing"
+	line "#MON is pretty"
 	cont "tough too!"
 	done
 

@@ -1,12 +1,12 @@
 	db 0 ; species ID placeholder
 
-	db  60,  60,  60,  97,  97,  97
-	evs  0,   0,   0,   0,   0,   1
+	db  60,  60,  60, 100, 100, 100
+	evs  0,   0,   0,   1,   1,   1
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, GHOST ; type
 	db 45 ; catch rate
-	db 147 ; base exp
+	db 157 ; base exp
 	dw NO_ITEM, SPELL_TAG ; items
 	db GENDER_F50 ; gender ratio
 	db 25 ; step cycles to hatch

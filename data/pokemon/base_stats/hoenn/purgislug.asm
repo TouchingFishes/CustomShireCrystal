@@ -1,7 +1,7 @@
 	db 0 ; species ID placeholder
 
-	db  85,  88,  97,  30,  88, 107
-	evs  0,   0,   0,   0,   0,   2
+	db  95, 100,  70,  30, 100,  95
+	evs  0,   1,   0,   0,   1,   0
 	;   hp  atk  def  spd  sat  sdf
 
 	db POISON, PSYCHIC_TYPE ; type

@@ -441,7 +441,7 @@ LadyPriscillaSeenText:
 	done
 
 LadyPriscillaBeatenText:
-	text "MY POOR HOPPIP!"
+	text "My poor HOPPIP!"
 	done
 
 LadyPriscillaAfterBattleText:

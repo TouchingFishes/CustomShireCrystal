@@ -8,16 +8,16 @@ JohtoGrassWildMons:
 	dbw 3, RATTATA
 	dbw 4, RATTATA
 	dbw 5, RATTATA
-	dbw 3, RATTATA
 	dbw 6, RATTATA
+	dbw 6, MEDITITE ;RATTATA
 	dbw 5, RATTATA  ;RATTATA
 	dbw 5, CHIMECHO ;RATTATA
 	; day
 	dbw 3, RATTATA
 	dbw 4, RATTATA
 	dbw 5, RATTATA
-	dbw 3, RATTATA
 	dbw 6, RATTATA
+	dbw 6, MEDITITE ;RATTATA
 	dbw 5, RATTATA  ;RATTATA
 	dbw 5, CHIMECHO ;RATTATA
 	; nite
@@ -36,16 +36,16 @@ JohtoGrassWildMons:
 	dbw 3, RATTATA
 	dbw 4, RATTATA
 	dbw 5, RATTATA
-	dbw 3, RATTATA
 	dbw 6, RATTATA
+	dbw 6, MEDITITE ;RATTATA
 	dbw 5, CHIMECHO ;RATTATA
 	dbw 5, CHIMECHO ;RATTATA
 	; day
 	dbw 3, RATTATA
 	dbw 4, RATTATA
 	dbw 5, RATTATA
-	dbw 3, RATTATA
 	dbw 6, RATTATA
+	dbw 6, MEDITITE ;RATTATA
 	dbw 5, CHIMECHO ;RATTATA
 	dbw 5, CHIMECHO ;RATTATA
 	; nite
@@ -565,29 +565,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 5, CATERPIE
-	dbw 5, WEEDLE
-	dbw 7, METAPOD
-	dbw 7, KAKUNA
-	dbw 7, SEEDOT     ;PIDGEY
-	dbw 6, PARAS
-	dbw 6, PARAS
+	dbw 7, CATERPIE
+	dbw 7, WEEDLE
+	dbw 9, METAPOD
+	dbw 9, KAKUNA
+	dbw 9, SEEDOT     ;PIDGEY
+	dbw 8, PARAS
+	dbw 8, PARAS
 	; day
-	dbw 5, CATERPIE
-	dbw 5, WEEDLE
-	dbw 7, METAPOD
-	dbw 7, KAKUNA
-	dbw 7, SEEDOT     ;PIDGEY
-	dbw 6, PARAS
-	dbw 6, PARAS
+	dbw 7, CATERPIE
+	dbw 7, WEEDLE
+	dbw 9, METAPOD
+	dbw 9, KAKUNA
+	dbw 9, SEEDOT     ;PIDGEY
+	dbw 8, PARAS
+	dbw 8, PARAS
 	; nite
-	dbw 5, ODDISH
-	dbw 5, VENONAT
-	dbw 7, SEEDOT     ;ODDISH
-	dbw 7, PSYDUCK
-	dbw 7, HOOTHOOT
-	dbw 6, PARAS
-	dbw 6, PARAS
+	dbw 7, ODDISH
+	dbw 7, VENONAT
+	dbw 9, SEEDOT     ;ODDISH
+	dbw 9, PSYDUCK
+	dbw 9, HOOTHOOT
+	dbw 8, PARAS
+	dbw 8, PARAS
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE

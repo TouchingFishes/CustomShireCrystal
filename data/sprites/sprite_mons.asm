@@ -39,4 +39,18 @@ SpriteMons:
 	dw GEKOPON
 	dw ARTICUNO
 	dw ZAPDOS
+	dw SPEAROW
+	dw MURKROW
+	dw PIDGEY
+	dw DODRIO
+	dw FEAROW
+	dw NIDORAN_M 
+	dw NIDORAN_F 
+	dw NIDORINO 
+	dw RATTATA 
+	dw MEOWTH 
+	dw PERSIAN 
+	dw PSYDUCK
+	dw ABRA
+	dw POLIWRATH
 	assert_table_length NUM_POKEMON_SPRITES

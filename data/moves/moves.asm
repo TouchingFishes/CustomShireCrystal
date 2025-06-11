@@ -164,7 +164,7 @@ MovesGen1:
 	move EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE,  100, 15,   0      ;DREAM_EATER
 	move EFFECT_POISON,              0, POISON,         55, 40,   0      ;POISON_GAS
 	move EFFECT_MULTI_HIT,          25, NORMAL,         85, 20,   0      ;BARRAGE
-	move EFFECT_LEECH_HIT,          30, BUG,           100, 15,   0      ;LEECH_LIFE
+	move EFFECT_LEECH_HIT,          30, BUG,           100, 20,   0      ;LEECH_LIFE
 	move EFFECT_SLEEP,               0, NORMAL,         75, 10,   0      ;LOVELY_KISS
 	move EFFECT_SKY_ATTACK,        180, FLYING,        100,  5,   0      ;SKY_ATTACK
 	move EFFECT_TRANSFORM,           0, NORMAL,        100, 10,   0      ;TRANSFORM
@@ -212,7 +212,7 @@ MovesGen2:
 	move EFFECT_SPITE,               0, GHOST,         100, 10,   0      ;SPITE
 	move EFFECT_FREEZE_HIT,         40, ICE,           100, 25,  10      ;POWDER_SNOW
 	move EFFECT_PROTECT,             0, NORMAL,        100, 10,   0      ;PROTECT
-	move EFFECT_PRIORITY_HIT,       40, FIGHTING,      100, 30,   0      ;MACH_PUNCH
+	move EFFECT_PRIORITY_HIT,       60, FIGHTING,      100, 30,   0      ;MACH_PUNCH
 	move EFFECT_SPEED_DOWN_2,        0, NORMAL,         90, 10,   0      ;SCARY_FACE
 	move EFFECT_ALWAYS_HIT,         60, DARK,          100, 20,   0      ;FAINT_ATTACK
 	move EFFECT_CONFUSE,             0, NORMAL,         75, 10,   0      ;SWEET_KISS
@@ -359,7 +359,7 @@ MovesGen3:
 	move EFFECT_NORMAL_HIT,        150, WATER,         100,  5,   0      ;WATER_SPOUT EFFECT_WATER_SPOUT
 	move EFFECT_NORMAL_HIT ,        80, BUG,           100, 15,   0      ;X_SCISSOR
 	move EFFECT_ALWAYS_HIT,         60, GHOST,         100, 20,   0      ;SHADOW_PUNCH
-	move EFFECT_FLINCH_HIT,         80, PSYCHIC_TYPE,  100, 30,  10      ;EXTRASENSORY
+	move EFFECT_FLINCH_HIT,         80, PSYCHIC_TYPE,  100, 30,  20      ;EXTRASENSORY
 	move EFFECT_NORMAL_HIT,        100, FIGHTING,       90, 15,   0      ;SKY_UPPERCUT
 	move EFFECT_TRAP_TARGET,        35, GROUND,         70, 15,   0      ;SAND_TOMB - Needs text
 	move EFFECT_OHKO,                1, ICE,            30,  5,   0      ;SHEER_COLD

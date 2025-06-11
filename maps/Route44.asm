@@ -325,6 +325,17 @@ TrainerRichBoyDarren:
 	closetext
 	end
 
+TrainerBirdKeeperAnders:
+	trainer BIRD_KEEPER, ANDERS, EVENT_BEAT_BIRD_KEEPER_ANDERS, BirdKeeperAndersSeenText, BirdKeeperAndersBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BirdKeeperAndersAfterBattleText
+	waitbutton
+	closetext
+	end
+
 Route44Sign1:
 	jumptext Route44Sign1Text
 
@@ -535,6 +546,25 @@ RichBoyDarrenAfterBattleText:
 	cont "full potential."
 	done
 
+BirdKeeperAndersSeenText:
+	text "I love the way"
+	line "my birds can tame"
+
+	para "the wind. Let me"
+	line "show you!"
+	done
+
+BirdKeeperAndersBeatenText:
+	text "What a show!"
+	done
+
+BirdKeeperAndersAfterBattleText:
+	text "Bird #MON are"
+	line "the strongest."
+
+	para "Trust me."
+	done
+
 CooltrainerfCybilSeenText:
 	text "You look strong."
 
@@ -600,4 +630,5 @@ Route44_MapEvents:
 	object_event 45,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44UltraBall, EVENT_ROUTE_44_ULTRA_BALL
 	object_event 14,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44MaxRepel, EVENT_ROUTE_44_MAX_REPEL
 	object_event 35,  8, SPRITE_ARTICUNO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route44Articuno, EVENT_BIRDS_VISIBLE
-	object_event 23,  3, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerRichBoyDarren, -1
+	object_event 23,  3, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_WHITE, OBJECTTYPE_TRAINER, 5, TrainerRichBoyDarren, -1
+	object_event 50, 11, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerBirdKeeperAnders, -1

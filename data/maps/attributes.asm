@@ -203,7 +203,7 @@ ENDM
 
 	map_attributes Route40, ROUTE_40, $35, SOUTH | EAST
 	connection south, Route41, ROUTE_41, -5
-	connection east, OlivineCity, OLIVINE_CITY, -9
+	connection east, OlivineCity, OLIVINE_CITY, -7
 
 	map_attributes Route41, ROUTE_41, $35, NORTH | WEST
 	connection north, Route40, ROUTE_40, 5

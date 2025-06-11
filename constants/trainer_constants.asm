@@ -202,6 +202,7 @@ DEF KRIS EQU __trainer_class__
 	const JOSE3
 	const VANCE2
 	const VANCE3
+	const ANDERS
 
 	trainerclass LASS ; 19
 	const CARRIE
@@ -231,7 +232,7 @@ DEF KRIS EQU __trainer_class__
 	const AARON
 	const PAUL
 	const CODY
-	const MIKE
+	const MIKE ; unused
 	const GAVEN1
 	const GAVEN2
 	const RYAN
@@ -758,6 +759,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass HEX_MANIAC ; 49
 	const TASHA
 	const LILI
+	const MALIA
 
 	trainerclass VETERAN_F ; 4a
 	const MONICA
