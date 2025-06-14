@@ -84,8 +84,8 @@ AnimationIdlePointers3:
 	dw KitsunohAnimationIdle
 	dw KrolucadaAnimationIdle
 	dw KrolucardAnimationIdle
-	dw StunkyAnimationIdle
-	dw SkuntankAnimationIdle
+	dw SwabluAnimationIdle
+	dw AltariaAnimationIdle
 	dw LarvestaAnimationIdle
 	dw VolcaronaAnimationIdle
 	dw ImpidimpAnimationIdle
@@ -224,8 +224,8 @@ NohfaceAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/nohface/anim_idle.asm"
 KitsunohAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/anim_idle.asm"
 KrolucadaAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/krolucada/anim_idle.asm"
 KrolucardAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/krolucard/anim_idle.asm"
-StunkyAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/stunky/anim_idle.asm"
-SkuntankAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/skuntank/anim_idle.asm"
+SwabluAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/swablu/anim_idle.asm"
+AltariaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/altaria/anim_idle.asm"
 LarvestaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/larvesta/anim_idle.asm"
 VolcaronaAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/volcarona/anim_idle.asm"
 ImpidimpAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/impidimp/anim_idle.asm"

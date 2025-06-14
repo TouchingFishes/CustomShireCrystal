@@ -343,8 +343,8 @@ PokemonCries::
 	mon_cry CRY_VULPIX,       44,  232 ; KITSUNOH
 	mon_cry CRY_BULBASAUR,   238,  129 ; KROLUCADA
 	mon_cry CRY_BULBASAUR,   238,  129 ; KROLUCARD
-	mon_cry CRY_BULBASAUR,   238,  129 ; STUNKY
-	mon_cry CRY_BULBASAUR,   238,  129 ; SKUNTANK
+	mon_cry CRY_NATU,       -103,  256 ; SWABLU
+	mon_cry CRY_NATU,       -167,  360 ; ALTARIA
 	mon_cry CRY_NIDORAN_M,    32,   20 ; LARVESTA
 	mon_cry CRY_VOLTORB,      15,  482 ; VOLCARONA
 	mon_cry CRY_CLEFAIRY,    104,  129 ; IMPIDIMP

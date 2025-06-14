@@ -356,8 +356,8 @@ DEF HOENN_POKEMON EQU const_value
 	const KITSUNOH   ; 14c
 	const KROLUCADA  ; 14d
 	const KROLUCARD  ; 14e
-	const STUNKY     ; 14f
-	const SKUNTANK   ; 150
+	const SWABLU     ; 14f
+	const ALTARIA   ; 150
 	const LARVESTA   ; 151
 	const VOLCARONA  ; 152
 	const IMPIDIMP   ; 153

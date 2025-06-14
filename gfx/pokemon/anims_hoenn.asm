@@ -84,8 +84,8 @@ AnimationPointers3:
 	dw KitsunohAnimation
 	dw KrolucadaAnimation
 	dw KrolucardAnimation
-	dw StunkyAnimation
-	dw SkuntankAnimation
+	dw SwabluAnimation
+	dw AltariaAnimation
 	dw LarvestaAnimation
 	dw VolcaronaAnimation
 	dw ImpidimpAnimation
@@ -224,8 +224,8 @@ NohfaceAnimation:       INCLUDE "gfx/pokemon/hoenn/nohface/anim.asm"
 KitsunohAnimation:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/anim.asm"
 KrolucadaAnimation:     INCLUDE "gfx/pokemon/hoenn/krolucada/anim.asm"
 KrolucardAnimation:     INCLUDE "gfx/pokemon/hoenn/krolucard/anim.asm"
-StunkyAnimation:        INCLUDE "gfx/pokemon/hoenn/stunky/anim.asm"
-SkuntankAnimation:      INCLUDE "gfx/pokemon/hoenn/skuntank/anim.asm"
+SwabluAnimation:        INCLUDE "gfx/pokemon/hoenn/swablu/anim.asm"
+AltariaAnimation:      INCLUDE "gfx/pokemon/hoenn/altaria/anim.asm"
 LarvestaAnimation:      INCLUDE "gfx/pokemon/hoenn/larvesta/anim.asm"
 VolcaronaAnimation:     INCLUDE "gfx/pokemon/hoenn/volcarona/anim.asm"
 ImpidimpAnimation:      INCLUDE "gfx/pokemon/hoenn/impidimp/anim.asm"

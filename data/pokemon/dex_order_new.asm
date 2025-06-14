@@ -159,8 +159,8 @@ NewPokedexOrder:
 	dw PRIMEAPE
 	dw MEOWTH
 	dw PERSIAN
-	dw STUNKY
-	dw SKUNTANK
+	dw SWABLU
+	dw ALTARIA
 	dw PSYDUCK
 	dw GOLDUCK
 	dw MACHOP

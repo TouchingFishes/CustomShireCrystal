@@ -60,9 +60,9 @@ PlayBattleMusic:
 	ld de, MUSIC_JOHTO_WILD_BATTLE
 	ld a, [wTimeOfDay]
 	cp NITE_F
-	jr c, .done ; not NITE_F or EVE_F
+	jp c, .done ; not NITE_F or EVE_F
 	ld de, MUSIC_JOHTO_WILD_BATTLE_NIGHT
-	jr .done
+	jp .done
 
 .kantowild
 	ld de, MUSIC_KANTO_WILD_BATTLE
@@ -73,6 +73,20 @@ PlayBattleMusic:
 	cp CHAMPION
 	jr z, .done
 	cp RED
+	jr z, .done
+
+	ld de, MUSIC_ZINNIA_BATTLE
+	cp BATO
+	jr z, .done
+	cp ALDER
+	jr z, .done
+	cp MASTER
+	jr z, .done
+	cp STEVEN
+	jr z, .done
+	cp GIDEON
+	jr z, .done
+	cp BUCK
 	jr z, .done
 
 	ld de, MUSIC_ROCKET_BATTLE

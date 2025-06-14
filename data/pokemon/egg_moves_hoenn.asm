@@ -84,7 +84,7 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw KrolucadaEggMoves
 	dw NoEggMoves3
-	dw StunkyEggMoves
+	dw SwabluEggMoves
 	dw NoEggMoves3
 	dw LarvestaEggMoves
 	dw NoEggMoves3
@@ -395,15 +395,11 @@ KrolucadaEggMoves:
 	dw SILVER_WIND
 	dw -1 ; end
 
-StunkyEggMoves:
-	dw COUNTER
+SwabluEggMoves:
+	dw AGILITY
 	dw HAZE
-	dw BODY_SLAM
-	dw SMOG
 	dw PURSUIT
-	dw SPIT_UP
-	dw STOCKPILE
-	dw SWALLOW
+	dw RAGE
 	dw -1 ; end
 
 LarvestaEggMoves:

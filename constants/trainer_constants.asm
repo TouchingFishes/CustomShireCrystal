@@ -418,7 +418,7 @@ DEF KRIS EQU __trainer_class__
 	const BERKE
 	const KIRK
 	const MATHEW
-	const HAL ; unused
+	const HAL
 	const PATON ; unused
 	const DARYL ; unused
 	const WALTER ; unused
@@ -440,8 +440,8 @@ DEF KRIS EQU __trainer_class__
 	const DENISE
 	const KARA
 	const WENDY
-	const LISA ; unused
-	const JILL ; unused
+	const LISA
+	const JILL
 	const MARY ; unused
 	const KATIE ; unused
 	const DAWN
@@ -786,6 +786,7 @@ DEF KRIS EQU __trainer_class__
 	const KEEGAN
 	const KARL
 	const OZ
+	const JEB
 
 	trainerclass LADY ; 4f
 	const SARAH

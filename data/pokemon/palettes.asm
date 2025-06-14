@@ -704,10 +704,10 @@ INCBIN "gfx/pokemon/hoenn/krolucada/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/krolucada/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/krolucard/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/krolucard/shiny.pal"
-INCBIN "gfx/pokemon/hoenn/stunky/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoenn/stunky/shiny.pal"
-INCBIN "gfx/pokemon/hoenn/skuntank/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoenn/skuntank/shiny.pal"
+INCBIN "gfx/pokemon/hoenn/swablu/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hoenn/swablu/shiny.pal"
+INCBIN "gfx/pokemon/hoenn/altaria/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hoenn/altaria/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/larvesta/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hoenn/larvesta/shiny.pal"
 INCBIN "gfx/pokemon/hoenn/volcarona/normal.gbcpal", middle_colors

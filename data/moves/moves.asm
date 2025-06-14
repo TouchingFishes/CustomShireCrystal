@@ -315,7 +315,7 @@ MovesGen3:
 	move EFFECT_NORMAL_HIT,         60, FIGHTING,      100, 10, 100      ;REVENGE EFFECT_REVENGE
 	move EFFECT_NORMAL_HIT,         75, FIGHTING,      100, 15,   0      ;BRICK_BREAK EFFECT_BRICK_BREAK
 	move EFFECT_NORMAL_HIT,          0, NORMAL,        100, 10,   0      ;YAWN
-	move EFFECT_NORMAL_HIT,         20, DARK,          100, 20,   0      ;KNOCK_OFF EFFECT_KNOCK_OFF
+	move EFFECT_NORMAL_HIT,         40, DARK,          100, 20,   0      ;KNOCK_OFF EFFECT_KNOCK_OFF
 	move EFFECT_NORMAL_HIT,          1, NORMAL,        100,  5,   0      ;ENDEAVOR EFFECT_ENDEAVOR
 	move EFFECT_NORMAL_HIT,        150, FIRE,          100,  5,   0      ;ERUPTION
 	move EFFECT_NORMAL_HIT,          0, PSYCHIC_TYPE,  100, 10,   0      ;SKILL_SWAP

@@ -339,8 +339,8 @@ PokemonBodyData:
 	dw 503, 1609   ; KITSUNOH
 	dw 104, 26     ; KROLUCADA
 	dw 307, 454    ; KROLUCARD
-	dw 104, 423    ; STUNKY
-	dw 303, 838    ; SKUNTANK
+	dw 104, 26     ; SWABLU
+	dw 307, 454    ; ALTARIA
 	dw 307, 635    ; LARVESTA
 	dw 503, 1014   ; VOLCARONA
 	dw 104, 121    ; IMPIDIMP

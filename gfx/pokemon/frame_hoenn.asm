@@ -84,8 +84,8 @@ FramePointers3:
 	dw KitsunohFrames
 	dw KrolucadaFrames
 	dw KrolucardFrames
-	dw StunkyFrames
-	dw SkuntankFrames
+	dw SwabluFrames
+	dw AltariaFrames
 	dw LarvestaFrames
 	dw VolcaronaFrames
 	dw ImpidimpFrames
@@ -224,8 +224,8 @@ NohfaceFrames:       INCLUDE "gfx/pokemon/hoenn/nohface/frames.asm"
 KitsunohFrames:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/frames.asm"
 KrolucadaFrames:     INCLUDE "gfx/pokemon/hoenn/krolucada/frames.asm"
 KrolucardFrames:     INCLUDE "gfx/pokemon/hoenn/krolucard/frames.asm"
-StunkyFrames:        INCLUDE "gfx/pokemon/hoenn/stunky/frames.asm"
-SkuntankFrames:      INCLUDE "gfx/pokemon/hoenn/skuntank/frames.asm"
+SwabluFrames:        INCLUDE "gfx/pokemon/hoenn/swablu/frames.asm"
+AltariaFrames:      INCLUDE "gfx/pokemon/hoenn/altaria/frames.asm"
 LarvestaFrames:      INCLUDE "gfx/pokemon/hoenn/larvesta/frames.asm"
 VolcaronaFrames:     INCLUDE "gfx/pokemon/hoenn/volcarona/frames.asm"
 ImpidimpFrames:      INCLUDE "gfx/pokemon/hoenn/impidimp/frames.asm"

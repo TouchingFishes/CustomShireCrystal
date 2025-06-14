@@ -335,8 +335,8 @@ FirstEvoStages::
 	dw NOHFACE
 	dw KROLUCADA
 	dw KROLUCADA
-	dw STUNKY
-	dw STUNKY    ;150
+	dw SWABLU
+	dw SWABLU    ;150
 	dw LARVESTA
 	dw LARVESTA
 	dw IMPIDIMP

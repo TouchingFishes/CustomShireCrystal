@@ -338,8 +338,8 @@ PokedexDataPointerTable:
 	dba KitsunohPokedexEntry
 	dba KrolucadaPokedexEntry
 	dba KrolucardPokedexEntry
-	dba StunkyPokedexEntry
-	dba SkuntankPokedexEntry
+	dba SwabluPokedexEntry
+	dba AltariaPokedexEntry
 	dba LarvestaPokedexEntry
 	dba VolcaronaPokedexEntry
 	dba ImpidimpPokedexEntry

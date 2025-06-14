@@ -7,55 +7,55 @@ HiddenPowerDamage:
 	ld hl, wEnemyMonIVs
 .got_ivs
 
-; Power = [[(u + 2v + 4w + 8x + 16y + 32z) * 40] / 63] + 30
+; Power = [[(u + 2v + 4w + 8x + 16y + 32z) * 40] / 63] + 30 -> this now just sets the power value to 70
 ; where u, v, w, x, y, z (the "damage bits") are the second least significant bit of their respective IVs.
-	call GetHPIV
-	and 2
-	rra
-	ld b, a
-	call GetAttackIV
-	and 2
-	or b
-	ld b, a
-	call GetDefenseIV
-	and 2
-	add a
-	or b
-	ld b, a
-	call GetSpeedIV
-	and 2
-	add a
-	add a
-	or b
-	ld b, a
-	call GetSpecialAttackIV
-	and 2
-	swap a
-	rra
-	or b
-	ld b, a
-	call GetSpecialDefenseIV
-	and 2
-	swap a
-	or b
-	ldh [hMultiplicand + 2], a
-	xor a
-	ldh [hMultiplicand + 1], a
-	ldh [hMultiplicand + 0], a
-	ld a, 40
-	ldh [hMultiplier], a
-	call Multiply
-	ldh a, [hProduct + 2]
-	ldh [hDividend + 0], a
-	ldh a, [hProduct + 3]
-	ldh [hDividend + 1], a
-	ld a, 63
-	ldh [hDivisor], a
-	ld b, 2
-	call Divide
-	ldh a, [hQuotient + 3]
-	add 30
-	ld d, a
+;	call GetHPIV
+;	and 2
+;	rra
+;	ld b, a
+;	call GetAttackIV
+;	and 2
+;	or b
+;	ld b, a
+;	call GetDefenseIV
+;	and 2
+;	add a
+;	or b
+;	ld b, a
+;	call GetSpeedIV
+;	and 2
+;	add a
+;	add a
+;	or b
+;	ld b, a
+;	call GetSpecialAttackIV
+;	and 2
+;	swap a
+;	rra
+;	or b
+;	ld b, a
+;	call GetSpecialDefenseIV
+;	and 2
+;	swap a
+;	or b
+;	ldh [hMultiplicand + 2], a
+;	xor a
+;	ldh [hMultiplicand + 1], a
+;	ldh [hMultiplicand + 0], a
+;	ld a, 40
+;	ldh [hMultiplier], a
+;	call Multiply
+;	ldh a, [hProduct + 2]
+;	ldh [hDividend + 0], a
+;	ldh a, [hProduct + 3]
+;	ldh [hDividend + 1], a
+;	ld a, 63
+;	ldh [hDivisor], a
+;	ld b, 2
+;	call Divide
+;	ldh a, [hQuotient + 3]
+;	add 30
+	ld d, 70
 
 ; Type = [(a + 2b + 4c + 8d + 16e + 32f) * 15] / 63
 ; where a, b, c, d, e, f (the "type bits") are the least significant bit of their respective IVs.

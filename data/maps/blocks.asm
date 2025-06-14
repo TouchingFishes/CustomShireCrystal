@@ -897,4 +897,7 @@ BattleTowerOutside_Blocks:
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.ablk"
 
+CherrygroveBay_Blocks:
+	INCBIN "maps/CherrygroveBay.ablk"
+
 ENDSECTION

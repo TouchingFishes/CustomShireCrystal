@@ -1,7 +1,7 @@
 	object_const_def
 	const CELADONDEPTSTORE4F_CLERK
 	const CELADONDEPTSTORE4F_SUPER_NERD
-	const CELADONDEPTSTORE4F_YOUNGSTER
+	const CELADONDEPTSTORE4F_ENGINEER
 	const CELADONDEPTSTORE4F_LORELEI
 
 CeladonDeptStore4F_MapScripts:
@@ -19,8 +19,8 @@ CeladonDeptStore4FClerkScript:
 CeladonDeptStore4FSuperNerdScript:
 	jumptextfaceplayer CeladonDeptStore4FSuperNerdText
 
-CeladonDeptStore4FYoungsterScript:
-	jumptextfaceplayer CeladonDeptStore4FYoungsterText
+CeladonDeptStore4FEngineerScript:
+	jumptextfaceplayer CeladonDeptStore4FEngineerText
 
 CeladonDeptStore4FDirectory:
 	jumptext CeladonDeptStore4FDirectoryText
@@ -100,7 +100,7 @@ CeladonDeptStore4FSuperNerdText:
 	cont "to my girlfriend."
 	done
 
-CeladonDeptStore4FYoungsterText:
+CeladonDeptStore4FEngineerText:
 	text "This is the only"
 	line "place where you"
 
@@ -132,5 +132,5 @@ CeladonDeptStore4F_MapEvents:
 	def_object_events
 	object_event 13,  5, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore4FClerkScript, -1
 	object_event  7,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore4FSuperNerdScript, -1
-	object_event  4,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore4FYoungsterScript, -1
+	object_event  4,  6, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore4FEngineerScript, -1
 	object_event  7,  2, SPRITE_LORELEI, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LoreleiScript, -1

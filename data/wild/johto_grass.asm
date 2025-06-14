@@ -1293,29 +1293,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_31
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 4, LEDYBA
-	dbw 4, CATERPIE
-	dbw 5, BELLSPROUT
-	dbw 5, PIDGEY
-	dbw 4, WEEDLE
-	dbw 5, HOPPIP
-	dbw 5, HOPPIP
+	dbw 5, LEDYBA
+	dbw 5, CATERPIE
+	dbw 6, BELLSPROUT
+	dbw 6, PIDGEY
+	dbw 5, WEEDLE
+	dbw 6, HOPPIP
+	dbw 6, HOPPIP
 	; day
-	dbw 4, PIDGEY
-	dbw 4, CATERPIE
-	dbw 5, BELLSPROUT
-	dbw 5, MAREEP ;PIDGEY
-	dbw 4, WEEDLE
-	dbw 5, HOPPIP
-	dbw 5, HOPPIP
+	dbw 5, PIDGEY
+	dbw 5, CATERPIE
+	dbw 6, BELLSPROUT
+	dbw 6, MAREEP ;PIDGEY
+	dbw 5, WEEDLE
+	dbw 6, HOPPIP
+	dbw 6, HOPPIP
 	; nite
-	dbw 4, SPINARAK
-	dbw 4, POLIWAG
-	dbw 5, HOOTHOOT
-	dbw 5, SHINX ;BELLSPROUT
-	dbw 4, ZUBAT
-	dbw 5, GASTLY
-	dbw 5, GASTLY
+	dbw 5, SPINARAK
+	dbw 5, POLIWAG
+	dbw 6, HOOTHOOT
+	dbw 6, SHINX ;BELLSPROUT
+	dbw 5, ZUBAT
+	dbw 6, GASTLY
+	dbw 6, GASTLY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_32
@@ -1576,8 +1576,8 @@ JohtoGrassWildMons:
 	dbw 18, EKANS
 	dbw 19, SPEAROW
 	dbw 20, RATTATA
-	dbw 21, LARVICID   ;RATICATE
-	dbw 20, STUNKY     ;ARBOK
+	dbw 21, LARVICID     ;RATICATE
+	dbw 20, RATICATE     ;ARBOK
 	dbw 21, FEAROW
 	dbw 21, FEAROW
 	; day
@@ -1585,13 +1585,13 @@ JohtoGrassWildMons:
 	dbw 19, SPEAROW
 	dbw 20, RATTATA
 	dbw 21, LARVICID   ;RATICATE
-	dbw 20, STUNKY     ;ARBOK
+	dbw 20, RATICATE   ;ARBOK
 	dbw 21, FEAROW
 	dbw 21, FEAROW
 	; nite
 	dbw 18, RATTATA
 	dbw 19, ZUBAT
-	dbw 20, STUNKY      ;RATICATE
+	dbw 20, EKANS       ;RATICATE
 	dbw 21, GOLBAT
 	dbw 17, MARILL
 	dbw 21, RATICATE    ;GOLBAT
@@ -1604,7 +1604,7 @@ JohtoGrassWildMons:
 	dbw 21, FURRET
 	dbw 22, PIDGEOTTO
 	dbw 22, FARFETCH_D
-	dbw 21, STUNKY      ;FURRET
+	dbw 21, VENONAT      ;FURRET
 	dbw 23, RATICATE
 	dbw 23, TANGELA
 	dbw 23, TANGELA
@@ -1612,12 +1612,12 @@ JohtoGrassWildMons:
 	dbw 21, FURRET
 	dbw 22, PIDGEOTTO
 	dbw 22, FARFETCH_D
-	dbw 21, STUNKY      ;FURRET
+	dbw 21, VENONAT      ;FURRET
 	dbw 23, RATICATE
 	dbw 23, TANGELA
 	dbw 23, TANGELA
 	; nite
-	dbw 21, STUNKY      ;VENONAT
+	dbw 21, VENONAT
 	dbw 22, NOCTOWL
 	dbw 22, VENONAT     ;RATICATE
 	dbw 23, VENONAT
@@ -1736,6 +1736,34 @@ JohtoGrassWildMons:
 	dbw 50, GOLBAT
 	dbw 54, GOLBAT
 	dbw 54, GOLBAT
+	end_grass_wildmons
+
+	def_grass_wildmons CHERRYGROVE_BAY
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 21, RATTATA
+	dbw 22, KRABBY
+	dbw 22, PIDGEOTTO
+	dbw 20, SWABLU  
+	dbw 23, SOLOSIS
+	dbw 24, RATICATE
+	dbw 24, RATICATE
+	; day
+	dbw 21, RATTATA
+	dbw 22, KRABBY
+	dbw 22, PIDGEOTTO
+	dbw 20, SWABLU 
+	dbw 23, SOLOSIS
+	dbw 24, RATICATE
+	dbw 24, RATICATE
+	; nite
+	dbw 21, RATTATA   
+	dbw 22, NOCTOWL
+	dbw 22, KRABBY   
+	dbw 20, SWABLU
+	dbw 23, SOLOSIS
+	dbw 24, RATICATE
+	dbw 24, RATICATE
 	end_grass_wildmons
 
 	db -1 ; end

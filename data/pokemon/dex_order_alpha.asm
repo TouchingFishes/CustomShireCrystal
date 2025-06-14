@@ -9,6 +9,7 @@ AlphabeticalPokedexOrder:
 	dw AGGRON
 	dw AIPOM
 	dw ALAKAZAM
+	dw ALTARIA
 	dw AMPHAROS
 	dw ARBOK
 	dw ARCANINE
@@ -304,7 +305,6 @@ AlphabeticalPokedexOrder:
 	dw SKARMORY
 	dw SKIPLOOM
 	dw SKITTY
-	dw SKUNTANK
 	dw SLAKING
 	dw SLAKOTH
 	dw SLOWBRO
@@ -330,12 +330,12 @@ AlphabeticalPokedexOrder:
 	dw STARMIE
 	dw STARYU
 	dw STEELIX
-	dw STUNKY
 	dw SUDOWOODO
 	dw SUICUNE
 	dw SUNFLORA
 	dw SUNKERN
 	dw SURSKIT
+	dw SWABLU
 	dw SWAMPERT
 	dw SWINUB
 	dw TANGELA

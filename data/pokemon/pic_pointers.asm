@@ -687,10 +687,10 @@ PokemonPicPointers::
 	dba KrolucadaBackpic
 	dba KrolucardFrontpic
 	dba KrolucardBackpic
-	dba StunkyFrontpic
-	dba StunkyBackpic
-	dba SkuntankFrontpic
-	dba SkuntankBackpic
+	dba SwabluFrontpic
+	dba SwabluBackpic
+	dba AltariaFrontpic
+	dba AltariaBackpic
 	dba LarvestaFrontpic
 	dba LarvestaBackpic
 	dba VolcaronaFrontpic

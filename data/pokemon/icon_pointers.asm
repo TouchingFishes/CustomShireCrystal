@@ -342,8 +342,8 @@ IconPointers:
 	dw KitsunohIcon
 	dw KrolucadaIcon
 	dw KrolucardIcon
-	dw StunkyIcon
-	dw SkuntankIcon
+	dw SwabluIcon
+	dw AltariaIcon
 	dw LarvestaIcon
 	dw VolcaronaIcon
 	dw ImpidimpIcon

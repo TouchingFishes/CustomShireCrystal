@@ -14,6 +14,8 @@ Kuroko Aizawa for Engineer sprite.
 
 Danny-E for Lorelei's sprite.
 
+TriteHexagon for ZinniaBattle theme.
+
 Eeveeee1999 for many Pokémon icons and the Reuniclus, Duosion and Solosis sprites.
 
 A certain someone who does not want to be named for several amazing sprites.

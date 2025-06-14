@@ -2,7 +2,7 @@ TrainerClassIVs:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 4
 	;  atk,def,spd,spc
-	ivs 16, 18, 20, 14, 14, 14 ; FALKNER
+	ivs 16, 18, 18, 14, 14, 14 ; FALKNER
 	ivs 20, 16, 16, 16, 16, 16 ; WHITNEY
 	ivs 16, 18, 16, 16, 16, 16 ; BUGSY
 	ivs 16, 18, 16, 16, 16, 16 ; MORTY
@@ -10,7 +10,7 @@ TrainerClassIVs:
 	ivs 24, 24, 24, 24, 24, 24 ; JASMINE
 	ivs 24, 24, 24, 24, 24, 24 ; CHUCK
 	ivs 31, 27, 27, 27, 27, 27 ; CLAIR
-	ivs 26, 26, 26, 26, 26, 26 ; RIVAL1
+	ivs 18, 18, 18, 18, 18, 18 ; RIVAL1
 	ivs 16, 18, 16, 16, 16, 16 ; POKEMON_PROF
 	ivs 30, 30, 30, 30, 30, 30 ; WILL
 	ivs 25, 26, 24, 26, 26, 26 ; CAL

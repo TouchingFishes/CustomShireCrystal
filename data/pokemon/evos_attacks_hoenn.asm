@@ -84,8 +84,8 @@ EvosAttacksPointers3::
 	dw KitsunohEvosAttacks
 	dw KrolucadaEvosAttacks
 	dw KrolucardEvosAttacks
-	dw StunkyEvosAttacks
-	dw SkuntankEvosAttacks
+	dw SwabluEvosAttacks
+	dw AltariaEvosAttacks
 	dw LarvestaEvosAttacks
 	dw VolcaronaEvosAttacks
 	dw ImpidimpEvosAttacks
@@ -1438,34 +1438,39 @@ KrolucardEvosAttacks:
 	dbw 67, OMINOUS_WIND
 	db 0 ; no more level-up moves
 
-StunkyEvosAttacks:
-	evolve EVOLVE_LEVEL, 38, SKUNTANK
+SwabluEvosAttacks:
+	evolve EVOLVE_LEVEL, 35, ALTARIA
 	db 0 ; no more evolutions
-	dbw 1, SCRATCH
-	dbw 1, POISON_GAS
-	dbw 7, SCREECH
-	dbw 10, FURY_SWIPES
-	dbw 16, SMOKESCREEN
-	dbw 25, SLASH
-	dbw 28, NIGHT_SLASH
-	dbw 34, POISON_FANG
-	dbw 37, MEMENTO
-	dbw 44, EXPLOSION
+	dbw 1, GROWL
+	dbw 1, PECK
+	dbw 8, ASTONISH
+	dbw 11, SING
+	dbw 18, FURY_ATTACK
+	dbw 21, SAFEGUARD
+	dbw 28, MIST
+	dbw 31, TAKE_DOWN
+	dbw 38, MIRROR_MOVE
+	dbw 41, REFRESH
+	dbw 48, PERISH_SONG
 	db 0 ; no more level-up moves
 
-SkuntankEvosAttacks:
+AltariaEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, SCRATCH
-	dbw 1, POISON_GAS
-	dbw 8, SCREECH
-	dbw 11, FURY_SWIPES
-	dbw 17, SMOKESCREEN
-	dbw 26, SLASH
-	dbw 29, NIGHT_SLASH
-	dbw 35, POISON_FANG
-	dbw 38, FLAMETHROWER
-	dbw 43, MEMENTO
-	dbw 53, EXPLOSION
+	dbw 1, ASTONISH
+	dbw 1, GROWL
+	dbw 1, PECK
+	dbw 1, SING
+	dbw 8, ASTONISH
+	dbw 11, SING
+	dbw 18, FURY_ATTACK
+	dbw 21, SAFEGUARD
+	dbw 28, MIST
+	dbw 31, TAKE_DOWN
+	dbw 35, DRAGONBREATH
+	dbw 40, DRAGON_DANCE
+	dbw 45, REFRESH
+	dbw 54, PERISH_SONG
+	dbw 59, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 LarvestaEvosAttacks:
@@ -1695,7 +1700,7 @@ CastformEvosAttacks:
 LitwickEvosAttacks:
 	evolve EVOLVE_LEVEL, 41, LAMPENT
 	db 0 ; no more evolutions
-	dbw 1, KNOCK_OFF
+	dbw 1, SPITE
 	dbw 8, SMOG
 	dbw 13, NIGHT_SHADE
 	dbw 20, CURSE

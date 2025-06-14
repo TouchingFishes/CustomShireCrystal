@@ -344,4 +344,13 @@ JohtoWaterWildMons:
 	dbw 50, POLIWAG
 	end_water_wildmons
 
+	def_water_wildmons CHERRYGROVE_BAY
+	db 6 percent ; encounter rate
+	dbw 20, TENTACOOL
+	dbw 15, VOLTREL
+	dbw 20, TENTACRUEL
+	dbw 25, CORSOLA
+	dbw 30, CORSOLA
+	end_water_wildmons
+
 	db -1 ; end

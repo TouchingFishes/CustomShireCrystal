@@ -347,8 +347,8 @@ MonMenuIconPals:
 	icon_pals GRAY,   RED    ; KITSUNOH
 	icon_pals GRAY,   RED    ; KROLUCADA
 	icon_pals GRAY,   RED    ; KROLUCARD
-	icon_pals PURPLE, RED    ; STUNKY
-	icon_pals PURPLE, RED    ; SKUNTANK
+	icon_pals BLUE,   RED    ; SWABLU
+	icon_pals BLUE,   RED    ; ALTARIA
 	icon_pals RED,    RED    ; LARVESTA
 	icon_pals RED,    RED    ; VOLCARONA
 	icon_pals PINK,   RED    ; IMPIDIMP

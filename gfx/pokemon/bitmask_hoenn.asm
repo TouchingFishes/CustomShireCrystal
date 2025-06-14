@@ -84,8 +84,8 @@ BitmaskPointers3:
 	dw KitsunohBitmasks
 	dw KrolucadaBitmasks
 	dw KrolucardBitmasks
-	dw StunkyBitmasks
-	dw SkuntankBitmasks
+	dw SwabluBitmasks
+	dw AltariaBitmasks
 	dw LarvestaBitmasks
 	dw VolcaronaBitmasks
 	dw ImpidimpBitmasks
@@ -224,8 +224,8 @@ NohfaceBitmasks:       INCLUDE "gfx/pokemon/hoenn/nohface/bitmask.asm"
 KitsunohBitmasks:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/bitmask.asm"
 KrolucadaBitmasks:     INCLUDE "gfx/pokemon/hoenn/krolucada/bitmask.asm"
 KrolucardBitmasks:     INCLUDE "gfx/pokemon/hoenn/krolucard/bitmask.asm"
-StunkyBitmasks:        INCLUDE "gfx/pokemon/hoenn/stunky/bitmask.asm"
-SkuntankBitmasks:      INCLUDE "gfx/pokemon/hoenn/skuntank/bitmask.asm"
+SwabluBitmasks:        INCLUDE "gfx/pokemon/hoenn/swablu/bitmask.asm"
+AltariaBitmasks:      INCLUDE "gfx/pokemon/hoenn/altaria/bitmask.asm"
 LarvestaBitmasks:      INCLUDE "gfx/pokemon/hoenn/larvesta/bitmask.asm"
 VolcaronaBitmasks:     INCLUDE "gfx/pokemon/hoenn/volcarona/bitmask.asm"
 ImpidimpBitmasks:      INCLUDE "gfx/pokemon/hoenn/impidimp/bitmask.asm"

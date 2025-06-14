@@ -525,19 +525,19 @@ ChuckGroup:
 ClairGroup:
 	next_list_item ; CLAIR (1)
 	db "CLAIR@", TRAINERTYPE_MOVES
-	db 45
+	db 44
 	dw GYARADOS
 	dw TWISTER, SURF, THRASH, DRAGONBREATH
-	db 45
+	db 44
 	dw CHARIZARD
 	dw FLAMETHROWER, BITE, FLY, DRAGONBREATH
-	db 43
+	db 42
 	dw DRAGONAIR
 	dw THUNDER_WAVE, THUNDERBOLT, SLAM, DRAGONBREATH
-	db 43
+	db 42
 	dw DRAGONAIR
 	dw THUNDER_WAVE, ICE_BEAM, SLAM, DRAGONBREATH
-	db 48
+	db 47
 	dw KINGDRA
 	dw SMOKESCREEN, SURF, TWISTER, DRAGONBREATH
 	db -1 ; end
@@ -1643,7 +1643,7 @@ SchoolboyGroup:
 	db 50 ; 30
 	dw MR__MIME
 	db 50 ; new mon
-	dw SKUNTANK
+	dw WEEZING
 	db 52 ; new mon
 	dw PARASECT
 	db 54 ; 34
@@ -1657,13 +1657,13 @@ SchoolboyGroup:
 	dw PSYCHIC_M, LIGHT_SCREEN, REFLECT, ENCORE
 	db 64 ; new mon
 	dw PARASECT
-	dw LEAF_BLADE, SPORE, X_SCISSOR, SLASH
+	dw GIGA_DRAIN, SPORE, X_SCISSOR, SLASH
 	db 64 ; new mon
-	dw SKUNTANK
-	dw PSYCHIC_M, LIGHT_SCREEN, REFLECT, ENCORE
+	dw WEEZING
+	dw SLUDGE_BOMB, PAIN_SPLIT, FLAMETHROWER, WILL_O_WISP
 	db 64 ; new mon
 	dw MAGMAR
-	dw PSYCHIC_M, LIGHT_SCREEN, REFLECT, ENCORE
+	dw PSYCHIC_M, FIRE_BLAST, THUNDERPUNCH, SLUDGE_BOMB
 	db 68 ; 38
 	dw MAGNEZONE
 	dw ZAP_CANNON, THUNDER_WAVE, LOCK_ON, SWIFT
@@ -2115,18 +2115,22 @@ CooltrainerMGroup:
 	db "PAUL@", TRAINERTYPE_NORMAL
 	db 37 ;34
 	dw DRATINI
-	db 38 ;34
-	dw DRATINI
 	db 39 ;34
 	dw DRAGONAIR
+	db 38 ;34
+	dw CHARMELEON
+	db 40 ;34
+	dw CHARIZARD
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERM (4)
 	db "CODY@", TRAINERTYPE_NORMAL
-	db 39 ;34
-	dw SEADRA
+	db 37 ;34
+	dw CROCONAW
+	db 37 ;34
+	dw CROCONAW
 	db 41 ;36
-	dw EELEKTRIK
+	dw LAPRAS
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERM (5) unused
@@ -2362,12 +2366,16 @@ CooltrainerFGroup:
 	db "FRAN@", TRAINERTYPE_NORMAL
 	db 42 ;37
 	dw SEADRA
+	db 42 ;new mon
+	dw AMPHAROS
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERF (4)
 	db "LOLA@", TRAINERTYPE_NORMAL
 	db 39 ;34
-	dw GYARADOS
+	dw SEADRA
+	db 39 ;new mon
+	dw SEADRA
 	db 41 ;36
 	dw DRAGONAIR
 	db -1 ; end
@@ -2849,12 +2857,12 @@ GruntMGroup:
 
 	next_list_item ; GRUNTM (2) SLOWPOKE WELL
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 7
+	db 8
 	dw RATTATA
 	db 8
-	dw ZUBAT
+	dw RATTATA
 	db 9
-	dw STUNKY
+	dw ZUBAT
 	db -1 ; end
 
 	next_list_item ; GRUNTM (3) RADIO TOWER
@@ -2902,9 +2910,9 @@ GruntMGroup:
 	db 30 ;23
 	dw KOFFING
 	db 30 ;23
-	dw STUNKY
+	dw MEOWTH
 	db 30 ;23
-	dw STUNKY
+	dw KOFFING
 	db 34 ;23
 	dw RATICATE
 	db -1 ; end
@@ -3022,7 +3030,7 @@ GruntMGroup:
 	db 24 ;17
 	dw GRIMER
 	db 25 ;18
-	dw STUNKY
+	dw GLOOM
 	db -1 ; end
 
 	next_list_item ; GRUNTM (22) GOLDENROD RADIO TOWER
@@ -3048,7 +3056,7 @@ GruntMGroup:
 	next_list_item ; GRUNTM (25) GOLDENROD UNDERGROUND
 	db "GRUNT@", TRAINERTYPE_NORMAL
 	db 32 ;24
-	dw STUNKY
+	dw MORGREM
 	db 34 ;24
 	dw MUK
 	db -1 ; end
@@ -3981,14 +3989,20 @@ SwimmerFGroup:
 
 	next_list_item ; SWIMMERF (8)
 	db "LISA@", TRAINERTYPE_NORMAL
-	db 28
-	dw JYNX
+	db 30 ;new mon
+	dw LUVDISC
+	db 30 ;new mon
+	dw LUVDISC
+	db 32 ;28
+	dw VAPOREON
 	db -1 ; end
 
 	next_list_item ; SWIMMERF (9)
 	db "JILL@", TRAINERTYPE_NORMAL
-	db 28
-	dw DEWGONG
+	db 32 ; 28
+	dw CORSOLA
+	db 32 ; new mon
+	dw CORSOLA
 	db -1 ; end
 
 	next_list_item ; SWIMMERF (10)
@@ -6442,7 +6456,7 @@ GruntFGroup:
 	next_list_item ; GRUNTF (1) SLOWPOKE WELL
 	db "GRUNT@", TRAINERTYPE_NORMAL
 	db 9
-	dw ZUBAT
+	dw ODDISH
 	db 11
 	dw EKANS
 	db -1 ; end
@@ -6450,7 +6464,7 @@ GruntFGroup:
 	next_list_item ; GRUNTF (2) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
 	db 34 ;26
-	dw SKUNTANK
+	dw PERSIAN
 	db -1 ; end
 
 	next_list_item ; GRUNTF (3) RADIO TOWER
@@ -6466,21 +6480,21 @@ GruntFGroup:
 	db 34 ;21
 	dw ARIADOS
 	db 34 ;23
-	dw STUNKY
+	dw ODDISH
 	db 34 ;21
 	dw ARIADOS
 	db 34 ;24
-	dw STUNKY
+	dw GLOOM
 	db -1 ; end
 
 	next_list_item ; GRUNTF (5) ROCKET HIDEOUT
 	db "GRUNT@", TRAINERTYPE_MOVES
-	db 28 ;18
-	dw STUNKY
-	dw SMOKESCREEN, NIGHT_SLASH, SLASH, POISON_GAS
 	db 27 ;18
 	dw GLOOM
-	dw ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	dw SLUDGE_BOMB, SLEEP_POWDER, STUN_SPORE, ABSORB
+	db 27 ;18
+	dw GLOOM
+	dw ABSORB, SLUDGE_BOMB, STUN_SPORE, SLEEP_POWDER
 	db -1 ; end
 
 	end_list_items
@@ -6878,7 +6892,11 @@ DragonTamerGroup:
 
 	next_list_item ; DRAGON_TAMER (2)
 	db "KARL@", TRAINERTYPE_NORMAL
-	db 42 ;37
+	db 40 ;new mon
+	dw SWABLU
+	db 40 ;new mon
+	dw SWABLU
+	db 43 ;37
 	dw VIBRAVA
 	db -1 ; end
 
@@ -6899,6 +6917,14 @@ DragonTamerGroup:
 	db 60
 	dw CHARIZARD
 	dw FLAMETHROWER, TWISTER, DRAGON_CLAW, BLAST_BURN
+	db -1 ; end
+
+	next_list_item ; DRAGON_TAMER (4)
+	db "JEB@", TRAINERTYPE_NORMAL
+	db 37
+	dw CHARIZARD
+	db 37
+	dw ALTARIA
 	db -1 ; end
 
 	end_list_items
@@ -6988,7 +7014,7 @@ RichBoyGroup:
 ;	next_list_item ; RICH_BOY (5)
 ;	db "SIDNEY@", TRAINERTYPE_MOVES
 ;	db 46
-;	dw SKUNTANK
+;	dw ALTARIA
 ;	dw ANCIENTPOWER, POISON_TAIL, HYPER_BEAM, EARTHQUAKE
 ;	db 48
 ;	dw SHARPEDO

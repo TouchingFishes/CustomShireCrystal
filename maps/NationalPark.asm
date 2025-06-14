@@ -1,5 +1,5 @@
 	object_const_def
-	const NATIONALPARK_LASS1
+	const NATIONALPARK_LADY
 	const NATIONALPARK_POKEFAN_F1
 	const NATIONALPARK_TEACHER1
 	const NATIONALPARK_YOUNGSTER1
@@ -9,7 +9,7 @@
 	const NATIONALPARK_YOUNGSTER3
 	const NATIONALPARK_POKEFAN_F2
 	const NATIONALPARK_POKEFAN_M
-	const NATIONALPARK_LASS2
+	const NATIONALPARK_LASS
 	const NATIONALPARK_POKE_BALL1
 	const NATIONALPARK_GAMEBOY_KID
 	const NATIONALPARK_POKE_BALL2
@@ -19,8 +19,8 @@ NationalPark_MapScripts:
 
 	def_callbacks
 
-NationalParkLassScript:
-	jumptextfaceplayer NationalParkLassText
+NationalParkLadyScript:
+	jumptextfaceplayer NationalParkLadyText
 
 NationalParkPokefanFScript:
 	jumptextfaceplayer NationalParkPokefanFText
@@ -305,7 +305,7 @@ NationalParkTMDig:
 NationalParkHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
 
-NationalParkLassText:
+NationalParkLadyText:
 	text "Look! Check out my"
 	line "bag!"
 
@@ -529,7 +529,7 @@ NationalPark_MapEvents:
 	bg_event 12,  4, BGEVENT_READ, NationalParkTrainerTipsSign
 
 	def_object_events
-	object_event 15, 24, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkLassScript, -1
+	object_event 15, 24, SPRITE_LADY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NationalParkLadyScript, -1
 	object_event 14,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkPokefanFScript, -1
 	object_event 27, 40, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkTeacher1Script, -1
 	object_event 11, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkYoungster1Script, -1

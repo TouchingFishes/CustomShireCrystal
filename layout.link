@@ -62,12 +62,12 @@ ROMX $09
 ROMX $0a
 	"bankA"
 	"Trainer Backpics"
-	"Map Attributes"
 ROMX $0b
 	"bankB"
 ROMX $0c
 	"Tileset Data 4"
 ROMX $0d
+	"Map Attributes"
 ROMX $0e
 	"Enemy Trainers"
 ROMX $0f
