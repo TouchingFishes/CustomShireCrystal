@@ -133,6 +133,7 @@ BattleBGEffects:
 	dw BattleBGEffect_VibrateMon
 	dw BattleBGEffect_WobblePlayer
 	dw BattleBGEffect_WobbleScreen
+	dw BattleBGEffect_CycleOBPalsGrayAndYellowFullShift
 	assert_table_length NUM_BATTLE_BG_EFFECTS
 
 BattleBGEffect_End:
