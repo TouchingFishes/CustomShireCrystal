@@ -5,6 +5,7 @@
 	const ROUTE46_FRUIT_TREE1
 	const ROUTE46_FRUIT_TREE2
 	const ROUTE46_POKE_BALL
+	const ROUTE46_MEDIUM
 
 Route46_MapScripts:
 	def_scene_scripts
@@ -156,6 +157,17 @@ TrainerHikerBailey:
 	closetext
 	end
 
+TrainerMediumEthel:
+	trainer MEDIUM, ETHEL, EVENT_BEAT_MEDIUM_ETHEL, MediumEthelSeenText, MediumEthelBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MediumEthelAfterBattleText
+	waitbutton
+	closetext
+	end
+
 Route46Sign:
 	jumptext Route46SignText
 
@@ -243,6 +255,22 @@ PicnickerErin2BeatenText:
 	cont "the other time."
 	done
 
+MediumEthelSeenText:
+	text "You can hear the"
+	line "cries of spirits"
+
+	para "echo through this"
+	line "mountain pass!"
+	done
+
+MediumEthelBeatenText:
+	text "Boooohooooo!"
+	done
+
+MediumEthelAfterBattleText:
+	text "I still hear them."
+	done
+
 Route46SignText:
 	text "ROUTE 46"
 	line "MOUNTAIN RD. AHEAD"
@@ -268,3 +296,4 @@ Route46_MapEvents:
 	object_event  7,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route46FruitTree1, -1
 	object_event  8,  6, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route46FruitTree2, -1
 	object_event  1, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route46XSpeed, EVENT_ROUTE_46_X_SPEED
+	object_event 14, 13, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 5, TrainerMediumEthel, -1

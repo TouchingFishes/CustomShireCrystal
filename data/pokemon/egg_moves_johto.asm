@@ -363,6 +363,7 @@ DunsparceEggMoves:
 	dw CURSE
 	dw HEADBUTT
 	dw ROCK_SLIDE
+	dw SPITE
 	dw -1 ; end
 
 GligarEggMoves:

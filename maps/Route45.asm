@@ -12,6 +12,9 @@
 	const ROUTE45_POKE_BALL3
 	const ROUTE45_POKE_BALL4
 	const ROUTE45_YOUNGSTER
+	const ROUTE45_VETERAN_M
+	;const ROUTE45_HEX_MANIAC
+	;const ROUTE45_ENGINEER
 
 Route45_MapScripts:
 	def_scene_scripts
@@ -140,28 +143,6 @@ TrainerVeteranRaynor:
 	endifjustbattled
 	opentext
 	writetext VeteranRaynorAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerHexManiacMalia:
-	trainer HEX_MANIAC, MALIA, EVENT_BEAT_HEX_MANIAC_MALIA, HexManiacMaliaSeenText, HexManiacMaliaBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext HexManiacMaliaAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerEngineerBobby:
-	trainer ENGINEER, BOBBY, EVENT_BEAT_ENGINEER_BOBBY, EngineerBobbySeenText, EngineerBobbyBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext EngineerBobbyAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -361,12 +342,7 @@ HikerErikAfterBattleText:
 	done
 
 VeteranRaynorSeenText:
-	text "I'll head back to"
-	line "BLACKTHORN's ICE"
-
-	para "……………"
-
-	cont "The more I stare"
+	text "The more I stare"
 	line "into it, the more"
 	cont "I feel that there"
 	cont "is a great trea-"
@@ -382,6 +358,7 @@ VeteranRaynorSeenText:
 	para "Let's see, if my"
 	line "first impression"
 	cont "is correct."
+	done
 
 VeteranRaynorBeatenText:
 	text "I was… You are a"
@@ -397,52 +374,6 @@ VeteranRaynorAfterBattleText:
 	line "special at the"
 	cont "bottom of this"
 	cont "pond."
-	done
-
-
-HexManiacMaliaSeenText:
-	text "Let the ritual"
-	line "begin."
-	done
-
-HexManiacMaliaBeatenText:
-	text "Oh no! My ritual"
-	line "failed!"
-	done
-
-HexManiacMaliaAfterBattleText:
-	text "Nighttime is when"
-	line "ghosts thrive…"
-
-	para "If you're frigh-"
-	line "tened by them, you"
-	cont "should think twice"
-	cont "before going out…"
-	done
-
-EngineerBobbySeenText:
-	text "Tell you what, the"
-	line "wall before me has"
-
-	para "the perfect con-"
-	line "dition for dril-"
-	cont "ling a tunnel."
-
-	para "Oh, you wanna"
-	line "battle"
-	done
-
-EngineerBobbyBeatenText:
-	text "Uff. You're good."
-	done
-
-EngineerBobbyAfterBattleText:
-	text "I tell you…"
-
-	para "If people wanted"
-	line "to, me and my pals"
-	cont "could build a"
-	cont "tunnel here…"
 	done
 
 HikerMichaelSeenText:
@@ -658,6 +589,4 @@ Route45_MapEvents:
 	object_event  6, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45Elixer, EVENT_ROUTE_45_ELIXER
 	object_event  7, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45MaxPotion, EVENT_ROUTE_45_MAX_POTION
 	object_event  4, 70, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TrainerCamperQuentin, -1
-	object_event 11, 79, SPRITE_VETERAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TrainerVeteranRaynor, -1
-	object_event  6, 86, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, TrainerHexManiacMalia, -1
-	object_event 15,  6, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, TrainerEngineerBobby, -1
+	object_event 11, 79, SPRITE_VETERAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 0, TrainerVeteranRaynor, -1

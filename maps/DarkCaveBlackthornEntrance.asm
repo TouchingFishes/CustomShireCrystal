@@ -2,6 +2,8 @@
 	const DARKCAVEBLACKTHORNENTRANCE_PHARMACIST
 	const DARKCAVEBLACKTHORNENTRANCE_POKE_BALL1
 	const DARKCAVEBLACKTHORNENTRANCE_POKE_BALL2
+	const DARKCAVEBLACKTHORNENTRANCE_HEX_MANIAC
+	const DARKCAVEBLACKTHORNENTRANCE_ENGINEER
 
 DarkCaveBlackthornEntrance_MapScripts:
 	def_scene_scripts
@@ -22,6 +24,28 @@ DarkCaveBlackthornEntrancePharmacistScript:
 	writetext DarkCaveBlackthornEntrancePharmacistText2
 	waitbutton
 .PackFull:
+	closetext
+	end
+
+TrainerHexManiacMalia:
+	trainer HEX_MANIAC, MALIA, EVENT_BEAT_HEX_MANIAC_MALIA, HexManiacMaliaSeenText, HexManiacMaliaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HexManiacMaliaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerEngineerBobby:
+	trainer ENGINEER, BOBBY, EVENT_BEAT_ENGINEER_BOBBY, EngineerBobbySeenText, EngineerBobbyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext EngineerBobbyAfterBattleText
+	waitbutton
 	closetext
 	end
 
@@ -59,6 +83,51 @@ DarkCaveBlackthornEntrancePharmacistText2:
 	cont "type moves."
 	done
 
+HexManiacMaliaSeenText:
+	text "Let the ritual"
+	line "begin."
+	done
+
+HexManiacMaliaBeatenText:
+	text "Oh no! My ritual"
+	line "failed!"
+	done
+
+HexManiacMaliaAfterBattleText:
+	text "Nighttime is when"
+	line "ghosts thrive…"
+
+	para "If you're frigh-"
+	line "tened by them, you"
+	cont "should think twice"
+	cont "before going out…"
+	done
+
+EngineerBobbySeenText:
+	text "Tell you what, the"
+	line "wall before me has"
+
+	para "the perfect con-"
+	line "dition for dril-"
+	cont "ling a tunnel."
+
+	para "Oh, you wanna"
+	line "battle?!"
+	done
+
+EngineerBobbyBeatenText:
+	text "Uff. You're good."
+	done
+
+EngineerBobbyAfterBattleText:
+	text "I tell you…"
+
+	para "If people wanted"
+	line "to, me and my pals"
+	cont "could build a"
+	cont "tunnel here…"
+	done	
+
 DarkCaveBlackthornEntrance_MapEvents:
 	db 0, 0 ; filler
 
@@ -74,3 +143,5 @@ DarkCaveBlackthornEntrance_MapEvents:
 	object_event  7,  3, SPRITE_PHARMACIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveBlackthornEntrancePharmacistScript, -1
 	object_event 21, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveBlackthornEntranceRevive, EVENT_DARK_CAVE_BLACKTHORN_ENTRANCE_REVIVE
 	object_event  7, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveBlackthornEntranceTMSnore, EVENT_DARK_CAVE_BLACKTHORN_ENTRANCE_TM_SNORE
+	object_event 21, 10, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 0, TrainerHexManiacMalia, -1
+	object_event 26,  2, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_TRAINER, 0, TrainerEngineerBobby, -1

@@ -408,6 +408,7 @@ DEF KRIS EQU __trainer_class__
 	const RALPH4
 	const RALPH5
 	const TULLY4
+	const NOLAN
 
 	trainerclass SWIMMERM ; 26
 	const HAROLD
@@ -626,7 +627,7 @@ DEF KRIS EQU __trainer_class__
 	const LLOYD
 	const DEAN
 	const SID
-	const HARVEY ; unused
+	const HARVEY
 	const DALE ; unused
 	const TED
 	const TODD2
@@ -664,7 +665,7 @@ DEF KRIS EQU __trainer_class__
 	const GRACE
 	const BETHANY ; unused
 	const MARGRET ; unused
-	const ETHEL ; unused
+	const ETHEL
 	const REBECCA
 	const DORIS
 
@@ -760,6 +761,7 @@ DEF KRIS EQU __trainer_class__
 	const TASHA
 	const LILI
 	const MALIA
+	const PEGGY
 
 	trainerclass VETERAN_F ; 4a
 	const MONICA

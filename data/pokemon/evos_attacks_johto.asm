@@ -865,13 +865,13 @@ ForretressEvosAttacks:
 	db 0 ; no more level-up moves
 
 DunsparceEvosAttacks:
-	dbbw EVOLVE_LEVEL, 45, DUNDRAG
+	dbbw EVOLVE_LEVEL, 48, DUNDRAG
 	db 0 ; no more evolutions
 	dbw 1, RAGE
 	dbw 4, DEFENSE_CURL
 	dbw 11, YAWN
 	dbw 14, GLARE
-	dbw 21, SPITE
+	dbw 21, MUD_SHOT
 	dbw 24, PURSUIT
 	dbw 31, SCREECH
 	dbw 34, TAKE_DOWN

@@ -273,16 +273,16 @@ DEF JOHTO_POKEMON EQU const_value
 	const HO_OH      ; fa
 	const CELEBI     ; fb
 DEF HOENN_POKEMON EQU const_value
-	const TREECKO    ; fc 
-	const GROVYLE    ; fd  
-	const SCEPTILE   ; fe  
-	const TORCHIC    ; ff 
-	const COMBUSKEN  ; 100 
-	const BLAZIKEN   ; 101 
-	const MUDKIP     ; 102
-	const MARSHTOMP  ; 103 
-	const SWAMPERT   ; 104 
-	const EUXINOS    ; 105
+	const TREECKO    ; fc   ?
+	const GROVYLE    ; fd   ?
+	const SCEPTILE   ; fe   ? 
+	const TORCHIC    ; ff   ?
+	const COMBUSKEN  ; 100  ?
+	const BLAZIKEN   ; 101  ?
+	const MUDKIP     ; 102  ?
+	const MARSHTOMP  ; 103  ?
+	const SWAMPERT   ; 104  ?
+	const EUXINOS    ; 105  ?
 	const WEAVILE    ; 106
 	const HONCHKROW  ; 107
 	const GLISCOR    ; 108
@@ -291,12 +291,12 @@ DEF HOENN_POKEMON EQU const_value
 	const YANMEGA    ; 10b
 	const KUJINOUGHT ; 10c
 	const MLLOY      ; 10d
-	const LOTAD	     ; 10e
-	const LOMBRE     ; 10f
-	const LUDICOLO   ; 110
-	const SEEDOT     ; 111
-	const NUZLEAF    ; 112
-	const SHIFTRY    ; 113
+	const LOTAD	     ; 10e  ?
+	const LOMBRE     ; 10f  ?
+	const LUDICOLO   ; 110  ?
+	const SEEDOT     ; 111  ?
+	const NUZLEAF    ; 112  ?
+	const SHIFTRY    ; 113  ?
 	const ELECTIVIRE ; 114
 	const MAGMORTAR  ; 115
 	const VOLTREL    ; 116
@@ -319,11 +319,11 @@ DEF HOENN_POKEMON EQU const_value
 	const TINKATON   ; 127
 	const MAKUHITA   ; 128
 	const HARIYAMA   ; 129
-	const AZURILL    ; 12a
+	const AZURILL    ; 12a out
 	const NOSEPASS   ; 12b out
-	const SKITTY     ; 12c out
-	const DELCATTY   ; 12d out
-	const SPIRITOMB  ; 12e
+	const SKITTY     ; 12c
+	const DELCATTY   ; 12d
+	const SPIRITOMB  ; 12e ?
 	const TANGROWTH  ; 12f
 	const ARON       ; 130
 	const LAIRON     ; 131
@@ -334,9 +334,9 @@ DEF HOENN_POKEMON EQU const_value
 	const LUXIO      ; 136
 	const LUXRAY     ; 137
 	const GEKOPON    ; 138
-	const TYNAMO     ; 139
-	const EELEKTRIK  ; 13a
-	const EELEKTROSS ; 13b
+	const TYNAMO     ; 139 ?
+	const EELEKTRIK  ; 13a ?
+	const EELEKTROSS ; 13b ?
 	const CORSOREEF  ; 13c
 	const DUNDRAG    ; 13d
 	const CARVANHA   ; 13e

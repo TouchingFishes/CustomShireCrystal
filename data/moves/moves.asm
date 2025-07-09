@@ -94,8 +94,8 @@ MovesGen1:
 	move EFFECT_COUNTER,             1, FIGHTING,      100, 20,   0      ;COUNTER
 	move EFFECT_LEVEL_DAMAGE,        1, FIGHTING,      100, 20,   0      ;SEISMIC_TOSS
 	move EFFECT_NORMAL_HIT,         80, NORMAL,        100, 15,   0      ;STRENGTH
-	move EFFECT_LEECH_HIT,          20, GRASS,         100, 20,   0      ;ABSORB
-	move EFFECT_LEECH_HIT,          40, GRASS,         100, 10,   0      ;MEGA_DRAIN
+	move EFFECT_LEECH_HIT,          20, GRASS,         100, 25,   0      ;ABSORB
+	move EFFECT_LEECH_HIT,          40, GRASS,         100, 15,   0      ;MEGA_DRAIN
 	move EFFECT_LEECH_SEED,          0, GRASS,          90, 10,   0      ;LEECH_SEED
 	move EFFECT_SP_ATK_UP,           0, NORMAL,        100, 40,   0      ;GROWTH
 	move EFFECT_NORMAL_HIT,         55, GRASS,          95, 25,   0      ;RAZOR_LEAF
@@ -231,7 +231,7 @@ MovesGen2:
 	move EFFECT_LOCK_ON,             0, NORMAL,        100,  5,   0      ;LOCK_ON
 	move EFFECT_RAMPAGE,           120, DRAGON,        100, 15,   0      ;OUTRAGE
 	move EFFECT_SANDSTORM,           0, ROCK,          100, 10,   0      ;SANDSTORM
-	move EFFECT_LEECH_HIT,          75, GRASS,         100,  5,   0      ;GIGA_DRAIN
+	move EFFECT_LEECH_HIT,          75, GRASS,         100, 10,   0      ;GIGA_DRAIN
 	move EFFECT_ENDURE,              0, NORMAL,        100, 10,   0      ;ENDURE
 	move EFFECT_ATTACK_DOWN_2,       0, NORMAL,        100, 20,   0      ;CHARM
 	move EFFECT_ROLLOUT,            30, ROCK,           90, 20,   0      ;ROLLOUT

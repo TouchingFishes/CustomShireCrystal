@@ -435,9 +435,10 @@ MlloyEvosAttacks:
 
 LotadEvosAttacks:
 	evolve EVOLVE_LEVEL, 14, LOMBRE
+	;evolve EVOLVE_ITEM, SUN_STONE, LUDICOLO
 	db 0 ; no more evolutions
-	dbw 1, ASTONISH
-	dbw 3, GROWL
+	dbw 1, ASTONISH ;BUBBLE
+	dbw 3, GROWL ;WITHDRAW
 	dbw 7, ABSORB
 	dbw 13, NATURE_POWER
 	dbw 21, MIST
@@ -448,16 +449,16 @@ LotadEvosAttacks:
 LombreEvosAttacks:
 	evolve EVOLVE_ITEM, WATER_STONE, LUDICOLO
 	db 0 ; no more evolutions
-	dbw 1, ASTONISH
-	dbw 3, GROWL
+	dbw 1, ASTONISH ;BUBBLE
+	dbw 3, GROWL ;WITHDRAW
 	dbw 7, ABSORB
 	dbw 13, NATURE_POWER
-	dbw 19, FAKE_OUT
-	dbw 25, FURY_SWIPES
-	dbw 31, SWAGGER
-	dbw 37, THIEF
-	dbw 43, UPROAR
-	dbw 49, HYDRO_PUMP
+	dbw 19, FAKE_OUT ;BIDE
+	dbw 25, FURY_SWIPES ;BUBBLEBEAM
+	dbw 31, SWAGGER ;MIST
+	dbw 37, THIEF ;RAIN_DANCE
+	dbw 43, UPROAR ;EGG_BOMB
+	dbw 49, HYDRO_PUMP 
 	db 0 ; no more level-up moves
 
 LudicoloEvosAttacks:
@@ -469,15 +470,16 @@ LudicoloEvosAttacks:
 	db 0 ; no more level-up moves
 
 SeedotEvosAttacks:
-	evolve EVOLVE_LEVEL, 14, NUZLEAF
+	evolve EVOLVE_LEVEL, 14, NUZLEAF ;38
 	db 0 ; no more evolutions
-	dbw 1, BIDE
-	dbw 3, HARDEN
-	dbw 7, GROWTH
-	dbw 13, NATURE_POWER
-	dbw 21, SYNTHESIS
-	dbw 31, SUNNY_DAY
-	dbw 43, EXPLOSION
+	dbw 1, BIDE ;PECK
+	dbw 3, HARDEN ;LEER
+	dbw 7, GROWTH ;SPITE
+	dbw 13, NATURE_POWER ;WILL_O_WISP
+	dbw 21, SYNTHESIS ;EMBER
+	dbw 31, SUNNY_DAY ;RAZOR_WIND
+	dbw 43, EXPLOSION ; 
+	;dbw 48, OMINOUS_WIND
 	db 0 ; no more level-up moves
 
 NuzleafEvosAttacks:
@@ -888,15 +890,15 @@ NosepassEvosAttacks:
 SkittyEvosAttacks:
 	evolve EVOLVE_ITEM, MOON_STONE, DELCATTY
 	db 0 ; no more evolutions
-	dbw 1, GROWL
+	dbw 1, ATTRACT
 	dbw 1, TACKLE
 	dbw 3, TAIL_WHIP
-	dbw 7, ATTRACT
+	dbw 7, METRONOME
 	dbw 13, SING
 	dbw 15, DOUBLESLAP
-	dbw 19, METRONOME
+	dbw 19, FAINT_ATTACK
 	dbw 25, CHARM
-	dbw 27, FAINT_ATTACK
+	dbw 27, MAGICAL_LEAF
 	dbw 31, COVET
 	dbw 37, HEAL_BELL
 	dbw 39, DOUBLE_EDGE
@@ -906,7 +908,7 @@ DelcattyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ATTRACT
 	dbw 1, DOUBLESLAP
-	dbw 1, GROWL
+	dbw 1, MAGICAL_LEAF
 	dbw 1, SING
 	db 0 ; no more level-up moves
 
@@ -1161,7 +1163,7 @@ DundragEvosAttacks:
 	dbw 6, DEFENSE_CURL
 	dbw 13, YAWN
 	dbw 16, GLARE
-	dbw 23, SPITE
+	dbw 23, MUD_SHOT
 	dbw 26, PURSUIT
 	dbw 33, SCREECH
 	dbw 36, TAKE_DOWN
