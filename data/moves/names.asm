@@ -346,7 +346,7 @@ MoveNames::
 	li "COVET"
 	li "VOLT TACKLE"
 	li "MAGICAL LEAF"
-	li "MYSTICALFIRE"
+	li "MAGICAL FIRE"
 	li "CALM MIND"
 	li "LEAF BLADE"
 	li "DRAGON DANCE"

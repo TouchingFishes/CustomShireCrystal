@@ -351,7 +351,7 @@ DEF GEN2_MOVES EQU const_value - 1
 	const COVET        ; 155
 	const VOLT_TACKLE  ; 156
 	const MAGICAL_LEAF ; 157
-	const MYSTICALFIRE ; 158
+	const MAGICAL_FIRE ; 158
 	const CALM_MIND    ; 159
 	const LEAF_BLADE   ; 15a
 	const DRAGON_DANCE ; 15b

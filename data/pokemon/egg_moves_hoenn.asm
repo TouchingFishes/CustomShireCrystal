@@ -430,7 +430,6 @@ PurgislugEggMoves:
 	dw SIGNAL_BEAM
 	dw RECOVER
 	dw ROCK_SLIDE
-	dw MYSTICALFIRE
 	dw -1 ; end
 
 LarvicidEggMoves:

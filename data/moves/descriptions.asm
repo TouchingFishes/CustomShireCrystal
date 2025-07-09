@@ -356,7 +356,7 @@ MoveDescriptionsGen3:
 	dw CovetDescription
 	dw VoltTackleDescription
 	dw MagicalLeafDescription
-	dw MysticalFireDescription
+	dw MagicalFireDescription
 	dw CalmMindDescription
 	dw LeafBladeDescription
 	dw DragonDanceDescription
@@ -1755,7 +1755,7 @@ MagicalLeafDescription:
 	db   "An attack that"
 	next "never misses.@"
 
-MysticalFireDescription:
+MagicalFireDescription:
 	db   "An attack that may"
 	next "lower SPCL.ATK.@"
 

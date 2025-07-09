@@ -153,7 +153,7 @@ HoothootEggMoves:
 	dw MIRROR_MOVE
 	dw SKY_ATTACK
 	dw SUPERSONIC
-	dw MYSTICALFIRE
+	dw MAGICAL_FIRE
 	dw WHIRLWIND
 	dw WING_ATTACK
 	dw -1 ; end
@@ -221,7 +221,7 @@ TogepiEggMoves:
 	dw PRESENT
 	dw PSYCH_UP
 	dw SUBSTITUTE
-	dw MYSTICALFIRE
+	dw MAGICAL_FIRE
 	dw -1 ; end
 
 NatuEggMoves:

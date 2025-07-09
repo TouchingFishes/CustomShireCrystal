@@ -474,7 +474,7 @@ NatuEvosAttacks:
 	dbw 1, TELEPORT
 	dbw 10, NIGHT_SHADE
 	dbw 20, FUTURE_SIGHT
-	dbw 30, MYSTICALFIRE
+	dbw 30, MAGICAL_FIRE
 	dbw 30, WISH
 	dbw 40, CONFUSE_RAY
 	dbw 50, PSYCHIC_M
@@ -486,7 +486,7 @@ XatuEvosAttacks:
 	dbw 1, TELEPORT
 	dbw 10, NIGHT_SHADE
 	dbw 20, FUTURE_SIGHT
-	dbw 35, MYSTICALFIRE
+	dbw 35, MAGICAL_FIRE
 	dbw 35, WISH
 	dbw 50, CONFUSE_RAY
 	dbw 65, PSYCHIC_M
@@ -742,7 +742,7 @@ EspeonEvosAttacks:
 	dbw 8, SAND_ATTACK
 	dbw 16, CONFUSION
 	dbw 23, QUICK_ATTACK
-	dbw 30, MYSTICALFIRE
+	dbw 30, MAGICAL_FIRE
 	dbw 36, PSYBEAM
 	dbw 42, PSYCH_UP
 	dbw 47, PSYCHIC_M
@@ -800,7 +800,7 @@ MisdreavusEvosAttacks:
 	dbw 17, CONFUSE_RAY
 	dbw 23, MEAN_LOOK
 	dbw 30, PSYBEAM
-	dbw 37, MYSTICALFIRE
+	dbw 37, MAGICAL_FIRE
 	dbw 45, PERISH_SONG
 	dbw 53, GRUDGE
 	dbw 61, PAIN_SPLIT

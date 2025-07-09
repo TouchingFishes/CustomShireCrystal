@@ -91,7 +91,7 @@ BattleAnimationsGen3::
 	dw BattleAnim_Covet
 	dw BattleAnim_VoltTackle
 	dw BattleAnim_MagicalLeaf
-	dw BattleAnim_MysticalFire
+	dw BattleAnim_MagicalFire
 	dw BattleAnim_CalmMind
 	dw BattleAnim_LeafBlade
 	dw BattleAnim_DragonDance
@@ -2765,7 +2765,7 @@ BattleAnim_MagicalLeaf:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_MysticalFire:
+BattleAnim_MagicalFire:
 	anim_setobjpal PAL_BATTLE_OB_YELLOW, PAL_BTLCUSTOM_MYSTICAL
 	anim_setobjpal PAL_BATTLE_OB_GRAY, PAL_BTLCUSTOM_MYSTICAL
 	anim_1gfx BATTLE_ANIM_GFX_FIRE

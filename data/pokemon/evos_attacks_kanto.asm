@@ -668,13 +668,13 @@ VulpixEvosAttacks:
 	dbw 33, SAFEGUARD
 	dbw 37, GRUDGE
 	dbw 41, FIRE_SPIN
-	dbw 49, MYSTICALFIRE
+	dbw 49, MAGICAL_FIRE
 	db 0 ; no more level-up moves
 
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, CONFUSE_RAY
-	dbw 1, MYSTICALFIRE
+	dbw 1, MAGICAL_FIRE
 	dbw 1, QUICK_ATTACK
 	dbw 1, WILL_O_WISP
 	dbw 49, SHADOW_BALL
@@ -1937,7 +1937,7 @@ MrMimeEvosAttacks:
 	dbw 22, MAGICAL_LEAF
 	dbw 26, ENCORE
 	dbw 32, PSYBEAM
-	dbw 37, MYSTICALFIRE
+	dbw 37, MAGICAL_FIRE
 	dbw 41, ROLE_PLAY
 	dbw 45, PSYCHIC_M
 	dbw 49, BATON_PASS

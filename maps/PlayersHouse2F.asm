@@ -160,7 +160,7 @@ if DEF(_DEBUG)
 	; ; hm slaves
 	givepoke FUSANG, PLAIN_FORM, 99;, LEFTOVERS
 	givepoke PENDRAGON, PLAIN_FORM, 99;, LEAF_STONE
-	givepokemove MYSTICALFIRE,        wPartyMon2, 0
+	givepokemove MAGICAL_FIRE,        wPartyMon2, 0
 	givepokemove CUT,       wPartyMon2, 1
 	givepokemove RAZOR_WIND,   wPartyMon2, 2
 	givepokemove OMINOUS_WIND,        wPartyMon2, 3

@@ -122,63 +122,66 @@
 	const SPRITE_ALDER ;81
 	const SPRITE_ELDER ; 82
 	const SPRITE_BUCK ; 83
+	const SPRITE_HIKER ; 84
+	const SPRITE_FIREBREATHER ; 85
+	const SPRITE_BIRD_KEEPER ; 86
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
-	const_next $85
+	const_next $95
 DEF SPRITE_POKEMON EQU const_value
-	const SPRITE_UNOWN ; 85
-	const SPRITE_GEODUDE ; 86
-	const SPRITE_GROWLITHE ; 87
-	const SPRITE_WEEDLE ; 88
-	const SPRITE_SHELLDER ; 89
-	const SPRITE_ODDISH ; 8a
-	const SPRITE_GENGAR ; 8b
-	const SPRITE_ZUBAT ; 8c
-	const SPRITE_MAGIKARP ; 8d
-	const SPRITE_SQUIRTLE ; 8e
-	const SPRITE_TOGEPI ; 8f
-	const SPRITE_BUTTERFREE ; 90
-	const SPRITE_DIGLETT ; 91
-	const SPRITE_POLIWAG ; 92
-	const SPRITE_PIKACHU ; 93
-	const SPRITE_CLEFAIRY ; 94
-	const SPRITE_CHARMANDER ; 95
-	const SPRITE_JYNX ; 96
-	const SPRITE_STARMIE ; 97
-	const SPRITE_BULBASAUR ; 98
-	const SPRITE_JIGGLYPUFF ; 99
-	const SPRITE_GRIMER ; 9a
-	const SPRITE_EKANS ; 9b
-	const SPRITE_PARAS ; 9c
-	const SPRITE_TENTACOOL ; 9d
-	const SPRITE_TAUROS ; 9e
-	const SPRITE_MACHOP ; 9f
-	const SPRITE_VOLTORB ; a0
-	const SPRITE_LAPRAS ; a1
-	const SPRITE_RHYDON ; a2
-	const SPRITE_MOLTRES ; a3
-	const SPRITE_SNORLAX ; a4
-	const SPRITE_GYARADOS ; a5
-	const SPRITE_LUGIA ; a6
-	const SPRITE_HO_OH ; a7
-	const SPRITE_GEKOPON ; a8
-	const SPRITE_ARTICUNO ; a9
-	const SPRITE_ZAPDOS ; aa
-	const SPRITE_SPEAROW ; ab
-	const SPRITE_MURKROW ; ac
-	const SPRITE_PIDGEY ; ad
-	const SPRITE_DODRIO ; ae
-	const SPRITE_FEAROW ; af
-	const SPRITE_NIDORAN_M ; b0
-	const SPRITE_NIDORAN_F ; b1
-	const SPRITE_NIDORINO ; b2
-	const SPRITE_RATTATA ; b3
-	const SPRITE_MEOWTH ; b4
-	const SPRITE_PERSIAN ; b5
-	const SPRITE_PSYDUCK ; b6
-	const SPRITE_ABRA ; b7
-	const SPRITE_POLIWRATH ; b8
+	const SPRITE_UNOWN ; 95
+	const SPRITE_GEODUDE ; 96
+	const SPRITE_GROWLITHE ; 97
+	const SPRITE_WEEDLE ; 98
+	const SPRITE_SHELLDER ; 99
+	const SPRITE_ODDISH ; 9a
+	const SPRITE_GENGAR ; 9b
+	const SPRITE_ZUBAT ; 9c
+	const SPRITE_MAGIKARP ; 9d
+	const SPRITE_SQUIRTLE ; 9e
+	const SPRITE_TOGEPI ; 9f
+	const SPRITE_BUTTERFREE ; a0
+	const SPRITE_DIGLETT ; a1
+	const SPRITE_POLIWAG ; a2
+	const SPRITE_PIKACHU ; a3
+	const SPRITE_CLEFAIRY ; a4
+	const SPRITE_CHARMANDER ; a5
+	const SPRITE_JYNX ; a6
+	const SPRITE_STARMIE ; a7
+	const SPRITE_BULBASAUR ; a8
+	const SPRITE_JIGGLYPUFF ; a9
+	const SPRITE_GRIMER ; aa
+	const SPRITE_EKANS ; ab
+	const SPRITE_PARAS ; ac
+	const SPRITE_TENTACOOL ; ad
+	const SPRITE_TAUROS ; ae
+	const SPRITE_MACHOP ; af
+	const SPRITE_VOLTORB ; b0
+	const SPRITE_LAPRAS ; b1
+	const SPRITE_RHYDON ; b2
+	const SPRITE_MOLTRES ; b3
+	const SPRITE_SNORLAX ; b4
+	const SPRITE_GYARADOS ; b5
+	const SPRITE_LUGIA ; b6
+	const SPRITE_HO_OH ; b7
+	const SPRITE_GEKOPON ; b8
+	const SPRITE_ARTICUNO ; b9
+	const SPRITE_ZAPDOS ; ba
+	const SPRITE_SPEAROW ; bb
+	const SPRITE_MURKROW ; bc
+	const SPRITE_PIDGEY ; bd
+	const SPRITE_DODRIO ; be
+	const SPRITE_FEAROW ; bf
+	const SPRITE_NIDORAN_M ; c0
+	const SPRITE_NIDORAN_F ; c1
+	const SPRITE_NIDORINO ; c2
+	const SPRITE_RATTATA ; c3
+	const SPRITE_MEOWTH ; c4
+	const SPRITE_PERSIAN ; c5
+	const SPRITE_PSYDUCK ; c6
+	const SPRITE_ABRA ; c7
+	const SPRITE_POLIWRATH ; c8
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)

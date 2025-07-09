@@ -343,7 +343,7 @@ MoveTable:
 ;	dw COVET        ; 155
 ;	dw VOLT_TACKLE  ; 156
 ;	dw MAGICAL_LEAF ; 157
-	dw MYSTICALFIRE ; 158
+	dw MAGICAL_FIRE ; 158
 	dw CALM_MIND    ; 159
 	dw LEAF_BLADE   ; 15a
 	dw DRAGON_DANCE ; 15b

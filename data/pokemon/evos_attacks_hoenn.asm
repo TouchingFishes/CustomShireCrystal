@@ -768,7 +768,7 @@ ShedinjaEvosAttacks:
 	dbw 31, CONFUSE_RAY
 	dbw 38, SHADOW_BALL
 	dbw 45, GRUDGE
-	dbw 51, MYSTICALFIRE
+	dbw 51, MAGICAL_FIRE
 	db 0 ; no more level-up moves
 
 TinkatinkEvosAttacks:
