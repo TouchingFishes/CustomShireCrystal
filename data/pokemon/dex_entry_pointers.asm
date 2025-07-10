@@ -328,9 +328,9 @@ PokedexDataPointerTable:
 	dba SmoguanaPokedexEntry
 	dba SmokomodoPokedexEntry
 	dba TorkoalPokedexEntry
-	dba SpoinkPokedexEntry
-	dba GrumpigPokedexEntry
-	dba SpindaPokedexEntry
+	dba VanillitePokedexEntry
+	dba VanillishPokedexEntry
+	dba VanilluxePokedexEntry
 	dba TrapinchPokedexEntry
 	dba VibravaPokedexEntry
 	dba FlygonPokedexEntry

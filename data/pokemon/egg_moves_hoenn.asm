@@ -74,9 +74,9 @@ EggMovePointers3::
 	dw SmoguanaEggMoves
 	dw NoEggMoves3
 	dw TorkoalEggMoves
-	dw SpoinkEggMoves
+	dw VanilliteEggMoves
 	dw NoEggMoves3
-	dw SpindaEggMoves
+	dw NoEggMoves3
 	dw TrapinchEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
@@ -353,21 +353,11 @@ TorkoalEggMoves:
 	dw YAWN
 	dw -1 ; end
 
-SpoinkEggMoves:
+VanilliteEggMoves:
 	dw EXTRASENSORY
 	dw FUTURE_SIGHT
 	dw SUBSTITUTE
 	;dw TRICK
-	dw -1 ; end
-
-SpindaEggMoves:
-	dw BATON_PASS
-	dw DISABLE
-	dw ENCORE
-	dw ROCK_SLIDE
-	dw SMELLINGSALT
-	;dw TRICK
-	dw WISH
 	dw -1 ; end
 
 TrapinchEggMoves:

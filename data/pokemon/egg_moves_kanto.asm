@@ -394,6 +394,7 @@ BellsproutEggMoves:
 	dw REFLECT
 	dw SWORDS_DANCE
 	dw SYNTHESIS
+	dw LEAF_BLADE
 	dw -1 ; end
 
 TentacoolEggMoves:

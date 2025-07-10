@@ -6058,11 +6058,11 @@ BoarderGroup:
 	next_list_item ; BOARDER (3)
 	db "DOUGLAS@", TRAINERTYPE_NORMAL
 	db 28 ;24
-	dw SHELLDER
+	dw VANILLITE
 	db 30 ;25
 	dw CLOYSTER
 	db 28 ;24
-	dw SHELLDER
+	dw VANILLITE
 	db -1 ; end
 
 	end_list_items
@@ -6827,8 +6827,8 @@ VeteranMGroup:
 
 	next_list_item; VETERAN_M (4)
 	db "RAYNOR@", TRAINERTYPE_MOVES
-	db 45
-	dw GLACEON
+	db 47
+	dw VANILLUXE
 	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
 	db 45
 	dw EXEGGUTOR
@@ -7145,8 +7145,8 @@ AlderGroup:
 	next_list_item ; ALDER (1)
 	db "ALDER@", TRAINERTYPE_MOVES
 	db 75
-	dw MLLOY
-	dw BRICK_BREAK, RAZOR_WIND, SLASH, SWORDS_DANCE
+	dw VANILLUXE
+	dw ICE_BEAM, REFLECT, LIGHT_SCREEN, MILK_DRINK
 	db 77
 	dw KROLUCARD
 	dw SILVER_WIND, PSYCHIC_M, DRAIN_LIFE, AERIAL_ACE

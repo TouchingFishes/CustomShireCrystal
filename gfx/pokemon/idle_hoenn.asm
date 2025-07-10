@@ -74,9 +74,9 @@ AnimationIdlePointers3:
 	dw SmoguanaAnimationIdle
 	dw SmokomodoAnimationIdle
 	dw TorkoalAnimationIdle
-	dw SpoinkAnimationIdle
-	dw GrumpigAnimationIdle
-	dw SpindaAnimationIdle
+	dw VanilliteAnimationIdle
+	dw VanillishAnimationIdle
+	dw VanilluxeAnimationIdle
 	dw TrapinchAnimationIdle
 	dw VibravaAnimationIdle
 	dw FlygonAnimationIdle
@@ -214,9 +214,9 @@ WhiscashAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/whiscash/anim_idle.asm"
 SmoguanaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/smoguana/anim_idle.asm"
 SmokomodoAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/smokomodo/anim_idle.asm"
 TorkoalAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/torkoal/anim_idle.asm"
-SpoinkAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/spoink/anim_idle.asm"
-GrumpigAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/grumpig/anim_idle.asm"
-SpindaAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/spinda/anim_idle.asm"
+VanilliteAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/vanillite/anim_idle.asm"
+VanillishAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/vanillish/anim_idle.asm"
+VanilluxeAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/vanilluxe/anim_idle.asm"
 TrapinchAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/trapinch/anim_idle.asm"
 VibravaAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/vibrava/anim_idle.asm"
 FlygonAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/flygon/anim_idle.asm"
@@ -225,7 +225,7 @@ KitsunohAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/anim_idle.asm"
 KrolucadaAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/krolucada/anim_idle.asm"
 KrolucardAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/krolucard/anim_idle.asm"
 SwabluAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/swablu/anim_idle.asm"
-AltariaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/altaria/anim_idle.asm"
+AltariaAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/altaria/anim_idle.asm"
 LarvestaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/larvesta/anim_idle.asm"
 VolcaronaAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/volcarona/anim_idle.asm"
 ImpidimpAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/impidimp/anim_idle.asm"

@@ -121,7 +121,6 @@ AlphabeticalPokedexOrder:
 	dw GROUDON
 	dw GROVYLE
 	dw GROWLITHE
-	dw GRUMPIG
 	dw GYARADOS
 	dw HARIYAMA
 	dw HAUNTER
@@ -322,9 +321,7 @@ AlphabeticalPokedexOrder:
 	dw SOLOSIS
 	dw SPEAROW
 	dw SPINARAK
-	dw SPINDA
 	dw SPIRITOMB
-	dw SPOINK
 	dw SQUIRTLE
 	dw STANTLER
 	dw STARMIE
@@ -363,6 +360,9 @@ AlphabeticalPokedexOrder:
 	dw UMBREON
 	dw UNOWN
 	dw URSARING
+	dw VANILLISH
+	dw VANILLITE
+	dw VANILLUXE
 	dw VAPOREON
 	dw VENOMOTH
 	dw VENONAT

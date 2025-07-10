@@ -329,9 +329,9 @@ PokemonBodyData:
 	dw 204, 529    ; SMOGUANA
 	dw 603, 3850   ; SMOKOMODO
 	dw 108, 1773   ; TORKOAL
-	dw 204, 675    ; SPOINK
-	dw 211, 1576   ; GRUMPIG
-	dw 307, 110    ; SPINDA
+	dw 104, 126    ; VANILLITE
+	dw 307, 904    ; VANILLISH
+	dw 403, 1268   ; VANILLUXE
 	dw 204, 331    ; TRAPINCH
 	dw 307, 337    ; VIBRAVA
 	dw 607, 1808   ; FLYGON

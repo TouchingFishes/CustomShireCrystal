@@ -1514,7 +1514,8 @@ CelebiEvosAttacks:
 	dbw 20, ANCIENTPOWER
 	dbw 30, FUTURE_SIGHT
 	dbw 40, BATON_PASS
-	dbw 50, PERISH_SONG
+	dbw 50, MAGICAL_LEAF
+	dbw 60, PERISH_SONG
 	db 0 ; no more level-up moves
 
 ENDSECTION

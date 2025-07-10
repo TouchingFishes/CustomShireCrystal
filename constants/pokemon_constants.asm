@@ -334,9 +334,9 @@ DEF HOENN_POKEMON EQU const_value
 	const LUXIO      ; 136
 	const LUXRAY     ; 137
 	const GEKOPON    ; 138
-	const TYNAMO     ; 139 ?
-	const EELEKTRIK  ; 13a ?
-	const EELEKTROSS ; 13b ?
+	const TYNAMO     ; 139 out
+	const EELEKTRIK  ; 13a out
+	const EELEKTROSS ; 13b out 
 	const CORSOREEF  ; 13c
 	const DUNDRAG    ; 13d
 	const CARVANHA   ; 13e
@@ -346,9 +346,9 @@ DEF HOENN_POKEMON EQU const_value
 	const SMOGUANA   ; 142
 	const SMOKOMODO  ; 143
 	const TORKOAL    ; 144
-	const SPOINK     ; 145 vanillish
-	const GRUMPIG    ; 146 vanillite
-	const SPINDA     ; 147 vanilluxe
+	const VANILLITE  ; 145
+	const VANILLISH  ; 146
+	const VANILLUXE  ; 147
 	const TRAPINCH   ; 148
 	const VIBRAVA    ; 149
 	const FLYGON     ; 14a
@@ -357,7 +357,7 @@ DEF HOENN_POKEMON EQU const_value
 	const KROLUCADA  ; 14d
 	const KROLUCARD  ; 14e
 	const SWABLU     ; 14f
-	const ALTARIA   ; 150
+	const ALTARIA    ; 150
 	const LARVESTA   ; 151
 	const VOLCARONA  ; 152
 	const IMPIDIMP   ; 153

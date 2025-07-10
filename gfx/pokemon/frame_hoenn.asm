@@ -74,9 +74,9 @@ FramePointers3:
 	dw SmoguanaFrames
 	dw SmokomodoFrames
 	dw TorkoalFrames
-	dw SpoinkFrames
-	dw GrumpigFrames
-	dw SpindaFrames
+	dw VanilliteFrames
+	dw VanillishFrames
+	dw VanilluxeFrames
 	dw TrapinchFrames
 	dw VibravaFrames
 	dw FlygonFrames
@@ -214,9 +214,9 @@ WhiscashFrames:      INCLUDE "gfx/pokemon/hoenn/whiscash/frames.asm"
 SmoguanaFrames:      INCLUDE "gfx/pokemon/hoenn/smoguana/frames.asm"
 SmokomodoFrames:     INCLUDE "gfx/pokemon/hoenn/smokomodo/frames.asm"
 TorkoalFrames:       INCLUDE "gfx/pokemon/hoenn/torkoal/frames.asm"
-SpoinkFrames:        INCLUDE "gfx/pokemon/hoenn/spoink/frames.asm"
-GrumpigFrames:       INCLUDE "gfx/pokemon/hoenn/grumpig/frames.asm"
-SpindaFrames:        INCLUDE "gfx/pokemon/hoenn/spinda/frames.asm"
+VanilliteFrames:     INCLUDE "gfx/pokemon/hoenn/vanillite/frames.asm"
+VanillishFrames:     INCLUDE "gfx/pokemon/hoenn/vanillish/frames.asm"
+VanilluxeFrames:     INCLUDE "gfx/pokemon/hoenn/vanilluxe/frames.asm"
 TrapinchFrames:      INCLUDE "gfx/pokemon/hoenn/trapinch/frames.asm"
 VibravaFrames:       INCLUDE "gfx/pokemon/hoenn/vibrava/frames.asm"
 FlygonFrames:        INCLUDE "gfx/pokemon/hoenn/flygon/frames.asm"
@@ -225,7 +225,7 @@ KitsunohFrames:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/frames.asm"
 KrolucadaFrames:     INCLUDE "gfx/pokemon/hoenn/krolucada/frames.asm"
 KrolucardFrames:     INCLUDE "gfx/pokemon/hoenn/krolucard/frames.asm"
 SwabluFrames:        INCLUDE "gfx/pokemon/hoenn/swablu/frames.asm"
-AltariaFrames:      INCLUDE "gfx/pokemon/hoenn/altaria/frames.asm"
+AltariaFrames:       INCLUDE "gfx/pokemon/hoenn/altaria/frames.asm"
 LarvestaFrames:      INCLUDE "gfx/pokemon/hoenn/larvesta/frames.asm"
 VolcaronaFrames:     INCLUDE "gfx/pokemon/hoenn/volcarona/frames.asm"
 ImpidimpFrames:      INCLUDE "gfx/pokemon/hoenn/impidimp/frames.asm"

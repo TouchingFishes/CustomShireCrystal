@@ -667,12 +667,12 @@ PokemonPicPointers::
 	dba SmokomodoBackpic
 	dba TorkoalFrontpic
 	dba TorkoalBackpic
-	dba SpoinkFrontpic
-	dba SpoinkBackpic
-	dba GrumpigFrontpic
-	dba GrumpigBackpic
-	dba SpindaFrontpic
-	dba SpindaBackpic
+	dba VanilliteFrontpic
+	dba VanilliteBackpic
+	dba VanillishFrontpic
+	dba VanillishBackpic
+	dba VanilluxeFrontpic
+	dba VanilluxeBackpic
 	dba TrapinchFrontpic
 	dba TrapinchBackpic
 	dba VibravaFrontpic

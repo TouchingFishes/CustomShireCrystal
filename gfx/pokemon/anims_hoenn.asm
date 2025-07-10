@@ -74,9 +74,9 @@ AnimationPointers3:
 	dw SmoguanaAnimation
 	dw SmoguanaAnimation
 	dw TorkoalAnimation
-	dw SpoinkAnimation
-	dw GrumpigAnimation
-	dw SpindaAnimation
+	dw VanilliteAnimation
+	dw VanillishAnimation
+	dw VanilluxeAnimation
 	dw TrapinchAnimation
 	dw VibravaAnimation
 	dw FlygonAnimation
@@ -214,9 +214,9 @@ WhiscashAnimation:      INCLUDE "gfx/pokemon/hoenn/whiscash/anim.asm"
 SmoguanaAnimation:      INCLUDE "gfx/pokemon/hoenn/smoguana/anim.asm"
 SmokomodoAnimation:     INCLUDE "gfx/pokemon/hoenn/smokomodo/anim.asm"
 TorkoalAnimation:       INCLUDE "gfx/pokemon/hoenn/torkoal/anim.asm"
-SpoinkAnimation:        INCLUDE "gfx/pokemon/hoenn/spoink/anim.asm"
-GrumpigAnimation:       INCLUDE "gfx/pokemon/hoenn/grumpig/anim.asm"
-SpindaAnimation:        INCLUDE "gfx/pokemon/hoenn/spinda/anim.asm"
+VanilliteAnimation:        INCLUDE "gfx/pokemon/hoenn/vanillite/anim.asm"
+VanillishAnimation:       INCLUDE "gfx/pokemon/hoenn/vanillish/anim.asm"
+VanilluxeAnimation:        INCLUDE "gfx/pokemon/hoenn/vanilluxe/anim.asm"
 TrapinchAnimation:      INCLUDE "gfx/pokemon/hoenn/trapinch/anim.asm"
 VibravaAnimation:       INCLUDE "gfx/pokemon/hoenn/vibrava/anim.asm"
 FlygonAnimation:        INCLUDE "gfx/pokemon/hoenn/flygon/anim.asm"

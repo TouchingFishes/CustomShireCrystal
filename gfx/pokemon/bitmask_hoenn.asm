@@ -74,9 +74,9 @@ BitmaskPointers3:
 	dw SmoguanaBitmasks
 	dw SmokomodoBitmasks
 	dw TorkoalBitmasks
-	dw SpoinkBitmasks
-	dw GrumpigBitmasks
-	dw SpindaBitmasks
+	dw VanilliteBitmasks
+	dw VanillishBitmasks
+	dw VanilluxeBitmasks
 	dw TrapinchBitmasks
 	dw VibravaBitmasks
 	dw FlygonBitmasks
@@ -214,9 +214,9 @@ WhiscashBitmasks:      INCLUDE "gfx/pokemon/hoenn/barboach/bitmask.asm"
 SmoguanaBitmasks:      INCLUDE "gfx/pokemon/hoenn/smoguana/bitmask.asm"
 SmokomodoBitmasks:     INCLUDE "gfx/pokemon/hoenn/smokomodo/bitmask.asm"
 TorkoalBitmasks:       INCLUDE "gfx/pokemon/hoenn/torkoal/bitmask.asm"
-SpoinkBitmasks:        INCLUDE "gfx/pokemon/hoenn/spoink/bitmask.asm"
-GrumpigBitmasks:       INCLUDE "gfx/pokemon/hoenn/grumpig/bitmask.asm"
-SpindaBitmasks:        INCLUDE "gfx/pokemon/hoenn/spinda/bitmask.asm"
+VanilliteBitmasks:     INCLUDE "gfx/pokemon/hoenn/vanillite/bitmask.asm"
+VanillishBitmasks:     INCLUDE "gfx/pokemon/hoenn/vanillish/bitmask.asm"
+VanilluxeBitmasks:     INCLUDE "gfx/pokemon/hoenn/vanilluxe/bitmask.asm"
 TrapinchBitmasks:      INCLUDE "gfx/pokemon/hoenn/trapinch/bitmask.asm"
 VibravaBitmasks:       INCLUDE "gfx/pokemon/hoenn/vibrava/bitmask.asm"
 FlygonBitmasks:        INCLUDE "gfx/pokemon/hoenn/flygon/bitmask.asm"
@@ -225,7 +225,7 @@ KitsunohBitmasks:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/bitmask.asm"
 KrolucadaBitmasks:     INCLUDE "gfx/pokemon/hoenn/krolucada/bitmask.asm"
 KrolucardBitmasks:     INCLUDE "gfx/pokemon/hoenn/krolucard/bitmask.asm"
 SwabluBitmasks:        INCLUDE "gfx/pokemon/hoenn/swablu/bitmask.asm"
-AltariaBitmasks:      INCLUDE "gfx/pokemon/hoenn/altaria/bitmask.asm"
+AltariaBitmasks:       INCLUDE "gfx/pokemon/hoenn/altaria/bitmask.asm"
 LarvestaBitmasks:      INCLUDE "gfx/pokemon/hoenn/larvesta/bitmask.asm"
 VolcaronaBitmasks:     INCLUDE "gfx/pokemon/hoenn/volcarona/bitmask.asm"
 ImpidimpBitmasks:      INCLUDE "gfx/pokemon/hoenn/impidimp/bitmask.asm"

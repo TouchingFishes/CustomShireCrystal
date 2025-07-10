@@ -337,9 +337,9 @@ MonMenuIconPals:
 	icon_pals BROWN,  RED    ; SMOGUANA
 	icon_pals BROWN,  RED    ; SMOKOMODO
 	icon_pals RED,    RED    ; TORKOAL
-	icon_pals RED,    RED    ; SPOINK
-	icon_pals RED,    RED    ; GRUMPIG
-	icon_pals RED,    RED    ; SPINDA
+	icon_pals TEAL,   RED    ; VANILLITE
+	icon_pals TEAL,   RED    ; VANILLISH
+	icon_pals TEAL,   RED    ; VANILLUXE
 	icon_pals RED,    RED    ; TRAPINCH
 	icon_pals GREEN,  RED    ; VIBRAVA
 	icon_pals GREEN,  RED    ; FLYGON

@@ -328,9 +328,9 @@ INCBIN "gfx/footprints/hoenn/whiscash.1bpp"
 INCBIN "gfx/footprints/hoenn/smoguana.1bpp"
 INCBIN "gfx/footprints/hoenn/smokomodo.1bpp"
 INCBIN "gfx/footprints/hoenn/torkoal.1bpp"
-INCBIN "gfx/footprints/hoenn/spoink.1bpp"
-INCBIN "gfx/footprints/hoenn/grumpig.1bpp"
-INCBIN "gfx/footprints/hoenn/spinda.1bpp"
+INCBIN "gfx/footprints/johto/misdreavus.1bpp" ;no footprint placeholder vanillite
+INCBIN "gfx/footprints/johto/misdreavus.1bpp" ;no footprint placeholder vanillish
+INCBIN "gfx/footprints/johto/misdreavus.1bpp" ;no footprint placeholder vanilluxe
 INCBIN "gfx/footprints/hoenn/trapinch.1bpp"
 INCBIN "gfx/footprints/hoenn/vibrava.1bpp"
 INCBIN "gfx/footprints/hoenn/flygon.1bpp"

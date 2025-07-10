@@ -779,16 +779,16 @@ SmokomodoFrontpic:        INCBIN "gfx/pokemon/hoenn/smokomodo/front.animated.2bp
 SmokomodoBackpic:         INCBIN "gfx/pokemon/hoenn/smokomodo/back.2bpp.lz"
 TorkoalFrontpic:          INCBIN "gfx/pokemon/hoenn/torkoal/front.animated.2bpp.lz"
 TorkoalBackpic:           INCBIN "gfx/pokemon/hoenn/torkoal/back.2bpp.lz"
-SpoinkFrontpic:           INCBIN "gfx/pokemon/hoenn/spoink/front.animated.2bpp.lz"
-SpoinkBackpic:            INCBIN "gfx/pokemon/hoenn/spoink/back.2bpp.lz"
+VanilliteFrontpic:        INCBIN "gfx/pokemon/hoenn/vanillite/front.animated.2bpp.lz"
+VanilliteBackpic:         INCBIN "gfx/pokemon/hoenn/vanillite/back.2bpp.lz"
 
 
 SECTION "Pokemon Pics 28", ROMX
 
-GrumpigFrontpic:          INCBIN "gfx/pokemon/hoenn/grumpig/front.animated.2bpp.lz"
-GrumpigBackpic:           INCBIN "gfx/pokemon/hoenn/grumpig/back.2bpp.lz"
-SpindaFrontpic:           INCBIN "gfx/pokemon/hoenn/spinda/front.animated.2bpp.lz"
-SpindaBackpic:            INCBIN "gfx/pokemon/hoenn/spinda/back.2bpp.lz"
+VanillishFrontpic:        INCBIN "gfx/pokemon/hoenn/vanillish/front.animated.2bpp.lz"
+VanillishBackpic:         INCBIN "gfx/pokemon/hoenn/vanillish/back.2bpp.lz"
+VanilluxeFrontpic:        INCBIN "gfx/pokemon/hoenn/vanilluxe/front.animated.2bpp.lz"
+VanilluxeBackpic:         INCBIN "gfx/pokemon/hoenn/vanilluxe/back.2bpp.lz"
 TrapinchFrontpic:         INCBIN "gfx/pokemon/hoenn/trapinch/front.animated.2bpp.lz"
 TrapinchBackpic:          INCBIN "gfx/pokemon/hoenn/trapinch/back.2bpp.lz"
 VibravaFrontpic:          INCBIN "gfx/pokemon/hoenn/vibrava/front.animated.2bpp.lz"
@@ -805,8 +805,8 @@ KrolucardFrontpic:        INCBIN "gfx/pokemon/hoenn/krolucard/front.animated.2bp
 KrolucardBackpic:         INCBIN "gfx/pokemon/hoenn/krolucard/back.2bpp.lz"
 SwabluFrontpic:           INCBIN "gfx/pokemon/hoenn/swablu/front.animated.2bpp.lz"
 SwabluBackpic:            INCBIN "gfx/pokemon/hoenn/swablu/back.2bpp.lz"
-AltariaFrontpic:         INCBIN "gfx/pokemon/hoenn/altaria/front.animated.2bpp.lz"
-AltariaBackpic:          INCBIN "gfx/pokemon/hoenn/altaria/back.2bpp.lz"
+AltariaFrontpic:          INCBIN "gfx/pokemon/hoenn/altaria/front.animated.2bpp.lz"
+AltariaBackpic:           INCBIN "gfx/pokemon/hoenn/altaria/back.2bpp.lz"
 LarvestaFrontpic:         INCBIN "gfx/pokemon/hoenn/larvesta/front.animated.2bpp.lz"
 LarvestaBackpic:          INCBIN "gfx/pokemon/hoenn/larvesta/back.2bpp.lz"
 

@@ -74,9 +74,9 @@ EvosAttacksPointers3::
 	dw SmoguanaEvosAttacks
 	dw SmokomodoEvosAttacks
 	dw TorkoalEvosAttacks
-	dw SpoinkEvosAttacks
-	dw GrumpigEvosAttacks
-	dw SpindaEvosAttacks
+	dw VanilliteEvosAttacks
+	dw VanillishEvosAttacks
+	dw VanilluxeEvosAttacks
 	dw TrapinchEvosAttacks
 	dw VibravaEvosAttacks
 	dw FlygonEvosAttacks
@@ -1286,53 +1286,55 @@ TorkoalEvosAttacks:
 	dbw 46, HEAT_WAVE
 	db 0 ; no more level-up moves
 
-SpoinkEvosAttacks:
-	evolve EVOLVE_LEVEL, 32, GRUMPIG
+VanilliteEvosAttacks:
+	evolve EVOLVE_LEVEL, 35, VANILLISH
 	db 0 ; no more evolutions
-	dbw 1, SPLASH
-	dbw 7, PSYWAVE
-	dbw 10, ODOR_SLEUTH
-	dbw 16, PSYBEAM
-	dbw 19, PSYCH_UP
-	dbw 25, CONFUSE_RAY
-	dbw 28, MAGIC_COAT
-	dbw 34, PSYCHIC_M
-	dbw 37, REST
-	dbw 37, SNORE
-	dbw 43, BOUNCE
+	dbw 1, ASTONISH
+	dbw 4, HARDEN
+	dbw 9, POWDER_SNOW
+	dbw 14, UPROAR
+	dbw 19, ICY_WIND
+	dbw 25, MILK_DRINK
+	dbw 29, MIRROR_SHOT
+	dbw 31, ENCORE
+	dbw 36, SHEER_COLD
+	dbw 42, REFLECT
+	dbw 42, LIGHT_SCREEN
+	dbw 53, BLIZZARD
 	db 0 ; no more level-up moves
 
-GrumpigEvosAttacks:
+VanillishEvosAttacks:
+	evolve EVOLVE_LEVEL, 47, VANILLUXE
 	db 0 ; no more evolutions
-	dbw 1, ODOR_SLEUTH
-	dbw 1, PSYBEAM
-	dbw 1, PSYWAVE
-	dbw 1, SPLASH
-	dbw 7, PSYWAVE
-	dbw 10, ODOR_SLEUTH
-	dbw 16, PSYBEAM
-	dbw 19, PSYCH_UP
-	dbw 25, CONFUSE_RAY
-	dbw 28, MAGIC_COAT
-	dbw 37, PSYCHIC_M
-	dbw 43, REST
-	dbw 43, SNORE
-	dbw 55, BOUNCE
+	dbw 1, ASTONISH
+	dbw 4, HARDEN
+	dbw 9, POWDER_SNOW
+	dbw 14, UPROAR
+	dbw 19, ICY_WIND
+	dbw 25, MILK_DRINK
+	dbw 29, MIRROR_SHOT
+	dbw 31, ENCORE
+	dbw 35, SHEER_COLD
+	dbw 43, REFLECT
+	dbw 43, LIGHT_SCREEN
+	dbw 56, BLIZZARD
 	db 0 ; no more level-up moves
 
-SpindaEvosAttacks:
+VanilluxeEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, TACKLE
-	dbw 5, UPROAR
-	dbw 12, FAINT_ATTACK
-	dbw 16, PSYBEAM
-	dbw 23, HYPNOSIS
-	dbw 27, DIZZY_PUNCH
-	dbw 34, CONFUSE_RAY
-	dbw 38, PSYCH_UP
-	dbw 45, DOUBLE_EDGE
-	dbw 49, FLAIL
-	dbw 56, THRASH
+	dbw 1, ASTONISH
+	dbw 4, HARDEN
+	dbw 9, POWDER_SNOW
+	dbw 14, UPROAR
+	dbw 19, ICY_WIND
+	dbw 25, MILK_DRINK
+	dbw 29, MIRROR_SHOT
+	dbw 31, ENCORE
+	dbw 35, SHEER_COLD
+	dbw 43, REFLECT
+	dbw 43, LIGHT_SCREEN
+	dbw 47, WEATHER_BALL
+	dbw 56, BLIZZARD
 	db 0 ; no more level-up moves
 
 TrapinchEvosAttacks:

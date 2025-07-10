@@ -332,9 +332,9 @@ IconPointers:
 	dw SmoguanaIcon
 	dw SmokomodoIcon
 	dw TorkoalIcon
-	dw SpoinkIcon
-	dw GrumpigIcon
-	dw SpindaIcon
+	dw VanilliteIcon
+	dw VanillishIcon
+	dw VanilluxeIcon
 	dw TrapinchIcon
 	dw VibravaIcon
 	dw FlygonIcon
