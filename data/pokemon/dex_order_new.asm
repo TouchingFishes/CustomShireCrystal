@@ -99,12 +99,10 @@ NewPokedexOrder:
 	dw ABRA
 	dw KADABRA
 	dw ALAKAZAM
-	dw LOTAD
-	dw LOMBRE
-	dw LUDICOLO
-	dw SEEDOT
-	dw NUZLEAF
-	dw SHIFTRY
+	dw LOTUGA
+	dw VERTUGA
+	dw COLIJOBO
+	dw CRENJOBO
 	dw DITTO
 	dw PINECO
 	dw FORRETRESS

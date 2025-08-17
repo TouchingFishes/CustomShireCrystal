@@ -20,11 +20,9 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw NoEggMoves3
-	dw LotadEggMoves
+	dw LotugaEggMoves
 	dw NoEggMoves3
-	dw NoEggMoves3
-	dw SeedotEggMoves
-	dw NoEggMoves3
+	dw ColijoboEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw NoEggMoves3
@@ -176,23 +174,22 @@ EuxinosEggMoves:
 	dw FAINT_ATTACK
 	dw -1 ; end
 
-LotadEggMoves:
+LotugaEggMoves:
 	dw FLAIL
-	dw LEECH_SEED
 	dw RAZOR_LEAF
 	dw SWEET_SCENT
-	dw SYNTHESIS
 	dw WATER_GUN
+	dw AMNESIA
+	dw TAKE_DOWN
 	dw -1 ; end
 
-SeedotEggMoves:
-	dw AMNESIA
+ColijoboEggMoves:
 	dw FALSE_SWIPE
-	dw LEECH_SEED
+	dw DRILL_PECK
+	dw MAGICAL_FIRE
 	dw QUICK_ATTACK
 	dw RAZOR_WIND
-	dw TAKE_DOWN
-	dw WOOD_HAMMER
+	dw DOUBLE_TEAM
 	dw -1 ; end
 
 VoltrelEggMoves:

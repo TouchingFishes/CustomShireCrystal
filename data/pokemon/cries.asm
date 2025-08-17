@@ -278,12 +278,10 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   238,  129 ; YANMEGA
 	mon_cry CRY_CATERPIE,   -183,  512 ; KUJINOUGHT
 	mon_cry CRY_BULBASAUR,   238,  129 ; MLLOY
-	mon_cry CRY_SLOWPOKE,      0,  256 ; LOTAD
-	mon_cry CRY_GROWLITHE,     0,  256 ; LOMBRE
-	mon_cry CRY_SLOWKING,    260,  512 ; LUDICOLO
-	mon_cry CRY_MARILL,      189,  134 ; SEEDOT
-	mon_cry CRY_WEEPINBELL,  -44,   86 ; NUZLEAF
-	mon_cry CRY_METAPOD,     112,  256 ; SHIFTRY
+	mon_cry CRY_SLOWPOKE,      0,  256 ; LOTUGA
+	mon_cry CRY_SLOWKING,    260,  512 ; VERTUGA
+	mon_cry CRY_WEEPINBELL,  -44,   86 ; COLIJOBO
+	mon_cry CRY_METAPOD,     112,  256 ; CRENJOBO
 	mon_cry CRY_VOLTORB,     128,  450 ; ELECTIVIRE
 	mon_cry CRY_CHARMANDER,  119,  256 ; MAGMORTAR
 	mon_cry CRY_SPEAROW,       0,  256 ; VOLTREL

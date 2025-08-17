@@ -273,12 +273,10 @@ PokedexDataPointerTable:
 	dba YanmegaPokedexEntry
 	dba KujinoughtPokedexEntry
 	dba MlloyPokedexEntry
-	dba LotadPokedexEntry
-	dba LombrePokedexEntry
-	dba LudicoloPokedexEntry
-	dba SeedotPokedexEntry
-	dba NuzleafPokedexEntry
-	dba ShiftryPokedexEntry
+	dba LotugaPokedexEntry
+	dba VertugaPokedexEntry
+	dba ColijoboPokedexEntry
+	dba CrenjoboPokedexEntry
 	dba ElectivirePokedexEntry
 	dba MagmortarPokedexEntry
 	dba VoltrelPokedexEntry

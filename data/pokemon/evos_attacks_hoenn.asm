@@ -19,12 +19,10 @@ EvosAttacksPointers3::
 	dw YanmegaEvosAttacks
 	dw KujinoughtEvosAttacks
 	dw MlloyEvosAttacks
-	dw LotadEvosAttacks
-	dw LombreEvosAttacks
-	dw LudicoloEvosAttacks
-	dw SeedotEvosAttacks
-	dw NuzleafEvosAttacks
-	dw ShiftryEvosAttacks
+	dw LotugaEvosAttacks
+	dw VertugaEvosAttacks
+	dw ColijoboEvosAttacks
+	dw CrenjoboEvosAttacks
 	dw ElectivireEvosAttacks
 	dw MagmortarEvosAttacks
 	dw VoltrelEvosAttacks
@@ -433,76 +431,54 @@ MlloyEvosAttacks:
 	dbw 58, LEAF_BLADE
 	db 0 ; no more level-up moves
 
-LotadEvosAttacks:
-	evolve EVOLVE_LEVEL, 14, LOMBRE
-	;evolve EVOLVE_ITEM, SUN_STONE, LUDICOLO
+LotugaEvosAttacks:
+	evolve EVOLVE_ITEM, SUN_STONE, VERTUGA
 	db 0 ; no more evolutions
-	dbw 1, ASTONISH ;BUBBLE
-	dbw 3, GROWL ;WITHDRAW
-	dbw 7, ABSORB
+	dbw 1, BUBBLE
+	dbw 3, WITHDRAW
+	dbw 7, BITE
 	dbw 13, NATURE_POWER
-	dbw 21, MIST
-	dbw 31, RAIN_DANCE
-	dbw 43, MEGA_DRAIN
-	db 0 ; no more level-up moves
-
-LombreEvosAttacks:
-	evolve EVOLVE_ITEM, WATER_STONE, LUDICOLO
-	db 0 ; no more evolutions
-	dbw 1, ASTONISH ;BUBBLE
-	dbw 3, GROWL ;WITHDRAW
-	dbw 7, ABSORB
-	dbw 13, NATURE_POWER
-	dbw 19, FAKE_OUT ;BIDE
-	dbw 25, FURY_SWIPES ;BUBBLEBEAM
-	dbw 31, SWAGGER ;MIST
-	dbw 37, THIEF ;RAIN_DANCE
-	dbw 43, UPROAR ;EGG_BOMB
+	dbw 19, BIDE
+	dbw 25, BUBBLEBEAM
+	dbw 31, MIST
+	dbw 37, RAIN_DANCE
+	dbw 43, EGG_BOMB
 	dbw 49, HYDRO_PUMP 
 	db 0 ; no more level-up moves
 
-LudicoloEvosAttacks:
+VertugaEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, ABSORB
-	dbw 1, ASTONISH
-	dbw 1, GROWL
+	dbw 1, POWER_WHIP
+	dbw 1, BUBBLEBEAM
+	dbw 1, WITHDRAW
 	dbw 1, NATURE_POWER
 	db 0 ; no more level-up moves
 
-SeedotEvosAttacks:
-	evolve EVOLVE_LEVEL, 14, NUZLEAF ;38
+ColijoboEvosAttacks:
+	evolve EVOLVE_LEVEL, 38, CRENJOBO
 	db 0 ; no more evolutions
-	dbw 1, BIDE ;PECK
-	dbw 3, HARDEN ;LEER
-	dbw 7, GROWTH ;SPITE
-	dbw 13, NATURE_POWER ;WILL_O_WISP
-	dbw 21, SYNTHESIS ;EMBER
-	dbw 31, SUNNY_DAY ;RAZOR_WIND
-	dbw 43, EXPLOSION ; 
-	;dbw 48, OMINOUS_WIND
+	dbw 1, PECK
+	dbw 3, LEER
+	dbw 7, SPITE
+	dbw 13, WILL_O_WISP
+	dbw 21, EMBER
+	dbw 31, RAZOR_WIND
+	dbw 43, GRUDGE
+	dbw 49, OMINOUS_WIND
 	db 0 ; no more level-up moves
 
-NuzleafEvosAttacks:
-	evolve EVOLVE_ITEM, LEAF_STONE, SHIFTRY
+CrenjoboEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, POUND
-	dbw 3, HARDEN
-	dbw 7, GROWTH
-	dbw 13, NATURE_POWER
-	dbw 19, FAKE_OUT
-	dbw 25, TORMENT
-	dbw 31, FAINT_ATTACK
-	dbw 37, RAZOR_WIND
-	dbw 43, SWAGGER
-	dbw 49, EXTRASENSORY
-	db 0 ; no more level-up moves
-
-ShiftryEvosAttacks:
-	db 0 ; no more evolutions
-	dbw 1, GROWTH
-	dbw 1, HARDEN
-	dbw 1, NATURE_POWER
-	dbw 1, POUND
+	dbw 1, PECK
+	dbw 3, LEER
+	dbw 7, SPITE
+	dbw 13, WILL_O_WISP
+	dbw 21, EMBER
+	dbw 31, RAZOR_WIND
+	dbw 38, GRUDGE
+	dbw 46, OMINOUS_WIND
+	dbw 53,	AGILITY
+	dbw 59, HEAT_WAVE
 	db 0 ; no more level-up moves
 
 ElectivireEvosAttacks:

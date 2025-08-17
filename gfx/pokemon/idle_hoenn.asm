@@ -19,12 +19,10 @@ AnimationIdlePointers3:
 	dw YanmegaAnimationIdle
 	dw KujinoughtAnimationIdle
 	dw MlloyAnimationIdle
-	dw LotadAnimationIdle
-	dw LombreAnimationIdle
-	dw LudicoloAnimationIdle
-	dw SeedotAnimationIdle
-	dw NuzleafAnimationIdle
-	dw ShiftryAnimationIdle
+	dw LotugaAnimationIdle
+	dw VertugaAnimationIdle
+	dw ColijoboAnimationIdle
+	dw CrenjoboAnimationIdle
 	dw ElectivireAnimationIdle
 	dw MagmortarAnimationIdle
 	dw VoltrelAnimationIdle
@@ -159,12 +157,10 @@ GlaceonAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/glaceon/anim_idle.asm"
 YanmegaAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/yanmega/anim_idle.asm"
 KujinoughtAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/kujinought/anim_idle.asm"
 MlloyAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/mlloy/anim_idle.asm"
-LotadAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/lotad/anim_idle.asm"
-LombreAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/lombre/anim_idle.asm"
-LudicoloAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/ludicolo/anim_idle.asm"
-SeedotAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/seedot/anim_idle.asm"
-NuzleafAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/nuzleaf/anim_idle.asm"
-ShiftryAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/shiftry/anim_idle.asm"
+LotugaAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/lotuga/anim_idle.asm"
+VertugaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/vertuga/anim_idle.asm"
+ColijoboAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/colijobo/anim_idle.asm"
+CrenjoboAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/crenjobo/anim_idle.asm"
 ElectivireAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/electivire/anim_idle.asm"
 MagmortarAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/magmortar/anim_idle.asm"
 VoltrelAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/voltrel/anim_idle.asm"

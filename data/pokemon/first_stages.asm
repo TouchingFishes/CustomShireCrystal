@@ -270,12 +270,10 @@ FirstEvoStages::
 	dw YANMA
 	dw REMORAID
 	dw FARFETCH_D
-	dw LOTAD
-	dw LOTAD
-	dw LOTAD      ;110
-	dw SEEDOT
-	dw SEEDOT
-	dw SEEDOT
+	dw LOTUGA
+	dw LOTUGA      ;110
+	dw COLIJOBO
+	dw COLIJOBO
 	dw ELEKID
 	dw MAGBY
 	dw VOLTREL

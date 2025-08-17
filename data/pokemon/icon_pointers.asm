@@ -277,12 +277,10 @@ IconPointers:
 	dw YanmegaIcon
 	dw KujinoughtIcon
 	dw MlloyIcon
-	dw LotadIcon
-	dw LombreIcon
-	dw LudicoloIcon
-	dw SeedotIcon
-	dw NuzleafIcon
-	dw ShiftryIcon
+	dw LotugaIcon
+	dw VertugaIcon
+	dw ColijoboIcon
+	dw CrenjoboIcon
 	dw ElectivireIcon
 	dw MagmortarIcon
 	dw VoltrelIcon

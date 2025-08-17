@@ -49,9 +49,11 @@ AlphabeticalPokedexOrder:
 	dw CLEFAIRY
 	dw CLEFFA
 	dw CLOYSTER
+	dw COLIJOBO
 	dw COMBUSKEN
 	dw CORSOLA
 	dw CORSOREEF
+	dw CRENJOBO
 	dw CROBAT
 	dw CROCONAW
 	dw CUBONE
@@ -173,9 +175,7 @@ AlphabeticalPokedexOrder:
 	dw LEDYBA
 	dw LICKITUNG
 	dw LITWICK
-	dw LOMBRE
-	dw LOTAD
-	dw LUDICOLO
+	dw LOTUGA
 	dw LUGIA
 	dw LUVDISC
 	dw LUXIO
@@ -233,7 +233,6 @@ AlphabeticalPokedexOrder:
 	dw NOCTOWL
 	dw NOHFACE
 	dw NOSEPASS
-	dw NUZLEAF
 	dw OCTILLERY
 	dw ODDISH
 	dw OMANYTE
@@ -291,13 +290,11 @@ AlphabeticalPokedexOrder:
 	dw SCYTHER
 	dw SEADRA
 	dw SEAKING
-	dw SEEDOT
 	dw SEEL
 	dw SENTRET
 	dw SHARPEDO
 	dw SHEDINJA
 	dw SHELLDER
-	dw SHIFTRY
 	dw SHINX
 	dw SHROOMISH
 	dw SHUCKLE
@@ -367,6 +364,7 @@ AlphabeticalPokedexOrder:
 	dw VENOMOTH
 	dw VENONAT
 	dw VENUSAUR
+	dw VERTUGA
 	dw VIBRAVA
 	dw VICTREEBEL
 	dw VIGOROTH

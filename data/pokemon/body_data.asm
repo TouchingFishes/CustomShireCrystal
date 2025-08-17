@@ -274,12 +274,10 @@ PokemonBodyData:
 	dw 603, 1135   ; YANMEGA
 	dw 4707, 8774  ; KUJINOUGHT
 	dw 207, 474    ; MLLOY
-	dw 108, 57     ; LOTAD
-	dw 311, 717    ; LOMBRE
-	dw 411, 1213   ; LUDICOLO
-	dw 108, 88     ; SEEDOT
-	dw 303, 617    ; NUZLEAF
-	dw 403, 1314   ; SHIFTRY
+	dw 108, 57     ; LOTUGA
+	dw 411, 1213   ; VERTUGA
+	dw 303, 617    ; COLIJOBO
+	dw 403, 1314   ; CRENJOBO
 	dw 511, 3056   ; ELECTIVIRE
 	dw 503, 1499   ; MAGMORTAR
 	dw 104, 79     ; VOLTREL

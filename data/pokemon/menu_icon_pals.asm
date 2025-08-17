@@ -282,12 +282,10 @@ MonMenuIconPals:
 	icon_pals RED,    BLUE   ; YANMEGA
 	icon_pals RED,    RED    ; KUJINOUGHT
 	icon_pals BROWN,  RED    ; MLLOY
-	icon_pals GREEN,  RED    ; LOTAD
-	icon_pals GREEN,  RED    ; LOMBRE
-	icon_pals GREEN,  RED    ; LUDICOLO
-	icon_pals BROWN,  RED    ; SEEDOT
-	icon_pals BROWN,  RED    ; NUZLEAF
-	icon_pals BROWN,  RED    ; SHIFTRY
+	icon_pals GREEN,  RED    ; LOTUGA
+	icon_pals GREEN,  RED    ; VERTUGA
+	icon_pals RED,    RED    ; COLIJOBO
+	icon_pals RED,    RED    ; CRENJOBO
 	icon_pals BROWN,  RED    ; ELECTIVIRE
 	icon_pals RED,    RED    ; MAGMORTAR
 	icon_pals BROWN,  RED    ; VOLTREL

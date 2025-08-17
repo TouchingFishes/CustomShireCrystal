@@ -1400,7 +1400,7 @@ YoungsterGroup:
 	dw ESPEON
 	dw HYPER_BEAM, PSYCHIC_M, CALM_MIND, SHADOW_BALL
 	db 54 ;new mon
-	dw SHIFTRY
+	dw CRENJOBO
 	dw HYPER_BEAM, NIGHT_SLASH, RAZOR_WIND, LEAF_BLADE
 	db 55 ;new mon
 	dw FLYGON
@@ -1903,7 +1903,7 @@ LassGroup:
 	db 12
 	dw HOPPIP
 	db 15
-	dw LOMBRE
+	dw SNUBBULL
 	db -1 ; end
 
 	next_list_item ; LASS (5)
@@ -2106,7 +2106,7 @@ CooltrainerMGroup:
 	next_list_item ; COOLTRAINERM (2)
 	db "AARON@", TRAINERTYPE_NORMAL
 	db 26 ;24
-	dw NUZLEAF
+	dw COLIJOBO
 	db 26 ;24
 	dw TORKOAL
 	db 26 ;24
@@ -2267,7 +2267,7 @@ CooltrainerMGroup:
 	dw URSARING
 	dw EARTHQUAKE, FAINT_ATTACK, MEGA_KICK, ROCK_TOMB
 	db 46 ;35
-	dw LUDICOLO
+	dw VERTUGA
 	dw SURF, SYNTHESIS, LEECH_SEED, PROTECT
 	db -1 ; end
 
@@ -2318,7 +2318,7 @@ CooltrainerMGroup:
 	db 35
 	dw SMOGUANA
 	db 35
-	dw LUDICOLO
+	dw VERTUGA
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERM (18) unused
@@ -2466,7 +2466,7 @@ CooltrainerFGroup:
 	dw GEKOPON
 	dw THUNDERBOLT, MEGA_DRAIN, SLAM, YAWN
 	db 45 ;32
-	dw LUDICOLO
+	dw VERTUGA
 	dw SURF, MEGA_DRAIN, ICE_BEAM, SYNTHESIS
 	db 45 ;32
 	dw VENUSAUR
@@ -2502,7 +2502,7 @@ CooltrainerFGroup:
 	next_list_item ; COOLTRAINERF (14)
 	db "QUINN@", TRAINERTYPE_NORMAL
 	db 38
-	dw SHIFTRY
+	dw CRENJOBO
 	db 38
 	dw STARMIE
 	db -1 ; end
@@ -5805,7 +5805,7 @@ CamperGroup:
 	db 36 ;30
 	dw FEAROW
 	db 35 ;30
-	dw LOMBRE
+	dw PRIMEAPE
 	db 37 ;30
 	dw TAUROS
 	db 38 ;new mon
@@ -5912,7 +5912,7 @@ SageGroup:
 	db 3
 	dw BELLSPROUT
 	db 3
-	dw LOTAD
+	dw LOTUGA
 	;db 3
 	;dw BELLSPROUT
 	db -1 ; end
@@ -7074,7 +7074,7 @@ RichBoyGroup:
 ;	dw GRIMMSNARL
 ;	dw ANCIENTPOWER, POISON_TAIL, HYPER_BEAM, EARTHQUAKE
 ;	db 48
-;	dw SHIFTRY
+;	dw CRENJOBO
 ;	dw ANCIENTPOWER, POISON_TAIL, HYPER_BEAM, EARTHQUAKE
 ;	db 49
 ;	dw ABSOL
@@ -7172,7 +7172,7 @@ ElderGroup:
 	db 8
 	dw BELLSPROUT
 	db 8
-	dw LOTAD
+	dw LOTUGA
 	db 11
 	dw CHIMECHO
 	db -1 ; end
@@ -7183,7 +7183,7 @@ ElderGroup:
 	dw VICTREEBEL
 	dw TOXIC, PROTECT, SANDSTORM, REST
 	db 48
-	dw LUDICOLO
+	dw VERTUGA
 	dw TOXIC, PROTECT, SANDSTORM, REST
 	db 51
 	dw DECIBELLE
@@ -7196,7 +7196,7 @@ ElderGroup:
 	dw VICTREEBEL
 	dw TOXIC, PROTECT, SANDSTORM, REST
 	db 70
-	dw LUDICOLO
+	dw VERTUGA
 	dw SURF, LEECH_SEED, GIGA_DRAIN, ICE_BEAM
 	db 70
 	dw DUNDRAG
@@ -7288,7 +7288,7 @@ ENDSECTION
 ;	next_list_item ; SIDNEY (1)
 ;	db "SIDNEY@", TRAINERTYPE_MOVES
 ;	db 62
-;	dw SHIFTRY
+;	dw CRENJOBO
 ;	dw SHOCK_WAVE, FLAMETHROWER, PSYCHIC_M, SHADOW_BALL
 ;	db 64
 ;	dw SPIRITOMB

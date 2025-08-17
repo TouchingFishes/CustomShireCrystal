@@ -60,7 +60,7 @@ JohtoWaterWildMons:
 	db 2 percent ; encounter rate
 	dbw 15, PSYDUCK
 	dbw 15, SURSKIT
-	dbw 15, LOTAD
+	dbw 15, LOTUGA
 	dbw 20, GOLDUCK
 	dbw 25, GOLDUCK
 	end_water_wildmons
@@ -167,7 +167,7 @@ JohtoWaterWildMons:
 	def_water_wildmons ROUTE_30
 	db 2 percent ; encounter rate
 	dbw 20, POLIWAG
-	dbw 15, LOTAD
+	dbw 15, LOTUGA
 	dbw 15, SURSKIT
 	dbw 20, POLIWHIRL
 	dbw 25, POLIWHIRL
@@ -176,7 +176,7 @@ JohtoWaterWildMons:
 	def_water_wildmons ROUTE_31
 	db 2 percent ; encounter rate
 	dbw 20, POLIWAG
-	dbw 15, LOTAD
+	dbw 15, LOTUGA
 	dbw 15, SURSKIT
 	dbw 20, POLIWHIRL
 	dbw 25, POLIWHIRL
@@ -284,7 +284,7 @@ JohtoWaterWildMons:
 	def_water_wildmons VIOLET_CITY
 	db 2 percent ; encounter rate
 	dbw 15, SURSKIT
-	dbw 15, LOTAD
+	dbw 15, LOTUGA
 	dbw 20, POLIWAG
 	dbw 25, POLIWHIRL
 	dbw 25, POLIWHIRL
@@ -311,7 +311,7 @@ JohtoWaterWildMons:
 	def_water_wildmons ECRUTEAK_CITY
 	db 2 percent ; encounter rate
 	dbw 20, POLIWAG
-	dbw 15, LOTAD
+	dbw 15, LOTUGA
 	dbw 15, SURSKIT
 	dbw 20, POLIWHIRL
 	dbw 20, POLIWHIRL

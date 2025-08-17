@@ -569,7 +569,7 @@ JohtoGrassWildMons:
 	dbw 7, WEEDLE
 	dbw 9, METAPOD
 	dbw 9, KAKUNA
-	dbw 9, SEEDOT     ;PIDGEY
+	dbw 9, PIDGEY
 	dbw 8, PARAS
 	dbw 8, PARAS
 	; day
@@ -577,15 +577,15 @@ JohtoGrassWildMons:
 	dbw 7, WEEDLE
 	dbw 9, METAPOD
 	dbw 9, KAKUNA
-	dbw 9, SEEDOT     ;PIDGEY
+	dbw 9, PIDGEY
 	dbw 8, PARAS
 	dbw 8, PARAS
 	; nite
 	dbw 7, ODDISH
 	dbw 7, VENONAT
-	dbw 9, SEEDOT     ;ODDISH
+	dbw 9, HOOTHOOT     ;ODDISH
 	dbw 9, PSYDUCK
-	dbw 9, HOOTHOOT
+	dbw 9, LOTUGA
 	dbw 8, PARAS
 	dbw 8, PARAS
 	end_grass_wildmons

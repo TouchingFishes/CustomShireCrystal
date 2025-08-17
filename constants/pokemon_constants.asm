@@ -290,13 +290,11 @@ DEF HOENN_POKEMON EQU const_value
 	const GLACEON    ; 10a
 	const YANMEGA    ; 10b
 	const KUJINOUGHT ; 10c
-	const MLLOY      ; 10d
-	const LOTAD	     ; 10e  ?
-	const LOMBRE     ; 10f  ?
-	const LUDICOLO   ; 110  ?
-	const SEEDOT     ; 111  ?
-	const NUZLEAF    ; 112  ?
-	const SHIFTRY    ; 113  ?
+	const MLLOY      ; 10d ?
+	const LOTUGA	 ; 10e  
+	const VERTUGA    ; 110 change numbers 
+	const COLIJOBO   ; 112  
+	const CRENJOBO   ; 113  
 	const ELECTIVIRE ; 114
 	const MAGMORTAR  ; 115
 	const VOLTREL    ; 116

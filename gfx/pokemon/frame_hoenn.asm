@@ -19,12 +19,10 @@ FramePointers3:
 	dw YanmegaFrames
 	dw KujinoughtFrames
 	dw MlloyFrames
-	dw LotadFrames
-	dw LombreFrames
-	dw LudicoloFrames
-	dw SeedotFrames
-	dw NuzleafFrames
-	dw ShiftryFrames
+	dw LotugaFrames
+	dw VertugaFrames
+	dw ColijoboFrames
+	dw CrenjoboFrames
 	dw ElectivireFrames
 	dw MagmortarFrames
 	dw VoltrelFrames
@@ -159,12 +157,10 @@ GlaceonFrames:       INCLUDE "gfx/pokemon/hoenn/glaceon/frames.asm"
 YanmegaFrames:       INCLUDE "gfx/pokemon/hoenn/yanmega/frames.asm"
 KujinoughtFrames:    INCLUDE "gfx/pokemon/hoenn/kujinought/frames.asm"
 MlloyFrames:         INCLUDE "gfx/pokemon/hoenn/mlloy/frames.asm"
-LotadFrames:         INCLUDE "gfx/pokemon/hoenn/lotad/frames.asm"
-LombreFrames:        INCLUDE "gfx/pokemon/hoenn/lombre/frames.asm"
-LudicoloFrames:      INCLUDE "gfx/pokemon/hoenn/ludicolo/frames.asm"
-SeedotFrames:        INCLUDE "gfx/pokemon/hoenn/seedot/frames.asm"
-NuzleafFrames:       INCLUDE "gfx/pokemon/hoenn/nuzleaf/frames.asm"
-ShiftryFrames:       INCLUDE "gfx/pokemon/hoenn/shiftry/frames.asm"
+LotugaFrames:         INCLUDE "gfx/pokemon/hoenn/lotuga/frames.asm"
+VertugaFrames:      INCLUDE "gfx/pokemon/hoenn/vertuga/frames.asm"
+ColijoboFrames:       INCLUDE "gfx/pokemon/hoenn/colijobo/frames.asm"
+CrenjoboFrames:       INCLUDE "gfx/pokemon/hoenn/crenjobo/frames.asm"
 ElectivireFrames:    INCLUDE "gfx/pokemon/hoenn/electivire/frames.asm"
 MagmortarFrames:     INCLUDE "gfx/pokemon/hoenn/magmortar/frames.asm"
 VoltrelFrames:       INCLUDE "gfx/pokemon/hoenn/voltrel/frames.asm"

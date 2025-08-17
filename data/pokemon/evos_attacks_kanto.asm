@@ -241,7 +241,7 @@ CharmeleonEvosAttacks:
 CharizardEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, EMBER
-	dbw 1, GROWL
+	dbw 1, DRAGON_RAGE
 	dbw 1, SCRATCH
 	dbw 1, SMOKESCREEN
 	dbw 7, EMBER
@@ -888,6 +888,7 @@ PersianEvosAttacks:
 	dbw 1, BITE
 	dbw 1, GROWL
 	dbw 1, SCRATCH
+	dbw 1, SWIFT
 	dbw 11, BITE
 	dbw 20, PAY_DAY
 	dbw 29, FAINT_ATTACK
@@ -933,10 +934,11 @@ MankeyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, FURY_SWIPES
 	dbw 1, LEER
+	dbw 1, FOCUS_ENERGY
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, SCREECH
-	dbw 27, FOCUS_ENERGY
+	dbw 27, BULK_UP
 	dbw 33, BOUNCE
 	dbw 39, CROSS_CHOP
 	dbw 45, THRASH
@@ -948,11 +950,11 @@ PrimeapeEvosAttacks:
 	dbw 1, FURY_SWIPES
 	dbw 1, LEER
 	dbw 1, LOW_KICK
-	dbw 1, RAGE
+	dbw 1, FOCUS_ENERGY
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, SCREECH
-	dbw 27, FOCUS_ENERGY
+	dbw 27, BULK_UP
 	dbw 28, RAGE
 	dbw 36, BOUNCE
 	dbw 45, CROSS_CHOP

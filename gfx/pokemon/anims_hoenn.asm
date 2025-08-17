@@ -19,12 +19,10 @@ AnimationPointers3:
 	dw YanmegaAnimation
 	dw KujinoughtAnimation
 	dw MlloyAnimation
-	dw LotadAnimation
-	dw LombreAnimation
-	dw LudicoloAnimation
-	dw SeedotAnimation
-	dw NuzleafAnimation
-	dw ShiftryAnimation
+	dw LotugaAnimation
+	dw VertugaAnimation
+	dw ColijoboAnimation
+	dw CrenjoboAnimation
 	dw ElectivireAnimation
 	dw MagmortarAnimation
 	dw VoltrelAnimation
@@ -159,12 +157,10 @@ GlaceonAnimation:       INCLUDE "gfx/pokemon/hoenn/glaceon/anim.asm"
 YanmegaAnimation:       INCLUDE "gfx/pokemon/hoenn/yanmega/anim.asm"
 KujinoughtAnimation:    INCLUDE "gfx/pokemon/hoenn/kujinought/anim.asm"
 MlloyAnimation:         INCLUDE "gfx/pokemon/hoenn/mlloy/anim.asm"
-LotadAnimation:         INCLUDE "gfx/pokemon/hoenn/lotad/anim.asm"
-LombreAnimation:        INCLUDE "gfx/pokemon/hoenn/lombre/anim.asm"
-LudicoloAnimation:      INCLUDE "gfx/pokemon/hoenn/ludicolo/anim.asm"
-SeedotAnimation:        INCLUDE "gfx/pokemon/hoenn/seedot/anim.asm"
-NuzleafAnimation:       INCLUDE "gfx/pokemon/hoenn/nuzleaf/anim.asm"
-ShiftryAnimation:       INCLUDE "gfx/pokemon/hoenn/shiftry/anim.asm"
+LotugaAnimation:         INCLUDE "gfx/pokemon/hoenn/lotuga/anim.asm"
+VertugaAnimation:      INCLUDE "gfx/pokemon/hoenn/vertuga/anim.asm"
+ColijoboAnimation:       INCLUDE "gfx/pokemon/hoenn/colijobo/anim.asm"
+CrenjoboAnimation:       INCLUDE "gfx/pokemon/hoenn/crenjobo/anim.asm"
 ElectivireAnimation:    INCLUDE "gfx/pokemon/hoenn/electivire/anim.asm"
 MagmortarAnimation:     INCLUDE "gfx/pokemon/hoenn/magmortar/anim.asm"
 VoltrelAnimation:       INCLUDE "gfx/pokemon/hoenn/voltrel/anim.asm"

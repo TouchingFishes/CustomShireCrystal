@@ -19,12 +19,10 @@ BitmaskPointers3:
 	dw YanmegaBitmasks
 	dw KujinoughtBitmasks
 	dw MlloyBitmasks
-	dw LotadBitmasks
-	dw LombreBitmasks
-	dw LudicoloBitmasks
-	dw SeedotBitmasks
-	dw NuzleafBitmasks
-	dw ShiftryBitmasks
+	dw LotugaBitmasks
+	dw VertugaBitmasks
+	dw ColijoboBitmasks
+	dw CrenjoboBitmasks
 	dw ElectivireBitmasks
 	dw MagmortarBitmasks
 	dw VoltrelBitmasks
@@ -159,12 +157,10 @@ GlaceonBitmasks:       INCLUDE "gfx/pokemon/hoenn/glaceon/bitmask.asm"
 YanmegaBitmasks:       INCLUDE "gfx/pokemon/hoenn/yanmega/bitmask.asm"
 KujinoughtBitmasks:    INCLUDE "gfx/pokemon/hoenn/kujinought/bitmask.asm"
 MlloyBitmasks:         INCLUDE "gfx/pokemon/hoenn/mlloy/bitmask.asm"
-LotadBitmasks:         INCLUDE "gfx/pokemon/hoenn/lotad/bitmask.asm"
-LombreBitmasks:        INCLUDE "gfx/pokemon/hoenn/lombre/bitmask.asm"
-LudicoloBitmasks:      INCLUDE "gfx/pokemon/hoenn/ludicolo/bitmask.asm"
-SeedotBitmasks:        INCLUDE "gfx/pokemon/hoenn/seedot/bitmask.asm"
-NuzleafBitmasks:       INCLUDE "gfx/pokemon/hoenn/nuzleaf/bitmask.asm"
-ShiftryBitmasks:       INCLUDE "gfx/pokemon/hoenn/shiftry/bitmask.asm"
+LotugaBitmasks:         INCLUDE "gfx/pokemon/hoenn/lotuga/bitmask.asm"
+VertugaBitmasks:      INCLUDE "gfx/pokemon/hoenn/vertuga/bitmask.asm"
+ColijoboBitmasks:       INCLUDE "gfx/pokemon/hoenn/colijobo/bitmask.asm"
+CrenjoboBitmasks:       INCLUDE "gfx/pokemon/hoenn/crenjobo/bitmask.asm"
 ElectivireBitmasks:    INCLUDE "gfx/pokemon/hoenn/electivire/bitmask.asm"
 MagmortarBitmasks:     INCLUDE "gfx/pokemon/hoenn/magmortar/bitmask.asm"
 VoltrelBitmasks:       INCLUDE "gfx/pokemon/hoenn/voltrel/bitmask.asm"

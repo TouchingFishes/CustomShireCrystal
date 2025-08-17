@@ -557,18 +557,14 @@ PokemonPicPointers::
 	dba KujinoughtBackpic
 	dba MlloyFrontpic
 	dba MlloyBackpic
-	dba LotadFrontpic
-	dba LotadBackpic
-	dba LombreFrontpic
-	dba LombreBackpic
-	dba LudicoloFrontpic
-	dba LudicoloBackpic
-	dba SeedotFrontpic
-	dba SeedotBackpic
-	dba NuzleafFrontpic
-	dba NuzleafBackpic
-	dba ShiftryFrontpic
-	dba ShiftryBackpic
+	dba LotugaFrontpic
+	dba LotugaBackpic
+	dba VertugaFrontpic
+	dba VertugaBackpic
+	dba ColijoboFrontpic
+	dba ColijoboBackpic
+	dba CrenjoboFrontpic
+	dba CrenjoboBackpic
 	dba ElectivireFrontpic
 	dba ElectivireBackpic
 	dba MagmortarFrontpic
