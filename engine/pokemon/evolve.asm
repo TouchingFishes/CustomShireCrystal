@@ -86,7 +86,7 @@ EvolveAfterBattle_MasterLoop:
 	jr z, .pv
 
 	cp EVOLVE_STAT
-	jp z, .stat ;used to be jr
+	jmp z, .stat ;used to be jr
 
 	cp EVOLVE_HAPPINESS
 	jr z, .happiness
