@@ -6904,7 +6904,7 @@ BugManiacGroup:
 	db 19
 	dw PINSIR
 	db 19
-	dw KROLUCARD
+	dw KROLUCADA
 	db -1 ; end
 
 	end_list_items
@@ -6927,7 +6927,7 @@ GideonGroup:
 	db 56
 	dw WHISCASH
 	dw SURF, SPARK, EARTHQUAKE, BLIZZARD
-	db 58 ;new mon
+	db 58
 	dw EUXINOS
 	dw ANCIENTPOWER, POISON_TAIL, HYPER_BEAM, EARTHQUAKE
 	db -1 ; end

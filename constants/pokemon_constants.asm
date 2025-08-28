@@ -371,9 +371,9 @@ DEF HOENN_POKEMON EQU const_value
 	const FEEBAS     ; 15d
 	const MILOTIC    ; 15e
 	const CASTFORM   ; 15f
-	const LITWICK    ; 160 
-	const LAMPENT    ; 161 
-	const CHANDELURE ; 162 
+	const LITWICK    ; 160 out
+	const LAMPENT    ; 161 out
+	const CHANDELURE ; 162 out
 	const DUSKULL    ; 163
 	const DUSCLOPS   ; 164
 	const DECIBELLE  ; 165 
