@@ -110,7 +110,7 @@ KogaScript_KogaBeforeText:
 	line "will confound and"
 	cont "destroy you!"
 
-	para "Confusion, sleep,"
+	para "Confusion, speed,"
 	line "poison…"
 
 	para "Prepare to be the"

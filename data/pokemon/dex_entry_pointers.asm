@@ -255,16 +255,15 @@ PokedexDataPointerTable:
 	dba HoOhPokedexEntry
 	dba CelebiPokedexEntry
 ; Hoenn
-	dba TreeckoPokedexEntry
-	dba GrovylePokedexEntry
-	dba SceptilePokedexEntry
-	dba TorchicPokedexEntry
-	dba CombuskenPokedexEntry
-	dba BlazikenPokedexEntry
-	dba MudkipPokedexEntry
-	dba MarshtompPokedexEntry
-	dba SwampertPokedexEntry
-	dba EuxinosPokedexEntry
+	dba TurtwigPokedexEntry
+	dba GrotlePokedexEntry
+	dba TorterraPokedexEntry
+	dba ChimcharPokedexEntry
+	dba MonfernoPokedexEntry
+	dba InfernapePokedexEntry
+	dba PiplupPokedexEntry
+	dba PrinplupPokedexEntry
+	dba EmpoleonPokedexEntry
 	dba WeavilePokedexEntry
 	dba HonchkrowPokedexEntry
 	dba GliscorPokedexEntry
@@ -286,8 +285,8 @@ PokedexDataPointerTable:
 	dba ReuniclusPokedexEntry
 	dba SurskitPokedexEntry
 	dba MasquerainPokedexEntry
-	dba ShroomishPokedexEntry
-	dba BreloomPokedexEntry
+	dba Iron_penguPokedexEntry
+	dba Iron_thornPokedexEntry
 	dba SlakothPokedexEntry
 	dba VigorothPokedexEntry
 	dba SlakingPokedexEntry
@@ -303,7 +302,7 @@ PokedexDataPointerTable:
 	dba NosepassPokedexEntry
 	dba SkittyPokedexEntry
 	dba DelcattyPokedexEntry
-	dba SpiritombPokedexEntry
+	dba TropiusPokedexEntry
 	dba TangrowthPokedexEntry
 	dba AronPokedexEntry
 	dba LaironPokedexEntry
@@ -364,15 +363,15 @@ PokedexDataPointerTable:
 	dba MagnezonePokedexEntry
 	dba SnoverPokedexEntry
 	dba AbomasnowPokedexEntry
-	dba TurtwigPokedexEntry
-	dba GrotlePokedexEntry
-	dba TorterraPokedexEntry
-	dba ChimcharPokedexEntry
-	dba MonfernoPokedexEntry
-	dba InfernapePokedexEntry
-	dba PiplupPokedexEntry
-	dba PrinplupPokedexEntry
-	dba EmpoleonPokedexEntry
+	dba ShuppetPokedexEntry
+	dba BanettePokedexEntry
+	dba LileepPokedexEntry
+	dba CradilyPokedexEntry
+	dba AnorithPokedexEntry
+	dba ArmaldoPokedexEntry
+	dba MudkipPokedexEntry
+	dba MarshtompPokedexEntry
+	dba SwampertPokedexEntry
 	dba RelicanthPokedexEntry
 	dba LuvdiscPokedexEntry
 	dba RaelicPokedexEntry

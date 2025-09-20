@@ -521,26 +521,24 @@ PokemonPicPointers::
 	dba CelebiFrontpic
 	dba CelebiBackpic
 ; Hoenn
-	dba TreeckoFrontpic
-	dba TreeckoBackpic
-	dba GrovyleFrontpic
-	dba GrovyleBackpic
-	dba SceptileFrontpic
-	dba SceptileBackpic
-	dba TorchicFrontpic
-	dba TorchicBackpic
-	dba CombuskenFrontpic
-	dba CombuskenBackpic
-	dba BlazikenFrontpic
-	dba BlazikenBackpic
-	dba MudkipFrontpic
-	dba MudkipBackpic
-	dba MarshtompFrontpic
-	dba MarshtompBackpic
-	dba SwampertFrontpic
-	dba SwampertBackpic
-	dba EuxinosFrontpic
-	dba EuxinosBackpic
+	dba TurtwigFrontpic
+	dba TurtwigBackpic
+	dba GrotleFrontpic
+	dba GrotleBackpic
+	dba TorterraFrontpic
+	dba TorterraBackpic
+	dba ChimcharFrontpic
+	dba ChimcharBackpic
+	dba MonfernoFrontpic
+	dba MonfernoBackpic
+	dba InfernapeFrontpic
+	dba InfernapeBackpic
+	dba PiplupFrontpic
+	dba PiplupBackpic
+	dba PrinplupFrontpic
+	dba PrinplupBackpic
+	dba EmpoleonFrontpic
+	dba EmpoleonBackpic
 	dba WeavileFrontpic
 	dba WeavileBackpic
 	dba HonchkrowFrontpic
@@ -583,10 +581,10 @@ PokemonPicPointers::
 	dba SurskitBackpic
 	dba MasquerainFrontpic
 	dba MasquerainBackpic
-	dba ShroomishFrontpic
-	dba ShroomishBackpic
-	dba BreloomFrontpic
-	dba BreloomBackpic
+	dba Iron_penguFrontpic
+	dba Iron_penguBackpic
+	dba Iron_thornFrontpic
+	dba Iron_thornBackpic
 	dba SlakothFrontpic
 	dba SlakothBackpic
 	dba VigorothFrontpic
@@ -617,8 +615,8 @@ PokemonPicPointers::
 	dba SkittyBackpic
 	dba DelcattyFrontpic
 	dba DelcattyBackpic
-	dba SpiritombFrontpic
-	dba SpiritombBackpic
+	dba TropiusFrontpic
+	dba TropiusBackpic
 	dba TangrowthFrontpic
 	dba TangrowthBackpic
 	dba AronFrontpic
@@ -739,24 +737,24 @@ PokemonPicPointers::
 	dba SnoverBackpic
 	dba AbomasnowFrontpic
 	dba AbomasnowBackpic
-	dba TurtwigFrontpic
-	dba TurtwigBackpic
-	dba GrotleFrontpic
-	dba GrotleBackpic
-	dba TorterraFrontpic
-	dba TorterraBackpic
-	dba ChimcharFrontpic
-	dba ChimcharBackpic
-	dba MonfernoFrontpic
-	dba MonfernoBackpic
-	dba InfernapeFrontpic
-	dba InfernapeBackpic
-	dba PiplupFrontpic
-	dba PiplupBackpic
-	dba PrinplupFrontpic
-	dba PrinplupBackpic
-	dba EmpoleonFrontpic
-	dba EmpoleonBackpic
+	dba ShuppetFrontpic
+	dba ShuppetBackpic
+	dba BanetteFrontpic
+	dba BanetteBackpic
+	dba LileepFrontpic
+	dba LileepBackpic
+	dba CradilyFrontpic
+	dba CradilyBackpic
+	dba AnorithFrontpic
+	dba AnorithBackpic
+	dba ArmaldoFrontpic
+	dba ArmaldoBackpic
+	dba MudkipFrontpic
+	dba MudkipBackpic
+	dba MarshtompFrontpic
+	dba MarshtompBackpic
+	dba SwampertFrontpic
+	dba SwampertBackpic
 	dba RelicanthFrontpic
 	dba RelicanthBackpic
 	dba LuvdiscFrontpic

@@ -264,16 +264,15 @@ MonMenuIconPals:
 	icon_pals RED,    BROWN  ; HO_OH
 	icon_pals GREEN,  PINK   ; CELEBI
 ; Hoenn
-	icon_pals GREEN,  RED    ; TREECKO
-	icon_pals GREEN,  RED    ; GROVYLE
-	icon_pals GREEN,  RED    ; SCEPTILE
-	icon_pals RED,    RED    ; TORCHIC
-	icon_pals RED,    RED    ; COMBUSKEN
-	icon_pals RED,    RED    ; BLAZIKEN
-	icon_pals BLUE,   RED    ; MUDKIP
-	icon_pals BLUE,   RED    ; MARSHTOMP
-	icon_pals BLUE,   RED    ; SWAMPERT
-	icon_pals BROWN,  RED    ; EUXINOS
+	icon_pals GREEN,  RED    ; TURTWIG
+	icon_pals GREEN,  RED    ; GROTLE
+	icon_pals GREEN,  RED    ; TORTERRA
+	icon_pals RED,    RED    ; CHIMCHAR
+	icon_pals RED,    RED    ; MONFERNO
+	icon_pals RED,    RED    ; INFERNAPE
+	icon_pals BLUE,   RED    ; PIPLUP
+	icon_pals BLUE,   RED    ; PRINPLUP
+	icon_pals BLUE,   RED    ; EMPOLEON
 	icon_pals RED,    RED    ; WEAVILE
 	icon_pals BLUE,   RED    ; HONCHKROW
 	icon_pals GRAY,   GRAY   ; GLISCOR
@@ -295,8 +294,8 @@ MonMenuIconPals:
 	icon_pals GREEN,  RED    ; REUNICLUS
 	icon_pals BLUE,   RED    ; SURSKIT
 	icon_pals BLUE,   RED    ; MASQUERAIN
-	icon_pals RED,    RED    ; SHROOMISH
-	icon_pals RED,    RED    ; BRELOOM
+	icon_pals RED,    PURPLE ; IRON_PENGU
+	icon_pals GREEN,  BROWN  ; IRON_THORN
 	icon_pals BROWN,  RED    ; SLAKOTH
 	icon_pals RED,    RED    ; VIGOROTH
 	icon_pals BROWN,  RED    ; SLAKING
@@ -312,7 +311,7 @@ MonMenuIconPals:
 	icon_pals BLUE,   RED    ; NOSEPASS
 	icon_pals RED,    RED    ; SKITTY
 	icon_pals RED,    RED    ; DELCATTY
-	icon_pals PURPLE, RED    ; SPIRITOMB
+	icon_pals PURPLE, RED    ; TROPIUS
 	icon_pals BLUE,   RED    ; TANGROWTH
 	icon_pals GRAY,   RED    ; ARON
 	icon_pals GRAY,   RED    ; LAIRON
@@ -373,15 +372,15 @@ MonMenuIconPals:
 	icon_pals GRAY,   RED    ; MAGNEZONE
 	icon_pals GREEN,  RED    ; SNOVER
 	icon_pals GREEN,  RED    ; ABOMASNOW
-	icon_pals GREEN,  RED    ; TURTWIG
-	icon_pals GREEN,  RED    ; GROTLE
-	icon_pals GREEN,  RED    ; TORTERRA
-	icon_pals RED,    RED    ; CHIMCHAR
-	icon_pals RED,    RED    ; MONFERNO
-	icon_pals RED,    RED    ; INFERNAPE
-	icon_pals BLUE,   RED    ; PIPLUP
-	icon_pals BLUE,   RED    ; PRINPLUP
-	icon_pals BLUE,   RED    ; EMPOLEON
+	icon_pals GREEN,  RED    ; SHUPPET
+	icon_pals GREEN,  RED    ; BANETTE
+	icon_pals GREEN,  RED    ; LILEEP
+	icon_pals RED,    RED    ; CRADILY
+	icon_pals RED,    RED    ; ANORITH
+	icon_pals RED,    RED    ; ARMALDO
+	icon_pals BLUE,   RED    ; MUDKIP
+	icon_pals BLUE,   RED    ; MARSHTOMP
+	icon_pals BLUE,   RED    ; SWAMPERT
 	icon_pals BROWN,  RED    ; RELICANTH
 	icon_pals PINK,   RED    ; LUVDISC
 	icon_pals BROWN,  RED    ; RAELIC

@@ -273,142 +273,141 @@ DEF JOHTO_POKEMON EQU const_value
 	const HO_OH      ; fa
 	const CELEBI     ; fb
 DEF HOENN_POKEMON EQU const_value
-	const TREECKO    ; fc   ?
-	const GROVYLE    ; fd   ?
-	const SCEPTILE   ; fe   ? 
-	const TORCHIC    ; ff   ?
-	const COMBUSKEN  ; 100  ?
-	const BLAZIKEN   ; 101  ?
-	const MUDKIP     ; 102  ?
-	const MARSHTOMP  ; 103  ?
-	const SWAMPERT   ; 104  ?
-	const EUXINOS    ; 105  ?
-	const WEAVILE    ; 106
-	const HONCHKROW  ; 107
-	const GLISCOR    ; 108
-	const LEAFEON    ; 109
-	const GLACEON    ; 10a
-	const YANMEGA    ; 10b
-	const KUJINOUGHT ; 10c
-	const MLLOY      ; 10d ?
-	const LOTUGA	 ; 10e  
-	const VERTUGA    ; 110 change numbers 
-	const COLIJOBO   ; 112  
-	const CRENJOBO   ; 113  
-	const ELECTIVIRE ; 114
-	const MAGMORTAR  ; 115
-	const VOLTREL    ; 116
-	const VOLTREAN   ; 117
-	const SOLOSIS	 ; 118
-	const DUOSION    ; 119
-	const REUNICLUS  ; 11a
-	const SURSKIT    ; 11b
-	const MASQUERAIN ; 11c
-	const SHROOMISH  ; 11d out?
-	const BRELOOM    ; 11e out?
-	const SLAKOTH    ; 11f 
-	const VIGOROTH   ; 120
-	const SLAKING    ; 121
-	const NINCADA    ; 122
-	const NINJASK    ; 123
-	const SHEDINJA   ; 124
-	const TINKATINK  ; 125
-	const TINKATUFF  ; 126
-	const TINKATON   ; 127
-	const MAKUHITA   ; 128
-	const HARIYAMA   ; 129
-	const AZURILL    ; 12a out
-	const NOSEPASS   ; 12b out
-	const SKITTY     ; 12c
-	const DELCATTY   ; 12d
-	const SPIRITOMB  ; 12e ?
-	const TANGROWTH  ; 12f
-	const ARON       ; 130
-	const LAIRON     ; 131
-	const AGGRON     ; 132
-	const MEDITITE   ; 133
-	const MEDICHAM   ; 134
-	const SHINX      ; 135
-	const LUXIO      ; 136
-	const LUXRAY     ; 137
-	const GEKOPON    ; 138
-	const TYNAMO     ; 139 out
-	const EELEKTRIK  ; 13a out
-	const EELEKTROSS ; 13b out 
-	const CORSOREEF  ; 13c
-	const DUNDRAG    ; 13d
-	const CARVANHA   ; 13e
-	const SHARPEDO   ; 13f
-	const BARBOACH   ; 140
-	const WHISCASH   ; 141
-	const SMOGUANA   ; 142
-	const SMOKOMODO  ; 143
-	const TORKOAL    ; 144
-	const VANILLITE  ; 145
-	const VANILLISH  ; 146
-	const VANILLUXE  ; 147
-	const TRAPINCH   ; 148
-	const VIBRAVA    ; 149
-	const FLYGON     ; 14a
-	const NOHFACE    ; 14b
-	const KITSUNOH   ; 14c
-	const KROLUCADA  ; 14d
-	const KROLUCARD  ; 14e
-	const SWABLU     ; 14f
-	const ALTARIA    ; 150
-	const LARVESTA   ; 151
-	const VOLCARONA  ; 152
-	const IMPIDIMP   ; 153
-	const MORGREM    ; 154
-	const GRIMMSNARL ; 155
-	const WYRDEER    ; 156
-	const BALTOY     ; 157
-	const CLAYDOL    ; 158
-	const MUNCHLAX   ; 159
-	const PURGISLUG  ; 15a
-	const LARVICID   ; 15b 
-	const PENDRAGON  ; 15c 
-	const FEEBAS     ; 15d
-	const MILOTIC    ; 15e
-	const CASTFORM   ; 15f
-	const LITWICK    ; 160 out
-	const LAMPENT    ; 161 out
-	const CHANDELURE ; 162 out
-	const DUSKULL    ; 163
-	const DUSCLOPS   ; 164
-	const DECIBELLE  ; 165 
-	const CHIMECHO   ; 166
-	const ABSOL      ; 167
-	const MAGNEZONE  ; 168
-	const SNOVER     ; 169
-	const ABOMASNOW  ; 16a
-	const TURTWIG    ; 16b
-	const GROTLE     ; 16c
-	const TORTERRA   ; 16d 
-	const CHIMCHAR   ; 16e 
-	const MONFERNO   ; 16f 
-	const INFERNAPE  ; 170 
-	const PIPLUP	 ; 171
-	const PRINPLUP	 ; 172
-	const EMPOLEON	 ; 173
-	const RELICANTH  ; 174
-	const LUVDISC    ; 175
-	const RAELIC     ; 176
-	const ROMUSHU    ; 177
-	const FUSANG     ; 178
-	const BELDUM     ; 179
-	const METANG     ; 17a
-	const METAGROSS  ; 17b
-	const REGIROCK   ; 17c darkrai 
-	const REGICE     ; 17d meloetta
-	const REGISTEEL  ; 17e marshadow?
-	const LATIAS     ; 17f
-	const LATIOS     ; 180
-	const KYOGRE     ; 181 out?
-	const GROUDON    ; 182 out?
-	const RAYQUAZA   ; 183 out?
-	const JIRACHI    ; 184
-	const DEOXYS     ; 185 hoopa?
+	const TURTWIG    ; fc   
+	const GROTLE     ; fd   
+	const TORTERRA   ; fe    
+	const CHIMCHAR   ; ff   
+	const MONFERNO   ; 100  
+	const INFERNAPE  ; 101  
+	const PIPLUP     ; 102  
+	const PRINPLUP   ; 103 
+	const EMPOLEON   ; 104
+	const WEAVILE    ; 105
+	const HONCHKROW  ; 106
+	const GLISCOR    ; 107
+	const LEAFEON    ; 108
+	const GLACEON    ; 109
+	const YANMEGA    ; 10a
+	const KUJINOUGHT ; 10b
+	const MLLOY      ; 10c
+	const LOTUGA	 ; 10d  
+	const VERTUGA    ; 10e
+	const COLIJOBO   ; 10f  
+	const CRENJOBO   ; 110  
+	const ELECTIVIRE ; 111
+	const MAGMORTAR  ; 112
+	const VOLTREL    ; 113
+	const VOLTREAN   ; 114
+	const SOLOSIS	 ; 115
+	const DUOSION    ; 116
+	const REUNICLUS  ; 117
+	const SURSKIT    ; 118
+	const MASQUERAIN ; 119
+	const IRON_PENGU ; 11a out?
+	const IRON_THORN ; 11b out?
+	const SLAKOTH    ; 11c 
+	const VIGOROTH   ; 11d
+	const SLAKING    ; 11e
+	const NINCADA    ; 11f
+	const NINJASK    ; 120
+	const SHEDINJA   ; 121
+	const TINKATINK  ; 122
+	const TINKATUFF  ; 123
+	const TINKATON   ; 124
+	const MAKUHITA   ; 125
+	const HARIYAMA   ; 126
+	const AZURILL    ; 127 out
+	const NOSEPASS   ; 128 out
+	const SKITTY     ; 129
+	const DELCATTY   ; 12a
+	const TROPIUS    ; 12b
+	const TANGROWTH  ; 12c
+	const ARON       ; 12d
+	const LAIRON     ; 12e
+	const AGGRON     ; 12f
+	const MEDITITE   ; 130
+	const MEDICHAM   ; 131
+	const SHINX      ; 132
+	const LUXIO      ; 133
+	const LUXRAY     ; 134
+	const GEKOPON    ; 135
+	const TYNAMO     ; 136 out
+	const EELEKTRIK  ; 137 out
+	const EELEKTROSS ; 138 out 
+	const CORSOREEF  ; 139
+	const DUNDRAG    ; 13a
+	const CARVANHA   ; 13b
+	const SHARPEDO   ; 13c
+	const BARBOACH   ; 13d
+	const WHISCASH   ; 13e
+	const SMOGUANA   ; 13f
+	const SMOKOMODO  ; 140
+	const TORKOAL    ; 141
+	const VANILLITE  ; 142
+	const VANILLISH  ; 143
+	const VANILLUXE  ; 144
+	const TRAPINCH   ; 145
+	const VIBRAVA    ; 146
+	const FLYGON     ; 147
+	const NOHFACE    ; 148
+	const KITSUNOH   ; 149
+	const KROLUCADA  ; 14a
+	const KROLUCARD  ; 14b
+	const SWABLU     ; 14c
+	const ALTARIA    ; 14d
+	const LARVESTA   ; 14e
+	const VOLCARONA  ; 14f
+	const IMPIDIMP   ; 150
+	const MORGREM    ; 151
+	const GRIMMSNARL ; 152
+	const WYRDEER    ; 153
+	const BALTOY     ; 154
+	const CLAYDOL    ; 155
+	const MUNCHLAX   ; 156
+	const PURGISLUG  ; 157
+	const LARVICID   ; 158 
+	const PENDRAGON  ; 159 
+	const FEEBAS     ; 15a
+	const MILOTIC    ; 15b
+	const CASTFORM   ; 15c
+	const LITWICK    ; 15d out
+	const LAMPENT    ; 15e out
+	const CHANDELURE ; 15f out
+	const DUSKULL    ; 160
+	const DUSCLOPS   ; 161
+	const DECIBELLE  ; 162 
+	const CHIMECHO   ; 163
+	const ABSOL      ; 164
+	const MAGNEZONE  ; 165
+	const SNOVER     ; 166
+	const ABOMASNOW  ; 167
+	const SHUPPET    ; 168
+	const BANETTE    ; 169
+	const LILEEP     ; 16a
+	const CRADILY    ; 16b
+	const ANORITH    ; 16c
+	const ARMALDO    ; 16d
+	const MUDKIP	 ; 16e axew
+	const MARSHTOMP	 ; 16f fraxure
+	const SWAMPERT	 ; 170 haxorus
+	const RELICANTH  ; 171
+	const LUVDISC    ; 172
+	const RAELIC     ; 173
+	const ROMUSHU    ; 174
+	const FUSANG     ; 175
+	const BELDUM     ; 176
+	const METANG     ; 177
+	const METAGROSS  ; 178
+	const REGIROCK   ; 179 
+	const REGICE     ; 17a
+	const REGISTEEL  ; 17b
+	const LATIAS     ; 17c
+	const LATIOS     ; 17d
+	const KYOGRE     ; 17e hoopa
+	const GROUDON    ; 17f meloetta
+	const RAYQUAZA   ; 180 marshadow
+	const JIRACHI    ; 181
+	const DEOXYS     ; 182 darkrai
 DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3

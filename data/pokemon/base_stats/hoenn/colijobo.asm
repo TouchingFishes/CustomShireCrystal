@@ -4,7 +4,7 @@
 	evs  0,   2,   0,   0,   0,   0
 	;   hp  atk  def  spd  sat  sdf
 
-	db FIRE, FLYING ; type
+	db DARK, FLYING ; type
 	db 120 ; catch rate
 	db 91 ; base exp
 	dw NO_ITEM, NO_ITEM ; items

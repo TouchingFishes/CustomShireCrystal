@@ -252,16 +252,15 @@ FirstEvoStages::
 	dw LUGIA
 	dw HO_OH
 	dw CELEBI
-    dw TREECKO
-	dw TREECKO
-	dw TREECKO
-	dw TORCHIC
-	dw TORCHIC    ;100
-	dw TORCHIC
-	dw MUDKIP
-	dw MUDKIP
-	dw MUDKIP
-	dw EUXINOS
+    dw TURTWIG
+	dw TURTWIG
+	dw TURTWIG
+	dw CHIMCHAR
+	dw CHIMCHAR    ;100
+	dw CHIMCHAR
+	dw PIPLUP
+	dw PIPLUP
+	dw PIPLUP
 	dw SNEASEL
 	dw MURKROW
 	dw GLIGAR     ;108
@@ -283,8 +282,8 @@ FirstEvoStages::
 	dw SOLOSIS
 	dw SURSKIT
 	dw SURSKIT
-	dw SHROOMISH
-	dw SHROOMISH
+	dw IRON_PENGU
+	dw IRON_THORN
 	dw SLAKOTH
 	dw SLAKOTH    ;120
 	dw SLAKOTH
@@ -300,7 +299,7 @@ FirstEvoStages::
 	dw NOSEPASS
 	dw SKITTY
 	dw SKITTY
-	dw SPIRITOMB
+	dw TROPIUS
 	dw TANGELA
 	dw ARON       ;130
 	dw ARON
@@ -361,15 +360,15 @@ FirstEvoStages::
 	dw MAGNEMITE     ;168
 	dw SNOVER
 	dw SNOVER
-	dw TURTWIG
-	dw TURTWIG
-	dw TURTWIG
-	dw CHIMCHAR
-	dw CHIMCHAR
-	dw CHIMCHAR   	;170
-	dw PIPLUP
-	dw PIPLUP
-	dw PIPLUP   
+	dw SHUPPET
+	dw SHUPPET
+	dw SHUPPET
+	dw CRADILY
+	dw CRADILY
+	dw CRADILY   	;170
+	dw MUDKIP
+	dw MUDKIP
+	dw MUDKIP   
 	dw RELICANTH
 	dw LUVDISC
 	dw RAELIC

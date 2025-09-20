@@ -60,6 +60,8 @@ NewPokedexOrder:
 	dw AMPHAROS
 	dw WOOPER
 	dw QUAGSIRE
+	dw SKITTY
+	dw DELCATTY
 	dw GASTLY
 	dw HAUNTER
 	dw GENGAR
@@ -72,6 +74,8 @@ NewPokedexOrder:
 	dw HOPPIP
 	dw SKIPLOOM
 	dw JUMPLUFF
+	dw LOTUGA
+	dw VERTUGA
 	dw PARAS
 	dw PARASECT
 	dw POLIWAG
@@ -99,8 +103,6 @@ NewPokedexOrder:
 	dw ABRA
 	dw KADABRA
 	dw ALAKAZAM
-	dw LOTUGA
-	dw VERTUGA
 	dw COLIJOBO
 	dw CRENJOBO
 	dw DITTO
@@ -238,7 +240,7 @@ NewPokedexOrder:
 	dw MAKUHITA
 	dw HARIYAMA
 	dw NOSEPASS
-	dw SPIRITOMB
+	dw TROPIUS
 	dw LICKITUNG
 	dw TANGELA
 	dw TANGROWTH
@@ -269,6 +271,8 @@ NewPokedexOrder:
 	dw LITWICK
 	dw LAMPENT
 	dw CHANDELURE
+	dw SHUPPET
+	dw BANETTE
 	dw DUSKULL
 	dw DUSCLOPS
 	dw ABSOL
@@ -324,8 +328,11 @@ NewPokedexOrder:
 	dw OMASTAR
 	dw KABUTO
 	dw KABUTOPS
+	dw LILEEP
+	dw CRADILY
+	dw ANORITH
+	dw ARMALDO
 	dw AERODACTYL
-	dw EUXINOS
 	dw MUNCHLAX
 	dw SNORLAX
 	dw BULBASAUR
@@ -337,15 +344,6 @@ NewPokedexOrder:
 	dw SQUIRTLE
 	dw WARTORTLE
 	dw BLASTOISE
-	dw TREECKO
-	dw GROVYLE
-	dw SCEPTILE
-	dw TORCHIC
-	dw COMBUSKEN
-	dw BLAZIKEN
-	dw MUDKIP
-	dw MARSHTOMP
-	dw SWAMPERT
 	dw TURTWIG
 	dw GROTLE
 	dw TORTERRA
@@ -355,6 +353,8 @@ NewPokedexOrder:
 	dw PIPLUP
 	dw PRINPLUP
 	dw EMPOLEON
+	dw IRON_PENGU
+	dw IRON_THORN
 	dw ARTICUNO
 	dw ZAPDOS
 	dw MOLTRES
@@ -381,10 +381,9 @@ NewPokedexOrder:
 	dw GROUDON
 	dw RAYQUAZA
 	dw JIRACHI
-	dw SHROOMISH
-	dw BRELOOM
-	dw SKITTY
-	dw DELCATTY
+	dw MUDKIP
+	dw MARSHTOMP
+	dw SWAMPERT
 	dw REGIROCK
 	dw REGICE
 	dw REGISTEEL

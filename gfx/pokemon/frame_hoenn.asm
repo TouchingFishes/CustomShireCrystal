@@ -1,16 +1,15 @@
 SECTION "Frames 3", ROMX
 
 FramePointers3:
-	dw TreeckoFrames
-	dw GrovyleFrames
-	dw SceptileFrames
-	dw TorchicFrames
-	dw CombuskenFrames
-	dw BlazikenFrames
-	dw MudkipFrames
-	dw MarshtompFrames
-	dw SwampertFrames
-	dw EuxinosFrames
+	dw TurtwigFrames
+	dw GrotleFrames
+	dw TorterraFrames
+	dw ChimcharFrames
+	dw MonfernoFrames
+	dw InfernapeFrames
+	dw PiplupFrames
+	dw PrinplupFrames
+	dw EmpoleonFrames
 	dw WeavileFrames
 	dw HonchkrowFrames
 	dw GliscorFrames
@@ -32,8 +31,8 @@ FramePointers3:
 	dw ReuniclusFrames
 	dw SurskitFrames
 	dw MasquerainFrames
-	dw ShroomishFrames
-	dw BreloomFrames
+	dw Iron_penguFrames
+	dw Iron_thornFrames
 	dw SlakothFrames
 	dw VigorothFrames
 	dw SlakingFrames
@@ -49,7 +48,7 @@ FramePointers3:
 	dw NosepassFrames
 	dw SkittyFrames
 	dw DelcattyFrames
-	dw SpiritombFrames
+	dw TropiusFrames
 	dw TangrowthFrames
 	dw AronFrames
 	dw LaironFrames
@@ -110,15 +109,15 @@ FramePointers3:
 	dw MagnezoneFrames
 	dw SnoverFrames
 	dw AbomasnowFrames
-	dw TurtwigFrames
-	dw GrotleFrames
-	dw TorterraFrames
-	dw ChimcharFrames
-	dw MonfernoFrames
-	dw InfernapeFrames
-	dw PiplupFrames
-	dw PrinplupFrames
-	dw EmpoleonFrames
+	dw ShuppetFrames
+	dw BanetteFrames
+	dw LileepFrames
+	dw CradilyFrames
+	dw AnorithFrames
+	dw ArmaldoFrames
+	dw MudkipFrames
+	dw MarshtompFrames
+	dw SwampertFrames
 	dw RelicanthFrames
 	dw LuvdiscFrames
 	dw RaelicFrames
@@ -139,16 +138,15 @@ FramePointers3:
 	dw DeoxysFrames
 .IndirectEnd::
 
-TreeckoFrames:       INCLUDE "gfx/pokemon/hoenn/treecko/frames.asm"
-GrovyleFrames:       INCLUDE "gfx/pokemon/hoenn/grovyle/frames.asm"
-SceptileFrames:      INCLUDE "gfx/pokemon/hoenn/sceptile/frames.asm"
-TorchicFrames:       INCLUDE "gfx/pokemon/hoenn/torchic/frames.asm"
-CombuskenFrames:     INCLUDE "gfx/pokemon/hoenn/combusken/frames.asm"
-BlazikenFrames:      INCLUDE "gfx/pokemon/hoenn/blaziken/frames.asm"
-MudkipFrames:        INCLUDE "gfx/pokemon/hoenn/mudkip/frames.asm"
-MarshtompFrames:     INCLUDE "gfx/pokemon/hoenn/marshtomp/frames.asm"
-SwampertFrames:      INCLUDE "gfx/pokemon/hoenn/swampert/frames.asm"
-EuxinosFrames:       INCLUDE "gfx/pokemon/hoenn/euxinos/frames.asm"
+TurtwigFrames:       INCLUDE "gfx/pokemon/hoenn/turtwig/frames.asm"
+GrotleFrames:        INCLUDE "gfx/pokemon/hoenn/grotle/frames.asm"
+TorterraFrames:      INCLUDE "gfx/pokemon/hoenn/torterra/frames.asm"
+ChimcharFrames:      INCLUDE "gfx/pokemon/hoenn/chimchar/frames.asm"
+MonfernoFrames:      INCLUDE "gfx/pokemon/hoenn/monferno/frames.asm"
+InfernapeFrames:     INCLUDE "gfx/pokemon/hoenn/infernape/frames.asm"
+PiplupFrames:        INCLUDE "gfx/pokemon/hoenn/piplup/frames.asm"
+PrinplupFrames:      INCLUDE "gfx/pokemon/hoenn/prinplup/frames.asm"
+EmpoleonFrames:      INCLUDE "gfx/pokemon/hoenn/empoleon/frames.asm"
 WeavileFrames:       INCLUDE "gfx/pokemon/hoenn/weavile/frames.asm"
 HonchkrowFrames:     INCLUDE "gfx/pokemon/hoenn/honchkrow/frames.asm"
 GliscorFrames:       INCLUDE "gfx/pokemon/hoenn/gliscor/frames.asm"
@@ -157,10 +155,10 @@ GlaceonFrames:       INCLUDE "gfx/pokemon/hoenn/glaceon/frames.asm"
 YanmegaFrames:       INCLUDE "gfx/pokemon/hoenn/yanmega/frames.asm"
 KujinoughtFrames:    INCLUDE "gfx/pokemon/hoenn/kujinought/frames.asm"
 MlloyFrames:         INCLUDE "gfx/pokemon/hoenn/mlloy/frames.asm"
-LotugaFrames:         INCLUDE "gfx/pokemon/hoenn/lotuga/frames.asm"
-VertugaFrames:      INCLUDE "gfx/pokemon/hoenn/vertuga/frames.asm"
-ColijoboFrames:       INCLUDE "gfx/pokemon/hoenn/colijobo/frames.asm"
-CrenjoboFrames:       INCLUDE "gfx/pokemon/hoenn/crenjobo/frames.asm"
+LotugaFrames:        INCLUDE "gfx/pokemon/hoenn/lotuga/frames.asm"
+VertugaFrames:       INCLUDE "gfx/pokemon/hoenn/vertuga/frames.asm"
+ColijoboFrames:      INCLUDE "gfx/pokemon/hoenn/colijobo/frames.asm"
+CrenjoboFrames:      INCLUDE "gfx/pokemon/hoenn/crenjobo/frames.asm"
 ElectivireFrames:    INCLUDE "gfx/pokemon/hoenn/electivire/frames.asm"
 MagmortarFrames:     INCLUDE "gfx/pokemon/hoenn/magmortar/frames.asm"
 VoltrelFrames:       INCLUDE "gfx/pokemon/hoenn/voltrel/frames.asm"
@@ -170,8 +168,8 @@ DuosionFrames:       INCLUDE "gfx/pokemon/hoenn/duosion/frames.asm"
 ReuniclusFrames:     INCLUDE "gfx/pokemon/hoenn/reuniclus/frames.asm"
 SurskitFrames:       INCLUDE "gfx/pokemon/hoenn/surskit/frames.asm"
 MasquerainFrames:    INCLUDE "gfx/pokemon/hoenn/masquerain/frames.asm"
-ShroomishFrames:     INCLUDE "gfx/pokemon/hoenn/shroomish/frames.asm"
-BreloomFrames:       INCLUDE "gfx/pokemon/hoenn/breloom/frames.asm"
+Iron_penguFrames:    INCLUDE "gfx/pokemon/hoenn/iron_pengu/frames.asm"
+Iron_thornFrames:    INCLUDE "gfx/pokemon/hoenn/iron_thorn/frames.asm"
 SlakothFrames:       INCLUDE "gfx/pokemon/hoenn/slakoth/frames.asm"
 VigorothFrames:      INCLUDE "gfx/pokemon/hoenn/vigoroth/frames.asm"
 SlakingFrames:       INCLUDE "gfx/pokemon/hoenn/slaking/frames.asm"
@@ -187,7 +185,7 @@ AzurillFrames:       INCLUDE "gfx/pokemon/hoenn/azurill/frames.asm"
 NosepassFrames:      INCLUDE "gfx/pokemon/hoenn/nosepass/frames.asm"
 SkittyFrames:        INCLUDE "gfx/pokemon/hoenn/skitty/frames.asm"
 DelcattyFrames:      INCLUDE "gfx/pokemon/hoenn/delcatty/frames.asm"
-SpiritombFrames:     INCLUDE "gfx/pokemon/hoenn/spiritomb/frames.asm"
+TropiusFrames:       INCLUDE "gfx/pokemon/hoenn/tropius/frames.asm"
 TangrowthFrames:     INCLUDE "gfx/pokemon/hoenn/tangrowth/frames.asm"
 AronFrames:          INCLUDE "gfx/pokemon/hoenn/aron/frames.asm"
 LaironFrames:        INCLUDE "gfx/pokemon/hoenn/lairon/frames.asm"
@@ -248,15 +246,15 @@ AbsolFrames:         INCLUDE "gfx/pokemon/hoenn/absol/frames.asm"
 MagnezoneFrames:     INCLUDE "gfx/pokemon/hoenn/magnezone/frames.asm"
 SnoverFrames:        INCLUDE "gfx/pokemon/hoenn/snover/frames.asm"
 AbomasnowFrames:     INCLUDE "gfx/pokemon/hoenn/abomasnow/frames.asm"
-TurtwigFrames:       INCLUDE "gfx/pokemon/hoenn/turtwig/frames.asm"
-GrotleFrames:        INCLUDE "gfx/pokemon/hoenn/grotle/frames.asm"
-TorterraFrames:      INCLUDE "gfx/pokemon/hoenn/torterra/frames.asm"
-ChimcharFrames:      INCLUDE "gfx/pokemon/hoenn/chimchar/frames.asm"
-MonfernoFrames:      INCLUDE "gfx/pokemon/hoenn/monferno/frames.asm"
-InfernapeFrames:     INCLUDE "gfx/pokemon/hoenn/infernape/frames.asm"
-PiplupFrames:        INCLUDE "gfx/pokemon/hoenn/piplup/frames.asm"
-PrinplupFrames:      INCLUDE "gfx/pokemon/hoenn/prinplup/frames.asm"
-EmpoleonFrames:      INCLUDE "gfx/pokemon/hoenn/empoleon/frames.asm"
+ShuppetFrames:       INCLUDE "gfx/pokemon/hoenn/shuppet/frames.asm"
+BanetteFrames:       INCLUDE "gfx/pokemon/hoenn/banette/frames.asm"
+LileepFrames:        INCLUDE "gfx/pokemon/hoenn/lileep/frames.asm"
+CradilyFrames:       INCLUDE "gfx/pokemon/hoenn/cradily/frames.asm"
+AnorithFrames:       INCLUDE "gfx/pokemon/hoenn/anorith/frames.asm"
+ArmaldoFrames:       INCLUDE "gfx/pokemon/hoenn/armaldo/frames.asm"
+MudkipFrames:        INCLUDE "gfx/pokemon/hoenn/mudkip/frames.asm"
+MarshtompFrames:     INCLUDE "gfx/pokemon/hoenn/marshtomp/frames.asm"
+SwampertFrames:      INCLUDE "gfx/pokemon/hoenn/swampert/frames.asm"
 RelicanthFrames:     INCLUDE "gfx/pokemon/hoenn/relicanth/frames.asm"
 LuvdiscFrames:       INCLUDE "gfx/pokemon/hoenn/luvdisc/frames.asm"
 RaelicFrames:        INCLUDE "gfx/pokemon/hoenn/raelic/frames.asm"

@@ -11,14 +11,17 @@ AlphabeticalPokedexOrder:
 	dw ALAKAZAM
 	dw ALTARIA
 	dw AMPHAROS
+	dw ANORITH
 	dw ARBOK
 	dw ARCANINE
 	dw ARIADOS
+	dw ARMALDO
 	dw ARON
 	dw ARTICUNO
 	dw AZUMARILL
 	dw AZURILL
 	dw BALTOY
+	dw BANETTE
 	dw BARBOACH
 	dw BAYLEEF
 	dw BEEDRILL
@@ -26,9 +29,7 @@ AlphabeticalPokedexOrder:
 	dw BELLOSSOM
 	dw BELLSPROUT
 	dw BLASTOISE
-	dw BLAZIKEN
 	dw BLISSEY
-	dw BRELOOM
 	dw BULBASAUR
 	dw BUTTERFREE
 	dw CARVANHA
@@ -50,9 +51,9 @@ AlphabeticalPokedexOrder:
 	dw CLEFFA
 	dw CLOYSTER
 	dw COLIJOBO
-	dw COMBUSKEN
 	dw CORSOLA
 	dw CORSOREEF
+	dw CRADILY
 	dw CRENJOBO
 	dw CROBAT
 	dw CROCONAW
@@ -80,16 +81,15 @@ AlphabeticalPokedexOrder:
 	dw DUSKULL
 	dw EELEKTRIK
 	dw EELEKTROSS
+	dw EMPOLEON
 	dw EEVEE
 	dw EKANS
 	dw ELECTABUZZ
 	dw ELECTIVIRE
 	dw ELECTRODE
 	dw ELEKID
-	dw EMPOLEON
 	dw ENTEI
 	dw ESPEON
-	dw EUXINOS
 	dw EXEGGCUTE
 	dw EXEGGUTOR
 	dw FARFETCH_D
@@ -121,7 +121,6 @@ AlphabeticalPokedexOrder:
 	dw GRIMMSNARL
 	dw GROTLE
 	dw GROUDON
-	dw GROVYLE
 	dw GROWLITHE
 	dw GYARADOS
 	dw HARIYAMA
@@ -141,6 +140,8 @@ AlphabeticalPokedexOrder:
 	dw IGGLYBUFF
 	dw IMPIDIMP
 	dw INFERNAPE
+	dw IRON_PENGU
+	dw IRON_THORN
 	dw IVYSAUR
 	dw JIGGLYPUFF
 	dw JIRACHI
@@ -174,6 +175,7 @@ AlphabeticalPokedexOrder:
 	dw LEDIAN
 	dw LEDYBA
 	dw LICKITUNG
+	dw LILEEP
 	dw LITWICK
 	dw LOTUGA
 	dw LUGIA
@@ -197,7 +199,6 @@ AlphabeticalPokedexOrder:
 	dw MAREEP
 	dw MARILL
 	dw MAROWAK
-	dw MARSHTOMP
 	dw MASQUERAIN
 	dw MEDICHAM
 	dw MEDITITE
@@ -216,7 +217,6 @@ AlphabeticalPokedexOrder:
 	dw MONFERNO
 	dw MORGREM
 	dw MR__MIME
-	dw MUDKIP
 	dw MUK
 	dw MUNCHLAX
 	dw MURKROW
@@ -285,7 +285,6 @@ AlphabeticalPokedexOrder:
 	dw ROMUSHU
 	dw SANDSHREW
 	dw SANDSLASH
-	dw SCEPTILE
 	dw SCIZOR
 	dw SCYTHER
 	dw SEADRA
@@ -296,8 +295,8 @@ AlphabeticalPokedexOrder:
 	dw SHEDINJA
 	dw SHELLDER
 	dw SHINX
-	dw SHROOMISH
 	dw SHUCKLE
+	dw SHUPPET
 	dw SKARMORY
 	dw SKIPLOOM
 	dw SKITTY
@@ -318,7 +317,6 @@ AlphabeticalPokedexOrder:
 	dw SOLOSIS
 	dw SPEAROW
 	dw SPINARAK
-	dw SPIRITOMB
 	dw SQUIRTLE
 	dw STANTLER
 	dw STARMIE
@@ -330,7 +328,6 @@ AlphabeticalPokedexOrder:
 	dw SUNKERN
 	dw SURSKIT
 	dw SWABLU
-	dw SWAMPERT
 	dw SWINUB
 	dw TANGELA
 	dw TANGROWTH
@@ -343,12 +340,11 @@ AlphabeticalPokedexOrder:
 	dw TINKATUFF
 	dw TOGEPI
 	dw TOGETIC
-	dw TORCHIC
 	dw TORKOAL
 	dw TORTERRA
 	dw TOTODILE
 	dw TRAPINCH
-	dw TREECKO
+	dw TROPIUS
 	dw TURTWIG
 	dw TYNAMO
 	dw TYPHLOSION
@@ -389,4 +385,7 @@ AlphabeticalPokedexOrder:
 	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT
+	dw MUDKIP
+	dw MARSHTOMP
+	dw SWAMPERT
 	assert_table_length NUM_POKEMON

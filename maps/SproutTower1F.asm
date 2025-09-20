@@ -102,7 +102,7 @@ BatoScript_BatoBeatenText:
 	done
 
 BatoScript_BatoDefeatText:
-	text "My SWAMPERT didn't"
+	text "My Froggy didn't"
 	line "stand a chance…"
 	done
 

@@ -1,16 +1,15 @@
 SECTION "Idle Animations 3", ROMX
 
 AnimationIdlePointers3:
-	dw TreeckoAnimationIdle
-	dw GrovyleAnimationIdle
-	dw SceptileAnimationIdle
-	dw TorchicAnimationIdle
-	dw CombuskenAnimationIdle
-	dw BlazikenAnimationIdle
-	dw MudkipAnimationIdle
-	dw MarshtompAnimationIdle
-	dw SwampertAnimationIdle
-	dw EuxinosAnimationIdle
+	dw TurtwigAnimationIdle
+	dw GrotleAnimationIdle
+	dw TorterraAnimationIdle
+	dw ChimcharAnimationIdle
+	dw MonfernoAnimationIdle
+	dw InfernapeAnimationIdle
+	dw PiplupAnimationIdle
+	dw PrinplupAnimationIdle
+	dw EmpoleonAnimationIdle
 	dw WeavileAnimationIdle
 	dw HonchkrowAnimationIdle
 	dw GliscorAnimationIdle
@@ -32,8 +31,8 @@ AnimationIdlePointers3:
 	dw ReuniclusAnimationIdle
 	dw SurskitAnimationIdle
 	dw MasquerainAnimationIdle
-	dw ShroomishAnimationIdle
-	dw BreloomAnimationIdle
+	dw Iron_penguAnimationIdle
+	dw Iron_thornAnimationIdle
 	dw SlakothAnimationIdle
 	dw VigorothAnimationIdle
 	dw SlakingAnimationIdle
@@ -49,7 +48,7 @@ AnimationIdlePointers3:
 	dw NosepassAnimationIdle
 	dw SkittyAnimationIdle
 	dw DelcattyAnimationIdle
-	dw SpiritombAnimationIdle
+	dw TropiusAnimationIdle
 	dw TangrowthAnimationIdle
 	dw AronAnimationIdle
 	dw LaironAnimationIdle
@@ -110,15 +109,15 @@ AnimationIdlePointers3:
 	dw MagnezoneAnimationIdle
 	dw SnoverAnimationIdle
 	dw AbomasnowAnimationIdle
-	dw TurtwigAnimationIdle
-	dw GrotleAnimationIdle
-	dw TorterraAnimationIdle
-	dw ChimcharAnimationIdle
-	dw MonfernoAnimationIdle
-	dw InfernapeAnimationIdle
-	dw PiplupAnimationIdle
-	dw PrinplupAnimationIdle
-	dw EmpoleonAnimationIdle
+	dw ShuppetAnimationIdle
+	dw BanetteAnimationIdle
+	dw LileepAnimationIdle
+	dw CradilyAnimationIdle
+	dw AnorithAnimationIdle
+	dw ArmaldoAnimationIdle
+	dw MudkipAnimationIdle
+	dw MarshtompAnimationIdle
+	dw SwampertAnimationIdle
 	dw RelicanthAnimationIdle
 	dw LuvdiscAnimationIdle
 	dw RaelicAnimationIdle
@@ -139,16 +138,15 @@ AnimationIdlePointers3:
 	dw DeoxysAnimationIdle
 .IndirectEnd::
 
-TreeckoAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/treecko/anim_idle.asm"
-GrovyleAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/grovyle/anim_idle.asm"
-SceptileAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/sceptile/anim_idle.asm"
-TorchicAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/torchic/anim_idle.asm"
-CombuskenAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/combusken/anim_idle.asm"
-BlazikenAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/blaziken/anim_idle.asm"
-MudkipAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/mudkip/anim_idle.asm"
-MarshtompAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/marshtomp/anim_idle.asm"
-SwampertAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/swampert/anim_idle.asm"
-EuxinosAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/euxinos/anim_idle.asm"
+TurtwigAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/turtwig/anim_idle.asm"
+GrotleAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/grotle/anim_idle.asm"
+TorterraAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/torterra/anim_idle.asm"
+ChimcharAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/chimchar/anim_idle.asm"
+MonfernoAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/monferno/anim_idle.asm"
+InfernapeAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/infernape/anim_idle.asm"
+PiplupAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/piplup/anim_idle.asm"
+PrinplupAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/prinplup/anim_idle.asm"
+EmpoleonAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/empoleon/anim_idle.asm"
 WeavileAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/weavile/anim_idle.asm"
 HonchkrowAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/honchkrow/anim_idle.asm"
 GliscorAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/gliscor/anim_idle.asm"
@@ -157,10 +155,10 @@ GlaceonAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/glaceon/anim_idle.asm"
 YanmegaAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/yanmega/anim_idle.asm"
 KujinoughtAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/kujinought/anim_idle.asm"
 MlloyAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/mlloy/anim_idle.asm"
-LotugaAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/lotuga/anim_idle.asm"
-VertugaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/vertuga/anim_idle.asm"
-ColijoboAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/colijobo/anim_idle.asm"
-CrenjoboAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/crenjobo/anim_idle.asm"
+LotugaAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/lotuga/anim_idle.asm"
+VertugaAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/vertuga/anim_idle.asm"
+ColijoboAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/colijobo/anim_idle.asm"
+CrenjoboAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/crenjobo/anim_idle.asm"
 ElectivireAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/electivire/anim_idle.asm"
 MagmortarAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/magmortar/anim_idle.asm"
 VoltrelAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/voltrel/anim_idle.asm"
@@ -170,8 +168,8 @@ DuosionAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/duosion/anim_idle.asm"
 ReuniclusAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/reuniclus/anim_idle.asm"
 SurskitAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/surskit/anim_idle.asm"
 MasquerainAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/masquerain/anim_idle.asm"
-ShroomishAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/shroomish/anim_idle.asm"
-BreloomAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/breloom/anim_idle.asm"
+Iron_penguAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/iron_pengu/anim_idle.asm"
+Iron_thornAnimationIdle:    INCLUDE "gfx/pokemon/hoenn/iron_thorn/anim_idle.asm"
 SlakothAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/slakoth/anim_idle.asm"
 VigorothAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/vigoroth/anim_idle.asm"
 SlakingAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/slaking/anim_idle.asm"
@@ -187,7 +185,7 @@ AzurillAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/azurill/anim_idle.asm"
 NosepassAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/nosepass/anim_idle.asm"
 SkittyAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/skitty/anim_idle.asm"
 DelcattyAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/delcatty/anim_idle.asm"
-SpiritombAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/spiritomb/anim_idle.asm"
+TropiusAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/tropius/anim_idle.asm"
 TangrowthAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/tangrowth/anim_idle.asm"
 AronAnimationIdle:          INCLUDE "gfx/pokemon/hoenn/aron/anim_idle.asm"
 LaironAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/lairon/anim_idle.asm"
@@ -248,15 +246,15 @@ AbsolAnimationIdle:         INCLUDE "gfx/pokemon/hoenn/absol/anim_idle.asm"
 MagnezoneAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/magnezone/anim_idle.asm"
 SnoverAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/snover/anim_idle.asm"
 AbomasnowAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/abomasnow/anim_idle.asm"
-TurtwigAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/turtwig/anim_idle.asm"
-GrotleAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/grotle/anim_idle.asm"
-TorterraAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/torterra/anim_idle.asm"
-ChimcharAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/chimchar/anim_idle.asm"
-MonfernoAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/monferno/anim_idle.asm"
-InfernapeAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/infernape/anim_idle.asm"
-PiplupAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/piplup/anim_idle.asm"
-PrinplupAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/prinplup/anim_idle.asm"
-EmpoleonAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/empoleon/anim_idle.asm"
+ShuppetAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/shuppet/anim_idle.asm"
+BanetteAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/banette/anim_idle.asm"
+LileepAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/lileep/anim_idle.asm"
+CradilyAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/cradily/anim_idle.asm"
+AnorithAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/anorith/anim_idle.asm"
+ArmaldoAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/armaldo/anim_idle.asm"
+MudkipAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/mudkip/anim_idle.asm"
+MarshtompAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/marshtomp/anim_idle.asm"
+SwampertAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/swampert/anim_idle.asm"
 RelicanthAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/relicanth/anim_idle.asm"
 LuvdiscAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/luvdisc/anim_idle.asm"
 RaelicAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/raelic/anim_idle.asm"

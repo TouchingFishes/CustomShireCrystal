@@ -1,16 +1,15 @@
 SECTION "Egg Moves 3", ROMX
 
 EggMovePointers3::
-	dw TreeckoEggMoves
+	dw TurtwigEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
-	dw TorchicEggMoves
+	dw ChimcharEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
-	dw MudkipEggMoves
+	dw PiplupEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
-	dw EuxinosEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw NoEggMoves3
@@ -33,7 +32,7 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw SurskitEggMoves
 	dw NoEggMoves3
-	dw ShroomishEggMoves
+	dw NoEggMoves3
 	dw NoEggMoves3
 	dw SlakothEggMoves
 	dw NoEggMoves3
@@ -49,7 +48,7 @@ EggMovePointers3::
 	dw AzurillEggMoves
 	dw SkittyEggMoves
 	dw NoEggMoves3
-	dw SpiritombEggMoves
+	dw TropiusEggMoves
 	dw NoEggMoves3
 	dw AronEggMoves
 	dw NoEggMoves3
@@ -109,13 +108,13 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw SnoverEggMoves
 	dw NoEggMoves3
-	dw TurtwigEggMoves
+	dw ShuppetEggMoves
 	dw NoEggMoves3
+	dw LileepEggMoves
 	dw NoEggMoves3
-	dw ChimcharEggMoves
+	dw AnorithEggMoves
 	dw NoEggMoves3
-	dw NoEggMoves3
-	dw PiplupEggMoves
+	dw MudkipEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw RelicanthEggMoves
@@ -139,39 +138,39 @@ EggMovePointers3::
 	dw NoEggMoves3
 .IndirectEnd::
 
-TreeckoEggMoves:
-	dw CRUNCH
-	dw CRUSH_CLAW
-	dw RAZOR_WIND
-	dw ENDEAVOR
-	dw LEECH_SEED
-	dw -1 ; end
-
-TorchicEggMoves:
-	dw COUNTER
-	dw ENDURE
-	dw REVERSAL
+TurtwigEggMoves:
+	dw AMNESIA
+	dw BODY_SLAM
 	dw ROCK_SLIDE
-	dw SMELLINGSALT
-	dw SWAGGER
-	dw CRUSH_CLAW
+	dw STONE_EDGE
+	dw THRASH
+	dw SUPERPOWER
+	dw SAND_TOMB
+	dw TICKLE
+	dw GROWTH
+	dw SPIT_UP
+	dw STOCKPILE
+	dw SWALLOW
 	dw -1 ; end
 
-MudkipEggMoves:
-	dw CURSE
-	dw ICE_BALL
-	dw MIRROR_COAT
-	dw REFRESH
-	dw STOMP
-	dw UPROAR
-	dw -1 ; end
+ChimcharEggMoves:
+	dw YAWN
+	dw DOUBLE_KICK
+	dw FOCUS_ENERGY
+	dw BLAZE_KICK
+	dw COUNTER
+	dw FAKE_OUT
+	dw ENCORE
+	dw -1 ; end	
 
-EuxinosEggMoves:
-	dw ASTONISH
-	dw COVET
-	dw LEER
-	dw POISON_TAIL
-	dw FAINT_ATTACK
+PiplupEggMoves:
+	dw AGILITY
+	dw FEATHERDANCE
+	dw FLAIL
+	dw YAWN
+	dw HYDRO_PUMP
+	dw SNORE
+	dw SUPERSONIC
 	dw -1 ; end
 
 LotugaEggMoves:
@@ -217,13 +216,6 @@ SurskitEggMoves:
 	dw MIND_READER
 	dw MUD_SHOT
 	dw PSYBEAM
-	dw -1 ; end
-
-ShroomishEggMoves:
-	dw CHARM
-	dw FAKE_TEARS
-	dw FALSE_SWIPE
-	dw SWAGGER
 	dw -1 ; end
 
 SlakothEggMoves:
@@ -281,14 +273,12 @@ SkittyEggMoves:
 	dw WISH
 	dw -1 ; end
 
-SpiritombEggMoves:
-	dw PSYCH_UP
-	dw PAIN_SPLIT
-	dw SMOKESCREEN
-	dw DESTINY_BOND
-	dw IMPRISON
-	dw GRUDGE
-	dw RECOVER
+TropiusEggMoves:
+	dw HEADBUTT
+	dw LEECH_SEED
+	dw NATURE_POWER
+	dw RAZOR_WIND
+	dw SLAM
 	dw -1 ; end
 
 AronEggMoves:
@@ -484,39 +474,35 @@ SnoverEggMoves:
 	dw MAGICAL_LEAF
 	dw -1 ; end
 
-TurtwigEggMoves:
-	dw AMNESIA
-	dw BODY_SLAM
+ShuppetEggMoves:
+	dw ASTONISH
+	dw DESTINY_BOND
+	dw DISABLE
+	dw FORESIGHT
+	dw IMPRISON
+	dw -1 ; end
+
+LileepEggMoves:
+	dw BARRIER
+	dw MIRROR_COAT
+	dw RECOVER
 	dw ROCK_SLIDE
-	dw STONE_EDGE
-	dw THRASH
-	dw SUPERPOWER
-	dw SAND_TOMB
-	dw TICKLE
-	dw GROWTH
-	dw SPIT_UP
-	dw STOCKPILE
-	dw SWALLOW
 	dw -1 ; end
 
-ChimcharEggMoves:
-	dw YAWN
-	dw DOUBLE_KICK
-	dw FOCUS_ENERGY
-	dw BLAZE_KICK
-	dw COUNTER
-	dw FAKE_OUT
-	dw ENCORE
+AnorithEggMoves:
+	dw KNOCK_OFF
+	dw RAPID_SPIN
+	dw ROCK_SLIDE
+	dw SWORDS_DANCE
 	dw -1 ; end
 
-PiplupEggMoves:
-	dw AGILITY
-	dw FEATHERDANCE
-	dw FLAIL
-	dw YAWN
-	dw HYDRO_PUMP
-	dw SNORE
-	dw SUPERSONIC
+MudkipEggMoves:
+	dw CURSE
+	dw ICE_BALL
+	dw MIRROR_COAT
+	dw REFRESH
+	dw STOMP
+	dw UPROAR
 	dw -1 ; end
 
 RelicanthEggMoves:

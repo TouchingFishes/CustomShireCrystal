@@ -259,16 +259,15 @@ IconPointers:
 	dw HoOhIcon
 	dw CelebiIcon
 ; Hoenn
-	dw TreeckoIcon
-	dw GrovyleIcon
-	dw SceptileIcon
-	dw TorchicIcon
-	dw CombuskenIcon
-	dw BlazikenIcon
-	dw MudkipIcon
-	dw MarshtompIcon
-	dw SwampertIcon
-	dw EuxinosIcon
+	dw TurtwigIcon
+	dw GrotleIcon
+	dw TorterraIcon
+	dw ChimcharIcon
+	dw MonfernoIcon
+	dw InfernapeIcon
+	dw PiplupIcon
+	dw PrinplupIcon
+	dw EmpoleonIcon
 	dw WeavileIcon
 	dw HonchkrowIcon
 	dw GliscorIcon
@@ -290,8 +289,8 @@ IconPointers:
 	dw ReuniclusIcon
 	dw SurskitIcon
 	dw MasquerainIcon
-	dw ShroomishIcon
-	dw BreloomIcon
+	dw Iron_penguIcon
+	dw Iron_thornIcon
 	dw SlakothIcon
 	dw VigorothIcon
 	dw SlakingIcon
@@ -307,7 +306,7 @@ IconPointers:
 	dw NosepassIcon
 	dw SkittyIcon
 	dw DelcattyIcon
-	dw SpiritombIcon
+	dw TropiusIcon
 	dw TangrowthIcon
 	dw AronIcon
 	dw LaironIcon
@@ -368,15 +367,15 @@ IconPointers:
 	dw MagnezoneIcon
 	dw SnoverIcon
 	dw AbomasnowIcon
-	dw TurtwigIcon
-	dw GrotleIcon
-	dw TorterraIcon
-	dw ChimcharIcon
-	dw MonfernoIcon
-	dw InfernapeIcon
-	dw PiplupIcon
-	dw PrinplupIcon
-	dw EmpoleonIcon
+	dw ShuppetIcon
+	dw BanetteIcon
+	dw LileepIcon
+	dw CradilyIcon
+	dw AnorithIcon
+	dw ArmaldoIcon
+	dw MudkipIcon
+	dw MarshtompIcon
+	dw SwampertIcon
 	dw RelicanthIcon
 	dw LuvdiscIcon
 	dw RaelicIcon

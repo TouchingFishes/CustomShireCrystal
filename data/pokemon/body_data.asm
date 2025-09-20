@@ -256,16 +256,15 @@ PokemonBodyData:
 	dw 1206, 4390  ; HO_OH
 	dw 200, 110    ; CELEBI
 ; Hoenn
-	dw 108, 110    ; TREECKO
-	dw 211, 476    ; GROVYLE
-	dw 507, 1151   ; SCEPTILE
-	dw 104, 55     ; TORCHIC
-	dw 211, 430    ; COMBUSKEN
-	dw 603, 1146   ; BLAZIKEN
-	dw 104, 168    ; MUDKIP
-	dw 204, 617    ; MARSHTOMP
-	dw 411, 1806   ; SWAMPERT
-	dw 108, 300    ; EUXINOS
+	dw 104, 225    ; TURTWIG
+	dw 307, 2138   ; GROTLE
+	dw 703, 6834   ; TORTERRA
+	dw 108, 137    ; CHIMCHAR
+	dw 211, 485    ; MONFERNO
+	dw 311, 1213   ; INFERNAPE
+	dw 104, 115	   ; PIPLUP
+	dw 207, 507	   ; PRINPLUP
+	dw 507, 1863   ; EMPOLEON
 	dw 307, 750    ; WEAVILE
 	dw 211, 602    ; HONCHKROW
 	dw 607, 937    ; GLISCOR
@@ -287,8 +286,8 @@ PokemonBodyData:
 	dw 303, 443    ; REUNICLUS
 	dw 108, 37     ; SURSKIT
 	dw 207, 79     ; MASQUERAIN
-	dw 104, 99     ; SHROOMISH
-	dw 311, 864    ; BRELOOM
+	dw 200, 243    ; IRON_BUNDLE
+	dw 503, 6680   ; IRON_THORNS
 	dw 207, 529    ; SLAKOTH
 	dw 407, 1025   ; VIGOROTH
 	dw 607, 2877   ; SLAKING
@@ -304,7 +303,7 @@ PokemonBodyData:
 	dw 303, 2138   ; NOSEPASS
 	dw 200, 243    ; SKITTY
 	dw 307, 719    ; DELCATTY
-	dw 303, 2381   ; SPIRITOMB
+	dw 607, 2205   ; TROPIUS
 	dw 607, 2835   ; TANGROWTH
 	dw 104, 1323   ; ARON
 	dw 211, 2646   ; LAIRON
@@ -365,15 +364,15 @@ PokemonBodyData:
 	dw 311, 3968   ; MAGNEZONE
 	dw 303, 1113   ; SNOVER
 	dw 703, 2987   ; ABOMASNOW
-	dw 104, 225    ; TURTWIG
-	dw 307, 2138   ; GROTLE
-	dw 703, 6834   ; TORTERRA
-	dw 108, 137    ; CHIMCHAR
-	dw 211, 485    ; MONFERNO
-	dw 311, 1213   ; INFERNAPE
-	dw 104, 115	   ; PIPLUP
-	dw 207, 507	   ; PRINPLUP
-	dw 507, 1863   ; EMPOLEON
+	dw 200, 51     ; SHUPPET
+	dw 307, 276    ; BANETTE
+	dw 303, 525    ; LILEEP
+	dw 411, 1332   ; CRADILY
+	dw 204, 276    ; ANORITH
+	dw 411, 1504   ; ARMALDO
+	dw 104, 168    ; MUDKIP
+	dw 204, 617    ; MARSHTOMP
+	dw 411, 1806   ; SWAMPERT
 	dw 303, 516    ; RELICANTH
 	dw 200, 192    ; LUVDISC
 	dw 14,  77     ; RAELIC

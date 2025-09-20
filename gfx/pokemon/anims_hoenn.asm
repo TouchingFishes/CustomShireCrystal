@@ -1,16 +1,15 @@
 SECTION "Animations 3", ROMX
 
 AnimationPointers3:
-	dw TreeckoAnimation
-	dw GrovyleAnimation
-	dw SceptileAnimation
-	dw TorchicAnimation
-	dw CombuskenAnimation
-	dw BlazikenAnimation
-	dw MudkipAnimation
-	dw MarshtompAnimation
-	dw SwampertAnimation
-	dw EuxinosAnimation
+	dw TurtwigAnimation
+	dw GrotleAnimation
+	dw TorterraAnimation
+	dw ChimcharAnimation
+	dw MonfernoAnimation
+	dw InfernapeAnimation
+	dw PiplupAnimation
+	dw PrinplupAnimation
+	dw EmpoleonAnimation
 	dw WeavileAnimation
 	dw HonchkrowAnimation
 	dw GliscorAnimation
@@ -32,8 +31,8 @@ AnimationPointers3:
 	dw ReuniclusAnimation
 	dw SurskitAnimation
 	dw MasquerainAnimation
-	dw ShroomishAnimation
-	dw BreloomAnimation
+	dw Iron_penguAnimation
+	dw Iron_thornAnimation
 	dw SlakothAnimation
 	dw VigorothAnimation
 	dw SlakingAnimation
@@ -49,7 +48,7 @@ AnimationPointers3:
 	dw NosepassAnimation
 	dw SkittyAnimation
 	dw DelcattyAnimation
-	dw SpiritombAnimation
+	dw TropiusAnimation
 	dw TangrowthAnimation
 	dw AronAnimation
 	dw LaironAnimation
@@ -110,15 +109,15 @@ AnimationPointers3:
 	dw MagnezoneAnimation
 	dw SnoverAnimation
 	dw AbomasnowAnimation
-	dw TurtwigAnimation
-	dw GrotleAnimation
-	dw TorterraAnimation
-	dw ChimcharAnimation
-	dw MonfernoAnimation
-	dw InfernapeAnimation
-	dw PiplupAnimation
-	dw PrinplupAnimation
-	dw EmpoleonAnimation
+	dw ShuppetAnimation
+	dw BanetteAnimation
+	dw LileepAnimation
+	dw CradilyAnimation
+	dw AnorithAnimation
+	dw ArmaldoAnimation
+	dw MudkipAnimation
+	dw MarshtompAnimation
+	dw SwampertAnimation
 	dw RelicanthAnimation
 	dw LuvdiscAnimation
 	dw RaelicAnimation
@@ -139,16 +138,15 @@ AnimationPointers3:
 	dw DeoxysAnimation
 .IndirectEnd::
 
-TreeckoAnimation:       INCLUDE "gfx/pokemon/hoenn/treecko/anim.asm"
-GrovyleAnimation:       INCLUDE "gfx/pokemon/hoenn/grovyle/anim.asm"
-SceptileAnimation:      INCLUDE "gfx/pokemon/hoenn/sceptile/anim.asm"
-TorchicAnimation:       INCLUDE "gfx/pokemon/hoenn/torchic/anim.asm"
-CombuskenAnimation:     INCLUDE "gfx/pokemon/hoenn/combusken/anim.asm"
-BlazikenAnimation:      INCLUDE "gfx/pokemon/hoenn/blaziken/anim.asm"
-MudkipAnimation:        INCLUDE "gfx/pokemon/hoenn/mudkip/anim.asm"
-MarshtompAnimation:     INCLUDE "gfx/pokemon/hoenn/marshtomp/anim.asm"
-SwampertAnimation:      INCLUDE "gfx/pokemon/hoenn/swampert/anim.asm"
-EuxinosAnimation:       INCLUDE "gfx/pokemon/hoenn/euxinos/anim.asm"
+TurtwigAnimation:       INCLUDE "gfx/pokemon/hoenn/turtwig/anim.asm"
+GrotleAnimation:        INCLUDE "gfx/pokemon/hoenn/grotle/anim.asm"
+TorterraAnimation:      INCLUDE "gfx/pokemon/hoenn/torterra/anim.asm"
+ChimcharAnimation:      INCLUDE "gfx/pokemon/hoenn/chimchar/anim.asm"
+MonfernoAnimation:      INCLUDE "gfx/pokemon/hoenn/monferno/anim.asm"
+InfernapeAnimation:     INCLUDE "gfx/pokemon/hoenn/infernape/anim.asm"
+PiplupAnimation:        INCLUDE "gfx/pokemon/hoenn/piplup/anim.asm"
+PrinplupAnimation:      INCLUDE "gfx/pokemon/hoenn/prinplup/anim.asm"
+EmpoleonAnimation:      INCLUDE "gfx/pokemon/hoenn/empoleon/anim.asm"
 WeavileAnimation:       INCLUDE "gfx/pokemon/hoenn/weavile/anim.asm"
 HonchkrowAnimation:     INCLUDE "gfx/pokemon/hoenn/honchkrow/anim.asm"
 GliscorAnimation:       INCLUDE "gfx/pokemon/hoenn/gliscor/anim.asm"
@@ -157,10 +155,10 @@ GlaceonAnimation:       INCLUDE "gfx/pokemon/hoenn/glaceon/anim.asm"
 YanmegaAnimation:       INCLUDE "gfx/pokemon/hoenn/yanmega/anim.asm"
 KujinoughtAnimation:    INCLUDE "gfx/pokemon/hoenn/kujinought/anim.asm"
 MlloyAnimation:         INCLUDE "gfx/pokemon/hoenn/mlloy/anim.asm"
-LotugaAnimation:         INCLUDE "gfx/pokemon/hoenn/lotuga/anim.asm"
-VertugaAnimation:      INCLUDE "gfx/pokemon/hoenn/vertuga/anim.asm"
-ColijoboAnimation:       INCLUDE "gfx/pokemon/hoenn/colijobo/anim.asm"
-CrenjoboAnimation:       INCLUDE "gfx/pokemon/hoenn/crenjobo/anim.asm"
+LotugaAnimation:        INCLUDE "gfx/pokemon/hoenn/lotuga/anim.asm"
+VertugaAnimation:       INCLUDE "gfx/pokemon/hoenn/vertuga/anim.asm"
+ColijoboAnimation:      INCLUDE "gfx/pokemon/hoenn/colijobo/anim.asm"
+CrenjoboAnimation:      INCLUDE "gfx/pokemon/hoenn/crenjobo/anim.asm"
 ElectivireAnimation:    INCLUDE "gfx/pokemon/hoenn/electivire/anim.asm"
 MagmortarAnimation:     INCLUDE "gfx/pokemon/hoenn/magmortar/anim.asm"
 VoltrelAnimation:       INCLUDE "gfx/pokemon/hoenn/voltrel/anim.asm"
@@ -170,8 +168,8 @@ DuosionAnimation:       INCLUDE "gfx/pokemon/hoenn/duosion/anim.asm"
 ReuniclusAnimation:     INCLUDE "gfx/pokemon/hoenn/reuniclus/anim.asm"
 SurskitAnimation:       INCLUDE "gfx/pokemon/hoenn/surskit/anim.asm"
 MasquerainAnimation:    INCLUDE "gfx/pokemon/hoenn/masquerain/anim.asm"
-ShroomishAnimation:     INCLUDE "gfx/pokemon/hoenn/shroomish/anim.asm"
-BreloomAnimation:       INCLUDE "gfx/pokemon/hoenn/breloom/anim.asm"
+Iron_penguAnimation:    INCLUDE "gfx/pokemon/hoenn/iron_pengu/anim.asm"
+Iron_thornAnimation:    INCLUDE "gfx/pokemon/hoenn/iron_thorn/anim.asm"
 SlakothAnimation:       INCLUDE "gfx/pokemon/hoenn/slakoth/anim.asm"
 VigorothAnimation:      INCLUDE "gfx/pokemon/hoenn/vigoroth/anim.asm"
 SlakingAnimation:       INCLUDE "gfx/pokemon/hoenn/slaking/anim.asm"
@@ -187,7 +185,7 @@ AzurillAnimation:       INCLUDE "gfx/pokemon/hoenn/azurill/anim.asm"
 NosepassAnimation:      INCLUDE "gfx/pokemon/hoenn/nosepass/anim.asm"
 SkittyAnimation:        INCLUDE "gfx/pokemon/hoenn/skitty/anim.asm"
 DelcattyAnimation:      INCLUDE "gfx/pokemon/hoenn/delcatty/anim.asm"
-SpiritombAnimation:     INCLUDE "gfx/pokemon/hoenn/spiritomb/anim.asm"
+TropiusAnimation:       INCLUDE "gfx/pokemon/hoenn/tropius/anim.asm"
 TangrowthAnimation:     INCLUDE "gfx/pokemon/hoenn/tangrowth/anim.asm"
 AronAnimation:          INCLUDE "gfx/pokemon/hoenn/aron/anim.asm"
 LaironAnimation:        INCLUDE "gfx/pokemon/hoenn/lairon/anim.asm"
@@ -210,9 +208,9 @@ WhiscashAnimation:      INCLUDE "gfx/pokemon/hoenn/whiscash/anim.asm"
 SmoguanaAnimation:      INCLUDE "gfx/pokemon/hoenn/smoguana/anim.asm"
 SmokomodoAnimation:     INCLUDE "gfx/pokemon/hoenn/smokomodo/anim.asm"
 TorkoalAnimation:       INCLUDE "gfx/pokemon/hoenn/torkoal/anim.asm"
-VanilliteAnimation:        INCLUDE "gfx/pokemon/hoenn/vanillite/anim.asm"
-VanillishAnimation:       INCLUDE "gfx/pokemon/hoenn/vanillish/anim.asm"
-VanilluxeAnimation:        INCLUDE "gfx/pokemon/hoenn/vanilluxe/anim.asm"
+VanilliteAnimation:     INCLUDE "gfx/pokemon/hoenn/vanillite/anim.asm"
+VanillishAnimation:     INCLUDE "gfx/pokemon/hoenn/vanillish/anim.asm"
+VanilluxeAnimation:     INCLUDE "gfx/pokemon/hoenn/vanilluxe/anim.asm"
 TrapinchAnimation:      INCLUDE "gfx/pokemon/hoenn/trapinch/anim.asm"
 VibravaAnimation:       INCLUDE "gfx/pokemon/hoenn/vibrava/anim.asm"
 FlygonAnimation:        INCLUDE "gfx/pokemon/hoenn/flygon/anim.asm"
@@ -221,7 +219,7 @@ KitsunohAnimation:      INCLUDE "gfx/pokemon/hoenn/kitsunoh/anim.asm"
 KrolucadaAnimation:     INCLUDE "gfx/pokemon/hoenn/krolucada/anim.asm"
 KrolucardAnimation:     INCLUDE "gfx/pokemon/hoenn/krolucard/anim.asm"
 SwabluAnimation:        INCLUDE "gfx/pokemon/hoenn/swablu/anim.asm"
-AltariaAnimation:      INCLUDE "gfx/pokemon/hoenn/altaria/anim.asm"
+AltariaAnimation:       INCLUDE "gfx/pokemon/hoenn/altaria/anim.asm"
 LarvestaAnimation:      INCLUDE "gfx/pokemon/hoenn/larvesta/anim.asm"
 VolcaronaAnimation:     INCLUDE "gfx/pokemon/hoenn/volcarona/anim.asm"
 ImpidimpAnimation:      INCLUDE "gfx/pokemon/hoenn/impidimp/anim.asm"
@@ -248,15 +246,15 @@ AbsolAnimation:         INCLUDE "gfx/pokemon/hoenn/absol/anim.asm"
 MagnezoneAnimation:     INCLUDE "gfx/pokemon/hoenn/magnezone/anim.asm"
 SnoverAnimation:        INCLUDE "gfx/pokemon/hoenn/snover/anim.asm"
 AbomasnowAnimation:     INCLUDE "gfx/pokemon/hoenn/abomasnow/anim.asm"
-TurtwigAnimation:       INCLUDE "gfx/pokemon/hoenn/turtwig/anim.asm"
-GrotleAnimation:        INCLUDE "gfx/pokemon/hoenn/grotle/anim.asm"
-TorterraAnimation:      INCLUDE "gfx/pokemon/hoenn/torterra/anim.asm"
-ChimcharAnimation:      INCLUDE "gfx/pokemon/hoenn/chimchar/anim.asm"
-MonfernoAnimation:      INCLUDE "gfx/pokemon/hoenn/monferno/anim.asm"
-InfernapeAnimation:     INCLUDE "gfx/pokemon/hoenn/infernape/anim.asm"
-PiplupAnimation:        INCLUDE "gfx/pokemon/hoenn/piplup/anim.asm"
-PrinplupAnimation:      INCLUDE "gfx/pokemon/hoenn/prinplup/anim.asm"
-EmpoleonAnimation:      INCLUDE "gfx/pokemon/hoenn/empoleon/anim.asm"
+ShuppetAnimation:       INCLUDE "gfx/pokemon/hoenn/shuppet/anim.asm"
+BanetteAnimation:       INCLUDE "gfx/pokemon/hoenn/banette/anim.asm"
+LileepAnimation:        INCLUDE "gfx/pokemon/hoenn/lileep/anim.asm"
+CradilyAnimation:       INCLUDE "gfx/pokemon/hoenn/cradily/anim.asm"
+AnorithAnimation:       INCLUDE "gfx/pokemon/hoenn/anorith/anim.asm"
+ArmaldoAnimation:       INCLUDE "gfx/pokemon/hoenn/armaldo/anim.asm"
+MudkipAnimation:        INCLUDE "gfx/pokemon/hoenn/mudkip/anim.asm"
+MarshtompAnimation:     INCLUDE "gfx/pokemon/hoenn/marshtomp/anim.asm"
+SwampertAnimation:      INCLUDE "gfx/pokemon/hoenn/swampert/anim.asm"
 RelicanthAnimation:     INCLUDE "gfx/pokemon/hoenn/relicanth/anim.asm"
 LuvdiscAnimation:       INCLUDE "gfx/pokemon/hoenn/luvdisc/anim.asm"
 RaelicAnimation:        INCLUDE "gfx/pokemon/hoenn/raelic/anim.asm"
