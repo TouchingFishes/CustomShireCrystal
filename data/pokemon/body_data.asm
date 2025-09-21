@@ -370,9 +370,9 @@ PokemonBodyData:
 	dw 411, 1332   ; CRADILY
 	dw 204, 276    ; ANORITH
 	dw 411, 1504   ; ARMALDO
-	dw 104, 168    ; MUDKIP
-	dw 204, 617    ; MARSHTOMP
-	dw 411, 1806   ; SWAMPERT
+	dw 200, 397    ; AXEW
+	dw 303, 794    ; FRAXURE
+	dw 511, 2326   ; HAXORUS
 	dw 303, 516    ; RELICANTH
 	dw 200, 192    ; LUVDISC
 	dw 14,  77     ; RAELIC

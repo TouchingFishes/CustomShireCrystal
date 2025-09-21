@@ -766,7 +766,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass VETERAN_F ; 4a
 	const MONICA
 	const LENORE
-	const FILJA
+	const CELIA
 
 	trainerclass VETERAN_M ; 4b
 	const CONNOR

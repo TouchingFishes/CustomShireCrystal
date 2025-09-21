@@ -18,6 +18,7 @@ AlphabeticalPokedexOrder:
 	dw ARMALDO
 	dw ARON
 	dw ARTICUNO
+	dw MUDKIP ;AXEW
 	dw AZUMARILL
 	dw AZURILL
 	dw BALTOY
@@ -100,6 +101,7 @@ AlphabeticalPokedexOrder:
 	dw FLAREON
 	dw FLYGON
 	dw FORRETRESS
+	dw MARSHTOMP ;FRAXURE
 	dw FURRET
 	dw FUSANG
 	dw GASTLY
@@ -125,6 +127,7 @@ AlphabeticalPokedexOrder:
 	dw GYARADOS
 	dw HARIYAMA
 	dw HAUNTER
+	dw SWAMPERT ;HAXORUS
 	dw HERACROSS
 	dw HITMONCHAN
 	dw HITMONLEE
@@ -385,7 +388,4 @@ AlphabeticalPokedexOrder:
 	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT
-	dw MUDKIP
-	dw MARSHTOMP
-	dw SWAMPERT
 	assert_table_length NUM_POKEMON

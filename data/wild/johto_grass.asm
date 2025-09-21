@@ -706,140 +706,140 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 25, SWINUB   ;25
-	dbw 27, ZUBAT    ;27
-	dbw 27, GOLBAT   ;27
+	dbw 31, ZUBAT    ;27
+	dbw 31, GOLBAT   ;27
 	dbw 26, SWINUB   ;26
-	dbw 29, GOLBAT   ;29
-	dbw 28, GOLBAT   ;28
-	dbw 30, GOLBAT   ;30
+	dbw 33, GOLBAT   ;29
+	dbw 32, GOLBAT   ;28
+	dbw 34, GOLBAT   ;30
 	; day
 	dbw 25, SWINUB   ;25
-	dbw 27, ZUBAT    ;27
-	dbw 27, GOLBAT   ;27
+	dbw 30, ZUBAT    ;27
+	dbw 31, GOLBAT   ;27
 	dbw 26, SWINUB   ;26
-	dbw 29, GOLBAT   ;29
-	dbw 28, GOLBAT   ;28
-	dbw 30, GOLBAT   ;30
+	dbw 33, GOLBAT   ;29
+	dbw 32, GOLBAT   ;28
+	dbw 34, GOLBAT   ;30
 	; nite
-	dbw 25, DELIBIRD ;25
-	dbw 27, ZUBAT    ;27
-	dbw 27, GOLBAT   ;27
-	dbw 28, DELIBIRD ;28
-	dbw 29, GOLBAT   ;29
-	dbw 28, GOLBAT   ;28
-	dbw 30, GOLBAT   ;30
+	dbw 29, DELIBIRD ;25
+	dbw 31, ZUBAT    ;27
+	dbw 32, GOLBAT   ;27
+	dbw 32, DELIBIRD ;28
+	dbw 33, GOLBAT   ;29
+	dbw 32, GOLBAT   ;28
+	dbw 34, GOLBAT   ;30
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 25, SWINUB   ;25
-	dbw 28, ZUBAT    ;28
-	dbw 28, GOLBAT   ;28
+	dbw 31, ZUBAT    ;28
+	dbw 32, GOLBAT   ;28
 	dbw 26, SWINUB   ;26
-	dbw 30, GOLBAT   ;30
-	dbw 29, GOLBAT   ;29
-	dbw 27, JYNX     ;27
+	dbw 34, GOLBAT   ;30
+	dbw 33, GOLBAT   ;29
+	dbw 31, JYNX     ;27
 	; day
 	dbw 25, SWINUB   ;25
-	dbw 28, ZUBAT    ;28
-	dbw 28, GOLBAT   ;28
+	dbw 31, ZUBAT    ;28
+	dbw 32, GOLBAT   ;28
 	dbw 26, SWINUB   ;26
-	dbw 30, GOLBAT   ;30
-	dbw 29, GOLBAT   ;29
-	dbw 27, JYNX     ;27
+	dbw 34, GOLBAT   ;30
+	dbw 33, GOLBAT   ;29
+	dbw 31, JYNX     ;27
 	; nite
-	dbw 27, DELIBIRD ;27
-	dbw 28, ZUBAT    ;28
-	dbw 28, GOLBAT   ;28
-	dbw 29, DELIBIRD ;29
-	dbw 30, GOLBAT   ;30
-	dbw 29, GOLBAT   ;29
-	dbw 27, SNEASEL  ;27
+	dbw 31, DELIBIRD ;27
+	dbw 32, ZUBAT    ;28
+	dbw 33, GOLBAT   ;28
+	dbw 33, DELIBIRD ;29
+	dbw 35, GOLBAT   ;30
+	dbw 34, GOLBAT   ;29
+	dbw 31, SNEASEL  ;27
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B2F_MAHOGANY_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 24, SWINUB   ;24
-	dbw 29, ZUBAT    ;29
-	dbw 29, GOLBAT   ;29
+	dbw 32, ZUBAT    ;29
+	dbw 33, GOLBAT   ;29
 	dbw 27, SWINUB   ;27
-	dbw 31, GOLBAT   ;31
-	dbw 27, JYNX     ;27
-	dbw 29, JYNX     ;29
+	dbw 35, GOLBAT   ;31
+	dbw 31, JYNX     ;27
+	dbw 33, JYNX     ;29
 	; day
 	dbw 24, SWINUB   ;24
-	dbw 29, ZUBAT    ;29
-	dbw 29, GOLBAT   ;29
+	dbw 33, ZUBAT    ;29
+	dbw 34, GOLBAT   ;29
 	dbw 27, SWINUB   ;27
-	dbw 31, GOLBAT   ;31
-	dbw 27, JYNX     ;27
-	dbw 29, JYNX     ;29
+	dbw 35, GOLBAT   ;31
+	dbw 31, JYNX     ;27
+	dbw 33, JYNX     ;29
 	; nite
-	dbw 28, DELIBIRD ;28
-	dbw 29, ZUBAT    ;29
-	dbw 29, GOLBAT   ;29
-	dbw 30, DELIBIRD ;30
-	dbw 31, GOLBAT   ;31
-	dbw 27, SNEASEL  ;27
-	dbw 29, SNEASEL  ;29
+	dbw 32, DELIBIRD ;28
+	dbw 33, ZUBAT    ;29
+	dbw 34, GOLBAT   ;29
+	dbw 34, DELIBIRD ;30
+	dbw 35, GOLBAT   ;31
+	dbw 31, SNEASEL  ;27
+	dbw 33, SNEASEL  ;29
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B2F_BLACKTHORN_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 25, SWINUB   ;25
-	dbw 29, ZUBAT    ;29
-	dbw 29, GOLBAT   ;29
+	dbw 32, ZUBAT    ;29
+	dbw 33, GOLBAT   ;29
 	dbw 27, SWINUB   ;27
-	dbw 31, GOLBAT   ;31
-	dbw 27, JYNX     ;27
-	dbw 29, JYNX     ;29
+	dbw 35, GOLBAT   ;31
+	dbw 31, JYNX     ;27
+	dbw 33, JYNX     ;29
 	; day
 	dbw 25, SWINUB   ;25
-	dbw 29, ZUBAT    ;29
-	dbw 29, GOLBAT   ;29
+	dbw 32, ZUBAT    ;29
+	dbw 33, GOLBAT   ;29
 	dbw 27, SWINUB   ;27
-	dbw 31, GOLBAT   ;31
-	dbw 27, JYNX     ;27
-	dbw 29, JYNX     ;29
+	dbw 35, GOLBAT   ;31
+	dbw 31, JYNX     ;27
+	dbw 33, JYNX     ;29
 	; nite
-	dbw 28, DELIBIRD ;28
-	dbw 29, ZUBAT    ;29
-	dbw 29, GOLBAT   ;29
-	dbw 30, DELIBIRD ;30
-	dbw 31, GOLBAT   ;31
-	dbw 27, SNEASEL  ;27
-	dbw 29, SNEASEL  ;29
+	dbw 32, DELIBIRD ;28
+	dbw 33, ZUBAT    ;29
+	dbw 34, GOLBAT   ;29
+	dbw 34, DELIBIRD ;30
+	dbw 35, GOLBAT   ;31
+	dbw 31, SNEASEL  ;27
+	dbw 33, SNEASEL  ;29
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 27, SWINUB   ;27
-	dbw 30, ZUBAT    ;30
-	dbw 30, GOLBAT   ;30
-	dbw 28, SWINUB   ;28
-	dbw 27, JYNX     ;27
-	dbw 29, JYNX     ;29
-	dbw 31, JYNX     ;31
+	dbw 31, SWINUB   ;27
+	dbw 33, ZUBAT    ;30
+	dbw 34, GOLBAT   ;30
+	dbw 32, SWINUB   ;28
+	dbw 31, JYNX     ;27
+	dbw 33, JYNX     ;29
+	dbw 35, JYNX     ;31
 	; day
 	dbw 27, SWINUB   ;27
-	dbw 30, ZUBAT    ;30
-	dbw 30, GOLBAT   ;30
+	dbw 33, ZUBAT    ;30
+	dbw 34, GOLBAT   ;30
 	dbw 28, SWINUB   ;28
-	dbw 27, JYNX     ;27
-	dbw 29, JYNX     ;29
-	dbw 31, JYNX     ;31
+	dbw 31, JYNX     ;27
+	dbw 33, JYNX     ;29
+	dbw 35, JYNX     ;31
 	; nite
-	dbw 29, DELIBIRD ;29
-	dbw 30, ZUBAT    ;30
-	dbw 30, GOLBAT   ;30
-	dbw 31, DELIBIRD ;31
+	dbw 33, DELIBIRD ;29
+	dbw 34, ZUBAT    ;30
+	dbw 35, GOLBAT   ;30
+	dbw 35, DELIBIRD ;31
 	dbw 27, SNEASEL  ;27
-	dbw 29, SNEASEL  ;29
-	dbw 31, SNEASEL  ;31
+	dbw 33, SNEASEL  ;29
+	dbw 35, SNEASEL  ;31
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_NW
@@ -1548,7 +1548,7 @@ JohtoGrassWildMons:
 	dbw 19, RATTATA
 	dbw 20, KRABBY
 	dbw 20, PIDGEOTTO
-	dbw 19, JIGGLYPUFF  
+	dbw 19, MAGNEMITE  
 	dbw 21, TINKATINK
 	dbw 22, RATICATE
 	dbw 22, RATICATE
@@ -1556,7 +1556,7 @@ JohtoGrassWildMons:
 	dbw 19, RATTATA
 	dbw 20, KRABBY
 	dbw 20, PIDGEOTTO
-	dbw 19, JIGGLYPUFF 
+	dbw 19, MAGNEMITE 
 	dbw 21, TINKATINK
 	dbw 22, RATICATE
 	dbw 22, RATICATE
@@ -1564,7 +1564,7 @@ JohtoGrassWildMons:
 	dbw 19, RATTATA   
 	dbw 20, NOCTOWL
 	dbw 20, KRABBY   
-	dbw 19, JIGGLYPUFF
+	dbw 19, MAGNEMITE
 	dbw 21, TINKATINK
 	dbw 22, RATICATE
 	dbw 22, RATICATE
@@ -1629,29 +1629,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_44
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 28, TANGELA
-	dbw 27, LICKITUNG
-	dbw 27, BELLSPROUT
-	dbw 29, WEEPINBELL
-	dbw 29, LICKITUNG
-	dbw 31, ELECTABUZZ  ;LICKITUNG
-	dbw 31, ELECTABUZZ  ;LICKITUNG
+	dbw 29, TANGELA
+	dbw 28, LICKITUNG
+	dbw 28, BELLSPROUT
+	dbw 30, WEEPINBELL
+	dbw 30, LICKITUNG
+	dbw 32, ELECTABUZZ  ;LICKITUNG
+	dbw 32, ELECTABUZZ  ;LICKITUNG
 	; day
-	dbw 28, TANGELA
-	dbw 27, LICKITUNG
-	dbw 27, BELLSPROUT
-	dbw 29, WEEPINBELL
-	dbw 29, LICKITUNG
-	dbw 31, ELECTABUZZ  ;LICKITUNG
-	dbw 31, ELECTABUZZ  ;LICKITUNG
+	dbw 29, TANGELA
+	dbw 28, LICKITUNG
+	dbw 28, BELLSPROUT
+	dbw 30, WEEPINBELL
+	dbw 30, LICKITUNG
+	dbw 32, ELECTABUZZ  ;LICKITUNG
+	dbw 32, ELECTABUZZ  ;LICKITUNG
 	; nite
-	dbw 28, TANGELA
+	dbw 29, TANGELA
 	dbw 27, POLIWAG
-	dbw 27, BELLSPROUT
-	dbw 29, WEEPINBELL
-	dbw 29, POLIWHIRL
+	dbw 28, BELLSPROUT
+	dbw 30, WEEPINBELL
+	dbw 30, POLIWHIRL
 	dbw 31, ELECTABUZZ  ;LICKITUNG
-	dbw 31, ELECTABUZZ  ;LICKITUNG
+	dbw 32, ELECTABUZZ  ;LICKITUNG
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_45

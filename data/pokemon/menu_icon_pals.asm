@@ -378,9 +378,9 @@ MonMenuIconPals:
 	icon_pals RED,    RED    ; CRADILY
 	icon_pals RED,    RED    ; ANORITH
 	icon_pals RED,    RED    ; ARMALDO
-	icon_pals BLUE,   RED    ; MUDKIP
-	icon_pals BLUE,   RED    ; MARSHTOMP
-	icon_pals BLUE,   RED    ; SWAMPERT
+	icon_pals GREEN,  GRAY   ; AXEW
+	icon_pals GREEN,  GRAY   ; FRAXURE
+	icon_pals GREEN,  GRAY   ; HAXORUS
 	icon_pals BROWN,  RED    ; RELICANTH
 	icon_pals PINK,   RED    ; LUVDISC
 	icon_pals BROWN,  RED    ; RAELIC

@@ -835,8 +835,8 @@ WillGroup:
 	dw XATU
 	dw QUICK_ATTACK, MAGICAL_FIRE, CONFUSE_RAY, PSYCHIC_M
 	db 66
-	dw WYRDEER
-	dw QUICK_ATTACK, MAGICAL_FIRE, CALM_MIND, PSYCHIC_M
+	dw GIRAFARIG
+	dw THUNDERBOLT, BATON_PASS, CALM_MIND, TWIN_BEAM
 	db 67
 	dw CLAYDOL
 	dw EARTHQUAKE, ANCIENTPOWER, ICE_BEAM, PSYCHIC_M
@@ -2624,10 +2624,10 @@ BeautyGroup:
 	db "SAMANTHA@", TRAINERTYPE_MOVES
 	db 16
 	dw TEDDIURSA
-	dw TAKE_DOWN, YAWN, FAKE_TEARS, ATTRACT
+	dw TAKE_DOWN, YAWN, LICK, ATTRACT
 	db 16
 	dw TEDDIURSA
-	dw SLASH, YAWN, FAKE_TEARS, ATTRACT
+	dw SLASH, YAWN, METAL_CLAW, ATTRACT
 	db -1 ; end
 
 	next_list_item ; BEAUTY (3)
@@ -2874,20 +2874,20 @@ GruntMGroup:
 
 	next_list_item ; GRUNTM (3) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 32 ;24
+	db 34 ;24
 	dw RATICATE
-	db 32 ;24	
+	db 34 ;24	
 	dw RATICATE
 	db -1 ; end
 
 	next_list_item ; GRUNTM (4) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 30 ;23
+	db 31 ;23
 	dw GRIMER
-	db 30 ;23
+	db 31 ;23
 	dw GRIMER
-	db 33 ;25
-	dw MUK
+	db 34 ;25
+	dw HYPNO
 	db -1 ; end
 
 	next_list_item ; GRUNTM (5) RADIO TOWER
@@ -2899,16 +2899,16 @@ GruntMGroup:
 	;db 23
 	;dw RATTATA
 	db 34 ;23
-	dw HYPNO
-	db 34 ;23
-	dw HYPNO
+	dw WEEZING
+	db 35 ;23
+	dw LICKITUNG
 	db -1 ; end
 
 	next_list_item ; GRUNTM (6) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 33 ;26
+	db 34 ;26
 	dw GOLBAT
-	db 33 ;26
+	db 34 ;26
 	dw GOLBAT
 	db -1 ; end
 
@@ -2920,41 +2920,41 @@ GruntMGroup:
 	dw MEOWTH
 	db 30 ;23
 	dw KOFFING
-	db 34 ;23
+	db 35 ;23
 	dw RATICATE
 	db -1 ; end
 
 	next_list_item ; GRUNTM (8) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 36 ;26
+	db 38 ;26
 	dw MAROWAK
 	db -1 ; end
 
 	next_list_item ; GRUNTM (9) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 32 ;24
+	db 33 ;24
 	dw RATICATE
-	db 34 ;26
+	db 35 ;26
 	dw WEEZING
 	db -1 ; end
 
 	next_list_item ; GRUNTM (10) RADIO TOWER
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 32 ;22
+	db 33 ;22
 	dw DROWZEE
-	db 34 ;24
+	db 35 ;24
 	dw GOLBAT
-	db 32 ;22
+	db 33 ;22
 	dw GRIMER
 	db -1 ; end
 
 	next_list_item ; GRUNTM (11) GOLDENROD UNDERGROUND
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 32 ;23
-	dw MUK
-	db 32 ;23
+	db 33 ;23
+	dw HYPNO
+	db 33 ;23
 	dw KOFFING
-	db 34 ;25
+	db 35 ;25
 	dw RATTATA
 	db -1 ; end
 
@@ -2966,23 +2966,23 @@ GruntMGroup:
 
 	next_list_item ; GRUNTM (13) GOLDENROD UNDERGROUND
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 37 ;27
-	dw HYPNO
+	db 38 ;27
+	dw MUK
 	db -1 ; end
 
 	next_list_item ; GRUNTM (14) GOLDENROD UNDERGROUND
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 34 ;24
+	db 35 ;24
 	dw RATICATE
-	db 34 ;24
+	db 35 ;24
 	dw GOLBAT
 	db -1 ; end
 
 	next_list_item ; GRUNTM (15) GOLDENROD UNDERGROUND
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 36 ;26
+	db 37 ;26
 	dw GRIMER
-	db 33 ;23
+	db 34 ;23
 	dw WEEZING
 	db -1 ; end
 
@@ -3133,10 +3133,10 @@ GentlemanGroup:
 
 	next_list_item ; GENTLEMAN (3)
 	db "GREGORY@", TRAINERTYPE_NORMAL
-	db 37
-	dw PIKACHU
-	db 33
-	dw FLAAFFY
+	db 47 ;37
+	dw LUXRAY
+	db 45 ;33
+	dw AMPHAROS
 	db -1 ; end
 
 	next_list_item ; GENTLEMAN (4)
@@ -3175,20 +3175,28 @@ TeacherGroup:
 	dw CLEFAIRY
 	db -1 ; end
 
-	next_list_item ; TEACHER (2)
+	next_list_item ; TEACHER (2) Route 15
 	db "HILLARY@", TRAINERTYPE_NORMAL
-	db 32
+	db 55 ;32
 	dw AIPOM
-	db 36
-	dw CUBONE
+	db 55 ;new mon
+	dw TROPIUS
+	db 55 ;new mon
+	dw LEDIAN
+	db 58 ;36
+	dw MAROWAK
 	db -1 ; end
 
-	next_list_item ; TEACHER (3)
+	next_list_item ; TEACHER (3) Fast Ship B1F
 	db "SHIRLEY@", TRAINERTYPE_NORMAL
-	db 55 ;35
+	db 59 ;35
 	dw WIGGLYTUFF
 	db 55 ;35
-	dw AIPOM
+	dw DELCATTY
+	db 59 ;new mon
+	dw MANTINE
+	db 55 ;new mon
+	dw GIRAFARIG
 	db -1 ; end
 
 	end_list_items
@@ -3246,21 +3254,31 @@ BugCatcherGroup:
 	dw LEDYBA
 	db -1 ; end
 
-	next_list_item ; BUG_CATCHER (2)
+	next_list_item ; BUG_CATCHER (2) Route 2
 	db "ROB@", TRAINERTYPE_NORMAL
-	db 32
+	db 58 ;32
 	dw BEEDRILL
-	db 32
+	db 56 ;new mon
+	dw LEDIAN
+	db 58 ;32
 	dw BUTTERFREE
+	db 56 ;new mon
+	dw ARIADOS
 	db -1 ; end
 
-	next_list_item ; BUG_CATCHER (3)
+	next_list_item ; BUG_CATCHER (3) Route 2
 	db "ED@", TRAINERTYPE_NORMAL
-	db 30
+	db 54 ;30
 	dw BEEDRILL
-	db 30
+	db 54 ;30
 	dw BEEDRILL
-	db 30
+	db 54 ;30
+	dw BEEDRILL
+	db 54 ;new mon
+	dw BEEDRILL
+	db 54 ;new mon
+	dw BEEDRILL
+	db 54 ;new mon
 	dw BEEDRILL
 	db -1 ; end
 
@@ -3312,6 +3330,8 @@ BugCatcherGroup:
 	db "KEN@", TRAINERTYPE_NORMAL
 	db 50 ;30
 	dw ARIADOS
+	db 52 ;new mon
+	dw PINSIR
 	db 50 ;new mon
 	dw NINJASK
 	db 52 ;32
@@ -3342,10 +3362,12 @@ BugCatcherGroup:
 	dw BUTTERFREE
 	db -1 ; end
 
-	next_list_item ; BUG_CATCHER (12)
+	next_list_item ; BUG_CATCHER (12) Route 2
 	db "DOUG@", TRAINERTYPE_NORMAL
-	db 34
-	dw ARIADOS
+	db 57 ;34
+	dw SHUCKLE
+	db 57 ;new mon
+	dw SHUCKLE
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (13) 2 lake of rage
@@ -3469,20 +3491,28 @@ FisherGroup:
 	dw GOLDEEN
 	db -1 ; end
 
-	next_list_item ; FISHER (3)
+	next_list_item ; FISHER (3) Route 21
 	db "ARNOLD@", TRAINERTYPE_NORMAL
-	db 34
+	db 57 ;34
 	dw TENTACRUEL
+	db 57 ;new mon
+	dw TENTACRUEL
+	db 57 ;new mon
+	dw TENTACRUEL
+	db 59 ;new mon
+	dw CORSOREEF
 	db -1 ; end
 
-	next_list_item ; FISHER (4)
+	next_list_item ; FISHER (4) Route 12
 	db "KYLE@", TRAINERTYPE_NORMAL
-	db 28
+	db 57 ;28
 	dw SEAKING
-	db 31
-	dw POLIWHIRL
-	db 31
+	db 56 ;31
+	dw KUJINOUGHT
+	db 57 ;31
 	dw SEAKING
+	db 58 ;new mon
+	dw VAPOREON
 	db -1 ; end
 
 	next_list_item ; FISHER (5)
@@ -3569,33 +3599,41 @@ FisherGroup:
 	dw CLOYSTER
 	db -1 ; end
 
-	next_list_item ; FISHER (13)
+	next_list_item ; FISHER (13) Route 12
 	db "MARTIN@", TRAINERTYPE_NORMAL
-	db 32
-	dw REMORAID
-	db 32
-	dw REMORAID
-	db -1 ; end
-
-	next_list_item ; FISHER (14)
-	db "STEPHEN@", TRAINERTYPE_NORMAL
-	db 25
-	dw MAGIKARP
-	db 25
-	dw MAGIKARP
-	db 31
+	db 54 ;32
+	dw RELICANTH
+	db 54 ;32
+	dw RELICANTH
+	db 54 ;new mon
+	dw MANTINE
+	db 57 ;new mon
 	dw QWILFISH
-	db 31
-	dw TENTACRUEL
 	db -1 ; end
 
-	next_list_item ; FISHER (15)
+	next_list_item ; FISHER (14) Route 12
+	db "STEPHEN@", TRAINERTYPE_NORMAL
+	db 55 ;25
+	dw OCTILLERY
+	db 56 ;25
+	dw GYARADOS
+	db 54 ;31
+	dw QWILFISH
+	db 54 ;31
+	dw TENTACRUEL
+	db 55 ;31
+	dw SHARPEDO
+	db 58 ;new mon
+	dw QWILFISH
+	db -1 ; end
+
+	next_list_item ; FISHER (15) Route 12
 	db "BARNEY@", TRAINERTYPE_NORMAL
-	db 30
+	db 60 ;30
 	dw GYARADOS
-	db 30
+	db 60 ;30
 	dw GYARADOS
-	db 30
+	db 60 ;30
 	dw GYARADOS
 	db -1 ; end
 
@@ -3750,11 +3788,15 @@ FisherGroup:
 	end_list_items
 
 SwimmerMGroup:
-	next_list_item ; SWIMMERM (1)
+	next_list_item ; SWIMMERM (1) Route 19
 	db "HAROLD@", TRAINERTYPE_NORMAL
-	db 32
-	dw REMORAID
-	db 30
+	db 52 ;32
+	dw LUVDISC
+	db 52 ;new mon
+	dw LUVDISC
+	db 52 ;new mon
+	dw LUVDISC
+	db 56 ;30
 	dw SEADRA
 	db -1 ; end
 
@@ -6791,12 +6833,12 @@ VeteranFGroup:
 	dw HONCHKROW
 	db -1 ; end
 
-	next_list_item; VETERAN_F (2)
-	db "FILJA@", TRAINERTYPE_NORMAL
+	next_list_item; VETERAN_F (3)
+	db "CELIA@", TRAINERTYPE_NORMAL
 	db 10
-	dw CHIKORITA
+	dw AMPHAROS
 	db 10
-	dw CYNDAQUIL
+	dw GRANBULL
 	db 10
 	dw TOTODILE
 	db -1 ; end
