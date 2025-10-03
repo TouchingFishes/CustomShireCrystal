@@ -44,7 +44,7 @@ EvosAttacksPointers3::
 	dw TinkatonEvosAttacks
 	dw MakuhitaEvosAttacks
 	dw HariyamaEvosAttacks
-	dw AzurillEvosAttacks
+	dw DuscornEvosAttacks
 	dw NosepassEvosAttacks
 	dw SkittyEvosAttacks
 	dw DelcattyEvosAttacks
@@ -115,9 +115,9 @@ EvosAttacksPointers3::
 	dw CradilyEvosAttacks
 	dw AnorithEvosAttacks
 	dw ArmaldoEvosAttacks
-	dw MudkipEvosAttacks
-	dw MarshtompEvosAttacks
-	dw SwampertEvosAttacks
+	dw AxewEvosAttacks
+	dw FraxureEvosAttacks
+	dw HaxorusEvosAttacks
 	dw RelicanthEvosAttacks
 	dw LuvdiscEvosAttacks
 	dw RaelicEvosAttacks
@@ -567,7 +567,8 @@ ReuniclusEvosAttacks:
 	dbw 31, PSYCHIC_M
 	dbw 36, FUTURE_SIGHT
 	dbw 41, CALM_MIND
-	dbw 46, ENDEAVOR
+	dbw 49, ENDEAVOR
+	dbw 56, ENCORE
 	db 0 ; no more level-up moves
 
 SurskitEvosAttacks:
@@ -814,15 +815,21 @@ HariyamaEvosAttacks:
 	dbw 55, REVERSAL
 	db 0 ; no more level-up moves
 
-AzurillEvosAttacks:
-	evolve EVOLVE_HAPPINESS, MARILL
+DuscornEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, SPLASH
-	dbw 3, CHARM
-	dbw 6, TAIL_WHIP
-	dbw 10, BUBBLE
-	dbw 15, SLAM
-	dbw 21, WATER_GUN
+	dbw 1, TACKLE
+	dbw 1, LEER
+	dbw 5, FOCUS_ENERGY
+	dbw 9, TAIL_WHIP
+	dbw 13, ENDURE
+	dbw 17, SAND_ATTACK
+	dbw 21, STOMP
+	dbw 25, FAINT_ATTACK
+	dbw 29, KNOCK_OFF
+	dbw 35, TAKE_DOWN
+	dbw 41, GIGA_DRAIN ;HORN_LEECH
+	dbw 47, SKULL_BASH
+	dbw 53, SYNTHESIS
 	db 0 ; no more level-up moves
 
 NosepassEvosAttacks:
@@ -1913,59 +1920,51 @@ ArmaldoEvosAttacks:
 	dbw 64, ROCK_BLAST
 	db 0 ; no more level-up moves
 
-MudkipEvosAttacks:
-	evolve EVOLVE_LEVEL, 16, MARSHTOMP
+AxewEvosAttacks:
+	evolve EVOLVE_LEVEL, 38, FRAXURE
 	db 0 ; no more evolutions
-	dbw 1, GROWL
-	dbw 1, TACKLE
-	dbw 6, MUD_SLAP
-	dbw 10, WATER_GUN
-	dbw 15, BIDE
-	dbw 19, FORESIGHT
-	dbw 24, SWAGGER
-	dbw 28, TAKE_DOWN
-	dbw 33, WATER_PULSE
-	dbw 37, PROTECT
-	dbw 42, HYDRO_PUMP
-	dbw 46, ENDEAVOR
+	dbw 1, SCRATCH
+	dbw 5, LEER
+	dbw 10, SCARY_FACE
+	dbw 16, DRAGON_RAGE
+	dbw 20, FALSE_SWIPE
+	dbw 24, TAUNT
+	dbw 30, SLASH
+	dbw 36, DIG
+	dbw 41, SWORDS_DANCE
+	dbw 48, X_SCISSOR
 	db 0 ; no more level-up moves
 	
-MarshtompEvosAttacks:
-	evolve EVOLVE_LEVEL, 36, SWAMPERT
-	dbw 1, GROWL
-	dbw 1, MUD_SLAP
-	dbw 1, TACKLE
-	dbw 1, WATER_GUN
-	dbw 6, MUD_SLAP
-	dbw 10, WATER_GUN
-	dbw 15, BIDE
-	dbw 16, MUD_SHOT
-	dbw 20, FORESIGHT
-	dbw 25, SWAGGER
-	dbw 31, TAKE_DOWN
-	dbw 37, MUDDY_WATER
-	dbw 42, PROTECT
-	dbw 46, EARTHQUAKE
-	dbw 53, ENDEAVOR
+FraxureEvosAttacks:
+	evolve EVOLVE_LEVEL, 48, HAXORUS
+	dbw 1, SCRATCH
+	dbw 5, LEER
+	dbw 10, SCARY_FACE
+	dbw 16, DRAGON_RAGE
+	dbw 20, FALSE_SWIPE
+	dbw 24, TAUNT
+	dbw 30, SLASH
+	dbw 36, DIG
+	dbw 41, SWORDS_DANCE
+	dbw 48, X_SCISSOR
+	dbw 56, OUTRAGE
+	dbw 61, GUILLOTINE
 	db 0 ; no more level-up moves
 
-SwampertEvosAttacks:
+HaxorusEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, GROWL
-	dbw 1, MUD_SLAP
-	dbw 1, TACKLE
-	dbw 1, WATER_GUN
-	dbw 6, MUD_SLAP
-	dbw 10, WATER_GUN
-	dbw 15, BIDE
-	dbw 16, MUD_SHOT
-	dbw 20, FORESIGHT
-	dbw 25, SWAGGER
-	dbw 31, TAKE_DOWN
-	dbw 39, MUDDY_WATER
-	dbw 46, PROTECT
-	dbw 52, EARTHQUAKE
-	dbw 61, ENDEAVOR
+	dbw 1, SCRATCH
+	dbw 5, LEER
+	dbw 10, SCARY_FACE
+	dbw 16, DRAGON_RAGE
+	dbw 20, FALSE_SWIPE
+	dbw 24, TAUNT
+	dbw 30, SLASH
+	dbw 36, DIG
+	dbw 41, SWORDS_DANCE
+	dbw 48, X_SCISSOR
+	dbw 56, OUTRAGE
+	dbw 61, GUILLOTINE
 	db 0 ; no more level-up moves
 
 RelicanthEvosAttacks:
@@ -1997,7 +1996,7 @@ LuvdiscEvosAttacks:
 	db 0 ; no more level-up moves
 
 RaelicEvosAttacks:
-	evolve EVOLVE_LEVEL, 30, ROMUSHU
+	evolve EVOLVE_LEVEL, 50, ROMUSHU
 	db 0 ; no more evolutions
 	dbw 1, HARDEN
 	dbw 5, CONFUSION
@@ -2012,7 +2011,7 @@ RaelicEvosAttacks:
 	db 0 ; no more level-up moves
 
 RomushuEvosAttacks:
-	evolve EVOLVE_LEVEL, 50, FUSANG
+	evolve EVOLVE_LEVEL, 64, FUSANG
 	db 0 ; no more evolutions
 	dbw 1, CONFUSION
 	dbw 1, HEADBUTT

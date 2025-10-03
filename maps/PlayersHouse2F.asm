@@ -218,7 +218,7 @@ endc
 
 PlayersHouseBookshelfScript:
 	if DEF(_DEBUG)
-	loadwildmon BLISSEY, 100
+	loadwildmon TINKATUFF, 100
 	startbattle
 	reloadmapafterbattle
 	end

@@ -38,7 +38,7 @@ MovesGen1:
 	move EFFECT_OHKO,                0, NORMAL,         30,  5,   0      ;GUILLOTINE
 	move EFFECT_FLINCH_HIT,         75, FLYING,         85, 20,  30      ;RAZOR_WIND EFFECT_RAZOR_WIND
 	move EFFECT_ATTACK_UP_2,         0, NORMAL,        100, 30,   0      ;SWORDS_DANCE
-	move EFFECT_NORMAL_HIT,         55, BUG,            95, 30,   0      ;CUT
+	move EFFECT_NORMAL_HIT,         55, BUG,            95, 25,   0      ;CUT
 	move EFFECT_GUST,               40, FLYING,        100, 35,   0      ;GUST
 	move EFFECT_NORMAL_HIT,         60, FLYING,        100, 35,   0      ;WING_ATTACK
 	move EFFECT_FORCE_SWITCH,        0, NORMAL,        100, 20,   0      ;WHIRLWIND

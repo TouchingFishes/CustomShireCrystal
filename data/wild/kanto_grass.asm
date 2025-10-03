@@ -117,29 +117,29 @@ KantoGrassWildMons:
 	def_grass_wildmons VICTORY_ROAD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 34, GRAVELER
-	dbw 32, RHYHORN
-	dbw 33, ONIX
-	dbw 34, GOLBAT
-	dbw 35, SANDSLASH
-	dbw 35, RHYDON
-	dbw 35, LAIRON     ;RHYDON
+	dbw 42, GRAVELER   ;34
+	dbw 40, RHYHORN    ;32
+	dbw 41, ONIX       ;33
+	dbw 42, GOLBAT     ;34
+	dbw 43, SANDSLASH  ;35
+	dbw 43, RHYDON     ;35
+	dbw 15, AXEW       ;RHYDON 35
 	; day
-	dbw 34, GRAVELER
-	dbw 32, RHYHORN
-	dbw 33, ONIX
-	dbw 34, GOLBAT
-	dbw 35, SANDSLASH
-	dbw 35, RHYDON
-	dbw 35, LAIRON     ;RHYDON
+	dbw 42, GRAVELER   ;34
+	dbw 40, RHYHORN    ;32
+	dbw 41, ONIX       ;33
+	dbw 42, GOLBAT     ;34
+	dbw 43, SANDSLASH  ;35
+	dbw 43, RHYDON     ;35
+	dbw 15, AXEW       ;RHYDON 35
 	; nite
-	dbw 34, GOLBAT
-	dbw 34, GRAVELER
-	dbw 32, ONIX
-	dbw 36, GRAVELER
-	dbw 38, GRAVELER
-	dbw 40, GRAVELER
-	dbw 40, GRAVELER
+	dbw 42, GOLBAT     ;34
+	dbw 40, GRAVELER   ;34
+	dbw 40, ONIX       ;32
+	dbw 41, GRAVELER   ;36
+	dbw 42, GRAVELER   ;38
+	dbw 44, GOLEM      ;GRAVELER 40
+	dbw 44, GOLEM      ;GRAVELER 40
 	end_grass_wildmons
 
 	def_grass_wildmons TOHJO_FALLS

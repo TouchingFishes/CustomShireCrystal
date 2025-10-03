@@ -143,7 +143,7 @@ EggMovePointers1:
 	dw KabutoEggMoves
 	dw NoEggMoves1
 	dw AerodactylEggMoves
-	dw NoEggMoves1
+	dw SnorlaxEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -659,6 +659,8 @@ LaprasEggMoves:
 	dw SLEEP_TALK
 	dw SUBSTITUTE
 	dw TICKLE
+	dw HYDRO_PUMP
+	dw CALM_MIND
 	dw DRAGON_PULSE
 	dw -1 ; end
 
@@ -699,6 +701,15 @@ AerodactylEggMoves:
 	dw PURSUIT
 	dw STEEL_WING
 	dw WHIRLWIND
+	dw -1 ; end
+
+SnorlaxEggMoves:
+	dw CHARM
+	dw CURSE
+	dw DOUBLE_EDGE
+	dw FISSURE
+	dw LICK
+	dw SUBSTITUTE
 	dw -1 ; end
 
 DratiniEggMoves:

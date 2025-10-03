@@ -420,7 +420,7 @@ DEF KRIS EQU __trainer_class__
 	const KIRK
 	const MATHEW
 	const HAL
-	const PATON ; unused
+	const PATON
 	const DARYL ; unused
 	const WALTER ; unused
 	const TONY ; unused

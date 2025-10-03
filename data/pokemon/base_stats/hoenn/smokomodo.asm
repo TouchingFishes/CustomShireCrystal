@@ -1,6 +1,6 @@
 	db 0 ; species ID placeholder
 
-	db  79, 106,  57,  87,  78,  68
+	db  79, 111,  57,  87,  81,  68
 	evs  0,   2,   0,   0,   0,   0
 	;   hp  atk  def  spd  sat  sdf
 
@@ -11,7 +11,7 @@
 	db GENDER_F50 ; gender ratio
 	db 20 ; step cycles to hatch
 	INCBIN "gfx/pokemon/hoenn/smokomodo/front.dimensions"
-	db MAGMA_ARMOR, MAGMA_ARMOR ; wBaseAbility1, wBaseAbility2
+	db GUTS, GUTS ; wBaseAbility1, wBaseAbility2
 	dw NULL ; Padding left-over from the unused back pic
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups

@@ -3,7 +3,7 @@
 	const ROUTE30_YOUNGSTER2
 	const ROUTE30_YOUNGSTER3
 	const ROUTE30_BUG_CATCHER
-	const ROUTE30_YOUNGSTER4
+	const ROUTE30_RICH_BOY
 	const ROUTE30_MONSTER1
 	const ROUTE30_MONSTER2
 	const ROUTE30_FRUIT_TREE1
@@ -205,18 +205,18 @@ TrainerBugCatcherDon:
 	closetext
 	end
 
-Route30YoungsterScript:
+Route30RichBoyScript:
 	faceplayer
 	opentext
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue .CompletedEggQuest
-	writetext Route30YoungsterText_DirectionsToMrPokemonsHouse
+	writetext Route30RichBoyText_DirectionsToMrPokemonsHouse
 	waitbutton
 	closetext
 	end
 
 .CompletedEggQuest:
-	writetext Route30YoungsterText_EveryoneIsBattling
+	writetext Route30RichBoyText_EveryoneIsBattling
 	waitbutton
 	closetext
 	end
@@ -342,13 +342,13 @@ BugCatcherDonAfterText:
 	line "some more…"
 	done
 
-Route30YoungsterText_DirectionsToMrPokemonsHouse:
+Route30RichBoyText_DirectionsToMrPokemonsHouse:
 	text "MR.#MON's"
 	line "house? It's a bit"
 	cont "farther ahead."
 	done
 
-Route30YoungsterText_EveryoneIsBattling:
+Route30RichBoyText_EveryoneIsBattling:
 	text "Everyone's having"
 	line "fun battling!"
 	cont "You should too!"
@@ -425,9 +425,9 @@ Route30_MapEvents:
 	object_event  2, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterJoey, EVENT_ROUTE_30_YOUNGSTER_JOEY
 	object_event  5, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterMikey, -1
 	object_event  1,  7, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherDon, -1
-	object_event  7, 30, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route30YoungsterScript, -1
-	object_event  5, 24, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_30_BATTLE
-	object_event  5, 25, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_30_BATTLE
+	object_event  7, 30, SPRITE_RICH_BOY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route30RichBoyScript, -1
+	object_event  5, 24, SPRITE_PIDGEY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_30_BATTLE
+	object_event  5, 25, SPRITE_RATTATA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_30_BATTLE
 	object_event  5, 39, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree1, -1
 	object_event 11,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree2, -1
 	object_event  2, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route30CooltrainerFScript, -1

@@ -44,7 +44,7 @@ AnimationIdlePointers3:
 	dw TinkatonAnimationIdle
 	dw MakuhitaAnimationIdle
 	dw HariyamaAnimationIdle
-	dw AzurillAnimationIdle
+	dw DuscornAnimationIdle
 	dw NosepassAnimationIdle
 	dw SkittyAnimationIdle
 	dw DelcattyAnimationIdle
@@ -115,9 +115,9 @@ AnimationIdlePointers3:
 	dw CradilyAnimationIdle
 	dw AnorithAnimationIdle
 	dw ArmaldoAnimationIdle
-	dw MudkipAnimationIdle
-	dw MarshtompAnimationIdle
-	dw SwampertAnimationIdle
+	dw AxewAnimationIdle
+	dw FraxureAnimationIdle
+	dw HaxorusAnimationIdle
 	dw RelicanthAnimationIdle
 	dw LuvdiscAnimationIdle
 	dw RaelicAnimationIdle
@@ -181,7 +181,7 @@ TinkatuffAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/tinkatuff/anim_idle.asm"
 TinkatonAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/tinkaton/anim_idle.asm"
 MakuhitaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/makuhita/anim_idle.asm"
 HariyamaAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/hariyama/anim_idle.asm"
-AzurillAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/azurill/anim_idle.asm"
+DuscornAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/duscorn/anim_idle.asm"
 NosepassAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/nosepass/anim_idle.asm"
 SkittyAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/skitty/anim_idle.asm"
 DelcattyAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/delcatty/anim_idle.asm"
@@ -252,9 +252,9 @@ LileepAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/lileep/anim_idle.asm"
 CradilyAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/cradily/anim_idle.asm"
 AnorithAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/anorith/anim_idle.asm"
 ArmaldoAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/armaldo/anim_idle.asm"
-MudkipAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/mudkip/anim_idle.asm"
-MarshtompAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/marshtomp/anim_idle.asm"
-SwampertAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/swampert/anim_idle.asm"
+AxewAnimationIdle:          INCLUDE "gfx/pokemon/hoenn/axew/anim_idle.asm"
+FraxureAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/fraxure/anim_idle.asm"
+HaxorusAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/haxorus/anim_idle.asm"
 RelicanthAnimationIdle:     INCLUDE "gfx/pokemon/hoenn/relicanth/anim_idle.asm"
 LuvdiscAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/luvdisc/anim_idle.asm"
 RaelicAnimationIdle:        INCLUDE "gfx/pokemon/hoenn/raelic/anim_idle.asm"

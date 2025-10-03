@@ -18,9 +18,8 @@ AlphabeticalPokedexOrder:
 	dw ARMALDO
 	dw ARON
 	dw ARTICUNO
-	dw MUDKIP ;AXEW
+	dw AXEW
 	dw AZUMARILL
-	dw AZURILL
 	dw BALTOY
 	dw BANETTE
 	dw BARBOACH
@@ -79,6 +78,7 @@ AlphabeticalPokedexOrder:
 	dw DUNSPARCE
 	dw DUOSION
 	dw DUSCLOPS
+	dw DUSCORN
 	dw DUSKULL
 	dw EELEKTRIK
 	dw EELEKTROSS
@@ -101,7 +101,7 @@ AlphabeticalPokedexOrder:
 	dw FLAREON
 	dw FLYGON
 	dw FORRETRESS
-	dw MARSHTOMP ;FRAXURE
+	dw FRAXURE
 	dw FURRET
 	dw FUSANG
 	dw GASTLY
@@ -127,7 +127,7 @@ AlphabeticalPokedexOrder:
 	dw GYARADOS
 	dw HARIYAMA
 	dw HAUNTER
-	dw SWAMPERT ;HAXORUS
+	dw HAXORUS
 	dw HERACROSS
 	dw HITMONCHAN
 	dw HITMONLEE

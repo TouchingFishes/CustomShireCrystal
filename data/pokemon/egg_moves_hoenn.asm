@@ -45,7 +45,7 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw MakuhitaEggMoves
 	dw NoEggMoves3
-	dw AzurillEggMoves
+	dw DuscornEggMoves
 	dw SkittyEggMoves
 	dw NoEggMoves3
 	dw TropiusEggMoves
@@ -114,7 +114,7 @@ EggMovePointers3::
 	dw NoEggMoves3
 	dw AnorithEggMoves
 	dw NoEggMoves3
-	dw MudkipEggMoves
+	dw AxewEggMoves
 	dw NoEggMoves3
 	dw NoEggMoves3
 	dw RelicanthEggMoves
@@ -255,12 +255,13 @@ MakuhitaEggMoves:
 	dw REVENGE
 	dw -1 ; end
 
-AzurillEggMoves:
-	dw ENCORE
-	dw REFRESH
-	dw SING
+DuscornEggMoves:
+	dw HEADBUTT
+	dw NATURE_POWER
+	dw SUPERPOWER
 	dw SLAM
-	dw TICKLE
+	dw COUNTER
+	dw UPROAR
 	dw -1 ; end
 
 SkittyEggMoves:
@@ -496,11 +497,12 @@ AnorithEggMoves:
 	dw SWORDS_DANCE
 	dw -1 ; end
 
-MudkipEggMoves:
-	dw CURSE
-	dw ICE_BALL
-	dw MIRROR_COAT
-	dw REFRESH
+AxewEggMoves:
+	dw ENDURE
+	dw DRAGON_PULSE
+	dw FOCUS_ENERGY
+	dw COUNTER
+	dw ENDEAVOR
 	dw STOMP
 	dw UPROAR
 	dw -1 ; end

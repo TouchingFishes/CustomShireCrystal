@@ -44,7 +44,7 @@ BitmaskPointers3:
 	dw TinkatonBitmasks
 	dw MakuhitaBitmasks
 	dw HariyamaBitmasks
-	dw AzurillBitmasks
+	dw DuscornBitmasks
 	dw NosepassBitmasks
 	dw SkittyBitmasks
 	dw DelcattyBitmasks
@@ -115,9 +115,9 @@ BitmaskPointers3:
 	dw CradilyBitmasks
 	dw AnorithBitmasks
 	dw ArmaldoBitmasks
-	dw MudkipBitmasks
-	dw MarshtompBitmasks
-	dw SwampertBitmasks
+	dw AxewBitmasks
+	dw FraxureBitmasks
+	dw HaxorusBitmasks
 	dw RelicanthBitmasks
 	dw LuvdiscBitmasks
 	dw RaelicBitmasks
@@ -181,7 +181,7 @@ TinkatuffBitmasks:     INCLUDE "gfx/pokemon/hoenn/tinkatuff/bitmask.asm"
 TinkatonBitmasks:      INCLUDE "gfx/pokemon/hoenn/tinkaton/bitmask.asm"
 MakuhitaBitmasks:      INCLUDE "gfx/pokemon/hoenn/makuhita/bitmask.asm"
 HariyamaBitmasks:      INCLUDE "gfx/pokemon/hoenn/hariyama/bitmask.asm"
-AzurillBitmasks:       INCLUDE "gfx/pokemon/hoenn/azurill/bitmask.asm"
+DuscornBitmasks:       INCLUDE "gfx/pokemon/hoenn/duscorn/bitmask.asm"
 NosepassBitmasks:      INCLUDE "gfx/pokemon/hoenn/nosepass/bitmask.asm"
 SkittyBitmasks:        INCLUDE "gfx/pokemon/hoenn/skitty/bitmask.asm"
 DelcattyBitmasks:      INCLUDE "gfx/pokemon/hoenn/delcatty/bitmask.asm"
@@ -252,9 +252,9 @@ LileepBitmasks:        INCLUDE "gfx/pokemon/hoenn/lileep/bitmask.asm"
 CradilyBitmasks:       INCLUDE "gfx/pokemon/hoenn/cradily/bitmask.asm"
 AnorithBitmasks:       INCLUDE "gfx/pokemon/hoenn/anorith/bitmask.asm"
 ArmaldoBitmasks:       INCLUDE "gfx/pokemon/hoenn/armaldo/bitmask.asm"
-MudkipBitmasks:        INCLUDE "gfx/pokemon/hoenn/mudkip/bitmask.asm"
-MarshtompBitmasks:     INCLUDE "gfx/pokemon/hoenn/marshtomp/bitmask.asm"
-SwampertBitmasks:      INCLUDE "gfx/pokemon/hoenn/swampert/bitmask.asm"
+AxewBitmasks:          INCLUDE "gfx/pokemon/hoenn/axew/bitmask.asm"
+FraxureBitmasks:       INCLUDE "gfx/pokemon/hoenn/fraxure/bitmask.asm"
+HaxorusBitmasks:       INCLUDE "gfx/pokemon/hoenn/haxorus/bitmask.asm"
 RelicanthBitmasks:     INCLUDE "gfx/pokemon/hoenn/relicanth/bitmask.asm"
 LuvdiscBitmasks:       INCLUDE "gfx/pokemon/hoenn/luvdisc/bitmask.asm"
 RaelicBitmasks:        INCLUDE "gfx/pokemon/hoenn/raelic/bitmask.asm"

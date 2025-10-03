@@ -607,8 +607,8 @@ PokemonPicPointers::
 	dba MakuhitaBackpic
 	dba HariyamaFrontpic
 	dba HariyamaBackpic
-	dba AzurillFrontpic
-	dba AzurillBackpic
+	dba DuscornFrontpic
+	dba DuscornBackpic
 	dba NosepassFrontpic
 	dba NosepassBackpic
 	dba SkittyFrontpic
@@ -749,12 +749,12 @@ PokemonPicPointers::
 	dba AnorithBackpic
 	dba ArmaldoFrontpic
 	dba ArmaldoBackpic
-	dba MudkipFrontpic
-	dba MudkipBackpic
-	dba MarshtompFrontpic
-	dba MarshtompBackpic
-	dba SwampertFrontpic
-	dba SwampertBackpic
+	dba AxewFrontpic
+	dba AxewBackpic
+	dba FraxureFrontpic
+	dba FraxureBackpic
+	dba HaxorusFrontpic
+	dba HaxorusBackpic
 	dba RelicanthFrontpic
 	dba RelicanthBackpic
 	dba LuvdiscFrontpic

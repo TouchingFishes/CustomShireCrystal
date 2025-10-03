@@ -1,2 +1,3 @@
-	frame 3, 45
+	frame 1, 06
+	frame 0, 06
 	endanim

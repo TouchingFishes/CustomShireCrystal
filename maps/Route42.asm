@@ -349,7 +349,7 @@ BugManiacArthurAfterBattleText:
 
 	para "tall grass in this"
 	line "route. They are"
-	cont "#cool MON!"
+	cont "cool #MON!"
 	done
 
 Route42_MapEvents:

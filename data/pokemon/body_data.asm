@@ -299,7 +299,7 @@ PokemonBodyData:
 	dw 204, 2487   ; TINKATON
 	dw 303, 1905   ; MAKUHITA
 	dw 707, 5595   ; HARIYAMA
-	dw 008, 44     ; AZURILL
+	dw 503, 2086   ; DUSCORN
 	dw 303, 2138   ; NOSEPASS
 	dw 200, 243    ; SKITTY
 	dw 307, 719    ; DELCATTY

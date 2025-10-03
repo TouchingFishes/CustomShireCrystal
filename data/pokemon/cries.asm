@@ -303,7 +303,7 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   238,  129 ; TINKATON
 	mon_cry CRY_GROWLITHE,   238,  129 ; MAKUHITA
 	mon_cry CRY_GROWLITHE,    72,  224 ; HARIYAMA
-	mon_cry CRY_MARILL,      283,  288 ; AZURILL
+	mon_cry CRY_SLOWKING,    -17,  462 ; DUSCORN
 	mon_cry CRY_SLOWKING,   -167,  320 ; NOSEPASS
 	mon_cry CRY_CLEFAIRY,    182,  106 ; SKITTY
 	mon_cry CRY_CLEFAIRY,    153,  256 ; DELCATTY

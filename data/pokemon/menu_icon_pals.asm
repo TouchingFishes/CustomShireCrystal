@@ -307,7 +307,7 @@ MonMenuIconPals:
 	icon_pals PINK,   RED    ; TINKATON
 	icon_pals BROWN,  RED    ; MAKUHITA
 	icon_pals RED,    RED    ; HARIYAMA
-	icon_pals BLUE,   RED    ; AZURILL
+	icon_pals GREEN,  BROWN  ; DUSCORN
 	icon_pals BLUE,   RED    ; NOSEPASS
 	icon_pals RED,    RED    ; SKITTY
 	icon_pals RED,    RED    ; DELCATTY

@@ -298,7 +298,7 @@ PokedexDataPointerTable:
 	dba TinkatonPokedexEntry
 	dba MakuhitaPokedexEntry
 	dba HariyamaPokedexEntry
-	dba AzurillPokedexEntry
+	dba DuscornPokedexEntry
 	dba NosepassPokedexEntry
 	dba SkittyPokedexEntry
 	dba DelcattyPokedexEntry
@@ -369,9 +369,9 @@ PokedexDataPointerTable:
 	dba CradilyPokedexEntry
 	dba AnorithPokedexEntry
 	dba ArmaldoPokedexEntry
-	dba MudkipPokedexEntry
-	dba MarshtompPokedexEntry
-	dba SwampertPokedexEntry
+	dba AxewPokedexEntry
+	dba FraxurePokedexEntry
+	dba HaxorusPokedexEntry
 	dba RelicanthPokedexEntry
 	dba LuvdiscPokedexEntry
 	dba RaelicPokedexEntry

@@ -134,7 +134,7 @@ ENDM
 	map_attributes MahoganyTown, MAHOGANY_TOWN, $71, NORTH | WEST | EAST
 	connection north, Route43, ROUTE_43, 0
 	connection west, Route42, ROUTE_42, 0
-	connection east, Route44, ROUTE_44, 0
+	connection east, Route44, ROUTE_44, -9
 
 	map_attributes LakeOfRage, LAKE_OF_RAGE, $05, SOUTH
 	connection south, Route43, ROUTE_43, 5
@@ -220,7 +220,7 @@ ENDM
 	connection south, MahoganyTown, MAHOGANY_TOWN, 0
 
 	map_attributes Route44, ROUTE_44, $71, WEST | EAST
-	connection west, MahoganyTown, MAHOGANY_TOWN, 0
+	connection west, MahoganyTown, MAHOGANY_TOWN, 9
 	connection east, BlackthornCity, BLACKTHORN_CITY, -9
 
 	map_attributes Route45, ROUTE_45, $71, NORTH | WEST

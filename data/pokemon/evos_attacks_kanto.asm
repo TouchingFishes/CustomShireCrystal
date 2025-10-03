@@ -2071,7 +2071,7 @@ LaprasEvosAttacks:
 	dbw 31, ICE_BEAM
 	dbw 37, RAIN_DANCE
 	dbw 43, SAFEGUARD
-	dbw 49, HYDRO_PUMP
+	dbw 49, WATER_SPOUT
 	dbw 55, SHEER_COLD
 	db 0 ; no more level-up moves
 

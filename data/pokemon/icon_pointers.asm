@@ -302,7 +302,7 @@ IconPointers:
 	dw TinkatonIcon
 	dw MakuhitaIcon
 	dw HariyamaIcon
-	dw AzurillIcon
+	dw DuscornIcon
 	dw NosepassIcon
 	dw SkittyIcon
 	dw DelcattyIcon
@@ -373,9 +373,9 @@ IconPointers:
 	dw CradilyIcon
 	dw AnorithIcon
 	dw ArmaldoIcon
-	dw MudkipIcon
-	dw MarshtompIcon
-	dw SwampertIcon
+	dw AxewIcon
+	dw FraxureIcon
+	dw HaxorusIcon
 	dw RelicanthIcon
 	dw LuvdiscIcon
 	dw RaelicIcon

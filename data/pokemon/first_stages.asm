@@ -143,7 +143,7 @@ FirstEvoStages::
 	dw KABUTO
 	dw KABUTO
 	dw AERODACTYL
-	dw MUNCHLAX
+	dw SNORLAX
 	dw ARTICUNO   ;090
 	dw ZAPDOS
 	dw MOLTRES
@@ -295,7 +295,7 @@ FirstEvoStages::
 	dw TINKATINK
 	dw MAKUHITA   ;128
 	dw MAKUHITA
-	dw AZURILL
+	dw DUSCORN
 	dw NOSEPASS
 	dw SKITTY
 	dw SKITTY
@@ -366,9 +366,9 @@ FirstEvoStages::
 	dw CRADILY
 	dw CRADILY
 	dw CRADILY   	;170
-	dw MUDKIP
-	dw MUDKIP
-	dw MUDKIP   
+	dw AXEW
+	dw AXEW
+	dw AXEW   
 	dw RELICANTH
 	dw LUVDISC
 	dw RAELIC

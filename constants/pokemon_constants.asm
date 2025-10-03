@@ -303,8 +303,8 @@ DEF HOENN_POKEMON EQU const_value
 	const REUNICLUS  ; 117
 	const SURSKIT    ; 118
 	const MASQUERAIN ; 119
-	const IRON_PENGU ; 11a out?
-	const IRON_THORN ; 11b out?
+	const IRON_PENGU ; 11a ?
+	const IRON_THORN ; 11b ?
 	const SLAKOTH    ; 11c 
 	const VIGOROTH   ; 11d
 	const SLAKING    ; 11e
@@ -316,11 +316,11 @@ DEF HOENN_POKEMON EQU const_value
 	const TINKATON   ; 124
 	const MAKUHITA   ; 125
 	const HARIYAMA   ; 126
-	const AZURILL    ; 127 out
+	const DUSCORN    ; 127
 	const NOSEPASS   ; 128 out
 	const SKITTY     ; 129
 	const DELCATTY   ; 12a
-	const TROPIUS    ; 12b
+	const TROPIUS    ; 12b ?
 	const TANGROWTH  ; 12c
 	const ARON       ; 12d
 	const LAIRON     ; 12e
@@ -331,9 +331,9 @@ DEF HOENN_POKEMON EQU const_value
 	const LUXIO      ; 133
 	const LUXRAY     ; 134
 	const GEKOPON    ; 135
-	const TYNAMO     ; 136 out
-	const EELEKTRIK  ; 137 out
-	const EELEKTROSS ; 138 out 
+	const TYNAMO     ; 136 out?
+	const EELEKTRIK  ; 137 out?
+	const EELEKTROSS ; 138 out? 
 	const CORSOREEF  ; 139
 	const DUNDRAG    ; 13a
 	const CARVANHA   ; 13b
@@ -363,22 +363,22 @@ DEF HOENN_POKEMON EQU const_value
 	const WYRDEER    ; 153
 	const BALTOY     ; 154
 	const CLAYDOL    ; 155
-	const MUNCHLAX   ; 156
+	const MUNCHLAX   ; 156 out
 	const PURGISLUG  ; 157
 	const LARVICID   ; 158 
 	const PENDRAGON  ; 159 
 	const FEEBAS     ; 15a
 	const MILOTIC    ; 15b
 	const CASTFORM   ; 15c
-	const LITWICK    ; 15d out
-	const LAMPENT    ; 15e out
-	const CHANDELURE ; 15f out
+	const LITWICK    ; 15d out?
+	const LAMPENT    ; 15e out?
+	const CHANDELURE ; 15f out?
 	const DUSKULL    ; 160
 	const DUSCLOPS   ; 161
 	const DECIBELLE  ; 162 
 	const CHIMECHO   ; 163
 	const ABSOL      ; 164
-	const MAGNEZONE  ; 165
+	const MAGNEZONE  ; 165 ?
 	const SNOVER     ; 166
 	const ABOMASNOW  ; 167
 	const SHUPPET    ; 168
@@ -387,9 +387,9 @@ DEF HOENN_POKEMON EQU const_value
 	const CRADILY    ; 16b
 	const ANORITH    ; 16c
 	const ARMALDO    ; 16d
-	const MUDKIP	 ; 16e axew
-	const MARSHTOMP	 ; 16f fraxure
-	const SWAMPERT	 ; 170 haxorus
+	const AXEW	     ; 16e
+	const FRAXURE	 ; 16f
+	const HAXORUS	 ; 170
 	const RELICANTH  ; 171
 	const LUVDISC    ; 172
 	const RAELIC     ; 173

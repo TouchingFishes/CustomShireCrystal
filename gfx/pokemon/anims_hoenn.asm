@@ -44,7 +44,7 @@ AnimationPointers3:
 	dw TinkatonAnimation
 	dw MakuhitaAnimation
 	dw HariyamaAnimation
-	dw AzurillAnimation
+	dw DuscornAnimation
 	dw NosepassAnimation
 	dw SkittyAnimation
 	dw DelcattyAnimation
@@ -69,7 +69,7 @@ AnimationPointers3:
 	dw BarboachAnimation
 	dw WhiscashAnimation
 	dw SmoguanaAnimation
-	dw SmoguanaAnimation
+	dw SmokomodoAnimation
 	dw TorkoalAnimation
 	dw VanilliteAnimation
 	dw VanillishAnimation
@@ -115,9 +115,9 @@ AnimationPointers3:
 	dw CradilyAnimation
 	dw AnorithAnimation
 	dw ArmaldoAnimation
-	dw MudkipAnimation
-	dw MarshtompAnimation
-	dw SwampertAnimation
+	dw AxewAnimation
+	dw FraxureAnimation
+	dw HaxorusAnimation
 	dw RelicanthAnimation
 	dw LuvdiscAnimation
 	dw RaelicAnimation
@@ -181,7 +181,7 @@ TinkatuffAnimation:     INCLUDE "gfx/pokemon/hoenn/tinkatuff/anim.asm"
 TinkatonAnimation:      INCLUDE "gfx/pokemon/hoenn/tinkaton/anim.asm"
 MakuhitaAnimation:      INCLUDE "gfx/pokemon/hoenn/makuhita/anim.asm"
 HariyamaAnimation:      INCLUDE "gfx/pokemon/hoenn/hariyama/anim.asm"
-AzurillAnimation:       INCLUDE "gfx/pokemon/hoenn/azurill/anim.asm"
+DuscornAnimation:       INCLUDE "gfx/pokemon/hoenn/duscorn/anim.asm"
 NosepassAnimation:      INCLUDE "gfx/pokemon/hoenn/nosepass/anim.asm"
 SkittyAnimation:        INCLUDE "gfx/pokemon/hoenn/skitty/anim.asm"
 DelcattyAnimation:      INCLUDE "gfx/pokemon/hoenn/delcatty/anim.asm"
@@ -252,9 +252,9 @@ LileepAnimation:        INCLUDE "gfx/pokemon/hoenn/lileep/anim.asm"
 CradilyAnimation:       INCLUDE "gfx/pokemon/hoenn/cradily/anim.asm"
 AnorithAnimation:       INCLUDE "gfx/pokemon/hoenn/anorith/anim.asm"
 ArmaldoAnimation:       INCLUDE "gfx/pokemon/hoenn/armaldo/anim.asm"
-MudkipAnimation:        INCLUDE "gfx/pokemon/hoenn/mudkip/anim.asm"
-MarshtompAnimation:     INCLUDE "gfx/pokemon/hoenn/marshtomp/anim.asm"
-SwampertAnimation:      INCLUDE "gfx/pokemon/hoenn/swampert/anim.asm"
+AxewAnimation:          INCLUDE "gfx/pokemon/hoenn/axew/anim.asm"
+FraxureAnimation:       INCLUDE "gfx/pokemon/hoenn/fraxure/anim.asm"
+HaxorusAnimation:       INCLUDE "gfx/pokemon/hoenn/haxorus/anim.asm"
 RelicanthAnimation:     INCLUDE "gfx/pokemon/hoenn/relicanth/anim.asm"
 LuvdiscAnimation:       INCLUDE "gfx/pokemon/hoenn/luvdisc/anim.asm"
 RaelicAnimation:        INCLUDE "gfx/pokemon/hoenn/raelic/anim.asm"

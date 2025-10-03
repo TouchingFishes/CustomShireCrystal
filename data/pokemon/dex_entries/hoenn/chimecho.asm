@@ -1,4 +1,4 @@
-	db "WIND@" ; species name
+	db "WIND CHIME@" ; species name
 
 	db   "Its cries echo in-"
 	next "side its hollow"
