@@ -308,7 +308,9 @@ MonMenuIconPals:
 	icon_pals BROWN,  RED    ; MAKUHITA
 	icon_pals RED,    RED    ; HARIYAMA
 	icon_pals GREEN,  BROWN  ; DUSCORN
-	icon_pals BLUE,   RED    ; NOSEPASS
+	icon_pals RED,    BLUE   ; FLETCHLING
+	icon_pals RED,    BLUE   ; FLETCHINDA
+	icon_pals RED,    BLUE   ; TALONFLAME
 	icon_pals RED,    RED    ; SKITTY
 	icon_pals RED,    RED    ; DELCATTY
 	icon_pals PURPLE, RED    ; TROPIUS
@@ -331,6 +333,8 @@ MonMenuIconPals:
 	icon_pals BLUE,   RED    ; SHARPEDO
 	icon_pals GRAY,   RED    ; BARBOACH
 	icon_pals BLUE,   RED    ; WHISCASH
+	icon_pals BLUE,   RED    ; BRONZOR
+	icon_pals BLUE,   RED    ; BRONZONG
 	icon_pals BROWN,  RED    ; SMOGUANA
 	icon_pals BROWN,  RED    ; SMOKOMODO
 	icon_pals RED,    RED    ; TORKOAL
@@ -354,7 +358,6 @@ MonMenuIconPals:
 	icon_pals GRAY,   RED    ; WYRDEER
 	icon_pals RED,    RED    ; BALTOY
 	icon_pals RED,    RED    ; CLAYDOL
-	icon_pals BROWN,  BLUE   ; MUNCHLAX
 	icon_pals GREEN,  GRAY   ; PURGISLUG
 	icon_pals GRAY,   RED    ; LARVICID
 	icon_pals PURPLE, RED    ; PENDRAGON
@@ -389,9 +392,6 @@ MonMenuIconPals:
 	icon_pals BLUE,   RED    ; BELDUM
 	icon_pals BLUE,   RED    ; METANG
 	icon_pals BLUE,   RED    ; METAGROSS
-	icon_pals RED,    RED    ; REGIROCK
-	icon_pals RED,    RED    ; REGICE
-	icon_pals RED,    RED    ; REGISTEEL
 	icon_pals RED,    RED    ; LATIAS
 	icon_pals BLUE,   RED    ; LATIOS
 	icon_pals BLUE,   RED    ; KYOGRE

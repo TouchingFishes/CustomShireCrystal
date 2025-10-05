@@ -300,7 +300,9 @@ PokemonBodyData:
 	dw 303, 1905   ; MAKUHITA
 	dw 707, 5595   ; HARIYAMA
 	dw 503, 2086   ; DUSCORN
-	dw 303, 2138   ; NOSEPASS
+	dw 100, 37	   ; FLETCHLING
+	dw 204, 353	   ; FLETCHINA
+	dw 311, 540    ; TALONFLAME
 	dw 200, 243    ; SKITTY
 	dw 307, 719    ; DELCATTY
 	dw 607, 2205   ; TROPIUS
@@ -323,6 +325,8 @@ PokemonBodyData:
 	dw 511, 1958   ; SHARPEDO
 	dw 104, 42     ; BARBOACH
 	dw 211, 520    ; WHISCASH
+	dw 108, 1334   ; BRONZOR
+	dw 403, 4123   ; BRONZONG
 	dw 204, 529    ; SMOGUANA
 	dw 603, 3850   ; SMOKOMODO
 	dw 108, 1773   ; TORKOAL
@@ -346,7 +350,6 @@ PokemonBodyData:
 	dw 511, 2097   ; WYRDEER
 	dw 108, 474    ; BALTOY
 	dw 411, 2381   ; CLAYDOL
-	dw 2315, 200   ; MUNCHLAX
 	dw 411, 1332   ; PURGISLUG
 	dw 204, 276    ; LARVICID
 	dw 411, 1504   ; PENDRAGON
@@ -381,9 +384,6 @@ PokemonBodyData:
 	dw 200, 2099   ; BELDUM
 	dw 311, 4464   ; METANG
 	dw 503, 12125  ; METAGROSS
-	dw 507, 5071   ; REGIROCK
-	dw 511, 3858   ; REGICE
-	dw 603, 4519   ; REGISTEEL
 	dw 407, 882    ; LATIAS
 	dw 607, 1323   ; LATIOS
 	dw 1409, 7760  ; KYOGRE

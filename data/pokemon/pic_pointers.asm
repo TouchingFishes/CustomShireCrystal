@@ -609,8 +609,12 @@ PokemonPicPointers::
 	dba HariyamaBackpic
 	dba DuscornFrontpic
 	dba DuscornBackpic
-	dba NosepassFrontpic
-	dba NosepassBackpic
+	dba FletchlingFrontpic
+	dba FletchlingBackpic
+	dba FletchindaFrontpic
+	dba FletchindaBackpic
+	dba TalonflameFrontpic
+	dba TalonflameBackpic
 	dba SkittyFrontpic
 	dba SkittyBackpic
 	dba DelcattyFrontpic
@@ -655,6 +659,10 @@ PokemonPicPointers::
 	dba BarboachBackpic
 	dba WhiscashFrontpic
 	dba WhiscashBackpic
+	dba BronzorFrontpic
+	dba BronzorBackpic
+	dba BronzongFrontpic
+	dba BronzongBackpic
 	dba SmoguanaFrontpic
 	dba SmoguanaBackpic
 	dba SmokomodoFrontpic
@@ -701,8 +709,6 @@ PokemonPicPointers::
 	dba BaltoyBackpic
 	dba ClaydolFrontpic
 	dba ClaydolBackpic
-	dba MunchlaxFrontpic
-	dba MunchlaxBackpic
 	dba PurgislugFrontpic
 	dba PurgislugBackpic
 	dba LarvicidFrontpic
@@ -771,12 +777,6 @@ PokemonPicPointers::
 	dba MetangBackpic
 	dba MetagrossFrontpic
 	dba MetagrossBackpic
-	dba RegirockFrontpic
-	dba RegirockBackpic
-	dba RegiceFrontpic
-	dba RegiceBackpic
-	dba RegisteelFrontpic
-	dba RegisteelBackpic
 	dba LatiasFrontpic
 	dba LatiasBackpic
 	dba LatiosFrontpic

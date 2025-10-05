@@ -304,7 +304,9 @@ PokemonCries::
 	mon_cry CRY_GROWLITHE,   238,  129 ; MAKUHITA
 	mon_cry CRY_GROWLITHE,    72,  224 ; HARIYAMA
 	mon_cry CRY_SLOWKING,    -17,  462 ; DUSCORN
-	mon_cry CRY_SLOWKING,   -167,  320 ; NOSEPASS
+	mon_cry CRY_SPEAROW,     330,  256 ; FLETCHLING
+	mon_cry CRY_FEAROW,      255,   72 ; FLETCHINDA
+	mon_cry CRY_RAICHU,      248,  192 ; TALONFLAME
 	mon_cry CRY_CLEFAIRY,    182,  106 ; SKITTY
 	mon_cry CRY_CLEFAIRY,    153,  256 ; DELCATTY
 	mon_cry CRY_KANGASKHAN,    0,  256 ; TROPIUS
@@ -327,6 +329,8 @@ PokemonCries::
 	mon_cry CRY_CATERPIE,    -16,  128 ; SHARPEDO
 	mon_cry CRY_BULBASAUR,   238,  129 ; BARBOACH
 	mon_cry CRY_BULBASAUR,   238,  129 ; WHISCASH
+	mon_cry CRY_FEAROW,        0,  256 ; BRONZOR
+	mon_cry CRY_FEAROW,     -183,  352 ; BRONZONG
 	mon_cry CRY_SPINARAK,     17,  512 ; SMOGUANA
 	mon_cry CRY_SPINARAK,   -174,  482 ; SMOKOMODO
 	mon_cry CRY_VOLTORB,     237,  256 ; TORKOAL
@@ -350,7 +354,6 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   238,  129 ; WYRDEER
 	mon_cry CRY_VOLTORB,     237,  256 ; BALTOY
 	mon_cry CRY_VOLTORB,     168,  272 ; CLAYDOL
-	mon_cry CRY_GRIMER,      101,  128 ; MUNCHLAX
 	mon_cry CRY_DUNSPARCE,   438,  272 ; PURGISLUG mon_cry CRY_HOOTHOOT,    250,  320 alt cry
 	mon_cry CRY_CATERPIE,    147,  224 ; LARVICID
 	mon_cry CRY_FEAROW,      189,  145 ; PENDRAGON
@@ -385,9 +388,6 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   128,  129 ; BELDUM
 	mon_cry CRY_BULBASAUR,   238,  129 ; METANG
 	mon_cry CRY_BULBASAUR,   238,  129 ; METAGROSS
-	mon_cry CRY_BULBASAUR,   238,  129 ; REGIROCK
-	mon_cry CRY_BULBASAUR,   238,  129 ; REGICE
-	mon_cry CRY_BULBASAUR,   238,  129 ; REGISTEEL
 	mon_cry CRY_BULBASAUR,   238,  129 ; LATIAS
 	mon_cry CRY_BULBASAUR,   238,  129 ; LATIOS
 	mon_cry CRY_BULBASAUR,   238,  129 ; KYOGRE

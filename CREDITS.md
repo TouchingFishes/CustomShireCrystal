@@ -6,7 +6,7 @@ SourApple for many Pokemon sprites, move animations, overworld weather sprites.
 
 Nuuk for the sprites of Snover, Abomasnow, Larvesta.
 
-Freeline for animations of Honchkrow and Munchlax.
+Freeline for animations of Honchkrow.
 
 Bloodless for Buck and VeteranF sprite.
 
@@ -18,7 +18,7 @@ TriteHexagon for ZinniaBattle theme.
 
 Eeveeee1999 for many Pokemon icons.
 
-DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable, Charizard, Volcarona, Reuniclus, Duosion and Solosis sprites.
+DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable, Charizard, Volcarona, Talonflame, Reuniclus, Duosion and Solosis sprites.
 
 A certain someone who does not want to be named for several amazing sprites.
 

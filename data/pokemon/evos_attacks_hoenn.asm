@@ -45,7 +45,9 @@ EvosAttacksPointers3::
 	dw MakuhitaEvosAttacks
 	dw HariyamaEvosAttacks
 	dw DuscornEvosAttacks
-	dw NosepassEvosAttacks
+	dw FletchlingEvosAttacks
+	dw FletchindaEvosAttacks
+	dw TalonflameEvosAttacks
 	dw SkittyEvosAttacks
 	dw DelcattyEvosAttacks
 	dw TropiusEvosAttacks
@@ -68,6 +70,8 @@ EvosAttacksPointers3::
 	dw SharpedoEvosAttacks
 	dw BarboachEvosAttacks
 	dw WhiscashEvosAttacks
+	dw BronzorEvosAttacks
+	dw BronzongEvosAttacks
 	dw SmoguanaEvosAttacks
 	dw SmokomodoEvosAttacks
 	dw TorkoalEvosAttacks
@@ -91,7 +95,6 @@ EvosAttacksPointers3::
 	dw WyrdeerEvosAttacks
 	dw BaltoyEvosAttacks
 	dw ClaydolEvosAttacks
-	dw MunchlaxEvosAttacks
 	dw PurgislugEvosAttacks
 	dw LarvicidEvosAttacks
 	dw PendragonEvosAttacks
@@ -126,9 +129,6 @@ EvosAttacksPointers3::
 	dw BeldumEvosAttacks
 	dw MetangEvosAttacks
 	dw MetagrossEvosAttacks
-	dw RegirockEvosAttacks
-	dw RegiceEvosAttacks
-	dw RegisteelEvosAttacks
 	dw LatiasEvosAttacks
 	dw LatiosEvosAttacks
 	dw KyogreEvosAttacks
@@ -832,18 +832,52 @@ DuscornEvosAttacks:
 	dbw 53, SYNTHESIS
 	db 0 ; no more level-up moves
 
-NosepassEvosAttacks:
+FletchlingEvosAttacks:
+	evolve EVOLVE_LEVEL, 17, FLETCHINDA
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
-	dbw 7, HARDEN
-	dbw 13, ROCK_THROW
-	dbw 16, BLOCK
-	dbw 22, THUNDER_WAVE
-	dbw 28, ROCK_SLIDE
-	dbw 31, SANDSTORM
-	dbw 37, REST
-	dbw 43, ZAP_CANNON
-	dbw 46, LOCK_ON
+	dbw 1, GROWL
+	dbw 6, QUICK_ATTACK
+	dbw 10, PECK
+	dbw 16, AGILITY
+	dbw 21, FLAIL
+	dbw 25, RAZOR_WIND
+	dbw 34, FLAME_WHEEL
+	dbw 40, AERIAL_ACE
+	dbw 48, STEEL_WING
+	db 0 ; no more level-up moves
+	
+FletchindaEvosAttacks:
+	evolve EVOLVE_LEVEL, 35, FLETCHINDA
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, GROWL
+	dbw 6, QUICK_ATTACK
+	dbw 10, PECK
+	dbw 16, AGILITY
+	dbw 17, EMBER
+	dbw 25, FLAIL
+	dbw 29, RAZOR_WIND
+	dbw 38, FLAME_WHEEL
+	dbw 44, AERIAL_ACE
+	dbw 52, STEEL_WING
+	db 0 ; no more level-up moves
+
+TalonflameEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, GROWL
+	dbw 6, QUICK_ATTACK
+	dbw 10, PECK
+	dbw 16, AGILITY
+	dbw 17, EMBER
+	dbw 25, FLAIL
+	dbw 29, RAZOR_WIND
+	dbw 35, FLAME_WHEEL
+	dbw 42, HOWL
+	dbw 48, AERIAL_ACE
+	dbw 56, STEEL_WING
+	dbw 63, OVERHEAT
 	db 0 ; no more level-up moves
 
 SkittyEvosAttacks:
@@ -1193,6 +1227,40 @@ WhiscashEvosAttacks:
 	dbw 36, EARTHQUAKE
 	dbw 46, FUTURE_SIGHT
 	dbw 56, FISSURE
+	db 0 ; no more level-up moves
+
+BronzorEvosAttacks:
+	evolve EVOLVE_LEVEL, 33, BRONZONG
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 4, CONFUSION
+	dbw 8, CONFUSE_RAY
+	dbw 12, IRON_DEFENSE
+	dbw 16, MIRROR_SHOT
+	dbw 20, SAFEGUARD
+	dbw 24, HYPNOSIS
+	dbw 28, EXTRASENSORY
+	dbw 32, METAL_SOUND
+	dbw 36, FUTURE_SIGHT
+	dbw 40, DOUBLE_EDGE
+	db 0 ; no more level-up moves
+
+BronzongEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 7, CONFUSION
+	dbw 12, CONFUSE_RAY
+	dbw 17, IRON_DEFENSE
+	dbw 22, MIRROR_SHOT
+	dbw 27, SAFEGUARD
+	dbw 32, HYPNOSIS
+	dbw 33, SUNNY_DAY
+	dbw 33, RAIN_DANCE
+	dbw 37, EXTRASENSORY
+	dbw 42, METAL_SOUND
+	dbw 47, FUTURE_SIGHT
+	dbw 52, DOUBLE_EDGE
+	dbw 57, FAINT_ATTACK
 	db 0 ; no more level-up moves
 
 SmoguanaEvosAttacks:
@@ -1554,24 +1622,6 @@ ClaydolEvosAttacks:
 	dbw 36, HYPER_BEAM
 	dbw 42, COSMIC_POWER
 	dbw 55, EXPLOSION
-	db 0 ; no more level-up moves
-
-MunchlaxEvosAttacks:
-	evolve EVOLVE_HAPPINESS, SNORLAX
-	db 0 ; no more evolutions
-	dbw 1, TACKLE
-	dbw 6, AMNESIA
-	dbw 10, DEFENSE_CURL
-	dbw 15, BELLY_DRUM
-	dbw 19, HEADBUTT
-	dbw 24, YAWN
-	dbw 28, REST
-	dbw 28, SNORE
-	dbw 33, BODY_SLAM
-	dbw 37, BLOCK
-	dbw 42, COVET
-	dbw 46, ROLLOUT
-	dbw 51, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 PurgislugEvosAttacks:
@@ -2083,46 +2133,6 @@ MetagrossEvosAttacks:
 	dbw 55, METEOR_MASH
 	dbw 66, AGILITY
 	dbw 77, HYPER_BEAM
-	db 0 ; no more level-up moves
-
-RegirockEvosAttacks:
-	db 0 ; no more evolutions
-	dbw 1, EXPLOSION
-	dbw 9, ROCK_THROW
-	dbw 17, CURSE
-	dbw 25, SUPERPOWER
-	dbw 33, ANCIENTPOWER
-	dbw 41, IRON_DEFENSE
-	dbw 49, ZAP_CANNON
-	dbw 57, LOCK_ON
-	dbw 65, HYPER_BEAM
-	db 0 ; no more level-up moves
-
-RegiceEvosAttacks:
-	db 0 ; no more evolutions
-	dbw 1, EXPLOSION
-	dbw 9, ICY_WIND
-	dbw 17, CURSE
-	dbw 25, SUPERPOWER
-	dbw 33, ANCIENTPOWER
-	dbw 41, AMNESIA
-	dbw 49, ZAP_CANNON
-	dbw 57, LOCK_ON
-	dbw 65, HYPER_BEAM
-	db 0 ; no more level-up moves
-
-RegisteelEvosAttacks:
-	db 0 ; no more evolutions
-	dbw 1, EXPLOSION
-	dbw 9, METAL_CLAW
-	dbw 17, CURSE
-	dbw 25, SUPERPOWER
-	dbw 33, ANCIENTPOWER
-	dbw 41, AMNESIA
-	dbw 41, IRON_DEFENSE
-	dbw 49, ZAP_CANNON
-	dbw 57, LOCK_ON
-	dbw 65, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 LatiasEvosAttacks:

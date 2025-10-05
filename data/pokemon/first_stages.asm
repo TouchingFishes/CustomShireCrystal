@@ -296,7 +296,9 @@ FirstEvoStages::
 	dw MAKUHITA   ;128
 	dw MAKUHITA
 	dw DUSCORN
-	dw NOSEPASS
+	dw FLETCHLING
+	dw FLETCHLING
+	dw FLETCHLING
 	dw SKITTY
 	dw SKITTY
 	dw TROPIUS
@@ -319,6 +321,8 @@ FirstEvoStages::
 	dw CARVANHA
 	dw BARBOACH    ;140
 	dw BARBOACH
+	dw BRONZOR
+	dw BRONZOR
 	dw SMOGUANA
 	dw SMOGUANA
 	dw TORKOAL
@@ -342,7 +346,6 @@ FirstEvoStages::
 	dw STANTLER
 	dw BALTOY
 	dw BALTOY     ;158
-	dw MUNCHLAX
 	dw PURGISLUG
 	dw LARVICID
 	dw LARVICID
@@ -377,9 +380,6 @@ FirstEvoStages::
 	dw BELDUM
 	dw BELDUM
 	dw BELDUM     
-	dw REGIROCK
-	dw REGICE
-	dw REGISTEEL
 	dw LATIAS
 	dw LATIOS		;180
 	dw KYOGRE

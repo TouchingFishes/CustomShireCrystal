@@ -1524,7 +1524,8 @@
 	const EVENT_FOUGHT_ZAPDOS
 	const EVENT_BIRDS_VISIBLE ;Articuno, Zapdos, Moltres
 	const EVENT_NEW_BARK_TOWN_STEVEN
-; Unused: next 42 events
+	const EVENT_PICKED_KANTO_STARTER
+; Unused: next 41 events
 
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800

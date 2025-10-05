@@ -303,7 +303,9 @@ IconPointers:
 	dw MakuhitaIcon
 	dw HariyamaIcon
 	dw DuscornIcon
-	dw NosepassIcon
+	dw FletchlingIcon
+	dw FletchindaIcon
+	dw TalonflameIcon
 	dw SkittyIcon
 	dw DelcattyIcon
 	dw TropiusIcon
@@ -326,6 +328,8 @@ IconPointers:
 	dw SharpedoIcon
 	dw BarboachIcon
 	dw WhiscashIcon
+	dw BronzorIcon
+	dw BronzongIcon
 	dw SmoguanaIcon
 	dw SmokomodoIcon
 	dw TorkoalIcon
@@ -349,7 +353,6 @@ IconPointers:
 	dw WyrdeerIcon
 	dw BaltoyIcon
 	dw ClaydolIcon
-	dw MunchlaxIcon
 	dw PurgislugIcon
 	dw LarvicidIcon
 	dw PendragonIcon
@@ -384,9 +387,6 @@ IconPointers:
 	dw BeldumIcon
 	dw MetangIcon
 	dw MetagrossIcon
-	dw RegirockIcon
-	dw RegiceIcon
-	dw RegisteelIcon
 	dw LatiasIcon
 	dw LatiosIcon
 	dw KyogreIcon

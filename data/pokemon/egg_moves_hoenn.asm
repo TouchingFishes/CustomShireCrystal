@@ -1,141 +1,141 @@
 SECTION "Egg Moves 3", ROMX
 
 EggMovePointers3::
-	dw TurtwigEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw ChimcharEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw PiplupEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw LotugaEggMoves
-	dw NoEggMoves3
-	dw ColijoboEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw VoltrelEggMoves
-	dw NoEggMoves3
-	dw SolosisEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw SurskitEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw SlakothEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NincadaEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw TinkatinkEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw MakuhitaEggMoves
-	dw NoEggMoves3
-	dw DuscornEggMoves
-	dw SkittyEggMoves
-	dw NoEggMoves3
-	dw TropiusEggMoves
-	dw NoEggMoves3
-	dw AronEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw MedititeEggMoves
-	dw NoEggMoves3
-	dw ShinxEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw GekoponEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw CarvanhaEggMoves
-	dw NoEggMoves3
-	dw BarboachEggMoves
-	dw NoEggMoves3
-	dw SmoguanaEggMoves
-	dw NoEggMoves3
-	dw TorkoalEggMoves
-	dw VanilliteEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw TrapinchEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NohfaceEggMoves
-	dw NoEggMoves3
-	dw KrolucadaEggMoves
-	dw NoEggMoves3
-	dw SwabluEggMoves
-	dw NoEggMoves3
-	dw LarvestaEggMoves
-	dw NoEggMoves3
-	dw ImpidimpEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw MunchlaxEggMoves
-	dw PurgislugEggMoves
-	dw LarvicidEggMoves
-	dw NoEggMoves3
-	dw FeebasEggMoves
-	dw NoEggMoves3
-	dw CastformEggMoves
-	dw LitwickEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw DuskullEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw ChimechoEggMoves
-	dw AbsolEggMoves
-	dw NoEggMoves3
-	dw SnoverEggMoves
-	dw NoEggMoves3
-	dw ShuppetEggMoves
-	dw NoEggMoves3
-	dw LileepEggMoves
-	dw NoEggMoves3
-	dw AnorithEggMoves
-	dw NoEggMoves3
-	dw AxewEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw RelicanthEggMoves
-	dw LuvdiscEggMoves
-	dw RaelicEggMoves
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
-	dw NoEggMoves3
+	dw TurtwigEggMoves    ;Turwig
+	dw NoEggMoves3		  ;Grotle
+	dw NoEggMoves3        ;Torterra
+	dw ChimcharEggMoves   ;Chimchar
+	dw NoEggMoves3        ;Monferno
+	dw NoEggMoves3	      ;Infernape
+	dw PiplupEggMoves	  ;Piplup
+	dw NoEggMoves3		  ;Prinplup
+	dw NoEggMoves3		  ;Empoleon
+	dw NoEggMoves3        ;Weavile
+	dw NoEggMoves3		  ;Honchkrow
+	dw NoEggMoves3		  ;Gliscor
+	dw NoEggMoves3		  ;Leafeon
+	dw NoEggMoves3		  ;Glaceon
+	dw NoEggMoves3		  ;Yanmega
+	dw NoEggMoves3		  ;Kujinought
+	dw NoEggMoves3		  ;Mlloy
+	dw LotugaEggMoves	  ;Lotuga
+	dw NoEggMoves3		  ;Vertuga
+	dw ColijoboEggMoves   ;Colijobo
+	dw NoEggMoves3		  ;Crenjobo
+	dw NoEggMoves3		  ;Electivire
+	dw NoEggMoves3		  ;Magmortar
+	dw VoltrelEggMoves    ;Voltrel
+	dw NoEggMoves3        ;Voltrean
+	dw SolosisEggMoves    ;Solosis
+	dw NoEggMoves3		  ;Duosion
+	dw NoEggMoves3		  ;Reuniclus
+	dw SurskitEggMoves    ;Surskit
+	dw NoEggMoves3		  ;Masquerain
+	dw NoEggMoves3        ;Iron Pengu
+	dw NoEggMoves3        ;Iron Thorn
+	dw SlakothEggMoves    ;Slakoth
+	dw NoEggMoves3        ;Vigoroth
+	dw NoEggMoves3		  ;Slaking
+	dw NincadaEggMoves    ;Nincada
+	dw NoEggMoves3        ;Ninjask
+	dw NoEggMoves3		  ;Shedinja
+	dw TinkatinkEggMoves  ;Tinkatink
+	dw NoEggMoves3		  ;Tinkatuff
+	dw NoEggMoves3		  ;Tinkaton
+	dw MakuhitaEggMoves   ;Makuhita
+	dw NoEggMoves3		  ;Hariyama
+	dw DuscornEggMoves    ;Duscorn
+	dw FletchlingEggMoves ;Fletchling
+	dw NoEggMoves3		  ;Fletchinda
+	dw NoEggMoves3		  ;Talonflame
+	dw SkittyEggMoves	  ;Skitty
+	dw NoEggMoves3		  ;Delcatty
+	dw TropiusEggMoves	  ;Tropius
+	dw NoEggMoves3        ;Tangrowth
+	dw AronEggMoves		  ;Aron
+	dw NoEggMoves3		  ;Lairon
+	dw NoEggMoves3 		  ;Aggron
+	dw MedititeEggMoves   ;Meditite
+	dw NoEggMoves3        ;Medicham
+	dw ShinxEggMoves	  ;Shinx
+	dw NoEggMoves3		  ;Luxio
+	dw NoEggMoves3        ;Luxray
+	dw GekoponEggMoves    ;Gekopon
+	dw NoEggMoves3	      ;Tynamo
+	dw NoEggMoves3		  ;Eelektrik
+	dw NoEggMoves3		  ;Eelektross
+	dw NoEggMoves3		  ;Corsoreef
+	dw NoEggMoves3		  ;Dundrag
+	dw CarvanhaEggMoves   ;Carvanha
+	dw NoEggMoves3		  ;Sharpedo
+	dw BarboachEggMoves	  ;Barboach
+	dw NoEggMoves3		  ;Whiscash
+	dw NoEggMoves3		  ;Bronzor
+	dw NoEggMoves3		  ;Bronzong
+	dw SmoguanaEggMoves   ;Smoguana
+	dw NoEggMoves3		  ;Smokomodo
+	dw TorkoalEggMoves    ;Torkoal
+	dw VanilliteEggMoves  ;Vanillite
+	dw NoEggMoves3		  ;Vanillish
+	dw NoEggMoves3		  ;Vanilluxe
+	dw TrapinchEggMoves	  ;Trapinch
+	dw NoEggMoves3		  ;Vibrava
+	dw NoEggMoves3        ;Flygon
+	dw NohfaceEggMoves    ;Nohface
+	dw NoEggMoves3		  ;Kitsunoh
+	dw KrolucadaEggMoves  ;Krolucada
+	dw NoEggMoves3		  ;Krolucard
+	dw SwabluEggMoves	  ;Swablu
+	dw NoEggMoves3        ;Altaria
+	dw LarvestaEggMoves   ;Larvesta
+	dw NoEggMoves3		  ;Volcarona
+	dw ImpidimpEggMoves   ;Impidimp
+	dw NoEggMoves3		  ;Morgrem
+	dw NoEggMoves3		  ;Grimmsnarl
+	dw NoEggMoves3		  ;Wyrdeer
+	dw NoEggMoves3		  ;Baltoy
+	dw NoEggMoves3		  ;Claydol
+	dw PurgislugEggMoves  ;Purgislug
+	dw LarvicidEggMoves   ;Larvicid
+	dw NoEggMoves3		  ;Pendragon
+	dw FeebasEggMoves	  ;Feebs
+	dw NoEggMoves3		  ;Milotic
+	dw CastformEggMoves   ;Castform
+	dw LitwickEggMoves    ;Litwick
+	dw NoEggMoves3        ;Lampent
+	dw NoEggMoves3		  ;Chandelure
+	dw DuskullEggMoves	  ;Duskull
+	dw NoEggMoves3		  ;Dusclops	
+	dw NoEggMoves3		  ;Decibelle
+	dw ChimechoEggMoves	  ;Chimecho
+	dw AbsolEggMoves	  ;Absol
+	dw NoEggMoves3		  ;Magnezone
+	dw SnoverEggMoves	  ;Snover
+	dw NoEggMoves3		  ;Abomasnow
+	dw ShuppetEggMoves	  ;Shuppet
+	dw NoEggMoves3		  ;Banette
+	dw LileepEggMoves     ;Lilleep
+	dw NoEggMoves3        ;Cradily
+	dw AnorithEggMoves    ;Anorith
+	dw NoEggMoves3        ;Armaldo
+	dw AxewEggMoves       ;Axew
+	dw NoEggMoves3		  ;Fraxure
+	dw NoEggMoves3		  ;Haxorus
+	dw RelicanthEggMoves  ;Relicanth
+	dw LuvdiscEggMoves    ;Ludicsc
+	dw RaelicEggMoves	  ;Raelic
+	dw NoEggMoves3		  ;Romushu
+	dw NoEggMoves3		  ;Fusang
+	dw NoEggMoves3		  ;Beldum
+	dw NoEggMoves3	      ;Metang
+	dw NoEggMoves3		  ;Metagross
+	dw NoEggMoves3		  ;Latias
+	dw NoEggMoves3		  ;Latios
+	dw NoEggMoves3		  ;Kyogre
+	dw NoEggMoves3        ;Groudon
+	dw NoEggMoves3        ;Rayquaza
+	dw NoEggMoves3		  ;Jirachi
+	dw NoEggMoves3		  ;Deoxys
 .IndirectEnd::
 
 TurtwigEggMoves:
@@ -261,6 +261,15 @@ DuscornEggMoves:
 	dw SUPERPOWER
 	dw SLAM
 	dw COUNTER
+	dw UPROAR
+	dw -1 ; end
+
+FletchlingEggMoves:
+	dw HEAT_WAVE
+	dw NATURE_POWER
+	dw SWORDS_DANCE
+	dw SLAM
+	dw AIR_CUTTER
 	dw UPROAR
 	dw -1 ; end
 
@@ -391,15 +400,6 @@ LarvestaEggMoves:
 ImpidimpEggMoves:
 	dw THRASH
 	dw NIGHT_SLASH
-	dw -1 ; end
-
-MunchlaxEggMoves:
-	dw CHARM
-	dw CURSE
-	dw DOUBLE_EDGE
-	dw FISSURE
-	dw LICK
-	dw SUBSTITUTE
 	dw -1 ; end
 
 PurgislugEggMoves:

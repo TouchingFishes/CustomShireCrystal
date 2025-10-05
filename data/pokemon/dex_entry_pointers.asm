@@ -299,7 +299,9 @@ PokedexDataPointerTable:
 	dba MakuhitaPokedexEntry
 	dba HariyamaPokedexEntry
 	dba DuscornPokedexEntry
-	dba NosepassPokedexEntry
+	dba FletchlingPokedexEntry
+	dba FletchindaPokedexEntry
+	dba TalonflamePokedexEntry
 	dba SkittyPokedexEntry
 	dba DelcattyPokedexEntry
 	dba TropiusPokedexEntry
@@ -322,6 +324,8 @@ PokedexDataPointerTable:
 	dba SharpedoPokedexEntry
 	dba BarboachPokedexEntry
 	dba WhiscashPokedexEntry
+	dba BronzorPokedexEntry
+	dba BronzongPokedexEntry
 	dba SmoguanaPokedexEntry
 	dba SmokomodoPokedexEntry
 	dba TorkoalPokedexEntry
@@ -345,7 +349,6 @@ PokedexDataPointerTable:
 	dba WyrdeerPokedexEntry
 	dba BaltoyPokedexEntry
 	dba ClaydolPokedexEntry
-	dba MunchlaxPokedexEntry
 	dba PurgislugPokedexEntry
 	dba LarvicidPokedexEntry
 	dba PendragonPokedexEntry
@@ -380,9 +383,6 @@ PokedexDataPointerTable:
 	dba BeldumPokedexEntry
 	dba MetangPokedexEntry
 	dba MetagrossPokedexEntry
-	dba RegirockPokedexEntry
-	dba RegicePokedexEntry
-	dba RegisteelPokedexEntry
 	dba LatiasPokedexEntry
 	dba LatiosPokedexEntry
 	dba KyogrePokedexEntry

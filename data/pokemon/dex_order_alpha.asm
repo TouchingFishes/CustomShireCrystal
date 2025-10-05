@@ -30,6 +30,8 @@ AlphabeticalPokedexOrder:
 	dw BELLSPROUT
 	dw BLASTOISE
 	dw BLISSEY
+	dw BRONZONG
+	dw BRONZOR
 	dw BULBASAUR
 	dw BUTTERFREE
 	dw CARVANHA
@@ -99,6 +101,8 @@ AlphabeticalPokedexOrder:
 	dw FERALIGATR
 	dw FLAAFFY
 	dw FLAREON
+	dw FLETCHLING
+	dw FLETCHINDA
 	dw FLYGON
 	dw FORRETRESS
 	dw FRAXURE
@@ -221,7 +225,6 @@ AlphabeticalPokedexOrder:
 	dw MORGREM
 	dw MR__MIME
 	dw MUK
-	dw MUNCHLAX
 	dw MURKROW
 	dw NATU
 	dw NIDOKING
@@ -235,7 +238,6 @@ AlphabeticalPokedexOrder:
 	dw NINJASK
 	dw NOCTOWL
 	dw NOHFACE
-	dw NOSEPASS
 	dw OCTILLERY
 	dw ODDISH
 	dw OMANYTE
@@ -277,9 +279,6 @@ AlphabeticalPokedexOrder:
 	dw RATICATE
 	dw RATTATA
 	dw RAYQUAZA
-	dw REGICE
-	dw REGIROCK
-	dw REGISTEEL
 	dw RELICANTH
 	dw REMORAID
 	dw REUNICLUS
@@ -332,6 +331,7 @@ AlphabeticalPokedexOrder:
 	dw SURSKIT
 	dw SWABLU
 	dw SWINUB
+	dw TALONFLAME
 	dw TANGELA
 	dw TANGROWTH
 	dw TAUROS

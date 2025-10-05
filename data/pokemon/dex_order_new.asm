@@ -130,6 +130,9 @@ NewPokedexOrder:
 	dw SCIZOR
 	dw PINSIR
 	dw HERACROSS
+	dw FLETCHLING
+	dw FLETCHINDA
+	dw TALONFLAME
 	dw KOFFING
 	dw WEEZING
 	dw GRIMER
@@ -239,7 +242,6 @@ NewPokedexOrder:
 	dw TINKATON
 	dw MAKUHITA
 	dw HARIYAMA
-	dw NOSEPASS
 	dw TROPIUS
 	dw LICKITUNG
 	dw TANGELA
@@ -316,6 +318,8 @@ NewPokedexOrder:
 	dw CLAYDOL
 	dw PURGISLUG
 	dw MISDREAVUS
+	dw BRONZOR
+	dw BRONZONG
 	dw PORYGON
 	dw PORYGON2
 	dw RAELIC
@@ -333,7 +337,6 @@ NewPokedexOrder:
 	dw ANORITH
 	dw ARMALDO
 	dw AERODACTYL
-	dw MUNCHLAX
 	dw SNORLAX
 	dw AXEW
 	dw FRAXURE
@@ -384,8 +387,5 @@ NewPokedexOrder:
 	dw GROUDON
 	dw RAYQUAZA
 	dw JIRACHI
-	dw REGIROCK
-	dw REGICE
-	dw REGISTEEL
 	dw DEOXYS
 	assert_table_length NUM_POKEMON
