@@ -57,29 +57,56 @@ VictoryRoadRivalNext:
 	closetext
 	setevent EVENT_RIVAL_VICTORY_ROAD
 	checkevent EVENT_GOT_TOTODILE_FROM_ELM
-	iftrue .GotTotodile
+	iftrue .Totodile
 	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
-	iftrue .GotChikorita
+	iftrue .Chikorita
 	winlosstext VictoryRoadRivalDefeatText, VictoryRoadRivalVictoryText
 	setlasttalked VICTORYROAD_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Charmander
 	loadtrainer RIVAL1, RIVAL1_5_TOTODILE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
 	sjump .AfterBattle
 
-.GotTotodile:
+.Charmander:
+	loadtrainer RIVAL1, RIVAL1_5_SQUIRTLE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .AfterBattle
+
+.Totodile:
 	winlosstext VictoryRoadRivalDefeatText, VictoryRoadRivalVictoryText
 	setlasttalked VICTORYROAD_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Squirtle
 	loadtrainer RIVAL1, RIVAL1_5_CHIKORITA
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
 	sjump .AfterBattle
 
-.GotChikorita:
+.Squirtle:
+	loadtrainer RIVAL1, RIVAL1_5_BULBASAUR
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .AfterBattle
+
+.Chikorita:
 	winlosstext VictoryRoadRivalDefeatText, VictoryRoadRivalVictoryText
 	setlasttalked VICTORYROAD_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Bulbasaur
+	loadtrainer RIVAL1, RIVAL1_5_CYNDAQUIL
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .AfterBattle
+
+.Bulbasaur:
 	loadtrainer RIVAL1, RIVAL1_5_CYNDAQUIL
 	startbattle
 	dontrestartmapmusic

@@ -95,7 +95,16 @@ PlateauRivalBattleCommon:
 	; Cyndaquil
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText
 	setlasttalked INDIGOPLATEAUPOKECENTER1F_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Charmander
 	loadtrainer RIVAL2, RIVAL2_2_TOTODILE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump PlateauRivalPostBattle
+
+.Charmander:
+	loadtrainer RIVAL2, RIVAL2_2_SQUIRTLE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -104,7 +113,16 @@ PlateauRivalBattleCommon:
 .Totodile:
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText
 	setlasttalked INDIGOPLATEAUPOKECENTER1F_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Squirtle
 	loadtrainer RIVAL2, RIVAL2_2_CHIKORITA
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump PlateauRivalPostBattle
+
+.Squirtle:
+	loadtrainer RIVAL2, RIVAL2_2_BULBASAUR
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -114,6 +132,13 @@ PlateauRivalBattleCommon:
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText
 	setlasttalked INDIGOPLATEAUPOKECENTER1F_RIVAL
 	loadtrainer RIVAL2, RIVAL2_2_CYNDAQUIL
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump PlateauRivalPostBattle
+
+.Bulbasaur:
+	loadtrainer RIVAL2, RIVAL2_2_CHARMANDER
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle

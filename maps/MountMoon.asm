@@ -32,7 +32,16 @@ MountMoonRivalBattleScript:
 	iftrue .Chikorita
 	winlosstext MountMoonRivalTextWin, MountMoonRivalTextLoss
 	setlasttalked MOUNTMOON_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Charmander
 	loadtrainer RIVAL2, RIVAL2_1_TOTODILE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .FinishBattle
+
+.Charmander:
+	loadtrainer RIVAL2, RIVAL2_1_SQUIRTLE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -41,7 +50,16 @@ MountMoonRivalBattleScript:
 .Totodile:
 	winlosstext MountMoonRivalTextWin, MountMoonRivalTextLoss
 	setlasttalked MOUNTMOON_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Squirtle
 	loadtrainer RIVAL2, RIVAL2_1_CHIKORITA
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .FinishBattle
+
+.Squirtle:
+	loadtrainer RIVAL2, RIVAL2_1_BULBASAUR
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -50,7 +68,16 @@ MountMoonRivalBattleScript:
 .Chikorita:
 	winlosstext MountMoonRivalTextWin, MountMoonRivalTextLoss
 	setlasttalked MOUNTMOON_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Bulbasaur
 	loadtrainer RIVAL2, RIVAL2_1_CYNDAQUIL
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .FinishBattle
+
+.Bulbasaur:
+	loadtrainer RIVAL2, RIVAL2_1_CHARMANDER
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle

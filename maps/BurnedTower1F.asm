@@ -61,33 +61,61 @@ BurnedTowerRivalBattleScript:
 	waitbutton
 	closetext
 	checkevent EVENT_GOT_TOTODILE_FROM_ELM
-	iftrue .totodile
+	iftrue .Totodile
 	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
-	iftrue .chikorita
+	iftrue .Chikorita
 	winlosstext BurnedTowerRival_WinText, BurnedTowerRival_LossText
 	setlasttalked BURNEDTOWER1F_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Charmander
 	loadtrainer RIVAL1, RIVAL1_3_TOTODILE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
 	sjump .returnfrombattle
 
-.totodile
+.Charmander:
+	loadtrainer RIVAL1, RIVAL1_3_SQUIRTLE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .returnfrombattle
+
+.Totodile:
 	winlosstext BurnedTowerRival_WinText, BurnedTowerRival_LossText
 	setlasttalked BURNEDTOWER1F_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Squirtle
 	loadtrainer RIVAL1, RIVAL1_3_CHIKORITA
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
 	sjump .returnfrombattle
 
-.chikorita
+.Squirtle:
+	loadtrainer RIVAL1, RIVAL1_3_BULBASAUR
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .returnfrombattle
+
+.Chikorita:
 	winlosstext BurnedTowerRival_WinText, BurnedTowerRival_LossText
 	setlasttalked BURNEDTOWER1F_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Bulbasaur
 	loadtrainer RIVAL1, RIVAL1_3_CYNDAQUIL
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
+	sjump .returnfrombattle
+
+.Bulbasaur:	
+	loadtrainer RIVAL1, RIVAL1_3_CHARMANDER
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	;fallthrough
 .returnfrombattle
 	playmusic MUSIC_RIVAL_AFTER
 	opentext

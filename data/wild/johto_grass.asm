@@ -1434,7 +1434,7 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 5, LEDYBA
-	dbw 5, PIDGEY
+	dbw 5, FLETCHLING	 ;PIDGEY
 	dbw 6, BELLSPROUT
 	dbw 6, GROWLITHE
 	dbw 6, PICHU         ;PIDGEY
@@ -1442,7 +1442,7 @@ JohtoGrassWildMons:
 	dbw 7, JIGGLYPUFF    ;PIDGEY
 	; day
 	dbw 5, SENTRET       ;PIDGEY
-	dbw 5, PIDGEY
+	dbw 5, FLETCHLING	 ;PIDGEY
 	dbw 6, BELLSPROUT
 	dbw 6, GROWLITHE
 	dbw 6, PICHU         ;PIDGEY
@@ -1463,26 +1463,26 @@ JohtoGrassWildMons:
 	; morn
 	dbw 15, LEDYBA
 	dbw 16, GROWLITHE
-	dbw 16, STANTLER  ;PIDGEY
-	dbw 17, VULPIX    ;GROWLITHE
-	dbw 16, PIDGEOTTO
+	dbw 16, STANTLER   ;PIDGEY
+	dbw 17, VULPIX     ;GROWLITHE
+	dbw 16, FLETCHLING ;PIDGEOTTO
 	dbw 18, LEDIAN
 	dbw 18, LEDIAN
 	; day
 	dbw 15, PIDGEY
 	dbw 16, GROWLITHE
-	dbw 17, STANTLER  ;PIDGEY
-	dbw 16, VULPIX    ;GROWLITHE
-	dbw 16, PIDGEOTTO
-	dbw 14, PIKACHU   ;PIDGEY
-	dbw 14, PIKACHU   ;PIDGEY
+	dbw 17, STANTLER   ;PIDGEY
+	dbw 16, VULPIX     ;GROWLITHE
+	dbw 16, FLETCHLING ;PIDGEOTTO
+	dbw 14, PIKACHU    ;PIDGEY
+	dbw 14, PIKACHU    ;PIDGEY
 	; nite
 	dbw 15, SPINARAK
 	dbw 16, STANTLER
 	dbw 17, HOOTHOOT
-	dbw 14, SHINX    ;STANTLER
+	dbw 14, SHINX      ;STANTLER
 	dbw 20, NOCTOWL
-	dbw 17, LUXIO    ;ARIADOS
+	dbw 17, LUXIO      ;ARIADOS
 	dbw 20, ARIADOS
 	end_grass_wildmons
 

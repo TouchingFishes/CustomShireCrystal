@@ -155,8 +155,8 @@ MoveTutorScript:
 	closetext
 	end
 
-GoldenrodCityPokefanMScript:
-	jumptextfaceplayer GoldenrodCityPokefanMText
+GoldenrodCityEngineerScript:
+	jumptextfaceplayer GoldenrodCityEngineerText
 
 GoldenrodCityYoungster1Script:
 	jumptextfaceplayer GoldenrodCityYoungster1Text
@@ -281,7 +281,7 @@ GoldenrodCityMoveTutorWalkAroundPlayerThenEnterGameCornerMovement:
 	step UP
 	step_end
 
-GoldenrodCityPokefanMText:
+GoldenrodCityEngineerText:
 	text "They built the new"
 	line "RADIO TOWER to"
 
@@ -580,7 +580,7 @@ GoldenrodCity_MapEvents:
 	bg_event 30,  6, BGEVENT_READ, GoldenrodCityFlowerShopSign
 
 	def_object_events
-	object_event  7, 18, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityPokefanMScript, EVENT_GOLDENROD_CITY_CIVILIANS
+	object_event  7, 18, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, GoldenrodCityEngineerScript, EVENT_GOLDENROD_CITY_CIVILIANS
 	object_event 30, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityYoungster1Script, EVENT_GOLDENROD_CITY_CIVILIANS
 	object_event 12, 16, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodCityCooltrainerF1Script, EVENT_GOLDENROD_CITY_CIVILIANS
 	object_event 20, 26, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityCooltrainerF2Script, EVENT_GOLDENROD_CITY_CIVILIANS

@@ -66,7 +66,16 @@ AzaleaTownRivalBattleScript:
 	iftrue .Chikorita
 	winlosstext AzaleaTownRivalWinText, AzaleaTownRivalLossText
 	setlasttalked AZALEATOWN_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Charmander
 	loadtrainer RIVAL1, RIVAL1_2_TOTODILE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .AfterBattle
+
+.Charmander:
+	loadtrainer RIVAL1, RIVAL1_2_SQUIRTLE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -75,7 +84,16 @@ AzaleaTownRivalBattleScript:
 .Totodile:
 	winlosstext AzaleaTownRivalWinText, AzaleaTownRivalLossText
 	setlasttalked AZALEATOWN_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Squirtle
 	loadtrainer RIVAL1, RIVAL1_2_CHIKORITA
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .AfterBattle
+
+.Squirtle:
+	loadtrainer RIVAL1, RIVAL1_2_BULBASAUR
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -84,7 +102,16 @@ AzaleaTownRivalBattleScript:
 .Chikorita:
 	winlosstext AzaleaTownRivalWinText, AzaleaTownRivalLossText
 	setlasttalked AZALEATOWN_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Bulbasaur
 	loadtrainer RIVAL1, RIVAL1_2_CYNDAQUIL
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .AfterBattle
+
+.Bulbasaur:
+	loadtrainer RIVAL1, RIVAL1_2_CHARMANDER
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle

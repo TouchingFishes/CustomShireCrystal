@@ -61,6 +61,25 @@ ElmsLabWalkUpToElmScript:
 if !DEF(_DEBUG)
 	writetext ElmText_Accepted
 	promptbutton
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .Kanto
+	ifequal 2, .Johto
+	end
+
+.Kanto:
+	setevent EVENT_PICKED_KANTO_STARTER
+	;fallthrough
+.Johto:
+	writetext ElmText_MonConfiguration
+	turnobject ELMSLAB_ELM, DOWN
+	pause 15
+	writetext ElmText_MonConfigurationEnd
+	turnobject ELMSLAB_ELM, RIGHT
+	waitbutton
+	;fallthrough
+.ElmContinue:
 	writetext ElmText_ResearchAmbitions
 	waitbutton
 	closetext
@@ -88,6 +107,18 @@ endc
 	setscene SCENE_ELMSLAB_CANT_LEAVE
 	closetext
 	end
+
+.MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 10, 5
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 2 ; items
+	db "KANTO@"
+	db "JOHTO@"
 
 ProfElmScript:
 	faceplayer
@@ -276,7 +307,7 @@ ChikoritaPokeBallScript:
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
 	checkevent EVENT_PICKED_KANTO_STARTER
-	iftrue SquirtlePokeBallScript
+	iftrue BulbasaurPokeBallScript
 	pokepic CHIKORITA
 	cry CHIKORITA
 	waitbutton
@@ -848,8 +879,25 @@ endc
 ElmText_Accepted:
 	text "Thanks, <PLAY_G>!"
 
-	para "You're a great"
-	line "help!"
+	para "Since you're such"
+	line "a great help, I"
+
+	para "will let you pick"
+	line "a #MON from"
+	cont "KANTO or JOHTO!"
+	done
+
+ElmText_MonConfiguration:
+	text "Alright, let me"
+	line "configure the"
+	cont "#MON choice…"	
+	done
+
+ElmText_MonConfigurationEnd:
+	text "<……><……><……>"
+
+	para "Okay, it should"
+	line "be done now."
 	done
 
 ElmText_Refused:

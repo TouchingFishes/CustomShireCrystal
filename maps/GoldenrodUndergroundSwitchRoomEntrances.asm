@@ -173,7 +173,16 @@ UndergroundRivalBattleScript:
 	iftrue .Chikorita
 	winlosstext UndergroundRivalWinText, UndergroundRivalLossText
 	setlasttalked GOLDENRODUNDERGROUNDSWITCHROOMENTRANCES_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Charmander
 	loadtrainer RIVAL1, RIVAL1_4_TOTODILE
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .FinishRivalBattle
+
+.Charmander:
+	loadtrainer RIVAL1, RIVAL1_4_SQUIRTLE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -182,7 +191,16 @@ UndergroundRivalBattleScript:
 .Totodile:
 	winlosstext UndergroundRivalWinText, UndergroundRivalLossText
 	setlasttalked GOLDENRODUNDERGROUNDSWITCHROOMENTRANCES_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Squirtle
 	loadtrainer RIVAL1, RIVAL1_4_CHIKORITA
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .FinishRivalBattle
+
+.Squirtle:
+	loadtrainer RIVAL1, RIVAL1_4_BULBASAUR
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -191,7 +209,16 @@ UndergroundRivalBattleScript:
 .Chikorita:
 	winlosstext UndergroundRivalWinText, UndergroundRivalLossText
 	setlasttalked GOLDENRODUNDERGROUNDSWITCHROOMENTRANCES_RIVAL
+	checkevent EVENT_PICKED_KANTO_STARTER
+	iftrue .Bulbasaur
 	loadtrainer RIVAL1, RIVAL1_4_CYNDAQUIL
+	startbattle
+	dontrestartmapmusic
+	reloadmapafterbattle
+	sjump .FinishRivalBattle
+
+.Bulbasaur:
+	loadtrainer RIVAL1, RIVAL1_4_CHARMANDER
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
