@@ -86,4 +86,6 @@ TrainerClassNames::
 	li "UNOVA CHAMP"
 	li "ELDER"
 	li "<PKMN> TRAINER" ;BUCK
+	li "<PKMN> TRAINER" ;SORA
+	li "<PKMN> TRAINER" ;MOTO
 	assert_list_length NUM_TRAINER_CLASSES

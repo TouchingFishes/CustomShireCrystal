@@ -3,8 +3,8 @@
 	const ROUTE19_SWIMMER_GUY1
 	const ROUTE19_SWIMMER_GUY2
 	const ROUTE19_SWIMMER_GUY3
-	const ROUTE19_FISHER1
-	const ROUTE19_FISHER2
+	const ROUTE19_ENGINEER1
+	const ROUTE19_ENGINEER2
 
 Route19_MapScripts:
 	def_scene_scripts
@@ -68,34 +68,34 @@ TrainerSwimmermTucker:
 	closetext
 	end
 
-Route19Fisher1Script:
+Route19Engineer1Script:
 	faceplayer
 	opentext
 	checkevent EVENT_CINNABAR_ROCKS_CLEARED
 	iftrue .RocksCleared
-	writetext Route19Fisher1Text
+	writetext Route19Engineer1Text
 	waitbutton
 	closetext
 	end
 
 .RocksCleared:
-	writetext Route19Fisher1Text_RocksCleared
+	writetext Route19Engineer1Text_RocksCleared
 	waitbutton
 	closetext
 	end
 
-Route19Fisher2Script:
+Route19Engineer2Script:
 	faceplayer
 	opentext
 	checkevent EVENT_CINNABAR_ROCKS_CLEARED
 	iftrue .RocksCleared
-	writetext Route19Fisher2Text
+	writetext Route19Engineer2Text
 	waitbutton
 	closetext
 	end
 
 .RocksCleared:
-	writetext Route19Fisher2Text_RocksCleared
+	writetext Route19Engineer2Text_RocksCleared
 	waitbutton
 	closetext
 	end
@@ -185,7 +185,7 @@ SwimmermJeromeAfterBattleText:
 	cont "love the sea."
 	done
 
-Route19Fisher1Text:
+Route19Engineer1Text:
 	text "Sorry. This road"
 	line "is closed for"
 	cont "construction."
@@ -197,18 +197,18 @@ Route19Fisher1Text:
 	line "from PALLET TOWN."
 	done
 
-Route19Fisher1Text_RocksCleared:
+Route19Engineer1Text_RocksCleared:
 	text "I'm all sweaty."
 	line "Time for a swim!"
 	done
 
-Route19Fisher2Text:
+Route19Engineer2Text:
 	text "Who knows how long"
 	line "it would take to"
 	cont "move this boulder…"
 	done
 
-Route19Fisher2Text_RocksCleared:
+Route19Engineer2Text_RocksCleared:
 	text "The roadwork is"
 	line "finally finished."
 
@@ -249,5 +249,5 @@ Route19_MapEvents:
 	object_event 13, 28, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermHarold, -1
 	object_event 11, 17, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermJerome, -1
 	object_event  8, 23, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerSwimmermTucker, -1
-	object_event  9,  5, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 1, Route19Fisher1Script, -1
-	object_event 11,  5, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 1, Route19Fisher2Script, -1
+	object_event  9,  5, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 1, Route19Engineer1Script, -1
+	object_event 11,  5, SPRITE_ENGINEER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 1, Route19Engineer2Script, -1

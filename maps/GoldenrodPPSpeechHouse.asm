@@ -1,5 +1,5 @@
 	object_const_def
-	const GOLDENRODPPSPEECHHOUSE_FISHER
+	const GOLDENRODPPSPEECHHOUSE_FAT_GUY
 	const GOLDENRODPPSPEECHHOUSE_LASS
 
 GoldenrodPPSpeechHouse_MapScripts:
@@ -7,8 +7,8 @@ GoldenrodPPSpeechHouse_MapScripts:
 
 	def_callbacks
 
-GoldenrodPPSpeechHouseFisherScript:
-	jumptextfaceplayer GoldenrodPPSpeechHouseFisherText
+GoldenrodPPSpeechHouseFatGuyScript:
+	jumptextfaceplayer GoldenrodPPSpeechHouseFatGuyText
 
 GoldenrodPPSpeechHouseLassScript:
 	jumptextfaceplayer GoldenrodPPSpeechHouseLassText
@@ -22,7 +22,7 @@ GoldenrodPPSpeechHouseBookshelf1:
 GoldenrodPPSpeechHouseRadio:
 	jumpstd Radio2Script
 
-GoldenrodPPSpeechHouseFisherText:
+GoldenrodPPSpeechHouseFatGuyText:
 	text "Once while I was"
 	line "battling, my"
 
@@ -64,5 +64,5 @@ GoldenrodPPSpeechHouse_MapEvents:
 	bg_event  7,  1, BGEVENT_READ, GoldenrodPPSpeechHouseRadio
 
 	def_object_events
-	object_event  2,  4, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodPPSpeechHouseFisherScript, -1
+	object_event  2,  4, SPRITE_FAT_GUY, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodPPSpeechHouseFatGuyScript, -1
 	object_event  5,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPPSpeechHouseLassScript, -1

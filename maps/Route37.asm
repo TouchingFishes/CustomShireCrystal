@@ -7,6 +7,7 @@
 	const ROUTE37_FRUIT_TREE2
 	const ROUTE37_FRUIT_TREE3
 	const ROUTE37_SAGE
+	const ROUTE37_BEAUTY
 
 Route37_MapScripts:
 	def_scene_scripts
@@ -64,6 +65,17 @@ TrainerSageHaruki:
 	endifjustbattled
 	opentext
 	writetext SageHarukiAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBeautyValerie:
+	trainer BEAUTY, VALERIE, EVENT_BEAT_BEAUTY_VALERIE, BeautyValerieSeenText, BeautyValerieBeatenText, 0, .Script
+
+.Script
+	endifjustbattled
+	opentext
+	writetext BeautyValerieAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -280,6 +292,25 @@ SageHarukiAfterBattleText:
 	line "JOHTO."
 	done
 
+BeautyValerieSeenText:
+	text "Hi! Aren't you a"
+	line "cute trainer!"
+
+	para "May I see your"
+	line "#MON?"
+	done
+
+BeautyValerieBeatenText:
+	text "I'm glad I got to"
+	line "see your #MON!"
+	done
+
+BeautyValerieAfterBattleText:
+	text "When I see #-"
+	line "MON, it seems to"
+	cont "soothe my nerves."
+	done
+
 BugCatcherJoshSeenText:
 	text "I caught this bug"
 	line "#MON during the"
@@ -316,3 +347,4 @@ Route37_MapEvents:
 	object_event 15, 25, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route37FruitTree3, -1
 	object_event  6,  5, SPRITE_SAGE, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSageHaruki, -1
 	object_event 14, 16, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherJosh, -1
+	object_event  7, 14, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBeautyValerie, -1

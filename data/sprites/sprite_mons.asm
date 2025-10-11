@@ -53,4 +53,5 @@ SpriteMons:
 	dw PSYDUCK
 	dw ABRA
 	dw POLIWRATH
+	dw TROPIUS
 	assert_table_length NUM_POKEMON_SPRITES

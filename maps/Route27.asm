@@ -7,7 +7,7 @@
 	const ROUTE27_YOUNGSTER2
 	const ROUTE27_POKE_BALL1
 	const ROUTE27_POKE_BALL2
-	const ROUTE27_FISHER
+	const ROUTE27_FAT_GUY
 
 Route27_MapScripts:
 	def_scene_scripts
@@ -23,28 +23,28 @@ Route27Noop2Scene:
 	end
 
 FirstStepIntoKantoLeftScene:
-	turnobject ROUTE27_FISHER, LEFT
-	showemote EMOTE_SHOCK, ROUTE27_FISHER, 15
-	applymovement ROUTE27_FISHER, Route27FisherStepLeftTwiceMovement
+	turnobject ROUTE27_FAT_GUY, LEFT
+	showemote EMOTE_SHOCK, ROUTE27_FAT_GUY, 15
+	applymovement ROUTE27_FAT_GUY, Route27FatGuyStepLeftTwiceMovement
 	sjump FirstStepIntoKantoScene_Continue
 
 FirstStepIntoKantoRightScene:
-	turnobject ROUTE27_FISHER, LEFT
-	showemote EMOTE_SHOCK, ROUTE27_FISHER, 15
-	applymovement ROUTE27_FISHER, Route27FisherStepLeftOnceMovement
+	turnobject ROUTE27_FAT_GUY, LEFT
+	showemote EMOTE_SHOCK, ROUTE27_FAT_GUY, 15
+	applymovement ROUTE27_FAT_GUY, Route27FatGuyStepLeftOnceMovement
 FirstStepIntoKantoScene_Continue:
 	turnobject PLAYER, RIGHT
 	opentext
-	writetext Route27FisherHeyText
+	writetext Route27FatGuyHeyText
 	promptbutton
-	writetext Route27FisherText
+	writetext Route27FatGuyText
 	waitbutton
 	closetext
 	setscene SCENE_ROUTE27_NOOP
 	end
 
-Route27FisherScript:
-	jumptextfaceplayer Route27FisherText
+Route27FatGuyScript:
+	jumptextfaceplayer Route27FatGuyText
 
 TrainerPsychicGilbert:
 	trainer PSYCHIC_T, GILBERT, EVENT_BEAT_PSYCHIC_GILBERT, PsychicGilbertSeenText, PsychicGilbertBeatenText, 0, .Script
@@ -305,20 +305,20 @@ Route27TMSolarbeam:
 Route27RareCandy:
 	itemball RARE_CANDY
 
-Route27FisherStepLeftTwiceMovement:
+Route27FatGuyStepLeftTwiceMovement:
 	step LEFT
 	step LEFT
 	step_end
 
-Route27FisherStepLeftOnceMovement:
+Route27FatGuyStepLeftOnceMovement:
 	step LEFT
 	step_end
 
-Route27FisherHeyText:
+Route27FatGuyHeyText:
 	text "Hey!"
 	done
 
-Route27FisherText:
+Route27FatGuyText:
 	text "Do you know what"
 	line "you just did?"
 
@@ -489,4 +489,4 @@ Route27_MapEvents:
 	object_event 58, 13, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperJose2, -1
 	object_event 60, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route27TMSolarbeam, EVENT_ROUTE_27_TM_SOLARBEAM
 	object_event 53, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route27RareCandy, EVENT_ROUTE_27_RARE_CANDY
-	object_event 21, 10, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 3, Route27FisherScript, -1
+	object_event 21, 10, SPRITE_FAT_GUY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 3, Route27FatGuyScript, -1

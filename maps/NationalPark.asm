@@ -186,6 +186,37 @@ TrainerSchoolboyJack1:
 	jumpstd RematchMScript
 	end
 
+NationalParkVanilliteGuyScript:
+	faceplayer
+	checkevent EVENT_GOT_NATIONAL_PARK_GIFT_VANILLITE
+	iftrue .AlreadyGotGiftPoke
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFullGift
+	opentext
+	writetext NationalParkVanilliteGiftText
+	promptbutton
+	getmonname STRING_BUFFER_3, VANILLITE
+	writetext NationalParkReceivedGiftText
+	promptbutton
+	givepoke VANILLITE, PLAIN_FORM, 16
+	setevent EVENT_GOT_NATIONAL_PARK_GIFT_VANILLITE
+	closetext
+	end
+	
+.PartyFullGift:
+	opentext
+	writetext NationalParkPartyFullGiftText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGotGiftPoke:
+	opentext
+	writetext NationalParkAlreadyGotGiftText
+	waitbutton
+	closetext
+	end
+
 TrainerPokefanmWilliam:
 	trainer POKEFANM, WILLIAM, EVENT_BEAT_POKEFANM_WILLIAM, PokefanmWilliamSeenText, PokefanmWilliamBeatenText, 0, .Script
 
@@ -511,6 +542,38 @@ NationalParkTrainerTipsText:
 	cont "pressing START."
 	done
 
+NationalParkPartyFullGiftText:
+	text "Oh boy, this heat"
+	line "is killing me. I'm"
+
+	para "glad I got this"
+	line "chill #MON."
+	done
+
+NationalParkVanilliteGiftText:
+	text "I caught this"
+	line "#MON for my"
+	cont "date…"
+
+	para "But she is'nt"
+	line "showing up."
+
+	para "So you can have"
+	line "it."
+	done
+
+NationalParkReceivedGiftText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+
+NationalParkAlreadyGotGiftText:
+	text "Take good care of"
+	line "that icy boy!"
+	done
+
 NationalPark_MapEvents:
 	db 0, 0 ; filler
 
@@ -535,7 +598,7 @@ NationalPark_MapEvents:
 	object_event 11, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkYoungster1Script, -1
 	object_event 10, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NationalParkYoungster2Script, -1
 	object_event 17, 41, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkTeacher2Script, -1
-	object_event 26, 40, SPRITE_PERSIAN, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NationalParkPersian, -1 ;SPRITE_GROWLITHE
+	object_event 26, 40, SPRITE_PERSIAN, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NationalParkPersian, -1
 	object_event 27, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyJack1, -1
 	object_event 18, 29, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanfBeverly1, -1
 	object_event 16,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanmWilliam, -1
@@ -543,3 +606,5 @@ NationalPark_MapEvents:
 	object_event 35, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkParlyzHeal, EVENT_NATIONAL_PARK_PARLYZ_HEAL
 	object_event 26,  6, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkGameboyKidScript, -1
 	object_event  1, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkTMDig, EVENT_NATIONAL_PARK_TM_DIG
+	object_event 22, 40, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkVanilliteGuyScript, -1
+

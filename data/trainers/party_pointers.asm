@@ -88,4 +88,6 @@ TrainerGroups:
 	dba AlderGroup
 	dba ElderGroup
 	dba BuckGroup
+	dba SoraGroup
+	dba MotoGroup
 	assert_table_length NUM_TRAINER_CLASSES

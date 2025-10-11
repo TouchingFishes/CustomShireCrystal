@@ -1,6 +1,6 @@
 	object_const_def
 	const OLIVINECAFE_SAILOR1
-	const OLIVINECAFE_FISHING_GURU
+	const OLIVINECAFE_FAT_GUY
 	const OLIVINECAFE_SAILOR2
 
 OlivineCafe_MapScripts:
@@ -23,8 +23,8 @@ OlivineCafeStrengthSailorScript:
 	closetext
 	end
 
-OlivineCafeFishingGuruScript:
-	jumptextfaceplayer OlivineCafeFishingGuruText
+OlivineCafeFatGuyScript:
+	jumptextfaceplayer OlivineCafeFatGuyText
 
 OlivineCafeSailorScript:
 	jumptextfaceplayer OlivineCafeSailorText
@@ -54,7 +54,7 @@ OlivineCafeStrengthSailorText_GotStrength:
 	line "buff bod!"
 	done
 
-OlivineCafeFishingGuruText:
+OlivineCafeFatGuyText:
 	text "OLIVINE CAFE's"
 	line "menu is chock full"
 
@@ -89,5 +89,5 @@ OlivineCafe_MapEvents:
 
 	def_object_events
 	object_event  4,  3, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeStrengthSailorScript, -1
-	object_event  7,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeFishingGuruScript, -1
+	object_event  7,  3, SPRITE_FAT_GUY, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeFatGuyScript, -1
 	object_event  6,  6, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeSailorScript, -1

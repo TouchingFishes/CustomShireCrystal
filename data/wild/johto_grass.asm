@@ -1321,21 +1321,21 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_32
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 4, EKANS
+	dbw 4, HOPPIP      ;EKANS
 	dbw 5, RATTATA
 	dbw 7, BELLSPROUT
 	dbw 6, MAREEP      ;HOPPIP
 	dbw 7, PIDGEY
-	dbw 7, HOPPIP
-	dbw 7, HOPPIP
+	dbw 7, SKITTY	   ;HOPPIP
+	dbw 7, SKITTY	   ;HOPPIP
 	; day
-	dbw 4, EKANS
+	dbw 4, HOPPIP      ;EKANS
 	dbw 5, RATTATA
 	dbw 7, BELLSPROUT
 	dbw 6, MAREEP      ;HOPPIP
 	dbw 7, PIDGEY
-	dbw 7, HOPPIP
-	dbw 7, HOPPIP
+	dbw 7, SKITTY	   ;HOPPIP
+	dbw 7, SKITTY	   ;HOPPIP
 	; nite
 	dbw 4, WOOPER
 	dbw 5, RATTATA
@@ -1433,29 +1433,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_36
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 5, LEDYBA
-	dbw 5, FLETCHLING	 ;PIDGEY
-	dbw 6, BELLSPROUT
-	dbw 6, GROWLITHE
-	dbw 6, PICHU         ;PIDGEY
-	dbw 7, JIGGLYPUFF    ;PIDGEY
-	dbw 7, JIGGLYPUFF    ;PIDGEY
+	dbw 6, LEDYBA
+	dbw 6, FLETCHLING	 ;PIDGEY
+	dbw 7, BELLSPROUT
+	dbw 7, GROWLITHE
+	dbw 7, PICHU         ;PIDGEY
+	dbw 8, JIGGLYPUFF    ;PIDGEY
+	dbw 9, JIGGLYPUFF    ;PIDGEY
 	; day
-	dbw 5, SENTRET       ;PIDGEY
-	dbw 5, FLETCHLING	 ;PIDGEY
-	dbw 6, BELLSPROUT
-	dbw 6, GROWLITHE
-	dbw 6, PICHU         ;PIDGEY
-	dbw 7, JIGGLYPUFF    ;PIDGEY
-	dbw 7, JIGGLYPUFF    ;PIDGEY
+	dbw 6, SENTRET       ;PIDGEY
+	dbw 6, FLETCHLING	 ;PIDGEY
+	dbw 7, BELLSPROUT
+	dbw 7, GROWLITHE
+	dbw 7, PICHU         ;PIDGEY
+	dbw 8, JIGGLYPUFF    ;PIDGEY
+	dbw 9, JIGGLYPUFF    ;PIDGEY
 	; nite
-	dbw 5, SPINARAK
-	dbw 5, HOOTHOOT
-	dbw 6, BELLSPROUT
-	dbw 6, SHINX         ;HOOTHOOT
-	dbw 7, HOOTHOOT
-	dbw 6, GASTLY
-	dbw 6, GASTLY
+	dbw 6, SPINARAK
+	dbw 6, HOOTHOOT
+	dbw 7, BELLSPROUT
+	dbw 7, SHINX         ;HOOTHOOT
+	dbw 8, HOOTHOOT
+	dbw 7, GASTLY
+	dbw 8, GASTLY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_37

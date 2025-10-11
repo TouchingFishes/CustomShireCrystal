@@ -825,6 +825,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass ENGINEER ; 51
 	const VINCENT
 	const BOBBY
+	const DWIGHT
+	const GABOR
 
 	trainerclass MASTER ; 52
 	const YAMA1
@@ -839,6 +841,12 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BUCK ; 55
 	const BUCK1
+
+	trainerclass SORA ; 55
+	const SORA1
+
+	trainerclass MOTO ; 55
+	const MOTO1
 
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

@@ -89,6 +89,8 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; alder
 	db MUSIC_SAGE_ENCOUNTER        ; elder
 	db MUSIC_HIKER_ENCOUNTER       ; buck
+	db MUSIC_KIMONO_ENCOUNTER      ; sora
+	db MUSIC_HIKER_ENCOUNTER       ; moto
 	assert_table_length NUM_TRAINER_CLASSES + 1
 	db MUSIC_HIKER_ENCOUNTER       ; unused
 	db MUSIC_HIKER_ENCOUNTER       ; unused

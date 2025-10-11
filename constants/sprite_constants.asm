@@ -59,7 +59,7 @@
 	const SPRITE_NURSE ; 37
 	const SPRITE_LINK_RECEPTIONIST ; 38
 	const SPRITE_CLERK ; 39
-	const SPRITE_FISHER ; 3a
+	const SPRITE_FAT_GUY ; 3a
 	const SPRITE_FISHING_GURU ; 3b
 	const SPRITE_SCIENTIST ; 3c
 	const SPRITE_KIMONO_GIRL ; 3d
@@ -112,7 +112,7 @@
 	const SPRITE_HEX_MANIAC ;72
 	const SPRITE_VETERAN_F ;73
 	const SPRITE_VETERAN_M ;74
-	const SPRITE_BUG_MANIAC ;75
+	const SPRITE_POKEMANIAC ;75
 	const SPRITE_GIDEON ;76
 	const SPRITE_DRAGON_TAMER ;76
 	const SPRITE_LADY ;77
@@ -125,6 +125,10 @@
 	const SPRITE_HIKER ; 84
 	const SPRITE_FIREBREATHER ; 85
 	const SPRITE_BIRD_KEEPER ; 86
+	const SPRITE_JUGGLER ; 87
+	const SPRITE_FISHER ; 88
+	const SPRITE_SORA ;89
+	const SPRITE_MOTO ;90
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
@@ -182,6 +186,7 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_PSYDUCK ; c6
 	const SPRITE_ABRA ; c7
 	const SPRITE_POLIWRATH ; c8
+	const SPRITE_TROPIUS ;c9
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)

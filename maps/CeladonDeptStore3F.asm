@@ -3,7 +3,7 @@
 	const CELADONDEPTSTORE3F_YOUNGSTER
 	const CELADONDEPTSTORE3F_GAMEBOY_KID1
 	const CELADONDEPTSTORE3F_GAMEBOY_KID2
-	const CELADONDEPTSTORE3F_SUPER_NERD
+	const CELADONDEPTSTORE3F_POKEMANIAC
 
 CeladonDeptStore3F_MapScripts:
 	def_scene_scripts
@@ -38,8 +38,8 @@ CeladonDeptStore3FGameboyKid2Script:
 	turnobject CELADONDEPTSTORE3F_GAMEBOY_KID2, DOWN
 	end
 
-CeladonDeptStore3FSuperNerdScript:
-	jumptextfaceplayer CeladonDeptStore3FSuperNerdText
+CeladonDeptStore3FPokemaniacScript:
+	jumptextfaceplayer CeladonDeptStore3FPokemaniacText
 
 CeladonDeptStore3FElevatorButton:
 	jumpstd ElevatorButtonScript
@@ -80,7 +80,7 @@ CeladonDeptStore3FGameboyKid2Text:
 	cont "ferent #MON!"
 	done
 
-CeladonDeptStore3FSuperNerdText:
+CeladonDeptStore3FPokemaniacText:
 	text "The TM SHOP sells"
 	line "some rare moves."
 	done
@@ -111,4 +111,4 @@ CeladonDeptStore3F_MapEvents:
 	object_event  6,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FYoungsterScript, -1
 	object_event  9,  1, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FGameboyKid1Script, -1
 	object_event 10,  1, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FGameboyKid2Script, -1
-	object_event 13,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FSuperNerdScript, -1
+	object_event 13,  4, SPRITE_POKEMANIAC, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore3FPokemaniacScript, -1

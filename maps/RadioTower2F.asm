@@ -1,7 +1,7 @@
 DEF BLUE_CARD_POINT_CAP EQU 30
 
 	object_const_def
-	const RADIOTOWER2F_SUPER_NERD
+	const RADIOTOWER2F_ENGINEER
 	const RADIOTOWER2F_TEACHER
 	const RADIOTOWER2F_ROCKET1
 	const RADIOTOWER2F_ROCKET2
@@ -18,8 +18,8 @@ RadioTower2F_MapScripts:
 
 	def_callbacks
 
-RadioTower2FSuperNerdScript:
-	jumptextfaceplayer RadioTower2FSuperNerdText
+RadioTower2FEngineerScript:
+	jumptextfaceplayer RadioTower2FEngineerText
 
 RadioTower2FTeacherScript:
 	faceplayer
@@ -340,7 +340,7 @@ RadioTower2FPlayerWalksToMicrophoneMovement:
 	slow_step RIGHT
 	step_end
 
-RadioTower2FSuperNerdText:
+RadioTower2FEngineerText:
 	text "You can listen to"
 	line "the radio any-"
 	cont "where. Tune in!"
@@ -725,7 +725,7 @@ RadioTower2F_MapEvents:
 	bg_event 13,  0, BGEVENT_READ, RadioTower2FPokemonRadioSign
 
 	def_object_events
-	object_event  6,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RadioTower2FSuperNerdScript, EVENT_GOLDENROD_CITY_CIVILIANS
+	object_event  6,  6, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_SCRIPT, 0, RadioTower2FEngineerScript, EVENT_GOLDENROD_CITY_CIVILIANS
 	object_event 17,  2, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RadioTower2FTeacherScript, -1
 	object_event  1,  4, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM4, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event  8,  4, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM5, EVENT_RADIO_TOWER_ROCKET_TAKEOVER

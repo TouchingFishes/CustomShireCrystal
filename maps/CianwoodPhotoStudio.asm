@@ -1,18 +1,18 @@
 	object_const_def
-	const CIANWOODPHOTOSTUDIO_FISHING_GURU
+	const CIANWOODPHOTOSTUDIO_POKEMANIAC
 
 CianwoodPhotoStudio_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-CianwoodPhotoStudioFishingGuruScript:
+CianwoodPhotoStudioPokemaniacScript:
 	faceplayer
 	opentext
-	writetext CianwoodPhotoStudioFishingGuruText_Question
+	writetext CianwoodPhotoStudioPokemaniacText_Question
 	yesorno
 	iffalse .Refused
-	writetext CianwoodPhotoStudioFishingGuruText_Yes
+	writetext CianwoodPhotoStudioPokemaniacText_Yes
 	waitbutton
 	special PhotoStudio
 	waitbutton
@@ -20,12 +20,12 @@ CianwoodPhotoStudioFishingGuruScript:
 	end
 
 .Refused:
-	writetext CianwoodPhotoStudioFishingGuruText_No
+	writetext CianwoodPhotoStudioPokemaniacText_No
 	waitbutton
 	closetext
 	end
 
-CianwoodPhotoStudioFishingGuruText_Question:
+CianwoodPhotoStudioPokemaniacText_Question:
 	text "You have magnifi-"
 	line "cent #MON with"
 	cont "you."
@@ -34,11 +34,11 @@ CianwoodPhotoStudioFishingGuruText_Question:
 	line "for a souvenir?"
 	done
 
-CianwoodPhotoStudioFishingGuruText_Yes:
+CianwoodPhotoStudioPokemaniacText_Yes:
 	text "OK! Big smile now!"
 	done
 
-CianwoodPhotoStudioFishingGuruText_No:
+CianwoodPhotoStudioPokemaniacText_No:
 	text "Oh, that's too"
 	line "bad. I thought it"
 
@@ -58,4 +58,4 @@ CianwoodPhotoStudio_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  2,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CianwoodPhotoStudioFishingGuruScript, -1
+	object_event  2,  3, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CianwoodPhotoStudioPokemaniacScript, -1

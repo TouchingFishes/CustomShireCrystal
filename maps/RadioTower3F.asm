@@ -1,5 +1,5 @@
 	object_const_def
-	const RADIOTOWER3F_SUPER_NERD
+	const RADIOTOWER3F_POKEMANIAC
 	const RADIOTOWER3F_GYM_GUIDE
 	const RADIOTOWER3F_COOLTRAINER_F
 	const RADIOTOWER3F_ROCKET1
@@ -23,8 +23,8 @@ RadioTower3FCardKeyShutterCallback:
 	changeblock 14, 4, $01 ; floor
 	endcallback
 
-RadioTower3FSuperNerdScript:
-	jumptextfaceplayer RadioTower3FSuperNerdText
+RadioTower3FPokemaniacScript:
+	jumptextfaceplayer RadioTower3FPokemaniacText
 
 RadioTower3FGymGuideScript:
 	faceplayer
@@ -154,7 +154,7 @@ RadioTower3FPersonnelSign:
 RadioTower3FPokemonMusicSign:
 	jumptext RadioTower3FPokemonMusicSignText
 
-RadioTower3FSuperNerdText:
+RadioTower3FPokemaniacText:
 	text "We have recordings"
 	line "of the cries of"
 
@@ -342,7 +342,7 @@ RadioTower3F_MapEvents:
 	bg_event 14,  2, BGEVENT_UP, CardKeySlotScript
 
 	def_object_events
-	object_event  7,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RadioTower3FSuperNerdScript, EVENT_RADIO_TOWER_CIVILIANS_AFTER
+	object_event  7,  4, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RadioTower3FPokemaniacScript, EVENT_RADIO_TOWER_CIVILIANS_AFTER
 	object_event  3,  4, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RadioTower3FGymGuideScript, -1
 	object_event 11,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RadioTower3FCooltrainerFScript, -1
 	object_event  5,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerGruntM7, EVENT_RADIO_TOWER_ROCKET_TAKEOVER

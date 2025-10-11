@@ -1,7 +1,7 @@
 	object_const_def
 	const VERMILIONPORT_SAILOR1
 	const VERMILIONPORT_SAILOR2
-	const VERMILIONPORT_SUPER_NERD
+	const VERMILIONPORT_POKEMANIAC
 
 VermilionPort_MapScripts:
 	def_scene_scripts
@@ -184,10 +184,10 @@ VermilionPortSailorScript:
 	closetext
 	end
 
-VermilionPortSuperNerdScript:
+VermilionPortPokemaniacScript:
 	faceplayer
 	opentext
-	writetext VermilionPortSuperNerdText
+	writetext VermilionPortPokemaniacText
 	waitbutton
 	closetext
 	end
@@ -287,7 +287,7 @@ VermilionPortSailSundayText:
 	line "sail next Sunday."
 	done
 
-VermilionPortSuperNerdText:
+VermilionPortPokemaniacText:
 	text "You came from"
 	line "JOHTO?"
 
@@ -312,4 +312,4 @@ VermilionPort_MapEvents:
 	def_object_events
 	object_event  7, 17, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorAtGangwayScript, EVENT_VERMILION_PORT_SAILOR_AT_GANGWAY
 	object_event  6, 11, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorScript, -1
-	object_event 11, 11, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSuperNerdScript, -1
+	object_event 11, 11, SPRITE_POKEMANIAC, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortPokemaniacScript, -1

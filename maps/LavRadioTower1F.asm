@@ -3,7 +3,7 @@
 	const LAVRADIOTOWER1F_OFFICER
 	const LAVRADIOTOWER1F_SUPER_NERD1
 	const LAVRADIOTOWER1F_GENTLEMAN
-	const LAVRADIOTOWER1F_SUPER_NERD2
+	const LAVRADIOTOWER1F_POKEMANIAC
 
 LavRadioTower1F_MapScripts:
 	def_scene_scripts
@@ -50,18 +50,18 @@ LavRadioTower1FGentlemanScript:
 .expncardname
 	db "EXPN CARD@"
 
-LavRadioTower1FSuperNerd2Script:
+LavRadioTower1FPokemaniac2Script:
 	faceplayer
 	opentext
 	checkflag ENGINE_EXPN_CARD
 	iftrue .GotExpnCard
-	writetext LavRadioTower1FSuperNerd2Text
+	writetext LavRadioTower1FPokemaniac2Text
 	waitbutton
 	closetext
 	end
 
 .GotExpnCard:
-	writetext LavRadioTower1FSuperNerd2Text_GotExpnCard
+	writetext LavRadioTower1FPokemaniac2Text_GotExpnCard
 	waitbutton
 	closetext
 	end
@@ -152,7 +152,7 @@ LavRadioTower1FGentlemanText_GotExpnCard:
 	para "Gahahahaha!"
 	done
 
-LavRadioTower1FSuperNerd2Text:
+LavRadioTower1FPokemaniac2Text:
 	text "Hey there!"
 
 	para "I am the super"
@@ -171,7 +171,7 @@ LavRadioTower1FSuperNerd2Text:
 	line "better get one!"
 	done
 
-LavRadioTower1FSuperNerd2Text_GotExpnCard:
+LavRadioTower1FPokemaniac2Text_GotExpnCard:
 	text "Hey there!"
 
 	para "I am the super"
@@ -225,4 +225,4 @@ LavRadioTower1F_MapEvents:
 	object_event 15,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FOfficerScript, -1
 	object_event  1,  3, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FSuperNerd1Script, -1
 	object_event  9,  1, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FGentlemanScript, -1
-	object_event 14,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FSuperNerd2Script, -1
+	object_event 14,  6, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FPokemaniac2Script, -1

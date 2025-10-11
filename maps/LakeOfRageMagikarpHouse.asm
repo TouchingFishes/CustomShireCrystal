@@ -1,5 +1,5 @@
 	object_const_def
-	const LAKEOFRAGEMAGIKARPHOUSE_FISHING_GURU
+	const LAKEOFRAGEMAGIKARPHOUSE_FISHER
 
 LakeOfRageMagikarpHouse_MapScripts:
 	def_scene_scripts
@@ -204,4 +204,4 @@ LakeOfRageMagikarpHouse_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, MagikarpHouseBookshelf
 
 	def_object_events
-	object_event  2,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MagikarpLengthRaterScript, -1
+	object_event  2,  3, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MagikarpLengthRaterScript, -1

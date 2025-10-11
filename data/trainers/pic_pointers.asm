@@ -78,7 +78,7 @@ TrainerPicPointers::
 	dba HexManiacPic
 	dba VeteranFPic
 	dba VeteranMPic
-	dba BugManiacPic
+	dba PokemaniacPic
 	dba GideonPic
 	dba DragonTamerPic
 	dba LadyPic
@@ -88,4 +88,6 @@ TrainerPicPointers::
 	dba AlderPic
 	dba ElderPic
 	dba BuckPic
+	dba SoraPic
+	dba MotoPic
 	assert_table_length NUM_TRAINER_CLASSES

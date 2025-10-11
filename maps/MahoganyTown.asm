@@ -3,7 +3,7 @@ DEF MAHOGANYTOWN_RAGECANDYBAR_PRICE EQU 300
 	object_const_def
 	const MAHOGANYTOWN_POKEFAN_M
 	const MAHOGANYTOWN_GRAMPS
-	const MAHOGANYTOWN_FISHER
+	const MAHOGANYTOWN_HIKER
 	const MAHOGANYTOWN_LASS
 
 MahoganyTown_MapScripts:
@@ -103,8 +103,8 @@ MahoganyTownGrampsScript:
 	closetext
 	end
 
-MahoganyTownFisherScript:
-	jumptextfaceplayer MahoganyTownFisherText
+MahoganyTownHikerScript:
+	jumptextfaceplayer MahoganyTownHikerText
 
 MahoganyTownLassScript:
 	jumptextfaceplayer MahoganyTownLassText
@@ -196,7 +196,7 @@ MahoganyTownGrampsText_ClearedRocketHideout:
 	cont "anglers there."
 	done
 
-MahoganyTownFisherText:
+MahoganyTownHikerText:
 	text "Since you came"
 	line "this far, take the"
 
@@ -263,5 +263,5 @@ MahoganyTown_MapEvents:
 	def_object_events
 	object_event 19,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MahoganyTownPokefanMScript, EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_EAST
 	object_event  6,  9, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MahoganyTownGrampsScript, -1
-	object_event  6, 14, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MahoganyTownFisherScript, EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_GYM
+	object_event  6, 14, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MahoganyTownHikerScript, EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_GYM
 	object_event 12,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MahoganyTownLassScript, EVENT_MAHOGANY_MART_OWNERS

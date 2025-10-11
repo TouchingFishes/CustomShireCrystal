@@ -439,10 +439,12 @@ ColijoboEvosAttacks:
 	evolve EVOLVE_LEVEL, 38, CRENJOBO
 	db 0 ; no more evolutions
 	dbw 1, PECK
-	dbw 3, LEER
+	dbw 1, MEAN_LOOK
+	dbw 3, SCARY_FACE
 	dbw 7, SPITE
-	dbw 13, WILL_O_WISP
-	dbw 21, EMBER
+	dbw 13, EMBER
+	dbw 18, FAINT_ATTACK
+	dbw 21, WILL_O_WISP
 	dbw 31, RAZOR_WIND
 	dbw 43, GRUDGE
 	dbw 49, OMINOUS_WIND
@@ -451,10 +453,12 @@ ColijoboEvosAttacks:
 CrenjoboEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, PECK
-	dbw 3, LEER
+	dbw 1, MEAN_LOOK
+	dbw 3, SCARY_FACE
 	dbw 7, SPITE
-	dbw 13, WILL_O_WISP
-	dbw 21, EMBER
+	dbw 13, EMBER
+	dbw 18, FAINT_ATTACK
+	dbw 21, WILL_O_WISP
 	dbw 31, RAZOR_WIND
 	dbw 38, GRUDGE
 	dbw 46, OMINOUS_WIND

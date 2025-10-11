@@ -1,7 +1,7 @@
 	object_const_def
 	const VIOLETCITY_EARL
 	const VIOLETCITY_LASS
-	const VIOLETCITY_SUPER_NERD
+	const VIOLETCITY_POKEMANIAC
 	const VIOLETCITY_GRAMPS
 	const VIOLETCITY_YOUNGSTER
 	const VIOLETCITY_FRUIT_TREE
@@ -58,8 +58,8 @@ VioletCityEarlScript:
 VioletCityLassScript:
 	jumptextfaceplayer VioletCityLassText
 
-VioletCitySuperNerdScript:
-	jumptextfaceplayer VioletCitySuperNerdText
+VioletCityPokemaniacScript:
+	jumptextfaceplayer VioletCityPokemaniacText
 
 VioletCityGrampsScript:
 	jumptextfaceplayer VioletCityGrampsText
@@ -213,7 +213,7 @@ VioletCityLassText:
 	line "ghosts."
 	done
 
-VioletCitySuperNerdText:
+VioletCityPokemaniacText:
 	text "Hey, you're a"
 	line "#MON trainer?"
 
@@ -301,9 +301,9 @@ VioletCity_MapEvents:
 	bg_event 37, 14, BGEVENT_ITEM, VioletCityHiddenHyperPotion
 
 	def_object_events
-	object_event 13, 16, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityEarlScript, EVENT_VIOLET_CITY_EARL
+	object_event 13, 16, SPRITE_FAT_GUY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityEarlScript, EVENT_VIOLET_CITY_EARL
 	object_event 28, 28, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityLassScript, -1
-	object_event 24, 14, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VioletCitySuperNerdScript, -1
+	object_event 24, 14, SPRITE_POKEMANIAC, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VioletCityPokemaniacScript, -1
 	object_event 17, 20, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityGrampsScript, -1
 	object_event  5, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityYoungsterScript, -1
 	object_event 14, 29, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityFruitTree, -1

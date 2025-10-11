@@ -1,7 +1,7 @@
 	object_const_def
 	const ROUTE35GOLDENRODGATE_RANDY
 	const ROUTE35GOLDENRODGATE_POKEFAN_F
-	const ROUTE35GOLDENRODGATE_FISHER
+	const ROUTE35GOLDENRODGATE_JUGGLER
 
 Route35GoldenrodGate_MapScripts:
 	def_scene_scripts
@@ -91,8 +91,8 @@ Route35GoldenrodGatePokefanFScript:
 	closetext
 	end
 
-Route35GoldenrodGateFisherScript:
-	jumptextfaceplayer Route35GoldenrodGateFisherText
+Route35GoldenrodGateJugglerScript:
+	jumptextfaceplayer Route35GoldenrodGateJugglerText
 
 Route35GoldenrodGateRandyAskTakeThisMonToMyFriendText:
 	text "Excuse me, kid!"
@@ -181,7 +181,7 @@ Route35GoldenrodGatePokefanFText_FoughtSudowoodo:
 	cont "on the radio."
 	done
 
-Route35GoldenrodGateFisherText:
+Route35GoldenrodGateJugglerText:
 	text "I wonder how many"
 	line "kinds of #MON"
 
@@ -211,4 +211,4 @@ Route35GoldenrodGate_MapEvents:
 	def_object_events
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RandyScript, -1
 	object_event  6,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route35GoldenrodGatePokefanFScript, -1
-	object_event  3,  2, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route35GoldenrodGateFisherScript, -1
+	object_event  3,  2, SPRITE_JUGGLER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route35GoldenrodGateJugglerScript, -1

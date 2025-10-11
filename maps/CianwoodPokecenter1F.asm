@@ -2,7 +2,7 @@
 	const CIANWOODPOKECENTER1F_NURSE
 	const CIANWOODPOKECENTER1F_LASS
 	const CIANWOODPOKECENTER1F_GYM_GUIDE
-	const CIANWOODPOKECENTER1F_SUPER_NERD
+	const CIANWOODPOKECENTER1F_POKEMANIAC
 
 CianwoodPokecenter1F_MapScripts:
 	def_scene_scripts
@@ -32,8 +32,8 @@ CianwoodGymGuideScript:
 	closetext
 	end
 
-CianwoodPokecenter1FSuperNerdScript:
-	jumptextfaceplayer CianwoodPokecenter1FSuperNerdText
+CianwoodPokecenter1FPokemaniacScript:
+	jumptextfaceplayer CianwoodPokecenter1FPokemaniacText
 
 CianwoodPokecenter1FLassText:
 	text "Did you meet the"
@@ -89,7 +89,7 @@ CianwoodGymGuideWinText:
 	cont "looking at you!"
 	done
 
-CianwoodPokecenter1FSuperNerdText:
+CianwoodPokecenter1FPokemaniacText:
 	text "I love showing off"
 	line "the #MON that"
 
@@ -119,4 +119,4 @@ CianwoodPokecenter1F_MapEvents:
 	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FNurseScript, -1
 	object_event  1,  5, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FLassScript, -1
 	object_event  5,  3, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CianwoodGymGuideScript, -1
-	object_event  8,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FSuperNerdScript, -1
+	object_event  8,  6, SPRITE_POKEMANIAC, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CianwoodPokecenter1FPokemaniacScript, -1

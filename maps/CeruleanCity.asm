@@ -1,6 +1,6 @@
 	object_const_def
 	const CERULEANCITY_COOLTRAINER_M
-	const CERULEANCITY_SUPER_NERD
+	const CERULEANCITY_POKEMANIAC
 	const CERULEANCITY_SLOWPOKE
 	const CERULEANCITY_COOLTRAINER_F
 	const CERULEANCITY_FISHER
@@ -32,8 +32,8 @@ CeruleanCityCooltrainerMScript:
 	closetext
 	end
 
-CeruleanCitySuperNerdScript:
-	jumptextfaceplayer CeruleanCitySuperNerdText
+CeruleanCityPokemaniacScript:
+	jumptextfaceplayer CeruleanCityPokemaniacText
 
 CeruleanCitySlowbro:
 	opentext
@@ -172,7 +172,7 @@ CeruleanCityCooltrainerMText2:
 	cont "it sounds fun too."
 	done
 
-CeruleanCitySuperNerdText:
+CeruleanCityPokemaniacText:
 	text "The CAPE in the"
 	line "north is a good"
 
@@ -299,7 +299,7 @@ CeruleanCity_MapEvents:
 
 	def_object_events
 	object_event 15, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanCityCooltrainerMScript, -1
-	object_event 23, 15, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanCitySuperNerdScript, -1
+	object_event 23, 15, SPRITE_POKEMANIAC, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanCityPokemaniacScript, -1
 	object_event 20, 24, SPRITE_SLOWPOKE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeruleanCitySlowbro, -1
 	object_event 21, 24, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeruleanCityCooltrainerFScript, -1
 	object_event 30, 26, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanCityFisherScript, -1

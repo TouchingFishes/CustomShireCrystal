@@ -1,6 +1,6 @@
 	object_const_def
 	const NEWBARKTOWN_TEACHER
-	const NEWBARKTOWN_FISHER
+	const NEWBARKTOWN_FAT_GUY
 	const NEWBARKTOWN_RIVAL
 	const NEWBARKTOWN_STEVEN
 
@@ -205,7 +205,7 @@ NewBarkTownTeacherScript:
 	closetext
 	end
 
-NewBarkTownFisherScript:
+NewBarkTownFatGuyScript:
 	jumptextfaceplayer Text_ElmDiscoveredNewMon
 
 NewBarkTownRivalScript:
@@ -505,6 +505,6 @@ NewBarkTown_MapEvents:
 
 	def_object_events
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
-	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
+	object_event 12,  9, SPRITE_FAT_GUY, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFatGuyScript, -1
 	object_event  3,  2, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownRivalScript, EVENT_RIVAL_NEW_BARK_TOWN
 	object_event  6,  4, SPRITE_STEVEN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_WHITE, OBJECTTYPE_SCRIPT, 0, NewBarkTownRivalScript, EVENT_NEW_BARK_TOWN_STEVEN

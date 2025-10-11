@@ -1,5 +1,5 @@
 	object_const_def
-	const OLIVINELIGHTHOUSE3F_SAILOR
+	const OLIVINELIGHTHOUSE3F_ENGINEER
 	const OLIVINELIGHTHOUSE3F_GENTLEMAN
 	const OLIVINELIGHTHOUSE3F_YOUNGSTER
 	const OLIVINELIGHTHOUSE3F_POKE_BALL
@@ -31,13 +31,13 @@ TrainerGentlemanPreston:
 	closetext
 	end
 
-TrainerSailorTerrell:
-	trainer SAILOR, TERRELL, EVENT_BEAT_SAILOR_TERRELL, SailorTerrellSeenText, SailorTerrellBeatenText, 0, .Script
+TrainerEngineerGabor:
+	trainer ENGINEER, GABOR, EVENT_BEAT_ENGINEER_GABOR, EngineerGaborSeenText, EngineerGaborBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SailorTerrellAfterBattleText
+	writetext EngineerGaborAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -69,27 +69,25 @@ BirdKeeperTheoAfterBattleText:
 	line "there…"
 	done
 
-SailorTerrellSeenText:
-	text "Sailors are both"
-	line "kind and strong."
-	cont "How about you?"
+EngineerGaborSeenText:
+	text "Engineers are both"
+	line "skilled and pre-"
+
+	para "cise. How about"
+	line "you?"
 	done
 
-SailorTerrellBeatenText:
-	text "You are both kind"
-	line "and strong…"
+EngineerGaborBeatenText:
+	text "You show both"
+	line "skill and heart…"
 	done
 
-SailorTerrellAfterBattleText:
-	text "Every time I come"
-	line "back to OLIVINE, I"
-	cont "visit the GYM."
-
-	para "The GYM LEADER's"
-	line "#MON type has"
-
-	para "changed without me"
-	line "noticing."
+EngineerGaborAfterBattleText:
+	text "Engineering is not"
+	line "easy, but I think"
+	
+	para "you could be good"
+	line "at it."
 	done
 
 GentlemanPrestonSeenText:
@@ -129,7 +127,7 @@ OlivineLighthouse3F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  9,  2, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSailorTerrell, -1
+	object_event  9,  2, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_TRAINER, 1, TrainerEngineerGabor, -1
 	object_event 13,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerGentlemanPreston, -1
 	object_event  3,  9, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperTheo, -1
 	object_event  8,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivineLighthouse3FEther, EVENT_OLIVINE_LIGHTHOUSE_3F_ETHER

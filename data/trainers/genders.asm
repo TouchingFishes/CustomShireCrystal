@@ -69,6 +69,7 @@ BTTrainerClassGenders:
 	db MALE   ; BLUE
 	db MALE   ; OFFICER
 	db FEMALE ; GRUNTF
+	db MALE   ; MYSTICALMAN
 	db FEMALE ; KRIS
 	db MALE   ; BATO
 	db MALE   ; STEVEN
@@ -87,4 +88,6 @@ BTTrainerClassGenders:
 	db MALE   ; ALDER
 	db MALE   ; ELDER
 	db MALE   ; BUCK
-	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN
+	db FEMALE ; SORA
+	db MALE   ; MOTO
+	assert_table_length NUM_TRAINER_CLASSES

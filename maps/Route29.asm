@@ -3,7 +3,7 @@
 	const ROUTE29_YOUNGSTER
 	const ROUTE29_TEACHER1
 	const ROUTE29_FRUIT_TREE
-	const ROUTE29_FISHER
+	const ROUTE29_HIKER
 	const ROUTE29_COOLTRAINER_M2
 	const ROUTE29_TUSCANY
 	const ROUTE29_POKE_BALL
@@ -142,8 +142,8 @@ Route29YoungsterScript:
 Route29TeacherScript:
 	jumptextfaceplayer Route29TeacherText
 
-Route29FisherScript:
-	jumptextfaceplayer Route29FisherText
+Route29HikerScript:
+	jumptextfaceplayer Route29HikerText
 
 Route29CooltrainerMScript:
 	faceplayer
@@ -314,7 +314,7 @@ Route29TeacherText:
 	line "the grass."
 	done
 
-Route29FisherText:
+Route29HikerText:
 	text "I wanted to take a"
 	line "break, so I saved"
 
@@ -424,7 +424,7 @@ Route29_MapEvents:
 	object_event 27, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route29YoungsterScript, -1
 	object_event 15, 11, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route29TeacherScript, -1
 	object_event 12,  2, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route29FruitTree, -1
-	object_event 25,  3, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route29FisherScript, -1
+	object_event 25,  3, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route29HikerScript, -1
 	object_event 13,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route29CooltrainerMScript, -1
 	object_event 29, 12, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
 	object_event 48,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION

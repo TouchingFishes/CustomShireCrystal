@@ -1,5 +1,5 @@
 	object_const_def
-	const PEWTERNIDORANSPEECHHOUSE_SUPER_NERD
+	const PEWTERNIDORANSPEECHHOUSE_POKEMANIAC
 	const PEWTERNIDORANSPEECHHOUSE_NIDORAN_M
 
 PewterNidoranSpeechHouse_MapScripts:
@@ -7,8 +7,8 @@ PewterNidoranSpeechHouse_MapScripts:
 
 	def_callbacks
 
-PewterNidoranSpeechHouseSuperNerdScript:
-	jumptextfaceplayer PewterNidoranSpeechHouseSuperNerdText
+PewterNidoranSpeechHousePokemaniacScript:
+	jumptextfaceplayer PewterNidoranSpeechHousePokemaniacText
 
 PewterNidoran:
 	opentext
@@ -18,7 +18,7 @@ PewterNidoran:
 	closetext
 	end
 
-PewterNidoranSpeechHouseSuperNerdText:
+PewterNidoranSpeechHousePokemaniacText:
 	text "NIDORAN, shake!"
 	done
 
@@ -38,5 +38,5 @@ PewterNidoranSpeechHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  3,  5, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PewterNidoranSpeechHouseSuperNerdScript, -1
+	object_event  3,  5, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PewterNidoranSpeechHousePokemaniacScript, -1
 	object_event  4,  5, SPRITE_NIDORAN_M, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, PewterNidoran, -1 ;SPRITE_GROWLITHE

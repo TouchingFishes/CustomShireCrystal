@@ -13,6 +13,7 @@
 	const ROUTE40_STANDING_YOUNGSTER
 	const ROUTE40_TASHA
 	const ROUTE40_PATON
+	const ROUTE40_SAILOR
 
 Route40_MapScripts:
 	def_scene_scripts
@@ -93,6 +94,17 @@ TrainerSwimmermPaton:
 	endifjustbattled
 	opentext
 	writetext SwimmermPatonAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerSailorTerrell:
+	trainer SAILOR, TERRELL, EVENT_BEAT_SAILOR_TERRELL, SailorTerrellSeenText, SailorTerrellBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SailorTerrellAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -361,6 +373,29 @@ SwimmermPatonAfterBattleText:
 	cont "springs today."
 	done
 
+SailorTerrellSeenText:
+	text "Sailors are both"
+	line "kind and strong."
+	cont "How about you?"
+	done
+
+SailorTerrellBeatenText:
+	text "You are both kind"
+	line "and strong…"
+	done
+
+SailorTerrellAfterBattleText:
+	text "Every time I come"
+	line "back to OLIVINE, I"
+	cont "visit the GYM."
+
+	para "The GYM LEADER's"
+	line "#MON type has"
+
+	para "changed without me"
+	line "noticing."
+	done
+
 Route40_MapEvents:
 	db 0, 0 ; filler
 
@@ -388,3 +423,4 @@ Route40_MapEvents:
 	object_event 34, 12, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40StandingYoungsterScript, EVENT_BATTLE_TOWER_OPEN_CIVILIANS
 	object_event  9,  7, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 4, TrainerHexManiacTasha, -1
 	object_event  7, 34, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerSwimmermPaton, -1
+	object_event  8, 28, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSailorTerrell, -1

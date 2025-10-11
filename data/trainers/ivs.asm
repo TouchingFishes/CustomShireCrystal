@@ -87,5 +87,7 @@ TrainerClassIVs:
 	ivs 30, 30, 30, 30, 30, 30 ; ALDER
 	ivs 26, 28, 26, 26, 26, 26 ; SAGE
 	ivs 31, 25, 31, 25, 25, 31 ; BUCK
+	ivs 30, 31, 30, 31, 31, 30 ; SORA
+	ivs 31, 30, 31, 30, 30, 31 ; MOTO
 	;   hp  atk def spd sat sdf
 	assert_table_length NUM_TRAINER_CLASSES

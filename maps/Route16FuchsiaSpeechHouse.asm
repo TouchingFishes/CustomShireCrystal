@@ -1,18 +1,18 @@
 	object_const_def
-	const ROUTE16FUCHSIASPEECHHOUSE_SUPER_NERD
+	const ROUTE16FUCHSIASPEECHHOUSE_POKEMANIAC
 
 Route16FuchsiaSpeechHouse_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-Route16FuchsiaSpeechHouseSuperNerdScript:
-	jumptextfaceplayer Route16FuchsiaSpeechHouseSuperNerdText
+Route16FuchsiaSpeechHousePokemaniacScript:
+	jumptextfaceplayer Route16FuchsiaSpeechHousePokemaniacText
 
 Route16FuchsiaSpeechHouseBookshelf:
 	jumpstd PictureBookshelfScript
 
-Route16FuchsiaSpeechHouseSuperNerdText:
+Route16FuchsiaSpeechHousePokemaniacText:
 	text "If you cruise down"
 	line "CYCLING ROAD, you"
 
@@ -34,4 +34,4 @@ Route16FuchsiaSpeechHouse_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, Route16FuchsiaSpeechHouseBookshelf
 
 	def_object_events
-	object_event  2,  3, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route16FuchsiaSpeechHouseSuperNerdScript, -1
+	object_event  2,  3, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route16FuchsiaSpeechHousePokemaniacScript, -1

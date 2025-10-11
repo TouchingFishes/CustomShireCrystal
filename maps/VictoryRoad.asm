@@ -107,7 +107,7 @@ VictoryRoadRivalNext:
 	sjump .AfterBattle
 
 .Bulbasaur:
-	loadtrainer RIVAL1, RIVAL1_5_CYNDAQUIL
+	loadtrainer RIVAL1, RIVAL1_5_CHARMANDER
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle

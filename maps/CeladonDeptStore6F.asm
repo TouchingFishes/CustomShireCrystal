@@ -3,7 +3,7 @@ DEF CELADONDEPTSTORE6F_SODA_POP_PRICE    EQU 300
 DEF CELADONDEPTSTORE6F_LEMONADE_PRICE    EQU 350
 
 	object_const_def
-	const CELADONDEPTSTORE6F_SUPER_NERD
+	const CELADONDEPTSTORE6F_POKEMANIAC
 	const CELADONDEPTSTORE6F_YOUNGSTER
 
 CeladonDeptStore6F_MapScripts:
@@ -16,8 +16,8 @@ CeladonDeptStore6FHideRooftopStairsCallback:
 	changeblock 12, 0, $03 ; wall
 	endcallback
 
-CeladonDeptStore6FSuperNerdScript:
-	jumptextfaceplayer CeladonDeptStore6FSuperNerdText
+CeladonDeptStore6FPokemaniacScript:
+	jumptextfaceplayer CeladonDeptStore6FPokemaniacText
 
 CeladonDeptStore6FYoungsterScript:
 	jumptextfaceplayer CeladonDeptStore6FYoungsterText
@@ -121,7 +121,7 @@ CeladonVendingNoSpaceText:
 	line "room for stuff…"
 	done
 
-CeladonDeptStore6FSuperNerdText:
+CeladonDeptStore6FPokemaniacText:
 	text "A vending machine"
 	line "with a prize rou-"
 	cont "lette…"
@@ -160,5 +160,5 @@ CeladonDeptStore6F_MapEvents:
 	bg_event 11,  1, BGEVENT_UP, CeladonDeptStore6FVendingMachine
 
 	def_object_events
-	object_event  9,  2, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore6FSuperNerdScript, -1
+	object_event  9,  2, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore6FPokemaniacScript, -1
 	object_event 12,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonDeptStore6FYoungsterScript, -1

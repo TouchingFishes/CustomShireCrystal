@@ -18,7 +18,7 @@ TriteHexagon for ZinniaBattle theme.
 
 Eeveeee1999 for many Pokemon icons.
 
-DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable, Charizard, Volcarona, Talonflame, Reuniclus, Duosion and Solosis sprites.
+DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable, Charizard, Volcarona, Talonflame, Shedinja, Reuniclus, Duosion and Solosis sprites.
 
 A certain someone who does not want to be named for several amazing sprites.
 

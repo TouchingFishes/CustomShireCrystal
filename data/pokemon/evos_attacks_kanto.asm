@@ -516,7 +516,7 @@ RaichuEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, QUICK_ATTACK
 	dbw 1, TAIL_WHIP
-	dbw 1, THUNDERSHOCK
+	dbw 1, SLAM
 	dbw 1, THUNDERBOLT
 	db 0 ; no more level-up moves
 
@@ -980,7 +980,7 @@ GrowlitheEvosAttacks:
 ArcanineEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BITE
-	dbw 1, EMBER
+	dbw 1, FLAME_WHEEL
 	dbw 1, ODOR_SLEUTH
 	dbw 1, ROAR
 	dbw 49, EXTREMESPEED
@@ -993,7 +993,7 @@ PoliwagEvosAttacks:
 	dbw 7, HYPNOSIS
 	dbw 13, WATER_GUN
 	dbw 19, DOUBLESLAP
-	dbw 25, RAIN_DANCE
+	dbw 25, WATER_PULSE
 	dbw 31, BODY_SLAM
 	dbw 37, BELLY_DRUM
 	dbw 43, HYDRO_PUMP
@@ -1009,7 +1009,7 @@ PoliwhirlEvosAttacks:
 	dbw 7, HYPNOSIS
 	dbw 13, WATER_GUN
 	dbw 19, DOUBLESLAP
-	dbw 27, RAIN_DANCE
+	dbw 27, WATER_PULSE
 	dbw 35, BODY_SLAM
 	dbw 43, BELLY_DRUM
 	dbw 51, HYDRO_PUMP
@@ -1020,8 +1020,8 @@ PoliwrathEvosAttacks:
 	dbw 1, DOUBLESLAP
 	dbw 1, HYPNOSIS
 	dbw 1, SUBMISSION
-	dbw 1, WATER_GUN
-	dbw 35, SUBMISSION
+	dbw 1, WATER_PULSE
+	dbw 35, RAIN_DANCE
 	dbw 51, MIND_READER
 	db 0 ; no more level-up moves
 

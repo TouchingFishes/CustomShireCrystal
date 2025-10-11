@@ -2,10 +2,10 @@
 	const ROUTE38_STANDING_YOUNGSTER1
 	const ROUTE38_LASS
 	const ROUTE38_STANDING_YOUNGSTER2
-	const ROUTE38_BEAUTY1
+	const ROUTE38_ENGINEER
 	const ROUTE38_SAILOR
 	const ROUTE38_FRUIT_TREE
-	const ROUTE38_BEAUTY2
+	const ROUTE38_BEAUTY
 
 Route38_MapScripts:
 	def_scene_scripts
@@ -289,13 +289,13 @@ TrainerSchoolboyChad1:
 	jumpstd RematchMScript
 	end
 
-TrainerBeautyValerie:
-	trainer BEAUTY, VALERIE, EVENT_BEAT_BEAUTY_VALERIE, BeautyValerieSeenText, BeautyValerieBeatenText, 0, .Script
+TrainerEngineerDwight:
+	trainer ENGINEER, DWIGHT, EVENT_BEAT_ENGINEER_DWIGHT, EngineerDwightSeenText, EngineerDwightBeatenText, 0, .Script
 
 .Script
 	endifjustbattled
 	opentext
-	writetext BeautyValerieAfterBattleText
+	writetext EngineerDwightAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -385,23 +385,25 @@ LassDanaMoomooMilkText:
 	cont "flavor."
 	done
 
-BeautyValerieSeenText:
-	text "Hi! Aren't you a"
-	line "cute trainer!"
+EngineerDwightSeenText:
+	text "Hey there! Wow"
+	line "Such a spark in"
+	cont "your eyes!"
 
-	para "May I see your"
-	line "#MON?"
+	para "Mind showing me"
+	line "your #MON?"
 	done
 
-BeautyValerieBeatenText:
-	text "I'm glad I got to"
-	line "see your #MON!"
+EngineerDwightBeatenText:
+	text "Thanks! Our battle"
+	line "really made my"
+	cont "day!"
 	done
 
-BeautyValerieAfterBattleText:
-	text "When I see #-"
-	line "MON, it seems to"
-	cont "soothe my nerves."
+EngineerDwightAfterBattleText:
+	text "Seeing #MON"
+	line "is like checking"
+	cont "a steady circuit."
 	done
 
 SailorHarrySeenText:
@@ -487,7 +489,7 @@ Route38_MapEvents:
 	object_event  4,  1, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyChad1, -1
 	object_event 15,  3, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassDana1, -1
 	object_event 12, 15, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperToby, -1
-	object_event 19,  9, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBeautyValerie, -1
+	object_event 19,  9, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_YELLOW, OBJECTTYPE_TRAINER, 1, TrainerEngineerDwight, -1
 	object_event 24,  5, SPRITE_SAILOR, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSailorHarry, -1
 	object_event 12, 10, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route38FruitTree, -1
 	object_event  5,  8, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBeautyOlivia, -1

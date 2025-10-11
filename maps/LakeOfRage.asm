@@ -1,7 +1,7 @@
 	object_const_def
 	const LAKEOFRAGE_LANCE
 	const LAKEOFRAGE_GRAMPS
-	const LAKEOFRAGE_SUPER_NERD1
+	const LAKEOFRAGE_POKEMANIAC1
 	const LAKEOFRAGE_COOLTRAINER_F1
 	const LAKEOFRAGE_FISHER1
 	const LAKEOFRAGE_FISHER2
@@ -120,8 +120,8 @@ LakeOfRageGrampsScript:
 	closetext
 	end
 
-LakeOfRageSuperNerdScript:
-	jumptextfaceplayer LakeOfRageSuperNerdText
+LakeOfRagePokemaniacScript:
+	jumptextfaceplayer LakeOfRagePokemaniacText
 
 LakeOfRageCooltrainerFScript:
 	jumptextfaceplayer LakeOfRageCooltrainerFText
@@ -366,7 +366,7 @@ LakeOfRageGrampsText_ClearedRocketHideout:
 	line "KARP are biting!"
 	done
 
-LakeOfRageSuperNerdText:
+LakeOfRagePokemaniacText:
 	text "I heard this lake"
 	line "was made by ram-"
 	cont "paging GYARADOS."
@@ -564,7 +564,7 @@ LakeOfRage_MapEvents:
 	def_object_events
 	object_event 21, 28, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageLanceScript, EVENT_LAKE_OF_RAGE_LANCE
 	object_event 20, 26, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageGrampsScript, -1
-	object_event 36, 13, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageSuperNerdScript, -1
+	object_event 36, 13, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRagePokemaniacScript, -1
 	object_event 25, 29, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageCooltrainerFScript, -1
 	object_event 30, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherAndre, EVENT_LAKE_OF_RAGE_CIVILIANS
 	object_event 24, 26, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherRaymond, EVENT_LAKE_OF_RAGE_CIVILIANS
@@ -575,4 +575,4 @@ LakeOfRage_MapEvents:
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
 	object_event 20,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
 	object_event 35,  2, SPRITE_GEKOPON, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LakeOfRageGekopon, LAKEOFRAGE_GEKOPON
-	object_event  4, 27, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBugManiacLarson, -1
+	object_event  4, 27, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBugManiacLarson, -1

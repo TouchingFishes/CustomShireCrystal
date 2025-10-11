@@ -1,7 +1,7 @@
 	object_const_def
 	const RUINSOFALPHOUTSIDE_YOUNGSTER1
 	const RUINSOFALPHOUTSIDE_SCIENTIST
-	const RUINSOFALPHOUTSIDE_FISHER
+	const RUINSOFALPHOUTSIDE_FAT_GUY
 	const RUINSOFALPHOUTSIDE_YOUNGSTER2
 	const RUINSOFALPHOUTSIDE_YOUNGSTER3
 
@@ -68,16 +68,16 @@ RuinsOfAlphOutsideScientistSceneContinue:
 	warpcheck
 	end
 
-RuinsOfAlphOutsideFisherScript:
+RuinsOfAlphOutsideFatGuyScript:
 	faceplayer
 	opentext
 	checkevent EVENT_TALKED_TO_RUINS_COWARD
 	iftrue .Next
 	setevent EVENT_TALKED_TO_RUINS_COWARD
-	writetext RuinsOfAlphOutsideFisherText1
+	writetext RuinsOfAlphOutsideFatGuyText1
 	promptbutton
 .Next:
-	writetext RuinsOfAlphOutsideFisherText2
+	writetext RuinsOfAlphOutsideFatGuyText2
 	waitbutton
 	closetext
 	end
@@ -197,7 +197,7 @@ RuinsOfAlphResearchCenterSignText:
 	line "THE RUINS OF ALPH"
 	done
 
-RuinsOfAlphOutsideFisherText1:
+RuinsOfAlphOutsideFatGuyText1:
 	text "While exploring"
 	line "the RUINS, we"
 
@@ -211,7 +211,7 @@ RuinsOfAlphOutsideFisherText1:
 	line "careful too."
 	done
 
-RuinsOfAlphOutsideFisherText2:
+RuinsOfAlphOutsideFatGuyText2:
 	text "The RUINS hide a"
 	line "huge secret!"
 
@@ -264,6 +264,6 @@ RuinsOfAlphOutside_MapEvents:
 	def_object_events
 	object_event  4, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerPsychicNathan, -1
 	object_event 11, 15, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideScientistScript, EVENT_RUINS_OF_ALPH_OUTSIDE_SCIENTIST
-	object_event 13, 17, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideFisherScript, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_FISHER
+	object_event 13, 17, SPRITE_FAT_GUY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideFatGuyScript, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_FAT_GUY
 	object_event 14, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideYoungster1Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
 	object_event 12,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideYoungster2Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS

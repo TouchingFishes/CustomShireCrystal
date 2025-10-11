@@ -3,6 +3,8 @@
 	const OLIVINECITY_STANDING_YOUNGSTER
 	const OLIVINECITY_SAILOR2
 	const OLIVINECITY_OLIVINE_RIVAL
+	const OLIVINECITY_GENTLEMAN
+	const OLIVINECITY_TROPIUS
 
 OlivineCity_MapScripts:
 	def_scene_scripts
@@ -112,6 +114,40 @@ OlivineCityPokecenterSign:
 
 OlivineCityMartSign:
 	jumpstd MartSignScript
+
+OlivineCityTropiusGift:	
+	faceplayer
+	checkevent EVENT_GOT_OLIVINE_CITY_GIFT_TROPIUS
+	iftrue .AlreadyGotGiftPoke
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFullGift
+	opentext
+	writetext OlivineCityTropiusGiftText
+	promptbutton
+	getmonname STRING_BUFFER_3, TROPIUS
+	writetext OlivineCityReceivedTropius
+	promptbutton
+	givepoke TROPIUS, PLAIN_FORM, 22
+	setevent EVENT_GOT_OLIVINE_CITY_GIFT_TROPIUS
+	closetext
+	end
+	
+.PartyFullGift:
+	opentext
+	writetext OlivineCityPartyFullGiftText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGotGiftPoke:
+	opentext
+	writetext OlivineCityAlreadyGotTropiusText
+	waitbutton
+	closetext
+	end
+
+OlivineTropius:
+	jumptext OlivineCityTropiusText
 
 OlivineCityRivalApproachesTopMovement:
 	step DOWN
@@ -281,6 +317,46 @@ OlivineCityBattleTowerSignText:
 	line "Opening Now!"
 	done
 
+OlivineCityPartyFullGiftText:
+	text "You should return"
+	line "with less #MON"
+
+	para "in your party. I"
+	line "would like to give"
+	cont "you a #MON."
+	done
+
+OlivineCityTropiusGiftText:
+	text "I tavelled all"
+	line "over the world!"
+
+	para "But now I am old…"
+
+	para "Would you like to"
+	line "take one of my"
+	cont "tropical #MON."
+
+	para "I think it still"
+	line "wants to see more"
+	cont "of the world."
+	done
+
+OlivineCityReceivedTropius:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+
+OlivineCityAlreadyGotTropiusText:
+	text "Take good care of"
+	line "TROPIUS for me!"
+	done
+	
+OlivineCityTropiusText:
+	text "TROOOOOOOO!"
+	done
+
 OlivineCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -315,3 +391,6 @@ OlivineCity_MapEvents:
 	object_event 20, 13, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OlivineCityStandingYoungsterScript, -1
 	object_event 17, 21, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCitySailor2Script, -1
 	object_event 10, 11, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_OLIVINE_CITY
+	object_event 25, 13, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCityTropiusGift, -1
+	object_event 26, 13, SPRITE_TROPIUS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, OlivineTropius, -1
+

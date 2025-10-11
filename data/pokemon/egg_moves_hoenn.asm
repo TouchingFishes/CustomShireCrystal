@@ -481,6 +481,7 @@ ShuppetEggMoves:
 	dw DISABLE
 	dw FORESIGHT
 	dw IMPRISON
+	dw GUNK_SHOT
 	dw -1 ; end
 
 LileepEggMoves:

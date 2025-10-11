@@ -1,9 +1,9 @@
 	object_const_def
 	const GOLDENRODDEPTSTOREROOF_CLERK
 	const GOLDENRODDEPTSTOREROOF_POKEFAN_F
-	const GOLDENRODDEPTSTOREROOF_FISHER
+	const GOLDENRODDEPTSTOREROOF_FAT_GUY
 	const GOLDENRODDEPTSTOREROOF_TWIN
-	const GOLDENRODDEPTSTOREROOF_SUPER_NERD
+	const GOLDENRODDEPTSTOREROOF_POKEMANIAC
 	const GOLDENRODDEPTSTOREROOF_POKEFAN_M
 	const GOLDENRODDEPTSTOREROOF_TEACHER
 	const GOLDENRODDEPTSTOREROOF_BUG_CATCHER
@@ -46,29 +46,29 @@ GoldenrodDeptStoreRoofClerkScript:
 GoldenrodDeptStoreRoofPokefanFScript:
 	jumptextfaceplayer GoldenrodDeptStoreRoofPokefanFText
 
-GoldenrodDeptStoreRoofFisherScript:
+GoldenrodDeptStoreRoofFatGuyScript:
 	faceplayer
 	opentext
-	writetext GoldenrodDeptStoreRoofFisherText
+	writetext GoldenrodDeptStoreRoofFatGuyText
 	waitbutton
 	closetext
-	turnobject GOLDENRODDEPTSTOREROOF_FISHER, UP
+	turnobject GOLDENRODDEPTSTOREROOF_FAT_GUY, UP
 	end
 
 GoldenrodDeptStoreRoofTwinScript:
 	jumptextfaceplayer GoldenrodDeptStoreRoofTwinText
 
-GoldenrodDeptStoreRoofSuperNerdScript:
+GoldenrodDeptStoreRoofPokemaniacScript:
 	opentext
-	writetext GoldenrodDeptStoreRoofSuperNerdOhWowText
+	writetext GoldenrodDeptStoreRoofPokemaniacOhWowText
 	waitbutton
 	closetext
-	turnobject GOLDENRODDEPTSTOREROOF_SUPER_NERD, UP
+	turnobject GOLDENRODDEPTSTOREROOF_POKEMANIAC, UP
 	opentext
-	writetext GoldenrodDeptStoreRoofSuperNerdQuitBotheringMeText
+	writetext GoldenrodDeptStoreRoofPokemaniacQuitBotheringMeText
 	waitbutton
 	closetext
-	turnobject GOLDENRODDEPTSTOREROOF_SUPER_NERD, RIGHT
+	turnobject GOLDENRODDEPTSTOREROOF_POKEMANIAC, RIGHT
 	end
 
 GoldenrodDeptStoreRoofPokefanMScript:
@@ -102,7 +102,7 @@ GoldenrodDeptStoreRoofPokefanFText:
 	line "from shopping."
 	done
 
-GoldenrodDeptStoreRoofFisherText:
+GoldenrodDeptStoreRoofFatGuyText:
 	text "Pardon? Who says"
 	line "an adult can't get"
 	cont "into this?"
@@ -120,11 +120,11 @@ GoldenrodDeptStoreRoofTwinText:
 	cont "so often."
 	done
 
-GoldenrodDeptStoreRoofSuperNerdOhWowText:
+GoldenrodDeptStoreRoofPokemaniacOhWowText:
 	text "Oh, wow!"
 	done
 
-GoldenrodDeptStoreRoofSuperNerdQuitBotheringMeText:
+GoldenrodDeptStoreRoofPokemaniacQuitBotheringMeText:
 	text "Will you quit"
 	line "bothering me?"
 	done
@@ -226,9 +226,9 @@ GoldenrodDeptStoreRoof_MapEvents:
 	def_object_events
 	object_event  1,  4, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofClerkScript, EVENT_GOLDENROD_SALE_OFF
 	object_event 10,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofPokefanFScript, -1
-	object_event  2,  1, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofFisherScript, -1
+	object_event  2,  1, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofFatGuyScript, -1
 	object_event  3,  4, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofTwinScript, EVENT_GOLDENROD_SALE_ON
-	object_event 14,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofSuperNerdScript, EVENT_GOLDENROD_SALE_ON
+	object_event 14,  6, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofPokemaniacScript, EVENT_GOLDENROD_SALE_ON
 	object_event  7,  0, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofPokefanMScript, EVENT_GOLDENROD_SALE_OFF
 	object_event  5,  3, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofTeacherScript, EVENT_GOLDENROD_SALE_OFF
 	object_event  1,  6, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofBugCatcherScript, EVENT_GOLDENROD_SALE_OFF

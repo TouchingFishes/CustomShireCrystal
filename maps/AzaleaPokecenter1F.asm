@@ -1,7 +1,7 @@
 	object_const_def
 	const AZALEAPOKECENTER1F_NURSE
 	const AZALEAPOKECENTER1F_GENTLEMAN
-	const AZALEAPOKECENTER1F_FISHING_GURU
+	const AZALEAPOKECENTER1F_SUPER_NERD
 	const AZALEAPOKECENTER1F_POKEFAN_F
 
 AzaleaPokecenter1F_MapScripts:
@@ -19,8 +19,8 @@ AzaleaPokecenter1FNurseScript:
 AzaleaPokecenter1FGentlemanScript:
 	jumptextfaceplayer AzaleaPokecenter1FGentlemanText
 
-AzaleaPokecenter1FFishingGuruScript:
-	jumptextfaceplayer AzaleaPokecenter1FFishingGuruText
+AzaleaPokecenter1FSuperNerdScript:
+	jumptextfaceplayer AzaleaPokecenter1FSuperNerdText
 
 AzaleaPokecenter1FPokefanFScript:
 	jumptextfaceplayer AzaleaPokecenter1FPokefanFText
@@ -36,7 +36,7 @@ AzaleaPokecenter1FGentlemanText:
 	line "fainted."
 	done
 
-AzaleaPokecenter1FFishingGuruText:
+AzaleaPokecenter1FSuperNerdText:
 	text "BILL's PC can"
 	line "store up to 20"
 	cont "#MON per BOX."
@@ -77,5 +77,5 @@ AzaleaPokecenter1F_MapEvents:
 	def_object_events
 	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaPokecenter1FNurseScript, -1
 	object_event  9,  6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaPokecenter1FGentlemanScript, -1
-	object_event  6,  1, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaPokecenter1FFishingGuruScript, -1
+	object_event  6,  1, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaPokecenter1FSuperNerdScript, -1
 	object_event  1,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaPokecenter1FPokefanFScript, -1

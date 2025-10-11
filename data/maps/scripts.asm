@@ -449,7 +449,6 @@ INCLUDE "maps/Route9.asm"
 INCLUDE "maps/CinnabarPokecenter1F.asm"
 INCLUDE "maps/CinnabarPokecenter2FBeta.asm"
 INCLUDE "maps/Route19FuchsiaGate.asm"
-INCLUDE "maps/SeafoamGym.asm"
 
 
 SECTION "Map Scripts 24", ROMX
@@ -483,5 +482,6 @@ SECTION "Map Scripts 25", ROMX
 INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/CherrygroveBay.asm"
+INCLUDE "maps/SeafoamGym.asm"
 
 ENDSECTION
