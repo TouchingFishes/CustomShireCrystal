@@ -112,6 +112,7 @@ ChikoritaEggMoves:
 	dw LEECH_SEED
 	dw NATURE_POWER
 	dw VINE_WHIP
+	dw DRAGON_PULSE
 	dw -1 ; end
 
 CyndaquilEggMoves:
@@ -127,10 +128,8 @@ CyndaquilEggMoves:
 
 TotodileEggMoves:
 	dw ANCIENTPOWER
-	dw CRUNCH
 	dw DRAGON_CLAW
 	dw HYDRO_PUMP
-	dw SUPERPOWER
 	dw ROCK_SLIDE
 	dw THRASH
 	dw -1 ; end

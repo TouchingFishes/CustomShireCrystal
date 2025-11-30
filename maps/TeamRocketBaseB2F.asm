@@ -222,7 +222,7 @@ TrainerGruntM19:
 
 RocketElectrode1:
 	cry ELECTRODE
-	loadwildmon ELECTRODE, 23
+	loadwildmon ELECTRODE, 30
 	startbattle
 	iftrue TeamRocketBaseB2FReloadMap
 	disappear TEAMROCKETBASEB2F_ELECTRODE1
@@ -240,7 +240,7 @@ RocketElectrode1:
 
 RocketElectrode2:
 	cry ELECTRODE
-	loadwildmon ELECTRODE, 23
+	loadwildmon ELECTRODE, 30
 	startbattle
 	iftrue TeamRocketBaseB2FReloadMap
 	disappear TEAMROCKETBASEB2F_ELECTRODE2
@@ -258,7 +258,7 @@ RocketElectrode2:
 
 RocketElectrode3:
 	cry ELECTRODE
-	loadwildmon ELECTRODE, 23
+	loadwildmon ELECTRODE, 30
 	startbattle
 	iftrue TeamRocketBaseB2FReloadMap
 	disappear TEAMROCKETBASEB2F_ELECTRODE3
@@ -286,14 +286,24 @@ RocketBaseElectrodeScript:
 	opentext
 	writetext RocketBaseLanceElectrodeDoneText
 	promptbutton
-	; verbosegiveitem HM_WHIRLPOOL
-	; setevent EVENT_GOT_HM06_WHIRLPOOL
-	; writetext RocketBaseLanceWhirlpoolText
+	verbosegiveitem HM_WHIRLPOOL
+	setevent EVENT_GOT_HM06_WHIRLPOOL
+	writetext RocketBaseLanceWhirlpoolText
 	waitbutton
 	closetext
+	pause 10
 	turnobject TEAMROCKETBASEB2F_LANCE, DOWN
 	opentext
 	writetext RocketBaseLanceMonMasterText
+	;waitbutton
+	promptbutton
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .Strength
+	ifequal 2, .Weakness
+.Strength
+	writetext RocketBaseLanceAfterQuestionText
 	waitbutton
 	closetext
 	turnobject PLAYER, DOWN
@@ -312,6 +322,40 @@ RocketBaseElectrodeScript:
 	setevent EVENT_SECURITY_CAMERA_4
 	setevent EVENT_SECURITY_CAMERA_5
 	end
+
+.Weakness
+	setevent EVENT_LANCE_COVERS_WEAKNESS
+	writetext RocketBaseLanceAfterQuestionText
+	waitbutton
+	closetext
+	turnobject PLAYER, DOWN
+	applymovement TEAMROCKETBASEB2F_LANCE, RocketBaseLanceLeavesBaseMovement
+	disappear TEAMROCKETBASEB2F_LANCE
+	setevent EVENT_CLEARED_ROCKET_HIDEOUT
+	clearflag ENGINE_ROCKET_SIGNAL_ON_CH20
+	setevent EVENT_ROUTE_43_GATE_ROCKETS
+	setevent EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_GYM
+	setscene SCENE_TEAMROCKETBASEB2F_NOOP
+	clearevent EVENT_LAKE_OF_RAGE_CIVILIANS
+	setevent EVENT_TURNED_OFF_SECURITY_CAMERAS
+	setevent EVENT_SECURITY_CAMERA_1
+	setevent EVENT_SECURITY_CAMERA_2
+	setevent EVENT_SECURITY_CAMERA_3
+	setevent EVENT_SECURITY_CAMERA_4
+	setevent EVENT_SECURITY_CAMERA_5
+	end
+
+.MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 18, 5
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 2 ; items
+	db "TRAIN STRENGTH@"
+	db "BALANCE WEAKNESS@"
 
 TeamRocketBaseB2FLockedDoor:
 	conditional_event EVENT_OPENED_DOOR_TO_ROCKET_HIDEOUT_TRANSMITTER, .Script
@@ -758,25 +802,64 @@ RocketBaseLanceMonMasterText:
 	para "MASTER is long and"
 	line "difficult."
 
-	para "Knowing that, will"
-	line "you keep going?"
+	para "Despite this, you"
+	line "have come so far…"
 
-	para "…"
+	para "You remind me of"
+	line "an incredible"
+
+	para "trainer, I once"
+	line "knew. He had such"
+
+	para "an amazing bond"
+	line "with his #MON."
+
+	para "You also possess"
+	line "a connection like"
+
+	para "that. How did you"
+	line "get so close?"
+
+	para "By working on your"
+	line "strengths or by"
+
+	para "compensating for"
+	line "your shortcomings?"
+	done
+
+	;para "Knowing that, will"
+	;line "you keep going?"
+
+RocketBaseLanceAfterQuestionText:
+	text "…"
 
 	para "I see. No, you're"
 	line "right."
 
-	para "If you would give"
-	line "up that easily,"
+	para "Your ideas are de-"
+	line "finetly worth"
+	cont "pondering…"
+
+	;para "If you would give"
+	;line "up that easily,"
+
+	para "If you would not"
+	line "try your best to"
+
+	para "learn from your"
+	line "companions,"
 
 	para "you would have"
-	line "never chased that"
+	line "never started that"
 
-	para "dream in the first"
-	line "place."
+	para "journey in the"
+	line "first place."
 
 	para "I look forward to"
 	line "seeing you again!"
+
+	para "Do not lose sight"
+	line "of your dreams!"
 	done
 
 LanceHealsText1:
@@ -952,7 +1035,7 @@ TeamRocketBaseB2F_MapEvents:
 	object_event 20, 16, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_B2F_GRUNT_WITH_EXECUTIVE
 	object_event 20, 16, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_B2F_EXECUTIVE
 	object_event  5, 13, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_B2F_LANCE
-	object_event  9, 13, SPRITE_DRAGON, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_B2F_DRAGONITE
+	object_event  9, 13, SPRITE_DRAGONITE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_B2F_DRAGONITE
 	object_event  7,  5, SPRITE_VOLTORB, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RocketElectrode1, EVENT_TEAM_ROCKET_BASE_B2F_ELECTRODE_1
 	object_event  7,  7, SPRITE_VOLTORB, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RocketElectrode2, EVENT_TEAM_ROCKET_BASE_B2F_ELECTRODE_2
 	object_event  7,  9, SPRITE_VOLTORB, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RocketElectrode3, EVENT_TEAM_ROCKET_BASE_B2F_ELECTRODE_3

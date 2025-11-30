@@ -131,6 +131,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass CHAMPION ; 10
 	const LANCE1
 	const LANCE2
+	const LANCE3
+	const LANCE4
 
 	trainerclass BROCK ; 11
 	const BROCK1
@@ -257,12 +259,13 @@ DEF KRIS EQU __trainer_class__
 	const BRIAN
 	const ERICK ; unused
 	const ANDY ; unused
-	const TYLER ; unused
+	const TERRY ; unused
 	const SEAN
 	const KEVIN
 	const STEVE ; unused
 	const ALLEN
 	const DARIN
+	const COLBY
 
 	trainerclass COOLTRAINERF ; 1c
 	const GWEN
@@ -286,15 +289,16 @@ DEF KRIS EQU __trainer_class__
 	const REENA2
 	const REENA3
 	const CARA
+	const NAOMI
+	const ALEXA
 
 	trainerclass BEAUTY ; 1d
 	const VICTORIA
 	const SAMANTHA
-	const JULIE ; unused
 	const JACLYN ; unused
 	const BRENDA ; unused
 	const CASSIE
-	const CAROLINE ; unused
+	const CAROLINE
 	const CARLENE ; unused
 	const JESSICA ; unused
 	const RACHAEL ; unused
@@ -322,6 +326,7 @@ DEF KRIS EQU __trainer_class__
 	const ZACH
 	const BRENT4
 	const MILLER
+	const VINCE
 
 	trainerclass GRUNTM ; 1f
 	const GRUNTM_1
@@ -541,6 +546,7 @@ DEF KRIS EQU __trainer_class__
 	const PARRY3
 	const ANTHONY4
 	const ANTHONY5
+	const DAWSON
 
 	trainerclass BIKER ; 2d
 	const BIKER_BENNY ; unused
@@ -579,6 +585,7 @@ DEF KRIS EQU __trainer_class__
 	const IRWIN2 ; unused
 	const IRWIN3 ; unused
 	const IRWIN4 ; unused
+	const NELSON
 
 	trainerclass BLACKBELT_T ; 32
 	const KENJI1 ; unused
@@ -590,6 +597,7 @@ DEF KRIS EQU __trainer_class__
 	const LUNG
 	const KENJI3
 	const WAI
+	const DAI
 
 	trainerclass EXECUTIVEM ; 33
 	const EXECUTIVEM_1
@@ -662,6 +670,7 @@ DEF KRIS EQU __trainer_class__
 	const TODD4
 	const TODD5
 	const QUENTIN
+	const GEORGIE
 
 	trainerclass EXECUTIVEF ; 37
 	const EXECUTIVEF_1
@@ -788,6 +797,7 @@ DEF KRIS EQU __trainer_class__
 	const MONICA
 	const LENORE
 	const CELIA
+	const JULIE
 
 	trainerclass VETERAN_M ; 4b
 	const CONNOR
@@ -795,6 +805,8 @@ DEF KRIS EQU __trainer_class__
 	const LEON
 	const RAYNOR
 	const MORIMOTO
+	const DAN
+	const SHAUN
 
 	trainerclass BUG_MANIAC ; 4c
 	const FRED

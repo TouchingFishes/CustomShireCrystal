@@ -84,7 +84,7 @@ PlayBattleMusic:
 	jr z, .done
 	cp STEVEN
 	jr z, .done
-	cp GIDEON
+	cp MYSTICALMAN
 	jr z, .done
 	cp BUCK
 	jr z, .done

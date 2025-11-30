@@ -175,6 +175,7 @@ CharmanderEggMoves:
 	dw ROCK_SLIDE
 	dw SWORDS_DANCE
 	dw DRAGON_PULSE
+	dw HEAT_WAVE
 	dw -1 ; end
 
 SquirtleEggMoves:
@@ -519,6 +520,7 @@ KrabbyEggMoves:
 	dw KNOCK_OFF
 	dw SLAM
 	dw SWORDS_DANCE
+	dw BURNING_SAND
 	dw -1 ; end
 
 ExeggcuteEggMoves:

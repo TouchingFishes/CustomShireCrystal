@@ -296,10 +296,14 @@ MartCeladon3F:
 	dw TM_SANDSTORM
 
 MartCeladon4F:
-	db 3 ; # items
+	db 7 ; # items
 	dw POKE_DOLL
 	dw LOVELY_MAIL
 	dw SURF_MAIL
+	dw FIRE_STONE
+	dw THUNDERSTONE
+	dw WATER_STONE
+	dw LEAF_STONE
 
 MartCeladon5F1:
 	db 5 ; # items

@@ -338,6 +338,7 @@ SmoguanaEggMoves:
 	dw BODY_SLAM
 	dw DEFENSE_CURL
 	dw HOWL
+	dw GLARE
 	dw ROLLOUT
 	dw SCARY_FACE
 	dw -1 ; end
@@ -411,10 +412,11 @@ PurgislugEggMoves:
 	dw -1 ; end
 
 LarvicidEggMoves:
-	dw KNOCK_OFF
+	dw SUPERPOWER
 	dw RAPID_SPIN
 	dw ROCK_SLIDE
 	dw SWORDS_DANCE
+	dw GUNK_SHOT
 	dw -1 ; end
 
 FeebasEggMoves:

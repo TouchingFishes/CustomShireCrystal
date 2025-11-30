@@ -288,7 +288,7 @@ SECTION "Moves Gen 3", ROMX
 
 MovesGen3:
 	move EFFECT_NORMAL_HIT,         40, NORMAL,        100, 10, 100      ;FAKE_OUT
-	move EFFECT_NORMAL_HIT,         50, NORMAL,        100, 10,   0      ;UPROAR
+	move EFFECT_NORMAL_HIT,         55, NORMAL,        100, 20,   0      ;UPROAR
 	move EFFECT_NORMAL_HIT,          0, NORMAL,        100, 20,   0      ;STOCKPILE
 	move EFFECT_NORMAL_HIT,          1, NORMAL,        100, 10,   0      ;SPIT_UP
 	move EFFECT_NORMAL_HIT,          0, NORMAL,        100, 10,   0      ;SWALLOW

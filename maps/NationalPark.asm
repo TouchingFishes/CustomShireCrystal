@@ -198,7 +198,7 @@ NationalParkVanilliteGuyScript:
 	getmonname STRING_BUFFER_3, VANILLITE
 	writetext NationalParkReceivedGiftText
 	promptbutton
-	givepoke VANILLITE, PLAIN_FORM, 16
+	givepoke VANILLITE, PLAIN_FORM, 17
 	setevent EVENT_GOT_NATIONAL_PARK_GIFT_VANILLITE
 	closetext
 	end

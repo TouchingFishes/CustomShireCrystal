@@ -78,7 +78,7 @@ TrainerPicPointers::
 	dba HexManiacPic
 	dba VeteranFPic
 	dba VeteranMPic
-	dba PokemaniacPic
+	dba BugManiacPic
 	dba GideonPic
 	dba DragonTamerPic
 	dba LadyPic

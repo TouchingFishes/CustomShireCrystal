@@ -16,7 +16,6 @@ SpriteMons:
 	dw DIGLETT
 	dw POLIWAG
 	dw PIKACHU
-	dw CLEFAIRY
 	dw CHARMANDER
 	dw JYNX
 	dw STARMIE
@@ -54,4 +53,7 @@ SpriteMons:
 	dw ABRA
 	dw POLIWRATH
 	dw TROPIUS
+	dw SKITTY
+	dw ALTARIA
+	dw DRATINI
 	assert_table_length NUM_POKEMON_SPRITES

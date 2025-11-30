@@ -73,8 +73,8 @@ EngineerGaborSeenText:
 	text "Engineers are both"
 	line "skilled and pre-"
 
-	para "cise. How about"
-	line "you?"
+	para "cise. Let's see"
+	line "what you got!"
 	done
 
 EngineerGaborBeatenText:

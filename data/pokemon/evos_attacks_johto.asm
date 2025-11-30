@@ -411,8 +411,8 @@ LanturnEvosAttacks:
 PichuEvosAttacks:
 	evolve EVOLVE_HAPPINESS, PIKACHU
 	db 0 ; no more evolutions
-	dbw 1, CHARM
 	dbw 1, THUNDERSHOCK
+	dbw 1, CHARM
 	dbw 6, TAIL_WHIP
 	dbw 8, THUNDER_WAVE
 	dbw 11, SWEET_KISS
@@ -980,8 +980,8 @@ ShuckleEvosAttacks:
 
 HeracrossEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, TACKLE
+	dbw 1, LEER
 	dbw 6, HORN_ATTACK
 	dbw 11, ENDURE
 	dbw 17, FURY_ATTACK
@@ -995,8 +995,8 @@ HeracrossEvosAttacks:
 SneaselEvosAttacks:
 	dbbw EVOLVE_HAPPINESS, TR_EVENITE, WEAVILE
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, SCRATCH
+	dbw 1, LEER
 	dbw 1, TAUNT
 	dbw 8, QUICK_ATTACK
 	dbw 15, SCREECH
@@ -1012,8 +1012,8 @@ SneaselEvosAttacks:
 TeddiursaEvosAttacks:
 	evolve EVOLVE_LEVEL, 30, URSARING
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, SCRATCH
+	dbw 1, LEER
 	dbw 7, LICK
 	dbw 13, FURY_SWIPES
 	dbw 19, FAKE_TEARS
@@ -1072,8 +1072,8 @@ MagcargoEvosAttacks:
 SwinubEvosAttacks:
 	evolve EVOLVE_LEVEL, 33, PILOSWINE
 	db 0 ; no more evolutions
-	dbw 1, ODOR_SLEUTH
 	dbw 1, TACKLE
+	dbw 1, ODOR_SLEUTH
 	dbw 5, ENDURE
 	dbw 10, POWDER_SNOW
 	dbw 19, TAKE_DOWN
@@ -1085,8 +1085,8 @@ SwinubEvosAttacks:
 
 PiloswineEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, ENDURE
 	dbw 1, BODY_SLAM
+	dbw 1, ENDURE
 	dbw 1, ODOR_SLEUTH
 	dbw 10, POWDER_SNOW
 	dbw 19, TAKE_DOWN
@@ -1159,8 +1159,8 @@ MantineEvosAttacks:
 
 SkarmoryEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, PECK
+	dbw 1, LEER
 	dbw 10, SAND_ATTACK
 	dbw 13, SWIFT
 	dbw 16, AGILITY
@@ -1220,9 +1220,9 @@ KingdraEvosAttacks:
 PhanpyEvosAttacks:
 	evolve EVOLVE_LEVEL, 25, DONPHAN
 	db 0 ; no more evolutions
+	dbw 1, TACKLE
 	dbw 1, GROWL
 	dbw 1, ODOR_SLEUTH
-	dbw 1, TACKLE
 	dbw 9, DEFENSE_CURL
 	dbw 17, FLAIL
 	dbw 25, TAKE_DOWN
@@ -1233,8 +1233,8 @@ PhanpyEvosAttacks:
 
 DonphanEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, GROWL
 	dbw 1, HORN_ATTACK
+	dbw 1, GROWL
 	dbw 1, ODOR_SLEUTH
 	dbw 9, DEFENSE_CURL
 	dbw 17, FLAIL
@@ -1247,10 +1247,10 @@ DonphanEvosAttacks:
 
 Porygon2EvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, SIGNAL_BEAM
 	dbw 1, CONVERSION
 	dbw 1, CONVERSION2
 	dbw 1, TACKLE
-	dbw 1, SIGNAL_BEAM
 	dbw 9, AGILITY
 	dbw 12, PSYBEAM
 	dbw 20, RECOVER
@@ -1300,8 +1300,8 @@ TyrogueEvosAttacks:
 
 HitmontopEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, REVENGE
 	dbw 1, ROLLING_KICK
+	dbw 1, REVENGE
 	dbw 7, FOCUS_ENERGY
 	dbw 13, PURSUIT
 	dbw 19, QUICK_ATTACK
@@ -1332,8 +1332,8 @@ SmoochumEvosAttacks:
 ElekidEvosAttacks:
 	evolve EVOLVE_LEVEL, 30, ELECTABUZZ
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, QUICK_ATTACK
+	dbw 1, LEER
 	dbw 9, THUNDERPUNCH
 	dbw 17, LIGHT_SCREEN
 	dbw 25, SWIFT
@@ -1372,8 +1372,8 @@ MiltankEvosAttacks:
 
 BlisseyEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, GROWL
 	dbw 1, POUND
+	dbw 1, GROWL
 	dbw 4, TAIL_WHIP
 	dbw 7, REFRESH
 	dbw 10, SOFTBOILED

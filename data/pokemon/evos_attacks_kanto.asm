@@ -215,7 +215,7 @@ CharmanderEvosAttacks:
 	dbw 7, EMBER
 	dbw 13, SMOKESCREEN
 	dbw 19, RAGE
-	dbw 25, SCARY_FACE
+	dbw 25, METAL_CLAW
 	dbw 31, FLAMETHROWER
 	dbw 37, SLASH
 	dbw 43, DRAGON_RAGE
@@ -231,7 +231,7 @@ CharmeleonEvosAttacks:
 	dbw 7, EMBER
 	dbw 13, SMOKESCREEN
 	dbw 20, RAGE
-	dbw 27, SCARY_FACE
+	dbw 27, METAL_CLAW
 	dbw 34, FLAMETHROWER
 	dbw 41, SLASH
 	dbw 48, DRAGON_RAGE
@@ -2256,9 +2256,12 @@ ArticunoEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, GUST
 	dbw 1, POWDER_SNOW
+	dbw 1, HEAL_BELL
+	dbw 1, HAZE
 	dbw 13, MIST
 	dbw 25, AGILITY
 	dbw 37, MIND_READER
+	dbw 42, EXTRASENSORY
 	dbw 49, ICE_BEAM
 	dbw 56, RAZOR_WIND
 	dbw 61, REFLECT
@@ -2270,9 +2273,12 @@ ZapdosEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, THUNDERSHOCK
+	dbw 1, BATON_PASS
+	dbw 1, METAL_SOUND
 	dbw 13, THUNDER_WAVE
 	dbw 25, AGILITY
 	dbw 37, DETECT
+	dbw 42, EXTRASENSORY
 	dbw 49, DRILL_PECK
 	dbw 56,	MIRROR_SHOT
 	dbw 61, CHARGE_BEAM
@@ -2284,9 +2290,12 @@ MoltresEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, EMBER
 	dbw 1, WING_ATTACK
+	dbw 1, MORNING_SUN
+	dbw 1, WILL_O_WISP
 	dbw 13, FIRE_SPIN
 	dbw 25, AGILITY
 	dbw 37, ENDURE
+	dbw 42, EXTRASENSORY
 	dbw 49, FLAMETHROWER
 	dbw 56, AERIAL_ACE
 	dbw 61, SAFEGUARD

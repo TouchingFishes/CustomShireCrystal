@@ -299,8 +299,8 @@ EmpoleonEvosAttacks:
 
 WeavileEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, SCRATCH
+	dbw 1, LEER
 	dbw 1, TAUNT
 	dbw 9, QUICK_ATTACK
 	dbw 16, SCREECH
@@ -341,8 +341,8 @@ GliscorEvosAttacks:
 
 LeafeonEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, GROWTH
 	dbw 1, TACKLE
+	dbw 1, GROWTH
 	dbw 1, TAIL_WHIP
 	dbw 8, SAND_ATTACK
 	dbw 16, RAZOR_LEAF
@@ -356,8 +356,8 @@ LeafeonEvosAttacks:
 
 GlaceonEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, GROWTH
 	dbw 1, TACKLE
+	dbw 1, GROWTH
 	dbw 1, TAIL_WHIP
 	dbw 8, SAND_ATTACK
 	dbw 16, ICY_WIND
@@ -388,8 +388,8 @@ YanmegaEvosAttacks:
 
 KujinoughtEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, LOCK_ON
 	dbw 1, OCTAZOOKA
+	dbw 1, LOCK_ON
 	dbw 1, FOCUS_ENERGY
 	dbw 1, SMOKESCREEN
 	dbw 50, WATER_SPOUT
@@ -468,8 +468,8 @@ CrenjoboEvosAttacks:
 
 ElectivireEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, QUICK_ATTACK
+	dbw 1, LEER
 	dbw 1, THUNDERPUNCH
 	dbw 10, THUNDERPUNCH
 	dbw 18, LIGHT_SCREEN
@@ -498,8 +498,8 @@ MagmortarEvosAttacks:
 VoltrelEvosAttacks:
 	evolve EVOLVE_LEVEL, 25, VOLTREAN
 	db 0 ; no more evolutions
-	dbw 1, HOWL
 	dbw 1, PECK
+	dbw 1, HOWL
 	dbw 4, THUNDER_WAVE
 	dbw 7, SUPERSONIC
 	dbw 13, QUICK_ATTACK
@@ -512,10 +512,10 @@ VoltrelEvosAttacks:
 
 VoltreanEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, WING_ATTACK
 	dbw 1, HOWL
 	dbw 1, THUNDER_WAVE
 	dbw 1, MIST
-	dbw 1, WING_ATTACK
 	dbw 3, QUICK_ATTACK
 	dbw 7, SUPERSONIC
 	dbw 13, WING_ATTACK
@@ -650,9 +650,9 @@ SlakothEvosAttacks:
 VigorothEvosAttacks:
 	evolve EVOLVE_LEVEL, 36, SLAKING
 	db 0 ; no more evolutions
+	dbw 1, SCRATCH
 	dbw 1, ENCORE
 	dbw 1, FOCUS_ENERGY
-	dbw 1, SCRATCH
 	dbw 1, UPROAR
 	dbw 7, ENCORE
 	dbw 13, UPROAR
@@ -666,8 +666,8 @@ VigorothEvosAttacks:
 
 SlakingEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, ENCORE
 	dbw 1, SCRATCH
+	dbw 1, ENCORE
 	dbw 1, SLACK_OFF
 	dbw 1, YAWN
 	dbw 7, ENCORE
@@ -683,8 +683,8 @@ SlakingEvosAttacks:
 NincadaEvosAttacks:
 	evolve EVOLVE_LEVEL, 20, NINJASK
 	db 0 ; no more evolutions
-	dbw 1, HARDEN
 	dbw 1, SCRATCH
+	dbw 1, HARDEN
 	dbw 5, LEECH_LIFE
 	dbw 9, SAND_ATTACK
 	dbw 14, FURY_SWIPES
@@ -697,10 +697,10 @@ NincadaEvosAttacks:
 
 NinjaskEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, SCRATCH
 	dbw 1, HARDEN
 	dbw 1, LEECH_LIFE
 	dbw 1, SAND_ATTACK
-	dbw 1, SCRATCH
 	dbw 5, LEECH_LIFE
 	dbw 9, SAND_ATTACK
 	dbw 14, FURY_SWIPES
@@ -714,8 +714,9 @@ NinjaskEvosAttacks:
 
 ShedinjaEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, HARDEN
 	dbw 1, SCRATCH
+	dbw 1, HARDEN
+	dbw 1, SILVER_WIND
 	dbw 5, LEECH_LIFE
 	dbw 9, SAND_ATTACK
 	dbw 14, FURY_SWIPES
@@ -784,8 +785,8 @@ TinkatonEvosAttacks:
 MakuhitaEvosAttacks:
 	evolve EVOLVE_LEVEL, 24, HARIYAMA
 	db 0 ; no more evolutions
-	dbw 1, FOCUS_ENERGY
 	dbw 1, TACKLE
+	dbw 1, FOCUS_ENERGY
 	dbw 4, SAND_ATTACK
 	dbw 10, ARM_THRUST
 	dbw 13, VITAL_THROW
@@ -887,8 +888,8 @@ TalonflameEvosAttacks:
 SkittyEvosAttacks:
 	evolve EVOLVE_ITEM, MOON_STONE, DELCATTY
 	db 0 ; no more evolutions
-	dbw 1, ATTRACT
 	dbw 1, TACKLE
+	dbw 1, ATTRACT
 	dbw 3, TAIL_WHIP
 	dbw 7, METRONOME
 	dbw 13, SING
@@ -961,10 +962,10 @@ AronEvosAttacks:
 LaironEvosAttacks:
 	evolve EVOLVE_LEVEL, 42, AGGRON
 	db 0 ; no more evolutions
+	dbw 1, TACKLE
 	dbw 1, HARDEN
 	dbw 1, HEADBUTT
 	dbw 1, MUD_SLAP
-	dbw 1, TACKLE
 	dbw 4, HARDEN
 	dbw 7, MUD_SLAP
 	dbw 10, HEADBUTT
@@ -980,10 +981,10 @@ LaironEvosAttacks:
 
 AggronEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, TACKLE
 	dbw 1, HARDEN
 	dbw 1, HEADBUTT
 	dbw 1, MUD_SLAP
-	dbw 1, TACKLE
 	dbw 4, HARDEN
 	dbw 7, MUD_SLAP
 	dbw 10, HEADBUTT
@@ -1053,9 +1054,9 @@ ShinxEvosAttacks:
 LuxioEvosAttacks:
 	evolve EVOLVE_LEVEL, 30, LUXRAY
 	db 0 ; no more evolutions
+	dbw 1, TACKLE
 	dbw 1, HOWL
 	dbw 1, LEER
-	dbw 1, TACKLE
 	dbw 1, BITE
 	dbw 5, LEER
 	dbw 10, BITE
@@ -1071,9 +1072,9 @@ LuxioEvosAttacks:
 
 LuxrayEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, TACKLE
 	dbw 1, HOWL
 	dbw 1, LEER
-	dbw 1, TACKLE
 	dbw 1, BITE
 	dbw 6, LEER
 	dbw 11, BITE
@@ -1244,7 +1245,7 @@ BronzorEvosAttacks:
 	dbw 20, SAFEGUARD
 	dbw 24, HYPNOSIS
 	dbw 28, EXTRASENSORY
-	dbw 32, METAL_SOUND
+	dbw 32, ANCIENTPOWER
 	dbw 36, FUTURE_SIGHT
 	dbw 40, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -1261,7 +1262,7 @@ BronzongEvosAttacks:
 	dbw 33, SUNNY_DAY
 	dbw 33, RAIN_DANCE
 	dbw 37, EXTRASENSORY
-	dbw 42, METAL_SOUND
+	dbw 42, ANCIENTPOWER
 	dbw 47, FUTURE_SIGHT
 	dbw 52, DOUBLE_EDGE
 	dbw 57, FAINT_ATTACK
@@ -1270,8 +1271,8 @@ BronzongEvosAttacks:
 SmoguanaEvosAttacks:
 	evolve EVOLVE_LEVEL, 33, SMOGUANA
 	db 0 ; no more evolutions
+	dbw 1, SCRATCH
 	dbw 1, LEER
-	dbw 1, TACKLE
 	dbw 11, EMBER
 	dbw 19, MAGNITUDE
 	dbw 25, FOCUS_ENERGY
@@ -1284,10 +1285,10 @@ SmoguanaEvosAttacks:
 
 SmokomodoEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, SCRATCH
 	dbw 1, EMBER
 	dbw 1, LEER
 	dbw 1, MAGNITUDE
-	dbw 1, TACKLE
 	dbw 11, EMBER
 	dbw 19, MAGNITUDE
 	dbw 25, FOCUS_ENERGY
@@ -1655,7 +1656,7 @@ LarvicidEvosAttacks:
 	dbw 31, PROTECT
 	dbw 37, SPIKE_CANNON
 	dbw 43, POISON_FANG
-	dbw 49, CRUSH_CLAW
+	dbw 49, SLAM
 	dbw 55, IRON_TAIL
 	db 0 ; no more level-up moves
 
@@ -1672,7 +1673,7 @@ PendragonEvosAttacks:
 	dbw 31, PROTECT
 	dbw 37, SPIKE_CANNON
 	dbw 46, POISON_TAIL
-	dbw 55, CRUSH_CLAW
+	dbw 55, SLAM
 	dbw 64, IRON_TAIL
 	db 0 ; no more level-up moves
 
@@ -1756,8 +1757,8 @@ ChandelureEvosAttacks:
 DuskullEvosAttacks:
 	evolve EVOLVE_LEVEL, 37, DUSCLOPS
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, NIGHT_SHADE
+	dbw 1, LEER
 	dbw 5, DISABLE
 	dbw 12, MEAN_LOOK
 	dbw 16, ASTONISH
@@ -1771,10 +1772,10 @@ DuskullEvosAttacks:
 
 DusclopsEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, NIGHT_SHADE
 	dbw 1, BIND
 	dbw 1, DISABLE
 	dbw 1, LEER
-	dbw 1, NIGHT_SHADE
 	dbw 5, DISABLE
 	dbw 12, MEAN_LOOK
 	dbw 16, ASTONISH
@@ -1837,17 +1838,17 @@ AbsolEvosAttacks:
 
 MagnezoneEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, MIRROR_SHOT
 	dbw 1, METAL_SOUND
 	dbw 1, SUPERSONIC
 	dbw 1, ZAP_CANNON
-	dbw 1, MIRROR_SHOT
 	db 0 ; no more level-up moves
 
 SnoverEvosAttacks:
 	evolve EVOLVE_LEVEL, 40, ABOMASNOW
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, POWDER_SNOW
+	dbw 1, LEER
 	dbw 7, MIST
 	dbw 10, RAZOR_LEAF
 	dbw 16, ICY_WIND
@@ -1861,10 +1862,10 @@ SnoverEvosAttacks:
 
 AbomasnowEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, POWDER_SNOW
 	dbw 1, BITE
 	dbw 1, DOUBLE_TEAM
 	dbw 1, LEER
-	dbw 1, POWDER_SNOW
 	dbw 7, MIST
 	dbw 10, RAZOR_LEAF
 	dbw 16, ICY_WIND
@@ -1895,8 +1896,8 @@ ShuppetEvosAttacks:
 
 BanetteEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, CURSE
 	dbw 1, KNOCK_OFF
+	dbw 1, CURSE
 	dbw 1, NIGHT_SHADE
 	dbw 1, SCREECH
 	dbw 8, SCREECH
@@ -1959,9 +1960,9 @@ AnorithEvosAttacks:
 
 ArmaldoEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, SCRATCH
 	dbw 1, HARDEN
 	dbw 1, MUD_SLAP
-	dbw 1, SCRATCH
 	dbw 1, WATER_GUN
 	dbw 7, HARDEN
 	dbw 13, MUD_SLAP
@@ -2000,7 +2001,7 @@ FraxureEvosAttacks:
 	dbw 30, SLASH
 	dbw 36, DIG
 	dbw 41, SWORDS_DANCE
-	dbw 48, X_SCISSOR
+	dbw 49, X_SCISSOR
 	dbw 56, OUTRAGE
 	dbw 61, GUILLOTINE
 	db 0 ; no more level-up moves
@@ -2017,6 +2018,7 @@ HaxorusEvosAttacks:
 	dbw 36, DIG
 	dbw 41, SWORDS_DANCE
 	dbw 48, X_SCISSOR
+	dbw 51, DRAGON_CLAW
 	dbw 56, OUTRAGE
 	dbw 61, GUILLOTINE
 	db 0 ; no more level-up moves
@@ -2124,10 +2126,10 @@ MetangEvosAttacks:
 
 MetagrossEvosAttacks:
 	db 0 ; no more evolutions
+	dbw 1, TAKE_DOWN
 	dbw 1, CONFUSION
 	dbw 1, METAL_CLAW
 	dbw 1, SCARY_FACE
-	dbw 1, TAKE_DOWN
 	dbw 20, CONFUSION
 	dbw 20, METAL_CLAW
 	dbw 26, SCARY_FACE
@@ -2232,8 +2234,8 @@ JirachiEvosAttacks:
 
 DeoxysEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, LEER
 	dbw 1, WRAP
+	dbw 1, LEER
 	dbw 5, NIGHT_SHADE
 	dbw 10, TELEPORT
 	dbw 15, KNOCK_OFF

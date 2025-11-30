@@ -1,52 +1,52 @@
 DerekAnswerPhoneText:
 	text "Hi, <PLAY_G>?"
 
-	para "Good morning pika."
-	line "What's up pika?"
+	para "Good morning bro."
+	line "What's up bro?"
 	done
 
 DerekAnswerPhoneDayText:
 	text "Hi, <PLAY_G>?"
 
-	para "Good day pika,"
-	line "what's up pika?"
+	para "Good day bro,"
+	line "what's up bro?"
 	done
 
 DerekAnswerPhoneNiteText:
 	text "Hi, <PLAY_G>?"
 
-	para "Good evening pika,"
-	line "what's up pika?"
+	para "Good evening bro,"
+	line "what's up bro?"
 	done
 
 DerekGreetText:
-	text "<PLAY_G> pika, good"
+	text "<PLAY_G> bro, good"
 	line "morning!"
 
 	para "It's @"
 	text_ram wStringBuffer3
 	text ", how"
-	line "pika are you?"
+	line "bro are you?"
 	done
 
 DerekGreetDayText:
-	text "<PLAY_G> pika, good"
-	line "pika day!"
+	text "<PLAY_G> bro, good"
+	line "bro day!"
 
 	para "It's @"
 	text_ram wStringBuffer3
 	text ", how"
-	line "pika are you?"
+	line "bro are you?"
 	done
 
 DerekGreetNiteText:
-	text "<PLAY_G> pika, good"
+	text "<PLAY_G> bro, good"
 	line "evening!"
 
 	para "It's @"
 	text_ram wStringBuffer3
 	text ". Were"
-	line "you pika awake?"
+	line "you bro awake?"
 	done
 
 DerekGenericText:

@@ -83,9 +83,9 @@ OverworldSprites:
 	overworld_sprite BikerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite PharmacistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite MonsterSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite FairySpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite BirdSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite DragonSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite ClefairySpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite FarfetchDSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite DragoniteSpriteGFX, 12, WALKING_SPRITE, PAL_OW_YELLOW
 	overworld_sprite BigOnixSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	overworld_sprite N64SpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite SudowoodoSpriteGFX, 12, STANDING_SPRITE, PAL_OW_GREEN
@@ -134,4 +134,5 @@ OverworldSprites:
 	overworld_sprite FisherSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite SoraSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite MotoSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite AmpharosSpriteGFX, 12, WALKING_SPRITE, PAL_OW_YELLOW
 	assert_table_length NUM_OVERWORLD_SPRITES

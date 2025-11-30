@@ -1409,7 +1409,7 @@ JohtoGrassWildMons:
 	dbw 14, PIDGEY
 	dbw 13, GROWLITHE
 	dbw 10, ABRA
-	dbw 12, SOLOSIS    ;JIGGLYPUFF  
+	dbw 12, SOLOSIS    	 ;JIGGLYPUFF  
 	dbw 10, DITTO
 	dbw 12, YANMA
 	; day
@@ -1417,7 +1417,7 @@ JohtoGrassWildMons:
 	dbw 14, PIDGEY
 	dbw 13, GROWLITHE
 	dbw 10, ABRA
-	dbw 12, SOLOSIS    ;JIGGLYPUFF  
+	dbw 12, SOLOSIS    	 ;JIGGLYPUFF  
 	dbw 10, DITTO
 	dbw 12, YANMA
 	; nite
@@ -1425,9 +1425,9 @@ JohtoGrassWildMons:
 	dbw 14, HOOTHOOT
 	dbw 13, PSYDUCK
 	dbw 10, ABRA
-	dbw 12, SHINX      ;JIGGLYPUFF
+	dbw 12, SHINX      	 ;JIGGLYPUFF
 	dbw 10, DITTO
-	dbw 12, JIGGLYPUFF ;YANMA
+	dbw 12, JIGGLYPUFF 	 ;YANMA
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_36

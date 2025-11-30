@@ -116,7 +116,7 @@ BurnedTowerB1FEusine:
 	waitsfx
 	end
 
-BurnedTowerB1FTMEndure:
+BurnedTowerB1FTMRockTomb:
 	itemball TM_ROCK_TOMB
 
 BurnedTowerB1FBoulder:
@@ -184,6 +184,31 @@ BurnedTowerB1FEusineMovement1:
 	step DOWN
 	step_end
 
+SoraScript_Battle:
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_SORA
+	iftrue SoraScript_AfterBattle
+	writetext SoraScript_SoraBeforeText
+	waitbutton
+	closetext
+	winlosstext SoraScript_SoraBeatenText, 0
+	loadtrainer SORA, SORA1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_SORA
+	opentext
+	writetext SoraScript_SoraDefeatText
+	waitbutton
+	closetext
+	end
+
+SoraScript_AfterBattle:
+	writetext SoraScript_SoraDefeatText
+	waitbutton
+	closetext
+	end
+
 BurnedTowerB1FEusineText:
 	text "EUSINE: I dug a"
 	line "hole here, too…"
@@ -227,6 +252,41 @@ BurnedTowerB1FEusineText:
 	para "Farewell!"
 	done
 
+SoraScript_SoraBeforeText:
+	text "Hiya, it's a joy"
+	line "to meet you here."
+
+	para "My name is SORA"
+	line "and me and my"
+	cont "SKITTY went here"
+	cont "to explore the"
+
+	para "ruins. We like"
+	line "going on gentle"
+	cont "adventures. Would"
+	cont "you like to battle?"
+
+	para "My SKITTY loves to"
+	line "watch me win!"
+	done
+
+SoraScript_SoraBeatenText:
+	text "You are truly a"
+	line "skilled tactician."
+	done
+
+SoraScript_SoraDefeatText:
+	text "Thank you for such"
+	line "a nice battle…"
+
+	para "My SKITTY had a"
+	line "great time."
+	done
+
+SoraScript_Skitty:
+	text "CWA!"
+	done
+
 BurnedTowerB1F_MapEvents:
 	db 0, 0 ; filler
 
@@ -251,5 +311,7 @@ BurnedTowerB1F_MapEvents:
 	object_event  7,  3, SPRITE_RAIKOU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_SILVER, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_BURNED_TOWER_B1F_BEASTS_2
 	object_event 12,  3, SPRITE_ENTEI, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_SILVER, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_BURNED_TOWER_B1F_BEASTS_2
 	object_event 10,  4, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_SILVER, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_BURNED_TOWER_B1F_BEASTS_2
-	object_event 16,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, BurnedTowerB1FTMEndure, EVENT_BURNED_TOWER_B1F_TM_ENDURE
+	object_event 16,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, BurnedTowerB1FTMRockTomb, EVENT_BURNED_TOWER_B1F_TM_ROCK_TOMB
 	object_event 10, 12, SPRITE_EUSINE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, BurnedTowerB1FEusine, EVENT_EUSINE_IN_BURNED_TOWER
+	object_event  9,  2, SPRITE_SORA, SPRITEMOVEDATA_STANDING_DOWN, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 1, SoraScript_Battle, EVENT_VIRIDIAN_GYM_BLUE
+	object_event 10,  2, SPRITE_SKITTY, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 1, SoraScript_Skitty, EVENT_VIRIDIAN_GYM_BLUE
