@@ -1363,7 +1363,7 @@ MusicCommands:
 	dw DoNothing ; nothing
 	dw DoNothing ; nothing
 	dw DoNothing ; nothing
-	dw MusicF9 ; unused
+	dw Music_ChangeNoiseSampleSet
 	dw Music_SetCondition
 	dw Music_JumpIf
 	dw Music_Jump
@@ -1810,6 +1810,8 @@ Music_ToggleNoise:
 .on
 	; turn noise sampling on
 	set SOUND_NOISE, [hl]
+	; fallthrough
+Music_ChangeNoiseSampleSet:
 	call GetMusicByte
 	ld [wMusicNoiseSampleSet], a
 	ret

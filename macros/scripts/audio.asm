@@ -277,9 +277,10 @@ MACRO music0xf8
 	db music0xf8_cmd
 ENDM
 
-	const unknownmusic0xf9_cmd ; $f9
-MACRO unknownmusic0xf9
-	db unknownmusic0xf9_cmd
+	const noisesampleset_cmd ; $f9
+MACRO noisesampleset
+	db noisesampleset_cmd
+	db \1 ; noise
 ENDM
 
 	const set_condition_cmd ; $fa

@@ -14,7 +14,7 @@ Kuroko Aizawa for Engineer sprite.
 
 Danny-E for Lorelei's sprite.
 
-TriteHexagon for ZinniaBattle theme.
+TriteHexagon for ZinniaBattle, FRLGChampionBattle and FRLGEliteFourBattle theme.
 
 Eeveeee1999 for many Pokemon icons.
 

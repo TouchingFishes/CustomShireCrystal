@@ -108,4 +108,6 @@ Music:
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
 	dba Music_ZinniaBattle
+	dba Music_FRLGChampion ;Battle
+	dba Music_FRLGEliteFourBattle
 	assert_table_length NUM_MUSIC_SONGS

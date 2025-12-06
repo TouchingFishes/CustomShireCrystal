@@ -820,11 +820,10 @@ RocketBaseLanceMonMasterText:
 	para "that. How did you"
 	line "get so close?"
 
-	para "By working on your"
-	line "strengths or by"
-
-	para "compensating for"
-	line "your shortcomings?"
+	para "By seeking out po-"
+	line "wer or by striving"
+	cont "for balance?"
+	;line "your shortcomings?"
 	done
 
 	;para "Knowing that, will"

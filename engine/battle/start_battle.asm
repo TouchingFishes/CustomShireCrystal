@@ -66,23 +66,43 @@ PlayBattleMusic:
 
 .kantowild
 	ld de, MUSIC_KANTO_WILD_BATTLE
-	jr .done
+	jp .done
 
 .trainermusic
 	ld de, MUSIC_CHAMPION_BATTLE
 	cp CHAMPION
-	jr z, .done
+	jp z, .done
 	cp RED
+	jp z, .done
+
+	ld de, MUSIC_FRLG_CHAMPION_BATTLE
+	cp BLUE
+	jp z, .done
+	cp ALDER
+	jp z, .done
+	cp STEVEN
+	jp z, .done
+
+	ld de, MUSIC_FRLG_ELITE_FOUR_BATTLE
+	cp WILL
+	jp z, .done
+	cp KOGA
+	jp z, .done
+	cp BRUNO
+	jp z, .done
+	cp KAREN
+	jp z, .done
+	cp LORELEI
+	jr z, .done
+	cp AGATHA
+	jr z, .done
+	cp MOTO
 	jr z, .done
 
 	ld de, MUSIC_ZINNIA_BATTLE
 	cp BATO
 	jr z, .done
-	cp ALDER
-	jr z, .done
 	cp MASTER
-	jr z, .done
-	cp STEVEN
 	jr z, .done
 	cp MYSTICALMAN
 	jr z, .done

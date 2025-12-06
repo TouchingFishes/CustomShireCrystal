@@ -152,6 +152,8 @@ INCLUDE "audio/music/postcredits.asm"
 SECTION "New Songs", ROMX
 
 INCLUDE "audio/music/zinniabattle.asm"
+INCLUDE "audio/music/frlgchampion.asm"
+INCLUDE "audio/music/frlgelitefour.asm"
 
 
 SECTION "Sound Effects", ROMX

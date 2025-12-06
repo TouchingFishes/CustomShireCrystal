@@ -383,7 +383,7 @@ MonMenuIconPals:
 	icon_pals RED,    RED    ; ARMALDO
 	icon_pals GREEN,  GRAY   ; AXEW
 	icon_pals GREEN,  GRAY   ; FRAXURE
-	icon_pals GREEN,  GRAY   ; HAXORUS
+	icon_pals RED,    GRAY   ; HAXORUS
 	icon_pals BROWN,  RED    ; RELICANTH
 	icon_pals PINK,   RED    ; LUVDISC
 	icon_pals BROWN,  RED    ; RAELIC
