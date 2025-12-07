@@ -300,8 +300,9 @@ RocketBaseElectrodeScript:
 	loadmenu .MenuHeader
 	verticalmenu
 	closewindow
+	ifequal 0, .Strength
 	ifequal 1, .Strength
-	ifequal 2, .Weakness
+	ifequal 2, .Balance
 .Strength
 	writetext RocketBaseLanceAfterQuestionText
 	waitbutton
@@ -323,8 +324,8 @@ RocketBaseElectrodeScript:
 	setevent EVENT_SECURITY_CAMERA_5
 	end
 
-.Weakness
-	setevent EVENT_LANCE_COVERS_WEAKNESS
+.Balance
+	setevent EVENT_LANCE_SEEKS_BALANCE
 	writetext RocketBaseLanceAfterQuestionText
 	waitbutton
 	closetext
@@ -347,15 +348,15 @@ RocketBaseElectrodeScript:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 18, 5
+	menu_coords 0, 0, 10, 5
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 2 ; items
-	db "TRAIN STRENGTH@"
-	db "BALANCE WEAKNESS@"
+	db "STRENGTH@"
+	db "BALANCE@"
 
 TeamRocketBaseB2FLockedDoor:
 	conditional_event EVENT_OPENED_DOOR_TO_ROCKET_HIDEOUT_TRANSMITTER, .Script
@@ -820,14 +821,10 @@ RocketBaseLanceMonMasterText:
 	para "that. How did you"
 	line "get so close?"
 
-	para "By seeking out po-"
-	line "wer or by striving"
-	cont "for balance?"
-	;line "your shortcomings?"
+	para "By fostering your"
+	line "strength or by"
+	cont "seeking balance?"
 	done
-
-	;para "Knowing that, will"
-	;line "you keep going?"
 
 RocketBaseLanceAfterQuestionText:
 	text "…"

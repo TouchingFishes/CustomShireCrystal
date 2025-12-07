@@ -112,16 +112,16 @@
 	const ITEM_8E      ; 0068
 	const METAL_COAT   ; 0069
 	const DRAGON_FANG  ; 006A
-	const ITEM_91      ; 006B
+	const ITEM_91      ; 006B OLD_AMBER
 	const LEFTOVERS    ; 006C
-	const ITEM_93      ; 006D OLD_AMBER
-	const ITEM_94      ; 006E HELIX_FOSSIL
-	const ITEM_95      ; 006F DOME_FOSSIL
+	const ITEM_93      ; 006D
+	const ITEM_94      ; 006E
+	const ITEM_95      ; 006F
 	const DRAGON_SCALE ; 0070
 	const BERSERK_GENE ; 0071
-	const ITEM_99      ; 0072 DUSK_STONE (?)
-	const ITEM_9A      ; 0073 ROOT_FOSSIL
-	const ITEM_9B      ; 0074 CLAW_FOSSIL
+	const ITEM_99      ; 0072
+	const ITEM_9A      ; 0073
+	const ITEM_9B      ; 0074
 	const SACRED_ASH   ; 0075
 	const FLOWER_MAIL  ; 0076
 	const ITEM_A2      ; 0077

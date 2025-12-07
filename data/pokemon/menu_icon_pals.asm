@@ -375,12 +375,12 @@ MonMenuIconPals:
 	icon_pals GRAY,   RED    ; MAGNEZONE
 	icon_pals GREEN,  RED    ; SNOVER
 	icon_pals GREEN,  RED    ; ABOMASNOW
-	icon_pals GREEN,  RED    ; SHUPPET
-	icon_pals GREEN,  RED    ; BANETTE
+	icon_pals GRAY,   RED    ; SHUPPET
+	icon_pals GRAY,   RED    ; BANETTE
 	icon_pals GREEN,  RED    ; LILEEP
-	icon_pals RED,    RED    ; CRADILY
-	icon_pals RED,    RED    ; ANORITH
-	icon_pals RED,    RED    ; ARMALDO
+	icon_pals GREEN,  RED    ; CRADILY
+	icon_pals GRAY,   RED    ; ANORITH
+	icon_pals BLUE,   RED    ; ARMALDO
 	icon_pals GREEN,  GRAY   ; AXEW
 	icon_pals GREEN,  GRAY   ; FRAXURE
 	icon_pals RED,    GRAY   ; HAXORUS

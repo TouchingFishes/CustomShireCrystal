@@ -58,8 +58,8 @@ LancesRoomLanceScript:
 	winlosstext LanceBattleWinText, 0
 	readvar VAR_BADGES
 	if_greater_than 15, .Rematch
-	checkevent EVENT_LANCE_COVERS_WEAKNESS
-	iftrue .Weakness
+	checkevent EVENT_LANCE_SEEKS_BALANCE
+	iftrue .Balance
 	setlasttalked LANCESROOM_LANCE
 	loadtrainer CHAMPION, LANCE1
 	startbattle
@@ -67,7 +67,7 @@ LancesRoomLanceScript:
 	reloadmapafterbattle
 	sjump .BattleDone
 
-.Weakness:
+.Balance:
 	setlasttalked LANCESROOM_LANCE
 	loadtrainer CHAMPION, LANCE3
 	startbattle
@@ -143,8 +143,8 @@ LancesRoomLanceScript:
 	end
 	
 .Rematch:
-	checkevent EVENT_LANCE_COVERS_WEAKNESS
-	iftrue .WeaknessRematch
+	checkevent EVENT_LANCE_SEEKS_BALANCE
+	iftrue .BalanceRematch
     setlasttalked LANCESROOM_LANCE
 	loadtrainer CHAMPION, LANCE2
 	startbattle
@@ -152,9 +152,9 @@ LancesRoomLanceScript:
 	reloadmapafterbattle
 	sjump .RematchDone
 
-.WeaknessRematch:
-	checkevent EVENT_LANCE_COVERS_WEAKNESS
-	iftrue .WeaknessRematch
+.BalanceRematch:
+	checkevent EVENT_LANCE_SEEKS_BALANCE
+	iftrue .BalanceRematch
     setlasttalked LANCESROOM_LANCE
 	loadtrainer CHAMPION, LANCE4
 	startbattle

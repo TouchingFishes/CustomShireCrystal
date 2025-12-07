@@ -2,8 +2,9 @@
 	const RUINSOFALPHOUTSIDE_YOUNGSTER1
 	const RUINSOFALPHOUTSIDE_SCIENTIST
 	const RUINSOFALPHOUTSIDE_FAT_GUY
+	const RUINSOFALPHOUTSIDE_CAMPER
 	const RUINSOFALPHOUTSIDE_YOUNGSTER2
-	const RUINSOFALPHOUTSIDE_YOUNGSTER3
+	const RUINSOFALPHOUTSIDE_GENTLEMAN
 
 RuinsOfAlphOutside_MapScripts:
 	def_scene_scripts
@@ -82,10 +83,10 @@ RuinsOfAlphOutsideFatGuyScript:
 	closetext
 	end
 
-RuinsOfAlphOutsideYoungster1Script:
+RuinsOfAlphOutsideCamper1Script:
 	faceplayer
 	opentext
-	writetext RuinsOfAlphOutsideYoungster1Text
+	writetext RuinsOfAlphOutsideCamper1Text
 	waitbutton
 	closetext
 	end
@@ -96,7 +97,7 @@ RuinsOfAlphOutsideYoungster2Script:
 	writetext RuinsOfAlphOutsideYoungster2Text
 	waitbutton
 	closetext
-	turnobject RUINSOFALPHOUTSIDE_YOUNGSTER3, UP
+	turnobject RUINSOFALPHOUTSIDE_YOUNGSTER2, UP
 	end
 
 TrainerPsychicNathan:
@@ -135,6 +136,139 @@ RuinsOfAlphOutsideScientistWalkToLabMovement:
 RuinsOfAlphOutsidePlayerEnterLabMovement:
 	step UP
 	step_end
+
+RuinsOfAlphOutsideFossilGuyScript:
+	faceplayer
+	checkitem STARDUST
+    iffalse .NoStardust
+    ; Prevent giving if party full
+    ;readvar VAR_PARTYCOUNT
+    ;ifequal PARTY_LENGTH, .PartyFull
+
+    ; Check if all four Pokémon were already received
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_OMANYTE
+    iffalse .OpenMenu
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_KABUTO
+    iffalse .OpenMenu
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_LILEEP
+    iffalse .OpenMenu
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_ANORITH
+    iffalse .OpenMenu
+
+    opentext
+    writetext RuinsOfAlphOutsideFossilGuyAllGiftsTakenText
+    waitbutton
+    closetext
+    end
+
+.OpenMenu:
+    opentext
+    writetext RuinsOfAlphOutsideFossilGuyIntroText
+    waitbutton ;promptbutton
+	loadmenu .GiftMenuHeader
+	verticalmenu
+	closewindow
+	ifequal 0, .Cancel
+    ifequal 1, .PickOmanyte
+    ifequal 2, .PickKabuto
+    ifequal 3, .PickLileep
+    ifequal 4, .PickAnorith
+    ifequal 5, .Cancel
+    end
+
+.PickOmanyte:
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_OMANYTE
+    iftrue .AlreadyTaken
+    sjump .ChooseOmanyte
+
+.PickKabuto:
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_KABUTO
+    iftrue .AlreadyTaken
+    sjump .ChooseKabuto
+
+.PickLileep:
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_LILEEP
+    iftrue .AlreadyTaken
+    sjump .ChooseLileep
+
+.PickAnorith:
+    checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_ANORITH
+    iftrue .AlreadyTaken
+    sjump .ChooseAnorith
+
+.AlreadyTaken:
+    opentext
+    writetext RuinsOfAlphOutsideFossilGuyAlreadyTakenText
+    waitbutton
+    closetext
+    end
+
+.ChooseOmanyte:
+    takeitem STARDUST
+    givepoke OMANYTE, PLAIN_FORM, 7
+    setevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_OMANYTE
+    sjump .Receive
+
+.ChooseKabuto:
+    takeitem STARDUST
+    givepoke KABUTO, PLAIN_FORM, 7
+    setevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_KABUTO
+    sjump .Receive
+
+.ChooseLileep:
+    takeitem STARDUST
+    givepoke LILEEP, PLAIN_FORM, 7
+    setevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_LILEEP
+    sjump .Receive
+
+.ChooseAnorith:
+    takeitem STARDUST
+    givepoke ANORITH, PLAIN_FORM, 7
+    setevent EVENT_RUINS_OF_ALPH_OUTSIDE_GOT_ANORITH
+    sjump .Receive
+
+.Receive:
+    opentext
+    writetext RuinsOfAlphOutsideFossilGuyReceivedGiftText
+    waitbutton
+    closetext
+    end
+
+.NoStardust:
+    opentext
+    writetext RuinsOfAlphOutsideFossilGuyNoStardustText
+    waitbutton
+    closetext
+    end
+
+.Cancel:
+	opentext
+    writetext RuinsOfAlphOutsideFossilGuyCancelText
+    waitbutton
+    closetext
+    end
+
+.PartyFull:
+    opentext
+    writetext RuinsOfAlphOutsideFossilGuyPartyFullGiftText
+    waitbutton
+    closetext
+    end
+
+.GiftMenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 12, 11
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 5 ; items
+    db "OMANYTE@"
+    db "KABUTO@"
+    db "LILEEP@"
+    db "ANORITH@"
+    db "CANCEL@"
 
 RuinsOfAlphOutsideScientistText:
 	text "Hm? That's a #-"
@@ -218,7 +352,7 @@ RuinsOfAlphOutsideFatGuyText2:
 	para "…I think…"
 	done
 
-RuinsOfAlphOutsideYoungster1Text:
+RuinsOfAlphOutsideCamper1Text:
 	text "There are many"
 	line "kinds of UNOWN, so"
 
@@ -234,6 +368,69 @@ RuinsOfAlphOutsideYoungster2Text:
 
 	para "I'm decoding this"
 	line "message!"
+	done
+
+RuinsOfAlphOutsideFossilGuyIntroText:
+    text "Wait…"
+
+	para "Is that sparkle"
+	line "coming from your"
+	cont "bag STARDUST?"
+
+	para "I have traveled a-"
+	line "cross the world to"
+
+	para "hunt for rare"
+	line "FOSSIL #MON."
+
+	para "If you want to, I"
+	line "can offer you one"
+
+	para "in exchange for"
+	line "some STARDUST."
+	done
+
+RuinsOfAlphOutsideFossilGuyAlreadyTakenText:
+    text "You already "
+	line "claimed that"
+	cont "#MON!"
+    done
+
+RuinsOfAlphOutsideFossilGuyNoStardustText:
+    text "Sorry, I am"
+	line "looking for some"
+
+	para "ancient relics."
+	line "Please do not"
+	cont "bother me."
+    done
+
+RuinsOfAlphOutsideFossilGuyPartyFullGiftText:
+    text "Your party seems"
+	line "to be full."
+
+    para "Make space first."
+    done
+
+RuinsOfAlphOutsideFossilGuyAllGiftsTakenText:
+    text "Sadly, there is"
+	line "no #MON left"
+
+	para "that I could give"
+	line "you."
+    done
+
+RuinsOfAlphOutsideFossilGuyReceivedGiftText:
+    text "Pleasure doing"
+	line "business!"
+    done
+
+RuinsOfAlphOutsideFossilGuyCancelText:
+	text "Oh…"
+
+	para "Come back once you"
+	line "are serious about"
+	cont "trading with me!"
 	done
 
 RuinsOfAlphOutside_MapEvents:
@@ -265,5 +462,6 @@ RuinsOfAlphOutside_MapEvents:
 	object_event  4, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerPsychicNathan, -1
 	object_event 11, 15, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideScientistScript, EVENT_RUINS_OF_ALPH_OUTSIDE_SCIENTIST
 	object_event 13, 17, SPRITE_FAT_GUY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideFatGuyScript, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_FAT_GUY
-	object_event 14, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideYoungster1Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	object_event 14, 11, SPRITE_CAMPER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideCamper1Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
 	object_event 12,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideYoungster2Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	object_event 11, 20, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideFossilGuyScript, -1
