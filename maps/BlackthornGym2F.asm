@@ -1,6 +1,6 @@
 	object_const_def
-	const BLACKTHORNGYM2F_COOLTRAINER_M
-	const BLACKTHORNGYM2F_COOLTRAINER_F
+	const BLACKTHORNGYM2F_ACE_TRAINER_M
+	const BLACKTHORNGYM2F_ACE_TRAINER_F
 	const BLACKTHORNGYM2F_BOULDER1
 	const BLACKTHORNGYM2F_BOULDER2
 	const BLACKTHORNGYM2F_BOULDER3
@@ -55,40 +55,40 @@ BlackthornGym2FSetUpStoneTableCallback:
 BlackthornGymBoulder:
 	jumpstd StrengthBoulderScript
 
-TrainerCooltrainermCody:
-	trainer COOLTRAINERM, CODY, EVENT_BEAT_COOLTRAINERM_CODY, CooltrainermCodySeenText, CooltrainermCodyBeatenText, 0, .Script
+TrainerAceTrainermCody:
+	trainer ACE_TRAINERM, CODY, EVENT_BEAT_ACE_TRAINERM_CODY, AceTrainermCodySeenText, AceTrainermCodyBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermCodyAfterBattleText
+	writetext AceTrainermCodyAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfFran:
-	trainer COOLTRAINERF, FRAN, EVENT_BEAT_COOLTRAINERF_FRAN, CooltrainerfFranSeenText, CooltrainerfFranBeatenText, 0, .Script
+TrainerAceTrainerfFran:
+	trainer ACE_TRAINERF, FRAN, EVENT_BEAT_ACE_TRAINERF_FRAN, AceTrainerfFranSeenText, AceTrainerfFranBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfFranAfterBattleText
+	writetext AceTrainerfFranAfterBattleText
 	waitbutton
 	closetext
 	end
 
-CooltrainermCodySeenText:
+AceTrainermCodySeenText:
 	text "It's not as if we"
 	line "all use dragon-"
 	cont "type #MON."
 	done
 
-CooltrainermCodyBeatenText:
+AceTrainermCodyBeatenText:
 	text "Rats! If only I"
 	line "had a dragon!"
 	done
 
-CooltrainermCodyAfterBattleText:
+AceTrainermCodyAfterBattleText:
 	text "Members of our"
 	line "dragon-user clan"
 
@@ -99,7 +99,7 @@ CooltrainermCodyAfterBattleText:
 	line "it."
 	done
 
-CooltrainerfFranSeenText:
+AceTrainerfFranSeenText:
 	text "I can't allow a"
 	line "nameless trainer"
 	cont "past me!"
@@ -108,11 +108,11 @@ CooltrainerfFranSeenText:
 	line "livid if I did!"
 	done
 
-CooltrainerfFranBeatenText:
+AceTrainerfFranBeatenText:
 	text "Awww… I lost…"
 	done
 
-CooltrainerfFranAfterBattleText:
+AceTrainerfFranAfterBattleText:
 	text "Uh-oh… CLAIR is"
 	line "going to be mad…"
 	done
@@ -137,8 +137,8 @@ BlackthornGym2F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  4,  1, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermCody, -1
-	object_event  4, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerfFran, -1
+	object_event  4,  1, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainermCody, -1
+	object_event  4, 11, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerfFran, -1
 	object_event  8,  2, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlackthornGymBoulder, EVENT_BOULDER_IN_BLACKTHORN_GYM_1
 	object_event  2,  3, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlackthornGymBoulder, EVENT_BOULDER_IN_BLACKTHORN_GYM_2
 	object_event  6, 16, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlackthornGymBoulder, EVENT_BOULDER_IN_BLACKTHORN_GYM_3

@@ -29,8 +29,8 @@ TrainerGroups:
 	dba BirdKeeperGroup
 	dba LassGroup
 	dba JanineGroup
-	dba CooltrainerMGroup
-	dba CooltrainerFGroup
+	dba AceTrainerMGroup
+	dba AceTrainerFGroup
 	dba BeautyGroup
 	dba PokemaniacGroup
 	dba GruntMGroup

@@ -2494,8 +2494,8 @@ JanineGroup:
 
 	end_list_items
 
-CooltrainerMGroup:
-	next_list_item ; COOLTRAINERM (1)
+AceTrainerMGroup:
+	next_list_item ; ACE_TRAINERM (1)
 	db "NICK@", TRAINERTYPE_MOVES
 	db 26
 	dw CHARMELEON
@@ -2508,7 +2508,7 @@ CooltrainerMGroup:
 	dw LEECH_SEED, POISONPOWDER, SLEEP_POWDER, RAZOR_LEAF
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (2)
+	next_list_item ; ACE_TRAINERM (2)
 	db "AARON@", TRAINERTYPE_NORMAL
 	db 26 ;24
 	dw FLETCHINDA
@@ -2518,7 +2518,7 @@ CooltrainerMGroup:
 	dw MANTINE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (3)
+	next_list_item ; ACE_TRAINERM (3)
 	db "PAUL@", TRAINERTYPE_NORMAL
 	db 37 ;34
 	dw DRATINI
@@ -2532,7 +2532,7 @@ CooltrainerMGroup:
 	dw CHARIZARD
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (4)
+	next_list_item ; ACE_TRAINERM (4)
 	db "CODY@", TRAINERTYPE_NORMAL
 	db 37 ;34
 	dw CROCONAW
@@ -2542,13 +2542,15 @@ CooltrainerMGroup:
 	dw LAPRAS
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (5) unused
+	next_list_item ; ACE_TRAINERM (5) unused
 	db "MIKE@", TRAINERTYPE_NORMAL
 	db 42 ;37
 	dw VIBRAVA
+	db 42 ;new mon
+	dw GLIGAR
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (6) 2 champion
+	next_list_item ; ACE_TRAINERM (6) 2 champion
 	db "GAVEN@", TRAINERTYPE_MOVES
 	db 53 ;new mon
 	dw MASQUERAIN
@@ -2570,7 +2572,7 @@ CooltrainerMGroup:
 	dw FLAMETHROWER, EARTHQUAKE, SLASH, ROCK_SLIDE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (7) 3 return machine part
+	next_list_item ; ACE_TRAINERM (7) 3 return machine part
 	db "GAVEN@", TRAINERTYPE_ITEM_MOVES
 	db 65 ;39
 	dw VICTREEBEL
@@ -2598,7 +2600,7 @@ CooltrainerMGroup:
 	dw FLAMETHROWER, EARTHQUAKE, SLASH, ROCK_SLIDE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (8)
+	next_list_item ; ACE_TRAINERM (8)
 	db "RYAN@", TRAINERTYPE_MOVES
 	db 41 ;25
 	dw PIDGEOT
@@ -2611,7 +2613,7 @@ CooltrainerMGroup:
 	dw THUNDERPUNCH, LIGHT_SCREEN, SWIFT, SCREECH
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (9)
+	next_list_item ; ACE_TRAINERM (9)
 	db "JAKE@", TRAINERTYPE_MOVES
 	db 45 ;33
 	dw FORRETRESS
@@ -2627,7 +2629,7 @@ CooltrainerMGroup:
 	dw CONFUSION, SCREECH, PSYCH_UP, FURY_SWIPES
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (10) 1
+	next_list_item ; ACE_TRAINERM (10) 1
 	db "GAVEN@", TRAINERTYPE_MOVES
 	db 44 ;32
 	dw VICTREEBEL
@@ -2646,7 +2648,7 @@ CooltrainerMGroup:
 	dw OVERHEAT, SLASH, DIG, BRICK_BREAK
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (11)
+	next_list_item ; ACE_TRAINERM (11)
 	db "BLAKE@", TRAINERTYPE_MOVES
 	db 44 ;33
 	dw MAGNEZONE
@@ -2662,7 +2664,7 @@ CooltrainerMGroup:
 	dw FLY, DOUBLE_EDGE, QUICK_ATTACK, FLAME_WHEEL
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (12)
+	next_list_item ; ACE_TRAINERM (12)
 	db "BRIAN@", TRAINERTYPE_MOVES
 	db 42 ;35
 	dw SANDSLASH
@@ -2678,7 +2680,7 @@ CooltrainerMGroup:
 	dw SURF, SYNTHESIS, LEECH_SEED, PROTECT
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (13)
+	next_list_item ; ACE_TRAINERM (13)
 	db "ERICK@", TRAINERTYPE_NORMAL
 	db 10
 	dw BULBASAUR
@@ -2688,7 +2690,7 @@ CooltrainerMGroup:
 	dw SQUIRTLE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (14) unused
+	next_list_item ; ACE_TRAINERM (14) unused
 	db "ANDY@", TRAINERTYPE_NORMAL
 	db 10
 	dw BULBASAUR
@@ -2698,7 +2700,7 @@ CooltrainerMGroup:
 	dw SQUIRTLE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (15) challengers cave
+	next_list_item ; ACE_TRAINERM (15) challengers cave
 	db "TERRY@", TRAINERTYPE_NORMAL
 	db 63
 	dw SUDOWOODO
@@ -2710,7 +2712,7 @@ CooltrainerMGroup:
 	dw LUXRAY
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (16)
+	next_list_item ; ACE_TRAINERM (16)
 	db "SEAN@", TRAINERTYPE_NORMAL
 	db 35
 	dw FLAREON
@@ -2720,7 +2722,7 @@ CooltrainerMGroup:
 	dw TAUROS
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (17)
+	next_list_item ; ACE_TRAINERM (17)
 	db "KEVIN@", TRAINERTYPE_NORMAL
 	db 58 ;58
 	dw RHYHORN
@@ -2736,7 +2738,7 @@ CooltrainerMGroup:
 	dw BLASTOISE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (18) unused
+	next_list_item ; ACE_TRAINERM (18) unused
 	db "STEVE@", TRAINERTYPE_NORMAL
 	db 14
 	dw BULBASAUR
@@ -2746,20 +2748,20 @@ CooltrainerMGroup:
 	dw SQUIRTLE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (19)
+	next_list_item ; ACE_TRAINERM (19)
 	db "ALLEN@", TRAINERTYPE_MOVES
 	db 43 ;27
 	dw SMOKOMODO
 	dw ROCK_SLIDE, BURNING_SAND, SLASH, FLAME_WHEEL
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (20)
+	next_list_item ; ACE_TRAINERM (20)
 	db "DARIN@", TRAINERTYPE_NORMAL
 	db 42 ;37
 	dw DRAGONAIR
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERM (21) challengers cave
+	next_list_item ; ACE_TRAINERM (21) challengers cave
 	db "COLBY@", TRAINERTYPE_MOVES
 	db 42 ;27
 	dw KINGLER
@@ -2780,8 +2782,8 @@ CooltrainerMGroup:
 
 	end_list_items
 
-CooltrainerFGroup:
-	next_list_item ; COOLTRAINERF (1)
+AceTrainerFGroup:
+	next_list_item ; ACE_TRAINERF (1)
 	db "GWEN@", TRAINERTYPE_NORMAL
 	db 26
 	dw EEVEE
@@ -2793,7 +2795,7 @@ CooltrainerFGroup:
 	dw JOLTEON
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (2)
+	next_list_item ; ACE_TRAINERF (2)
 	db "LOIS@", TRAINERTYPE_NORMAL
 	db 26 ;25
 	dw SKIPLOOM
@@ -2801,7 +2803,7 @@ CooltrainerFGroup:
 	dw NINETALES
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (3)
+	next_list_item ; ACE_TRAINERF (3)
 	db "FRAN@", TRAINERTYPE_NORMAL
 	db 42 ;37
 	dw SEADRA
@@ -2809,7 +2811,7 @@ CooltrainerFGroup:
 	dw AMPHAROS
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (4)
+	next_list_item ; ACE_TRAINERF (4)
 	db "LOLA@", TRAINERTYPE_NORMAL
 	db 39 ;34
 	dw SEADRA
@@ -2819,7 +2821,7 @@ CooltrainerFGroup:
 	dw DRAGONAIR
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (5)
+	next_list_item ; ACE_TRAINERF (5)
 	db "KATE@", TRAINERTYPE_NORMAL
 	db 36 ;26
 	dw CORSOLA
@@ -2827,7 +2829,7 @@ CooltrainerFGroup:
 	dw CORSOREEF
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (6)
+	next_list_item ; ACE_TRAINERF (6)
 	db "IRENE@", TRAINERTYPE_NORMAL
 	db 32 ;22
 	dw SHELLDER
@@ -2835,7 +2837,7 @@ CooltrainerFGroup:
 	dw CLOYSTER
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (7)
+	next_list_item ; ACE_TRAINERF (7)
 	db "KELLY@", TRAINERTYPE_NORMAL
 	db 39 ;27
 	dw GEKOPON
@@ -2847,7 +2849,7 @@ CooltrainerFGroup:
 	dw BLASTOISE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (8)
+	next_list_item ; ACE_TRAINERF (8)
 	db "JOYCE@", TRAINERTYPE_MOVES
 	db 44 ;36
 	dw RAICHU
@@ -2866,7 +2868,7 @@ CooltrainerFGroup:
 	dw BITE, CURSE, SURF, RAIN_DANCE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (9) 1
+	next_list_item ; ACE_TRAINERF (9) 1
 	db "BETH@", TRAINERTYPE_MOVES
 	db 45 ;36
 	dw NINETALES
@@ -2882,7 +2884,7 @@ CooltrainerFGroup:
 	dw FLAMETHROWER, QUICK_ATTACK, DOUBLE_KICK, BOUNCE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (10) 1
+	next_list_item ; ACE_TRAINERF (10) 1
 	db "REENA@", TRAINERTYPE_NORMAL
 	db 41 ;31
 	dw STARMIE
@@ -2894,7 +2896,7 @@ CooltrainerFGroup:
 	dw LUXRAY
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (11)
+	next_list_item ; ACE_TRAINERF (11)
 	db "MEGAN@", TRAINERTYPE_MOVES
 	db 45 ;32
 	dw ABOMASNOW
@@ -2910,7 +2912,7 @@ CooltrainerFGroup:
 	dw BODY_SLAM, SLEEP_POWDER, RAZOR_LEAF, SLUDGE_BOMB
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (12) 2 champion
+	next_list_item ; ACE_TRAINERF (12) 2 champion
 	db "BETH@", TRAINERTYPE_MOVES
 	db 54 ;39
 	dw NINETALES
@@ -2926,7 +2928,7 @@ CooltrainerFGroup:
 	dw FLAMETHROWER, QUICK_ATTACK, DOUBLE_KICK, BOUNCE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (13)
+	next_list_item ; ACE_TRAINERF (13)
 	db "CAROL@", TRAINERTYPE_NORMAL
 	db 35
 	dw ELECTRODE
@@ -2936,7 +2938,7 @@ CooltrainerFGroup:
 	dw DONPHAN
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (14)
+	next_list_item ; ACE_TRAINERF (14)
 	db "QUINN@", TRAINERTYPE_NORMAL
 	db 58 ;38
 	dw LEDIAN
@@ -2945,16 +2947,18 @@ CooltrainerFGroup:
 	db 58 ;38
 	dw AZUMARILL
 	db 58 ;new mon
+	dw DRAGONAIR
+	db 58 ;new mon
 	dw WIGGLYTUFF
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (15)
+	next_list_item ; ACE_TRAINERF (15)
 	db "EMMA@", TRAINERTYPE_NORMAL
 	db 28
 	dw POLIWHIRL
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (16)
+	next_list_item ; ACE_TRAINERF (16)
 	db "CYBIL@", TRAINERTYPE_MOVES
 	db 42
 	dw BUTTERFREE
@@ -2970,7 +2974,7 @@ CooltrainerFGroup:
 	dw FLAMETHROWER, BULLET_SEED, SUNNY_DAY, SOLARBEAM
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (17)
+	next_list_item ; ACE_TRAINERF (17)
 	db "JENN@", TRAINERTYPE_NORMAL
 	db 34 ;24
 	dw STARYU
@@ -2978,7 +2982,7 @@ CooltrainerFGroup:
 	dw STARMIE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (18) 3 machine part
+	next_list_item ; ACE_TRAINERF (18) 3 machine part
 	db "BETH@", TRAINERTYPE_ITEM_MOVES
 	db 61 ;new mon
 	dw AMPHAROS
@@ -3002,7 +3006,7 @@ CooltrainerFGroup:
 	dw FLAMETHROWER, QUICK_ATTACK, DOUBLE_KICK, BOUNCE
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (19) 2 champ
+	next_list_item ; ACE_TRAINERF (19) 2 champ
 	db "REENA@", TRAINERTYPE_NORMAL
 	db 53 ;34
 	dw STARMIE
@@ -3014,7 +3018,7 @@ CooltrainerFGroup:
 	dw LUXRAY
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (20) 3 return machine part
+	next_list_item ; ACE_TRAINERF (20) 3 return machine part
 	db "REENA@", TRAINERTYPE_ITEM_MOVES
 	db 64 ;38
 	dw STARMIE
@@ -3038,7 +3042,7 @@ CooltrainerFGroup:
 	dw EARTHQUAKE, ROCK_SLIDE, THRASH, BRICK_BREAK
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (21)
+	next_list_item ; ACE_TRAINERF (21)
 	db "CARA@", TRAINERTYPE_MOVES
 	db 38 ;33
 	dw SEADRA 
@@ -3051,7 +3055,7 @@ CooltrainerFGroup:
 	dw GROWTH, SAND_ATTACK, WATERFALL, AURORA_BEAM
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (22) challengers cave
+	next_list_item ; ACE_TRAINERF (22) challengers cave
 	db "NAOMI@", TRAINERTYPE_MOVES
 	db 38
 	dw NINETALES 
@@ -3070,7 +3074,7 @@ CooltrainerFGroup:
 	dw GROWTH, SAND_ATTACK, WATERFALL, AURORA_BEAM
 	db -1 ; end
 
-	next_list_item ; COOLTRAINERF (23) challengers cave
+	next_list_item ; ACE_TRAINERF (23) challengers cave
 	db "ALEXA@", TRAINERTYPE_MOVES
 	db 38
 	dw CLEFAIRY

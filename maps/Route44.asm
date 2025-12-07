@@ -4,8 +4,8 @@
 	const ROUTE44_YOUNGSTER1
 	const ROUTE44_SUPER_NERD
 	const ROUTE44_YOUNGSTER2
-	const ROUTE44_COOLTRAINER_M
-	const ROUTE44_COOLTRAINER_F
+	const ROUTE44_ACE_TRAINER_M
+	const ROUTE44_ACE_TRAINER_F
 	const ROUTE44_FRUIT_TREE
 	const ROUTE44_POKE_BALL1
 	const ROUTE44_POKE_BALL2
@@ -284,13 +284,13 @@ TrainerFisherEdgar:
 	closetext
 	end
 
-TrainerCooltrainerfCybil:
-	trainer COOLTRAINERF, CYBIL, EVENT_BEAT_COOLTRAINERF_CYBIL, CooltrainerfCybilSeenText, CooltrainerfCybilBeatenText, 0, .Script
+TrainerAceTrainerfCybil:
+	trainer ACE_TRAINERF, CYBIL, EVENT_BEAT_ACE_TRAINERF_CYBIL, AceTrainerfCybilSeenText, AceTrainerfCybilBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfCybilAfterBattleText
+	writetext AceTrainerfCybilAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -306,13 +306,13 @@ TrainerPokemaniacZach:
 	closetext
 	end
 
-TrainerCooltrainermAllen:
-	trainer COOLTRAINERM, ALLEN, EVENT_BEAT_COOLTRAINERM_ALLEN, CooltrainermAllenSeenText, CooltrainermAllenBeatenText, 0, .Script
+TrainerAceTrainermAllen:
+	trainer ACE_TRAINERM, ALLEN, EVENT_BEAT_ACE_TRAINERM_ALLEN, AceTrainermAllenSeenText, AceTrainermAllenBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermAllenAfterBattleText
+	writetext AceTrainermAllenAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -516,7 +516,7 @@ PokemaniacZachAfterBattleText:
 	line "that's not true?"
 	done
 
-CooltrainermAllenSeenText:
+AceTrainermAllenSeenText:
 	text "I can tell you're"
 	line "a good trainer by"
 	cont "looking at you."
@@ -526,12 +526,12 @@ CooltrainermAllenSeenText:
 	cont "that you are too."
 	done
 
-CooltrainermAllenBeatenText:
+AceTrainermAllenBeatenText:
 	text "Tch! It's a total"
 	line "loss on my part."
 	done
 
-CooltrainermAllenAfterBattleText:
+AceTrainermAllenAfterBattleText:
 	text "Wow. You have a"
 	line "lot of BADGES."
 
@@ -590,7 +590,7 @@ BirdKeeperAndersAfterBattleText:
 	para "Trust me."
 	done
 
-CooltrainerfCybilSeenText:
+AceTrainerfCybilSeenText:
 	text "You look strong."
 
 	para "Good trainers seek"
@@ -598,12 +598,12 @@ CooltrainerfCybilSeenText:
 	cont "instinctively."
 	done
 
-CooltrainerfCybilBeatenText:
+AceTrainerfCybilBeatenText:
 	text "Nope! This won't"
 	line "do at all."
 	done
 
-CooltrainerfCybilAfterBattleText:
+AceTrainerfCybilAfterBattleText:
 	text "We all get better"
 	line "by experiencing"
 	cont "many battles."
@@ -683,8 +683,8 @@ Route44_MapEvents:
 	object_event 10, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicPhil, -1
 	object_event 43, 20, SPRITE_POKEMANIAC, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacZach, -1
 	object_event 49, 20, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeperVance1, -1
-	object_event 41, 33, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerCooltrainermAllen, -1
-	object_event 31, 32, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerCooltrainerfCybil, -1
+	object_event 41, 33, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerAceTrainermAllen, -1
+	object_event 31, 32, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerAceTrainerfCybil, -1
 	object_event  9, 23, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route44FruitTree, -1
 	object_event  8, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44MaxRevive, EVENT_ROUTE_44_MAX_REVIVE
 	object_event 44,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route44TmFacade, EVENT_ROUTE_44_TM_FACADE
@@ -692,5 +692,5 @@ Route44_MapEvents:
 	object_event 35, 26, SPRITE_ARTICUNO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route44Articuno, EVENT_BIRDS_VISIBLE
 	object_event 18, 16, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerRichBoyDarren, -1 ;SPRITEMOVEDATA_STANDING_LEFT
 	object_event 50, 29, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeperAnders, -1
-	object_event 51,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerCamperHarvey, -1
+	object_event 51,  5, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerCamperHarvey, -1
 	object_event 53, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherNolan, -1

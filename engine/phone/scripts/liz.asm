@@ -52,7 +52,7 @@ LizWrongNumber:
 
 LizGossip:
 	random 9
-	ifequal 0, .CoolTrainerM
+	ifequal 0, .AceTrainerM
 	ifequal 1, .Beauty
 	ifequal 2, .Grunt
 	ifequal 3, .Teacher
@@ -62,8 +62,8 @@ LizGossip:
 	ifequal 7, .Medium
 	ifequal 8, .PokefanM
 
-.CoolTrainerM:
-	gettrainerclassname STRING_BUFFER_4, COOLTRAINERM
+.AceTrainerM:
+	gettrainerclassname STRING_BUFFER_4, ACE_TRAINERM
 	sjump LizGossipScript
 
 .Beauty:

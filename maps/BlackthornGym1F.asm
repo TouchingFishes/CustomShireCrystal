@@ -1,8 +1,8 @@
 	object_const_def
 	const BLACKTHORNGYM1F_CLAIR
 	const BLACKTHORNGYM1F_DRAGON_TAMER
-	const BLACKTHORNGYM1F_COOLTRAINER_M2
-	const BLACKTHORNGYM1F_COOLTRAINER_F
+	const BLACKTHORNGYM1F_ACE_TRAINER_M
+	const BLACKTHORNGYM1F_ACE_TRAINER_F
 	const BLACKTHORNGYM1F_GYM_GUIDE
 
 BlackthornGym1F_MapScripts:
@@ -45,11 +45,11 @@ BlackthornGymClairScript:
 	writetext ClairText_GoToDragonsDen
 	waitbutton
 	closetext
-	setevent EVENT_BEAT_COOLTRAINERM_PAUL
-	setevent EVENT_BEAT_COOLTRAINERM_CODY
+	setevent EVENT_BEAT_ACE_TRAINERM_PAUL
+	setevent EVENT_BEAT_ACE_TRAINERM_CODY
 	setevent EVENT_BEAT_DRAGON_TAMER_KARL
-	setevent EVENT_BEAT_COOLTRAINERF_FRAN
-	setevent EVENT_BEAT_COOLTRAINERF_LOLA
+	setevent EVENT_BEAT_ACE_TRAINERF_FRAN
+	setevent EVENT_BEAT_ACE_TRAINERF_LOLA
 	clearevent EVENT_MAHOGANY_MART_OWNERS
 	setevent EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
 	clearevent EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
@@ -133,13 +133,13 @@ BlackthornGymClairScript:
     closetext
     end
 
-TrainerCooltrainermPaul:
-	trainer COOLTRAINERM, PAUL, EVENT_BEAT_COOLTRAINERM_PAUL, CooltrainermPaulSeenText, CooltrainermPaulBeatenText, 0, .Script
+TrainerAceTrainermPaul:
+	trainer ACE_TRAINERM, PAUL, EVENT_BEAT_ACE_TRAINERM_PAUL, AceTrainermPaulSeenText, AceTrainermPaulBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermPaulAfterBattleText
+	writetext AceTrainermPaulAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -155,13 +155,13 @@ TrainerDragonTamerKarl:
 	closetext
 	end
 
-TrainerCooltrainerfLola:
-	trainer COOLTRAINERF, LOLA, EVENT_BEAT_COOLTRAINERF_LOLA, CooltrainerfLolaSeenText, CooltrainerfLolaBeatenText, 0, .Script
+TrainerAceTrainerfLola:
+	trainer ACE_TRAINERF, LOLA, EVENT_BEAT_ACE_TRAINERF_LOLA, AceTrainerfLolaSeenText, AceTrainerfLolaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfLolaAfterBattleText
+	writetext AceTrainerfLolaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -373,7 +373,7 @@ BlackthornGymClairText_League:
 	line "thing you've got."
 	done
 
-CooltrainermPaulSeenText:
+AceTrainermPaulSeenText:
 	text "Your first battle"
 	line "against dragons?"
 
@@ -381,12 +381,12 @@ CooltrainermPaulSeenText:
 	line "tough they are!"
 	done
 
-CooltrainermPaulBeatenText:
+AceTrainermPaulBeatenText:
 	text "My dragon #MON"
 	line "lost?"
 	done
 
-CooltrainermPaulAfterBattleText:
+AceTrainermPaulAfterBattleText:
 	text "LANCE told you"
 	line "that he'd like to"
 
@@ -412,7 +412,7 @@ DragonTamerKarlAfterBattleText:
 	line "me!"
 	done
 
-CooltrainerfLolaSeenText:
+AceTrainerfLolaSeenText:
 	text "Dragons are sacred"
 	line "#MON."
 
@@ -426,11 +426,11 @@ CooltrainerfLolaSeenText:
 	line "them."
 	done
 
-CooltrainerfLolaBeatenText:
+AceTrainerfLolaBeatenText:
 	text "Way to go!"
 	done
 
-CooltrainerfLolaAfterBattleText:
+AceTrainerfLolaAfterBattleText:
 	text "Dragons are weak"
 	line "against dragon-"
 	cont "type moves."
@@ -495,6 +495,6 @@ BlackthornGym1F_MapEvents:
 	def_object_events
 	object_event  5,  3, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BlackthornGymClairScript, -1
 	object_event  6,  6, SPRITE_DRAGON_TAMER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerDragonTamerKarl, -1
-	object_event  1, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainermPaul, -1
-	object_event  9,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerfLola, -1
+	object_event  1, 14, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainermPaul, -1
+	object_event  9,  2, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerfLola, -1
 	object_event  7, 15, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BlackthornGymGuideScript, -1

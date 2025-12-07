@@ -1,8 +1,8 @@
 	object_const_def
-	const ROUTE27_COOLTRAINER_M1
-	const ROUTE27_COOLTRAINER_M2
-	const ROUTE27_COOLTRAINER_F1
-	const ROUTE27_COOLTRAINER_F2
+	const ROUTE27_ACE_TRAINER_M1
+	const ROUTE27_ACE_TRAINER_M2
+	const ROUTE27_ACE_TRAINER_F1
+	const ROUTE27_ACE_TRAINER_F2
 	const ROUTE27_YOUNGSTER1
 	const ROUTE27_YOUNGSTER2
 	const ROUTE27_POKE_BALL1
@@ -170,42 +170,42 @@ TrainerBirdKeeperJose2:
 	jumpstd PackFullMScript
 	end
 
-TrainerCooltrainermBlake:
-	trainer COOLTRAINERM, BLAKE, EVENT_BEAT_COOLTRAINERM_BLAKE, CooltrainermBlakeSeenText, CooltrainermBlakeBeatenText, 0, .Script
+TrainerAceTrainermBlake:
+	trainer ACE_TRAINERM, BLAKE, EVENT_BEAT_ACE_TRAINERM_BLAKE, AceTrainermBlakeSeenText, AceTrainermBlakeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermBlakeAfterBattleText
+	writetext AceTrainermBlakeAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainermBrian:
-	trainer COOLTRAINERM, BRIAN, EVENT_BEAT_COOLTRAINERM_BRIAN, CooltrainermBrianSeenText, CooltrainermBrianBeatenText, 0, .Script
+TrainerAceTrainermBrian:
+	trainer ACE_TRAINERM, BRIAN, EVENT_BEAT_ACE_TRAINERM_BRIAN, AceTrainermBrianSeenText, AceTrainermBrianBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermBrianAfterBattleText
+	writetext AceTrainermBrianAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfReena:
-	trainer COOLTRAINERF, REENA1, EVENT_BEAT_COOLTRAINERF_REENA, CooltrainerfReenaSeenText, CooltrainerfReenaBeatenText, 0, .Script
+TrainerAceTrainerfReena:
+	trainer ACE_TRAINERF, REENA1, EVENT_BEAT_ACE_TRAINERF_REENA, AceTrainerfReenaSeenText, AceTrainerfReenaBeatenText, 0, .Script
 
 .Script:
-	loadvar VAR_CALLERID, PHONE_COOLTRAINERF_REENA
+	loadvar VAR_CALLERID, PHONE_ACE_TRAINERF_REENA
 	endifjustbattled
 	opentext
 	checkflag ENGINE_REENA_READY_FOR_REMATCH
 	iftrue .WantsBattle
-	checkcellnum PHONE_COOLTRAINERF_REENA
+	checkcellnum PHONE_ACE_TRAINERF_REENA
 	iftrue .NumberAccepted
 	checkevent EVENT_REENA_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskedAlready
-	writetext CooltrainerfReenaAfterBattleText
+	writetext AceTrainerfReenaAfterBattleText
 	promptbutton
 	setevent EVENT_REENA_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -214,16 +214,16 @@ TrainerCooltrainerfReena:
 .AskedAlready:
 	scall .AskNumber2
 .AskForNumber:
-	askforphonenumber PHONE_COOLTRAINERF_REENA
+	askforphonenumber PHONE_ACE_TRAINERF_REENA
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
-	gettrainername STRING_BUFFER_3, COOLTRAINERF, REENA1
+	gettrainername STRING_BUFFER_3, ACE_TRAINERF, REENA1
 	scall .RegisteredNumber
 	sjump .NumberAccepted
 
 .WantsBattle:
 	scall .Rematch
-	winlosstext CooltrainerfReenaBeatenText, 0
+	winlosstext AceTrainerfReenaBeatenText, 0
 	readmem wReenaFightCount
 	ifequal 2, .Fight2
 	ifequal 1, .Fight1
@@ -235,7 +235,7 @@ TrainerCooltrainerfReena:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight1
 .LoadFight0:
-	loadtrainer COOLTRAINERF, REENA1
+	loadtrainer ACE_TRAINERF, REENA1
 	startbattle
 	reloadmapafterbattle
 	loadmem wReenaFightCount, 1
@@ -243,7 +243,7 @@ TrainerCooltrainerfReena:
 	end
 
 .LoadFight1:
-	loadtrainer COOLTRAINERF, REENA2
+	loadtrainer ACE_TRAINERF, REENA2
 	startbattle
 	reloadmapafterbattle
 	loadmem wReenaFightCount, 2
@@ -251,7 +251,7 @@ TrainerCooltrainerfReena:
 	end
 
 .LoadFight2:
-	loadtrainer COOLTRAINERF, REENA3
+	loadtrainer ACE_TRAINERF, REENA3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_REENA_READY_FOR_REMATCH
@@ -285,13 +285,13 @@ TrainerCooltrainerfReena:
 	jumpstd RematchFScript
 	end
 
-TrainerCooltrainerfMegan:
-	trainer COOLTRAINERF, MEGAN, EVENT_BEAT_COOLTRAINERF_MEGAN, CooltrainerfMeganSeenText, CooltrainerfMeganBeatenText, 0, .Script
+TrainerAceTrainerfMegan:
+	trainer ACE_TRAINERF, MEGAN, EVENT_BEAT_ACE_TRAINERF_MEGAN, AceTrainerfMeganSeenText, AceTrainerfMeganBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfMeganAfterBattleText
+	writetext AceTrainerfMeganAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -330,17 +330,17 @@ Route27FatGuyText:
 	line "GEAR MAP and see."
 	done
 
-CooltrainermBlakeSeenText:
+AceTrainermBlakeSeenText:
 	text "You look pretty"
 	line "strong."
 	cont "Let me battle you!"
 	done
 
-CooltrainermBlakeBeatenText:
+AceTrainermBlakeBeatenText:
 	text "Yow!"
 	done
 
-CooltrainermBlakeAfterBattleText:
+AceTrainermBlakeAfterBattleText:
 	text "If you prevail on"
 	line "this harsh trek,"
 
@@ -352,22 +352,22 @@ CooltrainermBlakeAfterBattleText:
 	cont "something cool."
 	done
 
-CooltrainermBrianSeenText:
+AceTrainermBrianSeenText:
 	text "Hm? You're good,"
 	line "aren't you?"
 	done
 
-CooltrainermBrianBeatenText:
+AceTrainermBrianBeatenText:
 	text "Just as I thought!"
 	done
 
-CooltrainermBrianAfterBattleText:
+AceTrainermBrianAfterBattleText:
 	text "A good trainer can"
 	line "recognize other"
 	cont "good trainers."
 	done
 
-CooltrainerfReenaSeenText:
+AceTrainerfReenaSeenText:
 	text "You shouldn't"
 	line "underestimate the"
 
@@ -375,12 +375,12 @@ CooltrainerfReenaSeenText:
 	line "these parts."
 	done
 
-CooltrainerfReenaBeatenText:
+AceTrainerfReenaBeatenText:
 	text "Oh! You're much"
 	line "too strong!"
 	done
 
-CooltrainerfReenaAfterBattleText:
+AceTrainerfReenaAfterBattleText:
 	text "You're just a kid,"
 	line "but you're not to"
 
@@ -388,7 +388,7 @@ CooltrainerfReenaAfterBattleText:
 	line "either."
 	done
 
-CooltrainerfMeganSeenText:
+AceTrainerfMeganSeenText:
 	text "It's rare to see"
 	line "anyone come here."
 
@@ -396,12 +396,12 @@ CooltrainerfMeganSeenText:
 	line "on your own?"
 	done
 
-CooltrainerfMeganBeatenText:
+AceTrainerfMeganBeatenText:
 	text "Oh! You're really"
 	line "strong!"
 	done
 
-CooltrainerfMeganAfterBattleText:
+AceTrainerfMeganAfterBattleText:
 	text "I'm checking out"
 	line "pre- and post-"
 	cont "evolution #MON."
@@ -481,10 +481,10 @@ Route27_MapEvents:
 	bg_event 25,  7, BGEVENT_READ, TohjoFallsSign
 
 	def_object_events
-	object_event 48,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainermBlake, -1
-	object_event 58,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerCooltrainermBrian, -1
-	object_event 72, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerCooltrainerfReena, -1
-	object_event 37,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfMegan, -1
+	object_event 48,  7, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainermBlake, -1
+	object_event 58,  6, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerAceTrainermBrian, -1
+	object_event 72, 10, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerAceTrainerfReena, -1
+	object_event 37,  6, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerfMegan, -1
 	object_event 65,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicGilbert, -1
 	object_event 58, 13, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperJose2, -1
 	object_event 60, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route27TMSolarbeam, EVENT_ROUTE_27_TM_SOLARBEAM

@@ -1,6 +1,6 @@
 	object_const_def
-	const FASTSHIPCABINS_NNW_NNE_NE_COOLTRAINER_M
-	const FASTSHIPCABINS_NNW_NNE_NE_COOLTRAINER_F
+	const FASTSHIPCABINS_NNW_NNE_NE_ACE_TRAINER_M
+	const FASTSHIPCABINS_NNW_NNE_NE_ACE_TRAINER_F
 	const FASTSHIPCABINS_NNW_NNE_NE_SUPER_NERD
 	const FASTSHIPCABINS_NNW_NNE_NE_POKEFAN_M
 	const FASTSHIPCABINS_NNW_NNE_NE_SAILOR
@@ -12,24 +12,24 @@ FastShipCabins_NNW_NNE_NE_MapScripts:
 
 	def_callbacks
 
-TrainerCooltrainermSean:
-	trainer COOLTRAINERM, SEAN, EVENT_BEAT_COOLTRAINERM_SEAN, CooltrainermSeanSeenText, CooltrainermSeanBeatenText, 0, .Script
+TrainerAceTrainermSean:
+	trainer ACE_TRAINERM, SEAN, EVENT_BEAT_ACE_TRAINERM_SEAN, AceTrainermSeanSeenText, AceTrainermSeanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermSeanAfterBattleText
+	writetext AceTrainermSeanAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfCarol:
-	trainer COOLTRAINERF, CAROL, EVENT_BEAT_COOLTRAINERF_CAROL, CooltrainerfCarolSeenText, CooltrainerfCarolBeatenText, 0, .Script
+TrainerAceTrainerfCarol:
+	trainer ACE_TRAINERF, CAROL, EVENT_BEAT_ACE_TRAINERF_CAROL, AceTrainerfCarolSeenText, AceTrainerfCarolBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfCarolAfterBattleText
+	writetext AceTrainerfCarolAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -131,16 +131,16 @@ FastShipLazySailorLeavesMovement2:
 	step UP
 	step_end
 
-CooltrainermSeanSeenText:
+AceTrainermSeanSeenText:
 	text "I'm going to KANTO"
 	line "to test my skills."
 	done
 
-CooltrainermSeanBeatenText:
+AceTrainermSeanBeatenText:
 	text "I wanted to win!"
 	done
 
-CooltrainermSeanAfterBattleText:
+AceTrainermSeanAfterBattleText:
 	text "Trainers from"
 	line "JOHTO can battle"
 
@@ -148,17 +148,17 @@ CooltrainermSeanAfterBattleText:
 	line "LEADERS."
 	done
 
-CooltrainerfCarolSeenText:
+AceTrainerfCarolSeenText:
 	text "I'm training to"
 	line "become the CHAMP!"
 	done
 
-CooltrainerfCarolBeatenText:
+AceTrainerfCarolBeatenText:
 	text "What's so differ-"
 	line "ent between us?"
 	done
 
-CooltrainerfCarolAfterBattleText:
+AceTrainerfCarolAfterBattleText:
 	text "I'm going to beat"
 	line "you someday!"
 	done
@@ -280,10 +280,10 @@ FastShipCabins_NNW_NNE_NE_MapEvents:
 	bg_event  7, 31, BGEVENT_READ, FastShipCabins_NNW_NNE_NETrashcan
 
 	def_object_events
-	object_event  4,  3, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainermSean, EVENT_FAST_SHIP_PASSENGERS_EASTBOUND
-	object_event  1,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfCarol, EVENT_FAST_SHIP_PASSENGERS_EASTBOUND
+	object_event  4,  3, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerAceTrainermSean, EVENT_FAST_SHIP_PASSENGERS_EASTBOUND
+	object_event  1,  5, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfCarol, EVENT_FAST_SHIP_PASSENGERS_EASTBOUND
 	object_event  1,  5, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacEthan, EVENT_FAST_SHIP_PASSENGERS_WESTBOUND
 	object_event  4, 17, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHikerNoland, EVENT_FAST_SHIP_PASSENGERS_FIRST_TRIP
 	object_event  4, 26, SPRITE_SAILOR, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, FastShipLazySailorScript, EVENT_FAST_SHIP_CABINS_NNW_NNE_NE_SAILOR
 	object_event  7, 30, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerGentlemanEdward, EVENT_FAST_SHIP_PASSENGERS_EASTBOUND
-	object_event  2, 30, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerBurglarCorey, EVENT_FAST_SHIP_PASSENGERS_WESTBOUND
+	object_event  2, 30, SPRITE_BURGLAR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBurglarCorey, EVENT_FAST_SHIP_PASSENGERS_WESTBOUND

@@ -38,21 +38,21 @@ CeladonGameCornerTeacherScript:
 	turnobject CELADONGAMECORNER_TEACHER, RIGHT
 	end
 
-CeladonGameCornerFishingGuruScript:
+CeladonGameCornerSuperNerdScript:
 	faceplayer
 	opentext
-	writetext CeladonGameCornerFishingGuruText
+	writetext CeladonGameCornerSuperNerdText
 	waitbutton
 	closetext
 	turnobject CELADONGAMECORNER_FISHING_GURU, RIGHT
 	end
 
-CeladonGameCornerFatGuyScript:
+CeladonGameCornerFirebreatherScript:
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_COINS_FROM_GAMBLER_AT_CELADON
 	iftrue .GotCoins
-	writetext CeladonGameCornerFatGuyText1
+	writetext CeladonGameCornerFirebreatherText1
 	promptbutton
 	checkitem COIN_CASE
 	iffalse .NoCoinCase
@@ -63,7 +63,7 @@ CeladonGameCornerFatGuyScript:
 	givecoins 18
 	setevent EVENT_GOT_COINS_FROM_GAMBLER_AT_CELADON
 .GotCoins:
-	writetext CeladonGameCornerFatGuyText2
+	writetext CeladonGameCornerFirebreatherText2
 	waitbutton
 	closetext
 	turnobject LAST_TALKED, LEFT
@@ -77,14 +77,14 @@ CeladonGameCornerFatGuyScript:
 	db "COIN@"
 
 .NoCoinCase:
-	writetext CeladonGameCornerFatGuyNoCoinCaseText
+	writetext CeladonGameCornerFirebreatherNoCoinCaseText
 	waitbutton
 	closetext
 	turnobject LAST_TALKED, LEFT
 	end
 
 .FullCoinCase:
-	writetext CeladonGameCornerFatGuyFullCoinCaseText
+	writetext CeladonGameCornerFirebreatherFullCoinCaseText
 	waitbutton
 	closetext
 	turnobject LAST_TALKED, LEFT
@@ -168,7 +168,7 @@ CeladonGameCornerTeacherText:
 	line "today."
 	done
 
-CeladonGameCornerFishingGuruText:
+CeladonGameCornerSuperNerdText:
 	text "I think this slot"
 	line "machine will pay"
 	cont "out…"
@@ -177,7 +177,7 @@ CeladonGameCornerFishingGuruText:
 	line "among machines."
 	done
 
-CeladonGameCornerFatGuyText1:
+CeladonGameCornerFirebreatherText1:
 	text "Gahahaha!"
 
 	para "The coins just"
@@ -190,7 +190,7 @@ CeladonGameCornerFatGuyText1:
 	line "with you!"
 	done
 
-CeladonGameCornerFatGuyText2:
+CeladonGameCornerFirebreatherText2:
 	text "Gahahaha!"
 
 	para "It makes me feel"
@@ -200,7 +200,7 @@ CeladonGameCornerFatGuyText2:
 	line "people!"
 	done
 
-CeladonGameCornerFatGuyNoCoinCaseText:
+CeladonGameCornerFirebreatherNoCoinCaseText:
 	text "Hey, you don't"
 	line "have a COIN CASE."
 
@@ -209,7 +209,7 @@ CeladonGameCornerFatGuyNoCoinCaseText:
 	cont "coins, kid?"
 	done
 
-CeladonGameCornerFatGuyFullCoinCaseText:
+CeladonGameCornerFirebreatherFullCoinCaseText:
 	text "Hey, your COIN"
 	line "CASE is full, kid."
 
@@ -327,8 +327,8 @@ CeladonGameCorner_MapEvents:
 	object_event  3,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerReceptionistScript, -1
 	object_event 14, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerPokefanMScript, -1
 	object_event 17,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerTeacherScript, -1
-	object_event 11,  7, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerFishingGuruScript, -1
-	object_event  8, 10, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerFatGuyScript, -1
-	object_event  8, 10, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, NITE, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerFatGuyScript, -1
+	object_event 11,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerSuperNerdScript, -1
+	object_event  8, 10, SPRITE_FIREBREATHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerFirebreatherScript, -1
+	object_event  8, 10, SPRITE_FIREBREATHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, NITE, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerFirebreatherScript, -1
 	object_event 11,  3, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonGymGuideScript, -1
 	object_event  2,  8, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonGameCornerGrampsScript, -1

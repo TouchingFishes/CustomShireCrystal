@@ -8,9 +8,9 @@
 	const ROUTE34_GRAMPS
 	const ROUTE34_DAY_CARE_MON_1
 	const ROUTE34_DAY_CARE_MON_2
-	const ROUTE34_COOLTRAINER_F1
-	const ROUTE34_COOLTRAINER_F2
-	const ROUTE34_COOLTRAINER_F3
+	const ROUTE34_ACE_TRAINER_F1
+	const ROUTE34_ACE_TRAINER_F2
+	const ROUTE34_ACE_TRAINER_F3
 	const ROUTE34_POKE_BALL
 
 Route34_MapScripts:
@@ -410,59 +410,59 @@ TrainerPokefanmBrandon:
 	closetext
 	end
 
-TrainerCooltrainerfIrene:
-	trainer COOLTRAINERF, IRENE, EVENT_BEAT_COOLTRAINERF_IRENE, CooltrainerfIreneSeenText, CooltrainerfIreneBeatenText, 0, .Script
+TrainerAceTrainerfIrene:
+	trainer ACE_TRAINERF, IRENE, EVENT_BEAT_ACE_TRAINERF_IRENE, AceTrainerfIreneSeenText, AceTrainerfIreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
 	checkevent EVENT_GOT_SOFT_SAND_FROM_KATE
 	iftrue .GotSoftSand
-	writetext CooltrainerfIreneAfterText1
+	writetext AceTrainerfIreneAfterText1
 	waitbutton
 	closetext
 	end
 
 .GotSoftSand:
-	writetext CooltrainerfIreneAfterText2
+	writetext AceTrainerfIreneAfterText2
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfJenn:
-	trainer COOLTRAINERF, JENN, EVENT_BEAT_COOLTRAINERF_JENN, CooltrainerfJennSeenText, CooltrainerfJennBeatenText, 0, .Script
+TrainerAceTrainerfJenn:
+	trainer ACE_TRAINERF, JENN, EVENT_BEAT_ACE_TRAINERF_JENN, AceTrainerfJennSeenText, AceTrainerfJennBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
 	checkevent EVENT_GOT_SOFT_SAND_FROM_KATE
 	iftrue .GotSoftSand
-	writetext CooltrainerfJennAfterText1
+	writetext AceTrainerfJennAfterText1
 	waitbutton
 	closetext
 	end
 
 .GotSoftSand:
-	writetext CooltrainerfJennAfterText2
+	writetext AceTrainerfJennAfterText2
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfKate:
-	trainer COOLTRAINERF, KATE, EVENT_BEAT_COOLTRAINERF_KATE, CooltrainerfKateSeenText, CooltrainerfKateBeatenText, 0, .Script
+TrainerAceTrainerfKate:
+	trainer ACE_TRAINERF, KATE, EVENT_BEAT_ACE_TRAINERF_KATE, AceTrainerfKateSeenText, AceTrainerfKateBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
 	checkevent EVENT_GOT_SOFT_SAND_FROM_KATE
 	iftrue .GotSoftSand
-	writetext CooltrainerfKateOfferSoftSandText
+	writetext AceTrainerfKateOfferSoftSandText
 	promptbutton
 	verbosegiveitem SOFT_SAND
 	iffalse .BagFull
 	setevent EVENT_GOT_SOFT_SAND_FROM_KATE
 .GotSoftSand:
-	writetext CooltrainerfKateAfterText
+	writetext AceTrainerfKateAfterText
 	waitbutton
 .BagFull:
 	closetext
@@ -630,23 +630,23 @@ PokefanmBrandonAfterText:
 	line "to no end!"
 	done
 
-CooltrainerfIreneSeenText:
+AceTrainerfIreneSeenText:
 	text "IRENE: Kyaaah!"
 	line "Someone found us!"
 	done
 
-CooltrainerfIreneBeatenText:
+AceTrainerfIreneBeatenText:
 	text "IRENE: Ohhh!"
 	line "Too strong!"
 	done
 
-CooltrainerfIreneAfterText1:
+AceTrainerfIreneAfterText1:
 	text "IRENE: My sister"
 	line "KATE will get you"
 	cont "for this!"
 	done
 
-CooltrainerfIreneAfterText2:
+AceTrainerfIreneAfterText2:
 	text "IRENE: Isn't this"
 	line "beach great?"
 
@@ -654,41 +654,41 @@ CooltrainerfIreneAfterText2:
 	line "little getaway!"
 	done
 
-CooltrainerfJennSeenText:
+AceTrainerfJennSeenText:
 	text "JENN: You can't"
 	line "beat IRENE and go"
 	cont "unpunished!"
 	done
 
-CooltrainerfJennBeatenText:
+AceTrainerfJennBeatenText:
 	text "JENN: So sorry,"
 	line "IRENE! Sis!"
 	done
 
-CooltrainerfJennAfterText1:
+AceTrainerfJennAfterText1:
 	text "JENN: Don't get"
 	line "cocky! My sister"
 	cont "KATE is tough!"
 	done
 
-CooltrainerfJennAfterText2:
+AceTrainerfJennAfterText2:
 	text "JENN: Sunlight"
 	line "makes your body"
 	cont "stronger."
 	done
 
-CooltrainerfKateSeenText:
+AceTrainerfKateSeenText:
 	text "KATE: You sure"
 	line "were mean to my"
 	cont "little sisters!"
 	done
 
-CooltrainerfKateBeatenText:
+AceTrainerfKateBeatenText:
 	text "KATE: No! I can't"
 	line "believe I lost."
 	done
 
-CooltrainerfKateOfferSoftSandText:
+AceTrainerfKateOfferSoftSandText:
 	text "KATE: You're too"
 	line "strong. I didn't"
 	cont "stand a chance."
@@ -697,7 +697,7 @@ CooltrainerfKateOfferSoftSandText:
 	line "this."
 	done
 
-CooltrainerfKateAfterText:
+AceTrainerfKateAfterText:
 	text "KATE: I'm sorry we"
 	line "jumped you."
 
@@ -757,16 +757,16 @@ Route34_MapEvents:
 	bg_event 17, 19, BGEVENT_ITEM, Route34HiddenSuperPotion
 
 	def_object_events
-	object_event 13,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerCamperTodd1, -1
+	object_event 13,  7, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerCamperTodd1, -1
 	object_event 15, 32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterSamuel, -1
 	object_event 11, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterIan, -1
-	object_event 10, 26, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerGina1, -1
+	object_event 10, 26, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerGina1, -1
 	object_event  9, 11, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OfficerKeithScript, -1
 	object_event 18, 28, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmBrandon, -1
 	object_event 15, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareManScript_Outside, EVENT_DAY_CARE_MAN_ON_ROUTE_34
 	object_event 14, 18, SPRITE_DAY_CARE_MON_1, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareMon1Script, EVENT_DAY_CARE_MON_1
 	object_event 17, 19, SPRITE_DAY_CARE_MON_2, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareMon2Script, EVENT_DAY_CARE_MON_2
-	object_event 11, 48, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerCooltrainerfIrene, -1
-	object_event  3, 48, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfJenn, -1
-	object_event  6, 51, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfKate, -1
+	object_event 11, 48, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerAceTrainerfIrene, -1
+	object_event  3, 48, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfJenn, -1
+	object_event  6, 51, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerfKate, -1
 	object_event  7, 30, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route34Nugget, EVENT_ROUTE_34_NUGGET

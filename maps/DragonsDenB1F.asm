@@ -2,8 +2,8 @@
 	const DRAGONSDENB1F_POKE_BALL1
 	const DRAGONSDENB1F_CLAIR
 	const DRAGONSDENB1F_RIVAL
-	const DRAGONSDENB1F_COOLTRAINER_M
-	const DRAGONSDENB1F_COOLTRAINER_F
+	const DRAGONSDENB1F_ACE_TRAINER_M
+	const DRAGONSDENB1F_ACE_TRAINER_F
 	const DRAGONSDENB1F_TWIN1
 	const DRAGONSDENB1F_TWIN2
 	const DRAGONSDENB1F_POKE_BALL2
@@ -81,24 +81,24 @@ DragonsDenB1F_ClairScene:
 	setscene SCENE_DRAGONSDENB1F_NOOP
 	end
 
-TrainerCooltrainermDarin:
-	trainer COOLTRAINERM, DARIN, EVENT_BEAT_COOLTRAINERM_DARIN, CooltrainermDarinSeenText, CooltrainermDarinBeatenText, 0, .Script
+TrainerAceTrainermDarin:
+	trainer ACE_TRAINERM, DARIN, EVENT_BEAT_ACE_TRAINERM_DARIN, AceTrainermDarinSeenText, AceTrainermDarinBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermDarinAfterBattleText
+	writetext AceTrainermDarinAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfCara:
-	trainer COOLTRAINERF, CARA, EVENT_BEAT_COOLTRAINERF_CARA, CooltrainerfCaraSeenText, CooltrainerfCaraBeatenText, 0, .Script
+TrainerAceTrainerfCara:
+	trainer ACE_TRAINERF, CARA, EVENT_BEAT_ACE_TRAINERF_CARA, AceTrainerfCaraSeenText, AceTrainerfCaraBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfCaraAfterBattleText
+	writetext AceTrainerfCaraAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -315,16 +315,16 @@ RivalText_Training2:
 	line "of my way…"
 	done
 
-CooltrainermDarinSeenText:
+AceTrainermDarinSeenText:
 	text "You! How dare you"
 	line "enter uninvited!"
 	done
 
-CooltrainermDarinBeatenText:
+AceTrainermDarinBeatenText:
 	text "S-strong!"
 	done
 
-CooltrainermDarinAfterBattleText:
+AceTrainermDarinAfterBattleText:
 	text "The SHRINE ahead"
 	line "is home to the"
 
@@ -335,16 +335,16 @@ CooltrainermDarinAfterBattleText:
 	line "to just go in!"
 	done
 
-CooltrainerfCaraSeenText:
+AceTrainerfCaraSeenText:
 	text "You shouldn't be"
 	line "in here!"
 	done
 
-CooltrainerfCaraBeatenText:
+AceTrainerfCaraBeatenText:
 	text "Oh yikes, I lost!"
 	done
 
-CooltrainerfCaraAfterBattleText:
+AceTrainerfCaraAfterBattleText:
 	text "Soon I'm going to"
 	line "get permission"
 
@@ -423,8 +423,8 @@ DragonsDenB1F_MapEvents:
 	object_event 35, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FDragonFangScript, EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
 	object_event 14, 30, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_DRAGONS_DEN_CLAIR
 	object_event 20, 23, SPRITE_RIVAL, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FRivalScript, EVENT_RIVAL_DRAGONS_DEN
-	object_event 20,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerCooltrainermDarin, -1
-	object_event  8,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfCara, -1
+	object_event 20,  8, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerAceTrainermDarin, -1
+	object_event  8,  8, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfCara, -1
 	object_event  4, 17, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsLeaandpia1, -1
 	object_event  4, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsLeaandpia2, -1
 	object_event 30,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonsDenB1FCalcium, EVENT_DRAGONS_DEN_B1F_CALCIUM

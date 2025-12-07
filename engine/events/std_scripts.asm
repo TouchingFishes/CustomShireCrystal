@@ -635,7 +635,7 @@ AskNumber1MScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_SCHOOLBOY_JACK, .Jack
 	ifequal PHONE_SAILOR_HUEY, .Huey
-	ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
+	ifequal PHONE_ACE_TRAINERM_GAVEN, .Gaven
 	ifequal PHONE_BIRDKEEPER_JOSE, .Jose
 	ifequal PHONE_YOUNGSTER_JOEY, .Joey
 	ifequal PHONE_BUG_CATCHER_WADE, .Wade
@@ -720,7 +720,7 @@ AskNumber2MScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_SCHOOLBOY_JACK, .Jack
 	ifequal PHONE_SAILOR_HUEY, .Huey
-	ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
+	ifequal PHONE_ACE_TRAINERM_GAVEN, .Gaven
 	ifequal PHONE_BIRDKEEPER_JOSE, .Jose
 	ifequal PHONE_YOUNGSTER_JOEY, .Joey
 	ifequal PHONE_BUG_CATCHER_WADE, .Wade
@@ -811,7 +811,7 @@ NumberAcceptedMScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_SCHOOLBOY_JACK, .Jack
 	ifequal PHONE_SAILOR_HUEY, .Huey
-	ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
+	ifequal PHONE_ACE_TRAINERM_GAVEN, .Gaven
 	ifequal PHONE_BIRDKEEPER_JOSE, .Jose
 	ifequal PHONE_YOUNGSTER_JOEY, .Joey
 	ifequal PHONE_BUG_CATCHER_WADE, .Wade
@@ -935,7 +935,7 @@ NumberDeclinedMScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_SCHOOLBOY_JACK, .Jack
 	ifequal PHONE_SAILOR_HUEY, .Huey
-	ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
+	ifequal PHONE_ACE_TRAINERM_GAVEN, .Gaven
 	ifequal PHONE_BIRDKEEPER_JOSE, .Jose
 	ifequal PHONE_YOUNGSTER_JOEY, .Joey
 	ifequal PHONE_BUG_CATCHER_WADE, .Wade
@@ -1059,7 +1059,7 @@ PhoneFullMScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_SCHOOLBOY_JACK, .Jack
 	ifequal PHONE_SAILOR_HUEY, .Huey
-	ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
+	ifequal PHONE_ACE_TRAINERM_GAVEN, .Gaven
 	ifequal PHONE_BIRDKEEPER_JOSE, .Jose
 	ifequal PHONE_YOUNGSTER_JOEY, .Joey
 	ifequal PHONE_BUG_CATCHER_WADE, .Wade
@@ -1183,7 +1183,7 @@ RematchMScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_SCHOOLBOY_JACK, .Jack
 	ifequal PHONE_SAILOR_HUEY, .Huey
-	ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
+	ifequal PHONE_ACE_TRAINERM_GAVEN, .Gaven
 	ifequal PHONE_BIRDKEEPER_JOSE, .Jose
 	ifequal PHONE_YOUNGSTER_JOEY, .Joey
 	ifequal PHONE_BUG_CATCHER_WADE, .Wade
@@ -1422,8 +1422,8 @@ RematchGiftMScript:
 AskNumber1FScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	ifequal PHONE_COOLTRAINERF_REENA, .Reena
+	ifequal PHONE_ACE_TRAINERF_BETH, .Beth
+	ifequal PHONE_ACE_TRAINERF_REENA, .Reena
 	ifequal PHONE_PICNICKER_LIZ, .Liz
 	ifequal PHONE_PICNICKER_GINA, .Gina
 	ifequal PHONE_LASS_DANA, .Dana
@@ -1458,8 +1458,8 @@ AskNumber1FScript:
 AskNumber2FScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	ifequal PHONE_COOLTRAINERF_REENA, .Reena
+	ifequal PHONE_ACE_TRAINERF_BETH, .Beth
+	ifequal PHONE_ACE_TRAINERF_REENA, .Reena
 	ifequal PHONE_PICNICKER_LIZ, .Liz
 	ifequal PHONE_PICNICKER_GINA, .Gina
 	ifequal PHONE_LASS_DANA, .Dana
@@ -1501,8 +1501,8 @@ RegisteredNumberFScript:
 NumberAcceptedFScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	ifequal PHONE_COOLTRAINERF_REENA, .Reena
+	ifequal PHONE_ACE_TRAINERF_BETH, .Beth
+	ifequal PHONE_ACE_TRAINERF_REENA, .Reena
 	ifequal PHONE_PICNICKER_LIZ, .Liz
 	ifequal PHONE_PICNICKER_GINA, .Gina
 	ifequal PHONE_LASS_DANA, .Dana
@@ -1553,8 +1553,8 @@ NumberAcceptedFScript:
 NumberDeclinedFScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	ifequal PHONE_COOLTRAINERF_REENA, .Reena
+	ifequal PHONE_ACE_TRAINERF_BETH, .Beth
+	ifequal PHONE_ACE_TRAINERF_REENA, .Reena
 	ifequal PHONE_PICNICKER_LIZ, .Liz
 	ifequal PHONE_PICNICKER_GINA, .Gina
 	ifequal PHONE_LASS_DANA, .Dana
@@ -1605,8 +1605,8 @@ NumberDeclinedFScript:
 PhoneFullFScript:
 	readvar VAR_CALLERID
 	ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	ifequal PHONE_COOLTRAINERF_REENA, .Reena
+	ifequal PHONE_ACE_TRAINERF_BETH, .Beth
+	ifequal PHONE_ACE_TRAINERF_REENA, .Reena
 	ifequal PHONE_PICNICKER_LIZ, .Liz
 	ifequal PHONE_PICNICKER_GINA, .Gina
 	ifequal PHONE_LASS_DANA, .Dana
@@ -1656,8 +1656,8 @@ PhoneFullFScript:
 
 RematchFScript:
 	readvar VAR_CALLERID
-	ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	ifequal PHONE_COOLTRAINERF_REENA, .Reena
+	ifequal PHONE_ACE_TRAINERF_BETH, .Beth
+	ifequal PHONE_ACE_TRAINERF_REENA, .Reena
 	ifequal PHONE_PICNICKER_LIZ, .Liz
 	ifequal PHONE_PICNICKER_GINA, .Gina
 	ifequal PHONE_LASS_DANA, .Dana

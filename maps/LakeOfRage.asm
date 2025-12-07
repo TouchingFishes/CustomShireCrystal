@@ -2,11 +2,11 @@
 	const LAKEOFRAGE_LANCE
 	const LAKEOFRAGE_GRAMPS
 	const LAKEOFRAGE_POKEMANIAC1
-	const LAKEOFRAGE_COOLTRAINER_F1
+	const LAKEOFRAGE_COOLTRAINER_F
 	const LAKEOFRAGE_FISHER1
 	const LAKEOFRAGE_FISHER2
-	const LAKEOFRAGE_COOLTRAINER_M
-	const LAKEOFRAGE_COOLTRAINER_F2
+	const LAKEOFRAGE_ACE_TRAINER_M
+	const LAKEOFRAGE_ACE_TRAINER_F
 	const LAKEOFRAGE_GYARADOS
 	const LAKEOFRAGE_WESLEY
 	const LAKEOFRAGE_POKE_BALL1
@@ -166,24 +166,24 @@ TrainerFisherRaymond:
 	closetext
 	end
 
-TrainerCooltrainermAaron:
-	trainer COOLTRAINERM, AARON, EVENT_BEAT_COOLTRAINERM_AARON, CooltrainermAaronSeenText, CooltrainermAaronBeatenText, 0, .Script
+TrainerAceTrainermAaron:
+	trainer ACE_TRAINERM, AARON, EVENT_BEAT_ACE_TRAINERM_AARON, AceTrainermAaronSeenText, AceTrainermAaronBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermAaronAfterBattleText
+	writetext AceTrainermAaronAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfLois:
-	trainer COOLTRAINERF, LOIS, EVENT_BEAT_COOLTRAINERF_LOIS, CooltrainerfLoisSeenText, CooltrainerfLoisBeatenText, 0, .Script
+TrainerAceTrainerfLois:
+	trainer ACE_TRAINERF, LOIS, EVENT_BEAT_ACE_TRAINERF_LOIS, AceTrainerfLoisSeenText, AceTrainerfLoisBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfLoisAfterBattleText
+	writetext AceTrainerfLoisAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -428,7 +428,7 @@ FisherRaymondAfterBattleText:
 	line "any good #MON?"
 	done
 
-CooltrainermAaronSeenText:
+AceTrainermAaronSeenText:
 	text "If a trainer spots"
 	line "another trainer,"
 
@@ -439,12 +439,12 @@ CooltrainermAaronSeenText:
 	line "destiny."
 	done
 
-CooltrainermAaronBeatenText:
+AceTrainermAaronBeatenText:
 	text "Whew…"
 	line "Good battle."
 	done
 
-CooltrainermAaronAfterBattleText:
+AceTrainermAaronAfterBattleText:
 	text "A strange toad"
 	line "emerges from the"
 
@@ -452,7 +452,7 @@ CooltrainermAaronAfterBattleText:
 	line "WEDNESDAY."
 	done
 
-CooltrainerfLoisSeenText:
+AceTrainerfLoisSeenText:
 	text "What happened to"
 	line "the red GYARADOS?"
 
@@ -465,11 +465,11 @@ CooltrainerfLoisSeenText:
 	line "battle!"
 	done
 
-CooltrainerfLoisBeatenText:
+AceTrainerfLoisBeatenText:
 	text "Good going!"
 	done
 
-CooltrainerfLoisAfterBattleText:
+AceTrainerfLoisAfterBattleText:
 	text "Come to think of"
 	line "it, I've seen a"
 	cont "pink BUTTERFREE."
@@ -568,11 +568,11 @@ LakeOfRage_MapEvents:
 	object_event 25, 29, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageCooltrainerFScript, -1
 	object_event 30, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherAndre, EVENT_LAKE_OF_RAGE_CIVILIANS
 	object_event 24, 26, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherRaymond, EVENT_LAKE_OF_RAGE_CIVILIANS
-	object_event  4, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermAaron, EVENT_LAKE_OF_RAGE_CIVILIANS
-	object_event 36,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerCooltrainerfLois, EVENT_LAKE_OF_RAGE_CIVILIANS
+	object_event  4, 15, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainermAaron, EVENT_LAKE_OF_RAGE_CIVILIANS
+	object_event 36,  7, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerAceTrainerfLois, EVENT_LAKE_OF_RAGE_CIVILIANS
 	object_event 18, 22, SPRITE_GYARADOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RedGyarados, EVENT_LAKE_OF_RAGE_RED_GYARADOS
 	object_event  4,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WesleyScript, EVENT_LAKE_OF_RAGE_WESLEY_OF_WEDNESDAY
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageFireStone, EVENT_LAKE_OF_RAGE_FIRE_STONE
 	object_event 20,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMFacade, EVENT_LAKE_OF_RAGE_TM_FACADE
 	object_event 35,  2, SPRITE_GEKOPON, SPRITEMOVEDATA_STILL, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LakeOfRageGekopon, LAKEOFRAGE_GEKOPON
-	object_event  4, 27, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBugManiacLarson, -1
+	object_event  4, 27, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBugManiacLarson, -1

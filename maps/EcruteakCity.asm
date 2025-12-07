@@ -3,7 +3,7 @@
 	const ECRUTEAKCITY_GRAMPS2
 	const ECRUTEAKCITY_LASS1
 	const ECRUTEAKCITY_LASS2
-	const ECRUTEAKCITY_FIREBREATHER
+	const ECRUTEAKCITY_HIKER
 	const ECRUTEAKCITY_YOUNGSTER
 	const ECRUTEAKCITY_GRAMPS3
 
@@ -45,18 +45,18 @@ EcruteakCityLass2Script:
 	closetext
 	end
 
-EcruteakCityFirebreatherScript:
+EcruteakCityHikerScript:
 	faceplayer
 	opentext
 	checkevent EVENT_JASMINE_RETURNED_TO_GYM
 	iftrue .JasmineReturned
-	writetext EcruteakCityFirebreatherText
+	writetext EcruteakCityHikerText
 	waitbutton
 	closetext
 	end
 
 .JasmineReturned:
-	writetext EcruteakCityFirebreatherText_JasmineReturned
+	writetext EcruteakCityHikerText_JasmineReturned
 	waitbutton
 	closetext
 	end
@@ -135,7 +135,7 @@ EcruteakCityLass2Text_ReleasedBeasts:
 	cont "What were they?"
 	done
 
-EcruteakCityFirebreatherText:
+EcruteakCityHikerText:
 	text "I heard a rumor"
 	line "about OLIVINE"
 	cont "LIGHTHOUSE."
@@ -148,7 +148,7 @@ EcruteakCityFirebreatherText:
 	cont "are in trouble."
 	done
 
-EcruteakCityFirebreatherText_JasmineReturned:
+EcruteakCityHikerText_JasmineReturned:
 	text "The #MON at"
 	line "OLIVINE LIGHTHOUSE"
 	cont "has been cured."
@@ -273,6 +273,6 @@ EcruteakCity_MapEvents:
 	object_event 20, 21, SPRITE_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityGramps2Script, -1
 	object_event 21, 29, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, EcruteakCityLass1Script, -1
 	object_event  3,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityLass2Script, -1
-	object_event  9, 22, SPRITE_FIREBREATHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EcruteakCityFirebreatherScript, -1
+	object_event  9, 22, SPRITE_HIKER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EcruteakCityHikerScript, -1
 	object_event 10, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EcruteakCityYoungsterScript, -1
 	object_event  3,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, EcruteakCityGramps3Script, EVENT_ECRUTEAK_CITY_GRAMPS

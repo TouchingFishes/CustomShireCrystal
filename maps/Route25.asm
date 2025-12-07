@@ -8,7 +8,7 @@
 	const ROUTE25_YOUNGSTER3
 	const ROUTE25_LASS3
 	const ROUTE25_SUPER_NERD
-	const ROUTE25_COOLTRAINER_M2
+	const ROUTE25_ACE_TRAINER_M2
 	const ROUTE25_POKE_BALL
 
 Route25_MapScripts:
@@ -153,30 +153,30 @@ TrainerSupernerdPat:
 	closetext
 	end
 
-TrainerCooltrainermKevin:
+TrainerAceTrainermKevin:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_COOLTRAINERM_KEVIN
+	checkevent EVENT_BEAT_ACE_TRAINERM_KEVIN
 	iftrue .AfterBattle
 	checkevent EVENT_CLEARED_NUGGET_BRIDGE
 	iftrue .AfterNuggetBridge
-	writetext CooltrainermKevinNuggetText
+	writetext AceTrainermKevinNuggetText
 	promptbutton
 	verbosegiveitem NUGGET
 	iffalse .NoRoomForNugget
 	setevent EVENT_CLEARED_NUGGET_BRIDGE
 .AfterNuggetBridge:
-	writetext CooltrainermKevinSeenText
+	writetext AceTrainermKevinSeenText
 	waitbutton
 	closetext
-	winlosstext CooltrainermKevinBeatenText, 0
-	loadtrainer COOLTRAINERM, KEVIN
+	winlosstext AceTrainermKevinBeatenText, 0
+	loadtrainer ACE_TRAINERM, KEVIN
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_COOLTRAINERM_KEVIN
+	setevent EVENT_BEAT_ACE_TRAINERM_KEVIN
 	opentext
 .AfterBattle:
-	writetext CooltrainermKevinAfterBattleText
+	writetext AceTrainermKevinAfterBattleText
 	waitbutton
 .NoRoomForNugget:
 	closetext
@@ -382,7 +382,7 @@ SupernerdPatAfterBattleText:
 	line "cheat anymore…"
 	done
 
-CooltrainermKevinNuggetText:
+AceTrainermKevinNuggetText:
 	text "You took on one"
 	line "more battle than"
 
@@ -393,7 +393,7 @@ CooltrainermKevinNuggetText:
 	line "win a prize."
 	done
 
-CooltrainermKevinSeenText:
+AceTrainermKevinSeenText:
 	text "But after seeing"
 	line "how you battle, I"
 
@@ -404,12 +404,12 @@ CooltrainermKevinSeenText:
 	line "me take you on."
 	done
 
-CooltrainermKevinBeatenText:
+AceTrainermKevinBeatenText:
 	text "I've never had a"
 	line "battle this good!"
 	done
 
-CooltrainermKevinAfterBattleText:
+AceTrainermKevinAfterBattleText:
 	text "That was a great"
 	line "battle!"
 
@@ -444,8 +444,8 @@ Route25_MapEvents:
 	object_event 16, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassEllen, -1
 	object_event 21,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyJoe, -1
 	object_event 22,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassLaura, -1
-	object_event 25,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperLloyd, -1
+	object_event 25,  4, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperLloyd, -1
 	object_event 28, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassShannon, -1
 	object_event 31,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerSupernerdPat, -1
-	object_event 37,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerCooltrainermKevin, -1
+	object_event 37,  8, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerAceTrainermKevin, -1
 	object_event 32,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25Protein, EVENT_ROUTE_25_PROTEIN

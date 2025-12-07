@@ -1,7 +1,7 @@
 	object_const_def
-	const UNIONCAVEB2F_COOLTRAINER_M
-	const UNIONCAVEB2F_COOLTRAINER_F1
-	const UNIONCAVEB2F_COOLTRAINER_F2
+	const UNIONCAVEB2F_ACE_TRAINER_M
+	const UNIONCAVEB2F_ACE_TRAINER_F1
+	const UNIONCAVEB2F_ACE_TRAINER_F2
 	const UNIONCAVEB2F_POKE_BALL1
 	const UNIONCAVEB2F_POKE_BALL2
 	const UNIONCAVEB2F_LAPRAS
@@ -35,35 +35,35 @@ UnionCaveLapras:
 	reloadmapafterbattle
 	end
 
-TrainerCooltrainermNick:
-	trainer COOLTRAINERM, NICK, EVENT_BEAT_COOLTRAINERM_NICK, CooltrainermNickSeenText, CooltrainermNickBeatenText, 0, .Script
+TrainerAceTrainermNick:
+	trainer ACE_TRAINERM, NICK, EVENT_BEAT_ACE_TRAINERM_NICK, AceTrainermNickSeenText, AceTrainermNickBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermNickAfterBattleText
+	writetext AceTrainermNickAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfGwen:
-	trainer COOLTRAINERF, GWEN, EVENT_BEAT_COOLTRAINERF_GWEN, CooltrainerfGwenSeenText, CooltrainerfGwenBeatenText, 0, .Script
+TrainerAceTrainerfGwen:
+	trainer ACE_TRAINERF, GWEN, EVENT_BEAT_ACE_TRAINERF_GWEN, AceTrainerfGwenSeenText, AceTrainerfGwenBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfGwenAfterBattleText
+	writetext AceTrainerfGwenAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfEmma:
-	trainer COOLTRAINERF, EMMA, EVENT_BEAT_COOLTRAINERF_EMMA, CooltrainerfEmmaSeenText, CooltrainerfEmmaBeatenText, 0, .Script
+TrainerAceTrainerfEmma:
+	trainer ACE_TRAINERF, EMMA, EVENT_BEAT_ACE_TRAINERF_EMMA, AceTrainerfEmmaSeenText, AceTrainerfEmmaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfEmmaAfterBattleText
+	writetext AceTrainerfEmmaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -74,7 +74,7 @@ UnionCaveB2FElixer:
 UnionCaveB2FHyperPotion:
 	itemball HYPER_POTION
 
-CooltrainermNickSeenText:
+AceTrainermNickSeenText:
 	text "There are two"
 	line "kinds of people."
 
@@ -86,12 +86,12 @@ CooltrainermNickSeenText:
 	line "person are you?"
 	done
 
-CooltrainermNickBeatenText:
+AceTrainermNickBeatenText:
 	text "You've got"
 	line "dazzling style!"
 	done
 
-CooltrainermNickAfterBattleText:
+AceTrainermNickAfterBattleText:
 	text "Your #MON style"
 	line "is stunning and"
 	cont "colorful, I admit."
@@ -100,23 +100,23 @@ CooltrainermNickAfterBattleText:
 	line "getting better!"
 	done
 
-CooltrainerfGwenSeenText:
+AceTrainerfGwenSeenText:
 	text "I'm in training."
 	line "Care for a round?"
 	done
 
-CooltrainerfGwenBeatenText:
+AceTrainerfGwenBeatenText:
 	text "Aww, no! You're"
 	line "too good for me."
 	done
 
-CooltrainerfGwenAfterBattleText:
+AceTrainerfGwenAfterBattleText:
 	text "I'm going to train"
 	line "by myself until I"
 	cont "improve."
 	done
 
-CooltrainerfEmmaSeenText:
+AceTrainerfEmmaSeenText:
 	text "If the #MON I"
 	line "liked were there,"
 	cont "I'd go anywhere."
@@ -125,12 +125,12 @@ CooltrainerfEmmaSeenText:
 	line "trainer does."
 	done
 
-CooltrainerfEmmaBeatenText:
+AceTrainerfEmmaBeatenText:
 	text "I'd rather pet my"
 	line "babies than this!"
 	done
 
-CooltrainerfEmmaAfterBattleText:
+AceTrainerfEmmaAfterBattleText:
 	text "Just once a week,"
 	line "a #MON comes to"
 	cont "the water's edge."
@@ -150,9 +150,9 @@ UnionCaveB2F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event 15, 19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainermNick, -1
-	object_event  5, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerfGwen, -1
-	object_event  3, 30, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfEmma, -1
+	object_event 15, 19, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainermNick, -1
+	object_event  5, 13, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerfGwen, -1
+	object_event  3, 30, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfEmma, -1
 	object_event 16,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnionCaveB2FElixer, EVENT_UNION_CAVE_B2F_ELIXER
 	object_event 12, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnionCaveB2FHyperPotion, EVENT_UNION_CAVE_B2F_HYPER_POTION
 	object_event 11, 31, SPRITE_SURF, SPRITEMOVEDATA_SWIM_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, UnionCaveLapras, EVENT_UNION_CAVE_B2F_LAPRAS

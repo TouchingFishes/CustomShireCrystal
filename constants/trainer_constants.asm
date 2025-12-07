@@ -244,7 +244,7 @@ DEF KRIS EQU __trainer_class__
 	const JANINE1
 	const JANINE2
 
-	trainerclass COOLTRAINERM ; 1b
+	trainerclass ACE_TRAINERM ; 1b
 	const NICK
 	const AARON
 	const PAUL
@@ -267,7 +267,7 @@ DEF KRIS EQU __trainer_class__
 	const DARIN
 	const COLBY
 
-	trainerclass COOLTRAINERF ; 1c
+	trainerclass ACE_TRAINERF ; 1c
 	const GWEN
 	const LOIS
 	const FRAN

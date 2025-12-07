@@ -4,8 +4,8 @@
 	const ROUTE45_POKEFAN_M3
 	const ROUTE45_POKEFAN_M4
 	const ROUTE45_BLACK_BELT
-	const ROUTE45_COOLTRAINER_M
-	const ROUTE45_COOLTRAINER_F
+	const ROUTE45_ACE_TRAINER_M
+	const ROUTE45_ACE_TRAINER_F
 	const ROUTE45_FRUIT_TREE
 	const ROUTE45_POKE_BALL1
 	const ROUTE45_POKE_BALL2
@@ -255,24 +255,24 @@ TrainerHikerTimothy:
 	closetext
 	end
 
-TrainerCooltrainermRyan:
-	trainer COOLTRAINERM, RYAN, EVENT_BEAT_COOLTRAINERM_RYAN, CooltrainermRyanSeenText, CooltrainermRyanBeatenText, 0, .Script
+TrainerAceTrainermRyan:
+	trainer ACE_TRAINERM, RYAN, EVENT_BEAT_ACE_TRAINERM_RYAN, AceTrainermRyanSeenText, AceTrainermRyanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermRyanAfterBattleText
+	writetext AceTrainermRyanAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerfKelly:
-	trainer COOLTRAINERF, KELLY, EVENT_BEAT_COOLTRAINERF_KELLY, CooltrainerfKellySeenText, CooltrainerfKellyBeatenText, 0, .Script
+TrainerAceTrainerfKelly:
+	trainer ACE_TRAINERF, KELLY, EVENT_BEAT_ACE_TRAINERF_KELLY, AceTrainerfKellySeenText, AceTrainerfKellyBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerfKellyAfterBattleText
+	writetext AceTrainerfKellyAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -496,18 +496,18 @@ BlackbeltKenjiNightText:
 	line "train again!"
 	done
 
-CooltrainermRyanSeenText:
+AceTrainermRyanSeenText:
 	text "What are your"
 	line "thoughts on rais-"
 	cont "ing #MON?"
 	done
 
-CooltrainermRyanBeatenText:
+AceTrainermRyanBeatenText:
 	text "You've won my"
 	line "respect."
 	done
 
-CooltrainermRyanAfterBattleText:
+AceTrainermRyanAfterBattleText:
 	text "I see you're rais-"
 	line "ing your #MON"
 	cont "with care."
@@ -517,7 +517,7 @@ CooltrainermRyanAfterBattleText:
 	cont "tough situations."
 	done
 
-CooltrainerfKellySeenText:
+AceTrainerfKellySeenText:
 	text "What is your"
 	line "battle strategy?"
 
@@ -526,11 +526,11 @@ CooltrainerfKellySeenText:
 	cont "indiscriminately."
 	done
 
-CooltrainerfKellyBeatenText:
+AceTrainerfKellyBeatenText:
 	text "Fine. I lost."
 	done
 
-CooltrainerfKellyAfterBattleText:
+AceTrainerfKellyAfterBattleText:
 	text "I'm not in favor"
 	line "of overly power-"
 	cont "ful moves."
@@ -581,12 +581,12 @@ Route45_MapEvents:
 	object_event  5, 28, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHikerParry, -1
 	object_event  9, 65, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerHikerTimothy, -1
 	object_event 11, 50, SPRITE_BLACK_BELT, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltKenji, -1
-	object_event 17, 18, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermRyan, -1
-	object_event  5, 36, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfKelly, -1
+	object_event 17, 18, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainermRyan, -1
+	object_event  5, 36, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfKelly, -1
 	object_event 16, 82, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route45FruitTree, -1
 	object_event  6, 51, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45Nugget, EVENT_ROUTE_45_NUGGET
 	object_event  5, 66, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45Revive, EVENT_ROUTE_45_REVIVE
 	object_event  6, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45Elixer, EVENT_ROUTE_45_ELIXER
 	object_event  7, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45MaxPotion, EVENT_ROUTE_45_MAX_POTION
-	object_event  4, 70, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TrainerCamperQuentin, -1
+	object_event  4, 70, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TrainerCamperQuentin, -1
 	object_event 11, 79, SPRITE_VETERAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 0, TrainerVeteranRaynor, -1

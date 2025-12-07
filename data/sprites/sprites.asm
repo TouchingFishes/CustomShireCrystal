@@ -65,7 +65,7 @@ OverworldSprites:
 	overworld_sprite LinkReceptionistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite ClerkSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite FatGuySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite FishingGuruSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite BugManiacSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite ScientistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite KimonoGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite SageSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -135,4 +135,11 @@ OverworldSprites:
 	overworld_sprite SoraSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite MotoSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite AmpharosSpriteGFX, 12, WALKING_SPRITE, PAL_OW_YELLOW
+	overworld_sprite BurglarSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite BoarderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite SkierSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite AceTrainerMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite AceTrainerFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite CamperSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PicnickerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	assert_table_length NUM_OVERWORLD_SPRITES

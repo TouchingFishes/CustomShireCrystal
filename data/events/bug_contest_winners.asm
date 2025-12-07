@@ -3,7 +3,7 @@ BugContestantPointers:
 	dw BugContestant_BugCatcherDon ; this reverts back to the player
 	dw BugContestant_BugCatcherDon
 	dw BugContestant_BugCatcherEd
-	dw BugContestant_CooltrainerMNick
+	dw BugContestant_AceTrainerMNick
 	dw BugContestant_PokefanMWilliam
 	dw BugContestant_BugCatcherBenny
 	dw BugContestant_CamperBarry
@@ -31,8 +31,8 @@ BugContestant_BugCatcherEd:
 	dw BUTTERFREE, 251
 	dw CATERPIE,   237
 
-BugContestant_CooltrainerMNick:
-	db COOLTRAINERM, NICK
+BugContestant_AceTrainerMNick:
+	db ACE_TRAINERM, NICK
 	dw SCYTHER,    357
 	dw BUTTERFREE, 349
 	dw PINSIR,     368

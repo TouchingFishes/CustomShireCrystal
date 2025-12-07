@@ -28,8 +28,8 @@ TrainerClassIVs:
 	ivs 16, 18, 16, 16, 16, 16 ; BIRD_KEEPER
 	ivs 14, 10, 16, 16, 16, 16 ; LASS
 	ivs 24, 24, 24, 24, 24, 24 ; JANINE
-	ivs 19, 26, 16, 24, 16, 16 ; COOLTRAINERM
-	ivs 18, 14, 24, 24, 16, 16 ; COOLTRAINERF
+	ivs 19, 26, 16, 24, 16, 16 ; ACE_TRAINERM
+	ivs 18, 14, 24, 24, 16, 16 ; ACE_TRAINERF
 	ivs 17, 12, 18, 24, 16, 16 ; BEAUTY
 	ivs 16, 18, 16, 16, 16, 16 ; POKEMANIAC
 	ivs 18, 26, 16, 20, 16, 16 ; GRUNTM

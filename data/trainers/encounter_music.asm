@@ -30,8 +30,8 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
 	db MUSIC_LASS_ENCOUNTER        ; lass
 	db MUSIC_LASS_ENCOUNTER        ; janine
-	db MUSIC_HIKER_ENCOUNTER       ; cooltrainerm
-	db MUSIC_BEAUTY_ENCOUNTER      ; cooltrainerf
+	db MUSIC_HIKER_ENCOUNTER       ; ace_trainerm
+	db MUSIC_BEAUTY_ENCOUNTER      ; ace_trainerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; beauty
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; pokemaniac
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntm

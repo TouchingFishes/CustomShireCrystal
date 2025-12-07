@@ -29,8 +29,8 @@ TrainerPicPointers::
 	dba BirdKeeperPic
 	dba LassPic
 	dba JaninePic
-	dba CooltrainermPic
-	dba CooltrainerfPic
+	dba AceTrainermPic
+	dba AceTrainerfPic
 	dba BeautyPic
 	dba PokemaniacPic
 	dba GruntmPic
