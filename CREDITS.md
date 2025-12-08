@@ -10,6 +10,8 @@ Freeline for animations of Honchkrow.
 
 Bloodless for Buck and VeteranF sprite.
 
+Ancient Ruby for AromaLady, RuinManiac and Collector sprites.
+
 Kuroko Aizawa for Engineer sprite.
 
 Danny-E for Lorelei's sprite.

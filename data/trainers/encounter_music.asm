@@ -91,6 +91,9 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; buck
 	db MUSIC_KIMONO_ENCOUNTER      ; sora
 	db MUSIC_HIKER_ENCOUNTER       ; moto
+	db MUSIC_BEAUTY_ENCOUNTER      ; aroma_lady
+	db MUSIC_HIKER_ENCOUNTER       ; ruin_maniac
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; collector
 	assert_table_length NUM_TRAINER_CLASSES + 1
 	db MUSIC_HIKER_ENCOUNTER       ; unused
 	db MUSIC_HIKER_ENCOUNTER       ; unused

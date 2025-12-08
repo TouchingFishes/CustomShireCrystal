@@ -90,4 +90,7 @@ TrainerGroups:
 	dba BuckGroup
 	dba SoraGroup
 	dba MotoGroup
+	dba AromaLadyGroup
+	dba RuinManiacGroup
+	dba CollectorGroup
 	assert_table_length NUM_TRAINER_CLASSES

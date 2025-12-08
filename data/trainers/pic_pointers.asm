@@ -90,4 +90,7 @@ TrainerPicPointers::
 	dba BuckPic
 	dba SoraPic
 	dba MotoPic
+	dba AromaLadyPic
+	dba RuinManiacPic
+	dba CollectorPic
 	assert_table_length NUM_TRAINER_CLASSES

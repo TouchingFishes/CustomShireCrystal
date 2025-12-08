@@ -158,24 +158,28 @@ if DEF(_DEBUG)
 	; ; good party
 	givepoke MEWTWO, PLAIN_FORM, 99, KINGS_ROCK 
 	; ; hm slaves
-	givepoke FUSANG, PLAIN_FORM, 99;, LEFTOVERS
+	givepoke KITSUNOH, PLAIN_FORM, 99;, LEFTOVERS
 	givepoke PENDRAGON, PLAIN_FORM, 99;, LEAF_STONE
-	givepokemove MAGICAL_FIRE,        wPartyMon2, 0
-	givepokemove CUT,       wPartyMon2, 1
-	givepokemove RAZOR_WIND,   wPartyMon2, 2
-	givepokemove OMINOUS_WIND,        wPartyMon2, 3
-	givepokemove DRAGON_PULSE,      wPartyMon3, 0
+	;givepokemove MAGICAL_FIRE,        wPartyMon2, 0
+	givepokemove ROCK_SMASH,       wPartyMon2, 2
+	givepokemove RAZOR_WIND,   wPartyMon2, 3
+	;givepokemove OMINOUS_WIND,        wPartyMon2, 3
+	;givepokemove DRAGON_PULSE,      wPartyMon3, 0
 	givepokemove STRENGTH, wPartyMon3, 1
-	givepokemove SURF,   wPartyMon3, 2
+	givepokemove CUT,  wPartyMon3, 3
 	givepokemove FLY,  wPartyMon3, 3
 	; misc pokemon for testing
 	givepoke KROLUCARD, PLAIN_FORM, 99
-	givepokemove DRAIN_LIFE,  wPartyMon1, 0
+	givepokemove SURF,   wPartyMon4, 2
+	givepokemove PSYCHIC_M,  wPartyMon1, 0
+	givepokemove THUNDERBOLT,  wPartyMon1, 1
+	givepokemove ICE_BEAM,  wPartyMon1, 2
+	givepokemove FIERY_DANCE,  wPartyMon1, 3
 	;givepokemove SNATCH,  wPartyMon1, 1
 	;givepokemove WHIRLWIND,  wPartyMon1, 2
 	;givepokemove VITAL_THROW,  wPartyMon1, 3
-	givepoke KITSUNOH, PLAIN_FORM, 99
-	givepoke WHISCASH, PLAIN_FORM, 99
+	;givepoke FUSANG, PLAIN_FORM, 99
+	;givepoke WHISCASH, PLAIN_FORM, 99
 	; intro events
 	addcellnum PHONE_MOM
 	setmapscene PLAYERS_HOUSE_1F, $1
@@ -260,7 +264,7 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  0, CHALLENGERS_CAVE_B1F, 1
+	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
 

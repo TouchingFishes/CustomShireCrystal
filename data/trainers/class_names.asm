@@ -88,4 +88,7 @@ TrainerClassNames::
 	li "<PKMN> TRAINER" ;BUCK
 	li "<PKMN> TRAINER" ;SORA
 	li "<PKMN> TRAINER" ;MOTO
+	li "AROMA LADY"
+	li "RUIN MANIAC"
+	li "COLLECTOR"
 	assert_list_length NUM_TRAINER_CLASSES

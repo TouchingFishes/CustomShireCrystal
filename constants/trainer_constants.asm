@@ -862,5 +862,26 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MOTO ; 55
 	const MOTO1
 
+	trainerclass AROMA_LADY ; 56
+	const ROSE
+	const DAISY
+	const VIOLET
+	const CELINA
+	const JENNIE
+	const HANA
+
+	trainerclass RUIN_MANIAC ; 57
+	const CHIP
+	const DUSTY
+	const FOSTER
+	const ANDRES
+
+	trainerclass COLLECTOR ; 58
+	const EDWIN
+	const HECTOR
+	const COLEMAN
+	const BRADY
+	const JAMAL
+	const MINTY
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

@@ -442,13 +442,13 @@ TrainerClassAttributes:
 
 ; Veteran_F
 	dw FULL_RESTORE, FULL_RESTORE ; items
-	db 15 ; base reward
+	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Veteran_M
 	dw FULL_RESTORE, FULL_RESTORE ; items
-	db 15 ; base reward
+	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
@@ -521,6 +521,24 @@ TrainerClassAttributes:
 ; Moto
 	dw FULL_RESTORE, FULL_RESTORE ; items
 	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Aroma Lady
+	dw NO_ITEM, NO_ITEM ; items
+	db 16 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Ruin Maniac
+	dw FULL_HEAL, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Collector
+	dw FULL_HEAL, NO_ITEM ; items
+	db 18 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 

@@ -90,4 +90,7 @@ BTTrainerClassGenders:
 	db MALE   ; BUCK
 	db FEMALE ; SORA
 	db MALE   ; MOTO
+	db FEMALE ; AROMA_LADY
+	db MALE   ; RUIN_MANIAC
+	db MALE   ; COLLECTOR
 	assert_table_length NUM_TRAINER_CLASSES

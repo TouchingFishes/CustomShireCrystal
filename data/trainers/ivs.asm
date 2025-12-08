@@ -89,5 +89,8 @@ TrainerClassIVs:
 	ivs 31, 25, 31, 25, 25, 31 ; BUCK
 	ivs 30, 31, 30, 31, 31, 30 ; SORA
 	ivs 31, 30, 31, 30, 30, 31 ; MOTO
+	ivs 16, 12, 18, 22, 22, 18 ; AROMA_LADY
+	ivs 18, 22, 18, 18, 18, 18 ; RUIN_MANIAC
+	ivs 24, 20, 16, 18, 20, 16 ; COLLECTOR
 	;   hp  atk def spd sat sdf
 	assert_table_length NUM_TRAINER_CLASSES
