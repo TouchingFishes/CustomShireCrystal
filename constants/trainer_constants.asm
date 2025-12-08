@@ -875,6 +875,7 @@ DEF KRIS EQU __trainer_class__
 	const DUSTY
 	const FOSTER
 	const ANDRES
+	const HUNTER
 
 	trainerclass COLLECTOR ; 58
 	const EDWIN

@@ -5,6 +5,7 @@
 	const RUINSOFALPHOUTSIDE_CAMPER
 	const RUINSOFALPHOUTSIDE_YOUNGSTER2
 	const RUINSOFALPHOUTSIDE_GENTLEMAN
+	const RUINSOFALPHOUTSIDE_HIKER
 
 RuinsOfAlphOutside_MapScripts:
 	def_scene_scripts
@@ -107,6 +108,17 @@ TrainerPsychicNathan:
 	endifjustbattled
 	opentext
 	writetext PsychicNathanAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerRuinManiacFoster:
+	trainer RUIN_MANIAC, FOSTER, EVENT_BEAT_RUIN_MANIAC_FOSTER, RuinManiacFosterSeenText, RuinManiacFosterBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext RuinManiacFosterAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -433,6 +445,36 @@ RuinsOfAlphOutsideFossilGuyCancelText:
 	cont "trading with me!"
 	done
 
+RuinManiacFosterSeenText:
+	text "Ah! A visitor to"
+	line "these old ruins!"
+
+	para "The walls tell all"
+	line "kinds of secrets."
+
+	para "But first, you"
+	line "must prove your-"
+	cont "self!"
+	done
+
+RuinManiacFosterBeatenText:
+	text "The ruins…"
+	line "They still hold"
+	cont "more mysteries…"
+	done
+
+RuinManiacFosterAfterBattleText:
+	text "The Unown… the"
+	line "ancient scripts…"
+
+	para "I must uncover"
+	line "their truth!"
+
+	para "But first, I need"
+	line "to train harder!"
+	done
+
+
 RuinsOfAlphOutside_MapEvents:
 	db 0, 0 ; filler
 
@@ -465,3 +507,4 @@ RuinsOfAlphOutside_MapEvents:
 	object_event 14, 11, SPRITE_CAMPER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideCamper1Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
 	object_event 12,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideYoungster2Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
 	object_event 11, 20, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideFossilGuyScript, -1
+	object_event 11, 33, SPRITE_HIKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerRuinManiacFoster, -1
