@@ -900,4 +900,7 @@ GoldenrodDeptStoreRoof_Blocks:
 CherrygroveBay_Blocks:
 	INCBIN "maps/CherrygroveBay.ablk"
 
+ChallengersCaveB1F_Blocks:
+	INCBIN "maps/ChallengersCaveB1F.ablk"
+
 ENDSECTION

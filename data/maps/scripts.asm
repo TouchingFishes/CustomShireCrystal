@@ -483,5 +483,6 @@ INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/CherrygroveBay.asm"
 INCLUDE "maps/SeafoamGym.asm"
+INCLUDE "maps/ChallengersCaveB1F.asm"
 
 ENDSECTION

@@ -156,7 +156,7 @@ if DEF(_DEBUG)
 	; post-e4
 	setflag ENGINE_CREDITS_SKIP
 	; ; good party
-	givepoke STANTLER, PLAIN_FORM, 99, KINGS_ROCK 
+	givepoke MEWTWO, PLAIN_FORM, 99, KINGS_ROCK 
 	; ; hm slaves
 	givepoke FUSANG, PLAIN_FORM, 99;, LEFTOVERS
 	givepoke PENDRAGON, PLAIN_FORM, 99;, LEAF_STONE
@@ -260,7 +260,7 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	warp_event  7,  0, CHALLENGERS_CAVE_B1F, 1
 
 	def_coord_events
 

@@ -493,7 +493,7 @@ DEF KRIS EQU __trainer_class__
 	const STAN
 	const ERIC
 	const GREGG ; unused
-	const JAY ; unused
+	const JAY
 	const DAVE ; unused
 	const SAM
 	const TOM
@@ -703,6 +703,7 @@ DEF KRIS EQU __trainer_class__
 	const RONALD
 	const BRAD
 	const DOUGLAS
+	const GERARDO ; unused
 
 	trainerclass POKEFANM ; 3b
 	const WILLIAM
@@ -822,6 +823,7 @@ DEF KRIS EQU __trainer_class__
 	const KARL
 	const OZ
 	const JEB
+	const ZED
 
 	trainerclass LADY ; 4f
 	const SARAH

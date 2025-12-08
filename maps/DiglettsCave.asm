@@ -30,6 +30,7 @@ DiglettsCave_MapEvents:
 	warp_event 17,  3, DIGLETTS_CAVE, 6
 	warp_event 17, 33, DIGLETTS_CAVE, 2
 	warp_event  3,  3, DIGLETTS_CAVE, 4
+	warp_event 13, 15, CHALLENGERS_CAVE_B1F, 1
 
 	def_coord_events
 

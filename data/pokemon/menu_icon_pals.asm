@@ -345,7 +345,7 @@ MonMenuIconPals:
 	icon_pals GREEN,  RED    ; VIBRAVA
 	icon_pals GREEN,  RED    ; FLYGON
 	icon_pals BLUE,   RED    ; NOHFACE
-	icon_pals GRAY,   RED    ; KITSUNOH
+	icon_pals BLUE,   RED    ; KITSUNOH
 	icon_pals GRAY,   RED    ; KROLUCADA
 	icon_pals GRAY,   RED    ; KROLUCARD
 	icon_pals BLUE,   RED    ; SWABLU

@@ -2763,19 +2763,19 @@ AceTrainerMGroup:
 
 	next_list_item ; ACE_TRAINERM (21) challengers cave
 	db "COLBY@", TRAINERTYPE_MOVES
-	db 42 ;27
+	db 62 ;27
 	dw KINGLER
 	dw GUILLOTINE, STOMP, CRABHAMMER, ROCK_TOMB
-	db 42 ;27
+	db 62 ;27
 	dw KANGASKHAN
 	dw ROCK_SLIDE, DIZZY_PUNCH, OUTRAGE, COUNTER
-	db 42 ;27
+	db 62 ;27
 	dw TENTACRUEL
 	dw SLUDGE_BOMB, SWORDS_DANCE, SUBSTITUTE, HYDRO_PUMP
-	db 42 ;27
+	db 62 ;27
 	dw QUAGSIRE
 	dw MUDDY_WATER, DIG, ROCK_TOMB, TOXIC
-	db 42 ;27
+	db 62 ;27
 	dw FERALIGATR
 	dw CRUNCH, SURF, CRUSH_CLAW, ROCK_SLIDE
 	db -1 ; end
@@ -3057,38 +3057,38 @@ AceTrainerFGroup:
 
 	next_list_item ; ACE_TRAINERF (22) challengers cave
 	db "NAOMI@", TRAINERTYPE_MOVES
-	db 38
+	db 68
 	dw NINETALES 
 	dw FLAMETHROWER, SHADOW_BALL, CALM_MIND, PSYCHIC_M
-	db 38
+	db 68
 	dw BANETTE
 	dw SHADOW_BALL, WILL_O_WISP, FAINT_ATTACK, THUNDERBOLT
-	db 38
+	db 68
 	dw TALONFLAME 
 	dw FLY, RAZOR_WIND, QUICK_ATTACK, OVERHEAT
-	db 38
+	db 68
 	dw BANETTE
 	dw SHADOW_BALL, WILL_O_WISP, FAINT_ATTACK, PSYCHIC_M
-	db 40
+	db 70
 	dw DUSCORN
 	dw GROWTH, SAND_ATTACK, WATERFALL, AURORA_BEAM
 	db -1 ; end
 
 	next_list_item ; ACE_TRAINERF (23) challengers cave
 	db "ALEXA@", TRAINERTYPE_MOVES
-	db 38
+	db 65
 	dw CLEFAIRY
 	dw LIGHT_SCREEN, REFLECT, THUNDERBOLT, ICE_BEAM
-	db 38
+	db 65
 	dw WIGGLYTUFF
 	dw SING, HYPER_VOICE, DIG, ATTRACT
-	db 38
+	db 62
 	dw GRANBULL 
 	dw DOUBLE_EDGE, CRUNCH, ATTRACT, BRICK_BREAK
-	db 38
+	db 62
 	dw TAUROS
 	dw BLIZZARD, THRASH, EARTHQUAKE, HEAD_SMASH
-	db 40
+	db 68
 	dw CHANSEY
 	dw SING, SEISMIC_TOSS, SOFTBOILED, TOXIC
 	db -1 ; end
@@ -3138,19 +3138,19 @@ BeautyGroup:
 
 	next_list_item ; BEAUTY (6) challengers cave
 	db "CAROLINE@", TRAINERTYPE_MOVES
-	db 30
-	dw VICTREEBEL
+	db 68
+	dw GRANBULL
 	dw SOLARBEAM, SLUDGE_BOMB, SUNNY_DAY, SLAM
-	db 32
+	db 69
 	dw VERTUGA
 	dw EGG_BOMB, SURF, POWER_WHIP, BITE
-	db 30
+	db 69
 	dw LEAFEON
 	dw SYNTHESIS, LEAF_BLADE, QUICK_ATTACK, BITE
-	db 30
+	db 70
 	dw ALTARIA
 	dw EARTHQUAKE, FLAMETHROWER, SKY_ATTACK, DRAGONBREATH
-	db 30
+	db 71
 	dw MEGANIUM
 	dw GRASSWHISTLE, MAGICAL_LEAF, ANCIENTPOWER, DRAGON_PULSE
 	db -1 ; end
@@ -3344,15 +3344,15 @@ PokemaniacGroup:
 
 	next_list_item ; POKEMANIAC (16) challengers cave
 	db "VINCE@", TRAINERTYPE_NORMAL
-	db 55
+	db 65
 	dw SLAKING
-	db 52
-	dw VIGOROTH
-	db 53
+	db 62
+	dw DONPHAN
+	db 63
 	dw SLOWBRO
-	db 52
+	db 62
 	dw VIGOROTH
-	db 55
+	db 65
 	dw SLAKING
 	db -1 ; end
 
@@ -4837,22 +4837,32 @@ SuperNerdGroup:
 	;dw VOLTORB
 	db -1 ; end
 
-	next_list_item ; SUPER_NERD (3)
+	next_list_item ; SUPER_NERD (3) 
 	db "GREGG@", TRAINERTYPE_NORMAL
-	db 20
-	dw MAGNEMITE
-	db 20
-	dw MAGNEMITE
-	db 20
-	dw MAGNEMITE
+	db 65
+	dw TINKATON
+	db 65
+	dw CLAYDOL
+	db 65
+	dw SLAKING
+	db 65
+	dw MUK
+	db 65
+	dw SLOWKING
 	db -1 ; end
 
-	next_list_item ; SUPER_NERD (4)
+	next_list_item ; SUPER_NERD (4) challengers cave
 	db "JAY@", TRAINERTYPE_NORMAL
-	db 22
-	dw KOFFING
-	db 22
-	dw KOFFING
+	db 65
+	dw MAGNEZONE
+	db 65
+	dw REUNICLUS
+	db 65
+	dw YANMEGA
+	db 65
+	dw WEEZING
+	db 65
+	dw SLOWBRO
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (5)
@@ -5496,15 +5506,15 @@ HikerGroup:
 
 	next_list_item ; HIKER (23) challengers cave
 	db "DAWSON@", TRAINERTYPE_NORMAL
-	db 37
+	db 67
 	dw SMOKOMODO
-	db 37
-	dw URSARING
-	db 37
-	dw CLAYDOL
-	db 37
+	db 67
+	dw WYRDEER
+	db 67
+	dw GOLEM
+	db 67
 	dw GOLDUCK
-	db 41
+	db 69
 	dw GEKOPON
 	db -1 ; end
 
@@ -5837,15 +5847,15 @@ JugglerGroup:
 
 	next_list_item ; JUGGLER (7) challengers cave
 	db "NELSON@", TRAINERTYPE_NORMAL
-	db 53
-	dw HYPNO
-	db 53
+	db 63
+	dw FORRETRESS
+	db 63
 	dw ELECTRODE
-	db 53
+	db 63
 	dw ELECTRODE
-	db 53
+	db 63
 	dw REUNICLUS
-	db 53
+	db 63
 	dw MR__MIME
 	db -1 ; end
 
@@ -5957,20 +5967,20 @@ BlackbeltGroup:
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (10) challengers cave 
-	db "DAI@", TRAINERTYPE_NORMAL
-	db 42
+	db "DAI@", TRAINERTYPE_MOVES
+	db 62
 	dw HARIYAMA
 	dw SWAGGER, DOUBLE_KICK, HI_JUMP_KICK, FORESIGHT
-	db 42
+	db 62
 	dw HARIYAMA
 	dw SWAGGER, DOUBLE_KICK, HI_JUMP_KICK, FORESIGHT
-	db 42
+	db 62
 	dw MEDICHAM
 	dw THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH, MACH_PUNCH
-	db 42
+	db 62
 	dw PRIMEAPE
 	dw SWAGGER, DOUBLE_KICK, HI_JUMP_KICK, FORESIGHT
-	db 42
+	db 65
 	dw HITMONTOP
 	dw PURSUIT, QUICK_ATTACK, DIG, DETECT
 	db -1 ; end
@@ -6935,6 +6945,18 @@ BoarderGroup:
 	;dw VANILLITE
 	db -1 ; end
 
+	next_list_item ; BOARDER (4)
+	db "GERARDO@", TRAINERTYPE_NORMAL
+	db 65
+	dw DELIBIRD
+	db 64
+	dw CLOYSTER
+	db 64
+	dw CLOYSTER
+	db 67
+	dw DEWGONG
+	db -1 ; end
+
 	end_list_items
 
 SECTION "Enemy Trainer Parties 4", ROMX
@@ -7684,22 +7706,22 @@ VeteranFGroup:
 
 	next_list_item; VETERAN_F (4) challengers cave
 	db "JULIE@", TRAINERTYPE_MOVES
-	db 10
-	dw FORRETRESS
-	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
-	db 10
-	dw GLACEON
-	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
-	db 10
+	db 64
 	dw RAPIDASH
 	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
-	db 10
+	db 64
+	dw GLACEON
+	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
+	db 64
+	dw ARMALDO
+	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
+	db 64
 	dw CRADILY
 	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
-	db 10
+	db 64
 	dw LANTURN
 	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
-	db 10
+	db 64
 	dw DECIBELLE
 	dw ICE_BEAM, REFLECT, MILK_DRINK, LIGHT_SCREEN
 	db -1 ; end
@@ -7819,24 +7841,30 @@ VeteranMGroup:
 	db -1 ; end
 
 	next_list_item; VETERAN_M (7) challengers cave
-	db "SHAUN@", TRAINERTYPE_MOVES
+	db "SHAUN@", TRAINERTYPE_ITEM_MOVES
 	db 65
 	dw GYARADOS
+	dw MINT_BERRY
 	dw FAKE_OUT, BITE, OUTRAGE, DIZZY_PUNCH
 	db 67
-	dw SANDSLASH
+	dw MAROWAK
+	dw MINT_BERRY
 	dw QUICK_ATTACK, BURNING_SAND, DOUBLE_KICK, FLAMETHROWER
 	db 67
-	dw YANMEGA
+	dw MASQUERAIN
+	dw MINT_BERRY
 	dw QUICK_ATTACK, HYDRO_PUMP, DOUBLE_KICK, BLIZZARD
 	db 67
-	dw ARMALDO
+	dw PENDRAGON
+	dw MINT_BERRY
 	dw QUICK_ATTACK, THUNDER, DOUBLE_KICK, SHADOW_BALL
 	db 65
 	dw HAXORUS
+	dw MINT_BERRY
 	dw SUPERPOWER, FLAMETHROWER, EARTHQUAKE, ROCK_SLIDE
 	db 69
-	dw PENDRAGON
+	dw TORTERRA
+	dw MINT_BERRY
 	dw DRAGON_PULSE, BLIZZARD, FIRE_BLAST, THUNDER
 	db -1 ; end
 
@@ -7926,7 +7954,7 @@ DragonTamerGroup:
 	db -1 ; end
 
 	next_list_item ; DRAGON_TAMER (3)
-	db "OZ@", TRAINERTYPE_MOVES ;maybe call him ZEKE?
+	db "OZ@", TRAINERTYPE_MOVES
 	db 56
 	dw GYARADOS
 	dw TWISTER, IRON_TAIL, BITE, DRAGON_DANCE
@@ -7950,6 +7978,20 @@ DragonTamerGroup:
 	dw CHARIZARD
 	db 37
 	dw ALTARIA
+	db -1 ; end
+
+	next_list_item ; DRAGON_TAMER (5) challenger cave
+	db "ZED@", TRAINERTYPE_NORMAL
+	db 67
+	dw CHARIZARD
+	db 67
+	dw ALTARIA
+	db 67
+	dw AGGRON
+	db 67
+	dw GYARADOS
+	db 67
+	dw DUNDRAG
 	db -1 ; end
 
 	end_list_items
