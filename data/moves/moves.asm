@@ -327,11 +327,11 @@ MovesGen3:
 	move EFFECT_FLY,                80, WATER,         100, 10,   0      ;DIVE
 	move EFFECT_MULTI_HIT,          15, FIGHTING,      100, 20,   0      ;ARM_THRUST
 	move EFFECT_NORMAL_HIT,          0, NORMAL,        100, 20,   0      ;CAMOUFLAGE
-	move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;MIRROR_SHOT
+	move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;TAIL_GLOW
 	move EFFECT_SP_DEF_DOWN_HIT,    70, PSYCHIC_TYPE,  100,  5,  50      ;LUSTER_PURGE
 	move EFFECT_SP_ATK_DOWN_HIT,    70, PSYCHIC_TYPE,  100,  5,  50      ;MIST_BALL
 	move EFFECT_NORMAL_HIT,          0, FLYING,        100, 15,   0      ;FEATHERDANCE
-	move EFFECT_ALL_UP_HIT,         60, GHOST,         100,  5,  10      ;OMINOUS_WIND
+	move EFFECT_CONFUSE,             0, NORMAL,        100, 20,  10      ;TEETER_DANCE
 	move EFFECT_BURN_HIT,           85, FIRE,           90, 10,  10      ;BLAZE_KICK
 	move EFFECT_BURN_HIT,           70, GROUND,        100, 10,  30      ;BURNING_SAND
 	move EFFECT_ROLLOUT,            30, ICE,            90, 20,   0      ;ICE_BALL
@@ -352,12 +352,12 @@ MovesGen3:
 	move EFFECT_FORESIGHT,           0, NORMAL,        100, 40,   0      ;ODOR_SLEUTH
 	move EFFECT_SPEED_DOWN_HIT,     70, ROCK,           95, 10, 100      ;ROCK_TOMB
 	move EFFECT_ALL_UP_HIT,         60, BUG,           100,  5,  10      ;SILVER_WIND
-	move EFFECT_NORMAL_HIT,          0, STEEL,          85, 40,   0      ;METAL_SOUND EFFECT_SP_DEF_DOWN_2
+	move EFFECT_SP_DEF_DOWN,         0, STEEL,          85, 40,   0      ;METAL_SOUND EFFECT_SP_DEF_DOWN_2
 	move EFFECT_SLEEP,               0, GRASS,          75, 15,   0      ;GRASSWHISTLE
 	move EFFECT_NORMAL_HIT,          0, NORMAL,        100, 20,   0      ;TICKLE EFFECT_TICKLE
 	move EFFECT_NORMAL_HIT,          0, PSYCHIC_TYPE,  100, 20,   0      ;COSMIC_POWER
 	move EFFECT_NORMAL_HIT,        150, WATER,         100,  5,   0      ;WATER_SPOUT EFFECT_WATER_SPOUT
-	move EFFECT_NORMAL_HIT ,        80, BUG,           100, 15,   0      ;X_SCISSOR
+	move EFFECT_CONFUSE_HIT,        75, BUG,           100, 15,  20      ;SIGNAL_BEAM
 	move EFFECT_ALWAYS_HIT,         60, GHOST,         100, 20,   0      ;SHADOW_PUNCH
 	move EFFECT_FLINCH_HIT,         80, PSYCHIC_TYPE,  100, 30,  20      ;EXTRASENSORY
 	move EFFECT_NORMAL_HIT,        100, FIGHTING,       90, 15,   0      ;SKY_UPPERCUT
@@ -388,13 +388,17 @@ MovesGen3:
 	move EFFECT_CONFUSE_HIT,        60, WATER,         100, 20,  20      ;WATER_PULSE
 	move EFFECT_NORMAL_HIT,        120, STEEL,          85,  5,   0      ;DOOM_DESIRE
 	move EFFECT_NORMAL_HIT,        140, PSYCHIC_TYPE,   90,  5,   0      ;PSYCHO_BOOST EFFECT_SELF_SPATK_DN_2_HIT
-	move EFFECT_CONFUSE_HIT,        75, BUG,           100, 15,  20      ;SIGNAL_BEAM
+	move EFFECT_NORMAL_HIT ,        80, BUG,           100, 15,   0      ;X_SCISSOR
 	move EFFECT_RECOIL_HIT,        120, GRASS,         100, 15,   0      ;WOOD_HAMMER
 	move EFFECT_BURN_HIT,           80, FIRE,          100, 10,  30      ;FIERY_DANCE EFFECT_SP_ATK_UP_HIT
 	move EFFECT_HYPER_BEAM,        160, STEEL,         100,  5,   0      ;HAMMER_SMASH
 	move EFFECT_RECOIL_HIT,        150, ROCK,           80,  5,   0      ;HEAD_SMASH
 	move EFFECT_DOUBLE_HIT,         40, PSYCHIC_TYPE,  100, 10,   0      ;TWIN_BEAM
 	move EFFECT_LEECH_HIT,          60, DARK,          100, 10,   0      ;DRAIN_LIFE
+	move EFFECT_ALL_UP_HIT,         60, GHOST,         100,  5,  10      ;OMINOUS_WIND
+	move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;MIRROR_SHOT
+	move EFFECT_NORMAL_HIT,        100, FIGHTING,       90, 10, 100      ;HAMMER_ARM EFFECT_SELF_HAMMER_ARM
+	move EFFECT_NORMAL_HIT,         60, ICE,           100, 10, 100      ;AVALANCHE EFFECT_REVENGE
 ;	move EFFECT_LEECH_HIT,          80, GRASS,         100, 10,   0      ;HORN_LEECH
 ;	move EFFECT_NORMAL_HIT,         80, PSYCHIC_TYPE,   90, 10,  30      ;ZEN_HEADBUTT EFFECT_DEF_UP_HIT
 ;	move EFFECT_CONFUSE,             0, NORMAL,        100, 20,   0      ;TEETER_DANCE

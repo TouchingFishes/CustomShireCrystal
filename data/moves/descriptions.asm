@@ -304,11 +304,11 @@ MoveDescriptionsGen3:
 	dw DiveDescription
 	dw ArmThrustDescription
 	dw CamouflageDescription
-	dw MirrorShotDescription
+	dw TailGlowDescription
 	dw LusterPurgeDescription
 	dw MistBallDescription
 	dw FeatherDanceDescription
-	dw OminousWindDescription
+	dw TeeterDanceDescription
 	dw BlazeKickDescription
 	dw BurningSandDescription
 	dw IceBallDescription
@@ -334,7 +334,7 @@ MoveDescriptionsGen3:
 	dw TickleDescription
 	dw CosmicPowerDescription
 	dw WaterSpoutDescription
-	dw XScissorDescription
+	dw SignalBeamDescription
 	dw ShadowPunchDescription
 	dw ExtrasensoryDescription
 	dw SkyUppercutDescription
@@ -365,13 +365,17 @@ MoveDescriptionsGen3:
 	dw WaterPulseDescription
 	dw DoomDesireDescription
 	dw PsychoBoostDescription
-	dw SignalBeamDescription
+	dw XScissorDescription
 	dw WoodHammerDescription
 	dw FieryDanceDescription
 	dw HammerSmashDescription
 	dw HeadSmashDescription
 	dw TwinBeamDescription
 	dw DrainLifeDescription
+	dw OminousWindDescription
+	dw MirrorShotDescription
+	dw HammerArmDescription
+	dw AvalancheDescription
 .IndirectEnd::
 
 ; Gen 1
@@ -1547,9 +1551,9 @@ CamouflageDescription:
 	db   "Alters user's type"
 	next "depending on area.@"
 
-MirrorShotDescription:
-	db   "An attack that may"
-	next "lower accuracy.@"
+TailGlowDescription:
+	db   "Sharply raises the"
+	next "user's SPCL.ATK.@"
 
 LusterPurgeDescription:
 	db   "An attack that may"
@@ -1563,9 +1567,9 @@ FeatherDanceDescription:
 	db   "Sharply reduces"
 	next "the foe's ATTACK.@"
 
-OminousWindDescription:
-	db   "An attack that may"
-	next "raise all stats.@"
+TeeterDanceDescription:
+	db   "Wobbly dance that"
+	next "causes confusion.@"
 
 BlazeKickDescription:
 	db   "High critical hit."
@@ -1667,9 +1671,9 @@ WaterSpoutDescription:
 	db   "Stronger if the"
 	next "user's HP is high.@"
 
-XScissorDescription:
-	db   "A devastating"
-	next "attack.@"
+SignalBeamDescription:
+	db   "An attack that may"
+	next "cause confusion.@"
 
 ShadowPunchDescription:
 	db   "An attack that"
@@ -1791,9 +1795,9 @@ PsychoBoostDescription:
 	db   "Full-power. Lowers"
 	next "SPCL.ATK sharply.@"
 
-SignalBeamDescription:
-	db   "An attack that may"
-	next "cause confusion.@"
+XScissorDescription:
+	db   "A devastating"
+	next "attack.@"
 
 WoodHammerDescription:
 	db   "A bash that also"
@@ -1818,3 +1822,19 @@ TwinBeamDescription:
 DrainLifeDescription:
 	db   "Steals 1/2 of the"
 	next "damage inflicted.@"
+
+OminousWindDescription:
+	db   "An attack that may"
+	next "raise all stats.@"
+
+MirrorShotDescription:
+	db   "An attack that may"
+	next "lower accuracy.@"
+
+HammerArmDescription:
+	db   "Strong attack that"
+	next "lowers user SPEED.@"
+
+AvalancheDescription:
+	db   "Gains power if"
+	next "injured by foe.@"

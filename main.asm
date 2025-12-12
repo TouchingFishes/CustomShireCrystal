@@ -142,7 +142,6 @@ INCLUDE "engine/overworld/wildmons.asm"
 SECTION "bankB", ROMX
 
 INCLUDE "engine/battle/trainer_huds.asm"
-INCLUDE "data/trainers/class_names.asm"
 INCLUDE "engine/battle/ai/redundant.asm"
 INCLUDE "engine/events/move_deleter.asm"
 INCLUDE "engine/link/mystery_gift_2.asm"
@@ -689,6 +688,10 @@ INCLUDE "engine/gfx/fade.asm"
 SECTION "Pokemon Body Data", ROMX
 
 INCLUDE "data/pokemon/body_data.asm"
+
+SECTION "newBank", ROMX
+
+INCLUDE "data/trainers/class_names.asm"
 
 
 SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]

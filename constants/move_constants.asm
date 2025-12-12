@@ -299,11 +299,11 @@ DEF GEN2_MOVES EQU const_value - 1
 	const DIVE         ; 121
 	const ARM_THRUST   ; 122
 	const CAMOUFLAGE   ; 123
-	const MIRROR_SHOT  ; 124
+	const TAIL_GLOW    ; 124
 	const LUSTER_PURGE ; 125
 	const MIST_BALL    ; 126
 	const FEATHERDANCE ; 127
-	const OMINOUS_WIND ; 128
+	const TEETER_DANCE ; 128
 	const BLAZE_KICK   ; 129
 	const BURNING_SAND ; 12a
 	const ICE_BALL     ; 12b
@@ -329,7 +329,7 @@ DEF GEN2_MOVES EQU const_value - 1
 	const TICKLE       ; 13f
 	const COSMIC_POWER ; 140
 	const WATER_SPOUT  ; 141
-	const X_SCISSOR    ; 142
+	const SIGNAL_BEAM  ; 142
 	const SHADOW_PUNCH ; 143
 	const EXTRASENSORY ; 144
 	const SKY_UPPERCUT ; 145
@@ -360,13 +360,17 @@ DEF GEN2_MOVES EQU const_value - 1
 	const WATER_PULSE  ; 15e
 	const DOOM_DESIRE  ; 15f
 	const PSYCHO_BOOST ; 160
-	const SIGNAL_BEAM  ; 161
+	const X_SCISSOR    ; 161
 	const WOOD_HAMMER  ; 162
 	const FIERY_DANCE  ; 163
 	const HAMMER_SMASH ; 164
 	const HEAD_SMASH   ; 165
 	const TWIN_BEAM    ; 166
 	const DRAIN_LIFE   ; 167
+	const OMINOUS_WIND ; 168
+	const MIRROR_SHOT  ; 169
+	const HAMMER_ARM   ; 16a
+	const AVALANCHE    ; 16b
 DEF GEN3_MOVES EQU const_value - 1
 
 DEF NUM_ATTACKS EQU const_value - 1
