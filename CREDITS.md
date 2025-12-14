@@ -10,7 +10,7 @@ Freeline for animations of Honchkrow.
 
 Bloodless for Buck and VeteranF sprite.
 
-Ancient Ruby for AromaLady, RuinManiac and Collector sprites.
+Ancient Ruby for AromaLady, RuinManiac, PokerangerF, PokerangerM and Collector sprites.
 
 Kuroko Aizawa for Engineer sprite.
 
@@ -21,6 +21,8 @@ TriteHexagon for ZinniaBattle, FRLGChampionBattle and FRLGEliteFourBattle theme.
 Eeveeee1999 for many Pokemon icons.
 
 DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable, Charizard, Volcarona, Talonflame, Shedinja, Lileep, Cradily, Reuniclus, Duosion and Solosis sprites.
+
+Bloodless, BlueEmerald, Rainbowdevs, Scarlax Nuuk and Brolunite for Absol, Anorith, Armaldo, Baltoy, Banette, Barboach, Chimecho, Claydol, Flygon
 
 A certain someone who does not want to be named for several amazing sprites.
 
