@@ -93,4 +93,6 @@ BTTrainerClassGenders:
 	db FEMALE ; AROMA_LADY
 	db MALE   ; RUIN_MANIAC
 	db MALE   ; COLLECTOR
+	db FEMALE ; POKERANGER_F
+	db MALE   ; POKERANGER_M
 	assert_table_length NUM_TRAINER_CLASSES

@@ -99,5 +99,7 @@ INCBIN "gfx/trainers/moto.gbcpal", middle_colors
 INCBIN "gfx/trainers/aroma_lady.gbcpal", middle_colors
 INCBIN "gfx/trainers/ruin_maniac.gbcpal", middle_colors
 INCBIN "gfx/trainers/collector.gbcpal", middle_colors
+INCBIN "gfx/trainers/pokeranger_f.gbcpal", middle_colors
+INCBIN "gfx/trainers/pokeranger_m.gbcpal", middle_colors 
 
 	assert_table_length NUM_TRAINER_CLASSES + 1

@@ -93,4 +93,6 @@ TrainerPicPointers::
 	dba AromaLadyPic
 	dba RuinManiacPic
 	dba CollectorPic
+	dba PokerangerFPic
+	dba PokerangerMPic
 	assert_table_length NUM_TRAINER_CLASSES

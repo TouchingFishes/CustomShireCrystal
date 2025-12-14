@@ -8542,6 +8542,133 @@ CollectorGroup:
 
 	end_list_items
 
+PokerangerFGroup:
+	next_list_item ; POKERANGER_F (1)
+	db "CATHY@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_F (2)
+	db "JENNA@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_F (3)
+	db "SOPHIA@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_F (4)
+	db "NORA@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_F (5)
+	db "ASHLEE@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_F (6)
+	db "KRISTA@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	end_list_items
+
+PokerangerMGroup:
+	next_list_item ; POKERANGER_M (1)
+	db "CARLOS@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_M (2)
+	db "GAV@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_M (3)
+	db "LOGAN@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_M (4)
+	db "TRENTON@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_M (5)
+	db "KYLER@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	next_list_item ; POKERANGER_M (6)
+	db "ALAIN@", TRAINERTYPE_NORMAL
+	db 11
+	dw MANKEY
+	db 11 
+	dw MANKEY
+	db -1 ; end
+
+	end_list_items
+
+;GiovanniGroup:
+;	next_list_item ; GIOVANNI (1)
+;	db "GIOVANNI@", TRAINERTYPE_MOVES
+;	db 67
+;	dw RHYDON
+;	dw OMINOUS_WIND, FLAMETHROWER, FLY, SHOCK_WAVE
+;	db 65
+;	dw HAXORUS
+;	dw FIRE_PUNCH, SHADOW_BALL, THUNDERBOLT, ICE_PUNCH
+;	db 66
+;	dw NIDOQUEEN
+;	dw ROCK_SLIDE, SURF, RECOVER, BLIZZARD
+;	db 66
+;	dw NIDOKING
+;	dw THUNDERBOLT, GIGA_DRAIN, BODY_SLAM, ROCK_TOMB
+;	db 69
+;	dw IRON_THORN
+;	dw PSYCHIC_M, MIRROR_SHOT, SHOCK_WAVE, SHADOW_BALL
+;	db 69
+;	dw PERSIAN
+;	dw BURNING_SAND, FAINT_ATTACK, FAKE_OUT, SWIFT
+;	db -1 ; end
+
+;	end_list_items
+
 ENDSECTION
 
 

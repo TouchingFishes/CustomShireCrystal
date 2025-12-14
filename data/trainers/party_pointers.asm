@@ -93,4 +93,6 @@ TrainerGroups:
 	dba AromaLadyGroup
 	dba RuinManiacGroup
 	dba CollectorGroup
+	dba PokerangerFGroup
+	dba PokerangerMGroup
 	assert_table_length NUM_TRAINER_CLASSES

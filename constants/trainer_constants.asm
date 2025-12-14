@@ -888,4 +888,20 @@ DEF KRIS EQU __trainer_class__
 	const JAMAL
 	const MINTY
 
+	trainerclass POKERANGER_F ; 59
+	const CATHY
+	const JENNA
+	const SOPHIA
+	const NORA
+	const ASHLEE
+	const KRISTA
+
+	trainerclass POKERANGER_M ; 60
+	const CARLOS
+	const GAV
+	const LOGAN
+	const TRENTON
+	const KYLER
+	const ALAIN
+
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

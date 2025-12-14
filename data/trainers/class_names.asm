@@ -74,8 +74,8 @@ TrainerClassNames::
 	li "EX-ELITE"
 	li "EX-ELITE"
 	li "HEX MANIAC"
-	li "VETERAN"
-	li "VETERAN"
+	li "VETERAN" ;F
+	li "VETERAN" ;M
 	li "BUG MANIAC"
 	li "OVERSEER" ;GIDEON
 	li "DRAGON TAMER"
@@ -91,4 +91,6 @@ TrainerClassNames::
 	li "AROMA LADY"
 	li "RUIN MANIAC"
 	li "COLLECTOR"
+	li "POKERANGER" ;F
+	li "POKERANGER" ;M
 	assert_list_length NUM_TRAINER_CLASSES

@@ -92,5 +92,7 @@ TrainerClassIVs:
 	ivs 16, 12, 18, 22, 22, 18 ; AROMA_LADY
 	ivs 18, 22, 18, 18, 18, 18 ; RUIN_MANIAC
 	ivs 24, 20, 16, 18, 20, 16 ; COLLECTOR
+	ivs 10, 14, 22, 22, 18, 18 ; POKERANGER_F
+	ivs 20, 22, 18, 18, 18, 22 ; POKERANGER_M
 	;   hp  atk def spd sat sdf
 	assert_table_length NUM_TRAINER_CLASSES
