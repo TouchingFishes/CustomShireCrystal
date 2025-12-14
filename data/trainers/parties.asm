@@ -8612,10 +8612,10 @@ PokerangerMGroup:
 
 	next_list_item ; POKERANGER_M (3)
 	db "LOGAN@", TRAINERTYPE_NORMAL
-	db 11
-	dw MANKEY
-	db 11 
-	dw MANKEY
+	db 14 ;10
+	dw SOLOSIS
+	db 14
+	dw DIGLETT
 	db -1 ; end
 
 	next_list_item ; POKERANGER_M (4)

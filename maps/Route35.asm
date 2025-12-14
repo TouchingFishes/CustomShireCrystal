@@ -83,13 +83,13 @@ Route35RematchM:
 	jumpstd RematchMScript
 	end
 
-TrainerCamperIvan:
-	trainer CAMPER, IVAN, EVENT_BEAT_CAMPER_IVAN, CamperIvanSeenText, CamperIvanBeatenText, 0, .Script
+TrainerPokerangerMLogan:
+	trainer POKERANGER_M, LOGAN, EVENT_BEAT_POKERANGER_M_CARLOS, PokerangerMLoganSeenText, PokerangerMLoganBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperIvanAfterBattleText
+	writetext PokerangerMLoganAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -286,22 +286,36 @@ Route35TMBulletSeed:
 Route35FruitTree:
 	fruittree FRUITTREE_ROUTE_35
 
-CamperIvanSeenText:
-	text "I've been getting"
-	line "#MON data off"
+PokerangerMLoganSeenText:
+	text "Hold it there!"
 
-	para "my radio. I think"
-	line "I'm good."
+	para "I'm a #RANGER."
+	line "I watch over the"
+	cont "NATIONAL PARK."
+
+	para "Before you head"
+	line "in, let's see how"
+	cont "you battle."
 	done
 
-CamperIvanBeatenText:
-	text "I give!"
+
+PokerangerMLoganBeatenText:
+	text "All right!"
+	line "You're cleared."
 	done
 
-CamperIvanAfterBattleText:
-	text "Music on the radio"
-	line "changes the moods"
-	cont "of wild #MON."
+
+PokerangerMLoganAfterBattleText:
+	text "NATIONAL PARK is"
+	line "meant to be"
+
+	para "a place for both"
+	line "people and"
+	cont "#MON."
+
+	para "Treat it with"
+	line "respect, and"
+	cont "you'll do fine."
 	done
 
 CamperElliotSeenText:
@@ -554,7 +568,7 @@ Route35_MapEvents:
 	bg_event 11, 31, BGEVENT_READ, Route35Sign
 
 	def_object_events
-	object_event  4, 19, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperIvan, -1
+	object_event  4, 19, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokerangerMLogan, -1
 	object_event  8, 20, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperElliot, -1
 	object_event  7, 20, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerBrooke, -1
 	object_event 10, 26, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAromaLadyHana, -1
