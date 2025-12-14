@@ -106,14 +106,17 @@ NationalParkBugContestBattleNoticeSign:
 NationalParkBugContestTrainerTipsSign:
 	jumptext NationalParkBugContestTrainerTipsText
 
-NationalParkBugContestParlyzHeal:
-	itemball PARLYZ_HEAL
+;NationalParkBugContestParlyzHeal:
+;	itemball PARLYZ_HEAL
 
 NationalParkBugContestTMDig:
 	itemball TM_DIG
 
 NationalParkBugContestHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
+
+NationalParkBugContestHiddenCarbos:
+	hiddenitem CARBOS, EVENT_NATIONAL_PARK_HIDDEN_CARBOS
 
 BugCatchingContestant1AText:
 	text "DON: I'm going to"
@@ -234,6 +237,7 @@ NationalParkBugContest_MapEvents:
 	bg_event 27, 31, BGEVENT_READ, NationalParkBugContestBattleNoticeSign
 	bg_event  6, 47, BGEVENT_ITEM, NationalParkBugContestHiddenFullHeal
 	bg_event 12,  4, BGEVENT_READ, NationalParkBugContestTrainerTipsSign
+	bg_event 35, 12, BGEVENT_ITEM, NationalParkBugContestHiddenCarbos
 
 	def_object_events
 	object_event 19, 29, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant1AScript, EVENT_BUG_CATCHING_CONTESTANT_1A
@@ -246,5 +250,5 @@ NationalParkBugContest_MapEvents:
 	object_event 11, 27, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant8AScript, EVENT_BUG_CATCHING_CONTESTANT_8A
 	object_event 16,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant9AScript, EVENT_BUG_CATCHING_CONTESTANT_9A
 	object_event 17, 34, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant10AScript, EVENT_BUG_CATCHING_CONTESTANT_10A
-	object_event 35, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkBugContestParlyzHeal, EVENT_NATIONAL_PARK_PARLYZ_HEAL
+	;object_event 35, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkBugContestParlyzHeal, EVENT_NATIONAL_PARK_PARLYZ_HEAL
 	object_event  1, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkBugContestTMDig, EVENT_NATIONAL_PARK_TM_DIG

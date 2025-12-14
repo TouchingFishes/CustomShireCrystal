@@ -10,9 +10,11 @@
 	const NATIONALPARK_POKEFAN_F2
 	const NATIONALPARK_POKEFAN_M
 	const NATIONALPARK_LASS
-	const NATIONALPARK_POKE_BALL1
+;	const NATIONALPARK_POKE_BALL1
 	const NATIONALPARK_GAMEBOY_KID
 	const NATIONALPARK_POKE_BALL2
+	const NATIONALPARK_RICH_BOY
+	const NATIONALPARK_BURGLAR
 
 NationalPark_MapScripts:
 	def_scene_scripts
@@ -318,6 +320,17 @@ TrainerLassKrise:
 	closetext
 	end
 
+TrainerBurglarOrson:
+	trainer BURGLAR, ORSON, EVENT_BEAT_BURGLAR_ORSON, BurglarOrsonSeenText, BurglarOrsonBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BurglarOrsonAfterBattleText
+	waitbutton
+	closetext
+	end
+
 NationalParkRelaxationSquareSign:
 	jumptext NationalParkRelaxationSquareText
 
@@ -327,14 +340,17 @@ NationalParkBattleNoticeSign:
 NationalParkTrainerTipsSign:
 	jumptext NationalParkTrainerTipsText
 
-NationalParkParlyzHeal:
-	itemball PARLYZ_HEAL
+;NationalParkParlyzHeal:
+;	itemball PARLYZ_HEAL
 
 NationalParkTMDig:
 	itemball TM_DIG
 
 NationalParkHiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
+
+NationalParkHiddenCarbos:
+	hiddenitem CARBOS, EVENT_NATIONAL_PARK_HIDDEN_CARBOS
 
 NationalParkLadyText:
 	text "Look! Check out my"
@@ -518,6 +534,38 @@ LassKriseAfterBattleText:
 	cont "because I'm cute!"
 	done
 
+BurglarOrsonSeenText:
+    text "Oy! I knew someone"
+    line "would sniff around"
+    cont "for that TM!"
+
+    para "But I got to it"
+    line "first, see?"
+
+    para "If you want it…"
+    line "you'll have to"
+    cont "beat me!"
+    done
+
+BurglarOrsonBeatenText:
+    text "Aw, c'mon!"
+    line "You dug right"
+    cont "through me!"
+    done
+
+BurglarOrsonAfterBattleText:
+    text "Fine, fine!"
+    line "Take the TM…"
+
+    para "I only wanted it"
+    line "because rare stuff"
+    cont "sells big."
+
+    para "Guess honest work"
+    line "would be easier…"
+    cont "maybe."
+    done
+
 NationalParkRelaxationSquareText:
 	text "RELAXATION SQUARE"
 	line "NATIONAL PARK"
@@ -590,6 +638,7 @@ NationalPark_MapEvents:
 	bg_event 27, 31, BGEVENT_READ, NationalParkBattleNoticeSign
 	bg_event  6, 47, BGEVENT_ITEM, NationalParkHiddenFullHeal
 	bg_event 12,  4, BGEVENT_READ, NationalParkTrainerTipsSign
+	bg_event 35, 12, BGEVENT_ITEM, NationalParkHiddenCarbos
 
 	def_object_events
 	object_event 15, 24, SPRITE_LADY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NationalParkLadyScript, -1
@@ -603,8 +652,9 @@ NationalPark_MapEvents:
 	object_event 18, 29, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanfBeverly1, -1
 	object_event 16,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanmWilliam, -1
 	object_event  8, 14, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassKrise, -1
-	object_event 35, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkParlyzHeal, EVENT_NATIONAL_PARK_PARLYZ_HEAL
+	;object_event 35, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkParlyzHeal, EVENT_NATIONAL_PARK_PARLYZ_HEAL
 	object_event 26,  6, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NationalParkGameboyKidScript, -1
 	object_event  1, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NationalParkTMDig, EVENT_NATIONAL_PARK_TM_DIG
 	object_event 22, 40, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NationalParkVanilliteGuyScript, -1
+	object_event  0, 35, SPRITE_BURGLAR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerBurglarOrson, -1
 

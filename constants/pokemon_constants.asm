@@ -298,13 +298,13 @@ DEF HOENN_POKEMON EQU const_value
 	const MAGMORTAR  ; 112
 	const VOLTREL    ; 113
 	const VOLTREAN   ; 114
-	const SOLOSIS	 ; 115
-	const DUOSION    ; 116
-	const REUNICLUS  ; 117
+	const SOLOSIS	 ; 115 DARUMAKA
+	const DUOSION    ; 116 DARMANITAN
+	const REUNICLUS  ; 117 LICKILICKY
 	const SURSKIT    ; 118
 	const MASQUERAIN ; 119
-	const IRON_PENGU ; 11a ?
-	const IRON_THORN ; 11b ?
+	const IRON_PENGU ; 11a
+	const IRON_THORN ; 11b
 	const SLAKOTH    ; 11c 
 	const VIGOROTH   ; 11d
 	const SLAKING    ; 11e
@@ -333,9 +333,9 @@ DEF HOENN_POKEMON EQU const_value
 	const LUXIO      ; 133
 	const LUXRAY     ; 134
 	const GEKOPON    ; 135
-	const TYNAMO     ; 136 out?
-	const EELEKTRIK  ; 137 out?
-	const EELEKTROSS ; 138 out? 
+	const TYNAMO     ; 136 TOTEMORN
+	const EELEKTRIK  ; 137 LUNATONE
+	const EELEKTROSS ; 138 SOLROCK
 	const CORSOREEF  ; 139
 	const DUNDRAG    ; 13a
 	const CARVANHA   ; 13b
@@ -373,9 +373,9 @@ DEF HOENN_POKEMON EQU const_value
 	const FEEBAS     ; 15b
 	const MILOTIC    ; 15c
 	const CASTFORM   ; 15d
-	const LITWICK    ; 15e out?
-	const LAMPENT    ; 15f out?
-	const CHANDELURE ; 160 out?
+	const LITWICK    ; 15e HONEDGE
+	const LAMPENT    ; 15f DOUBLADE
+	const CHANDELURE ; 160 AEGISLASH
 	const DUSKULL    ; 161
 	const DUSCLOPS   ; 162
 	const DECIBELLE  ; 163 

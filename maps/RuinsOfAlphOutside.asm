@@ -5,7 +5,9 @@
 	const RUINSOFALPHOUTSIDE_CAMPER
 	const RUINSOFALPHOUTSIDE_YOUNGSTER2
 	const RUINSOFALPHOUTSIDE_GENTLEMAN
-	const RUINSOFALPHOUTSIDE_HIKER
+	const RUINSOFALPHOUTSIDE_HIKER1
+	const RUINSOFALPHOUTSIDE_SUPER_NERD
+	const RUINSOFALPHOUTSIDE_HIKER2
 
 RuinsOfAlphOutside_MapScripts:
 	def_scene_scripts
@@ -119,6 +121,28 @@ TrainerRuinManiacFoster:
 	endifjustbattled
 	opentext
 	writetext RuinManiacFosterAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerCollectorEdwin:
+	trainer COLLECTOR, EDWIN, EVENT_BEAT_COLLECTOR_EDWIN, CollectorEdwinSeenText, CollectorEdwinBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CollectorEdwinAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerRuinManiacHunter:
+	trainer RUIN_MANIAC, HUNTER, EVENT_BEAT_RUIN_MANIAC_HUNTER, RuinManiacHunterSeenText, RuinManiacHunterBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext RuinManiacHunterAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -474,6 +498,70 @@ RuinManiacFosterAfterBattleText:
 	line "to train harder!"
 	done
 
+CollectorEdwinSeenText:
+	text "Oh! A fellow"
+    line "treasure seeker!"
+
+    para "These ruins are"
+    line "full of rare and"
+    cont "curious #MON."
+
+    para "Care for a battle?"
+    line "I must test your"
+    cont "collector spirit!"
+	done
+
+CollectorEdwinBeatenText:
+	text "Remarkable!"
+    line "Your skill is a"
+    cont "rare find indeed!"
+    done
+
+CollectorEdwinAfterBattleText:
+	text "I gather rare"
+    line "items and #MON"
+    cont "from old places."
+
+    para "Someday, I'll"
+    line "uncover the true"
+    cont "value of these"
+    cont "ruins…"
+
+    para "Until then, I'll"
+    line "keep searching!"
+    done
+
+RuinManiacHunterSeenText:
+	text "Ah! You found me…"
+    line "I wasn't expecting"
+    cont "company here…"
+
+    para "I came to watch my"
+    line "BRONZOR shimmer in"
+    cont "the water's glow."
+
+    para "Umm… w-would you"
+    line "like to battle…?"
+    done
+
+RuinManiacHunterBeatenText:
+	text "Oh… I-I lost…"
+    line "Sorry, BRONZOR…"
+    done
+
+RuinManiacHunterAfterBattleText:
+	text "The reflection on"
+    line "BRONZOR's surface…"
+    cont "it's soothing."
+
+    para "That's why I hide"
+    line "back here… it's"
+    cont "quiet and calm."
+
+    para "You're welcome to"
+    line "stay… if you want."
+    done
+
 
 RuinsOfAlphOutside_MapEvents:
 	db 0, 0 ; filler
@@ -508,3 +596,5 @@ RuinsOfAlphOutside_MapEvents:
 	object_event 12,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideYoungster2Script, EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
 	object_event 11, 20, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphOutsideFossilGuyScript, -1
 	object_event 11, 33, SPRITE_HIKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerRuinManiacFoster, -1
+	object_event  2, 34, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCollectorEdwin, -1
+	object_event  3, 12, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerRuinManiacHunter, -1

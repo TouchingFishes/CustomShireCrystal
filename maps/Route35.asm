@@ -1,8 +1,8 @@
 	object_const_def
-	const ROUTE35_YOUNGSTER1
-	const ROUTE35_YOUNGSTER2
-	const ROUTE35_LASS1
-	const ROUTE35_LASS2
+	const ROUTE35_CAMPER1
+	const ROUTE35_CAMPER2
+	const ROUTE35_PICNICKER
+	const ROUTE35_COOLTRAINER_F1
 	const ROUTE35_YOUNGSTER3
 	const ROUTE35_FISHER
 	const ROUTE35_BUG_CATCHER
@@ -10,6 +10,7 @@
 	const ROUTE35_OFFICER
 	const ROUTE35_FRUIT_TREE
 	const ROUTE35_POKE_BALL
+	const ROUTE35_COOLTRAINER_F2
 
 Route35_MapScripts:
 	def_scene_scripts
@@ -115,13 +116,24 @@ TrainerPicnickerBrooke:
 	closetext
 	end
 
-TrainerPicnickerKim:
-	trainer PICNICKER, KIM, EVENT_BEAT_PICNICKER_KIM, PicnickerKimSeenText, PicnickerKimBeatenText, 0, .Script
+TrainerAromaLadyHana:
+	trainer AROMA_LADY, HANA, EVENT_BEAT_AROMA_LADY_HANA, AromaLadyHanaSeenText, AromaLadyHanaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerKimAfterBattleText
+	writetext AromaLadyHanaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerGuitaristSuzu:
+	trainer GUITARIST, SUZU, EVENT_BEAT_GUITARIST_SUZU, GuitaristSuzuSeenText, GuitaristSuzuBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GuitaristSuzuAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -326,21 +338,88 @@ PicnickerBrookeAfterBattleText:
 	cont "my boyfriend."
 	done
 
-PicnickerKimSeenText:
-	text "Are you going to"
-	line "the GYM? Me too!"
-	done
+AromaLadyHanaSeenText:
+    text "Isn't the scent of"
+    line "flowers lovely?"
 
-PicnickerKimBeatenText:
-	text "Oh. I couldn't"
-	line "win…"
-	done
+    para "My CHIKORITA"
+    line "smells even "
+	cont "sweeter!"
 
-PicnickerKimAfterBattleText:
-	text "The GYM BADGES are"
-	line "pretty. I collect"
-	cont "them."
-	done
+    para "Let me show you"
+    line "its blooming" 
+	cont "charm!"
+    done
+
+AromaLadyHanaBeatenText:
+    text "Oh my…"
+    line "My poor sweet"
+    cont "CHIKORITA…"
+    done
+
+AromaLadyHanaAfterBattleText:
+    text "CHIKORITA's leaf"
+    line "gives off such a"
+    cont "calming aroma…"
+
+    para "When the breeze"
+    line "catches it just"
+    cont "right, it's like a"
+    cont "gentle perfume."
+
+    para "I hope its scent"
+    line "cheered you up!"
+    done
+
+GuitaristSuzuSeenText:
+    text "…Oh."
+    line "You found my"
+    cont "practice spot."
+
+    para "The city noise"
+    line "fades out here."
+
+    para "Now I can let my"
+    line "sound ring true!"
+    done
+
+GuitaristSuzuBeatenText:
+    text "That was…"
+    line "a perfect clash"
+    cont "of power."
+    done
+ 
+ GuitaristSuzuAfterBattleText:
+    text "I come here to"
+    line "train in secret."
+
+    para "My music needs"
+    line "focus… and fire."
+
+    para "The BERRY TREE"
+    line "keeps me grounded."
+
+    para "Someday, my sound"
+    line "will shake the"
+    cont "world!"
+    done
+
+
+;PicnickerKimSeenText:
+;	text "Are you going to"
+;	line "the GYM? Me too!"
+;	done
+
+;PicnickerKimBeatenText:
+;	text "Oh. I couldn't"
+;	line "win…"
+;	done
+
+;PicnickerKimAfterBattleText:
+;	text "The GYM BADGES are"
+;	line "pretty. I collect"
+;	cont "them."
+;	done
 
 BirdKeeperBryanSeenText:
 	text "What kinds of"
@@ -478,7 +557,7 @@ Route35_MapEvents:
 	object_event  4, 19, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperIvan, -1
 	object_event  8, 20, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperElliot, -1
 	object_event  7, 20, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerBrooke, -1
-	object_event 10, 26, SPRITE_PICNICKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerPicnickerKim, -1
+	object_event 10, 26, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAromaLadyHana, -1
 	object_event 14, 28, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, TrainerBirdKeeperBryan, -1
 	object_event  2, 10, SPRITE_FIREBREATHER, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherWalt, -1
 	object_event 16,  7, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 2, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherArnie, -1
@@ -486,3 +565,4 @@ Route35_MapEvents:
 	object_event  5,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerOfficerDirk, -1
 	object_event  2, 25, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route35FruitTree, -1
 	object_event 13, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route35TMBulletSeed, EVENT_ROUTE_35_TM_BULLET_SEED
+	object_event  1, 26, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, TrainerGuitaristSuzu, -1

@@ -5,6 +5,8 @@
 	const CELADONGYM_BEAUTY
 	const CELADONGYM_TWIN1
 	const CELADONGYM_TWIN2
+	const CELADONGYM_COOLTRAINER_F1
+	const CELADONGYM_COOLTRAINER_F2
 
 CeladonGym_MapScripts:
 	def_scene_scripts
@@ -28,6 +30,8 @@ CeladonGymErikaScript:
 	setevent EVENT_BEAT_PICNICKER_TANYA
 	setevent EVENT_BEAT_BEAUTY_JULIA
 	setevent EVENT_BEAT_TWINS_JO_AND_ZOE
+	setevent EVENT_BEAT_AROMA_LADY_DAISY
+	setevent EVENT_BEAT_AROMA_LADY_VIOLET
 	opentext
 	writetext PlayerReceivedRainbowBadgeText
 	playsound SFX_GET_BADGE
@@ -126,6 +130,28 @@ TrainerTwinsJoAndZoe2:
 	endifjustbattled
 	opentext
 	writetext TwinsJoAndZoe2AfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerAromaLadyDaisy:
+	trainer AROMA_LADY, DAISY, EVENT_BEAT_AROMA_LADY_DAISY, AromaLadyDaisySeenText, AromaLadyDaisyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext AromaLadyDaisyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerAromaLadyViolet:
+	trainer AROMA_LADY, VIOLET, EVENT_BEAT_AROMA_LADY_VIOLET, AromaLadyVioletSeenText, AromaLadyVioletBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext AromaLadyVioletAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -332,6 +358,65 @@ TwinsJoAndZoe2AfterBattleText:
 	line "much stronger!"
 	done
 
+AromaLadyDaisySeenText:
+	text "Mmm…"
+	line "Can you smell"
+	cont "the flowers?"
+
+	para "Battles don't have"
+	line "to be harsh."
+
+	para "Let me show you"
+	line "a gentle kind of"
+	cont "strength…"
+	done
+
+AromaLadyDaisyBeatenText:
+	text "Ah…"
+	line "What a calming"
+	cont "loss…"
+	done
+
+AromaLadyDaisyAfterBattleText:
+	text "ERIKA teaches us"
+	line "to battle with"
+
+	para "grace, patience,"
+	line "and care."
+
+	para "A strong heart can"
+	line "be gentle too…"
+	done
+
+AromaLadyVioletSeenText:
+	text "The scent here is"
+	line "deep and rich…"
+
+	para "It helps me focus"
+	line "my mind."
+
+	para "Please…"
+	line "battle me quietly."
+	done
+
+AromaLadyVioletBeatenText:
+	text "Oh…"
+	line "My fragrance"
+	cont "wasn't enough…"
+	done
+
+AromaLadyVioletAfterBattleText:
+	text "Flowers bloom at"
+	line "their own pace."
+
+	para "ERIKA taught us"
+	line "that patience is"
+
+	para "a strength all on"
+	line "its own…"
+	done
+
+
 CeladonGym_MapEvents:
 	db 0, 0 ; filler
 
@@ -352,3 +437,5 @@ CeladonGym_MapEvents:
 	object_event  3,  5, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyJulia, -1
 	object_event  4, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsJoAndZoe1, -1
 	object_event  5, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsJoAndZoe2, -1
+	object_event  1, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerAromaLadyDaisy, -1
+	object_event  8, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerAromaLadyViolet, -1

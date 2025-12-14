@@ -20,8 +20,8 @@ IcePathB2FMahoganySideFullHeal:
 IcePathB2FMahoganySideMaxPotion:
 	itemball MAX_POTION
 
-IcePathB2FMahoganySideHiddenCarbos:
-	hiddenitem CARBOS, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_HIDDEN_CARBOS
+IcePathB2FMahoganySideHiddenBlizzard:
+	hiddenitem TM_BLIZZARD, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_HIDDEN_BLIZZARD
 
 IcePathB2FMahoganySideBoulderText:
 	text "It's immovably"
@@ -42,7 +42,7 @@ IcePathB2FMahoganySide_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  0, 17, BGEVENT_ITEM, IcePathB2FMahoganySideHiddenCarbos
+	bg_event  0, 17, BGEVENT_ITEM, IcePathB2FMahoganySideHiddenBlizzard
 
 	def_object_events
 	object_event 11,  3, SPRITE_BOULDER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IcePathB2FMahoganySideBoulder, EVENT_BOULDER_IN_ICE_PATH_1A

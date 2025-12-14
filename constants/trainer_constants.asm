@@ -163,7 +163,7 @@ DEF KRIS EQU __trainer_class__
 	const ALBERT
 	const GORDON
 	const SAMUEL
-	const IAN
+	const IAN ;unused
 	const JOEY2
 	const JOEY3
 	const WARREN
@@ -522,6 +522,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass GUITARIST ; 2b
 	const LYDIA
 	const MOA
+	const SUZU
 
 	trainerclass HIKER ; 2c
 	const ANTHONY1
@@ -567,6 +568,8 @@ DEF KRIS EQU __trainer_class__
 	const DUNCAN
 	const EDDIE
 	const COREY
+	const RAMON
+	const ORSON
 
 	trainerclass FIREBREATHER ; 30
 	const OTIS
@@ -623,7 +626,7 @@ DEF KRIS EQU __trainer_class__
 	const LIZ1
 	const GINA1
 	const BROOKE
-	const KIM
+	const KIM ;unused
 	const CINDY
 	const HOPE
 	const SHARON

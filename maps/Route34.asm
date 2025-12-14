@@ -1,8 +1,8 @@
 	object_const_def
-	const ROUTE34_YOUNGSTER1
-	const ROUTE34_YOUNGSTER2
-	const ROUTE34_YOUNGSTER3
-	const ROUTE34_LASS
+	const ROUTE34_CAMPER
+	const ROUTE34_YOUNGSTER
+	const ROUTE34_SUPER_NERD
+	const ROUTE34_PICNICKER
 	const ROUTE34_OFFICER
 	const ROUTE34_POKEFAN_M
 	const ROUTE34_GRAMPS
@@ -388,13 +388,13 @@ TrainerYoungsterSamuel:
 	closetext
 	end
 
-TrainerYoungsterIan:
-	trainer YOUNGSTER, IAN, EVENT_BEAT_YOUNGSTER_IAN, YoungsterIanSeenText, YoungsterIanBeatenText, 0, .Script
+TrainerCollectorHector:
+	trainer COLLECTOR, HECTOR, EVENT_BEAT_COLLECTOR_HECTOR, CollectorHectorSeenText, CollectorHectorBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterIanAfterText
+	writetext CollectorHectorAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -519,21 +519,53 @@ YoungsterSamuelAfterText:
 	cont "a GYM LEADER."
 	done
 
-YoungsterIanSeenText:
-	text "I'm the best in my"
-	line "class at #MON."
-	done
+CollectorHectorSeenText:
+    text "Hey! Don't get"
+    line "too close!"
 
-YoungsterIanBeatenText:
-	text "No! There are bet-"
-	line "ter trainers…"
-	done
+    para "My MANKEY get"
+    line "excited when they"
+    cont "see new faces!"
 
-YoungsterIanAfterText:
-	text "I'm trying hard so"
-	line "I can be the star"
-	cont "in my class."
-	done
+    para "Still, a battle's"
+    line "worth the risk!"
+    done
+
+CollectorHectorBeatenText:
+    text "Whew!"
+    line "That really got"
+    cont "them fired up!"
+    done
+
+CollectorHectorAfterBattleText:
+    text "I collect MANKEY."
+    line "Each one has a"
+    cont "different temper."
+
+    para "Some get angry"
+    line "fast, others take"
+    cont "their time…"
+
+    para "That's what makes"
+    line "them special!"
+    done
+
+
+;YoungsterIanSeenText:
+;	text "I'm the best in my"
+;	line "class at #MON."
+;	done
+
+;YoungsterIanBeatenText:
+;	text "No! There are bet-"
+;	line "ter trainers…"
+;	done
+
+;YoungsterIanAfterText:
+;	text "I'm trying hard so"
+;	line "I can be the star"
+;	cont "in my class."
+;	done
 
 CamperTodd1SeenText:
 	text "I'm confident in"
@@ -759,7 +791,7 @@ Route34_MapEvents:
 	def_object_events
 	object_event 13,  7, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerCamperTodd1, -1
 	object_event 15, 32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterSamuel, -1
-	object_event 11, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterIan, -1
+	object_event 11, 20, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerCollectorHector, -1
 	object_event 10, 26, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerGina1, -1
 	object_event  9, 11, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OfficerKeithScript, -1
 	object_event 18, 28, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmBrandon, -1
