@@ -22,7 +22,9 @@ Eeveeee1999 for many Pokemon icons.
 
 DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable, Charizard, Volcarona, Talonflame, Shedinja, Lileep, Cradily, Reuniclus, Duosion and Solosis sprites.
 
-Bloodless, BlueEmerald, Rainbowdevs, Scarlax Nuuk and Brolunite for Absol, Anorith, Armaldo, Baltoy, Banette, Barboach, Chimecho, Claydol, Flygon
+Bloodless, BlueEmerald, Rainbowdevs, Scarlax Nuuk and Brolunite for Absol, Anorith, Armaldo, Baltoy, Banette, Barboach, Chimecho, Claydol, Flygon.
+
+Luna for her great Temple tiles.
 
 A certain someone who does not want to be named for several amazing sprites.
 
