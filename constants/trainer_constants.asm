@@ -282,7 +282,7 @@ DEF KRIS EQU __trainer_class__
 	const BETH2
 	const CAROL
 	const QUINN
-	const EMMA
+	const EMMA ; unused
 	const CYBIL
 	const JENN
 	const BETH3
@@ -317,7 +317,7 @@ DEF KRIS EQU __trainer_class__
 	const SHANE
 	const BEN
 	const BRENT1
-	const RON
+	const RON ; unused
 	const ETHAN
 	const BRENT2
 	const BRENT3
@@ -534,7 +534,7 @@ DEF KRIS EQU __trainer_class__
 	const ERIK
 	const MICHAEL
 	const PARRY1
-	const TIMOTHY
+	const TIMOTHY ; unused
 	const BAILEY
 	const ANTHONY3
 	const TIM

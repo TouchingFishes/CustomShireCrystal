@@ -91,6 +91,6 @@ TrainerClassNames::
 	li "AROMA LADY"
 	li "RUIN MANIAC"
 	li "COLLECTOR"
-	li "POKERANGER" ;F
-	li "POKERANGER" ;M
+	li "#RANGER" ;F
+	li "#RANGER" ;M
 	assert_list_length NUM_TRAINER_CLASSES

@@ -64,6 +64,7 @@ if !DEF(_DEBUG)
 	loadmenu .MenuHeader
 	verticalmenu
 	closewindow
+	ifequal 0, .Johto
 	ifequal 1, .Kanto
 	ifequal 2, .Johto
 	end

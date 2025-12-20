@@ -151,13 +151,13 @@ TrainerPokemaniacBrent:
 	jumpstd RematchMScript
 	end
 
-TrainerPokemaniacRon:
-	trainer POKEMANIAC, RON, EVENT_BEAT_POKEMANIAC_RON, PokemaniacRonSeenText, PokemaniacRonBeatenText, 0, .Script
+TrainerCollectorColeman:
+	trainer COLLECTOR, COLEMAN, EVENT_BEAT_COLLECTOR_COLEMAN, CollectorColemanSeenText, CollectorColemanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PokemaniacRonAfterBattleText
+	writetext CollectorColemanAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -362,7 +362,7 @@ PokemaniacBrentAfterBattleText:
 	cont "rare #MON."
 	done
 
-PokemaniacRonSeenText:
+CollectorColemanSeenText:
 	text "Would you get"
 	line "this?"
 
@@ -370,16 +370,16 @@ PokemaniacRonSeenText:
 	line "made fun of my"
 	cont "#MON!"
 
-	para "Darn it! My #-"
-	line "MON's great!"
+	para "Darn it! My col-"
+	line "lection is great!"
 	done
 
-PokemaniacRonBeatenText:
-	text "My NIDOKING did"
+CollectorColemanBeatenText:
+	text "My party did"
 	line "pretty right on!"
 	done
 
-PokemaniacRonAfterBattleText:
+CollectorColemanAfterBattleText:
 	text "It's okay for"
 	line "people to like"
 
@@ -388,7 +388,7 @@ PokemaniacRonAfterBattleText:
 
 	para "#MON isn't just"
 	line "about having the"
-	cont "most powerful one."
+	cont "rarest one."
 	done
 
 FisherMarvinSeenText:
@@ -518,7 +518,7 @@ Route43_MapEvents:
 	def_object_events
 	object_event 13,  5, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 2, TrainerPokemaniacBen, -1
 	object_event 13, 20, SPRITE_POKEMANIAC, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacBrent, -1
-	object_event 14,  7, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 2, TrainerPokemaniacRon, -1
+	object_event 14,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCollectorColeman, -1
 	object_event  4, 16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerFisherMarvin, -1
 	object_event  9, 25, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerTiffany, -1
 	object_event 13, 40, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperSpencer, -1

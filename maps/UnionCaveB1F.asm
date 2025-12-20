@@ -34,13 +34,13 @@ TrainerPokemaniacCalvin:
 	closetext
 	end
 
-TrainerHikerPhillip:
-	trainer HIKER, PHILLIP, EVENT_BEAT_HIKER_PHILLIP, HikerPhillipSeenText, HikerPhillipBeatenText, 0, .Script
+TrainerRuinManiacChip:
+	trainer RUIN_MANIAC, CHIP, EVENT_BEAT_RUIN_MANIAC_CHIP, RuinManiacChipSeenText, RuinManiacChipBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HikerPhillipAfterBattleText
+	writetext RuinManiacChipAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -65,7 +65,7 @@ UnionCaveB1FXDefend:
 UnionCaveB1FBoulder:
 	jumpstd StrengthBoulderScript
 
-HikerPhillipSeenText:
+RuinManiacChipSeenText:
 	text "It's been a while"
 	line "since I last saw"
 	cont "another person."
@@ -74,11 +74,11 @@ HikerPhillipSeenText:
 	line "Let's battle!"
 	done
 
-HikerPhillipBeatenText:
+RuinManiacChipBeatenText:
 	text "Uurggh…"
 	done
 
-HikerPhillipAfterBattleText:
+RuinManiacChipAfterBattleText:
 	text "I've been lost for"
 	line "a long time…"
 
@@ -165,7 +165,7 @@ UnionCaveB1F_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  9,  4, SPRITE_HIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHikerPhillip, -1
+	object_event  9,  4, SPRITE_HIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRuinManiacChip, -1
 	object_event 16,  7, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHikerLeonard, -1
 	object_event  5, 32, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacAndrew, -1
 	object_event 17, 30, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacCalvin, -1

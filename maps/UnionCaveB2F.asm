@@ -1,7 +1,7 @@
 	object_const_def
 	const UNIONCAVEB2F_ACE_TRAINER_M
-	const UNIONCAVEB2F_ACE_TRAINER_F1
-	const UNIONCAVEB2F_ACE_TRAINER_F2
+	const UNIONCAVEB2F_ACE_TRAINER_F
+	const UNIONCAVEB2F_HIKER
 	const UNIONCAVEB2F_POKE_BALL1
 	const UNIONCAVEB2F_POKE_BALL2
 	const UNIONCAVEB2F_LAPRAS
@@ -57,13 +57,13 @@ TrainerAceTrainerfGwen:
 	closetext
 	end
 
-TrainerAceTrainerfEmma:
-	trainer ACE_TRAINERF, EMMA, EVENT_BEAT_ACE_TRAINERF_EMMA, AceTrainerfEmmaSeenText, AceTrainerfEmmaBeatenText, 0, .Script
+TrainerHikerPhillip:
+	trainer HIKER, PHILLIP, EVENT_BEAT_HIKER_PHILLIP, HikerPhillipSeenText, HikerPhillipBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext AceTrainerfEmmaAfterBattleText
+	writetext HikerPhillipAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -116,27 +116,31 @@ AceTrainerfGwenAfterBattleText:
 	cont "improve."
 	done
 
-AceTrainerfEmmaSeenText:
-	text "If the #MON I"
-	line "liked were there,"
-	cont "I'd go anywhere."
+HikerPhillipSeenText:
+	text "If there's a trail"
+	line "to follow, I'll"
+
+	para "take it, no matter"
+	line "how rough it gets."
 
 	para "That's what a real"
-	line "trainer does."
+	line "hiker does."
 	done
 
-AceTrainerfEmmaBeatenText:
-	text "I'd rather pet my"
-	line "babies than this!"
+HikerPhillipBeatenText:
+	text "Ha! Guess I"
+	line "slipped up there!"
 	done
 
-AceTrainerfEmmaAfterBattleText:
-	text "Just once a week,"
-	line "a #MON comes to"
-	cont "the water's edge."
+HikerPhillipAfterBattleText:
+	text "Sometimes, a wild"
+	line "#MON comes down"
 
-	para "I wanted to see"
-	line "that #MON…"
+	para "to drink by the"
+	line "water's edge."
+
+	para "That's why I hike"
+	line "all this way."
 	done
 
 UnionCaveB2F_MapEvents:
@@ -152,7 +156,7 @@ UnionCaveB2F_MapEvents:
 	def_object_events
 	object_event 15, 19, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainermNick, -1
 	object_event  5, 13, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerfGwen, -1
-	object_event  3, 30, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfEmma, -1
+	object_event  3, 30, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHikerPhillip, -1
 	object_event 16,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnionCaveB2FElixer, EVENT_UNION_CAVE_B2F_ELIXER
 	object_event 12, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnionCaveB2FHyperPotion, EVENT_UNION_CAVE_B2F_HYPER_POTION
 	object_event 11, 31, SPRITE_SURF, SPRITEMOVEDATA_SWIM_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, UnionCaveLapras, EVENT_UNION_CAVE_B2F_LAPRAS

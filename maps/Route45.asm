@@ -1,8 +1,8 @@
 	object_const_def
-	const ROUTE45_POKEFAN_M1
-	const ROUTE45_POKEFAN_M2
-	const ROUTE45_POKEFAN_M3
-	const ROUTE45_POKEFAN_M4
+	const ROUTE45_HIKER1
+	const ROUTE45_HIKER2
+	const ROUTE45_HIKER3
+	const ROUTE45_PICNICKER
 	const ROUTE45_BLACK_BELT
 	const ROUTE45_ACE_TRAINER_M
 	const ROUTE45_ACE_TRAINER_F
@@ -244,13 +244,13 @@ TrainerHikerParry:
 	setevent EVENT_GOT_IRON_FROM_PARRY
 	sjump Route45NumberAcceptedM
 
-TrainerHikerTimothy:
-	trainer HIKER, TIMOTHY, EVENT_BEAT_HIKER_TIMOTHY, HikerTimothySeenText, HikerTimothyBeatenText, 0, .Script
+TrainerPokerangerFCathy:
+	trainer POKERANGER_F, CATHY, EVENT_BEAT_POKERANGER_F_CATHY, PokerangerFCathySeenText, PokerangerFCathyBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HikerTimothyAfterBattleText
+	writetext PokerangerFCathyAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -418,7 +418,7 @@ HikerParryAfterBattleText:
 	line "ahead with power!"
 	done
 
-HikerTimothySeenText:
+PokerangerFCathySeenText:
 	text "Why do I climb"
 	line "mountains?"
 
@@ -432,12 +432,12 @@ HikerTimothySeenText:
 	line "there!"
 	done
 
-HikerTimothyBeatenText:
+PokerangerFCathyBeatenText:
 	text "Losses…"
 	line "They're there too!"
 	done
 
-HikerTimothyAfterBattleText:
+PokerangerFCathyAfterBattleText:
 	text "The best thing to"
 	line "ever happen to me"
 
@@ -579,7 +579,7 @@ Route45_MapEvents:
 	object_event 10, 16, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerHikerErik, -1
 	object_event 15, 65, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHikerMichael, -1
 	object_event  5, 28, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHikerParry, -1
-	object_event  9, 65, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerHikerTimothy, -1
+	object_event  9, 65, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerPokerangerFCathy, -1
 	object_event 11, 50, SPRITE_BLACK_BELT, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltKenji, -1
 	object_event 17, 18, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerAceTrainermRyan, -1
 	object_event  5, 36, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerfKelly, -1
