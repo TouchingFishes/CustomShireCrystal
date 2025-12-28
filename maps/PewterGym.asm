@@ -2,6 +2,7 @@
 	const PEWTERGYM_BROCK
 	const PEWTERGYM_YOUNGSTER
 	const PEWTERGYM_GYM_GUIDE
+	const PEWTERGYM_HIKER
 
 PewterGym_MapScripts:
 	def_scene_scripts
@@ -100,6 +101,17 @@ PewterGymStatue:
 .Beaten:
 	gettrainername STRING_BUFFER_4, BROCK, BROCK1
 	jumpstd GymStatue2Script
+
+TrainerRuinManiacAndres:
+	trainer RUIN_MANIAC, ANDRES, EVENT_BEAT_RUIN_MANIAC_ANDRES, RuinManiacAndresSeenText, RuinManiacAndresBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext RuinManiacAndresAfterBattleText
+	waitbutton
+	closetext
+	end
 
 BrockIntroText:
 	text "BROCK: Wow, it's"
@@ -279,6 +291,37 @@ PewterGymGuideWinText:
 	line "that seriously."
 	done
 
+RuinManiacAndresSeenText:
+	text "These stones…"
+	line "They've seen"
+
+	para "countless years"
+	line "pass by."
+
+	para "ROCKO understands"
+	line "that better than"
+	cont "anyone."
+	done
+
+RuinManiacAndresBeatenText:
+	text "So this is"
+	line "modern strength…"
+	done
+
+RuinManiacAndresAfterBattleText:
+	text "Fossil #MON"
+	line "carry the past"
+
+	para "into the present."
+
+	para "That's why I"
+	line "admire ROCKO."
+
+	para "He fights with"
+	line "history itself."
+	done
+
+
 PewterGym_MapEvents:
 	db 0, 0 ; filler
 
@@ -296,3 +339,4 @@ PewterGym_MapEvents:
 	object_event  5,  1, SPRITE_BROCK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PewterGymBrockScript, -1
 	object_event  2,  5, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperJerry, -1
 	object_event  6, 11, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 1, PewterGymGuideScript, -1
+	object_event  7,  9, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRuinManiacAndres, -1

@@ -484,5 +484,6 @@ INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/CherrygroveBay.asm"
 INCLUDE "maps/SeafoamGym.asm"
 INCLUDE "maps/ChallengersCaveB1F.asm"
+INCLUDE "maps/ViridianForest.asm"
 
 ENDSECTION

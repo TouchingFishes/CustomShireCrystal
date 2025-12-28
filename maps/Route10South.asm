@@ -1,6 +1,7 @@
 	object_const_def
-	const ROUTE10SOUTH_POKEFAN_M1
-	const ROUTE10SOUTH_POKEFAN_M2
+	const ROUTE10SOUTH_HIKER
+	const ROUTE10SOUTH_POKEFAN_M
+	const ROUTE10SOUTH_HEX_MANIAC
 
 Route10South_MapScripts:
 	def_scene_scripts
@@ -25,6 +26,17 @@ TrainerPokefanmRobert:
 	endifjustbattled
 	opentext
 	writetext PokefanmRobertAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerHexManiacTasha:
+	trainer HEX_MANIAC, TASHA, EVENT_BEAT_HEX_MANIAC_TASHA, HexManiacTashaSeenText, HexManiacTashaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HexManiacTashaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -66,6 +78,23 @@ PokefanmRobertAfterBattleText:
 	line "this…"
 	done
 
+HexManiacTashaSeenText:
+	text "Get ready for the"
+	line "witching hour!"
+	done
+
+HexManiacTashaBeatenText:
+	text "I'm bedazzled…"
+	done
+
+HexManiacTashaAfterBattleText:
+	text "You should try out"
+	line "doing a séance."
+	
+	para "It'd open your"
+	line "eyes."
+	done
+
 Route10SignText:
 	text "ROUTE 10"
 
@@ -86,4 +115,5 @@ Route10South_MapEvents:
 
 	def_object_events
 	object_event 17,  3, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHikerJim, -1
-	object_event  8, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmRobert, -1
+	object_event  4, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmRobert, -1
+	object_event 17, 10, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 1, TrainerHexManiacTasha, -1

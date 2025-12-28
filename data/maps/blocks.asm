@@ -903,4 +903,7 @@ CherrygroveBay_Blocks:
 ChallengersCaveB1F_Blocks:
 	INCBIN "maps/ChallengersCaveB1F.ablk"
 
+ViridianForest_Blocks:
+	INCBIN "maps/ViridianForest.ablk"
+
 ENDSECTION

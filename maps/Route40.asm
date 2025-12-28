@@ -11,7 +11,7 @@
 	const ROUTE40_LADY
 	const ROUTE40_LASS2
 	const ROUTE40_STANDING_YOUNGSTER
-	const ROUTE40_TASHA
+	const ROUTE40_PICNICKER
 	const ROUTE40_PATON
 	const ROUTE40_SAILOR
 
@@ -76,13 +76,13 @@ TrainerSwimmermRandall:
 	closetext
 	end
 
-TrainerHexManiacTasha:
-	trainer HEX_MANIAC, TASHA, EVENT_BEAT_HEX_MANIAC_TASHA, HexManiacTashaSeenText, HexManiacTashaBeatenText, 0, .Script
+TrainerPokerangerFJenna:
+	trainer POKERANGER_F, JENNA, EVENT_BEAT_POKERANGER_F_JENNA, PokerangerFJennaSeenText, PokerangerFJennaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HexManiacTashaAfterBattleText
+	writetext PokerangerFJennaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -332,21 +332,38 @@ Route40SignText:
 	line "OLIVINE CITY"
 	done
 
-HexManiacTashaSeenText:
-	text "Get ready for the"
-	line "witching hour!"
+PokerangerFJennaSeenText:
+	text "This spot stays"
+	line "quiet, even when"
+
+	para "the waves are"
+	line "strong."
+
+	para "I like places"
+	line "where #MON feel"
+	cont "at ease."
 	done
 
-HexManiacTashaBeatenText:
-	text "I'm bedazzled…"
+PokerangerFJennaBeatenText:
+	text "Watching #MON"
+	line "near the sea"
+
+	para "teaches you to"
+	line "slow down."
+
+	para "Not everything"
+	line "needs to rush."
 	done
 
-HexManiacTashaAfterBattleText:
-	text "You should try out"
-	line "doing a séance."
-	
-	para "It'd open your"
-	line "eyes."
+PokerangerFJennaAfterBattleText:
+	text "Watching #MON"
+	line "near the sea"
+
+	para "teaches you to"
+	line "slow down."
+
+	para "Not everything"
+	line "needs to rush."
 	done
 
 SwimmermPatonSeenText:
@@ -421,6 +438,6 @@ Route40_MapEvents:
 	object_event  6, 17, SPRITE_LADY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40LadyScript, -1
 	object_event 33,  8, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route40Lass2Script, -1
 	object_event 34, 12, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40StandingYoungsterScript, EVENT_BATTLE_TOWER_OPEN_CIVILIANS
-	object_event  9,  7, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 4, TrainerHexManiacTasha, -1
+	object_event  9,  7, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerPokerangerFJenna, -1
 	object_event  7, 34, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerSwimmermPaton, -1
 	object_event  8, 28, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSailorTerrell, -1

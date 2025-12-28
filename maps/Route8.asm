@@ -5,6 +5,7 @@
 	const ROUTE8_SUPER_NERD1
 	const ROUTE8_SUPER_NERD2
 	const ROUTE8_FRUIT_TREE
+	const ROUTE8_HEX_MANIAC
 
 Route8_MapScripts:
 	def_scene_scripts
@@ -62,6 +63,17 @@ TrainerSupernerdTom:
 	endifjustbattled
 	opentext
 	writetext SupernerdTomAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerHexManiacPeggy:
+	trainer HEX_MANIAC, PEGGY, EVENT_BEAT_HEX_MANIAC_PEGGY, HexManiacPeggySeenText, HexManiacPeggyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HexManiacPeggyAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -159,6 +171,35 @@ SupernerdTomAfterBattleText:
 	cont "battles."
 	done
 
+HexManiacPeggySeenText:
+	text "…Do you feel it?"
+
+	para "The air grows"
+	line "heavy near"
+	cont "LAVENDER."
+
+	para "Spirits linger."
+	line "So do I."
+	done
+
+HexManiacPeggyBeatenText:
+	text "Ah…"
+	line "They've gone"
+	cont "silent…"
+	done
+
+HexManiacPeggyAfterBattleText:
+	text "I stay close to"
+	line "LAVENDER TOWN."
+
+	para "It's a place where"
+	line "voices fade…"
+
+	para "But memories"
+	line "never do."
+	done
+
+
 Route8LockedDoorText:
 	text "It's locked…"
 	done
@@ -188,5 +229,6 @@ Route8_MapEvents:
 	object_event 10,  9, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerBikerHarris, -1
 	object_event 10, 10, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerBikerZeke, -1
 	object_event 23,  2, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSupernerdSam, -1
-	object_event 31, 12, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerSupernerdTom, -1
+	object_event 27,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSupernerdTom, -1
 	object_event 33,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route8FruitTree, -1
+	object_event 31, 12, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerHexManiacPeggy, -1

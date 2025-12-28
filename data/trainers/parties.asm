@@ -3797,10 +3797,6 @@ BugCatcherGroup:
 	dw BEEDRILL
 	db 54 ;new mon
 	dw BEEDRILL
-	db 54 ;new mon
-	dw BEEDRILL
-	db 54 ;new mon
-	dw BEEDRILL
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (4) 1
@@ -6638,11 +6634,11 @@ CamperGroup:
 	next_list_item ; CAMPER (18)
 	db "JERRY@", TRAINERTYPE_NORMAL
 	db 57 ;37
-	dw SANDSLASH
+	dw GOLEM
 	db 57 ;new mon
-	dw SANDSLASH
+	dw GOLEM
 	db 59 ;new mon
-	dw RHYDON
+	dw SHUCKLE
 	db -1 ; end
 
 	next_list_item ; CAMPER (19)
@@ -7669,8 +7665,12 @@ LoreleiGroup:
 HexManiacGroup:
 	next_list_item; HEX_MANIAC (1)
 	db "TASHA@", TRAINERTYPE_NORMAL
-	db 27
+	db 57
 	dw PURGISLUG
+	db 55
+	dw NOCTOWL
+	db 57
+	dw BANETTE
 	db -1 ; end
 
 	next_list_item; HEX_MANIAC (2)
@@ -7689,10 +7689,14 @@ HexManiacGroup:
 
 	next_list_item; HEX_MANIAC (4)
 	db "PEGGY@", TRAINERTYPE_NORMAL
-	db 39
-	dw BANETTE
-	db 41
-	dw LAMPENT
+	db 56
+	dw HAUNTER
+	db 54
+	dw JYNX
+	db 56
+	dw HAUNTER
+	db 59
+	dw PERSIAN
 	db -1 ; end
 
 	end_list_items
@@ -7927,14 +7931,14 @@ BugManiacGroup:
 
 	next_list_item ; BUG_MANIAC (4)
 	db "WEEVIL@", TRAINERTYPE_NORMAL
-	db 19
-	dw BEEDRILL
-	db 19
-	dw BUTTERFREE
-	db 19
+	db 59
+	dw ARIADOS
+	db 59
+	dw ARIADOS
+	db 59
 	dw PINSIR
-	db 19
-	dw KROLUCADA
+	db 61
+	dw KROLUCARD
 	db -1 ; end
 
 	end_list_items
@@ -7983,19 +7987,19 @@ DragonTamerGroup:
 
 	next_list_item ; DRAGON_TAMER (3)
 	db "OZ@", TRAINERTYPE_MOVES
-	db 56
+	db 59
 	dw GYARADOS
 	dw TWISTER, IRON_TAIL, BITE, DRAGON_DANCE
-	db 54
+	db 57
 	dw DRAGONAIR
 	dw DRAGON_PULSE, THUNDER_WAVE, SURF, FLAMETHROWER
-	db 54
+	db 57
 	dw DRAGONAIR
 	dw DRAGON_PULSE, THUNDER_WAVE, ICE_BEAM, THUNDERBOLT
-	db 58
+	db 61
 	dw AERODACTYL
 	dw EARTHQUAKE, ANCIENTPOWER, AERIAL_ACE, HYPER_BEAM
-	db 60
+	db 63
 	dw CHARIZARD
 	dw FLAMETHROWER, TWISTER, DRAGON_CLAW, BLAST_BURN
 	db -1 ; end
@@ -8032,11 +8036,16 @@ LadyGroup:
 	db -1 ; end
 
 	next_list_item ; LADY (2)
-	db "ELENORE@", TRAINERTYPE_NORMAL
-	db 19
-	dw PONYTA
-	db 19
-	dw PONYTA
+	db "ELENORE@", TRAINERTYPE_ITEM
+	db 59
+	dw RAPIDASH
+	dw NUGGET
+	db 59
+	dw SUNFLORA
+	dw NUGGET
+	db 59
+	dw TROPIUS
+	dw NUGGET
 	db -1 ; end
 
 	next_list_item ; LADY (1)
@@ -8373,22 +8382,19 @@ AromaLadyGroup:
 	db -1 ; end
 
 	next_list_item ; AROMA_LADY (4)
-	db "CELINA@", TRAINERTYPE_MOVES
-	db 75
+	db "CELINA@", TRAINERTYPE_NORMAL
+	db 55
 	dw BEEDRILL
-	dw SHOCK_WAVE, FLAMETHROWER, PSYCHIC_M, SHADOW_BALL
-	db 77
-	dw GROTLE
-	dw ICE_BEAM, DRAGON_PULSE, OMINOUS_WIND, THUNDERBOLT
-	db 75
-	dw JUMPLUFF
-	dw PSYCHIC_M, THUNDERBOLT, ICE_BEAM, TRI_ATTACK
+	db 57
+	dw EXEGGUTOR
+	db 55
+	dw BEEDRILL
 	db -1 ; end
 
 	next_list_item ; AROMA_LADY (5)
 	db "JENNIE@", TRAINERTYPE_MOVES
 	db 10
-	dw ODDISH
+	dw JUMPLUFF
 	dw SHOCK_WAVE, FLAMETHROWER, PSYCHIC_M, SHADOW_BALL
 	db 10
 	dw TROPIUS
@@ -8441,19 +8447,15 @@ RuinManiacGroup:
 	db -1 ; end
 
 	next_list_item ; RUIN_MANIAC (4)
-	db "ANDRES@", TRAINERTYPE_MOVES
-	db 77
-	dw FEAROW
-	dw DRAGON_PULSE, SURF, ICE_BEAM, TWISTER
-	db 77
-	dw TAUROS
-	dw DOUBLE_EDGE, EARTHQUAKE, HEAD_SMASH, PURSUIT
-	db 77
+	db "ANDRES@", TRAINERTYPE_NORMAL
+	db 55 
 	dw ONIX
-	dw FLAMETHROWER, SILVER_WIND, PSYCHIC_M, GIGA_DRAIN
-	db 79
-	dw MEGANIUM
-	dw MAGICAL_LEAF, GRASSWHISTLE, EARTHQUAKE, ANCIENTPOWER
+	db 55 
+	dw ONIX
+	db 59
+	dw ARMALDO
+	db 59
+	dw CRADILY
 	db -1 ; end
 
 	next_list_item ; RUIN_MANIAC (5)
@@ -8549,18 +8551,24 @@ PokerangerFGroup:
 
 	next_list_item ; POKERANGER_F (2)
 	db "JENNA@", TRAINERTYPE_NORMAL
-	db 11
-	dw MANKEY
-	db 11 
-	dw MANKEY
+	db 22
+	dw EXEGGCUTE
+	db 22
+	dw FURRET
+	db 24
+	dw LEDIAN
 	db -1 ; end
 
 	next_list_item ; POKERANGER_F (3)
 	db "SOPHIA@", TRAINERTYPE_NORMAL
-	db 11
-	dw MANKEY
-	db 11 
-	dw MANKEY
+	db 59
+	dw VICTREEBEL
+	db 58
+	dw SMOKOMODO
+	db 58
+	dw ELECTABUZZ
+	db 59
+	dw GIRAFARIG
 	db -1 ; end
 
 	next_list_item ; POKERANGER_F (4)
@@ -8616,18 +8624,22 @@ PokerangerMGroup:
 
 	next_list_item ; POKERANGER_M (4)
 	db "TRENTON@", TRAINERTYPE_NORMAL
-	db 11
-	dw MANKEY
-	db 11 
-	dw MANKEY
+	db 35
+	dw SUDOWOODO
+	db 35 
+	dw FORRETRESS
+	db 35 
+	dw CROCONAW
 	db -1 ; end
 
 	next_list_item ; POKERANGER_M (5)
 	db "KYLER@", TRAINERTYPE_NORMAL
-	db 11
-	dw MANKEY
-	db 11 
-	dw MANKEY
+	db 62
+	dw STEELIX
+	db 57
+	dw QUAGSIRE
+	db 62 
+	dw KANGASKHAN
 	db -1 ; end
 
 	next_list_item ; POKERANGER_M (6)

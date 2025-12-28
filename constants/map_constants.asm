@@ -155,6 +155,7 @@ ENDM
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
 	map_const CHALLENGERS_CAVE_B1F,                        20, 18 ; 92
+	map_const VIRIDIAN_FOREST,            	               20, 24 ; 93
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
