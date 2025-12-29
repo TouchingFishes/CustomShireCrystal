@@ -155,7 +155,7 @@ KiwameTeachMoveText:
 	para "Let your partner"
 	line "accept this power."
 
-	para "Know this—"
+	para "Know this…"
 
 	para "Such strength"
 	line "demands resolve."
