@@ -748,22 +748,20 @@ TinkatinkEvosAttacks:
 TinkatuffEvosAttacks:
 	evolve EVOLVE_LEVEL, 38, TINKATON
 	db 0 ; no more evolutions
-;	dbw 1, ASTONISH
-;	dbw 1, HOWL
-;	dbw 1, POUND
-;	dbw 1, UPROAR
-;	dbw 5, UPROAR
-;	dbw 11, ASTONISH
-;	dbw 15, CHARM
-;	dbw 23, KNOCK_OFF
-;	dbw 29, METAL_CLAW
-;	dbw 37, SWEET_KISS
-;	dbw 43, SLAM
-;	dbw 51, REST
-;	dbw 51, SLEEP_TALK
-;	dbw 57, DOUBLE_EDGE
-	dbw 51, HAMMER_ARM
-	dbw 57, AVALANCHE
+	dbw 1, ASTONISH
+	dbw 1, HOWL
+	dbw 1, POUND
+	dbw 1, UPROAR
+	dbw 5, UPROAR
+	dbw 11, ASTONISH
+	dbw 15, CHARM
+	dbw 23, KNOCK_OFF
+	dbw 29, METAL_CLAW
+	dbw 37, SWEET_KISS
+	dbw 43, SLAM
+	dbw 51, REST
+	dbw 51, SLEEP_TALK
+	dbw 57, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 TinkatonEvosAttacks:

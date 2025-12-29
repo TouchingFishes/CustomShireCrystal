@@ -24,6 +24,10 @@ DeoxysSage for Voltorb, Electrode, Gyarados, Dratini, Cleffa, Clefairy, Clefable
 
 Bloodless, BlueEmerald, Rainbowdevs, Scarlax Nuuk and Brolunite for Absol, Anorith, Armaldo, Baltoy, Banette, Barboach, Chimecho, Claydol, Flygon.
 
+BlueEmerald, Rainbowdevs and Rosie for Milotic.
+
+French Orange for all Forest and Snow related tiles.
+
 Luna for her great Temple tiles.
 
 A certain someone who does not want to be named for several amazing sprites.

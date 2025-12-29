@@ -376,6 +376,20 @@ MoveDescriptionsGen3:
 	dw MirrorShotDescription
 	dw HammerArmDescription
 	dw AvalancheDescription
+	dw GrassKnotDescription
+	dw EnergyBallDescription
+	dw FlameChargeDescription
+	dw HexDescription
+	;dw DoubleHitDescription
+	dw GyroBallDescription
+	dw FlashCannonDescription
+	dw HeavySlamDescription
+	dw HurricaneDescription
+	dw DrillRunDescription
+	dw SteamrollerDescription
+	dw ZenHeadbuttDescription
+	dw ScaldDescription
+	dw PounceDescription
 .IndirectEnd::
 
 ; Gen 1
@@ -1838,3 +1852,55 @@ HammerArmDescription:
 AvalancheDescription:
 	db   "Gains power if"
 	next "injured by foe.@"
+
+GrassKnotDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
+
+EnergyBallDescription:
+	db   "An attack that may"
+	next "lower SPCL.DEF.@"
+
+FlameChargeDescription:
+	db   "An attack that"
+	next "increases SPEED.@"
+
+HexDescription:
+	db   "Doubles power"
+	next "if foe has status.@"
+
+GyroBallDescription:
+	db   "Gains power if"
+	next "user is slower.@"
+
+FlashCannonDescription:
+	db   "An attack that may"
+	next "lower SPCL.DEF.@"
+
+HeavySlamDescription:
+	db   "Gains power if"
+	next "user is heavier.@"
+
+HurricaneDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
+
+DrillRunDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+SteamrollerDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
+
+ZenHeadbuttDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
+
+ScaldDescription:
+	db   "An attack that may"
+	next "inflict a burn.@"
+	
+PounceDescription:
+	db   "An icy attack that"
+	next "lowers SPEED.@"

@@ -371,6 +371,19 @@ DEF GEN2_MOVES EQU const_value - 1
 	const MIRROR_SHOT  ; 169
 	const HAMMER_ARM   ; 16a
 	const AVALANCHE    ; 16b
+	const GRASS_KNOT   ; 16c
+	const ENERGY_BALL  ; 16d
+	const FLAME_CHARGE ; 16e
+	const HEX          ; 16f
+	const GYRO_BALL    ; 170
+	const FLASH_CANNON ; 171
+	const HEAVY_SLAM   ; 172
+	const HURRICANE    ; 173
+	const DRILL_RUN    ; 174
+	const STEAMROLLER  ; 175
+	const ZEN_HEADBUTT ; 176
+	const SCALD        ; 177
+	const POUNCE       ; 178
 DEF GEN3_MOVES EQU const_value - 1
 
 DEF NUM_ATTACKS EQU const_value - 1

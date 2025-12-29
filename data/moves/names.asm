@@ -366,4 +366,18 @@ MoveNames::
 	li "MIRROR SHOT"
 	li "HAMMER ARM"
 	li "AVALANCHE"
+	li "GRASS KNOT"
+	li "ENERGY BALL"
+	li "FLAME CHARGE"
+	li "HEX"
+	li "GYRO BALL"
+	li "FLASH CANNON"
+	li "HEAVY SLAM"
+	li "HURRICANE"
+	li "DRILL RUN"
+	li "STEAMROLLER"
+	li "ZEN HEADBUTT"
+	li "SCALD"
+	li "POUNCE"
+	
 	assert_list_length NUM_ATTACKS

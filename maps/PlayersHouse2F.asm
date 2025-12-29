@@ -171,6 +171,7 @@ if DEF(_DEBUG)
 	; misc pokemon for testing
 	givepoke KROLUCARD, PLAIN_FORM, 99
 	givepokemove SURF,   wPartyMon4, 2
+	givepokemove HEAVY_SLAM,  wPartyMon1, 0
 	givepokemove PSYCHIC_M,  wPartyMon1, 0
 	givepokemove THUNDERBOLT,  wPartyMon1, 1
 	givepokemove ICE_BEAM,  wPartyMon1, 2
@@ -184,6 +185,10 @@ if DEF(_DEBUG)
 	addcellnum PHONE_MOM
 	setmapscene PLAYERS_HOUSE_1F, $1
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
+	givepokemove HEAVY_SLAM,  wPartyMon1, 0
+	givepokemove HEX,  wPartyMon1, 1
+	;givepokemove STRENGTH,  wPartyMon1, 2
+	givepokemove DRAIN_LIFE,  wPartyMon1, 3
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
 	closetext
 	end
@@ -222,7 +227,7 @@ endc
 
 PlayersHouseBookshelfScript:
 	if DEF(_DEBUG)
-	loadwildmon TINKATUFF, 100
+	loadwildmon FLETCHINDA, 100
 	startbattle
 	reloadmapafterbattle
 	end

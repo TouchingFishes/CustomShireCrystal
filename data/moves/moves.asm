@@ -397,8 +397,21 @@ MovesGen3:
 	move EFFECT_LEECH_HIT,          60, DARK,          100, 10,   0      ;DRAIN_LIFE
 	move EFFECT_ALL_UP_HIT,         60, GHOST,         100,  5,  10      ;OMINOUS_WIND
 	move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;MIRROR_SHOT
-	move EFFECT_NORMAL_HIT,        100, FIGHTING,       90, 10, 100      ;HAMMER_ARM EFFECT_SELF_HAMMER_ARM
+	move EFFECT_NORMAL_HIT,        100, FIGHTING,       90, 10, 100      ;HAMMER_ARM EFFECT_SELF_SPEED_DOWN_HIT
 	move EFFECT_NORMAL_HIT,         60, ICE,           100, 10, 100      ;AVALANCHE EFFECT_REVENGE
+	move EFFECT_LOW_KICK,           50, GRASS,         100, 20,   0      ;GRASS_KNOT
+	move EFFECT_SP_DEF_DOWN_HIT,    95, GRASS,         100, 15,  10      ;ENERGY_BALL
+	move EFFECT_NORMAL_HIT,         50, FIRE,          100, 20, 100      ;FLAME_CHARGE EFFECT_SELF_SPEED_UP_HIT
+	move EFFECT_NORMAL_HIT,         65, GHOST,         100, 10,   0      ;HEX EFFECT_HEX
+	move EFFECT_NORMAL_HIT,        100, STEEL,         100,  5,   0      ;GYRO_BALL EFFECT_GYRO_BALL
+	move EFFECT_SP_DEF_DOWN_HIT,    80, STEEL,         100, 15,  20      ;FLASH_CANNON
+	move EFFECT_NORMAL_HIT,        100, STEEL,         100, 10,   0      ;HEAVY_SLAM EFFECT_HEAVY_SLAM
+	move EFFECT_FLINCH_HIT,        120, FLYING,         70,  5,  30      ;HURRICANE
+	move EFFECT_NORMAL_HIT,         80, NORMAL,         95, 10,   0      ;DRILL_RUN
+	move EFFECT_STOMP,              65, BUG,           100, 20,  30      ;STEAMROLLER
+	move EFFECT_FLINCH_HIT,         80, PSYCHIC_TYPE,   90, 10,  30      ;ZEN_HEADBUTT
+	move EFFECT_BURN_HIT,           80, WATER,         100, 15,  30      ;SCALD
+	move EFFECT_SPEED_DOWN_HIT,     50, BUG,           100, 20, 100      ;POUNCE
 ;	move EFFECT_LEECH_HIT,          80, GRASS,         100, 10,   0      ;HORN_LEECH
 ;	move EFFECT_NORMAL_HIT,         80, PSYCHIC_TYPE,   90, 10,  30      ;ZEN_HEADBUTT EFFECT_DEF_UP_HIT
 ;	move EFFECT_CONFUSE,             0, NORMAL,        100, 20,   0      ;TEETER_DANCE
