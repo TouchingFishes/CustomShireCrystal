@@ -142,7 +142,7 @@ MartGoldenrod5F3:
 	dw TM_THUNDERPUNCH
 	dw TM_FIRE_PUNCH
 	dw TM_ICE_PUNCH
-	dw TM_BRICK_BREAK ; TM_ROCK_SMASH
+	dw TM_ROCK_SMASH
 
 MartGoldenrod5F4:
 	db 5 ; # items
@@ -150,7 +150,7 @@ MartGoldenrod5F4:
 	dw TM_FIRE_PUNCH
 	dw TM_ICE_PUNCH
 	dw TM_HEADBUTT
-	dw TM_BRICK_BREAK ; TM_ROCK_SMASH
+	dw TM_ROCK_SMASH
 
 MartOlivine:
 	db 9 ; # items
@@ -290,6 +290,7 @@ MartCeladon2F2:
 MartCeladon3F:
 	db 5 ; # items
 	dw TM_HIDDEN_POWER
+	dw TM_BRICK_BREAK
 	dw TM_SUNNY_DAY
 	dw TM_PROTECT
 	dw TM_RAIN_DANCE

@@ -1587,7 +1587,7 @@ GrimmsnarlEvosAttacks:
 	dbw 37, BEAT_UP
 	dbw 42, REVENGE
 	dbw 52, HAMMER_ARM
-	bw 56, NIGHT_SLASH
+	dbw 56, NIGHT_SLASH
 	db 0 ; no more level-up moves
 
 WyrdeerEvosAttacks:

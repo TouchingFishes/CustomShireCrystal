@@ -249,7 +249,7 @@ DEF FIRST_TMHM_ITEM EQU const_value
 DEF TM01 EQU const_value
 	add_tm DYNAMICPUNCH ; 0400 cianwoood gym 
 	add_tm HEADBUTT     ; 0401 ilex froest 				
-	add_tm WATER_PULSE  ; 0402 celadon mansion roof
+	add_tm WATER_PULSE  ; 0402 ???
 	add_tm SUBSTITUTE   ; 0403 ??? 						
 	add_tm ROAR         ; 0404 route 32
 	add_tm TOXIC        ; 0405 fuchsia gym
@@ -277,7 +277,7 @@ DEF TM01 EQU const_value
 	add_tm DIG          ; 041B national park
 	add_tm PSYCHIC_M    ; 041C mr. psychic + celadon game corner
 	add_tm SHADOW_BALL  ; 041D ecruteak gym
-	add_tm BRICK_BREAK  ; 041E goldenrood mart
+	add_tm ROCK_SMASH   ; 041E goldenrood mart
 	add_tm DOUBLE_TEAM  ; 041F celadon game corner
 	add_tm ICE_PUNCH    ; 0420 goldenrod mart
 	add_tm SHOCK_WAVE   ; 0421 olivine lighthouse
@@ -296,7 +296,32 @@ DEF TM01 EQU const_value
 	add_tm STEEL_WING   ; 042E rock tunnel + steel wing house
 	add_tm FIRE_PUNCH   ; 042F goldenrod mart
 	add_tm FURY_CUTTER  ; 0430 azalea gym
-	add_tm OVERHEAT     ; 0431 route 31
+	add_tm NIGHTMARE    ; 0431 route 31
+	add_tm BRICK_BREAK  ; 0432 celadon mart
+	add_tm SKILL_SWAP   ; 0433
+	add_tm GRASS_KNOT   ; 0434
+	add_tm DIVE         ; 0435
+	add_tm CALM_MIND    ; 0436
+	add_tm AVALANCHE    ; 0437
+	add_tm METRONOME    ; 0438
+	add_tm REFLECT      ; 0439
+	add_tm ENERGY_BALL  ; 043A
+	add_tm COUNTER      ; 043B
+	add_tm HEX          ; 043C
+	add_tm GYRO_BALL    ; 043D
+	add_tm LIGHT_SCREEN ; 043E
+	add_tm POUNCE       ; 043F
+	add_tm ROCK_SLIDE   ; 0440
+	add_tm FLAME_CHARGE ; 0441
+	add_tm BULK_UP      ; 0442
+	add_tm SEISMIC_TOSS ; 0443
+	add_tm SHEER_COLD   ; 0444
+	add_tm THUNDER_WAVE ; 0445
+	add_tm RAZOR_WIND   ; 0446
+	add_tm CURSE        ; 0447 celadon mansion curse guy
+	add_tm DOUBLE_EDGE  ; 0448
+	add_tm DRAGON_CLAW  ; 0449
+	add_tm OVERHEAT     ; 044A
 DEF NUM_TMS EQU __tmhm_value__ - 1
 
 MACRO add_hm
@@ -311,14 +336,13 @@ MACRO add_hm
 ENDM
 
 DEF HM01 EQU const_value
-	add_hm CUT          ; 0432
-	add_hm FLY          ; 0433
-	add_hm SURF         ; 0434
-	add_hm STRENGTH     ; 0435
-	add_hm FLASH        ; 0436
-	add_hm ROCK_SMASH   ; 0437
-	add_hm WATERFALL    ; 0438
-	add_hm WHIRLPOOL    ; 0439
+	add_hm CUT          ; 044B
+	add_hm FLY          ; 044C
+	add_hm SURF         ; 044D
+	add_hm STRENGTH     ; 044E
+	add_hm FLASH        ; 044F
+	add_hm WATERFALL    ; 0450
+	add_hm WHIRLPOOL    ; 0451
 DEF NUM_HMS EQU __tmhm_value__ - NUM_TMS - 1
 
 assert (NUM_TMS + NUM_HMS) < $ff, "TMs/HMs can't exceed 255 due to GetTMHMNumber."
@@ -337,22 +361,12 @@ DEF MT01 EQU const_value
 	add_mt BLAST_BURN
 	add_mt HYDRO_CANNON
 	add_mt FOCUS_PUNCH
-	add_mt CURSE
 	add_mt MEGA_PUNCH
 	add_mt MEGA_KICK
-	add_mt ROCK_SLIDE
-	add_mt THUNDER_WAVE
-	add_mt DOUBLE_EDGE
 	add_mt SOFTBOILED
 	add_mt FLAMETHROWER
 	add_mt ICE_BEAM
 	add_mt THUNDERBOLT
-	add_mt REFLECT
-	add_mt LIGHT_SCREEN
-	add_mt DIVE
-	add_mt SKILL_SWAP
-	;add_mt SEISMIC_TOSS mayber later
-	;add_mt PSYCH_UP
 DEF NUM_TUTORS = __tmhm_value__ - NUM_TMS - NUM_HMS - 1
 
 DEF NUM_TM_HM_TUTOR EQU NUM_TMS + NUM_HMS + NUM_TUTORS
