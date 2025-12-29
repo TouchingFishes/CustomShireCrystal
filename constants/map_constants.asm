@@ -167,6 +167,7 @@ ENDM
 	map_const ECRUTEAK_MART,                                6,  4 ;  6
 	map_const ECRUTEAK_GYM,                                 5,  9 ;  7
 	map_const ECRUTEAK_ITEMFINDER_HOUSE,                    4,  4 ;  8
+	map_const MOVE_DELETERS_HOUSE,                          4,  4 ; 10
 	map_const ECRUTEAK_CITY,                               20, 18 ;  9
 	endgroup
 
@@ -177,7 +178,7 @@ ENDM
 	map_const BLACKTHORN_EMYS_HOUSE,                        4,  4 ;  4
 	map_const BLACKTHORN_MART,                              6,  4 ;  5
 	map_const BLACKTHORN_POKECENTER_1F,                     5,  4 ;  6
-	map_const MOVE_DELETERS_HOUSE,                          4,  4 ;  7
+	map_const THUNDER_WAVE_HOUSE,                           4,  4 ;  7
 	map_const ROUTE_45,                                    10, 45 ;  8
 	map_const ROUTE_46,                                    10, 18 ;  9
 	map_const BLACKTHORN_CITY,                             20, 18 ; 10

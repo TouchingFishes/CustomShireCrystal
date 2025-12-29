@@ -316,7 +316,7 @@ DEF TM01 EQU const_value
 	add_tm BULK_UP      ; 0442
 	add_tm SEISMIC_TOSS ; 0443
 	add_tm SHEER_COLD   ; 0444
-	add_tm THUNDER_WAVE ; 0445
+	add_tm THUNDER_WAVE ; 0445 blackthorn city
 	add_tm RAZOR_WIND   ; 0446
 	add_tm CURSE        ; 0447 celadon mansion curse guy
 	add_tm DOUBLE_EDGE  ; 0448
