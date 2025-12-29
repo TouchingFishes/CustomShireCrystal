@@ -187,6 +187,7 @@ SquirtleEggMoves:
 	dw MIRROR_SHOT
 	dw REFRESH
 	dw YAWN
+	dw GYRO_BALL
 	dw -1 ; end
 
 PidgeyEggMoves:
@@ -247,6 +248,7 @@ NidoranFEggMoves:
 	dw SUPERSONIC
 	dw TAKE_DOWN
 	dw HEAD_SMASH
+	dw DRILL_RUN
 	dw -1 ; end
 
 NidoranMEggMoves:
@@ -257,6 +259,8 @@ NidoranMEggMoves:
 	dw DISABLE
 	dw SUPERSONIC
 	dw TAKE_DOWN
+	dw SLUDGE_BOMB
+	dw DRILL_RUN
 	dw -1 ; end
 
 VulpixEggMoves:
@@ -268,6 +272,7 @@ VulpixEggMoves:
 	dw HYPNOSIS
 	dw PSYCH_UP
 	dw SPITE
+	dw FLAME_CHARGE
 	dw -1 ; end
 
 ZubatEggMoves:
@@ -278,6 +283,7 @@ ZubatEggMoves:
 	dw PURSUIT
 	dw QUICK_ATTACK
 	dw WHIRLWIND
+	dw HEX
 	dw -1 ; end
 
 OddishEggMoves:
@@ -287,6 +293,7 @@ OddishEggMoves:
 	dw RAZOR_LEAF
 	dw SWORDS_DANCE
 	dw SYNTHESIS
+	dw ENERGY_BALL
 	dw -1 ; end
 
 ParasEggMoves:
@@ -357,6 +364,7 @@ GrowlitheEggMoves:
 	dw HOWL
 	dw SAFEGUARD
 	dw THRASH
+	dw FLAME_CHARGE
 	dw -1 ; end
 
 PoliwagEggMoves:
@@ -414,6 +422,7 @@ GeodudeEggMoves:
 	dw MEGA_PUNCH
 	dw ROCK_SLIDE
 	dw HEAD_SMASH
+	dw HAMMER_ARM
 	dw -1 ; end
 
 PonytaEggMoves:
@@ -464,6 +473,7 @@ SeelEggMoves:
 	dw LICK
 	dw PERISH_SONG
 	dw SLAM
+	dw DRILL_RUN
 	dw -1 ; end
 
 GrimerEggMoves:
@@ -484,6 +494,7 @@ ShellderEggMoves:
 	dw SCREECH
 	dw TAKE_DOWN
 	dw SPIKE_CANNON
+	dw AVALANCHE
 	dw -1 ; end
 
 GastlyEggMoves:
@@ -521,6 +532,7 @@ KrabbyEggMoves:
 	dw SLAM
 	dw SWORDS_DANCE
 	dw BURNING_SAND
+	dw HAMMER_ARM
 	dw -1 ; end
 
 ExeggcuteEggMoves:
@@ -531,6 +543,7 @@ ExeggcuteEggMoves:
 	dw PSYCH_UP
 	dw REFLECT
 	dw SYNTHESIS
+	dw GRASS_KNOT
 	dw -1 ; end
 
 CuboneEggMoves:
@@ -573,6 +586,7 @@ RhyhornEggMoves:
 	dw REVERSAL
 	dw ROCK_SLIDE
 	dw SWORDS_DANCE
+	dw DRILL_RUN
 	dw -1 ; end
 
 ChanseyEggMoves:
@@ -603,6 +617,7 @@ KangaskhanEggMoves:
 	dw STOMP
 	dw SUBSTITUTE
 	dw OUTRAGE
+	dw HAMMER_ARM
 	dw -1 ; end
 
 HorseaEggMoves:
@@ -664,6 +679,7 @@ LaprasEggMoves:
 	dw HYDRO_PUMP
 	dw CALM_MIND
 	dw DRAGON_PULSE
+	dw AVALANCHE
 	dw -1 ; end
 
 EeveeEggMoves:
@@ -721,6 +737,7 @@ DratiniEggMoves:
 	dw LIGHT_SCREEN
 	dw MIST
 	dw SUPERSONIC
+	dw SCALD
 NoEggMoves1:
 	dw -1 ; end
 

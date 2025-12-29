@@ -171,6 +171,7 @@ PiplupEggMoves:
 	dw HYDRO_PUMP
 	dw SNORE
 	dw SUPERSONIC
+	dw AVALANCHE
 	dw -1 ; end
 
 LotugaEggMoves:
@@ -208,6 +209,7 @@ SolosisEggMoves:
 	dw ACID_ARMOR
 	dw DISABLE
 	dw MAGIC_COAT
+	dw GYRO_BALL
 	dw -1 ; end
 
 SurskitEggMoves:
@@ -226,6 +228,7 @@ SlakothEggMoves:
 	dw SLASH
 	dw SLEEP_TALK
 	dw SNORE
+	dw HEAVY_SLAM
 	dw -1 ; end
 
 NincadaEggMoves:
@@ -262,6 +265,8 @@ DuscornEggMoves:
 	dw SLAM
 	dw COUNTER
 	dw UPROAR
+	dw GYRO_BALL
+	dw FLASH_CANNON
 	dw -1 ; end
 
 FletchlingEggMoves:
@@ -326,6 +331,7 @@ CarvanhaEggMoves:
 	dw DOUBLE_EDGE
 	dw HYDRO_PUMP
 	dw THRASH
+	dw SCALD
 	dw -1 ; end
 
 BarboachEggMoves:
@@ -355,6 +361,7 @@ VanilliteEggMoves:
 	dw EXTRASENSORY
 	dw FUTURE_SIGHT
 	dw SUBSTITUTE
+	dw AVALANCHE
 	;dw TRICK
 	dw -1 ; end
 
@@ -388,6 +395,7 @@ SwabluEggMoves:
 	dw HAZE
 	dw PURSUIT
 	dw RAGE
+	dw HURRICANE
 	dw -1 ; end
 
 LarvestaEggMoves:
@@ -457,6 +465,7 @@ ChimechoEggMoves:
 	dw MIRROR_SHOT
 	dw DREAM_EATER
 	dw HYPNOSIS
+	dw GYRO_BALL
 	dw -1 ; end
 
 AbsolEggMoves:
@@ -466,6 +475,7 @@ AbsolEggMoves:
 	dw FAINT_ATTACK
 	dw MAGIC_COAT
 	dw SUBSTITUTE
+	dw HEX
 	dw -1 ; end
 
 SnoverEggMoves:
@@ -475,6 +485,7 @@ SnoverEggMoves:
 	dw GROWTH
 	dw MIST
 	dw MAGICAL_LEAF
+	dw ICY_WIND
 	dw -1 ; end
 
 ShuppetEggMoves:

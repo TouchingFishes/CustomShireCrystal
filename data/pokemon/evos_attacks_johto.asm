@@ -146,6 +146,7 @@ MeganiumEvosAttacks:
 	dbw 15, POISONPOWDER
 	dbw 23, SYNTHESIS
 	dbw 31, BODY_SLAM
+	dbw 32, ENERGY_BALL
 	dbw 41, LIGHT_SCREEN
 	dbw 51, MAGICAL_LEAF
 	dbw 61, SOLARBEAM
@@ -189,6 +190,7 @@ TyphlosionEvosAttacks:
 	dbw 12, EMBER
 	dbw 21, QUICK_ATTACK
 	dbw 31, FLAME_WHEEL
+	dbw 36, FLAME_CHARGE
 	dbw 45, SWIFT
 	dbw 60, FLAMETHROWER
 	dbw 68, ERUPTION
@@ -233,6 +235,7 @@ FeraligatrEvosAttacks:
 	dbw 13, WATER_GUN
 	dbw 21, BITE
 	dbw 28, SCARY_FACE
+	dbw 30, SCALD
 	dbw 38, CRUSH_CLAW
 	dbw 47, CRUNCH
 	dbw 58, HYDRO_PUMP
@@ -582,7 +585,7 @@ SudowoodoEvosAttacks:
 	dbw 33, BLOCK
 	dbw 41, FAINT_ATTACK
 	dbw 49, WOOD_HAMMER
-	dbw 57, DOUBLE_EDGE
+	dbw 57, HAMMER_ARM
 	db 0 ; no more level-up moves
 
 PolitoedEvosAttacks:
@@ -844,8 +847,9 @@ PinecoEvosAttacks:
 	dbw 29, SPIKES
 	dbw 33, SPIKE_CANNON
 	dbw 36, EXPLOSION
-	dbw 43, DOUBLE_EDGE
+	dbw 43, STEAMROLLER
 	dbw 50, ZAP_CANNON
+	dbw 57, GYRO_BALL
 	db 0 ; no more level-up moves
 
 ForretressEvosAttacks:
@@ -860,8 +864,9 @@ ForretressEvosAttacks:
 	dbw 31, MIRROR_SHOT
 	dbw 35, SPIKE_CANNON
 	dbw 39, EXPLOSION
-	dbw 49, DOUBLE_EDGE
+	dbw 49, STEAMROLLER
 	dbw 59, ZAP_CANNON
+	dbw 69, GYRO_BALL
 	db 0 ; no more level-up moves
 
 DunsparceEvosAttacks:
@@ -907,6 +912,7 @@ SteelixEvosAttacks:
 	dbw 45, STONE_EDGE
 	dbw 49, IRON_TAIL
 	dbw 57, HEAD_SMASH
+	dbw 63, HEAVY_SLAM
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:
@@ -1038,6 +1044,7 @@ UrsaringEvosAttacks:
 	dbw 37, SLASH
 	dbw 43, SNORE
 	dbw 49, THRASH
+	dbw 57, HAMMER_ARM
 	db 0 ; no more level-up moves
 
 SlugmaEvosAttacks:
@@ -1078,6 +1085,7 @@ SwinubEvosAttacks:
 	dbw 10, POWDER_SNOW
 	dbw 19, TAKE_DOWN
 	dbw 28, ICE_BALL
+	dbw 33, AVALANCHE
 	dbw 37, MIST
 	dbw 46, BLIZZARD
 	dbw 55, AMNESIA
@@ -1110,6 +1118,7 @@ CorsolaEvosAttacks:
 	dbw 34, ROCK_BLAST
 	dbw 39, MIRROR_COAT
 	dbw 45, ANCIENTPOWER
+	dbw 51, SCALD
 	db 0 ; no more level-up moves
 
 RemoraidEvosAttacks:
@@ -1155,6 +1164,7 @@ MantineEvosAttacks:
 	dbw 36, WING_ATTACK
 	dbw 43, WATER_PULSE
 	dbw 50, CONFUSE_RAY
+	dbw 56, SCALD
 	db 0 ; no more level-up moves
 
 SkarmoryEvosAttacks:
@@ -1213,8 +1223,9 @@ KingdraEvosAttacks:
 	dbw 29, TWISTER
 	dbw 33, DRAGON_PULSE
 	dbw 40, AGILITY
-	dbw 51, HYDRO_PUMP
-	dbw 62, DRAGON_DANCE
+	dbw 50, SCALD
+	dbw 57, HYDRO_PUMP
+	dbw 64, DRAGON_DANCE
 	db 0 ; no more level-up moves
 
 PhanpyEvosAttacks:
@@ -1484,7 +1495,7 @@ LugiaEvosAttacks:
 	dbw 33, RECOVER
 	dbw 44, HYDRO_PUMP
 	dbw 55, RAIN_DANCE
-	dbw 66, SWIFT
+	dbw 66, PSYCHIC_M
 	dbw 77, AEROBLAST
 	dbw 88, ANCIENTPOWER
 	dbw 99, FUTURE_SIGHT
@@ -1498,7 +1509,7 @@ HoOhEvosAttacks:
 	dbw 33, RECOVER
 	dbw 44, FIRE_BLAST
 	dbw 55, SUNNY_DAY
-	dbw 66, SWIFT
+	dbw 66, HURRICANE
 	dbw 77, SACRED_FIRE
 	dbw 88, ANCIENTPOWER
 	dbw 99, FUTURE_SIGHT
@@ -1516,6 +1527,7 @@ CelebiEvosAttacks:
 	dbw 40, BATON_PASS
 	dbw 50, MAGICAL_LEAF
 	dbw 60, PERISH_SONG
+	dbw 70, ENERGY_BALL
 	db 0 ; no more level-up moves
 
 ENDSECTION

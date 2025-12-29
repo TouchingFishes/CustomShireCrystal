@@ -113,6 +113,7 @@ ChikoritaEggMoves:
 	dw NATURE_POWER
 	dw VINE_WHIP
 	dw DRAGON_PULSE
+	dw GRASS_KNOT
 	dw -1 ; end
 
 CyndaquilEggMoves:
@@ -155,6 +156,7 @@ HoothootEggMoves:
 	dw MAGICAL_FIRE
 	dw WHIRLWIND
 	dw WING_ATTACK
+	dw HURRICANE
 	dw -1 ; end
 
 LedybaEggMoves:
@@ -258,6 +260,7 @@ MarillEggMoves:
 	dw SING
 	dw SLAM
 	dw TICKLE
+	dw SCALD
 	dw -1 ; end
 
 SudowoodoEggMoves:
@@ -271,6 +274,7 @@ HoppipEggMoves:
 	dw ENCORE
 	dw PSYCH_UP
 	dw REFLECT
+	dw GRASS_KNOT
 	dw -1 ; end
 
 AipomEggMoves:
@@ -363,6 +367,7 @@ DunsparceEggMoves:
 	dw HEADBUTT
 	dw ROCK_SLIDE
 	dw SPITE
+	dw DRILL_RUN
 	dw -1 ; end
 
 GligarEggMoves:
@@ -393,10 +398,12 @@ QwilfishEggMoves:
 	dw HAZE
 	dw SUPERSONIC
 	dw SPIKE_CANNON
+	dw HEX
 	dw -1 ; end
 
 ShuckleEggMoves:
 	dw SWEET_SCENT
+	dw GYRO_BALL
 	dw -1 ; end
 
 HeracrossEggMoves:
@@ -465,6 +472,7 @@ RemoraidEggMoves:
 	dw SUPERSONIC
 	dw THUNDER_WAVE
 	dw SIGNAL_BEAM
+	dw SCALD
 	dw -1 ; end
 
 DelibirdEggMoves:
@@ -475,6 +483,7 @@ DelibirdEggMoves:
 	dw QUICK_ATTACK
 	dw RAPID_SPIN
 	dw SPLASH
+	dw AVALANCHE
 	dw -1 ; end
 
 MantineEggMoves:
@@ -496,6 +505,7 @@ SkarmoryEggMoves:
 	dw SKY_ATTACK
 	dw WHIRLWIND
 	dw SPIKE_CANNON
+	dw FLASH_CANNON
 	dw -1 ; end
 
 HoundourEggMoves:
@@ -570,6 +580,7 @@ MiltankEggMoves:
 	dw REVERSAL
 	dw SEISMIC_TOSS
 	dw SLEEP_TALK
+	dw HAMMER_ARM
 	dw -1 ; end
 
 LarvitarEggMoves:
