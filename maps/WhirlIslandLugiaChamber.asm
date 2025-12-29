@@ -35,6 +35,7 @@ Lugia:
 	startbattle
 	disappear WHIRLISLANDLUGIACHAMBER_LUGIA
 	reloadmapafterbattle
+	clearevent EVENT_BIRDS_VISIBLE
 	end
 
 LugiaText:

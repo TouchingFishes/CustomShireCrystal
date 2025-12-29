@@ -20,21 +20,6 @@ Route44_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	callback MAPCALLBACK_OBJECTS, Route44ArticunoCallback
-
-Route44ArticunoCallback:
-	checkevent EVENT_FOUGHT_ARTICUNO
-	iftrue .NoAppear
-	checkevent EVENT_VIRIDIAN_GYM_BLUE
-	iftrue .NoAppear
-	readvar VAR_WEEKDAY
-	ifnotequal TUESDAY, .NoAppear
-	appear ROUTE44_ARTICUNO
-	endcallback
-
-.NoAppear:
-	disappear ROUTE44_ARTICUNO
-	endcallback
 
 TrainerBirdKeeperVance1:
 	trainer BIRD_KEEPER, VANCE1, EVENT_BEAT_BIRD_KEEPER_VANCE, BirdKeeperVance1SeenText, BirdKeeperVance1BeatenText, 0, .Script

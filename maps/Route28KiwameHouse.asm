@@ -20,9 +20,11 @@ KiwameScript:
 	loadmenu .MoveMenuHeader
 	verticalmenu
 	closewindow
-	ifequal MOVETUTOR_FRENZY_PLANT, .FrenzyPlant
-	ifequal MOVETUTOR_BLAST_BURN, .BlastBurn
-	ifequal MOVETUTOR_HYDRO_CANNON, .HydroCannon
+	ifequal 0, .Refused
+	ifequal 1, .FrenzyPlant
+	ifequal 2, .BlastBurn
+	ifequal 3, .HydroCannon
+	ifequal 4, .Refused
 	sjump .Incompatible
 
 .FrenzyPlant:
@@ -98,7 +100,7 @@ KiwameIntroText:
 
 	para "These types have"
 	line "potential to reach"
-	cont "pinnacle of"
+	cont "the pinnacle of"
 	cont "#MON attacks."
 
 	para "………"
@@ -110,7 +112,7 @@ KiwameIntroText:
 KiwameWhichElementText:
 	text "Tell me…"
 	line "which element"
-	cont "do you choose?"
+	cont "will you choose?"
 	done
 
 KiwameChooseGrassText:

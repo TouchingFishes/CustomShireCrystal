@@ -10,25 +10,10 @@ Route17_MapScripts:
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, Route17AlwaysOnBikeCallback
-	callback MAPCALLBACK_OBJECTS, Route17ZapdosCallback
 
 Route17AlwaysOnBikeCallback:
 	setflag ENGINE_ALWAYS_ON_BIKE
 	setflag ENGINE_DOWNHILL
-	endcallback
-
-Route17ZapdosCallback:
-	checkevent EVENT_FOUGHT_ZAPDOS
-	iftrue .NoAppear
-	checkevent EVENT_VIRIDIAN_GYM_BLUE
-	iftrue .NoAppear
-	readvar VAR_WEEKDAY
-	ifnotequal TUESDAY, .NoAppear
-	appear ROUTE17_ZAPDOS
-	endcallback
-
-.NoAppear:
-	disappear ROUTE17_ZAPDOS
 	endcallback
 
 TrainerBikerCharles:

@@ -26,16 +26,28 @@ PewterCityGrampsScript:
 	opentext
 	checkevent EVENT_GOT_SILVER_WING
 	iftrue .GotSilverWing
-	writetext PewterCityGrampsText
-	promptbutton
-	verbosegiveitem SILVER_WING
-	setevent EVENT_GOT_SILVER_WING
+	writetext PewterCityGrampsIntroText
+	waitbutton
+	closetext
+	readvar VAR_BADGES
+	ifequal 16, .WorthyOfWing
+	writetext PewterCityGrampsNotReadyText
+	waitbutton
 	closetext
 	end
 
 .GotSilverWing:
-	writetext PewterCityGrampsText_GotSilverWing
+	writetext PewterCityGrampsAfterSilverWingText
 	waitbutton
+	closetext
+	end
+
+.WorthyOfWing:
+	opentext
+	writetext PewterCityGrampsGiveSilverWingText
+	promptbutton
+	verbosegiveitem SILVER_WING
+	setevent EVENT_GOT_SILVER_WING
 	closetext
 	end
 
@@ -83,35 +95,73 @@ PewterCityBugCatcherText:
 	line "night."
 	done
 
-PewterCityGrampsText:
-	text "Ah, you came all"
+PewterCityGrampsIntroText:
+	text "Ah… You came all"
 	line "the way out here"
 	cont "from JOHTO?"
 
 	para "That brings back"
-	line "memories. When I"
+	line "old memories."
 
-	para "was young, I went"
-	line "to JOHTO to train."
+	para "When I was young,"
+	line "I traveled far to"
+	cont "train myself."
 
-	para "You remind me so"
-	line "much of what I was"
-
-	para "like as a young"
-	line "man."
-
-	para "Here. I want you"
-	line "to have this item"
-	cont "I found in JOHTO."
+	para "Those roads shape"
+	line "a person…"
 	done
 
-PewterCityGrampsText_GotSilverWing:
-	text "Going to new, un-"
-	line "known places and"
-	cont "seeing new people…"
+PewterCityGrampsGiveSilverWingText:
+	text "I see."
 
-	para "Those are the joys"
-	line "of travel."
+	para "Your stance."
+	line "Your calm."
+
+	para "You have walked"
+	line "every path there"
+	cont "is to walk."
+
+	para "This WING was"
+	line "passed down to me"
+	cont "from JOHTO."
+
+	para "It is time it"
+	line "flies once more."
+
+	para "Take it."
+	done
+
+PewterCityGrampsNotReadyText:
+	text "I can see it in"
+	line "your eyes."
+
+	para "You have strength,"
+	line "but your journey"
+	cont "is not complete."
+
+	para "This item I carry"
+	line "is an heirloom."
+
+	para "It is meant only"
+	line "for one who has"
+	cont "stood atop every"
+	cont "GYM."
+
+	para "Return when all"
+	line "BADGES are yours."
+	done
+
+PewterCityGrampsAfterSilverWingText:
+	text "That WING does not"
+	line "answer to power."
+
+	para "It responds to"
+	line "those who endure."
+
+	para "Go."
+
+	para "Your final journey"
+	line "awaits."
 	done
 
 PewterCitySignText:

@@ -20,7 +20,6 @@ ViridianGymBlueScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_BLUE
-	clearevent EVENT_BIRDS_VISIBLE
 	opentext
 	writetext Text_ReceivedEarthBadge
 	playsound SFX_GET_BADGE

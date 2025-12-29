@@ -7,24 +7,9 @@ CinnabarIsland_MapScripts:
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, CinnabarIslandFlypointCallback
-	callback MAPCALLBACK_OBJECTS, CinnabarIslandMoltresCallback
 
 CinnabarIslandFlypointCallback:
 	setflag ENGINE_FLYPOINT_CINNABAR
-	endcallback
-
-CinnabarIslandMoltresCallback:
-	checkevent EVENT_FOUGHT_MOLTRES
-	iftrue .NoAppear
-	checkevent EVENT_VIRIDIAN_GYM_BLUE
-	iftrue .NoAppear
-	readvar VAR_WEEKDAY
-	ifnotequal SUNDAY, .NoAppear
-	appear CINNABARISLAND_MOLTRES
-	endcallback
-
-.NoAppear:
-	disappear CINNABARISLAND_MOLTRES
 	endcallback
 
 CinnabarIslandBlue:

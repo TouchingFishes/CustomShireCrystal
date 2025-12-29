@@ -8,6 +8,7 @@
 	const CELADONCITY_YOUNGSTER2
 	const CELADONCITY_TEACHER2
 	const CELADONCITY_LASS
+	const CELADONCITY_PICNICKER
 
 CeladonCity_MapScripts:
 	def_scene_scripts
@@ -33,11 +34,11 @@ CeladonCityPoliwrath:
 CeladonCityTeacher1Script:
 	jumptextfaceplayer CeladonCityTeacher1Text
 
-CeladonCityGramps1Script:
-	jumptextfaceplayer CeladonCityGramps1Text
+CeladonCityPokerangerFScript:
+	jumptextfaceplayer CeladonCityPokerangerFText
 
-CeladonCityGramps2Script:
-	jumptextfaceplayer CeladonCityGramps2Text
+CeladonCityGrampsScript:
+	jumptextfaceplayer CeladonCityGrampsText
 
 CeladonCityYoungster1Script:
 	jumptextfaceplayer CeladonCityYoungster1Text
@@ -50,6 +51,30 @@ CeladonCityTeacher2Script:
 
 CeladonCityLassScript:
 	jumptextfaceplayer CeladonCityLassText
+
+CeladonCityTutorSoftboiledScript:
+	faceplayer
+	opentext
+	writetext CeladonCityTutorSoftboiledText
+	waitbutton
+	writetext CeladonCityTutorSoftboiledText2
+	yesorno
+	iffalse .TutorRefused
+	setval SOFTBOILED
+	writetext CeladonCityTutorSoftboiledClear
+	special MoveTutor
+	ifequal FALSE, .TeachMove
+.TutorRefused
+	writetext CeladonCityTutorSoftboiledRefused
+	waitbutton
+	closetext
+	end
+
+.TeachMove
+	writetext CeladonCityTutorSoftboiledTaught
+	waitbutton
+	closetext
+	end
 
 CeladonCitySign:
 	jumptext CeladonCitySignText
@@ -99,22 +124,24 @@ CeladonCityTeacher1Text:
 	line "them out too."
 	done
 
-CeladonCityGramps1Text:
+CeladonCityPokerangerFText:
 	text "GRIMER have been"
 	line "appearing lately."
 
 	para "See that pond out"
-	line "in front of the"
+	line "in front of me?"
 
-	para "house? GRIMER live"
-	line "there now."
+	para "GRIMER live there"
+	line "now…"
+
+	para "………"
 
 	para "Where did they"
 	line "come from? This is"
 	cont "a serious problem…"
 	done
 
-CeladonCityGramps2Text:
+CeladonCityGrampsText:
 	text "Nihihi! This GYM"
 	line "is great! Only"
 
@@ -164,6 +191,44 @@ CeladonCityLassText:
 
 	para "walking made me"
 	line "dizzy."
+	done
+
+CeladonCityTutorSoftboiledText:
+	text "Hello there!"
+	line "I've seen you"
+	cont "running around."
+
+	para "It must be good"
+	line "luck that brought"
+	cont "us together."
+	done
+
+CeladonCityTutorSoftboiledText2:
+	text "Would you like me"
+	line "to teach your"
+
+	para "#MON to use"
+	line "SOFTBOILED?"
+
+CeladonCityTutorSoftboiledRefused:
+	text "OK then."
+	done
+
+CeladonCityTutorSoftboiledClear:
+	text_start
+	done
+
+CeladonCityTutorSoftboiledTaught:
+	text "Now if your"
+	line "#MON is in a"
+
+	para "pinch, they can"
+	line "eat an egg"
+	cont "and restore HP."
+
+	para "Or if they are"
+	line "feeling a bit"
+	cont "hungry, hohoho!"
 	done
 
 CeladonCitySignText:
@@ -243,9 +308,10 @@ CeladonCity_MapEvents:
 	object_event 26, 11, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCityFatGuyScript, -1
 	object_event 27, 11, SPRITE_POLIWRATH, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonCityPoliwrath, -1
 	object_event 20, 24, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityTeacher1Script, -1
-	object_event 14, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CeladonCityGramps1Script, -1
-	object_event  8, 31, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityGramps2Script, -1
+	object_event 14, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CeladonCityTutorSoftboiledScript, -1
+	object_event  8, 31, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityGrampsScript, -1
 	object_event 18, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonCityYoungster1Script, -1
 	object_event 24, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCityYoungster2Script, -1
 	object_event  6, 14, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCityTeacher2Script, -1
 	object_event  7, 22, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityLassScript, -1
+	object_event 15, 22, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityPokerangerFScript, -1
