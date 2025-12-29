@@ -142,7 +142,7 @@ BillsOlderSistersHouse_Blocks:
 LavenderSpeechHouse_Blocks:
 LavenderNameRater_Blocks:
 Route12SuperRodHouse_Blocks:
-Route28SteelWingHouse_Blocks:
+Route28KiwameHouse_Blocks:
 CeladonMansionRoofHouse_Blocks:
 Route16FuchsiaSpeechHouse_Blocks:
 ManiasHouse_Blocks:
@@ -163,6 +163,7 @@ GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
 ThunderWaveHouse_Blocks:
+SteelWingHouse_Blocks:
 	INCBIN "maps/House1.ablk"
 
 SafariZoneFuchsiaGateBeta_Blocks:

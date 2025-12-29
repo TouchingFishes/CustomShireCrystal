@@ -1,14 +1,14 @@
 	object_const_def
-	const ROUTE28STEELWINGHOUSE_CELEBRITY
-	const ROUTE28STEELWINGHOUSE_FEAROW
+	const STEELWINGHOUSE_CELEBRITY
+	const STEELWINGHOUSE_FEAROW
 
-Route28SteelWingHouse_MapScripts:
+SteelWingHouse_MapScripts:
 	def_scene_scripts
-	scene_script Route28SteelWingHouseNoopScene ; unusable
+	scene_script SteelWingHouseNoopScene ; unusable
 
 	def_callbacks
 
-Route28SteelWingHouseNoopScene:
+SteelWingHouseNoopScene:
 	end
 
 Celebrity:
@@ -68,12 +68,12 @@ CelebritysFearowText:
 	text "FEAROW: Feero!"
 	done
 
-Route28SteelWingHouse_MapEvents:
+SteelWingHouse_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  7, ROUTE_28, 1
-	warp_event  3,  7, ROUTE_28, 1
+	warp_event  2,  7, CHERRYGROVE_BAY, 1
+	warp_event  3,  7, CHERRYGROVE_BAY, 1
 
 	def_coord_events
 
@@ -83,4 +83,4 @@ Route28SteelWingHouse_MapEvents:
 
 	def_object_events
 	object_event  2,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, Celebrity, -1
-	object_event  6,  5, SPRITE_FEAROW, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CelebritysFearow, -1 ;SPRITE_MOLTRES
+	object_event  6,  5, SPRITE_FEAROW, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CelebritysFearow, -1

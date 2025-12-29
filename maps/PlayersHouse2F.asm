@@ -169,7 +169,6 @@ if DEF(_DEBUG)
 	givepokemove CUT,  wPartyMon3, 3
 	givepokemove FLY,  wPartyMon3, 3
 	; misc pokemon for testing
-	givepoke KROLUCARD, PLAIN_FORM, 99
 	givepokemove SURF,   wPartyMon4, 2
 	givepokemove HEAVY_SLAM,  wPartyMon1, 0
 	givepokemove PSYCHIC_M,  wPartyMon1, 0
@@ -179,16 +178,17 @@ if DEF(_DEBUG)
 	;givepokemove SNATCH,  wPartyMon1, 1
 	;givepokemove WHIRLWIND,  wPartyMon1, 2
 	;givepokemove VITAL_THROW,  wPartyMon1, 3
-	;givepoke FUSANG, PLAIN_FORM, 99
-	;givepoke WHISCASH, PLAIN_FORM, 99
+	givepoke VENUSAUR, PLAIN_FORM, 99
+	givepoke CHARIZARD, PLAIN_FORM, 99
+	givepoke BLASTOISE, PLAIN_FORM, 99
 	; intro events
 	addcellnum PHONE_MOM
 	setmapscene PLAYERS_HOUSE_1F, $1
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
-	givepokemove HEAVY_SLAM,  wPartyMon1, 0
-	givepokemove HEX,  wPartyMon1, 1
+	;givepokemove HEAVY_SLAM,  wPartyMon1, 0
+	;givepokemove HEX,  wPartyMon1, 1
 	;givepokemove STRENGTH,  wPartyMon1, 2
-	givepokemove DRAIN_LIFE,  wPartyMon1, 3
+	;givepokemove DRAIN_LIFE,  wPartyMon1, 3
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
 	closetext
 	end
@@ -269,7 +269,7 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	warp_event  7,  0, STEEL_WING_HOUSE, 1
 
 	def_coord_events
 

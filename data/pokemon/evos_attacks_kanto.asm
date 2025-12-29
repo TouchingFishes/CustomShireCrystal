@@ -337,7 +337,7 @@ ButterfreeEvosAttacks:
 	dbw 34, SIGNAL_BEAM
 	dbw 40, SAFEGUARD
 	dbw 47, SILVER_WIND
-	dbw 52, PSYBEAM
+	dbw 52, NIGHTMARE
 	db 0 ; no more level-up moves
 
 WeedleEvosAttacks:

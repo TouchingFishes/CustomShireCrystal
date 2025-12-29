@@ -40,8 +40,30 @@ MoveTutor:
 	cp MOVETUTOR_THUNDERBOLT
 	ld hl, THUNDERBOLT
 	jr z, .ok
-	; MOVETUTOR_ICE_BEAM
+	cp MOVETUTOR_ICE_BEAM
 	ld hl, ICE_BEAM
+	jr z, .ok
+	cp MOVETUTOR_FRENZY_PLANT
+	ld hl, FRENZY_PLANT
+	jr z, .ok
+	cp MOVETUTOR_BLAST_BURN
+	ld hl, BLAST_BURN
+	jr z, .ok
+	cp MOVETUTOR_HYDRO_CANNON
+	ld hl, HYDRO_CANNON
+	jr z, .ok
+	cp MOVETUTOR_FOCUS_PUNCH
+	ld hl, FOCUS_PUNCH
+	jr z, .ok
+	cp MOVETUTOR_MEGA_PUNCH
+	ld hl, MEGA_PUNCH
+	jr z, .ok
+	cp MOVETUTOR_MEGA_KICK
+	ld hl, MEGA_KICK
+	jr z, .ok
+	cp MOVETUTOR_SOFTBOILED
+	ld hl, SOFTBOILED
+	jr z, .ok
 .ok
 	jmp GetMoveIDFromIndex
 

@@ -216,7 +216,7 @@ CherrygroveBay_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  5, 45, ROUTE_28_STEEL_WING_HOUSE, 1
+	warp_event  5, 45, STEEL_WING_HOUSE, 1
 
 	def_coord_events
 

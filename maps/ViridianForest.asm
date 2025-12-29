@@ -95,8 +95,8 @@ ViridianForestFruitTree:
 ViridianForestHiddenMaxEther:
 	hiddenitem MAX_ETHER, EVENT_VIRIDIAN_FOREST_HIDDEN_MAX_ETHER
 
-ViridianForestHiddenFullHeal:
-	hiddenitem FULL_HEAL, EVENT_VIRIDIAN_FOREST_HIDDEN_FULL_HEAL
+ViridianForestHiddenRareCandy:
+	hiddenitem RARE_CANDY, EVENT_VIRIDIAN_FOREST_HIDDEN_RARE_CANDY
 
 ViridianForestHiddenFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_VIRIDIAN_FOREST_HIDDEN_FULL_RESTORE
@@ -276,7 +276,7 @@ ViridianForest_MapEvents:
 	def_bg_events
 	bg_event 21, 41, BGEVENT_READ, ViridianForestSign
 	bg_event  8,  3, BGEVENT_ITEM, ViridianForestHiddenMaxEther
-	bg_event  3, 25, BGEVENT_ITEM, ViridianForestHiddenFullHeal
+	bg_event  3, 25, BGEVENT_ITEM, ViridianForestHiddenRareCandy
 	bg_event 36,  2, BGEVENT_ITEM, ViridianForestHiddenFullRestore
 	bg_event 35, 35, BGEVENT_ITEM, ViridianForestHiddenRevive
 
